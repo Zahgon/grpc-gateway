@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceDoubleColonReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceDoubleColonReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceDoubleColonOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceDoubleColonForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceDoubleColonNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceDoubleColonIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceDoubleColonInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceDoubleColonDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceDoubleColonOK creates a ABitOfEverythingServiceDoubleColonOK with default headers values
 func NewABitOfEverythingServiceDoubleColonOK() *ABitOfEverythingServiceDoubleColonOK {
-	return &ABitOfEverythingServiceDoubleColonOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,63 +37,65 @@ type ABitOfEverythingServiceDoubleColonOK struct {
 
 // IsSuccess returns true when this a bit of everything service double colon o k response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service double colon o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service double colon o k response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service double colon o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service double colon o k response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service double colon o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service double colon o k response has a 5xx status code
 func (o *ABitOfEverythingServiceDoubleColonOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service double colon o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service double colon o k response a status code equal to that given
 func (o *ABitOfEverythingServiceDoubleColonOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon o k response
 }
 
-// Code gets the status code for the a bit of everything service double colon o k response
-func (o *ABitOfEverythingServiceDoubleColonOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceDoubleColonOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceDoubleColonOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceDoubleColonOK) Error() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceDoubleColonOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonOK) GetPayload() *models.ExamplepbABitOfEverything {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceDoubleColonOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbABitOfEverything)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceDoubleColonOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceDoubleColonForbidden creates a ABitOfEverythingServiceDoubleColonForbidden with default headers values
 func NewABitOfEverythingServiceDoubleColonForbidden() *ABitOfEverythingServiceDoubleColonForbidden {
-	return &ABitOfEverythingServiceDoubleColonForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -150,61 +109,71 @@ type ABitOfEverythingServiceDoubleColonForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service double colon forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service double colon forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service double colon forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service double colon forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service double colon forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service double colon forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceDoubleColonForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service double colon forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service double colon forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceDoubleColonForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceDoubleColonForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service double colon forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service double colon forbidden response
+func (o *ABitOfEverythingServiceDoubleColonForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon forbidden response
+}
+
 func (o *ABitOfEverythingServiceDoubleColonForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDoubleColonForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceDoubleColonForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDoubleColonNotFound creates a ABitOfEverythingServiceDoubleColonNotFound with default headers values
 func NewABitOfEverythingServiceDoubleColonNotFound() *ABitOfEverythingServiceDoubleColonNotFound {
-	return &ABitOfEverythingServiceDoubleColonNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -218,61 +187,71 @@ type ABitOfEverythingServiceDoubleColonNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service double colon not found response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service double colon not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service double colon not found response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service double colon not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service double colon not found response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service double colon not found response has a 5xx status code
-func (o *ABitOfEverythingServiceDoubleColonNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service double colon not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service double colon not found response a status code equal to that given
-func (o *ABitOfEverythingServiceDoubleColonNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceDoubleColonNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service double colon not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service double colon not found response
+func (o *ABitOfEverythingServiceDoubleColonNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon not found response
+}
+
 func (o *ABitOfEverythingServiceDoubleColonNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDoubleColonNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDoubleColonIMATeapot creates a ABitOfEverythingServiceDoubleColonIMATeapot with default headers values
 func NewABitOfEverythingServiceDoubleColonIMATeapot() *ABitOfEverythingServiceDoubleColonIMATeapot {
-	return &ABitOfEverythingServiceDoubleColonIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -286,61 +265,71 @@ type ABitOfEverythingServiceDoubleColonIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service double colon i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service double colon i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service double colon i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service double colon i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service double colon i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service double colon i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service double colon i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service double colon i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service double colon i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service double colon i m a teapot response
+func (o *ABitOfEverythingServiceDoubleColonIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceDoubleColonIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDoubleColonInternalServerError creates a ABitOfEverythingServiceDoubleColonInternalServerError with default headers values
 func NewABitOfEverythingServiceDoubleColonInternalServerError() *ABitOfEverythingServiceDoubleColonInternalServerError {
-	return &ABitOfEverythingServiceDoubleColonInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -354,65 +343,71 @@ type ABitOfEverythingServiceDoubleColonInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service double colon internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service double colon internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service double colon internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service double colon internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service double colon internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service double colon internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service double colon internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service double colon internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service double colon internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon internal server error response
 }
 
-// Code gets the status code for the a bit of everything service double colon internal server error response
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] aBitOfEverythingServiceDoubleColonInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceDoubleColonInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceDoubleColonInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceDoubleColonDefault creates a ABitOfEverythingServiceDoubleColonDefault with default headers values
 func NewABitOfEverythingServiceDoubleColonDefault(code int) *ABitOfEverythingServiceDoubleColonDefault {
-	return &ABitOfEverythingServiceDoubleColonDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -428,56 +423,56 @@ type ABitOfEverythingServiceDoubleColonDefault struct {
 
 // IsSuccess returns true when this a bit of everything service double colon default response has a 2xx status code
 func (o *ABitOfEverythingServiceDoubleColonDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service double colon default response has a 3xx status code
 func (o *ABitOfEverythingServiceDoubleColonDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service double colon default response has a 4xx status code
 func (o *ABitOfEverythingServiceDoubleColonDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service double colon default response has a 5xx status code
 func (o *ABitOfEverythingServiceDoubleColonDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service double colon default response a status code equal to that given
 func (o *ABitOfEverythingServiceDoubleColonDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service double colon default response
 }
 
-// Code gets the status code for the a bit of everything service double colon default response
-func (o *ABitOfEverythingServiceDoubleColonDefault) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceDoubleColonDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceDoubleColonDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] ABitOfEverythingService_DoubleColon default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/a_bit_of_everything/{uuidName}:custom:custom][%d] ABitOfEverythingService_DoubleColon default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDoubleColonDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceDoubleColonDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

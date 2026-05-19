@@ -5,14 +5,12 @@ import (
 	"fmt"
 	"os"
 	"runtime/debug"
-	"strings"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/codegenerator"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/internal/genopenapi"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/utilities"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/pluginpb"
 )
 
@@ -244,75 +242,16 @@ func main() {
 	emitFiles(out)
 }
 
-func emitFiles(out []*descriptor.ResponseFile) {
-	files := make([]*pluginpb.CodeGeneratorResponse_File, len(out))
-	for idx, item := range out {
-		files[idx] = item.CodeGeneratorResponse_File
-	}
-	resp := &pluginpb.CodeGeneratorResponse{File: files}
-	codegenerator.SetSupportedFeaturesOnCodeGeneratorResponse(resp)
-	emitResp(resp)
-}
+func emitFiles(out []*descriptor.ResponseFile) { _ = "STUB: not implemented"; return }
 
-func emitError(err error) {
-	emitResp(&pluginpb.CodeGeneratorResponse{Error: proto.String(err.Error())})
-}
+func emitError(err error) { _ = "STUB: not implemented"; return }
 
-func emitResp(resp *pluginpb.CodeGeneratorResponse) {
-	buf, err := proto.Marshal(resp)
-	if err != nil {
-		grpclog.Fatal(err)
-	}
-	if _, err := os.Stdout.Write(buf); err != nil {
-		grpclog.Fatal(err)
-	}
-}
+func emitResp(resp *pluginpb.CodeGeneratorResponse) { _ = "STUB: not implemented"; return }
 
 // parseReqParam parses a CodeGeneratorRequest parameter and adds the
 // extracted values to the given FlagSet and pkgMap. Returns a non-nil
 // error if setting a flag failed.
 func parseReqParam(param string, f *flag.FlagSet, pkgMap map[string]string) error {
-	if param == "" {
-		return nil
-	}
-	for _, p := range strings.Split(param, ",") {
-		spec := strings.SplitN(p, "=", 2)
-		if len(spec) == 1 {
-			switch spec[0] {
-			case "allow_delete_body":
-				if err := f.Set(spec[0], "true"); err != nil {
-					return fmt.Errorf("cannot set flag %s: %w", p, err)
-				}
-				continue
-			case "allow_merge":
-				if err := f.Set(spec[0], "true"); err != nil {
-					return fmt.Errorf("cannot set flag %s: %w", p, err)
-				}
-				continue
-			case "allow_repeated_fields_in_body":
-				if err := f.Set(spec[0], "true"); err != nil {
-					return fmt.Errorf("cannot set flag %s: %w", p, err)
-				}
-				continue
-			case "include_package_in_tags":
-				if err := f.Set(spec[0], "true"); err != nil {
-					return fmt.Errorf("cannot set flag %s: %w", p, err)
-				}
-				continue
-			}
-			if err := f.Set(spec[0], ""); err != nil {
-				return fmt.Errorf("cannot set flag %s: %w", p, err)
-			}
-			continue
-		}
-		name, value := spec[0], spec[1]
-		if strings.HasPrefix(name, "M") {
-			pkgMap[name[1:]] = value
-			continue
-		}
-		if err := f.Set(name, value); err != nil {
-			return fmt.Errorf("cannot set flag %s: %w", p, err)
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

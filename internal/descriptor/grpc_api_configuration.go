@@ -1,56 +1,21 @@
 package descriptor
 
 import (
-	"encoding/json"
-	"fmt"
-	"os"
-	"strings"
-
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor/apiconfig"
-	"go.yaml.in/yaml/v3"
-	"google.golang.org/protobuf/encoding/protojson"
 )
 
 func loadGrpcAPIServiceFromYAML(yamlFileContents []byte, yamlSourceLogName string) (*apiconfig.GrpcAPIService, error) {
-	var yamlContents interface{}
-	if err := yaml.Unmarshal(yamlFileContents, &yamlContents); err != nil {
-		return nil, fmt.Errorf("failed to parse gRPC API Configuration from YAML in %q: %w", yamlSourceLogName, err)
-	}
-
-	jsonContents, err := json.Marshal(yamlContents)
-	if err != nil {
-		return nil, err
-	}
-
-	// As our GrpcAPIService is incomplete, accept unknown fields.
-	unmarshaler := protojson.UnmarshalOptions{
-		DiscardUnknown: true,
-	}
-
-	serviceConfiguration := apiconfig.GrpcAPIService{}
-	if err := unmarshaler.Unmarshal(jsonContents, &serviceConfiguration); err != nil {
-		return nil, fmt.Errorf("failed to parse gRPC API Configuration from YAML in %q: %w", yamlSourceLogName, err)
-	}
-
-	return &serviceConfiguration, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
+// As our GrpcAPIService is incomplete, accept unknown fields.
+
 func registerHTTPRulesFromGrpcAPIService(registry *Registry, service *apiconfig.GrpcAPIService, sourceLogName string) error {
-	if service.Http == nil {
-		// Nothing to do
-		return nil
-	}
-
-	for _, rule := range service.Http.GetRules() {
-		selector := "." + strings.Trim(rule.GetSelector(), " ")
-		if strings.ContainsAny(selector, "*, ") {
-			return fmt.Errorf("selector %q in %v must specify a single service method without wildcards", rule.GetSelector(), sourceLogName)
-		}
-
-		registry.AddExternalHTTPRule(selector, rule)
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+
+	// Nothing to do
 }
 
 // LoadGrpcAPIServiceFromYAML loads a gRPC API Configuration from the given YAML file
@@ -63,15 +28,6 @@ func registerHTTPRulesFromGrpcAPIService(registry *Registry, service *apiconfig.
 // Note that for the purposes of the gateway generator we only consider a subset of all
 // available features google supports in their service descriptions.
 func (r *Registry) LoadGrpcAPIServiceFromYAML(yamlFile string) error {
-	yamlFileContents, err := os.ReadFile(yamlFile)
-	if err != nil {
-		return fmt.Errorf("failed to read gRPC API Configuration description from %q: %w", yamlFile, err)
-	}
-
-	service, err := loadGrpcAPIServiceFromYAML(yamlFileContents, yamlFile)
-	if err != nil {
-		return err
-	}
-
-	return registerHTTPRulesFromGrpcAPIService(r, service, yamlFile)
+	_ = "STUB: not implemented"
+	return nil
 }

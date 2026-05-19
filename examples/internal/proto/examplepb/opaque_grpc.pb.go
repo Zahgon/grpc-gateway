@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -69,112 +68,62 @@ type opaqueEcommerceServiceClient struct {
 }
 
 func NewOpaqueEcommerceServiceClient(cc grpc.ClientConnInterface) OpaqueEcommerceServiceClient {
-	return &opaqueEcommerceServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(OpaqueEcommerceServiceClient)
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueGetProduct(ctx context.Context, in *OpaqueGetProductRequest, opts ...grpc.CallOption) (*OpaqueGetProductResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueGetProductResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueGetProduct_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueSearchProducts(ctx context.Context, in *OpaqueSearchProductsRequest, opts ...grpc.CallOption) (grpc.ServerStreamingClient[OpaqueSearchProductsResponse], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &OpaqueEcommerceService_ServiceDesc.Streams[0], OpaqueEcommerceService_OpaqueSearchProducts_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[OpaqueSearchProductsRequest, OpaqueSearchProductsResponse]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueSearchProductsClient = grpc.ServerStreamingClient[OpaqueSearchProductsResponse]
 
 func (c *opaqueEcommerceServiceClient) OpaqueCreateProduct(ctx context.Context, in *OpaqueCreateProductRequest, opts ...grpc.CallOption) (*OpaqueCreateProductResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueCreateProductResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueCreateProduct_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueCreateProductField(ctx context.Context, in *OpaqueCreateProductFieldRequest, opts ...grpc.CallOption) (*OpaqueCreateProductFieldResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueCreateProductFieldResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueCreateProductField_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueProcessOrders(ctx context.Context, opts ...grpc.CallOption) (grpc.ClientStreamingClient[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &OpaqueEcommerceService_ServiceDesc.Streams[1], OpaqueEcommerceService_OpaqueProcessOrders_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]{ClientStream: stream}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueProcessOrdersClient = grpc.ClientStreamingClient[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]
 
 func (c *opaqueEcommerceServiceClient) OpaqueStreamCustomerActivity(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &OpaqueEcommerceService_ServiceDesc.Streams[2], OpaqueEcommerceService_OpaqueStreamCustomerActivity_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]{ClientStream: stream}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueStreamCustomerActivityClient = grpc.BidiStreamingClient[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]
 
 func (c *opaqueEcommerceServiceClient) OpaqueUpdateProduct(ctx context.Context, in *OpaqueUpdateProductRequest, opts ...grpc.CallOption) (*OpaqueUpdateProductResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueUpdateProductResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueUpdateProduct_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueSearchOrders(ctx context.Context, in *OpaqueSearchOrdersRequest, opts ...grpc.CallOption) (*OpaqueSearchOrdersResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueSearchOrdersResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueSearchOrders_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *opaqueEcommerceServiceClient) OpaqueEchoNote(ctx context.Context, in *OpaqueEchoNoteRequest, opts ...grpc.CallOption) (*OpaqueEchoNoteResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OpaqueEchoNoteResponse)
-	err := c.cc.Invoke(ctx, OpaqueEcommerceService_OpaqueEchoNote_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // OpaqueEcommerceServiceServer is the server API for OpaqueEcommerceService service.
@@ -219,183 +168,124 @@ type OpaqueEcommerceServiceServer interface {
 type UnimplementedOpaqueEcommerceServiceServer struct{}
 
 func (UnimplementedOpaqueEcommerceServiceServer) OpaqueGetProduct(context.Context, *OpaqueGetProductRequest) (*OpaqueGetProductResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueGetProduct not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueSearchProducts(*OpaqueSearchProductsRequest, grpc.ServerStreamingServer[OpaqueSearchProductsResponse]) error {
-	return status.Errorf(codes.Unimplemented, "method OpaqueSearchProducts not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueCreateProduct(context.Context, *OpaqueCreateProductRequest) (*OpaqueCreateProductResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueCreateProduct not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueCreateProductField(context.Context, *OpaqueCreateProductFieldRequest) (*OpaqueCreateProductFieldResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueCreateProductField not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueProcessOrders(grpc.ClientStreamingServer[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]) error {
-	return status.Errorf(codes.Unimplemented, "method OpaqueProcessOrders not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueStreamCustomerActivity(grpc.BidiStreamingServer[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]) error {
-	return status.Errorf(codes.Unimplemented, "method OpaqueStreamCustomerActivity not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueUpdateProduct(context.Context, *OpaqueUpdateProductRequest) (*OpaqueUpdateProductResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueUpdateProduct not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueSearchOrders(context.Context, *OpaqueSearchOrdersRequest) (*OpaqueSearchOrdersResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueSearchOrders not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) OpaqueEchoNote(context.Context, *OpaqueEchoNoteRequest) (*OpaqueEchoNoteResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OpaqueEchoNote not implemented")
-}
-func (UnimplementedOpaqueEcommerceServiceServer) testEmbeddedByValue() {}
 
-// UnsafeOpaqueEcommerceServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to OpaqueEcommerceServiceServer will
-// result in compilation errors.
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueSearchProducts(*OpaqueSearchProductsRequest, grpc.ServerStreamingServer[OpaqueSearchProductsResponse]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueCreateProduct(context.Context, *OpaqueCreateProductRequest) (*OpaqueCreateProductResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueCreateProductField(context.Context, *OpaqueCreateProductFieldRequest) (*OpaqueCreateProductFieldResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueProcessOrders(grpc.ClientStreamingServer[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueStreamCustomerActivity(grpc.BidiStreamingServer[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueUpdateProduct(context.Context, *OpaqueUpdateProductRequest) (*OpaqueUpdateProductResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueSearchOrders(context.Context, *OpaqueSearchOrdersRequest) (*OpaqueSearchOrdersResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) OpaqueEchoNote(context.Context, *OpaqueEchoNoteRequest) (*OpaqueEchoNoteResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedOpaqueEcommerceServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeOpaqueEcommerceServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to OpaqueEcommerceServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeOpaqueEcommerceServiceServer interface {
 	mustEmbedUnimplementedOpaqueEcommerceServiceServer()
 }
 
 func RegisterOpaqueEcommerceServiceServer(s grpc.ServiceRegistrar, srv OpaqueEcommerceServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedOpaqueEcommerceServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&OpaqueEcommerceService_ServiceDesc, srv)
+	return
 }
 
 func _OpaqueEcommerceService_OpaqueGetProduct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueGetProductRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueGetProduct(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueGetProduct_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueGetProduct(ctx, req.(*OpaqueGetProductRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _OpaqueEcommerceService_OpaqueSearchProducts_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(OpaqueSearchProductsRequest)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(OpaqueEcommerceServiceServer).OpaqueSearchProducts(m, &grpc.GenericServerStream[OpaqueSearchProductsRequest, OpaqueSearchProductsResponse]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueSearchProductsServer = grpc.ServerStreamingServer[OpaqueSearchProductsResponse]
 
 func _OpaqueEcommerceService_OpaqueCreateProduct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueCreateProductRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueCreateProduct(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueCreateProduct_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueCreateProduct(ctx, req.(*OpaqueCreateProductRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _OpaqueEcommerceService_OpaqueCreateProductField_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueCreateProductFieldRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueCreateProductField(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueCreateProductField_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueCreateProductField(ctx, req.(*OpaqueCreateProductFieldRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _OpaqueEcommerceService_OpaqueProcessOrders_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(OpaqueEcommerceServiceServer).OpaqueProcessOrders(&grpc.GenericServerStream[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueProcessOrdersServer = grpc.ClientStreamingServer[OpaqueProcessOrdersRequest, OpaqueProcessOrdersResponse]
 
 func _OpaqueEcommerceService_OpaqueStreamCustomerActivity_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(OpaqueEcommerceServiceServer).OpaqueStreamCustomerActivity(&grpc.GenericServerStream[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type OpaqueEcommerceService_OpaqueStreamCustomerActivityServer = grpc.BidiStreamingServer[OpaqueStreamCustomerActivityRequest, OpaqueStreamCustomerActivityResponse]
 
 func _OpaqueEcommerceService_OpaqueUpdateProduct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueUpdateProductRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueUpdateProduct(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueUpdateProduct_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueUpdateProduct(ctx, req.(*OpaqueUpdateProductRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _OpaqueEcommerceService_OpaqueSearchOrders_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueSearchOrdersRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueSearchOrders(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueSearchOrders_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueSearchOrders(ctx, req.(*OpaqueSearchOrdersRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _OpaqueEcommerceService_OpaqueEchoNote_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OpaqueEchoNoteRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueEchoNote(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: OpaqueEcommerceService_OpaqueEchoNote_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(OpaqueEcommerceServiceServer).OpaqueEchoNote(ctx, req.(*OpaqueEchoNoteRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // OpaqueEcommerceService_ServiceDesc is the grpc.ServiceDesc for OpaqueEcommerceService service.

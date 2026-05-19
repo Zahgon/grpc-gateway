@@ -4,13 +4,13 @@ package response_body_service
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
 // New creates a new response body service API client.
 func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientService {
-	return &Client{transport: transport, formats: formats}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new response body service API client with basic auth credentials.
@@ -21,9 +21,8 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientServi
 // - user: user for basic authentication header.
 // - password: password for basic authentication header.
 func NewClientWithBasicAuth(host, basePath, scheme, user, password string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BasicAuth(user, password)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new response body service API client with a bearer token for authentication.
@@ -33,9 +32,8 @@ func NewClientWithBasicAuth(host, basePath, scheme, user, password string) Clien
 // - scheme: http scheme ("http", "https").
 // - bearerToken: bearer token for Bearer authentication header.
 func NewClientWithBearerToken(host, basePath, scheme, bearerToken string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BearerToken(bearerToken)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 /*
@@ -68,213 +66,76 @@ type ClientService interface {
 ResponseBodyServiceGetResponseBody response body service get response body API
 */
 func (a *Client) ResponseBodyServiceGetResponseBody(params *ResponseBodyServiceGetResponseBodyParams, opts ...ClientOption) (*ResponseBodyServiceGetResponseBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewResponseBodyServiceGetResponseBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ResponseBodyService_GetResponseBody",
-		Method:             "GET",
-		PathPattern:        "/responsebody/{data}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &ResponseBodyServiceGetResponseBodyReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ResponseBodyServiceGetResponseBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ResponseBodyServiceGetResponseBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ResponseBodyServiceGetResponseBodySameName response body service get response body same name API
 */
 func (a *Client) ResponseBodyServiceGetResponseBodySameName(params *ResponseBodyServiceGetResponseBodySameNameParams, opts ...ClientOption) (*ResponseBodyServiceGetResponseBodySameNameOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewResponseBodyServiceGetResponseBodySameNameParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ResponseBodyService_GetResponseBodySameName",
-		Method:             "GET",
-		PathPattern:        "/responsebody/samename/{data}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &ResponseBodyServiceGetResponseBodySameNameReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ResponseBodyServiceGetResponseBodySameNameOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ResponseBodyServiceGetResponseBodySameNameDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ResponseBodyServiceGetResponseBodyStream response body service get response body stream API
 */
 func (a *Client) ResponseBodyServiceGetResponseBodyStream(params *ResponseBodyServiceGetResponseBodyStreamParams, opts ...ClientOption) (*ResponseBodyServiceGetResponseBodyStreamOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewResponseBodyServiceGetResponseBodyStreamParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ResponseBodyService_GetResponseBodyStream",
-		Method:             "GET",
-		PathPattern:        "/responsebody/stream/{data}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &ResponseBodyServiceGetResponseBodyStreamReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ResponseBodyServiceGetResponseBodyStreamOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ResponseBodyServiceGetResponseBodyStreamDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ResponseBodyServiceListResponseBodies response body service list response bodies API
 */
 func (a *Client) ResponseBodyServiceListResponseBodies(params *ResponseBodyServiceListResponseBodiesParams, opts ...ClientOption) (*ResponseBodyServiceListResponseBodiesOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewResponseBodyServiceListResponseBodiesParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ResponseBodyService_ListResponseBodies",
-		Method:             "GET",
-		PathPattern:        "/responsebodies/{data}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &ResponseBodyServiceListResponseBodiesReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ResponseBodyServiceListResponseBodiesOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ResponseBodyServiceListResponseBodiesDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ResponseBodyServiceListResponseStrings response body service list response strings API
 */
 func (a *Client) ResponseBodyServiceListResponseStrings(params *ResponseBodyServiceListResponseStringsParams, opts ...ClientOption) (*ResponseBodyServiceListResponseStringsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewResponseBodyServiceListResponseStringsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ResponseBodyService_ListResponseStrings",
-		Method:             "GET",
-		PathPattern:        "/responsestrings/{data}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &ResponseBodyServiceListResponseStringsReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ResponseBodyServiceListResponseStringsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ResponseBodyServiceListResponseStringsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 // SetTransport changes the transport on the client
-func (a *Client) SetTransport(transport runtime.ClientTransport) {
-	a.transport = transport
-}
+func (a *Client) SetTransport(transport runtime.ClientTransport) { _ = "STUB: not implemented"; return }

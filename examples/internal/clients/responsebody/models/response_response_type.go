@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // ResponseResponseType - UNKNOWN: UNKNOWN
@@ -19,17 +17,20 @@ import (
 type ResponseResponseType string
 
 func NewResponseResponseType(value ResponseResponseType) *ResponseResponseType {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated ResponseResponseType.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated ResponseResponseType.
 func (m ResponseResponseType) Pointer() *ResponseResponseType {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// ResponseResponseTypeUNKNOWN captures enum value "UNKNOWN"
 }
 
 const (
-
-	// ResponseResponseTypeUNKNOWN captures enum value "UNKNOWN"
 	ResponseResponseTypeUNKNOWN ResponseResponseType = "UNKNOWN"
 
 	// ResponseResponseTypeA captures enum value "A"
@@ -53,28 +54,20 @@ func init() {
 }
 
 func (m ResponseResponseType) validateResponseResponseTypeEnum(path, location string, value ResponseResponseType) error {
-	if err := validate.EnumCase(path, location, value, responseResponseTypeEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this response response type
 func (m ResponseResponseType) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateResponseResponseTypeEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this response response type based on context it is used
 func (m ResponseResponseType) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

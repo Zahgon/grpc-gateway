@@ -7,11 +7,11 @@
 package openapiconfig
 
 import (
+	sync "sync"
+
 	options "github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/options"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -31,49 +31,23 @@ type OpenAPIFileOption struct {
 	Option *options.Swagger `protobuf:"bytes,2,opt,name=option,proto3" json:"option,omitempty"`
 }
 
-func (x *OpenAPIFileOption) Reset() {
-	*x = OpenAPIFileOption{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIFileOption) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIFileOption) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIFileOption) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIFileOption) ProtoMessage() {}
+func (*OpenAPIFileOption) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIFileOption) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIFileOption.ProtoReflect.Descriptor instead.
-func (*OpenAPIFileOption) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{0}
-}
+func (*OpenAPIFileOption) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *OpenAPIFileOption) GetFile() string {
-	if x != nil {
-		return x.File
-	}
-	return ""
-}
+func (x *OpenAPIFileOption) GetFile() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpenAPIFileOption) GetOption() *options.Swagger {
-	if x != nil {
-		return x.Option
-	}
-	return nil
-}
+func (x *OpenAPIFileOption) GetOption() *options.Swagger { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIMethodOption represents OpenAPI options on a method
 type OpenAPIMethodOption struct {
@@ -85,49 +59,26 @@ type OpenAPIMethodOption struct {
 	Option *options.Operation `protobuf:"bytes,2,opt,name=option,proto3" json:"option,omitempty"`
 }
 
-func (x *OpenAPIMethodOption) Reset() {
-	*x = OpenAPIMethodOption{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIMethodOption) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIMethodOption) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIMethodOption) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIMethodOption) ProtoMessage() {}
+func (*OpenAPIMethodOption) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIMethodOption) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIMethodOption.ProtoReflect.Descriptor instead.
 func (*OpenAPIMethodOption) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *OpenAPIMethodOption) GetMethod() string {
-	if x != nil {
-		return x.Method
-	}
-	return ""
-}
+func (x *OpenAPIMethodOption) GetMethod() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpenAPIMethodOption) GetOption() *options.Operation {
-	if x != nil {
-		return x.Option
-	}
-	return nil
-}
+func (x *OpenAPIMethodOption) GetOption() *options.Operation { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIMessageOption represents OpenAPI options on a message
 type OpenAPIMessageOption struct {
@@ -139,49 +90,26 @@ type OpenAPIMessageOption struct {
 	Option  *options.Schema `protobuf:"bytes,2,opt,name=option,proto3" json:"option,omitempty"`
 }
 
-func (x *OpenAPIMessageOption) Reset() {
-	*x = OpenAPIMessageOption{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIMessageOption) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIMessageOption) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIMessageOption) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIMessageOption) ProtoMessage() {}
+func (*OpenAPIMessageOption) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIMessageOption) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIMessageOption.ProtoReflect.Descriptor instead.
 func (*OpenAPIMessageOption) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *OpenAPIMessageOption) GetMessage() string {
-	if x != nil {
-		return x.Message
-	}
-	return ""
-}
+func (x *OpenAPIMessageOption) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpenAPIMessageOption) GetOption() *options.Schema {
-	if x != nil {
-		return x.Option
-	}
-	return nil
-}
+func (x *OpenAPIMessageOption) GetOption() *options.Schema { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIServiceOption represents OpenAPI options on a service
 type OpenAPIServiceOption struct {
@@ -193,49 +121,26 @@ type OpenAPIServiceOption struct {
 	Option  *options.Tag `protobuf:"bytes,2,opt,name=option,proto3" json:"option,omitempty"`
 }
 
-func (x *OpenAPIServiceOption) Reset() {
-	*x = OpenAPIServiceOption{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIServiceOption) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIServiceOption) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIServiceOption) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIServiceOption) ProtoMessage() {}
+func (*OpenAPIServiceOption) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIServiceOption) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIServiceOption.ProtoReflect.Descriptor instead.
 func (*OpenAPIServiceOption) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *OpenAPIServiceOption) GetService() string {
-	if x != nil {
-		return x.Service
-	}
-	return ""
-}
+func (x *OpenAPIServiceOption) GetService() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpenAPIServiceOption) GetOption() *options.Tag {
-	if x != nil {
-		return x.Option
-	}
-	return nil
-}
+func (x *OpenAPIServiceOption) GetOption() *options.Tag { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIFieldOption represents OpenAPI options on a field
 type OpenAPIFieldOption struct {
@@ -247,49 +152,23 @@ type OpenAPIFieldOption struct {
 	Option *options.JSONSchema `protobuf:"bytes,2,opt,name=option,proto3" json:"option,omitempty"`
 }
 
-func (x *OpenAPIFieldOption) Reset() {
-	*x = OpenAPIFieldOption{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIFieldOption) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIFieldOption) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIFieldOption) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIFieldOption) ProtoMessage() {}
+func (*OpenAPIFieldOption) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIFieldOption) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIFieldOption.ProtoReflect.Descriptor instead.
-func (*OpenAPIFieldOption) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{4}
-}
+func (*OpenAPIFieldOption) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *OpenAPIFieldOption) GetField() string {
-	if x != nil {
-		return x.Field
-	}
-	return ""
-}
+func (x *OpenAPIFieldOption) GetField() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpenAPIFieldOption) GetOption() *options.JSONSchema {
-	if x != nil {
-		return x.Option
-	}
-	return nil
-}
+func (x *OpenAPIFieldOption) GetOption() *options.JSONSchema { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIOptions represents OpenAPI protobuf options
 type OpenAPIOptions struct {
@@ -304,70 +183,35 @@ type OpenAPIOptions struct {
 	Field   []*OpenAPIFieldOption   `protobuf:"bytes,5,rep,name=field,proto3" json:"field,omitempty"`
 }
 
-func (x *OpenAPIOptions) Reset() {
-	*x = OpenAPIOptions{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIOptions) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIOptions) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIOptions) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIOptions) ProtoMessage() {}
+func (*OpenAPIOptions) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIOptions) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIOptions.ProtoReflect.Descriptor instead.
-func (*OpenAPIOptions) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{5}
-}
+func (*OpenAPIOptions) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *OpenAPIOptions) GetFile() []*OpenAPIFileOption {
-	if x != nil {
-		return x.File
-	}
-	return nil
-}
+func (x *OpenAPIOptions) GetFile() []*OpenAPIFileOption { _ = "STUB: not implemented"; return nil }
 
-func (x *OpenAPIOptions) GetMethod() []*OpenAPIMethodOption {
-	if x != nil {
-		return x.Method
-	}
-	return nil
-}
+func (x *OpenAPIOptions) GetMethod() []*OpenAPIMethodOption { _ = "STUB: not implemented"; return nil }
 
 func (x *OpenAPIOptions) GetMessage() []*OpenAPIMessageOption {
-	if x != nil {
-		return x.Message
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpenAPIOptions) GetService() []*OpenAPIServiceOption {
-	if x != nil {
-		return x.Service
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpenAPIOptions) GetField() []*OpenAPIFieldOption {
-	if x != nil {
-		return x.Field
-	}
-	return nil
-}
+func (x *OpenAPIOptions) GetField() []*OpenAPIFieldOption { _ = "STUB: not implemented"; return nil }
 
 // OpenAPIConfig represents a set of OpenAPI options
 type OpenAPIConfig struct {
@@ -378,42 +222,21 @@ type OpenAPIConfig struct {
 	OpenapiOptions *OpenAPIOptions `protobuf:"bytes,1,opt,name=openapi_options,json=openapiOptions,proto3" json:"openapi_options,omitempty"`
 }
 
-func (x *OpenAPIConfig) Reset() {
-	*x = OpenAPIConfig{}
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpenAPIConfig) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpenAPIConfig) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpenAPIConfig) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpenAPIConfig) ProtoMessage() {}
+func (*OpenAPIConfig) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpenAPIConfig) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OpenAPIConfig.ProtoReflect.Descriptor instead.
-func (*OpenAPIConfig) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP(), []int{6}
-}
+func (*OpenAPIConfig) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *OpenAPIConfig) GetOpenapiOptions() *OpenAPIOptions {
-	if x != nil {
-		return x.OpenapiOptions
-	}
-	return nil
-}
+func (x *OpenAPIConfig) GetOpenapiOptions() *OpenAPIOptions { _ = "STUB: not implemented"; return nil }
 
 var File_internal_descriptor_openapiconfig_openapiconfig_proto protoreflect.FileDescriptor
 
@@ -517,10 +340,8 @@ var (
 )
 
 func file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescGZIP() []byte {
-	file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescOnce.Do(func() {
-		file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescData = protoimpl.X.CompressGZIP(file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescData)
-	})
-	return file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
@@ -559,25 +380,6 @@ var file_internal_descriptor_openapiconfig_openapiconfig_proto_depIdxs = []int32
 
 func init() { file_internal_descriptor_openapiconfig_openapiconfig_proto_init() }
 func file_internal_descriptor_openapiconfig_openapiconfig_proto_init() {
-	if File_internal_descriptor_openapiconfig_openapiconfig_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   7,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_internal_descriptor_openapiconfig_openapiconfig_proto_goTypes,
-		DependencyIndexes: file_internal_descriptor_openapiconfig_openapiconfig_proto_depIdxs,
-		MessageInfos:      file_internal_descriptor_openapiconfig_openapiconfig_proto_msgTypes,
-	}.Build()
-	File_internal_descriptor_openapiconfig_openapiconfig_proto = out.File
-	file_internal_descriptor_openapiconfig_openapiconfig_proto_rawDesc = nil
-	file_internal_descriptor_openapiconfig_openapiconfig_proto_goTypes = nil
-	file_internal_descriptor_openapiconfig_openapiconfig_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

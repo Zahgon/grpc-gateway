@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -42,66 +41,36 @@ type responseBodyServiceClient struct {
 }
 
 func NewResponseBodyServiceClient(cc grpc.ClientConnInterface) ResponseBodyServiceClient {
-	return &responseBodyServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(ResponseBodyServiceClient)
 }
 
 func (c *responseBodyServiceClient) GetResponseBody(ctx context.Context, in *ResponseBodyIn, opts ...grpc.CallOption) (*ResponseBodyOut, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ResponseBodyOut)
-	err := c.cc.Invoke(ctx, ResponseBodyService_GetResponseBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *responseBodyServiceClient) ListResponseBodies(ctx context.Context, in *ResponseBodyIn, opts ...grpc.CallOption) (*RepeatedResponseBodyOut, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(RepeatedResponseBodyOut)
-	err := c.cc.Invoke(ctx, ResponseBodyService_ListResponseBodies_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *responseBodyServiceClient) ListResponseStrings(ctx context.Context, in *ResponseBodyIn, opts ...grpc.CallOption) (*RepeatedResponseStrings, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(RepeatedResponseStrings)
-	err := c.cc.Invoke(ctx, ResponseBodyService_ListResponseStrings_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *responseBodyServiceClient) GetResponseBodyStream(ctx context.Context, in *ResponseBodyIn, opts ...grpc.CallOption) (grpc.ServerStreamingClient[ResponseBodyOut], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &ResponseBodyService_ServiceDesc.Streams[0], ResponseBodyService_GetResponseBodyStream_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[ResponseBodyIn, ResponseBodyOut]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type ResponseBodyService_GetResponseBodyStreamClient = grpc.ServerStreamingClient[ResponseBodyOut]
 
 func (c *responseBodyServiceClient) GetResponseBodySameName(ctx context.Context, in *ResponseBodyIn, opts ...grpc.CallOption) (*ResponseBodyValue, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ResponseBodyValue)
-	err := c.cc.Invoke(ctx, ResponseBodyService_GetResponseBodySameName_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ResponseBodyServiceServer is the server API for ResponseBodyService service.
@@ -123,121 +92,78 @@ type ResponseBodyServiceServer interface {
 type UnimplementedResponseBodyServiceServer struct{}
 
 func (UnimplementedResponseBodyServiceServer) GetResponseBody(context.Context, *ResponseBodyIn) (*ResponseBodyOut, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetResponseBody not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedResponseBodyServiceServer) ListResponseBodies(context.Context, *ResponseBodyIn) (*RepeatedResponseBodyOut, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method ListResponseBodies not implemented")
-}
-func (UnimplementedResponseBodyServiceServer) ListResponseStrings(context.Context, *ResponseBodyIn) (*RepeatedResponseStrings, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method ListResponseStrings not implemented")
-}
-func (UnimplementedResponseBodyServiceServer) GetResponseBodyStream(*ResponseBodyIn, grpc.ServerStreamingServer[ResponseBodyOut]) error {
-	return status.Errorf(codes.Unimplemented, "method GetResponseBodyStream not implemented")
-}
-func (UnimplementedResponseBodyServiceServer) GetResponseBodySameName(context.Context, *ResponseBodyIn) (*ResponseBodyValue, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetResponseBodySameName not implemented")
-}
-func (UnimplementedResponseBodyServiceServer) testEmbeddedByValue() {}
 
-// UnsafeResponseBodyServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ResponseBodyServiceServer will
-// result in compilation errors.
+func (UnimplementedResponseBodyServiceServer) ListResponseBodies(context.Context, *ResponseBodyIn) (*RepeatedResponseBodyOut, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedResponseBodyServiceServer) ListResponseStrings(context.Context, *ResponseBodyIn) (*RepeatedResponseStrings, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedResponseBodyServiceServer) GetResponseBodyStream(*ResponseBodyIn, grpc.ServerStreamingServer[ResponseBodyOut]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedResponseBodyServiceServer) GetResponseBodySameName(context.Context, *ResponseBodyIn) (*ResponseBodyValue, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedResponseBodyServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeResponseBodyServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to ResponseBodyServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeResponseBodyServiceServer interface {
 	mustEmbedUnimplementedResponseBodyServiceServer()
 }
 
 func RegisterResponseBodyServiceServer(s grpc.ServiceRegistrar, srv ResponseBodyServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedResponseBodyServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&ResponseBodyService_ServiceDesc, srv)
+	return
 }
 
 func _ResponseBodyService_GetResponseBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ResponseBodyIn)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ResponseBodyServiceServer).GetResponseBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ResponseBodyService_GetResponseBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ResponseBodyServiceServer).GetResponseBody(ctx, req.(*ResponseBodyIn))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ResponseBodyService_ListResponseBodies_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ResponseBodyIn)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ResponseBodyServiceServer).ListResponseBodies(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ResponseBodyService_ListResponseBodies_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ResponseBodyServiceServer).ListResponseBodies(ctx, req.(*ResponseBodyIn))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ResponseBodyService_ListResponseStrings_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ResponseBodyIn)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ResponseBodyServiceServer).ListResponseStrings(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ResponseBodyService_ListResponseStrings_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ResponseBodyServiceServer).ListResponseStrings(ctx, req.(*ResponseBodyIn))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ResponseBodyService_GetResponseBodyStream_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(ResponseBodyIn)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(ResponseBodyServiceServer).GetResponseBodyStream(m, &grpc.GenericServerStream[ResponseBodyIn, ResponseBodyOut]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type ResponseBodyService_GetResponseBodyStreamServer = grpc.ServerStreamingServer[ResponseBodyOut]
 
 func _ResponseBodyService_GetResponseBodySameName_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ResponseBodyIn)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ResponseBodyServiceServer).GetResponseBodySameName(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ResponseBodyService_GetResponseBodySameName_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ResponseBodyServiceServer).GetResponseBodySameName(ctx, req.(*ResponseBodyIn))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ResponseBodyService_ServiceDesc is the grpc.ServiceDesc for ResponseBodyService service.

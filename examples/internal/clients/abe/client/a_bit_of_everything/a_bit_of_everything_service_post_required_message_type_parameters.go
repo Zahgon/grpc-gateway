@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServicePostRequiredMessageTypeParams() *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	return &ABitOfEverythingServicePostRequiredMessageTypeParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostRequiredMessageTypeParamsWithTimeout creates a new ABitOfEverythingServicePostRequiredMessageTypeParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServicePostRequiredMessageTypeParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	return &ABitOfEverythingServicePostRequiredMessageTypeParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostRequiredMessageTypeParamsWithContext creates a new ABitOfEverythingServicePostRequiredMessageTypeParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServicePostRequiredMessageTypeParamsWithContext(ctx context.Context) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	return &ABitOfEverythingServicePostRequiredMessageTypeParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostRequiredMessageTypeParamsWithHTTPClient creates a new ABitOfEverythingServicePostRequiredMessageTypeParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServicePostRequiredMessageTypeParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	return &ABitOfEverythingServicePostRequiredMessageTypeParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -72,76 +66,75 @@ type ABitOfEverythingServicePostRequiredMessageTypeParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WithDefaults() *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service post required message type params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service post required message type params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service post required message type params
 }
 
-// WithContext adds the context to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WithContext(ctx context.Context) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service post required message type params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the a bit of everything service post required message type params
 }
 
-// WithBody adds the body to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WithBody(body *models.ExamplepbRequiredMessageTypeRequest) *ABitOfEverythingServicePostRequiredMessageTypeParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the a bit of everything service post required message type params
 }
 
-// SetBody adds the body to the a bit of everything service post required message type params
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) SetBody(body *models.ExamplepbRequiredMessageTypeRequest) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServicePostRequiredMessageTypeParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

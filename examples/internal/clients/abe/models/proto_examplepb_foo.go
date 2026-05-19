@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 )
 
 // ProtoExamplepbFoo proto examplepb foo
@@ -24,91 +20,31 @@ type ProtoExamplepbFoo struct {
 
 // Validate validates this proto examplepb foo
 func (m *ProtoExamplepbFoo) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateBar(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ProtoExamplepbFoo) validateBar(formats strfmt.Registry) error {
-
-	if err := validate.Required("bar", "body", m.Bar); err != nil {
-		return err
-	}
-
-	if m.Bar != nil {
-		if err := m.Bar.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("bar")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("bar")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // ContextValidate validate this proto examplepb foo based on the context it is used
 func (m *ProtoExamplepbFoo) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateBar(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ProtoExamplepbFoo) contextValidateBar(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Bar != nil {
-
-		if err := m.Bar.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("bar")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("bar")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // MarshalBinary interface implementation
 func (m *ProtoExamplepbFoo) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
-func (m *ProtoExamplepbFoo) UnmarshalBinary(b []byte) error {
-	var res ProtoExamplepbFoo
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}
+func (m *ProtoExamplepbFoo) UnmarshalBinary(b []byte) error { _ = "STUB: not implemented"; return nil }

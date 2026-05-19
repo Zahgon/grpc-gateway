@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -40,31 +40,29 @@ var (
 	}
 )
 
-func (x EnumWithSingleValue) Enum() *EnumWithSingleValue {
-	p := new(EnumWithSingleValue)
-	*p = x
-	return p
-}
+func (x EnumWithSingleValue) Enum() *EnumWithSingleValue { _ = "STUB: not implemented"; return nil }
 
-func (x EnumWithSingleValue) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x EnumWithSingleValue) String() string { _ = "STUB: not implemented"; return "" }
 
 func (EnumWithSingleValue) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_enum_with_single_value_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (EnumWithSingleValue) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_enum_with_single_value_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x EnumWithSingleValue) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use EnumWithSingleValue.Descriptor instead.
 func (EnumWithSingleValue) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type EnumWithSingleValueServiceEchoRequest struct {
@@ -75,41 +73,29 @@ type EnumWithSingleValueServiceEchoRequest struct {
 	Value EnumWithSingleValue `protobuf:"varint,1,opt,name=value,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.EnumWithSingleValue" json:"value,omitempty"`
 }
 
-func (x *EnumWithSingleValueServiceEchoRequest) Reset() {
-	*x = EnumWithSingleValueServiceEchoRequest{}
-	mi := &file_examples_internal_proto_examplepb_enum_with_single_value_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *EnumWithSingleValueServiceEchoRequest) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *EnumWithSingleValueServiceEchoRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*EnumWithSingleValueServiceEchoRequest) ProtoMessage() {}
+func (*EnumWithSingleValueServiceEchoRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *EnumWithSingleValueServiceEchoRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_enum_with_single_value_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use EnumWithSingleValueServiceEchoRequest.ProtoReflect.Descriptor instead.
 func (*EnumWithSingleValueServiceEchoRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *EnumWithSingleValueServiceEchoRequest) GetValue() EnumWithSingleValue {
-	if x != nil {
-		return x.Value
-	}
-	return EnumWithSingleValue_ENUM_WITH_SINGLE_VALUE_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(EnumWithSingleValue)
 }
 
 type EnumWithSingleValueServiceEchoResponse struct {
@@ -118,34 +104,24 @@ type EnumWithSingleValueServiceEchoResponse struct {
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *EnumWithSingleValueServiceEchoResponse) Reset() {
-	*x = EnumWithSingleValueServiceEchoResponse{}
-	mi := &file_examples_internal_proto_examplepb_enum_with_single_value_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *EnumWithSingleValueServiceEchoResponse) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *EnumWithSingleValueServiceEchoResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*EnumWithSingleValueServiceEchoResponse) ProtoMessage() {}
+func (*EnumWithSingleValueServiceEchoResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *EnumWithSingleValueServiceEchoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_enum_with_single_value_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use EnumWithSingleValueServiceEchoResponse.ProtoReflect.Descriptor instead.
 func (*EnumWithSingleValueServiceEchoResponse) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 var File_examples_internal_proto_examplepb_enum_with_single_value_proto protoreflect.FileDescriptor
@@ -205,10 +181,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_enum_with_single_value_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
@@ -231,26 +205,6 @@ var file_examples_internal_proto_examplepb_enum_with_single_value_proto_depIdxs 
 
 func init() { file_examples_internal_proto_examplepb_enum_with_single_value_proto_init() }
 func file_examples_internal_proto_examplepb_enum_with_single_value_proto_init() {
-	if File_examples_internal_proto_examplepb_enum_with_single_value_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   2,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_enum_with_single_value_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_enum_with_single_value_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_examplepb_enum_with_single_value_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_examplepb_enum_with_single_value_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_enum_with_single_value_proto = out.File
-	file_examples_internal_proto_examplepb_enum_with_single_value_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_enum_with_single_value_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_enum_with_single_value_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

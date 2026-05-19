@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceGetRepeatedQueryReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceGetRepeatedQueryReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceGetRepeatedQueryOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceGetRepeatedQueryForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceGetRepeatedQueryNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceGetRepeatedQueryIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceGetRepeatedQueryInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceGetRepeatedQueryDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceGetRepeatedQueryOK creates a ABitOfEverythingServiceGetRepeatedQueryOK with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryOK() *ABitOfEverythingServiceGetRepeatedQueryOK {
-	return &ABitOfEverythingServiceGetRepeatedQueryOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,63 +37,68 @@ type ABitOfEverythingServiceGetRepeatedQueryOK struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query o k response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service get repeated query o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service get repeated query o k response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service get repeated query o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service get repeated query o k response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service get repeated query o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service get repeated query o k response has a 5xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service get repeated query o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service get repeated query o k response a status code equal to that given
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query o k response
 }
 
-// Code gets the status code for the a bit of everything service get repeated query o k response
-func (o *ABitOfEverythingServiceGetRepeatedQueryOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceGetRepeatedQueryOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryOK) GetPayload() *models.ExamplepbABitOfEverythingRepeated {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceGetRepeatedQueryOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbABitOfEverythingRepeated)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceGetRepeatedQueryOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceGetRepeatedQueryForbidden creates a ABitOfEverythingServiceGetRepeatedQueryForbidden with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryForbidden() *ABitOfEverythingServiceGetRepeatedQueryForbidden {
-	return &ABitOfEverythingServiceGetRepeatedQueryForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -150,61 +112,71 @@ type ABitOfEverythingServiceGetRepeatedQueryForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service get repeated query forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service get repeated query forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service get repeated query forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service get repeated query forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service get repeated query forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service get repeated query forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service get repeated query forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service get repeated query forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service get repeated query forbidden response
+func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query forbidden response
+}
+
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceGetRepeatedQueryNotFound creates a ABitOfEverythingServiceGetRepeatedQueryNotFound with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryNotFound() *ABitOfEverythingServiceGetRepeatedQueryNotFound {
-	return &ABitOfEverythingServiceGetRepeatedQueryNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -218,61 +190,71 @@ type ABitOfEverythingServiceGetRepeatedQueryNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query not found response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service get repeated query not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service get repeated query not found response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service get repeated query not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service get repeated query not found response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service get repeated query not found response has a 5xx status code
-func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service get repeated query not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service get repeated query not found response a status code equal to that given
-func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service get repeated query not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service get repeated query not found response
+func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query not found response
+}
+
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceGetRepeatedQueryIMATeapot creates a ABitOfEverythingServiceGetRepeatedQueryIMATeapot with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryIMATeapot() *ABitOfEverythingServiceGetRepeatedQueryIMATeapot {
-	return &ABitOfEverythingServiceGetRepeatedQueryIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -286,61 +268,71 @@ type ABitOfEverythingServiceGetRepeatedQueryIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service get repeated query i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service get repeated query i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service get repeated query i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service get repeated query i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service get repeated query i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service get repeated query i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service get repeated query i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service get repeated query i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service get repeated query i m a teapot response
+func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceGetRepeatedQueryInternalServerError creates a ABitOfEverythingServiceGetRepeatedQueryInternalServerError with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryInternalServerError() *ABitOfEverythingServiceGetRepeatedQueryInternalServerError {
-	return &ABitOfEverythingServiceGetRepeatedQueryInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -354,65 +346,71 @@ type ABitOfEverythingServiceGetRepeatedQueryInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service get repeated query internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service get repeated query internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service get repeated query internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service get repeated query internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service get repeated query internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service get repeated query internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service get repeated query internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service get repeated query internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query internal server error response
 }
 
-// Code gets the status code for the a bit of everything service get repeated query internal server error response
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] aBitOfEverythingServiceGetRepeatedQueryInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceGetRepeatedQueryInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceGetRepeatedQueryDefault creates a ABitOfEverythingServiceGetRepeatedQueryDefault with default headers values
 func NewABitOfEverythingServiceGetRepeatedQueryDefault(code int) *ABitOfEverythingServiceGetRepeatedQueryDefault {
-	return &ABitOfEverythingServiceGetRepeatedQueryDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -428,56 +426,59 @@ type ABitOfEverythingServiceGetRepeatedQueryDefault struct {
 
 // IsSuccess returns true when this a bit of everything service get repeated query default response has a 2xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service get repeated query default response has a 3xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service get repeated query default response has a 4xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service get repeated query default response has a 5xx status code
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service get repeated query default response a status code equal to that given
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service get repeated query default response
 }
 
-// Code gets the status code for the a bit of everything service get repeated query default response
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] ABitOfEverythingService_GetRepeatedQuery default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}][%d] ABitOfEverythingService_GetRepeatedQuery default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceGetRepeatedQueryDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -47,30 +47,34 @@ var (
 )
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) Enum() *RepeatedResponseBodyOut_Response_ResponseType {
-	p := new(RepeatedResponseBodyOut_Response_ResponseType)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (RepeatedResponseBodyOut_Response_ResponseType) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (RepeatedResponseBodyOut_Response_ResponseType) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_response_body_service_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut_Response_ResponseType.Descriptor instead.
 func (RepeatedResponseBodyOut_Response_ResponseType) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{2, 0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type ResponseBodyIn struct {
@@ -81,42 +85,21 @@ type ResponseBodyIn struct {
 	Data string `protobuf:"bytes,1,opt,name=data,proto3" json:"data,omitempty"`
 }
 
-func (x *ResponseBodyIn) Reset() {
-	*x = ResponseBodyIn{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyIn) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyIn) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyIn) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyIn) ProtoMessage() {}
+func (*ResponseBodyIn) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyIn) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyIn.ProtoReflect.Descriptor instead.
-func (*ResponseBodyIn) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{0}
-}
+func (*ResponseBodyIn) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *ResponseBodyIn) GetData() string {
-	if x != nil {
-		return x.Data
-	}
-	return ""
-}
+func (x *ResponseBodyIn) GetData() string { _ = "STUB: not implemented"; return "" }
 
 type ResponseBodyOut struct {
 	state         protoimpl.MessageState
@@ -126,40 +109,22 @@ type ResponseBodyOut struct {
 	Response *ResponseBodyOut_Response `protobuf:"bytes,2,opt,name=response,proto3" json:"response,omitempty"`
 }
 
-func (x *ResponseBodyOut) Reset() {
-	*x = ResponseBodyOut{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyOut) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyOut) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyOut) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyOut) ProtoMessage() {}
+func (*ResponseBodyOut) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyOut) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyOut.ProtoReflect.Descriptor instead.
-func (*ResponseBodyOut) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{1}
-}
+func (*ResponseBodyOut) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *ResponseBodyOut) GetResponse() *ResponseBodyOut_Response {
-	if x != nil {
-		return x.Response
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -171,40 +136,25 @@ type RepeatedResponseBodyOut struct {
 	Response []*RepeatedResponseBodyOut_Response `protobuf:"bytes,2,rep,name=response,proto3" json:"response,omitempty"`
 }
 
-func (x *RepeatedResponseBodyOut) Reset() {
-	*x = RepeatedResponseBodyOut{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *RepeatedResponseBodyOut) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *RepeatedResponseBodyOut) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *RepeatedResponseBodyOut) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*RepeatedResponseBodyOut) ProtoMessage() {}
+func (*RepeatedResponseBodyOut) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *RepeatedResponseBodyOut) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut.ProtoReflect.Descriptor instead.
 func (*RepeatedResponseBodyOut) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *RepeatedResponseBodyOut) GetResponse() []*RepeatedResponseBodyOut_Response {
-	if x != nil {
-		return x.Response
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -216,42 +166,24 @@ type RepeatedResponseStrings struct {
 	Values []string `protobuf:"bytes,1,rep,name=values,proto3" json:"values,omitempty"`
 }
 
-func (x *RepeatedResponseStrings) Reset() {
-	*x = RepeatedResponseStrings{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *RepeatedResponseStrings) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *RepeatedResponseStrings) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *RepeatedResponseStrings) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*RepeatedResponseStrings) ProtoMessage() {}
+func (*RepeatedResponseStrings) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *RepeatedResponseStrings) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use RepeatedResponseStrings.ProtoReflect.Descriptor instead.
 func (*RepeatedResponseStrings) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *RepeatedResponseStrings) GetValues() []string {
-	if x != nil {
-		return x.Values
-	}
-	return nil
-}
+func (x *RepeatedResponseStrings) GetValues() []string { _ = "STUB: not implemented"; return nil }
 
 type ResponseBodyValue struct {
 	state         protoimpl.MessageState
@@ -261,42 +193,21 @@ type ResponseBodyValue struct {
 	ResponseBodyValue string `protobuf:"bytes,1,opt,name=response_body_value,json=responseBodyValue,proto3" json:"response_body_value,omitempty"`
 }
 
-func (x *ResponseBodyValue) Reset() {
-	*x = ResponseBodyValue{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyValue) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyValue) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyValue) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyValue) ProtoMessage() {}
+func (*ResponseBodyValue) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyValue) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyValue.ProtoReflect.Descriptor instead.
-func (*ResponseBodyValue) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{4}
-}
+func (*ResponseBodyValue) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *ResponseBodyValue) GetResponseBodyValue() string {
-	if x != nil {
-		return x.ResponseBodyValue
-	}
-	return ""
-}
+func (x *ResponseBodyValue) GetResponseBodyValue() string { _ = "STUB: not implemented"; return "" }
 
 type ResponseBodyOut_Response struct {
 	state         protoimpl.MessageState
@@ -306,42 +217,24 @@ type ResponseBodyOut_Response struct {
 	Data string `protobuf:"bytes,1,opt,name=data,proto3" json:"data,omitempty"`
 }
 
-func (x *ResponseBodyOut_Response) Reset() {
-	*x = ResponseBodyOut_Response{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyOut_Response) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyOut_Response) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyOut_Response) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyOut_Response) ProtoMessage() {}
+func (*ResponseBodyOut_Response) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyOut_Response) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyOut_Response.ProtoReflect.Descriptor instead.
 func (*ResponseBodyOut_Response) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{1, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *ResponseBodyOut_Response) GetData() string {
-	if x != nil {
-		return x.Data
-	}
-	return ""
-}
+func (x *ResponseBodyOut_Response) GetData() string { _ = "STUB: not implemented"; return "" }
 
 type RepeatedResponseBodyOut_Response struct {
 	state         protoimpl.MessageState
@@ -352,48 +245,28 @@ type RepeatedResponseBodyOut_Response struct {
 	Type RepeatedResponseBodyOut_Response_ResponseType `protobuf:"varint,3,opt,name=type,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.RepeatedResponseBodyOut_Response_ResponseType" json:"type,omitempty"`
 }
 
-func (x *RepeatedResponseBodyOut_Response) Reset() {
-	*x = RepeatedResponseBodyOut_Response{}
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *RepeatedResponseBodyOut_Response) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *RepeatedResponseBodyOut_Response) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *RepeatedResponseBodyOut_Response) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*RepeatedResponseBodyOut_Response) ProtoMessage() {}
+func (*RepeatedResponseBodyOut_Response) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *RepeatedResponseBodyOut_Response) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut_Response.ProtoReflect.Descriptor instead.
 func (*RepeatedResponseBodyOut_Response) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP(), []int{2, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *RepeatedResponseBodyOut_Response) GetData() string {
-	if x != nil {
-		return x.Data
-	}
-	return ""
-}
+func (x *RepeatedResponseBodyOut_Response) GetData() string { _ = "STUB: not implemented"; return "" }
 
 func (x *RepeatedResponseBodyOut_Response) GetType() RepeatedResponseBodyOut_Response_ResponseType {
-	if x != nil {
-		return x.Type
-	}
-	return RepeatedResponseBodyOut_Response_UNKNOWN
+	_ = "STUB: not implemented"
+	return *new(RepeatedResponseBodyOut_Response_ResponseType)
 }
 
 var File_examples_internal_proto_examplepb_response_body_service_proto protoreflect.FileDescriptor
@@ -527,10 +400,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_response_body_service_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_response_body_service_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_response_body_service_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_response_body_service_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_response_body_service_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_response_body_service_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
@@ -568,26 +439,6 @@ var file_examples_internal_proto_examplepb_response_body_service_proto_depIdxs =
 
 func init() { file_examples_internal_proto_examplepb_response_body_service_proto_init() }
 func file_examples_internal_proto_examplepb_response_body_service_proto_init() {
-	if File_examples_internal_proto_examplepb_response_body_service_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_response_body_service_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   7,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_response_body_service_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_response_body_service_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_examplepb_response_body_service_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_examplepb_response_body_service_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_response_body_service_proto = out.File
-	file_examples_internal_proto_examplepb_response_body_service_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_response_body_service_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_response_body_service_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

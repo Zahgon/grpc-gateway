@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceOverwriteRequestContentTypeParams() *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithTimeout creates a new ABitOfEverythingServiceOverwriteRequestContentTypeParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithContext creates a new ABitOfEverythingServiceOverwriteRequestContentTypeParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithContext(ctx context.Context) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithHTTPClient creates a new ABitOfEverythingServiceOverwriteRequestContentTypeParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceOverwriteRequestContentTypeParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -72,76 +66,75 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WithDefaults() *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service overwrite request content type params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service overwrite request content type params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service overwrite request content type params
 }
 
-// WithContext adds the context to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WithContext(ctx context.Context) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service overwrite request content type params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the a bit of everything service overwrite request content type params
 }
 
-// WithBody adds the body to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WithBody(body *models.ExamplepbBody) *ABitOfEverythingServiceOverwriteRequestContentTypeParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the a bit of everything service overwrite request content type params
 }
 
-// SetBody adds the body to the a bit of everything service overwrite request content type params
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) SetBody(body *models.ExamplepbBody) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

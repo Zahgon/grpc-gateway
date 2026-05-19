@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
-	"strconv"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ExamplepbABitOfEverythingRepeated ABitOfEverythingRepeated is used to validate repeated path parameter functionality
@@ -69,105 +65,40 @@ type ExamplepbABitOfEverythingRepeated struct {
 
 // Validate validates this examplepb a bit of everything repeated
 func (m *ExamplepbABitOfEverythingRepeated) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validatePathRepeatedEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverythingRepeated) validatePathRepeatedEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.PathRepeatedEnumValue) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.PathRepeatedEnumValue); i++ {
-		if swag.IsZero(m.PathRepeatedEnumValue[i]) { // not required
-			continue
-		}
-
-		if m.PathRepeatedEnumValue[i] != nil {
-			if err := m.PathRepeatedEnumValue[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("pathRepeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("pathRepeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
+// not required
+
 // ContextValidate validate this examplepb a bit of everything repeated based on the context it is used
 func (m *ExamplepbABitOfEverythingRepeated) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidatePathRepeatedEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverythingRepeated) contextValidatePathRepeatedEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.PathRepeatedEnumValue); i++ {
-
-		if m.PathRepeatedEnumValue[i] != nil {
-
-			if swag.IsZero(m.PathRepeatedEnumValue[i]) { // not required
-				return nil
-			}
-
-			if err := m.PathRepeatedEnumValue[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("pathRepeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("pathRepeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 // MarshalBinary interface implementation
 func (m *ExamplepbABitOfEverythingRepeated) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbABitOfEverythingRepeated) UnmarshalBinary(b []byte) error {
-	var res ExamplepbABitOfEverythingRepeated
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

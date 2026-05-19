@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -29,42 +29,21 @@ type GetFilterRequest struct {
 	Name string `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 }
 
-func (x *GetFilterRequest) Reset() {
-	*x = GetFilterRequest{}
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GetFilterRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GetFilterRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GetFilterRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GetFilterRequest) ProtoMessage() {}
+func (*GetFilterRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GetFilterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GetFilterRequest.ProtoReflect.Descriptor instead.
-func (*GetFilterRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP(), []int{0}
-}
+func (*GetFilterRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *GetFilterRequest) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *GetFilterRequest) GetName() string { _ = "STUB: not implemented"; return "" }
 
 type GetFilterResponse struct {
 	state         protoimpl.MessageState
@@ -74,42 +53,21 @@ type GetFilterResponse struct {
 	Filter *Filter `protobuf:"bytes,1,opt,name=filter,proto3" json:"filter,omitempty"`
 }
 
-func (x *GetFilterResponse) Reset() {
-	*x = GetFilterResponse{}
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GetFilterResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GetFilterResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GetFilterResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GetFilterResponse) ProtoMessage() {}
+func (*GetFilterResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GetFilterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GetFilterResponse.ProtoReflect.Descriptor instead.
-func (*GetFilterResponse) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP(), []int{1}
-}
+func (*GetFilterResponse) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *GetFilterResponse) GetFilter() *Filter {
-	if x != nil {
-		return x.Filter
-	}
-	return nil
-}
+func (x *GetFilterResponse) GetFilter() *Filter { _ = "STUB: not implemented"; return nil }
 
 type Filter struct {
 	state         protoimpl.MessageState
@@ -124,63 +82,30 @@ type Filter struct {
 	FilterUnion isFilter_FilterUnion `protobuf_oneof:"filter_union"`
 }
 
-func (x *Filter) Reset() {
-	*x = Filter{}
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Filter) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Filter) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Filter) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Filter) ProtoMessage() {}
+func (*Filter) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Filter) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Filter.ProtoReflect.Descriptor instead.
-func (*Filter) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP(), []int{2}
-}
+func (*Filter) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Filter) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *Filter) GetName() string { _ = "STUB: not implemented"; return "" }
 
 func (m *Filter) GetFilterUnion() isFilter_FilterUnion {
-	if m != nil {
-		return m.FilterUnion
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isFilter_FilterUnion)
 }
 
-func (x *Filter) GetCondition() *FilterCondition {
-	if x, ok := x.GetFilterUnion().(*Filter_Condition); ok {
-		return x.Condition
-	}
-	return nil
-}
+func (x *Filter) GetCondition() *FilterCondition { _ = "STUB: not implemented"; return nil }
 
-func (x *Filter) GetGroup() *FilterGroup {
-	if x, ok := x.GetFilterUnion().(*Filter_Group); ok {
-		return x.Group
-	}
-	return nil
-}
+func (x *Filter) GetGroup() *FilterGroup { _ = "STUB: not implemented"; return nil }
 
 type isFilter_FilterUnion interface {
 	isFilter_FilterUnion()
@@ -194,9 +119,9 @@ type Filter_Group struct {
 	Group *FilterGroup `protobuf:"bytes,3,opt,name=group,proto3,oneof"`
 }
 
-func (*Filter_Condition) isFilter_FilterUnion() {}
+func (*Filter_Condition) isFilter_FilterUnion() { _ = "STUB: not implemented"; return }
 
-func (*Filter_Group) isFilter_FilterUnion() {}
+func (*Filter_Group) isFilter_FilterUnion() { _ = "STUB: not implemented"; return }
 
 type FilterCondition struct {
 	state         protoimpl.MessageState
@@ -207,49 +132,23 @@ type FilterCondition struct {
 	Value string `protobuf:"bytes,2,opt,name=value,proto3" json:"value,omitempty"`
 }
 
-func (x *FilterCondition) Reset() {
-	*x = FilterCondition{}
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *FilterCondition) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *FilterCondition) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *FilterCondition) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*FilterCondition) ProtoMessage() {}
+func (*FilterCondition) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *FilterCondition) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use FilterCondition.ProtoReflect.Descriptor instead.
-func (*FilterCondition) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP(), []int{3}
-}
+func (*FilterCondition) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *FilterCondition) GetField() string {
-	if x != nil {
-		return x.Field
-	}
-	return ""
-}
+func (x *FilterCondition) GetField() string { _ = "STUB: not implemented"; return "" }
 
-func (x *FilterCondition) GetValue() string {
-	if x != nil {
-		return x.Value
-	}
-	return ""
-}
+func (x *FilterCondition) GetValue() string { _ = "STUB: not implemented"; return "" }
 
 type FilterGroup struct {
 	state         protoimpl.MessageState
@@ -260,49 +159,23 @@ type FilterGroup struct {
 	Operator string    `protobuf:"bytes,2,opt,name=operator,proto3" json:"operator,omitempty"`
 }
 
-func (x *FilterGroup) Reset() {
-	*x = FilterGroup{}
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *FilterGroup) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *FilterGroup) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *FilterGroup) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*FilterGroup) ProtoMessage() {}
+func (*FilterGroup) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *FilterGroup) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use FilterGroup.ProtoReflect.Descriptor instead.
-func (*FilterGroup) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP(), []int{4}
-}
+func (*FilterGroup) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *FilterGroup) GetFilters() []*Filter {
-	if x != nil {
-		return x.Filters
-	}
-	return nil
-}
+func (x *FilterGroup) GetFilters() []*Filter { _ = "STUB: not implemented"; return nil }
 
-func (x *FilterGroup) GetOperator() string {
-	if x != nil {
-		return x.Operator
-	}
-	return ""
-}
+func (x *FilterGroup) GetOperator() string { _ = "STUB: not implemented"; return "" }
 
 var File_examples_internal_proto_examplepb_proto3_field_semantics_proto protoreflect.FileDescriptor
 
@@ -377,10 +250,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
@@ -407,29 +278,6 @@ var file_examples_internal_proto_examplepb_proto3_field_semantics_proto_depIdxs 
 
 func init() { file_examples_internal_proto_examplepb_proto3_field_semantics_proto_init() }
 func file_examples_internal_proto_examplepb_proto3_field_semantics_proto_init() {
-	if File_examples_internal_proto_examplepb_proto3_field_semantics_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes[2].OneofWrappers = []any{
-		(*Filter_Condition)(nil),
-		(*Filter_Group)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   5,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_proto3_field_semantics_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_proto3_field_semantics_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_proto3_field_semantics_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_proto3_field_semantics_proto = out.File
-	file_examples_internal_proto_examplepb_proto3_field_semantics_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_proto3_field_semantics_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_proto3_field_semantics_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

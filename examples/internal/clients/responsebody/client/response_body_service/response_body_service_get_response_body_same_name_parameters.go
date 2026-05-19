@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewResponseBodyServiceGetResponseBodySameNameParams() *ResponseBodyServiceGetResponseBodySameNameParams {
-	return &ResponseBodyServiceGetResponseBodySameNameParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodySameNameParamsWithTimeout creates a new ResponseBodyServiceGetResponseBodySameNameParams object
 // with the ability to set a timeout on a request.
 func NewResponseBodyServiceGetResponseBodySameNameParamsWithTimeout(timeout time.Duration) *ResponseBodyServiceGetResponseBodySameNameParams {
-	return &ResponseBodyServiceGetResponseBodySameNameParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodySameNameParamsWithContext creates a new ResponseBodyServiceGetResponseBodySameNameParams object
 // with the ability to set a context for a request.
 func NewResponseBodyServiceGetResponseBodySameNameParamsWithContext(ctx context.Context) *ResponseBodyServiceGetResponseBodySameNameParams {
-	return &ResponseBodyServiceGetResponseBodySameNameParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodySameNameParamsWithHTTPClient creates a new ResponseBodyServiceGetResponseBodySameNameParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewResponseBodyServiceGetResponseBodySameNameParamsWithHTTPClient(client *http.Client) *ResponseBodyServiceGetResponseBodySameNameParams {
-	return &ResponseBodyServiceGetResponseBodySameNameParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,77 @@ type ResponseBodyServiceGetResponseBodySameNameParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WithDefaults() *ResponseBodyServiceGetResponseBodySameNameParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the response body service get response body same name params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the response body service get response body same name params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WithTimeout(timeout time.Duration) *ResponseBodyServiceGetResponseBodySameNameParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the response body service get response body same name params
 }
 
-// WithContext adds the context to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WithContext(ctx context.Context) *ResponseBodyServiceGetResponseBodySameNameParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the response body service get response body same name params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WithHTTPClient(client *http.Client) *ResponseBodyServiceGetResponseBodySameNameParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithData adds the data to the response body service get response body same name params
 }
 
-// WithData adds the data to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WithData(data string) *ResponseBodyServiceGetResponseBodySameNameParams {
-	o.SetData(data)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetData adds the data to the response body service get response body same name params
 }
 
-// SetData adds the data to the response body service get response body same name params
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) SetData(data string) {
-	o.Data = data
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ResponseBodyServiceGetResponseBodySameNameParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param data
-	if err := r.SetPathParam("data", o.Data); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param data

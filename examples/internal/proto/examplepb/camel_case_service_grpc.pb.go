@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -40,27 +39,18 @@ type camel_CaseServiceClient struct {
 }
 
 func NewCamel_CaseServiceClient(cc grpc.ClientConnInterface) Camel_CaseServiceClient {
-	return &camel_CaseServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(Camel_CaseServiceClient)
 }
 
 func (c *camel_CaseServiceClient) GetStatus(ctx context.Context, in *GetStatusRequest, opts ...grpc.CallOption) (*GetStatusResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(GetStatusResponse)
-	err := c.cc.Invoke(ctx, Camel_CaseService_GetStatus_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *camel_CaseServiceClient) Post_Book(ctx context.Context, in *PostBookRequest, opts ...grpc.CallOption) (*PostBookResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(PostBookResponse)
-	err := c.cc.Invoke(ctx, Camel_CaseService_Post_Book_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Camel_CaseServiceServer is the server API for Camel_CaseService service.
@@ -83,65 +73,45 @@ type Camel_CaseServiceServer interface {
 type UnimplementedCamel_CaseServiceServer struct{}
 
 func (UnimplementedCamel_CaseServiceServer) GetStatus(context.Context, *GetStatusRequest) (*GetStatusResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetStatus not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedCamel_CaseServiceServer) Post_Book(context.Context, *PostBookRequest) (*PostBookResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Post_Book not implemented")
-}
-func (UnimplementedCamel_CaseServiceServer) testEmbeddedByValue() {}
 
-// UnsafeCamel_CaseServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to Camel_CaseServiceServer will
-// result in compilation errors.
+func (UnimplementedCamel_CaseServiceServer) Post_Book(context.Context, *PostBookRequest) (*PostBookResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedCamel_CaseServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeCamel_CaseServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to Camel_CaseServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeCamel_CaseServiceServer interface {
 	mustEmbedUnimplementedCamel_CaseServiceServer()
 }
 
 func RegisterCamel_CaseServiceServer(s grpc.ServiceRegistrar, srv Camel_CaseServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedCamel_CaseServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&Camel_CaseService_ServiceDesc, srv)
+	return
 }
 
 func _Camel_CaseService_GetStatus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetStatusRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(Camel_CaseServiceServer).GetStatus(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: Camel_CaseService_GetStatus_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(Camel_CaseServiceServer).GetStatus(ctx, req.(*GetStatusRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _Camel_CaseService_Post_Book_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PostBookRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(Camel_CaseServiceServer).Post_Book(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: Camel_CaseService_Post_Book_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(Camel_CaseServiceServer).Post_Book(ctx, req.(*PostBookRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Camel_CaseService_ServiceDesc is the grpc.ServiceDesc for Camel_CaseService service.

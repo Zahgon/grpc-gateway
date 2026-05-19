@@ -8,13 +8,12 @@ package examplepb
 
 import (
 	context "context"
+
 	oneofenum "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/oneofenum"
 	pathenum "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/pathenum"
 	sub "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub"
 	sub2 "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub2"
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
@@ -117,327 +116,168 @@ type aBitOfEverythingServiceClient struct {
 }
 
 func NewABitOfEverythingServiceClient(cc grpc.ClientConnInterface) ABitOfEverythingServiceClient {
-	return &aBitOfEverythingServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(ABitOfEverythingServiceClient)
 }
 
 func (c *aBitOfEverythingServiceClient) Create(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Create_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CreateBody(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CreateBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CreateBook(ctx context.Context, in *CreateBookRequest, opts ...grpc.CallOption) (*Book, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(Book)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CreateBook_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) UpdateBook(ctx context.Context, in *UpdateBookRequest, opts ...grpc.CallOption) (*Book, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(Book)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_UpdateBook_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Lookup(ctx context.Context, in *sub2.IdMessage, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Lookup_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Custom(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Custom_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) DoubleColon(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_DoubleColon_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Update(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Update_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) UpdateV2(ctx context.Context, in *UpdateV2Request, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_UpdateV2_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Delete(ctx context.Context, in *sub2.IdMessage, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Delete_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) GetQuery(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_GetQuery_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) GetRepeatedQuery(ctx context.Context, in *ABitOfEverythingRepeated, opts ...grpc.CallOption) (*ABitOfEverythingRepeated, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverythingRepeated)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_GetRepeatedQuery_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Echo(ctx context.Context, in *sub.StringMessage, opts ...grpc.CallOption) (*sub.StringMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(sub.StringMessage)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) DeepPathEcho(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_DeepPathEcho_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) NoBindings(ctx context.Context, in *durationpb.Duration, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_NoBindings_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Timeout(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Timeout_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) ErrorWithDetails(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_ErrorWithDetails_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) GetMessageWithBody(ctx context.Context, in *MessageWithBody, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_GetMessageWithBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) PostWithEmptyBody(ctx context.Context, in *Body, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_PostWithEmptyBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckGetQueryParams(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckGetQueryParams_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckNestedEnumGetQueryParams(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckNestedEnumGetQueryParams_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckPostQueryParams(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckPostQueryParams_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) OverwriteRequestContentType(ctx context.Context, in *Body, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_OverwriteRequestContentType_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) OverwriteResponseContentType(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*wrapperspb.StringValue, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(wrapperspb.StringValue)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_OverwriteResponseContentType_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckExternalPathEnum(ctx context.Context, in *pathenum.MessageWithPathEnum, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckExternalPathEnum_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckExternalNestedPathEnum(ctx context.Context, in *pathenum.MessageWithNestedPathEnum, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckExternalNestedPathEnum_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CheckStatus(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*CheckStatusResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(CheckStatusResponse)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CheckStatus_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) Exists(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_Exists_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) CustomOptionsRequest(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_CustomOptionsRequest_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) TraceRequest(ctx context.Context, in *ABitOfEverything, opts ...grpc.CallOption) (*ABitOfEverything, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ABitOfEverything)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_TraceRequest_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) PostOneofEnum(ctx context.Context, in *oneofenum.OneofEnumMessage, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_PostOneofEnum_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *aBitOfEverythingServiceClient) PostRequiredMessageType(ctx context.Context, in *RequiredMessageTypeRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ABitOfEverythingService_PostRequiredMessageType_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceServer is the server API for ABitOfEverythingService service.
@@ -500,695 +340,345 @@ type ABitOfEverythingServiceServer interface {
 type UnimplementedABitOfEverythingServiceServer struct{}
 
 func (UnimplementedABitOfEverythingServiceServer) Create(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Create not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedABitOfEverythingServiceServer) CreateBody(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateBody not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CreateBook(context.Context, *CreateBookRequest) (*Book, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateBook not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) UpdateBook(context.Context, *UpdateBookRequest) (*Book, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method UpdateBook not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Lookup(context.Context, *sub2.IdMessage) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Lookup not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Custom(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Custom not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) DoubleColon(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method DoubleColon not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Update(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Update not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) UpdateV2(context.Context, *UpdateV2Request) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method UpdateV2 not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Delete(context.Context, *sub2.IdMessage) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) GetQuery(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetQuery not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) GetRepeatedQuery(context.Context, *ABitOfEverythingRepeated) (*ABitOfEverythingRepeated, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetRepeatedQuery not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Echo(context.Context, *sub.StringMessage) (*sub.StringMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) DeepPathEcho(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method DeepPathEcho not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) NoBindings(context.Context, *durationpb.Duration) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method NoBindings not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Timeout(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Timeout not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) ErrorWithDetails(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method ErrorWithDetails not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) GetMessageWithBody(context.Context, *MessageWithBody) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetMessageWithBody not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) PostWithEmptyBody(context.Context, *Body) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PostWithEmptyBody not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckGetQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckGetQueryParams not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckNestedEnumGetQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckNestedEnumGetQueryParams not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckPostQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckPostQueryParams not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) OverwriteRequestContentType(context.Context, *Body) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OverwriteRequestContentType not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) OverwriteResponseContentType(context.Context, *emptypb.Empty) (*wrapperspb.StringValue, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method OverwriteResponseContentType not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckExternalPathEnum(context.Context, *pathenum.MessageWithPathEnum) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckExternalPathEnum not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckExternalNestedPathEnum(context.Context, *pathenum.MessageWithNestedPathEnum) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckExternalNestedPathEnum not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CheckStatus(context.Context, *emptypb.Empty) (*CheckStatusResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CheckStatus not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) Exists(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Exists not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) CustomOptionsRequest(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CustomOptionsRequest not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) TraceRequest(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method TraceRequest not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) PostOneofEnum(context.Context, *oneofenum.OneofEnumMessage) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PostOneofEnum not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) PostRequiredMessageType(context.Context, *RequiredMessageTypeRequest) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PostRequiredMessageType not implemented")
-}
-func (UnimplementedABitOfEverythingServiceServer) testEmbeddedByValue() {}
 
-// UnsafeABitOfEverythingServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ABitOfEverythingServiceServer will
-// result in compilation errors.
+func (UnimplementedABitOfEverythingServiceServer) CreateBody(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CreateBook(context.Context, *CreateBookRequest) (*Book, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) UpdateBook(context.Context, *UpdateBookRequest) (*Book, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Lookup(context.Context, *sub2.IdMessage) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Custom(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) DoubleColon(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Update(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) UpdateV2(context.Context, *UpdateV2Request) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Delete(context.Context, *sub2.IdMessage) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) GetQuery(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) GetRepeatedQuery(context.Context, *ABitOfEverythingRepeated) (*ABitOfEverythingRepeated, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Echo(context.Context, *sub.StringMessage) (*sub.StringMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) DeepPathEcho(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) NoBindings(context.Context, *durationpb.Duration) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Timeout(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) ErrorWithDetails(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) GetMessageWithBody(context.Context, *MessageWithBody) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) PostWithEmptyBody(context.Context, *Body) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckGetQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckNestedEnumGetQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckPostQueryParams(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) OverwriteRequestContentType(context.Context, *Body) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) OverwriteResponseContentType(context.Context, *emptypb.Empty) (*wrapperspb.StringValue, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckExternalPathEnum(context.Context, *pathenum.MessageWithPathEnum) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckExternalNestedPathEnum(context.Context, *pathenum.MessageWithNestedPathEnum) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CheckStatus(context.Context, *emptypb.Empty) (*CheckStatusResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) Exists(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) CustomOptionsRequest(context.Context, *ABitOfEverything) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) TraceRequest(context.Context, *ABitOfEverything) (*ABitOfEverything, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) PostOneofEnum(context.Context, *oneofenum.OneofEnumMessage) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) PostRequiredMessageType(context.Context, *RequiredMessageTypeRequest) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedABitOfEverythingServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeABitOfEverythingServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to ABitOfEverythingServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeABitOfEverythingServiceServer interface {
 	mustEmbedUnimplementedABitOfEverythingServiceServer()
 }
 
 func RegisterABitOfEverythingServiceServer(s grpc.ServiceRegistrar, srv ABitOfEverythingServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedABitOfEverythingServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&ABitOfEverythingService_ServiceDesc, srv)
+	return
 }
 
 func _ABitOfEverythingService_Create_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Create(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Create_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Create(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CreateBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CreateBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CreateBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CreateBody(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CreateBook_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(CreateBookRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CreateBook(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CreateBook_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CreateBook(ctx, req.(*CreateBookRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_UpdateBook_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UpdateBookRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).UpdateBook(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_UpdateBook_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).UpdateBook(ctx, req.(*UpdateBookRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Lookup_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(sub2.IdMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Lookup(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Lookup_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Lookup(ctx, req.(*sub2.IdMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Custom_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Custom(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Custom_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Custom(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_DoubleColon_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).DoubleColon(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_DoubleColon_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).DoubleColon(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Update_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Update(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Update_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Update(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_UpdateV2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UpdateV2Request)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).UpdateV2(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_UpdateV2_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).UpdateV2(ctx, req.(*UpdateV2Request))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Delete_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(sub2.IdMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Delete(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Delete_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Delete(ctx, req.(*sub2.IdMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_GetQuery_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).GetQuery(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_GetQuery_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).GetQuery(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_GetRepeatedQuery_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverythingRepeated)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).GetRepeatedQuery(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_GetRepeatedQuery_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).GetRepeatedQuery(ctx, req.(*ABitOfEverythingRepeated))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(sub.StringMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Echo(ctx, req.(*sub.StringMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_DeepPathEcho_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).DeepPathEcho(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_DeepPathEcho_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).DeepPathEcho(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_NoBindings_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(durationpb.Duration)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).NoBindings(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_NoBindings_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).NoBindings(ctx, req.(*durationpb.Duration))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Timeout_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Timeout(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Timeout_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Timeout(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_ErrorWithDetails_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).ErrorWithDetails(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_ErrorWithDetails_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).ErrorWithDetails(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_GetMessageWithBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(MessageWithBody)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).GetMessageWithBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_GetMessageWithBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).GetMessageWithBody(ctx, req.(*MessageWithBody))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_PostWithEmptyBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Body)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).PostWithEmptyBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_PostWithEmptyBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).PostWithEmptyBody(ctx, req.(*Body))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckGetQueryParams_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckGetQueryParams(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckGetQueryParams_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckGetQueryParams(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckNestedEnumGetQueryParams_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckNestedEnumGetQueryParams(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckNestedEnumGetQueryParams_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckNestedEnumGetQueryParams(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckPostQueryParams_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckPostQueryParams(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckPostQueryParams_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckPostQueryParams(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_OverwriteRequestContentType_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Body)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).OverwriteRequestContentType(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_OverwriteRequestContentType_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).OverwriteRequestContentType(ctx, req.(*Body))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_OverwriteResponseContentType_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).OverwriteResponseContentType(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_OverwriteResponseContentType_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).OverwriteResponseContentType(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckExternalPathEnum_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(pathenum.MessageWithPathEnum)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckExternalPathEnum(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckExternalPathEnum_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckExternalPathEnum(ctx, req.(*pathenum.MessageWithPathEnum))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckExternalNestedPathEnum_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(pathenum.MessageWithNestedPathEnum)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckExternalNestedPathEnum(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckExternalNestedPathEnum_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckExternalNestedPathEnum(ctx, req.(*pathenum.MessageWithNestedPathEnum))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CheckStatus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CheckStatus(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CheckStatus_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CheckStatus(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_Exists_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).Exists(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_Exists_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).Exists(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_CustomOptionsRequest_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).CustomOptionsRequest(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_CustomOptionsRequest_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).CustomOptionsRequest(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_TraceRequest_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ABitOfEverything)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).TraceRequest(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_TraceRequest_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).TraceRequest(ctx, req.(*ABitOfEverything))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_PostOneofEnum_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(oneofenum.OneofEnumMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).PostOneofEnum(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_PostOneofEnum_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).PostOneofEnum(ctx, req.(*oneofenum.OneofEnumMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ABitOfEverythingService_PostRequiredMessageType_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(RequiredMessageTypeRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ABitOfEverythingServiceServer).PostRequiredMessageType(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ABitOfEverythingService_PostRequiredMessageType_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ABitOfEverythingServiceServer).PostRequiredMessageType(ctx, req.(*RequiredMessageTypeRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingService_ServiceDesc is the grpc.ServiceDesc for ABitOfEverythingService service.
@@ -1349,17 +839,13 @@ type camelCaseServiceNameClient struct {
 }
 
 func NewCamelCaseServiceNameClient(cc grpc.ClientConnInterface) CamelCaseServiceNameClient {
-	return &camelCaseServiceNameClient{cc}
+	_ = "STUB: not implemented"
+	return *new(CamelCaseServiceNameClient)
 }
 
 func (c *camelCaseServiceNameClient) Empty(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, CamelCaseServiceName_Empty_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CamelCaseServiceNameServer is the server API for CamelCaseServiceName service.
@@ -1379,44 +865,35 @@ type CamelCaseServiceNameServer interface {
 type UnimplementedCamelCaseServiceNameServer struct{}
 
 func (UnimplementedCamelCaseServiceNameServer) Empty(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Empty not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedCamelCaseServiceNameServer) testEmbeddedByValue() {}
 
-// UnsafeCamelCaseServiceNameServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to CamelCaseServiceNameServer will
-// result in compilation errors.
+func (UnimplementedCamelCaseServiceNameServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeCamelCaseServiceNameServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to CamelCaseServiceNameServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeCamelCaseServiceNameServer interface {
 	mustEmbedUnimplementedCamelCaseServiceNameServer()
 }
 
 func RegisterCamelCaseServiceNameServer(s grpc.ServiceRegistrar, srv CamelCaseServiceNameServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedCamelCaseServiceNameServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&CamelCaseServiceName_ServiceDesc, srv)
+	return
 }
 
 func _CamelCaseServiceName_Empty_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(CamelCaseServiceNameServer).Empty(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: CamelCaseServiceName_Empty_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(CamelCaseServiceNameServer).Empty(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CamelCaseServiceName_ServiceDesc is the grpc.ServiceDesc for CamelCaseServiceName service.
@@ -1451,17 +928,13 @@ type anotherServiceWithNoBindingsClient struct {
 }
 
 func NewAnotherServiceWithNoBindingsClient(cc grpc.ClientConnInterface) AnotherServiceWithNoBindingsClient {
-	return &anotherServiceWithNoBindingsClient{cc}
+	_ = "STUB: not implemented"
+	return *new(AnotherServiceWithNoBindingsClient)
 }
 
 func (c *anotherServiceWithNoBindingsClient) NoBindings(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, AnotherServiceWithNoBindings_NoBindings_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // AnotherServiceWithNoBindingsServer is the server API for AnotherServiceWithNoBindings service.
@@ -1479,44 +952,35 @@ type AnotherServiceWithNoBindingsServer interface {
 type UnimplementedAnotherServiceWithNoBindingsServer struct{}
 
 func (UnimplementedAnotherServiceWithNoBindingsServer) NoBindings(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method NoBindings not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedAnotherServiceWithNoBindingsServer) testEmbeddedByValue() {}
 
-// UnsafeAnotherServiceWithNoBindingsServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to AnotherServiceWithNoBindingsServer will
-// result in compilation errors.
+func (UnimplementedAnotherServiceWithNoBindingsServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeAnotherServiceWithNoBindingsServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to AnotherServiceWithNoBindingsServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeAnotherServiceWithNoBindingsServer interface {
 	mustEmbedUnimplementedAnotherServiceWithNoBindingsServer()
 }
 
 func RegisterAnotherServiceWithNoBindingsServer(s grpc.ServiceRegistrar, srv AnotherServiceWithNoBindingsServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedAnotherServiceWithNoBindingsServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&AnotherServiceWithNoBindings_ServiceDesc, srv)
+	return
 }
 
 func _AnotherServiceWithNoBindings_NoBindings_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(AnotherServiceWithNoBindingsServer).NoBindings(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: AnotherServiceWithNoBindings_NoBindings_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AnotherServiceWithNoBindingsServer).NoBindings(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // AnotherServiceWithNoBindings_ServiceDesc is the grpc.ServiceDesc for AnotherServiceWithNoBindings service.
@@ -1551,17 +1015,13 @@ type snakeEnumServiceClient struct {
 }
 
 func NewSnakeEnumServiceClient(cc grpc.ClientConnInterface) SnakeEnumServiceClient {
-	return &snakeEnumServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(SnakeEnumServiceClient)
 }
 
 func (c *snakeEnumServiceClient) SnakeEnum(ctx context.Context, in *SnakeEnumRequest, opts ...grpc.CallOption) (*SnakeEnumResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(SnakeEnumResponse)
-	err := c.cc.Invoke(ctx, SnakeEnumService_SnakeEnum_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SnakeEnumServiceServer is the server API for SnakeEnumService service.
@@ -1579,44 +1039,35 @@ type SnakeEnumServiceServer interface {
 type UnimplementedSnakeEnumServiceServer struct{}
 
 func (UnimplementedSnakeEnumServiceServer) SnakeEnum(context.Context, *SnakeEnumRequest) (*SnakeEnumResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SnakeEnum not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedSnakeEnumServiceServer) testEmbeddedByValue() {}
 
-// UnsafeSnakeEnumServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to SnakeEnumServiceServer will
-// result in compilation errors.
+func (UnimplementedSnakeEnumServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeSnakeEnumServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to SnakeEnumServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeSnakeEnumServiceServer interface {
 	mustEmbedUnimplementedSnakeEnumServiceServer()
 }
 
 func RegisterSnakeEnumServiceServer(s grpc.ServiceRegistrar, srv SnakeEnumServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedSnakeEnumServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&SnakeEnumService_ServiceDesc, srv)
+	return
 }
 
 func _SnakeEnumService_SnakeEnum_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SnakeEnumRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(SnakeEnumServiceServer).SnakeEnum(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: SnakeEnumService_SnakeEnum_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(SnakeEnumServiceServer).SnakeEnum(ctx, req.(*SnakeEnumRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SnakeEnumService_ServiceDesc is the grpc.ServiceDesc for SnakeEnumService service.

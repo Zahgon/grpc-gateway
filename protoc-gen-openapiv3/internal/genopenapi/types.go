@@ -2,10 +2,6 @@ package genopenapi
 
 import (
 	"bytes"
-	"encoding/json"
-	"maps"
-	"slices"
-	"sort"
 )
 
 // Document is the root OpenAPI 3.1.0 object.
@@ -23,19 +19,7 @@ type Document struct {
 }
 
 // NewDocument returns a Document populated with the required fields.
-func NewDocument(title, version string) *Document {
-	return &Document{
-		OpenAPI: "3.1.0",
-		Info: &Info{
-			Title:   title,
-			Version: version,
-		},
-		Paths: NewPaths(),
-		Components: &Components{
-			Schemas: make(map[string]*SchemaOrRef),
-		},
-	}
-}
+func NewDocument(title, version string) *Document { _ = "STUB: not implemented"; return nil }
 
 // Info is metadata about the API.
 //
@@ -98,61 +82,19 @@ type Paths struct {
 }
 
 // NewPaths constructs an empty Paths.
-func NewPaths() *Paths {
-	return &Paths{items: make(map[string]*PathItem)}
-}
+func NewPaths() *Paths { _ = "STUB: not implemented"; return nil }
 
 // Set inserts or replaces a PathItem at the given URL template.
-func (p *Paths) Set(path string, item *PathItem) {
-	if _, ok := p.items[path]; !ok {
-		p.order = append(p.order, path)
-	}
-	p.items[path] = item
-}
+func (p *Paths) Set(path string, item *PathItem) { _ = "STUB: not implemented"; return }
 
 // Get retrieves a PathItem. The boolean is false if no item exists at path.
-func (p *Paths) Get(path string) (*PathItem, bool) {
-	if p == nil {
-		return nil, false
-	}
-	item, ok := p.items[path]
-	return item, ok
-}
+func (p *Paths) Get(path string) (*PathItem, bool) { _ = "STUB: not implemented"; return nil, false }
 
 // Len reports how many paths are stored.
-func (p *Paths) Len() int {
-	if p == nil {
-		return 0
-	}
-	return len(p.items)
-}
+func (p *Paths) Len() int { _ = "STUB: not implemented"; return 0 }
 
 // MarshalJSON serializes paths in insertion order.
-func (p *Paths) MarshalJSON() ([]byte, error) {
-	if p == nil || len(p.items) == 0 {
-		return []byte("{}"), nil
-	}
-	var buf bytes.Buffer
-	buf.WriteByte('{')
-	for i, path := range p.order {
-		if i > 0 {
-			buf.WriteByte(',')
-		}
-		key, err := json.Marshal(path)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(key)
-		buf.WriteByte(':')
-		val, err := json.Marshal(p.items[path])
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(val)
-	}
-	buf.WriteByte('}')
-	return buf.Bytes(), nil
-}
+func (p *Paths) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // PathItem describes the operations available on a single URL template.
 //
@@ -173,26 +115,7 @@ type PathItem struct {
 }
 
 // SetOperation places op under the slot for the given HTTP method.
-func (p *PathItem) SetOperation(method string, op *Operation) {
-	switch method {
-	case "GET":
-		p.Get = op
-	case "PUT":
-		p.Put = op
-	case "POST":
-		p.Post = op
-	case "DELETE":
-		p.Delete = op
-	case "OPTIONS":
-		p.Options = op
-	case "HEAD":
-		p.Head = op
-	case "PATCH":
-		p.Patch = op
-	case "TRACE":
-		p.Trace = op
-	}
-}
+func (p *PathItem) SetOperation(method string, op *Operation) { _ = "STUB: not implemented"; return }
 
 // Operation describes a single API operation on a path.
 //
@@ -234,15 +157,7 @@ type ParameterRef struct {
 }
 
 // MarshalJSON dispatches to either {"$ref": ...} or the inline value.
-func (p *ParameterRef) MarshalJSON() ([]byte, error) {
-	if p == nil {
-		return []byte("null"), nil
-	}
-	if p.Ref != "" {
-		return json.Marshal(map[string]string{"$ref": p.Ref})
-	}
-	return json.Marshal(p.Value)
-}
+func (p *ParameterRef) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // RequestBody describes a single request body.
 //
@@ -262,15 +177,7 @@ type RequestBodyRef struct {
 }
 
 // MarshalJSON dispatches between $ref and inline value.
-func (r *RequestBodyRef) MarshalJSON() ([]byte, error) {
-	if r == nil {
-		return []byte("null"), nil
-	}
-	if r.Ref != "" {
-		return json.Marshal(map[string]string{"$ref": r.Ref})
-	}
-	return json.Marshal(r.Value)
-}
+func (r *RequestBodyRef) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // MediaType describes one media-type entry under content.
 //
@@ -290,52 +197,10 @@ type Responses struct {
 }
 
 // NewResponses constructs an empty Responses container.
-func NewResponses() *Responses {
-	return &Responses{Codes: make(map[string]*ResponseRef)}
-}
+func NewResponses() *Responses { _ = "STUB: not implemented"; return nil }
 
 // MarshalJSON serializes responses with default first, then sorted codes.
-func (r *Responses) MarshalJSON() ([]byte, error) {
-	if r == nil {
-		return []byte("{}"), nil
-	}
-	var buf bytes.Buffer
-	buf.WriteByte('{')
-	first := true
-	if r.Default != nil {
-		buf.WriteString(`"default":`)
-		data, err := json.Marshal(r.Default)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(data)
-		first = false
-	}
-	codes := make([]string, 0, len(r.Codes))
-	for c := range r.Codes {
-		codes = append(codes, c)
-	}
-	sort.Strings(codes)
-	for _, c := range codes {
-		if !first {
-			buf.WriteByte(',')
-		}
-		first = false
-		key, err := json.Marshal(c)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(key)
-		buf.WriteByte(':')
-		data, err := json.Marshal(r.Codes[c])
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(data)
-	}
-	buf.WriteByte('}')
-	return buf.Bytes(), nil
-}
+func (r *Responses) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // Response describes one response from an operation.
 //
@@ -347,17 +212,12 @@ type Response struct {
 }
 
 // NewResponse constructs a Response with the required description set.
-func NewResponse(description string) *Response {
-	return &Response{Description: description}
-}
+func NewResponse(description string) *Response { _ = "STUB: not implemented"; return nil }
 
 // WithJSONSchema attaches a JSON content media type with the given schema.
 func (r *Response) WithJSONSchema(schema *SchemaOrRef) *Response {
-	if r.Content == nil {
-		r.Content = make(map[string]*MediaType)
-	}
-	r.Content["application/json"] = &MediaType{Schema: schema}
-	return r
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ResponseRef is either an inline Response or a reference.
@@ -369,15 +229,7 @@ type ResponseRef struct {
 }
 
 // MarshalJSON dispatches between $ref and inline value.
-func (r *ResponseRef) MarshalJSON() ([]byte, error) {
-	if r == nil {
-		return []byte("null"), nil
-	}
-	if r.Ref != "" {
-		return json.Marshal(map[string]string{"$ref": r.Ref})
-	}
-	return json.Marshal(r.Value)
-}
+func (r *ResponseRef) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // Header is a response header description (a Parameter without name/in).
 //
@@ -395,15 +247,7 @@ type Header struct {
 type SchemaType []string
 
 // MarshalJSON outputs a single string when len==1, an array otherwise.
-func (t SchemaType) MarshalJSON() ([]byte, error) {
-	if len(t) == 0 {
-		return []byte("null"), nil
-	}
-	if len(t) == 1 {
-		return json.Marshal(t[0])
-	}
-	return json.Marshal([]string(t))
-}
+func (t SchemaType) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // Schema is a JSON Schema 2020-12 object as used by OpenAPI 3.1.0.
 //
@@ -454,16 +298,8 @@ type AdditionalProperties struct {
 
 // MarshalJSON outputs either a boolean or a schema, never both.
 func (a *AdditionalProperties) MarshalJSON() ([]byte, error) {
-	if a == nil {
-		return []byte("null"), nil
-	}
-	if a.Schema != nil {
-		return json.Marshal(a.Schema)
-	}
-	if a.Bool != nil {
-		return json.Marshal(*a.Bool)
-	}
-	return []byte("null"), nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SchemaOrRef is either an inline Schema or a $ref. In 3.1.0 a $ref may
@@ -480,27 +316,10 @@ type SchemaOrRef struct {
 }
 
 // MarshalJSON outputs a $ref (with optional siblings) or the inline schema.
-func (s *SchemaOrRef) MarshalJSON() ([]byte, error) {
-	if s == nil {
-		return []byte("null"), nil
-	}
-	if s.Ref != "" {
-		out := map[string]string{"$ref": s.Ref}
-		if s.Summary != "" {
-			out["summary"] = s.Summary
-		}
-		if s.Description != "" {
-			out["description"] = s.Description
-		}
-		return json.Marshal(out)
-	}
-	return json.Marshal(s.Value)
-}
+func (s *SchemaOrRef) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // NewSchemaRef returns a SchemaOrRef pointing at #/components/schemas/<name>.
-func NewSchemaRef(name string) *SchemaOrRef {
-	return &SchemaOrRef{Ref: "#/components/schemas/" + name}
-}
+func NewSchemaRef(name string) *SchemaOrRef { _ = "STUB: not implemented"; return nil }
 
 // Components is the components/* section. Schemas is the only sub-map this
 // generator populates today.
@@ -512,28 +331,11 @@ type Components struct {
 }
 
 // Empty reports whether the components section has no content to emit.
-func (c *Components) Empty() bool {
-	return c == nil || (len(c.Schemas) == 0 && len(c.SecuritySchemes) == 0)
-}
+func (c *Components) Empty() bool { _ = "STUB: not implemented"; return false }
 
 // MarshalJSON emits components sub-maps with keys in lexicographic order so
 // the whole document is byte-stable across runs.
-func (c *Components) MarshalJSON() ([]byte, error) {
-	if c == nil {
-		return []byte("null"), nil
-	}
-	var buf bytes.Buffer
-	buf.WriteByte('{')
-	first := true
-	if err := writeSortedKeys(&buf, &first, "schemas", c.Schemas); err != nil {
-		return nil, err
-	}
-	if err := writeSortedKeys(&buf, &first, "securitySchemes", c.SecuritySchemes); err != nil {
-		return nil, err
-	}
-	buf.WriteByte('}')
-	return buf.Bytes(), nil
-}
+func (c *Components) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // writeSortedKeys emits a `"field":{...}` JSON object into buf with the
 // entries of m sorted by key. It writes a leading comma when *first is
@@ -541,33 +343,7 @@ func (c *Components) MarshalJSON() ([]byte, error) {
 // *first is unchanged — callers can chain calls without tracking emptiness
 // themselves.
 func writeSortedKeys[V any](buf *bytes.Buffer, first *bool, field string, m map[string]V) error {
-	if len(m) == 0 {
-		return nil
-	}
-	if !*first {
-		buf.WriteByte(',')
-	}
-	*first = false
-	buf.WriteByte('"')
-	buf.WriteString(field)
-	buf.WriteString(`":{`)
-	for i, k := range slices.Sorted(maps.Keys(m)) {
-		if i > 0 {
-			buf.WriteByte(',')
-		}
-		key, err := json.Marshal(k)
-		if err != nil {
-			return err
-		}
-		buf.Write(key)
-		buf.WriteByte(':')
-		data, err := json.Marshal(m[k])
-		if err != nil {
-			return err
-		}
-		buf.Write(data)
-	}
-	buf.WriteByte('}')
+	_ = "STUB: not implemented"
 	return nil
 }
 

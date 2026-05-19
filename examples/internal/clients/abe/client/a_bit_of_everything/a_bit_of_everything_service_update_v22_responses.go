@@ -4,17 +4,9 @@ package a_bit_of_everything
 
 import (
 	"context"
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-	"strconv"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
 )
@@ -26,52 +18,14 @@ type ABitOfEverythingServiceUpdateV22Reader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceUpdateV22Reader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceUpdateV22OK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceUpdateV22Forbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceUpdateV22NotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceUpdateV22IMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceUpdateV22InternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceUpdateV22Default(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceUpdateV22OK creates a ABitOfEverythingServiceUpdateV22OK with default headers values
 func NewABitOfEverythingServiceUpdateV22OK() *ABitOfEverythingServiceUpdateV22OK {
-	return &ABitOfEverythingServiceUpdateV22OK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -85,61 +39,62 @@ type ABitOfEverythingServiceUpdateV22OK struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 o k response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22OK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v22 o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v22 o k response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22OK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v22 o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v22 o k response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22OK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update v22 o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update v22 o k response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV22OK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v22 o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v22 o k response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV22OK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 o k response
 }
 
-// Code gets the status code for the a bit of everything service update v22 o k response
-func (o *ABitOfEverythingServiceUpdateV22OK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceUpdateV22OK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceUpdateV22OK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22OK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateV22OK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceUpdateV22OK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22OK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateV22OK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceUpdateV22OK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceUpdateV22OK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV22Forbidden creates a ABitOfEverythingServiceUpdateV22Forbidden with default headers values
 func NewABitOfEverythingServiceUpdateV22Forbidden() *ABitOfEverythingServiceUpdateV22Forbidden {
-	return &ABitOfEverythingServiceUpdateV22Forbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -153,61 +108,68 @@ type ABitOfEverythingServiceUpdateV22Forbidden struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v22 forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v22 forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v22 forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v22 forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v22 forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v22 forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v22 forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v22 forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v22 forbidden response
-func (o *ABitOfEverythingServiceUpdateV22Forbidden) Code() int {
-	return 403
+func (o *ABitOfEverythingServiceUpdateV22Forbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 forbidden response
 }
+
+func (o *ABitOfEverythingServiceUpdateV22Forbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22Forbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22Forbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Forbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV22NotFound creates a ABitOfEverythingServiceUpdateV22NotFound with default headers values
 func NewABitOfEverythingServiceUpdateV22NotFound() *ABitOfEverythingServiceUpdateV22NotFound {
-	return &ABitOfEverythingServiceUpdateV22NotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -221,61 +183,68 @@ type ABitOfEverythingServiceUpdateV22NotFound struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 not found response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22NotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v22 not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v22 not found response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22NotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v22 not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v22 not found response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22NotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v22 not found response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV22NotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v22 not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v22 not found response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV22NotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceUpdateV22NotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v22 not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v22 not found response
-func (o *ABitOfEverythingServiceUpdateV22NotFound) Code() int {
-	return 404
+func (o *ABitOfEverythingServiceUpdateV22NotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 not found response
 }
+
+func (o *ABitOfEverythingServiceUpdateV22NotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV22NotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22NotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22NotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22NotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22NotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22NotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV22IMATeapot creates a ABitOfEverythingServiceUpdateV22IMATeapot with default headers values
 func NewABitOfEverythingServiceUpdateV22IMATeapot() *ABitOfEverythingServiceUpdateV22IMATeapot {
-	return &ABitOfEverythingServiceUpdateV22IMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -289,61 +258,68 @@ type ABitOfEverythingServiceUpdateV22IMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v22 i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v22 i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v22 i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v22 i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v22 i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v22 i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v22 i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v22 i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v22 i m a teapot response
-func (o *ABitOfEverythingServiceUpdateV22IMATeapot) Code() int {
-	return 418
+func (o *ABitOfEverythingServiceUpdateV22IMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 i m a teapot response
 }
+
+func (o *ABitOfEverythingServiceUpdateV22IMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22IMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22IMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceUpdateV22IMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV22InternalServerError creates a ABitOfEverythingServiceUpdateV22InternalServerError with default headers values
 func NewABitOfEverythingServiceUpdateV22InternalServerError() *ABitOfEverythingServiceUpdateV22InternalServerError {
-	return &ABitOfEverythingServiceUpdateV22InternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -357,65 +333,71 @@ type ABitOfEverythingServiceUpdateV22InternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v22 internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v22 internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v22 internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v22 internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update v22 internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update v22 internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v22 internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service update v22 internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 internal server error response
 }
 
-// Code gets the status code for the a bit of everything service update v22 internal server error response
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22InternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV22InternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22InternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceUpdateV22InternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceUpdateV22InternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceUpdateV22Default creates a ABitOfEverythingServiceUpdateV22Default with default headers values
 func NewABitOfEverythingServiceUpdateV22Default(code int) *ABitOfEverythingServiceUpdateV22Default {
-	return &ABitOfEverythingServiceUpdateV22Default{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -431,59 +413,59 @@ type ABitOfEverythingServiceUpdateV22Default struct {
 
 // IsSuccess returns true when this a bit of everything service update v22 default response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV22Default) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service update v22 default response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV22Default) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service update v22 default response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV22Default) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service update v22 default response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV22Default) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service update v22 default response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV22Default) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v22 default response
 }
 
-// Code gets the status code for the a bit of everything service update v22 default response
-func (o *ABitOfEverythingServiceUpdateV22Default) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceUpdateV22Default) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV22Default) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_UpdateV22 default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Default) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_UpdateV22 default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Default) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Default) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload
 
 /*
 ABitOfEverythingServiceUpdateV22Body A bit of everything
@@ -675,929 +657,259 @@ type ABitOfEverythingServiceUpdateV22Body struct {
 
 // Validate validates this a bit of everything service update v22 body
 func (o *ABitOfEverythingServiceUpdateV22Body) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.validateDoubleValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateEnumValueAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateFloatValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateInt64Value(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateMapValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateMappedNestedValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateNested(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateNestedAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateNestedPathEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validatePathEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateProductID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRepeatedEnumAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRepeatedEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRepeatedNestedAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRequiredStringField1(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRequiredStringField2(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRequiredStringViaFieldBehaviorAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRequiredFieldBehaviorJSONNameCustom(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateRequiredFieldSchemaJSONNameCustom(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateSingleNested(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateTimestampValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateUuids(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateDoubleValue(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"doubleValue", "body", o.DoubleValue); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.EnumValue) { // not required
-		return nil
-	}
-
-	if o.EnumValue != nil {
-		if err := o.EnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "enumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "enumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateEnumValueAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(o.EnumValueAnnotation) { // not required
-		return nil
-	}
-
-	if o.EnumValueAnnotation != nil {
-		if err := o.EnumValueAnnotation.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "enumValueAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "enumValueAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) validateFloatValue(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"floatValue", "body", o.FloatValue); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateInt64Value(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"int64Value", "body", o.Int64Value); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateMapValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.MapValue) { // not required
-		return nil
-	}
-
-	for k := range o.MapValue {
-
-		if swag.IsZero(o.MapValue[k]) { // not required
-			continue
-		}
-		if val, ok := o.MapValue[k]; ok {
-			if err := val.Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "mapValue" + "." + k)
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "mapValue" + "." + k)
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateMappedNestedValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.MappedNestedValue) { // not required
-		return nil
-	}
-
-	for k := range o.MappedNestedValue {
-
-		if err := validate.Required("abe"+"."+"mappedNestedValue"+"."+k, "body", o.MappedNestedValue[k]); err != nil {
-			return err
-		}
-		if val, ok := o.MappedNestedValue[k]; ok {
-			if err := val.Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "mappedNestedValue" + "." + k)
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "mappedNestedValue" + "." + k)
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateNested(formats strfmt.Registry) error {
-	if swag.IsZero(o.Nested) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.Nested); i++ {
-		if swag.IsZero(o.Nested[i]) { // not required
-			continue
-		}
-
-		if o.Nested[i] != nil {
-			if err := o.Nested[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "nested" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "nested" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateNestedAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(o.NestedAnnotation) { // not required
-		return nil
-	}
-
-	if o.NestedAnnotation != nil {
-		if err := o.NestedAnnotation.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "nestedAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "nestedAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateNestedPathEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.NestedPathEnumValue) { // not required
-		return nil
-	}
-
-	if o.NestedPathEnumValue != nil {
-		if err := o.NestedPathEnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "nestedPathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "nestedPathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validatePathEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.PathEnumValue) { // not required
-		return nil
-	}
-
-	if o.PathEnumValue != nil {
-		if err := o.PathEnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "pathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "pathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) validateProductID(formats strfmt.Registry) error {
-	if swag.IsZero(o.ProductID) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.ProductID); i++ {
-
-		if err := validate.MinLength("abe"+"."+"productId"+"."+strconv.Itoa(i), "body", o.ProductID[i], 1); err != nil {
-			return err
-		}
-
-		if err := validate.MaxLength("abe"+"."+"productId"+"."+strconv.Itoa(i), "body", o.ProductID[i], 19); err != nil {
-			return err
-		}
-
-		if err := validate.Pattern("abe"+"."+"productId"+"."+strconv.Itoa(i), "body", o.ProductID[i], `^[0-9]+$`); err != nil {
-			return err
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRepeatedEnumAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(o.RepeatedEnumAnnotation) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.RepeatedEnumAnnotation); i++ {
-		if swag.IsZero(o.RepeatedEnumAnnotation[i]) { // not required
-			continue
-		}
-
-		if o.RepeatedEnumAnnotation[i] != nil {
-			if err := o.RepeatedEnumAnnotation[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRepeatedEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.RepeatedEnumValue) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.RepeatedEnumValue); i++ {
-		if swag.IsZero(o.RepeatedEnumValue[i]) { // not required
-			continue
-		}
-
-		if o.RepeatedEnumValue[i] != nil {
-			if err := o.RepeatedEnumValue[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRepeatedNestedAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(o.RepeatedNestedAnnotation) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.RepeatedNestedAnnotation); i++ {
-		if swag.IsZero(o.RepeatedNestedAnnotation[i]) { // not required
-			continue
-		}
-
-		if o.RepeatedNestedAnnotation[i] != nil {
-			if err := o.RepeatedNestedAnnotation[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRequiredStringField1(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"requiredStringField1", "body", o.RequiredStringField1); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRequiredStringField2(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"requiredStringField2", "body", o.RequiredStringField2); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRequiredStringViaFieldBehaviorAnnotation(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"requiredStringViaFieldBehaviorAnnotation", "body", o.RequiredStringViaFieldBehaviorAnnotation); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRequiredFieldBehaviorJSONNameCustom(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"required_field_behavior_json_name_custom", "body", o.RequiredFieldBehaviorJSONNameCustom); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateRequiredFieldSchemaJSONNameCustom(formats strfmt.Registry) error {
-
-	if err := validate.Required("abe"+"."+"required_field_schema_json_name_custom", "body", o.RequiredFieldSchemaJSONNameCustom); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateSingleNested(formats strfmt.Registry) error {
-	if swag.IsZero(o.SingleNested) { // not required
-		return nil
-	}
-
-	if o.SingleNested != nil {
-		if err := o.SingleNested.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "singleNested")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "singleNested")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) validateTimestampValue(formats strfmt.Registry) error {
-	if swag.IsZero(o.TimestampValue) { // not required
-		return nil
-	}
-
-	if err := validate.FormatOf("abe"+"."+"timestampValue", "body", "date-time", o.TimestampValue.String(), formats); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) validateUuids(formats strfmt.Registry) error {
-	if swag.IsZero(o.Uuids) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(o.Uuids); i++ {
-
-		if err := validate.FormatOf("abe"+"."+"uuids"+"."+strconv.Itoa(i), "body", "uuid", o.Uuids[i].String(), formats); err != nil {
-			return err
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this a bit of everything service update v22 body based on the context it is used
 func (o *ABitOfEverythingServiceUpdateV22Body) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.contextValidateEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateEnumValueAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateMapValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateMappedNestedValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateNested(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateNestedAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateNestedPathEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateOutputOnlyStringViaFieldBehaviorAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidatePathEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateRepeatedEnumAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateRepeatedEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateRepeatedNestedAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateSingleNested(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.EnumValue != nil {
-
-		if swag.IsZero(o.EnumValue) { // not required
-			return nil
-		}
-
-		if err := o.EnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "enumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "enumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateEnumValueAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.EnumValueAnnotation != nil {
-
-		if swag.IsZero(o.EnumValueAnnotation) { // not required
-			return nil
-		}
-
-		if err := o.EnumValueAnnotation.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "enumValueAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "enumValueAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateMapValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for k := range o.MapValue {
-
-		if val, ok := o.MapValue[k]; ok {
-			if err := val.ContextValidate(ctx, formats); err != nil {
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateMappedNestedValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for k := range o.MappedNestedValue {
-
-		if val, ok := o.MappedNestedValue[k]; ok {
-			if err := val.ContextValidate(ctx, formats); err != nil {
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateNested(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(o.Nested); i++ {
-
-		if o.Nested[i] != nil {
-
-			if swag.IsZero(o.Nested[i]) { // not required
-				return nil
-			}
-
-			if err := o.Nested[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "nested" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "nested" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateNestedAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.NestedAnnotation != nil {
-
-		if swag.IsZero(o.NestedAnnotation) { // not required
-			return nil
-		}
-
-		if err := o.NestedAnnotation.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "nestedAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "nestedAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateNestedPathEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.NestedPathEnumValue != nil {
-
-		if swag.IsZero(o.NestedPathEnumValue) { // not required
-			return nil
-		}
-
-		if err := o.NestedPathEnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "nestedPathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "nestedPathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateOutputOnlyStringViaFieldBehaviorAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if err := validate.ReadOnly(ctx, "abe"+"."+"outputOnlyStringViaFieldBehaviorAnnotation", "body", o.OutputOnlyStringViaFieldBehaviorAnnotation); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidatePathEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.PathEnumValue != nil {
-
-		if swag.IsZero(o.PathEnumValue) { // not required
-			return nil
-		}
-
-		if err := o.PathEnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "pathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "pathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateRepeatedEnumAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(o.RepeatedEnumAnnotation); i++ {
-
-		if o.RepeatedEnumAnnotation[i] != nil {
-
-			if swag.IsZero(o.RepeatedEnumAnnotation[i]) { // not required
-				return nil
-			}
-
-			if err := o.RepeatedEnumAnnotation[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateRepeatedEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(o.RepeatedEnumValue); i++ {
-
-		if o.RepeatedEnumValue[i] != nil {
-
-			if swag.IsZero(o.RepeatedEnumValue[i]) { // not required
-				return nil
-			}
-
-			if err := o.RepeatedEnumValue[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateRepeatedNestedAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(o.RepeatedNestedAnnotation); i++ {
-
-		if o.RepeatedNestedAnnotation[i] != nil {
-
-			if swag.IsZero(o.RepeatedNestedAnnotation[i]) { // not required
-				return nil
-			}
-
-			if err := o.RepeatedNestedAnnotation[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("abe" + "." + "repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("abe" + "." + "repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ABitOfEverythingServiceUpdateV22Body) contextValidateSingleNested(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.SingleNested != nil {
-
-		if swag.IsZero(o.SingleNested) { // not required
-			return nil
-		}
-
-		if err := o.SingleNested.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("abe" + "." + "singleNested")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("abe" + "." + "singleNested")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 // MarshalBinary interface implementation
 func (o *ABitOfEverythingServiceUpdateV22Body) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (o *ABitOfEverythingServiceUpdateV22Body) UnmarshalBinary(b []byte) error {
-	var res ABitOfEverythingServiceUpdateV22Body
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
+	_ = "STUB: not implemented"
 	return nil
 }

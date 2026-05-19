@@ -7,13 +7,13 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,98 +39,37 @@ type Wrappers struct {
 	BytesValue  *wrapperspb.BytesValue  `protobuf:"bytes,9,opt,name=bytes_value,json=bytesValue,proto3" json:"bytes_value,omitempty"`
 }
 
-func (x *Wrappers) Reset() {
-	*x = Wrappers{}
-	mi := &file_examples_internal_proto_examplepb_wrappers_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Wrappers) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Wrappers) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Wrappers) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Wrappers) ProtoMessage() {}
+func (*Wrappers) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Wrappers) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_wrappers_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Wrappers.ProtoReflect.Descriptor instead.
-func (*Wrappers) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_wrappers_proto_rawDescGZIP(), []int{0}
-}
+func (*Wrappers) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Wrappers) GetStringValue() *wrapperspb.StringValue {
-	if x != nil {
-		return x.StringValue
-	}
-	return nil
-}
+func (x *Wrappers) GetStringValue() *wrapperspb.StringValue { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetInt32Value() *wrapperspb.Int32Value {
-	if x != nil {
-		return x.Int32Value
-	}
-	return nil
-}
+func (x *Wrappers) GetInt32Value() *wrapperspb.Int32Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetInt64Value() *wrapperspb.Int64Value {
-	if x != nil {
-		return x.Int64Value
-	}
-	return nil
-}
+func (x *Wrappers) GetInt64Value() *wrapperspb.Int64Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetFloatValue() *wrapperspb.FloatValue {
-	if x != nil {
-		return x.FloatValue
-	}
-	return nil
-}
+func (x *Wrappers) GetFloatValue() *wrapperspb.FloatValue { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetDoubleValue() *wrapperspb.DoubleValue {
-	if x != nil {
-		return x.DoubleValue
-	}
-	return nil
-}
+func (x *Wrappers) GetDoubleValue() *wrapperspb.DoubleValue { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetBoolValue() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.BoolValue
-	}
-	return nil
-}
+func (x *Wrappers) GetBoolValue() *wrapperspb.BoolValue { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetUint32Value() *wrapperspb.UInt32Value {
-	if x != nil {
-		return x.Uint32Value
-	}
-	return nil
-}
+func (x *Wrappers) GetUint32Value() *wrapperspb.UInt32Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetUint64Value() *wrapperspb.UInt64Value {
-	if x != nil {
-		return x.Uint64Value
-	}
-	return nil
-}
+func (x *Wrappers) GetUint64Value() *wrapperspb.UInt64Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Wrappers) GetBytesValue() *wrapperspb.BytesValue {
-	if x != nil {
-		return x.BytesValue
-	}
-	return nil
-}
+func (x *Wrappers) GetBytesValue() *wrapperspb.BytesValue { _ = "STUB: not implemented"; return nil }
 
 var File_examples_internal_proto_examplepb_wrappers_proto protoreflect.FileDescriptor
 
@@ -273,10 +212,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_wrappers_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_wrappers_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_wrappers_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_wrappers_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_wrappers_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_wrappers_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -334,25 +271,6 @@ var file_examples_internal_proto_examplepb_wrappers_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_examplepb_wrappers_proto_init() }
 func file_examples_internal_proto_examplepb_wrappers_proto_init() {
-	if File_examples_internal_proto_examplepb_wrappers_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_wrappers_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_wrappers_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_wrappers_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_wrappers_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_wrappers_proto = out.File
-	file_examples_internal_proto_examplepb_wrappers_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_wrappers_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_wrappers_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

@@ -7,10 +7,10 @@
 package sub
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -28,42 +28,21 @@ type StringMessage struct {
 	Value *string `protobuf:"bytes,1,req,name=value" json:"value,omitempty"`
 }
 
-func (x *StringMessage) Reset() {
-	*x = StringMessage{}
-	mi := &file_examples_internal_proto_sub_message_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *StringMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *StringMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *StringMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*StringMessage) ProtoMessage() {}
+func (*StringMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *StringMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_sub_message_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use StringMessage.ProtoReflect.Descriptor instead.
-func (*StringMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_sub_message_proto_rawDescGZIP(), []int{0}
-}
+func (*StringMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *StringMessage) GetValue() string {
-	if x != nil && x.Value != nil {
-		return *x.Value
-	}
-	return ""
-}
+func (x *StringMessage) GetValue() string { _ = "STUB: not implemented"; return "" }
 
 // Status message in sub package
 type Status struct {
@@ -75,49 +54,23 @@ type Status struct {
 	Message *string `protobuf:"bytes,2,opt,name=message" json:"message,omitempty"`
 }
 
-func (x *Status) Reset() {
-	*x = Status{}
-	mi := &file_examples_internal_proto_sub_message_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Status) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Status) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Status) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Status) ProtoMessage() {}
+func (*Status) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Status) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_sub_message_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Status.ProtoReflect.Descriptor instead.
-func (*Status) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_sub_message_proto_rawDescGZIP(), []int{1}
-}
+func (*Status) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Status) GetCode() int32 {
-	if x != nil && x.Code != nil {
-		return *x.Code
-	}
-	return 0
-}
+func (x *Status) GetCode() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Status) GetMessage() string {
-	if x != nil && x.Message != nil {
-		return *x.Message
-	}
-	return ""
-}
+func (x *Status) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
 var File_examples_internal_proto_sub_message_proto protoreflect.FileDescriptor
 
@@ -146,10 +99,8 @@ var (
 )
 
 func file_examples_internal_proto_sub_message_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_sub_message_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_sub_message_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_sub_message_proto_rawDescData)
-	})
-	return file_examples_internal_proto_sub_message_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_sub_message_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
@@ -165,27 +116,5 @@ var file_examples_internal_proto_sub_message_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_examples_internal_proto_sub_message_proto_init() }
-func file_examples_internal_proto_sub_message_proto_init() {
-	if File_examples_internal_proto_sub_message_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_sub_message_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   2,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_examples_internal_proto_sub_message_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_sub_message_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_sub_message_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_sub_message_proto = out.File
-	file_examples_internal_proto_sub_message_proto_rawDesc = nil
-	file_examples_internal_proto_sub_message_proto_goTypes = nil
-	file_examples_internal_proto_sub_message_proto_depIdxs = nil
-}
+func init()                                                { file_examples_internal_proto_sub_message_proto_init() }
+func file_examples_internal_proto_sub_message_proto_init() { _ = "STUB: not implemented"; return }

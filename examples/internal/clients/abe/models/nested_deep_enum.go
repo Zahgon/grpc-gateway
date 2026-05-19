@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // NestedDeepEnum DeepEnum is one or zero.
@@ -20,13 +18,13 @@ import (
 type NestedDeepEnum string
 
 func NewNestedDeepEnum(value NestedDeepEnum) *NestedDeepEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated NestedDeepEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated NestedDeepEnum.
-func (m NestedDeepEnum) Pointer() *NestedDeepEnum {
-	return &m
-}
+func (m NestedDeepEnum) Pointer() *NestedDeepEnum { _ = "STUB: not implemented"; return nil }
 
 const (
 
@@ -51,28 +49,20 @@ func init() {
 }
 
 func (m NestedDeepEnum) validateNestedDeepEnumEnum(path, location string, value NestedDeepEnum) error {
-	if err := validate.EnumCase(path, location, value, nestedDeepEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this nested deep enum
 func (m NestedDeepEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateNestedDeepEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this nested deep enum based on context it is used
 func (m NestedDeepEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -40,17 +39,13 @@ type foo2ServiceClient struct {
 }
 
 func NewFoo2ServiceClient(cc grpc.ClientConnInterface) Foo2ServiceClient {
-	return &foo2ServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(Foo2ServiceClient)
 }
 
 func (c *foo2ServiceClient) Foo2(ctx context.Context, in *Foo2Request, opts ...grpc.CallOption) (*Foo2Reply, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(Foo2Reply)
-	err := c.cc.Invoke(ctx, Foo2Service_Foo2_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Foo2ServiceServer is the server API for Foo2Service service.
@@ -74,44 +69,35 @@ type Foo2ServiceServer interface {
 type UnimplementedFoo2ServiceServer struct{}
 
 func (UnimplementedFoo2ServiceServer) Foo2(context.Context, *Foo2Request) (*Foo2Reply, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Foo2 not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedFoo2ServiceServer) testEmbeddedByValue() {}
 
-// UnsafeFoo2ServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to Foo2ServiceServer will
-// result in compilation errors.
+func (UnimplementedFoo2ServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeFoo2ServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to Foo2ServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeFoo2ServiceServer interface {
 	mustEmbedUnimplementedFoo2ServiceServer()
 }
 
 func RegisterFoo2ServiceServer(s grpc.ServiceRegistrar, srv Foo2ServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedFoo2ServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&Foo2Service_ServiceDesc, srv)
+	return
 }
 
 func _Foo2Service_Foo2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Foo2Request)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(Foo2ServiceServer).Foo2(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: Foo2Service_Foo2_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(Foo2ServiceServer).Foo2(ctx, req.(*Foo2Request))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Foo2Service_ServiceDesc is the grpc.ServiceDesc for Foo2Service service.

@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServicePostOneofEnumParams() *ABitOfEverythingServicePostOneofEnumParams {
-	return &ABitOfEverythingServicePostOneofEnumParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumParamsWithTimeout creates a new ABitOfEverythingServicePostOneofEnumParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServicePostOneofEnumParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServicePostOneofEnumParams {
-	return &ABitOfEverythingServicePostOneofEnumParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumParamsWithContext creates a new ABitOfEverythingServicePostOneofEnumParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServicePostOneofEnumParamsWithContext(ctx context.Context) *ABitOfEverythingServicePostOneofEnumParams {
-	return &ABitOfEverythingServicePostOneofEnumParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumParamsWithHTTPClient creates a new ABitOfEverythingServicePostOneofEnumParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServicePostOneofEnumParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServicePostOneofEnumParams {
-	return &ABitOfEverythingServicePostOneofEnumParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -72,76 +66,73 @@ type ABitOfEverythingServicePostOneofEnumParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostOneofEnumParams) WithDefaults() *ABitOfEverythingServicePostOneofEnumParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service post oneof enum params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service post oneof enum params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostOneofEnumParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServicePostOneofEnumParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service post oneof enum params
 }
 
-// WithContext adds the context to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) WithContext(ctx context.Context) *ABitOfEverythingServicePostOneofEnumParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service post oneof enum params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServicePostOneofEnumParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithExampleEnum adds the exampleEnum to the a bit of everything service post oneof enum params
 }
 
-// WithExampleEnum adds the exampleEnum to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) WithExampleEnum(exampleEnum *models.OneofenumExampleEnum) *ABitOfEverythingServicePostOneofEnumParams {
-	o.SetExampleEnum(exampleEnum)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetExampleEnum adds the exampleEnum to the a bit of everything service post oneof enum params
 func (o *ABitOfEverythingServicePostOneofEnumParams) SetExampleEnum(exampleEnum *models.OneofenumExampleEnum) {
-	o.ExampleEnum = exampleEnum
+	_ = "STUB: not implemented"
+	return
 }
 
 // WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServicePostOneofEnumParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.ExampleEnum != nil {
-		if err := r.SetBodyParam(o.ExampleEnum); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

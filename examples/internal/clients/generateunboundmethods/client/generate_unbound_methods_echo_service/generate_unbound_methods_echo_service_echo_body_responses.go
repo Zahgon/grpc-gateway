@@ -3,11 +3,6 @@
 package generate_unbound_methods_echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,28 +16,14 @@ type GenerateUnboundMethodsEchoServiceEchoBodyReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewGenerateUnboundMethodsEchoServiceEchoBodyOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewGenerateUnboundMethodsEchoServiceEchoBodyDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoBodyOK creates a GenerateUnboundMethodsEchoServiceEchoBodyOK with default headers values
 func NewGenerateUnboundMethodsEchoServiceEchoBodyOK() *GenerateUnboundMethodsEchoServiceEchoBodyOK {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -56,65 +37,71 @@ type GenerateUnboundMethodsEchoServiceEchoBodyOK struct {
 
 // IsSuccess returns true when this generate unbound methods echo service echo body o k response has a 2xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this generate unbound methods echo service echo body o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this generate unbound methods echo service echo body o k response has a 3xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this generate unbound methods echo service echo body o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this generate unbound methods echo service echo body o k response has a 4xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this generate unbound methods echo service echo body o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this generate unbound methods echo service echo body o k response has a 5xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this generate unbound methods echo service echo body o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this generate unbound methods echo service echo body o k response a status code equal to that given
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the generate unbound methods echo service echo body o k response
 }
 
-// Code gets the status code for the generate unbound methods echo service echo body o k response
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoBody][%d] generateUnboundMethodsEchoServiceEchoBodyOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoBody][%d] generateUnboundMethodsEchoServiceEchoBodyOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) GetPayload() *models.ExamplepbGenerateUnboundMethodsSimpleMessage {
-	return o.Payload
-}
-
-func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbGenerateUnboundMethodsSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *GenerateUnboundMethodsEchoServiceEchoBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewGenerateUnboundMethodsEchoServiceEchoBodyDefault creates a GenerateUnboundMethodsEchoServiceEchoBodyDefault with default headers values
 func NewGenerateUnboundMethodsEchoServiceEchoBodyDefault(code int) *GenerateUnboundMethodsEchoServiceEchoBodyDefault {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -130,56 +117,59 @@ type GenerateUnboundMethodsEchoServiceEchoBodyDefault struct {
 
 // IsSuccess returns true when this generate unbound methods echo service echo body default response has a 2xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this generate unbound methods echo service echo body default response has a 3xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this generate unbound methods echo service echo body default response has a 4xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this generate unbound methods echo service echo body default response has a 5xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this generate unbound methods echo service echo body default response a status code equal to that given
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the generate unbound methods echo service echo body default response
 }
 
-// Code gets the status code for the generate unbound methods echo service echo body default response
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoBody][%d] GenerateUnboundMethodsEchoService_EchoBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoBody][%d] GenerateUnboundMethodsEchoService_EchoBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) GetPayload() *models.RPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.RPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

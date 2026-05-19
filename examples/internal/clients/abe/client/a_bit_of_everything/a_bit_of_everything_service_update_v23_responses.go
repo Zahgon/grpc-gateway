@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceUpdateV23Reader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceUpdateV23Reader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceUpdateV23OK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceUpdateV23Forbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceUpdateV23NotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceUpdateV23IMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceUpdateV23InternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceUpdateV23Default(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceUpdateV23OK creates a ABitOfEverythingServiceUpdateV23OK with default headers values
 func NewABitOfEverythingServiceUpdateV23OK() *ABitOfEverythingServiceUpdateV23OK {
-	return &ABitOfEverythingServiceUpdateV23OK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,62 @@ type ABitOfEverythingServiceUpdateV23OK struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 o k response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23OK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v23 o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v23 o k response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23OK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v23 o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v23 o k response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23OK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update v23 o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update v23 o k response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV23OK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v23 o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v23 o k response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV23OK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 o k response
 }
 
-// Code gets the status code for the a bit of everything service update v23 o k response
-func (o *ABitOfEverythingServiceUpdateV23OK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceUpdateV23OK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceUpdateV23OK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23OK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateV23OK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceUpdateV23OK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23OK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateV23OK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceUpdateV23OK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceUpdateV23OK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV23Forbidden creates a ABitOfEverythingServiceUpdateV23Forbidden with default headers values
 func NewABitOfEverythingServiceUpdateV23Forbidden() *ABitOfEverythingServiceUpdateV23Forbidden {
-	return &ABitOfEverythingServiceUpdateV23Forbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +106,68 @@ type ABitOfEverythingServiceUpdateV23Forbidden struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v23 forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v23 forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v23 forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v23 forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v23 forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v23 forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v23 forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v23 forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v23 forbidden response
-func (o *ABitOfEverythingServiceUpdateV23Forbidden) Code() int {
-	return 403
+func (o *ABitOfEverythingServiceUpdateV23Forbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 forbidden response
 }
+
+func (o *ABitOfEverythingServiceUpdateV23Forbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23Forbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23Forbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Forbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV23NotFound creates a ABitOfEverythingServiceUpdateV23NotFound with default headers values
 func NewABitOfEverythingServiceUpdateV23NotFound() *ABitOfEverythingServiceUpdateV23NotFound {
-	return &ABitOfEverythingServiceUpdateV23NotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +181,68 @@ type ABitOfEverythingServiceUpdateV23NotFound struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 not found response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23NotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v23 not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v23 not found response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23NotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v23 not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v23 not found response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23NotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v23 not found response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV23NotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v23 not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v23 not found response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV23NotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceUpdateV23NotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v23 not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v23 not found response
-func (o *ABitOfEverythingServiceUpdateV23NotFound) Code() int {
-	return 404
+func (o *ABitOfEverythingServiceUpdateV23NotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 not found response
 }
+
+func (o *ABitOfEverythingServiceUpdateV23NotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV23NotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23NotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23NotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23NotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23NotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23NotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV23IMATeapot creates a ABitOfEverythingServiceUpdateV23IMATeapot with default headers values
 func NewABitOfEverythingServiceUpdateV23IMATeapot() *ABitOfEverythingServiceUpdateV23IMATeapot {
-	return &ABitOfEverythingServiceUpdateV23IMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +256,68 @@ type ABitOfEverythingServiceUpdateV23IMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v23 i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v23 i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v23 i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v23 i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update v23 i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update v23 i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update v23 i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v23 i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update v23 i m a teapot response
-func (o *ABitOfEverythingServiceUpdateV23IMATeapot) Code() int {
-	return 418
+func (o *ABitOfEverythingServiceUpdateV23IMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 i m a teapot response
 }
+
+func (o *ABitOfEverythingServiceUpdateV23IMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23IMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23IMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceUpdateV23IMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV23InternalServerError creates a ABitOfEverythingServiceUpdateV23InternalServerError with default headers values
 func NewABitOfEverythingServiceUpdateV23InternalServerError() *ABitOfEverythingServiceUpdateV23InternalServerError {
-	return &ABitOfEverythingServiceUpdateV23InternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +331,71 @@ type ABitOfEverythingServiceUpdateV23InternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update v23 internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update v23 internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update v23 internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update v23 internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update v23 internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update v23 internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update v23 internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service update v23 internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 internal server error response
 }
 
-// Code gets the status code for the a bit of everything service update v23 internal server error response
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23InternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceUpdateV23InternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23InternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceUpdateV23InternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceUpdateV23InternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceUpdateV23Default creates a ABitOfEverythingServiceUpdateV23Default with default headers values
 func NewABitOfEverythingServiceUpdateV23Default(code int) *ABitOfEverythingServiceUpdateV23Default {
-	return &ABitOfEverythingServiceUpdateV23Default{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +411,56 @@ type ABitOfEverythingServiceUpdateV23Default struct {
 
 // IsSuccess returns true when this a bit of everything service update v23 default response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateV23Default) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service update v23 default response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateV23Default) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service update v23 default response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateV23Default) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service update v23 default response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateV23Default) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service update v23 default response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateV23Default) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update v23 default response
 }
 
-// Code gets the status code for the a bit of everything service update v23 default response
-func (o *ABitOfEverythingServiceUpdateV23Default) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceUpdateV23Default) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateV23Default) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_UpdateV23 default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Default) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v2a/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_UpdateV23 default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Default) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateV23Default) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

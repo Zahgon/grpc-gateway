@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewCamelCaseServiceNameEmptyParams() *CamelCaseServiceNameEmptyParams {
-	return &CamelCaseServiceNameEmptyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewCamelCaseServiceNameEmptyParamsWithTimeout creates a new CamelCaseServiceNameEmptyParams object
 // with the ability to set a timeout on a request.
 func NewCamelCaseServiceNameEmptyParamsWithTimeout(timeout time.Duration) *CamelCaseServiceNameEmptyParams {
-	return &CamelCaseServiceNameEmptyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewCamelCaseServiceNameEmptyParamsWithContext creates a new CamelCaseServiceNameEmptyParams object
 // with the ability to set a context for a request.
 func NewCamelCaseServiceNameEmptyParamsWithContext(ctx context.Context) *CamelCaseServiceNameEmptyParams {
-	return &CamelCaseServiceNameEmptyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewCamelCaseServiceNameEmptyParamsWithHTTPClient creates a new CamelCaseServiceNameEmptyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewCamelCaseServiceNameEmptyParamsWithHTTPClient(client *http.Client) *CamelCaseServiceNameEmptyParams {
-	return &CamelCaseServiceNameEmptyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -66,60 +60,61 @@ type CamelCaseServiceNameEmptyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *CamelCaseServiceNameEmptyParams) WithDefaults() *CamelCaseServiceNameEmptyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the camel case service name empty params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the camel case service name empty params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *CamelCaseServiceNameEmptyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) WithTimeout(timeout time.Duration) *CamelCaseServiceNameEmptyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the camel case service name empty params
 }
 
-// WithContext adds the context to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) WithContext(ctx context.Context) *CamelCaseServiceNameEmptyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the camel case service name empty params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) WithHTTPClient(client *http.Client) *CamelCaseServiceNameEmptyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the camel case service name empty params
 func (o *CamelCaseServiceNameEmptyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WriteToRequest writes these params to a swagger request
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *CamelCaseServiceNameEmptyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

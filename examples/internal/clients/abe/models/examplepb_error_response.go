@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbErrorResponse examplepb error response
@@ -31,114 +27,44 @@ type ExamplepbErrorResponse struct {
 
 // Validate validates this examplepb error response
 func (m *ExamplepbErrorResponse) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateCorrelationID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateError(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbErrorResponse) validateCorrelationID(formats strfmt.Registry) error {
-	if swag.IsZero(m.CorrelationID) { // not required
-		return nil
-	}
-
-	if err := validate.Pattern("correlationId", "body", m.CorrelationID.String(), `^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$`); err != nil {
-		return err
-	}
-
-	if err := validate.FormatOf("correlationId", "body", "uuid", m.CorrelationID.String(), formats); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbErrorResponse) validateError(formats strfmt.Registry) error {
-	if swag.IsZero(m.Error) { // not required
-		return nil
-	}
-
-	if m.Error != nil {
-		if err := m.Error.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("error")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("error")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this examplepb error response based on the context it is used
 func (m *ExamplepbErrorResponse) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateError(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbErrorResponse) contextValidateError(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Error != nil {
-
-		if swag.IsZero(m.Error) { // not required
-			return nil
-		}
-
-		if err := m.Error.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("error")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("error")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 // MarshalBinary interface implementation
 func (m *ExamplepbErrorResponse) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbErrorResponse) UnmarshalBinary(b []byte) error {
-	var res ExamplepbErrorResponse
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

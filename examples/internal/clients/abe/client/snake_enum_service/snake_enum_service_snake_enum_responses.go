@@ -3,11 +3,6 @@
 package snake_enum_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type SnakeEnumServiceSnakeEnumReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *SnakeEnumServiceSnakeEnumReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewSnakeEnumServiceSnakeEnumOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewSnakeEnumServiceSnakeEnumForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewSnakeEnumServiceSnakeEnumNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewSnakeEnumServiceSnakeEnumIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewSnakeEnumServiceSnakeEnumInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewSnakeEnumServiceSnakeEnumDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewSnakeEnumServiceSnakeEnumOK creates a SnakeEnumServiceSnakeEnumOK with default headers values
 func NewSnakeEnumServiceSnakeEnumOK() *SnakeEnumServiceSnakeEnumOK {
-	return &SnakeEnumServiceSnakeEnumOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,62 @@ type SnakeEnumServiceSnakeEnumOK struct {
 
 // IsSuccess returns true when this snake enum service snake enum o k response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this snake enum service snake enum o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this snake enum service snake enum o k response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this snake enum service snake enum o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this snake enum service snake enum o k response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this snake enum service snake enum o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this snake enum service snake enum o k response has a 5xx status code
 func (o *SnakeEnumServiceSnakeEnumOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this snake enum service snake enum o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this snake enum service snake enum o k response a status code equal to that given
 func (o *SnakeEnumServiceSnakeEnumOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum o k response
 }
 
-// Code gets the status code for the snake enum service snake enum o k response
-func (o *SnakeEnumServiceSnakeEnumOK) Code() int {
-	return 200
-}
+func (o *SnakeEnumServiceSnakeEnumOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *SnakeEnumServiceSnakeEnumOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumOK %s", 200, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *SnakeEnumServiceSnakeEnumOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumOK %s", 200, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *SnakeEnumServiceSnakeEnumOK) GetPayload() models.ExamplepbSnakeEnumResponse {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbSnakeEnumResponse)
 }
 
 func (o *SnakeEnumServiceSnakeEnumOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumForbidden creates a SnakeEnumServiceSnakeEnumForbidden with default headers values
 func NewSnakeEnumServiceSnakeEnumForbidden() *SnakeEnumServiceSnakeEnumForbidden {
-	return &SnakeEnumServiceSnakeEnumForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +106,62 @@ type SnakeEnumServiceSnakeEnumForbidden struct {
 
 // IsSuccess returns true when this snake enum service snake enum forbidden response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this snake enum service snake enum forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this snake enum service snake enum forbidden response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this snake enum service snake enum forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this snake enum service snake enum forbidden response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this snake enum service snake enum forbidden response has a 5xx status code
-func (o *SnakeEnumServiceSnakeEnumForbidden) IsServerError() bool {
+	// IsServerError returns true when this snake enum service snake enum forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this snake enum service snake enum forbidden response a status code equal to that given
+func (o *SnakeEnumServiceSnakeEnumForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this snake enum service snake enum forbidden response a status code equal to that given
+	return false
+}
+
 func (o *SnakeEnumServiceSnakeEnumForbidden) IsCode(code int) bool {
-	return code == 403
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum forbidden response
 }
 
-// Code gets the status code for the snake enum service snake enum forbidden response
-func (o *SnakeEnumServiceSnakeEnumForbidden) Code() int {
-	return 403
-}
+func (o *SnakeEnumServiceSnakeEnumForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *SnakeEnumServiceSnakeEnumForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumForbidden %s", 403, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumForbidden) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *SnakeEnumServiceSnakeEnumForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumForbidden %s", 403, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumForbidden) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *SnakeEnumServiceSnakeEnumForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *SnakeEnumServiceSnakeEnumForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumNotFound creates a SnakeEnumServiceSnakeEnumNotFound with default headers values
 func NewSnakeEnumServiceSnakeEnumNotFound() *SnakeEnumServiceSnakeEnumNotFound {
-	return &SnakeEnumServiceSnakeEnumNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +175,62 @@ type SnakeEnumServiceSnakeEnumNotFound struct {
 
 // IsSuccess returns true when this snake enum service snake enum not found response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this snake enum service snake enum not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this snake enum service snake enum not found response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this snake enum service snake enum not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this snake enum service snake enum not found response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this snake enum service snake enum not found response has a 5xx status code
-func (o *SnakeEnumServiceSnakeEnumNotFound) IsServerError() bool {
+	// IsServerError returns true when this snake enum service snake enum not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this snake enum service snake enum not found response a status code equal to that given
+func (o *SnakeEnumServiceSnakeEnumNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this snake enum service snake enum not found response a status code equal to that given
+	return false
+}
+
 func (o *SnakeEnumServiceSnakeEnumNotFound) IsCode(code int) bool {
-	return code == 404
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum not found response
 }
 
-// Code gets the status code for the snake enum service snake enum not found response
-func (o *SnakeEnumServiceSnakeEnumNotFound) Code() int {
-	return 404
-}
+func (o *SnakeEnumServiceSnakeEnumNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *SnakeEnumServiceSnakeEnumNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumNotFound %s", 404, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumNotFound) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *SnakeEnumServiceSnakeEnumNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumNotFound %s", 404, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumNotFound) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *SnakeEnumServiceSnakeEnumNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *SnakeEnumServiceSnakeEnumNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumIMATeapot creates a SnakeEnumServiceSnakeEnumIMATeapot with default headers values
 func NewSnakeEnumServiceSnakeEnumIMATeapot() *SnakeEnumServiceSnakeEnumIMATeapot {
-	return &SnakeEnumServiceSnakeEnumIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +244,62 @@ type SnakeEnumServiceSnakeEnumIMATeapot struct {
 
 // IsSuccess returns true when this snake enum service snake enum i m a teapot response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this snake enum service snake enum i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this snake enum service snake enum i m a teapot response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this snake enum service snake enum i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this snake enum service snake enum i m a teapot response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this snake enum service snake enum i m a teapot response has a 5xx status code
-func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this snake enum service snake enum i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this snake enum service snake enum i m a teapot response a status code equal to that given
+func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this snake enum service snake enum i m a teapot response a status code equal to that given
+	return false
+}
+
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) IsCode(code int) bool {
-	return code == 418
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum i m a teapot response
 }
 
-// Code gets the status code for the snake enum service snake enum i m a teapot response
-func (o *SnakeEnumServiceSnakeEnumIMATeapot) Code() int {
-	return 418
-}
+func (o *SnakeEnumServiceSnakeEnumIMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *SnakeEnumServiceSnakeEnumIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumIMATeapot %s", 418, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumIMATeapot) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *SnakeEnumServiceSnakeEnumIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumIMATeapot %s", 418, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumIMATeapot) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *SnakeEnumServiceSnakeEnumIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumInternalServerError creates a SnakeEnumServiceSnakeEnumInternalServerError with default headers values
 func NewSnakeEnumServiceSnakeEnumInternalServerError() *SnakeEnumServiceSnakeEnumInternalServerError {
-	return &SnakeEnumServiceSnakeEnumInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +313,71 @@ type SnakeEnumServiceSnakeEnumInternalServerError struct {
 
 // IsSuccess returns true when this snake enum service snake enum internal server error response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this snake enum service snake enum internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this snake enum service snake enum internal server error response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this snake enum service snake enum internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this snake enum service snake enum internal server error response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this snake enum service snake enum internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this snake enum service snake enum internal server error response has a 5xx status code
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this snake enum service snake enum internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this snake enum service snake enum internal server error response a status code equal to that given
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum internal server error response
 }
 
-// Code gets the status code for the snake enum service snake enum internal server error response
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] snakeEnumServiceSnakeEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *SnakeEnumServiceSnakeEnumInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *SnakeEnumServiceSnakeEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *SnakeEnumServiceSnakeEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewSnakeEnumServiceSnakeEnumDefault creates a SnakeEnumServiceSnakeEnumDefault with default headers values
 func NewSnakeEnumServiceSnakeEnumDefault(code int) *SnakeEnumServiceSnakeEnumDefault {
-	return &SnakeEnumServiceSnakeEnumDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +393,50 @@ type SnakeEnumServiceSnakeEnumDefault struct {
 
 // IsSuccess returns true when this snake enum service snake enum default response has a 2xx status code
 func (o *SnakeEnumServiceSnakeEnumDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this snake enum service snake enum default response has a 3xx status code
 func (o *SnakeEnumServiceSnakeEnumDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this snake enum service snake enum default response has a 4xx status code
 func (o *SnakeEnumServiceSnakeEnumDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this snake enum service snake enum default response has a 5xx status code
 func (o *SnakeEnumServiceSnakeEnumDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this snake enum service snake enum default response a status code equal to that given
 func (o *SnakeEnumServiceSnakeEnumDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the snake enum service snake enum default response
 }
 
-// Code gets the status code for the snake enum service snake enum default response
-func (o *SnakeEnumServiceSnakeEnumDefault) Code() int {
-	return o._statusCode
-}
+func (o *SnakeEnumServiceSnakeEnumDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *SnakeEnumServiceSnakeEnumDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] SnakeEnumService_SnakeEnum default %s", o._statusCode, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *SnakeEnumServiceSnakeEnumDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/snake/{who}/{what}/{where}][%d] SnakeEnumService_SnakeEnum default %s", o._statusCode, payload)
-}
+func (o *SnakeEnumServiceSnakeEnumDefault) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *SnakeEnumServiceSnakeEnumDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *SnakeEnumServiceSnakeEnumDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

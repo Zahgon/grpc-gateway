@@ -1,11 +1,8 @@
 package runtime
 
 import (
-	"errors"
-	"mime"
 	"net/http"
 
-	"google.golang.org/grpc/grpclog"
 	"google.golang.org/protobuf/encoding/protojson"
 )
 
@@ -36,33 +33,8 @@ var (
 // exactly match in the registry.
 // Otherwise, it follows the above logic for "*"/InboundMarshaler/OutboundMarshaler.
 func MarshalerForRequest(mux *ServeMux, r *http.Request) (inbound Marshaler, outbound Marshaler) {
-	for _, acceptVal := range r.Header[acceptHeader] {
-		if m, ok := mux.marshalers.mimeMap[acceptVal]; ok {
-			outbound = m
-			break
-		}
-	}
-
-	for _, contentTypeVal := range r.Header[contentTypeHeader] {
-		contentType, _, err := mime.ParseMediaType(contentTypeVal)
-		if err != nil {
-			grpclog.Errorf("Failed to parse Content-Type %s: %v", contentTypeVal, err)
-			continue
-		}
-		if m, ok := mux.marshalers.mimeMap[contentType]; ok {
-			inbound = m
-			break
-		}
-	}
-
-	if inbound == nil {
-		inbound = mux.marshalers.mimeMap[MIMEWildcard]
-	}
-	if outbound == nil {
-		outbound = inbound
-	}
-
-	return inbound, outbound
+	_ = "STUB: not implemented"
+	return *new(Marshaler), *new(Marshaler)
 }
 
 // marshalerRegistry is a mapping from MIME types to Marshalers.
@@ -73,12 +45,7 @@ type marshalerRegistry struct {
 // add adds a marshaler for a case-sensitive MIME type string ("*" to match any
 // MIME type).
 func (m marshalerRegistry) add(mime string, marshaler Marshaler) error {
-	if len(mime) == 0 {
-		return errors.New("empty MIME type")
-	}
-
-	m.mimeMap[mime] = marshaler
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -91,19 +58,13 @@ func (m marshalerRegistry) add(mime string, marshaler Marshaler) error {
 // "*" can be used to match any Content-Type.
 // This can be attached to a ServerMux with the marshaler option.
 func makeMarshalerMIMERegistry() marshalerRegistry {
-	return marshalerRegistry{
-		mimeMap: map[string]Marshaler{
-			MIMEWildcard: defaultMarshaler,
-		},
-	}
+	_ = "STUB: not implemented"
+	return *new(marshalerRegistry)
 }
 
 // WithMarshalerOption returns a ServeMuxOption which associates inbound and outbound
 // Marshalers to a MIME type in mux.
 func WithMarshalerOption(mime string, marshaler Marshaler) ServeMuxOption {
-	return func(mux *ServeMux) {
-		if err := mux.marshalers.add(mime, marshaler); err != nil {
-			panic(err)
-		}
-	}
+	_ = "STUB: not implemented"
+	return *new(ServeMuxOption)
 }

@@ -1,20 +1,13 @@
 package descriptor
 
 import (
-	"fmt"
-	"strings"
-
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/casing"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/httprule"
 	"google.golang.org/protobuf/types/descriptorpb"
 	"google.golang.org/protobuf/types/pluginpb"
 )
 
 // IsWellKnownType returns true if the provided fully qualified type name is considered 'well-known'.
-func IsWellKnownType(typeName string) bool {
-	_, ok := wellKnownTypeConv[typeName]
-	return ok
-}
+func IsWellKnownType(typeName string) bool { _ = "STUB: not implemented"; return false }
 
 // GoPackage represents a golang package.
 type GoPackage struct {
@@ -27,17 +20,10 @@ type GoPackage struct {
 }
 
 // Standard returns whether the import is a golang standard package.
-func (p GoPackage) Standard() bool {
-	return !strings.Contains(p.Path, ".")
-}
+func (p GoPackage) Standard() bool { _ = "STUB: not implemented"; return false }
 
 // String returns a string representation of this package in the form of import line in golang.
-func (p GoPackage) String() string {
-	if p.Alias == "" {
-		return fmt.Sprintf("%q", p.Path)
-	}
-	return fmt.Sprintf("%s %q", p.Alias, p.Path)
-}
+func (p GoPackage) String() string { _ = "STUB: not implemented"; return "" }
 
 // ResponseFile wraps pluginpb.CodeGeneratorResponse_File.
 type ResponseFile struct {
@@ -66,18 +52,10 @@ type File struct {
 }
 
 // Pkg returns package name or alias if it's present
-func (f *File) Pkg() string {
-	pkg := f.GoPkg.Name
-	if alias := f.GoPkg.Alias; alias != "" {
-		pkg = alias
-	}
-	return pkg
-}
+func (f *File) Pkg() string { _ = "STUB: not implemented"; return "" }
 
 // proto2 determines if the syntax of the file is proto2.
-func (f *File) proto2() bool {
-	return f.Syntax == nil || f.GetSyntax() == "proto2"
-}
+func (f *File) proto2() bool { _ = "STUB: not implemented"; return false }
 
 // Message describes a protocol buffer message types.
 type Message struct {
@@ -95,26 +73,12 @@ type Message struct {
 }
 
 // FQMN returns a fully qualified message name of this message.
-func (m *Message) FQMN() string {
-	components := []string{""}
-	if m.File.Package != nil {
-		components = append(components, m.File.GetPackage())
-	}
-	components = append(components, m.Outers...)
-	components = append(components, m.GetName())
-	return strings.Join(components, ".")
-}
+func (m *Message) FQMN() string { _ = "STUB: not implemented"; return "" }
 
 // GoType returns a go type name for the message type.
 // It prefixes the type name with the package alias if
 // its belonging package is not "currentPackage".
-func (m *Message) GoType(currentPackage string) string {
-	name := goTypeName(m.Outers, m.GetName())
-	if !m.ForcePrefixedName && m.File.GoPkg.Path == currentPackage {
-		return name
-	}
-	return fmt.Sprintf("%s.%s", m.File.Pkg(), name)
-}
+func (m *Message) GoType(currentPackage string) string { _ = "STUB: not implemented"; return "" }
 
 // Enum describes a protocol buffer enum types.
 type Enum struct {
@@ -130,36 +94,14 @@ type Enum struct {
 }
 
 // FQEN returns a fully qualified enum name of this enum.
-func (e *Enum) FQEN() string {
-	components := []string{""}
-	if e.File.Package != nil {
-		components = append(components, e.File.GetPackage())
-	}
-	components = append(components, e.Outers...)
-	components = append(components, e.GetName())
-	return strings.Join(components, ".")
-}
+func (e *Enum) FQEN() string { _ = "STUB: not implemented"; return "" }
 
 // GoType returns a go type name for the enum type.
 // It prefixes the type name with the package alias if
 // its belonging package is not "currentPackage".
-func (e *Enum) GoType(currentPackage string) string {
-	name := goTypeName(e.Outers, e.GetName())
-	if !e.ForcePrefixedName && e.File.GoPkg.Path == currentPackage {
-		return name
-	}
-	return fmt.Sprintf("%s.%s", e.File.Pkg(), name)
-}
+func (e *Enum) GoType(currentPackage string) string { _ = "STUB: not implemented"; return "" }
 
-func goTypeName(outers []string, name string) string {
-	components := make([]string, 0, len(outers)+1)
-	for _, outer := range outers {
-		components = append(components, casing.Camel(outer))
-	}
-
-	components = append(components, casing.Camel(name))
-	return strings.Join(components, "_")
-}
+func goTypeName(outers []string, name string) string { _ = "STUB: not implemented"; return "" }
 
 // Service wraps descriptorpb.ServiceDescriptorProto for richer features.
 type Service struct {
@@ -173,31 +115,13 @@ type Service struct {
 }
 
 // FQSN returns the fully qualified service name of this service.
-func (s *Service) FQSN() string {
-	components := []string{""}
-	if s.File.Package != nil {
-		components = append(components, s.File.GetPackage())
-	}
-	components = append(components, s.GetName())
-	return strings.Join(components, ".")
-}
+func (s *Service) FQSN() string { _ = "STUB: not implemented"; return "" }
 
 // InstanceName returns object name of the service with package prefix if needed
-func (s *Service) InstanceName() string {
-	if !s.ForcePrefixedName {
-		return s.GetName()
-	}
-	return fmt.Sprintf("%s.%s", s.File.Pkg(), s.GetName())
-}
+func (s *Service) InstanceName() string { _ = "STUB: not implemented"; return "" }
 
 // ClientConstructorName returns name of the Client constructor with package prefix if needed
-func (s *Service) ClientConstructorName() string {
-	constructor := "New" + s.GetName() + "Client"
-	if !s.ForcePrefixedName {
-		return constructor
-	}
-	return fmt.Sprintf("%s.%s", s.File.Pkg(), constructor)
-}
+func (s *Service) ClientConstructorName() string { _ = "STUB: not implemented"; return "" }
 
 // Method wraps descriptorpb.MethodDescriptorProto for richer features.
 type Method struct {
@@ -212,12 +136,7 @@ type Method struct {
 }
 
 // FQMN returns a fully qualified rpc method name of this method.
-func (m *Method) FQMN() string {
-	var components []string
-	components = append(components, m.Service.FQSN())
-	components = append(components, m.GetName())
-	return strings.Join(components, ".")
-}
+func (m *Method) FQMN() string { _ = "STUB: not implemented"; return "" }
 
 // Binding describes how an HTTP endpoint is bound to a gRPC method.
 type Binding struct {
@@ -239,16 +158,7 @@ type Binding struct {
 
 // ExplicitParams returns a list of explicitly bound parameters of "b",
 // i.e. a union of field path for body and field paths for path parameters.
-func (b *Binding) ExplicitParams() []string {
-	var result []string
-	if b.Body != nil {
-		result = append(result, b.Body.FieldPath.String())
-	}
-	for _, p := range b.PathParams {
-		result = append(result, p.FieldPath.String())
-	}
-	return result
-}
+func (b *Binding) ExplicitParams() []string { _ = "STUB: not implemented"; return nil }
 
 // Field wraps descriptorpb.FieldDescriptorProto for richer features.
 type Field struct {
@@ -262,9 +172,7 @@ type Field struct {
 }
 
 // FQFN returns a fully qualified field name of this field.
-func (f *Field) FQFN() string {
-	return strings.Join([]string{f.Message.FQMN(), f.GetName()}, ".")
-}
+func (f *Field) FQFN() string { _ = "STUB: not implemented"; return "" }
 
 // Parameter is a parameter provided in http requests
 type Parameter struct {
@@ -278,42 +186,16 @@ type Parameter struct {
 
 // ConvertFuncExpr returns a go expression of a converter function.
 // The converter function converts a string into a value for the parameter.
-func (p Parameter) ConvertFuncExpr() (string, error) {
-	tbl := proto3ConvertFuncs
-	if !p.IsProto2() && p.IsRepeated() {
-		tbl = proto3RepeatedConvertFuncs
-	} else if !p.IsProto2() && p.IsOptionalProto3() {
-		tbl = proto3OptionalConvertFuncs
-	} else if p.IsProto2() && !p.IsRepeated() {
-		tbl = proto2ConvertFuncs
-	} else if p.IsProto2() && p.IsRepeated() {
-		tbl = proto2RepeatedConvertFuncs
-	}
-	typ := p.Target.GetType()
-	conv, ok := tbl[typ]
-	if !ok {
-		conv, ok = wellKnownTypeConv[p.Target.GetTypeName()]
-	}
-	if !ok {
-		return "", fmt.Errorf("unsupported field type %s of parameter %s in %s.%s", typ, p.FieldPath, p.Method.Service.GetName(), p.Method.GetName())
-	}
-	return conv, nil
-}
+func (p Parameter) ConvertFuncExpr() (string, error) { _ = "STUB: not implemented"; return "", nil }
 
 // IsEnum returns true if the field is an enum type, otherwise false is returned.
-func (p Parameter) IsEnum() bool {
-	return p.Target.GetType() == descriptorpb.FieldDescriptorProto_TYPE_ENUM
-}
+func (p Parameter) IsEnum() bool { _ = "STUB: not implemented"; return false }
 
 // IsRepeated returns true if the field is repeated, otherwise false is returned.
-func (p Parameter) IsRepeated() bool {
-	return p.Target.GetLabel() == descriptorpb.FieldDescriptorProto_LABEL_REPEATED
-}
+func (p Parameter) IsRepeated() bool { _ = "STUB: not implemented"; return false }
 
 // IsProto2 returns true if the field is proto2, otherwise false is returned.
-func (p Parameter) IsProto2() bool {
-	return p.Target.Message.File.proto2()
-}
+func (p Parameter) IsProto2() bool { _ = "STUB: not implemented"; return false }
 
 // Body describes a http (request|response) body to be sent to the (method|client).
 // This is used in body and response_body options in google.api.HttpRule
@@ -326,154 +208,62 @@ type Body struct {
 // AssignableExpr returns an assignable expression in Go to be used to initialize method request object.
 // It starts with "msgExpr", which is the go expression of the method request object.
 func (b Body) AssignableExpr(msgExpr string, currentPackage string) string {
-	return b.FieldPath.AssignableExpr(msgExpr, currentPackage)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // AssignableExprPrep returns preparatory statements for an assignable expression to initialize the
 // method request object.
 func (b Body) AssignableExprPrep(msgExpr string, currentPackage string) string {
-	return b.FieldPath.AssignableExprPrep(msgExpr, currentPackage)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // FieldPath is a path to a field from a request message.
 type FieldPath []FieldPathComponent
 
 // String returns a string representation of the field path.
-func (p FieldPath) String() string {
-	components := make([]string, 0, len(p))
-	for _, c := range p {
-		components = append(components, c.Name)
-	}
-	return strings.Join(components, ".")
-}
+func (p FieldPath) String() string { _ = "STUB: not implemented"; return "" }
 
 // IsNestedProto3 indicates whether the FieldPath is a nested Proto3 path.
-func (p FieldPath) IsNestedProto3() bool {
-	if len(p) > 1 && !p[0].Target.Message.File.proto2() {
-		return true
-	}
-	return false
-}
+func (p FieldPath) IsNestedProto3() bool { _ = "STUB: not implemented"; return false }
 
 // IsOptionalProto3 indicates whether the FieldPath is a proto3 optional field.
-func (p FieldPath) IsOptionalProto3() bool {
-	if len(p) == 0 {
-		return false
-	}
-	return p[0].Target.GetProto3Optional()
-}
+func (p FieldPath) IsOptionalProto3() bool { _ = "STUB: not implemented"; return false }
 
 // AssignableExpr is an assignable expression in Go to be used to assign a value to the target field.
 // It starts with "msgExpr", which is the go expression of the method request object. Before using
 // such an expression the prep statements must be emitted first, in case the field path includes
 // a oneof. See FieldPath.AssignableExprPrep.
 func (p FieldPath) AssignableExpr(msgExpr string, currentPackage string) string {
-	l := len(p)
-	if l == 0 {
-		return msgExpr
-	}
-
-	components := msgExpr
-	for i, c := range p {
-		// We need to check if the target is not proto3_optional first.
-		// Under the hood, proto3_optional uses oneof to signal to old proto3 clients
-		// that presence is tracked for this field. This oneof is known as a "synthetic" oneof.
-		if !c.Target.GetProto3Optional() && c.Target.OneofIndex != nil {
-			index := c.Target.OneofIndex
-			msg := c.Target.Message
-			oneOfName := casing.Camel(msg.GetOneofDecl()[*index].GetName())
-			oneofFieldName := msg.GoType(currentPackage) + "_" + c.AssignableExpr()
-
-			if c.Target.ForcePrefixedName {
-				oneofFieldName = msg.File.Pkg() + "." + msg.GetName() + "_" + c.AssignableExpr()
-			}
-
-			components = components + "." + oneOfName + ".(*" + oneofFieldName + ")"
-		}
-
-		if i == l-1 {
-			components = components + "." + c.AssignableExpr()
-			continue
-		}
-		components = components + "." + c.ValueExpr()
-	}
-	return components
+	_ = "STUB: not implemented"
+	return ""
 }
+
+// We need to check if the target is not proto3_optional first.
+// Under the hood, proto3_optional uses oneof to signal to old proto3 clients
+// that presence is tracked for this field. This oneof is known as a "synthetic" oneof.
 
 // AssignableExprPrep returns preparation statements for an assignable expression to assign a value
 // to the target field. The Go expression of the method request object is "msgExpr". This is only
 // needed for field paths that contain oneofs. Otherwise, an empty string is returned.
 func (p FieldPath) AssignableExprPrep(msgExpr string, currentPackage string) string {
-	l := len(p)
-	if l == 0 {
-		return ""
-	}
-
-	var preparations []string
-	components := msgExpr
-	for i, c := range p {
-		// We need to check if the target is not proto3_optional first.
-		// Under the hood, proto3_optional uses oneof to signal to old proto3 clients
-		// that presence is tracked for this field. This oneof is known as a "synthetic" oneof.
-		if !c.Target.GetProto3Optional() && c.Target.OneofIndex != nil {
-			index := c.Target.OneofIndex
-			msg := c.Target.Message
-			oneOfName := casing.Camel(msg.GetOneofDecl()[*index].GetName())
-			oneofFieldName := msg.GoType(currentPackage) + "_" + c.AssignableExpr()
-
-			if c.Target.ForcePrefixedName {
-				oneofFieldName = msg.File.Pkg() + "." + msg.GetName() + "_" + c.AssignableExpr()
-			}
-
-			components = components + "." + oneOfName
-			s := `if %s == nil {
-				%s =&%s{}
-			} else if _, ok := %s.(*%s); !ok {
-				return nil, metadata, status.Errorf(codes.InvalidArgument, "expect type: *%s, but: %%t\n",%s)
-			}`
-
-			preparations = append(preparations, fmt.Sprintf(s, components, components, oneofFieldName, components, oneofFieldName, oneofFieldName, components))
-			components = components + ".(*" + oneofFieldName + ")"
-		}
-
-		if i == l-1 {
-			components = components + "." + c.AssignableExpr()
-			continue
-		}
-		components = components + "." + c.ValueExpr()
-	}
-
-	return strings.Join(preparations, "\n")
+	_ = "STUB: not implemented"
+	return ""
 }
+
+// We need to check if the target is not proto3_optional first.
+// Under the hood, proto3_optional uses oneof to signal to old proto3 clients
+// that presence is tracked for this field. This oneof is known as a "synthetic" oneof.
 
 // OpaqueSetterExpr returns the Go expression to invoke the generated setter for
 // the final component in the path while respecting nested getters required by
 // the opaque API.
-func (p FieldPath) OpaqueSetterExpr(msgExpr string) string {
-	if len(p) == 0 {
-		return msgExpr
-	}
-
-	return fmt.Sprintf("%s.Set%s", p.opaqueOwnerExpr(msgExpr), casing.Camel(p[len(p)-1].Name))
-}
+func (p FieldPath) OpaqueSetterExpr(msgExpr string) string { _ = "STUB: not implemented"; return "" }
 
 // opaqueOwnerExpr builds the Go expression for the message that owns the final
 // component in the path by chaining the generated getters.
-func (p FieldPath) opaqueOwnerExpr(msgExpr string) string {
-	if len(p) <= 1 {
-		return msgExpr
-	}
-
-	var sb strings.Builder
-	sb.WriteString(msgExpr)
-	for i := range len(p) - 1 {
-		sb.WriteString(".Get")
-		sb.WriteString(casing.Camel(p[i].Name))
-		sb.WriteString("()")
-	}
-
-	return sb.String()
-}
+func (p FieldPath) opaqueOwnerExpr(msgExpr string) string { _ = "STUB: not implemented"; return "" }
 
 // FieldPathComponent is a path component in FieldPath
 type FieldPathComponent struct {
@@ -485,17 +275,10 @@ type FieldPathComponent struct {
 }
 
 // AssignableExpr returns an assignable expression in go for this field.
-func (c FieldPathComponent) AssignableExpr() string {
-	return casing.Camel(c.Name)
-}
+func (c FieldPathComponent) AssignableExpr() string { _ = "STUB: not implemented"; return "" }
 
 // ValueExpr returns an expression in go for this field.
-func (c FieldPathComponent) ValueExpr() string {
-	if c.Target.Message.File.proto2() {
-		return fmt.Sprintf("Get%s()", casing.Camel(c.Name))
-	}
-	return casing.Camel(c.Name)
-}
+func (c FieldPathComponent) ValueExpr() string { _ = "STUB: not implemented"; return "" }
 
 var (
 	proto3ConvertFuncs = map[descriptorpb.FieldDescriptorProto_Type]string{

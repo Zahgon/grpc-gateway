@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewSnakeEnumServiceSnakeEnumParams() *SnakeEnumServiceSnakeEnumParams {
-	return &SnakeEnumServiceSnakeEnumParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumParamsWithTimeout creates a new SnakeEnumServiceSnakeEnumParams object
 // with the ability to set a timeout on a request.
 func NewSnakeEnumServiceSnakeEnumParamsWithTimeout(timeout time.Duration) *SnakeEnumServiceSnakeEnumParams {
-	return &SnakeEnumServiceSnakeEnumParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumParamsWithContext creates a new SnakeEnumServiceSnakeEnumParams object
 // with the ability to set a context for a request.
 func NewSnakeEnumServiceSnakeEnumParamsWithContext(ctx context.Context) *SnakeEnumServiceSnakeEnumParams {
-	return &SnakeEnumServiceSnakeEnumParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewSnakeEnumServiceSnakeEnumParamsWithHTTPClient creates a new SnakeEnumServiceSnakeEnumParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewSnakeEnumServiceSnakeEnumParamsWithHTTPClient(client *http.Client) *SnakeEnumServiceSnakeEnumParams {
-	return &SnakeEnumServiceSnakeEnumParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -76,108 +70,108 @@ type SnakeEnumServiceSnakeEnumParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *SnakeEnumServiceSnakeEnumParams) WithDefaults() *SnakeEnumServiceSnakeEnumParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the snake enum service snake enum params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the snake enum service snake enum params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *SnakeEnumServiceSnakeEnumParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithTimeout(timeout time.Duration) *SnakeEnumServiceSnakeEnumParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the snake enum service snake enum params
 }
 
-// WithContext adds the context to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithContext(ctx context.Context) *SnakeEnumServiceSnakeEnumParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the snake enum service snake enum params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithHTTPClient(client *http.Client) *SnakeEnumServiceSnakeEnumParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithWhat adds the what to the snake enum service snake enum params
 }
 
-// WithWhat adds the what to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithWhat(what string) *SnakeEnumServiceSnakeEnumParams {
-	o.SetWhat(what)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetWhat adds the what to the snake enum service snake enum params
 }
 
-// SetWhat adds the what to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetWhat(what string) {
-	o.What = what
+	_ = "STUB: not implemented"
+
+	// WithWhere adds the where to the snake enum service snake enum params
+	return
 }
 
-// WithWhere adds the where to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithWhere(where string) *SnakeEnumServiceSnakeEnumParams {
-	o.SetWhere(where)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetWhere adds the where to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetWhere(where string) {
-	o.Where = where
+	_ = "STUB: not implemented"
+
+	// WithWho adds the who to the snake enum service snake enum params
+	return
 }
 
-// WithWho adds the who to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) WithWho(who string) *SnakeEnumServiceSnakeEnumParams {
-	o.SetWho(who)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetWho adds the who to the snake enum service snake enum params
 }
 
-// SetWho adds the who to the snake enum service snake enum params
 func (o *SnakeEnumServiceSnakeEnumParams) SetWho(who string) {
-	o.Who = who
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *SnakeEnumServiceSnakeEnumParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param what
-	if err := r.SetPathParam("what", o.What); err != nil {
-		return err
-	}
-
-	// path param where
-	if err := r.SetPathParam("where", o.Where); err != nil {
-		return err
-	}
-
-	// path param who
-	if err := r.SetPathParam("who", o.Who); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param what
+
+// path param where
+
+// path param who

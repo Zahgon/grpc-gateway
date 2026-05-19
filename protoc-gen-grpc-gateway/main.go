@@ -125,26 +125,4 @@ func main() {
 	})
 }
 
-func applyFlags(reg *descriptor.Registry) error {
-	if *grpcAPIConfiguration != "" {
-		if err := reg.LoadGrpcAPIServiceFromYAML(*grpcAPIConfiguration); err != nil {
-			return err
-		}
-	}
-	if *warnOnUnboundMethods && *generateUnboundMethods {
-		grpclog.Warningf("Option warn_on_unbound_methods has no effect when generate_unbound_methods is used.")
-	}
-	reg.SetStandalone(*standalone)
-	reg.SetAllowDeleteBody(*allowDeleteBody)
-
-	flag.Visit(func(f *flag.Flag) {
-		if f.Name == "allow_repeated_fields_in_body" {
-			grpclog.Warning("The `allow_repeated_fields_in_body` flag is deprecated and will always behave as `true`.")
-		}
-	})
-
-	reg.SetOmitPackageDoc(*omitPackageDoc)
-	reg.SetWarnOnUnboundMethods(*warnOnUnboundMethods)
-	reg.SetGenerateUnboundMethods(*generateUnboundMethods)
-	return reg.SetRepeatedPathParamSeparator(*repeatedPathParamSeparator)
-}
+func applyFlags(reg *descriptor.Registry) error { _ = "STUB: not implemented"; return nil }

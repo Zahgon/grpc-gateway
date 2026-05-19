@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbUnannotatedSimpleMessage A bit of everything
@@ -55,232 +51,73 @@ type ExamplepbUnannotatedSimpleMessage struct {
 
 // Validate validates this examplepb unannotated simple message
 func (m *ExamplepbUnannotatedSimpleMessage) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNo(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNum(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateStatus(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) validateID(formats strfmt.Registry) error {
-
-	if err := validate.Required("id", "body", m.ID); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) validateNID(formats strfmt.Registry) error {
-	if swag.IsZero(m.NID) { // not required
-		return nil
-	}
-
-	if m.NID != nil {
-		if err := m.NID.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nId")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nId")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) validateNo(formats strfmt.Registry) error {
-	if swag.IsZero(m.No) { // not required
-		return nil
-	}
-
-	if m.No != nil {
-		if err := m.No.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("no")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("no")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) validateNum(formats strfmt.Registry) error {
-
-	if err := validate.Required("num", "body", m.Num); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) validateStatus(formats strfmt.Registry) error {
-	if swag.IsZero(m.Status) { // not required
-		return nil
-	}
-
-	if m.Status != nil {
-		if err := m.Status.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("status")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("status")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this examplepb unannotated simple message based on the context it is used
 func (m *ExamplepbUnannotatedSimpleMessage) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateNID(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateNo(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateStatus(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbUnannotatedSimpleMessage) contextValidateNID(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.NID != nil {
-
-		if swag.IsZero(m.NID) { // not required
-			return nil
-		}
-
-		if err := m.NID.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nId")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nId")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbUnannotatedSimpleMessage) contextValidateNo(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.No != nil {
-
-		if swag.IsZero(m.No) { // not required
-			return nil
-		}
-
-		if err := m.No.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("no")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("no")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbUnannotatedSimpleMessage) contextValidateStatus(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Status != nil {
-
-		if swag.IsZero(m.Status) { // not required
-			return nil
-		}
-
-		if err := m.Status.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("status")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("status")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 // MarshalBinary interface implementation
 func (m *ExamplepbUnannotatedSimpleMessage) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbUnannotatedSimpleMessage) UnmarshalBinary(b []byte) error {
-	var res ExamplepbUnannotatedSimpleMessage
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

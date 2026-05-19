@@ -3,11 +3,6 @@
 package echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,28 +16,14 @@ type EchoServiceEchoUnauthorizedReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *EchoServiceEchoUnauthorizedReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewEchoServiceEchoUnauthorizedOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewEchoServiceEchoUnauthorizedDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewEchoServiceEchoUnauthorizedOK creates a EchoServiceEchoUnauthorizedOK with default headers values
 func NewEchoServiceEchoUnauthorizedOK() *EchoServiceEchoUnauthorizedOK {
-	return &EchoServiceEchoUnauthorizedOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -56,65 +37,62 @@ type EchoServiceEchoUnauthorizedOK struct {
 
 // IsSuccess returns true when this echo service echo unauthorized o k response has a 2xx status code
 func (o *EchoServiceEchoUnauthorizedOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this echo service echo unauthorized o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this echo service echo unauthorized o k response has a 3xx status code
 func (o *EchoServiceEchoUnauthorizedOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this echo service echo unauthorized o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this echo service echo unauthorized o k response has a 4xx status code
 func (o *EchoServiceEchoUnauthorizedOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this echo service echo unauthorized o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this echo service echo unauthorized o k response has a 5xx status code
 func (o *EchoServiceEchoUnauthorizedOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this echo service echo unauthorized o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this echo service echo unauthorized o k response a status code equal to that given
 func (o *EchoServiceEchoUnauthorizedOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the echo service echo unauthorized o k response
 }
 
-// Code gets the status code for the echo service echo unauthorized o k response
-func (o *EchoServiceEchoUnauthorizedOK) Code() int {
-	return 200
-}
+func (o *EchoServiceEchoUnauthorizedOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *EchoServiceEchoUnauthorizedOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/echo_unauthorized][%d] echoServiceEchoUnauthorizedOK %s", 200, payload)
-}
+func (o *EchoServiceEchoUnauthorizedOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *EchoServiceEchoUnauthorizedOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/echo_unauthorized][%d] echoServiceEchoUnauthorizedOK %s", 200, payload)
-}
+func (o *EchoServiceEchoUnauthorizedOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *EchoServiceEchoUnauthorizedOK) GetPayload() *models.ExamplepbSimpleMessage {
-	return o.Payload
-}
-
-func (o *EchoServiceEchoUnauthorizedOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *EchoServiceEchoUnauthorizedOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewEchoServiceEchoUnauthorizedDefault creates a EchoServiceEchoUnauthorizedDefault with default headers values
 func NewEchoServiceEchoUnauthorizedDefault(code int) *EchoServiceEchoUnauthorizedDefault {
-	return &EchoServiceEchoUnauthorizedDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -130,56 +108,50 @@ type EchoServiceEchoUnauthorizedDefault struct {
 
 // IsSuccess returns true when this echo service echo unauthorized default response has a 2xx status code
 func (o *EchoServiceEchoUnauthorizedDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this echo service echo unauthorized default response has a 3xx status code
 func (o *EchoServiceEchoUnauthorizedDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this echo service echo unauthorized default response has a 4xx status code
 func (o *EchoServiceEchoUnauthorizedDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this echo service echo unauthorized default response has a 5xx status code
 func (o *EchoServiceEchoUnauthorizedDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this echo service echo unauthorized default response a status code equal to that given
 func (o *EchoServiceEchoUnauthorizedDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the echo service echo unauthorized default response
 }
 
-// Code gets the status code for the echo service echo unauthorized default response
-func (o *EchoServiceEchoUnauthorizedDefault) Code() int {
-	return o._statusCode
-}
+func (o *EchoServiceEchoUnauthorizedDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *EchoServiceEchoUnauthorizedDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/echo_unauthorized][%d] EchoService_EchoUnauthorized default %s", o._statusCode, payload)
-}
+func (o *EchoServiceEchoUnauthorizedDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *EchoServiceEchoUnauthorizedDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v1/example/echo_unauthorized][%d] EchoService_EchoUnauthorized default %s", o._statusCode, payload)
-}
+func (o *EchoServiceEchoUnauthorizedDefault) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *EchoServiceEchoUnauthorizedDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *EchoServiceEchoUnauthorizedDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

@@ -7,11 +7,11 @@
 package apiconfig
 
 import (
+	sync "sync"
+
 	annotations "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,42 +39,21 @@ type GrpcAPIService struct {
 	Http *annotations.Http `protobuf:"bytes,1,opt,name=http,proto3" json:"http,omitempty"`
 }
 
-func (x *GrpcAPIService) Reset() {
-	*x = GrpcAPIService{}
-	mi := &file_internal_descriptor_apiconfig_apiconfig_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GrpcAPIService) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GrpcAPIService) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GrpcAPIService) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GrpcAPIService) ProtoMessage() {}
+func (*GrpcAPIService) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GrpcAPIService) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_descriptor_apiconfig_apiconfig_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GrpcAPIService.ProtoReflect.Descriptor instead.
-func (*GrpcAPIService) Descriptor() ([]byte, []int) {
-	return file_internal_descriptor_apiconfig_apiconfig_proto_rawDescGZIP(), []int{0}
-}
+func (*GrpcAPIService) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *GrpcAPIService) GetHttp() *annotations.Http {
-	if x != nil {
-		return x.Http
-	}
-	return nil
-}
+func (x *GrpcAPIService) GetHttp() *annotations.Http { _ = "STUB: not implemented"; return nil }
 
 var File_internal_descriptor_apiconfig_apiconfig_proto protoreflect.FileDescriptor
 
@@ -103,10 +82,8 @@ var (
 )
 
 func file_internal_descriptor_apiconfig_apiconfig_proto_rawDescGZIP() []byte {
-	file_internal_descriptor_apiconfig_apiconfig_proto_rawDescOnce.Do(func() {
-		file_internal_descriptor_apiconfig_apiconfig_proto_rawDescData = protoimpl.X.CompressGZIP(file_internal_descriptor_apiconfig_apiconfig_proto_rawDescData)
-	})
-	return file_internal_descriptor_apiconfig_apiconfig_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_internal_descriptor_apiconfig_apiconfig_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -123,27 +100,5 @@ var file_internal_descriptor_apiconfig_apiconfig_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_internal_descriptor_apiconfig_apiconfig_proto_init() }
-func file_internal_descriptor_apiconfig_apiconfig_proto_init() {
-	if File_internal_descriptor_apiconfig_apiconfig_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_internal_descriptor_apiconfig_apiconfig_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_internal_descriptor_apiconfig_apiconfig_proto_goTypes,
-		DependencyIndexes: file_internal_descriptor_apiconfig_apiconfig_proto_depIdxs,
-		MessageInfos:      file_internal_descriptor_apiconfig_apiconfig_proto_msgTypes,
-	}.Build()
-	File_internal_descriptor_apiconfig_apiconfig_proto = out.File
-	file_internal_descriptor_apiconfig_apiconfig_proto_rawDesc = nil
-	file_internal_descriptor_apiconfig_apiconfig_proto_goTypes = nil
-	file_internal_descriptor_apiconfig_apiconfig_proto_depIdxs = nil
-}
+func init()                                                    { file_internal_descriptor_apiconfig_apiconfig_proto_init() }
+func file_internal_descriptor_apiconfig_apiconfig_proto_init() { _ = "STUB: not implemented"; return }

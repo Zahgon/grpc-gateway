@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
-	"strconv"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // GoogleRPCStatus The `Status` type defines a logical error model that is suitable for
@@ -38,105 +34,36 @@ type GoogleRPCStatus struct {
 
 // Validate validates this google Rpc status
 func (m *GoogleRPCStatus) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateDetails(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *GoogleRPCStatus) validateDetails(formats strfmt.Registry) error {
-	if swag.IsZero(m.Details) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.Details); i++ {
-		if swag.IsZero(m.Details[i]) { // not required
-			continue
-		}
-
-		if m.Details[i] != nil {
-			if err := m.Details[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("details" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("details" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
+
+// not required
 
 // ContextValidate validate this google Rpc status based on the context it is used
 func (m *GoogleRPCStatus) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateDetails(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *GoogleRPCStatus) contextValidateDetails(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.Details); i++ {
-
-		if m.Details[i] != nil {
-
-			if swag.IsZero(m.Details[i]) { // not required
-				return nil
-			}
-
-			if err := m.Details[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("details" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("details" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 // MarshalBinary interface implementation
 func (m *GoogleRPCStatus) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
-func (m *GoogleRPCStatus) UnmarshalBinary(b []byte) error {
-	var res GoogleRPCStatus
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}
+func (m *GoogleRPCStatus) UnmarshalBinary(b []byte) error { _ = "STUB: not implemented"; return nil }

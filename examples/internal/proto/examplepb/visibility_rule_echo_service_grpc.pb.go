@@ -19,9 +19,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -64,47 +63,28 @@ type visibilityRuleEchoServiceClient struct {
 }
 
 func NewVisibilityRuleEchoServiceClient(cc grpc.ClientConnInterface) VisibilityRuleEchoServiceClient {
-	return &visibilityRuleEchoServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(VisibilityRuleEchoServiceClient)
 }
 
 func (c *visibilityRuleEchoServiceClient) Echo(ctx context.Context, in *VisibilityRuleSimpleMessage, opts ...grpc.CallOption) (*VisibilityRuleSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(VisibilityRuleSimpleMessage)
-	err := c.cc.Invoke(ctx, VisibilityRuleEchoService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *visibilityRuleEchoServiceClient) EchoInternal(ctx context.Context, in *VisibilityRuleSimpleMessage, opts ...grpc.CallOption) (*VisibilityRuleSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(VisibilityRuleSimpleMessage)
-	err := c.cc.Invoke(ctx, VisibilityRuleEchoService_EchoInternal_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *visibilityRuleEchoServiceClient) EchoPreview(ctx context.Context, in *VisibilityRuleSimpleMessage, opts ...grpc.CallOption) (*VisibilityRuleMessageInPreviewMethod, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(VisibilityRuleMessageInPreviewMethod)
-	err := c.cc.Invoke(ctx, VisibilityRuleEchoService_EchoPreview_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *visibilityRuleEchoServiceClient) EchoInternalAndPreview(ctx context.Context, in *VisibilityRuleSimpleMessage, opts ...grpc.CallOption) (*VisibilityRuleSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(VisibilityRuleSimpleMessage)
-	err := c.cc.Invoke(ctx, VisibilityRuleEchoService_EchoInternalAndPreview_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VisibilityRuleEchoServiceServer is the server API for VisibilityRuleEchoService service.
@@ -138,107 +118,65 @@ type VisibilityRuleEchoServiceServer interface {
 type UnimplementedVisibilityRuleEchoServiceServer struct{}
 
 func (UnimplementedVisibilityRuleEchoServiceServer) Echo(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedVisibilityRuleEchoServiceServer) EchoInternal(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoInternal not implemented")
-}
-func (UnimplementedVisibilityRuleEchoServiceServer) EchoPreview(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleMessageInPreviewMethod, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoPreview not implemented")
-}
-func (UnimplementedVisibilityRuleEchoServiceServer) EchoInternalAndPreview(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoInternalAndPreview not implemented")
-}
-func (UnimplementedVisibilityRuleEchoServiceServer) testEmbeddedByValue() {}
 
-// UnsafeVisibilityRuleEchoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to VisibilityRuleEchoServiceServer will
-// result in compilation errors.
+func (UnimplementedVisibilityRuleEchoServiceServer) EchoInternal(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedVisibilityRuleEchoServiceServer) EchoPreview(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleMessageInPreviewMethod, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedVisibilityRuleEchoServiceServer) EchoInternalAndPreview(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedVisibilityRuleEchoServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeVisibilityRuleEchoServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to VisibilityRuleEchoServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeVisibilityRuleEchoServiceServer interface {
 	mustEmbedUnimplementedVisibilityRuleEchoServiceServer()
 }
 
 func RegisterVisibilityRuleEchoServiceServer(s grpc.ServiceRegistrar, srv VisibilityRuleEchoServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedVisibilityRuleEchoServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&VisibilityRuleEchoService_ServiceDesc, srv)
+	return
 }
 
 func _VisibilityRuleEchoService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(VisibilityRuleSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(VisibilityRuleEchoServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: VisibilityRuleEchoService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(VisibilityRuleEchoServiceServer).Echo(ctx, req.(*VisibilityRuleSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _VisibilityRuleEchoService_EchoInternal_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(VisibilityRuleSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(VisibilityRuleEchoServiceServer).EchoInternal(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: VisibilityRuleEchoService_EchoInternal_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(VisibilityRuleEchoServiceServer).EchoInternal(ctx, req.(*VisibilityRuleSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _VisibilityRuleEchoService_EchoPreview_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(VisibilityRuleSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(VisibilityRuleEchoServiceServer).EchoPreview(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: VisibilityRuleEchoService_EchoPreview_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(VisibilityRuleEchoServiceServer).EchoPreview(ctx, req.(*VisibilityRuleSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _VisibilityRuleEchoService_EchoInternalAndPreview_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(VisibilityRuleSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(VisibilityRuleEchoServiceServer).EchoInternalAndPreview(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: VisibilityRuleEchoService_EchoInternalAndPreview_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(VisibilityRuleEchoServiceServer).EchoInternalAndPreview(ctx, req.(*VisibilityRuleSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VisibilityRuleEchoService_ServiceDesc is the grpc.ServiceDesc for VisibilityRuleEchoService service.
@@ -290,17 +228,13 @@ type visibilityRuleInternalEchoServiceClient struct {
 }
 
 func NewVisibilityRuleInternalEchoServiceClient(cc grpc.ClientConnInterface) VisibilityRuleInternalEchoServiceClient {
-	return &visibilityRuleInternalEchoServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(VisibilityRuleInternalEchoServiceClient)
 }
 
 func (c *visibilityRuleInternalEchoServiceClient) Echo(ctx context.Context, in *VisibilityRuleSimpleMessage, opts ...grpc.CallOption) (*VisibilityRuleSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(VisibilityRuleSimpleMessage)
-	err := c.cc.Invoke(ctx, VisibilityRuleInternalEchoService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VisibilityRuleInternalEchoServiceServer is the server API for VisibilityRuleInternalEchoService service.
@@ -323,44 +257,35 @@ type VisibilityRuleInternalEchoServiceServer interface {
 type UnimplementedVisibilityRuleInternalEchoServiceServer struct{}
 
 func (UnimplementedVisibilityRuleInternalEchoServiceServer) Echo(context.Context, *VisibilityRuleSimpleMessage) (*VisibilityRuleSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedVisibilityRuleInternalEchoServiceServer) testEmbeddedByValue() {}
 
-// UnsafeVisibilityRuleInternalEchoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to VisibilityRuleInternalEchoServiceServer will
-// result in compilation errors.
+func (UnimplementedVisibilityRuleInternalEchoServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeVisibilityRuleInternalEchoServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to VisibilityRuleInternalEchoServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeVisibilityRuleInternalEchoServiceServer interface {
 	mustEmbedUnimplementedVisibilityRuleInternalEchoServiceServer()
 }
 
 func RegisterVisibilityRuleInternalEchoServiceServer(s grpc.ServiceRegistrar, srv VisibilityRuleInternalEchoServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedVisibilityRuleInternalEchoServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&VisibilityRuleInternalEchoService_ServiceDesc, srv)
+	return
 }
 
 func _VisibilityRuleInternalEchoService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(VisibilityRuleSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(VisibilityRuleInternalEchoServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: VisibilityRuleInternalEchoService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(VisibilityRuleInternalEchoServiceServer).Echo(ctx, req.(*VisibilityRuleSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VisibilityRuleInternalEchoService_ServiceDesc is the grpc.ServiceDesc for VisibilityRuleInternalEchoService service.

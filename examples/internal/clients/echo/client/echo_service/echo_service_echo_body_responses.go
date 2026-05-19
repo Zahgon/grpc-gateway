@@ -3,11 +3,6 @@
 package echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,29 +16,12 @@ type EchoServiceEchoBodyReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *EchoServiceEchoBodyReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewEchoServiceEchoBodyOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewEchoServiceEchoBodyDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewEchoServiceEchoBodyOK creates a EchoServiceEchoBodyOK with default headers values
-func NewEchoServiceEchoBodyOK() *EchoServiceEchoBodyOK {
-	return &EchoServiceEchoBodyOK{}
-}
+func NewEchoServiceEchoBodyOK() *EchoServiceEchoBodyOK { _ = "STUB: not implemented"; return nil }
 
 /*
 EchoServiceEchoBodyOK describes a response with status code 200, with default header values.
@@ -56,65 +34,62 @@ type EchoServiceEchoBodyOK struct {
 
 // IsSuccess returns true when this echo service echo body o k response has a 2xx status code
 func (o *EchoServiceEchoBodyOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this echo service echo body o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this echo service echo body o k response has a 3xx status code
 func (o *EchoServiceEchoBodyOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this echo service echo body o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this echo service echo body o k response has a 4xx status code
 func (o *EchoServiceEchoBodyOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this echo service echo body o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this echo service echo body o k response has a 5xx status code
 func (o *EchoServiceEchoBodyOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this echo service echo body o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this echo service echo body o k response a status code equal to that given
 func (o *EchoServiceEchoBodyOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+
+	// Code gets the status code for the echo service echo body o k response
+	return false
 }
 
-// Code gets the status code for the echo service echo body o k response
-func (o *EchoServiceEchoBodyOK) Code() int {
-	return 200
-}
+func (o *EchoServiceEchoBodyOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *EchoServiceEchoBodyOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo_body][%d] echoServiceEchoBodyOK %s", 200, payload)
-}
+func (o *EchoServiceEchoBodyOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *EchoServiceEchoBodyOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo_body][%d] echoServiceEchoBodyOK %s", 200, payload)
-}
+func (o *EchoServiceEchoBodyOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *EchoServiceEchoBodyOK) GetPayload() *models.ExamplepbSimpleMessage {
-	return o.Payload
-}
-
-func (o *EchoServiceEchoBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *EchoServiceEchoBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewEchoServiceEchoBodyDefault creates a EchoServiceEchoBodyDefault with default headers values
 func NewEchoServiceEchoBodyDefault(code int) *EchoServiceEchoBodyDefault {
-	return &EchoServiceEchoBodyDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -129,57 +104,35 @@ type EchoServiceEchoBodyDefault struct {
 }
 
 // IsSuccess returns true when this echo service echo body default response has a 2xx status code
-func (o *EchoServiceEchoBodyDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
-}
+func (o *EchoServiceEchoBodyDefault) IsSuccess() bool { _ = "STUB: not implemented"; return false }
 
 // IsRedirect returns true when this echo service echo body default response has a 3xx status code
-func (o *EchoServiceEchoBodyDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
-}
+func (o *EchoServiceEchoBodyDefault) IsRedirect() bool { _ = "STUB: not implemented"; return false }
 
 // IsClientError returns true when this echo service echo body default response has a 4xx status code
-func (o *EchoServiceEchoBodyDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
-}
+func (o *EchoServiceEchoBodyDefault) IsClientError() bool { _ = "STUB: not implemented"; return false }
 
 // IsServerError returns true when this echo service echo body default response has a 5xx status code
-func (o *EchoServiceEchoBodyDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
-}
+func (o *EchoServiceEchoBodyDefault) IsServerError() bool { _ = "STUB: not implemented"; return false }
 
 // IsCode returns true when this echo service echo body default response a status code equal to that given
-func (o *EchoServiceEchoBodyDefault) IsCode(code int) bool {
-	return o._statusCode == code
-}
+func (o *EchoServiceEchoBodyDefault) IsCode(code int) bool { _ = "STUB: not implemented"; return false }
 
 // Code gets the status code for the echo service echo body default response
-func (o *EchoServiceEchoBodyDefault) Code() int {
-	return o._statusCode
-}
+func (o *EchoServiceEchoBodyDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *EchoServiceEchoBodyDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo_body][%d] EchoService_EchoBody default %s", o._statusCode, payload)
-}
+func (o *EchoServiceEchoBodyDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *EchoServiceEchoBodyDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo_body][%d] EchoService_EchoBody default %s", o._statusCode, payload)
-}
+func (o *EchoServiceEchoBodyDefault) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *EchoServiceEchoBodyDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *EchoServiceEchoBodyDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

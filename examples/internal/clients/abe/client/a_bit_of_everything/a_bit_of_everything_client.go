@@ -4,13 +4,13 @@ package a_bit_of_everything
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
 // New creates a new a bit of everything API client.
 func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientService {
-	return &Client{transport: transport, formats: formats}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new a bit of everything API client with basic auth credentials.
@@ -21,9 +21,8 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientServi
 // - user: user for basic authentication header.
 // - password: password for basic authentication header.
 func NewClientWithBasicAuth(host, basePath, scheme, user, password string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BasicAuth(user, password)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new a bit of everything API client with a bearer token for authentication.
@@ -33,9 +32,8 @@ func NewClientWithBasicAuth(host, basePath, scheme, user, password string) Clien
 // - scheme: http scheme ("http", "https").
 // - bearerToken: bearer token for Bearer authentication header.
 func NewClientWithBearerToken(host, basePath, scheme, bearerToken string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BearerToken(bearerToken)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 /*
@@ -58,50 +56,39 @@ type ClientOption func(*runtime.ClientOperation)
 //
 // You may use this option to set arbitrary extensions to your MIME media type.
 func WithContentType(mime string) ClientOption {
-	return func(r *runtime.ClientOperation) {
-		r.ConsumesMediaTypes = []string{mime}
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // WithContentTypeApplicationJSON sets the Content-Type header to "application/json".
-func WithContentTypeApplicationJSON(r *runtime.ClientOperation) {
-	r.ConsumesMediaTypes = []string{"application/json"}
-}
+func WithContentTypeApplicationJSON(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // WithContentTypeApplicationxBarMime sets the Content-Type header to "application/x-bar-mime".
 func WithContentTypeApplicationxBarMime(r *runtime.ClientOperation) {
-	r.ConsumesMediaTypes = []string{"application/x-bar-mime"}
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithContentTypeApplicationxFooMime sets the Content-Type header to "application/x-foo-mime".
 func WithContentTypeApplicationxFooMime(r *runtime.ClientOperation) {
-	r.ConsumesMediaTypes = []string{"application/x-foo-mime"}
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithAccept allows the client to force the Accept header
 // to negotiate a specific Producer from the server.
 //
 // You may use this option to set arbitrary extensions to your MIME media type.
-func WithAccept(mime string) ClientOption {
-	return func(r *runtime.ClientOperation) {
-		r.ProducesMediaTypes = []string{mime}
-	}
-}
+func WithAccept(mime string) ClientOption { _ = "STUB: not implemented"; return *new(ClientOption) }
 
 // WithAcceptApplicationJSON sets the Accept header to "application/json".
-func WithAcceptApplicationJSON(r *runtime.ClientOperation) {
-	r.ProducesMediaTypes = []string{"application/json"}
-}
+func WithAcceptApplicationJSON(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // WithAcceptApplicationText sets the Accept header to "application/text".
-func WithAcceptApplicationText(r *runtime.ClientOperation) {
-	r.ProducesMediaTypes = []string{"application/text"}
-}
+func WithAcceptApplicationText(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // WithAcceptApplicationxFooMime sets the Accept header to "application/x-foo-mime".
-func WithAcceptApplicationxFooMime(r *runtime.ClientOperation) {
-	r.ProducesMediaTypes = []string{"application/x-foo-mime"}
-}
+func WithAcceptApplicationxFooMime(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // ClientService is the interface for Client methods
 type ClientService interface {
@@ -176,259 +163,91 @@ type ClientService interface {
 ABitOfEverythingServiceCheckExternalNestedPathEnum a bit of everything service check external nested path enum API
 */
 func (a *Client) ABitOfEverythingServiceCheckExternalNestedPathEnum(params *ABitOfEverythingServiceCheckExternalNestedPathEnumParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckExternalNestedPathEnumOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckExternalNestedPathEnumParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckExternalNestedPathEnum",
-		Method:             "GET",
-		PathPattern:        "/v3/{value}:check",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckExternalNestedPathEnumReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckExternalNestedPathEnumOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckExternalNestedPathEnumDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCheckExternalPathEnum a bit of everything service check external path enum API
 */
 func (a *Client) ABitOfEverythingServiceCheckExternalPathEnum(params *ABitOfEverythingServiceCheckExternalPathEnumParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckExternalPathEnumOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckExternalPathEnumParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckExternalPathEnum",
-		Method:             "GET",
-		PathPattern:        "/v2/{value}:check",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckExternalPathEnumReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckExternalPathEnumOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckExternalPathEnumDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCheckGetQueryParams a bit of everything service check get query params API
 */
 func (a *Client) ABitOfEverythingServiceCheckGetQueryParams(params *ABitOfEverythingServiceCheckGetQueryParamsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckGetQueryParamsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckGetQueryParamsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckGetQueryParams",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/params/get/{singleNested.name}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckGetQueryParamsReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckGetQueryParamsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckGetQueryParamsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCheckNestedEnumGetQueryParams a bit of everything service check nested enum get query params API
 */
 func (a *Client) ABitOfEverythingServiceCheckNestedEnumGetQueryParams(params *ABitOfEverythingServiceCheckNestedEnumGetQueryParamsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckNestedEnumGetQueryParamsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckNestedEnumGetQueryParamsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckNestedEnumGetQueryParams",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/params/get/nested_enum/{singleNested.ok}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckNestedEnumGetQueryParamsReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckNestedEnumGetQueryParamsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckNestedEnumGetQueryParamsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCheckPostQueryParams a bit of everything service check post query params API
 */
 func (a *Client) ABitOfEverythingServiceCheckPostQueryParams(params *ABitOfEverythingServiceCheckPostQueryParamsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckPostQueryParamsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckPostQueryParamsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckPostQueryParams",
-		Method:             "POST",
-		PathPattern:        "/v1/example/a_bit_of_everything/params/post/{stringValue}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckPostQueryParamsReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckPostQueryParamsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckPostQueryParamsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCheckStatus a bit of everything service check status API
 */
 func (a *Client) ABitOfEverythingServiceCheckStatus(params *ABitOfEverythingServiceCheckStatusParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCheckStatusOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCheckStatusParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CheckStatus",
-		Method:             "GET",
-		PathPattern:        "/v1/example/checkStatus",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCheckStatusReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCheckStatusOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCheckStatusDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCreate creates a new a bit of everything
@@ -436,1120 +255,391 @@ ABitOfEverythingServiceCreate creates a new a bit of everything
 This API creates a new ABitOfEverything
 */
 func (a *Client) ABitOfEverythingServiceCreate(params *ABitOfEverythingServiceCreateParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCreateOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCreateParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Create",
-		Method:             "POST",
-		PathPattern:        "/v1/example/a_bit_of_everything/{floatValue}/{doubleValue}/{int64Value}/separator/{uint64Value}/{int32Value}/{fixed64Value}/{fixed32Value}/{boolValue}/{stringValue}/{uint32Value}/{sfixed32Value}/{sfixed64Value}/{sint32Value}/{sint64Value}/{nonConventionalNameValue}/{enumValue}/{pathEnumValue}/{nestedPathEnumValue}/{enumValueAnnotation}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCreateReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCreateOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCreateDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCreateBody a bit of everything service create body API
 */
 func (a *Client) ABitOfEverythingServiceCreateBody(params *ABitOfEverythingServiceCreateBodyParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCreateBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCreateBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CreateBody",
-		Method:             "POST",
-		PathPattern:        "/v1/example/a_bit_of_everything",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCreateBodyReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCreateBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCreateBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCreateBook creates a book
 */
 func (a *Client) ABitOfEverythingServiceCreateBook(params *ABitOfEverythingServiceCreateBookParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCreateBookOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCreateBookParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CreateBook",
-		Method:             "POST",
-		PathPattern:        "/v1/{parent}/books",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCreateBookReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCreateBookOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCreateBookDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCustom a bit of everything service custom API
 */
 func (a *Client) ABitOfEverythingServiceCustom(params *ABitOfEverythingServiceCustomParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCustomOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCustomParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Custom",
-		Method:             "POST",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuidName}:custom",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCustomReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCustomOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCustomDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCustom2 a bit of everything service custom2 API
 */
 func (a *Client) ABitOfEverythingServiceCustom2(params *ABitOfEverythingServiceCustom2Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCustom2OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCustom2Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Custom2",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/custom/{optionalStringValue}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCustom2Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCustom2OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCustom2Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceCustomOptionsRequest a bit of everything service custom options request API
 */
 func (a *Client) ABitOfEverythingServiceCustomOptionsRequest(params *ABitOfEverythingServiceCustomOptionsRequestParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceCustomOptionsRequestOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceCustomOptionsRequestParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_CustomOptionsRequest",
-		Method:             "OPTIONS",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceCustomOptionsRequestReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceCustomOptionsRequestOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceCustomOptionsRequestDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceDeepPathEcho a bit of everything service deep path echo API
 */
 func (a *Client) ABitOfEverythingServiceDeepPathEcho(params *ABitOfEverythingServiceDeepPathEchoParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceDeepPathEchoOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceDeepPathEchoParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_DeepPathEcho",
-		Method:             "POST",
-		PathPattern:        "/v1/example/deep_path/{singleNested.name}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceDeepPathEchoReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceDeepPathEchoOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceDeepPathEchoDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceDelete a bit of everything service delete API
 */
 func (a *Client) ABitOfEverythingServiceDelete(params *ABitOfEverythingServiceDeleteParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceDeleteOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceDeleteParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Delete",
-		Method:             "DELETE",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuid}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceDeleteReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceDeleteOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceDeleteDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceDoubleColon a bit of everything service double colon API
 */
 func (a *Client) ABitOfEverythingServiceDoubleColon(params *ABitOfEverythingServiceDoubleColonParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceDoubleColonOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceDoubleColonParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_DoubleColon",
-		Method:             "POST",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuidName}:custom:custom",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceDoubleColonReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceDoubleColonOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceDoubleColonDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceErrorWithDetails a bit of everything service error with details API
 */
 func (a *Client) ABitOfEverythingServiceErrorWithDetails(params *ABitOfEverythingServiceErrorWithDetailsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceErrorWithDetailsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceErrorWithDetailsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_ErrorWithDetails",
-		Method:             "GET",
-		PathPattern:        "/v2/example/errorwithdetails",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceErrorWithDetailsReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceErrorWithDetailsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceErrorWithDetailsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceExists a bit of everything service exists API
 */
 func (a *Client) ABitOfEverythingServiceExists(params *ABitOfEverythingServiceExistsParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceExistsOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceExistsParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Exists",
-		Method:             "HEAD",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceExistsReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceExistsOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceExistsDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceGetMessageWithBody a bit of everything service get message with body API
 */
 func (a *Client) ABitOfEverythingServiceGetMessageWithBody(params *ABitOfEverythingServiceGetMessageWithBodyParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceGetMessageWithBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceGetMessageWithBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_GetMessageWithBody",
-		Method:             "POST",
-		PathPattern:        "/v2/example/withbody/{id}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceGetMessageWithBodyReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceGetMessageWithBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceGetMessageWithBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceGetQuery a bit of everything service get query API
 */
 func (a *Client) ABitOfEverythingServiceGetQuery(params *ABitOfEverythingServiceGetQueryParams, opts ...ClientOption) (*ABitOfEverythingServiceGetQueryOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceGetQueryParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_GetQuery",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/query/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceGetQueryReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceGetQueryOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceGetQueryDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceGetRepeatedQuery a bit of everything service get repeated query API
 */
 func (a *Client) ABitOfEverythingServiceGetRepeatedQuery(params *ABitOfEverythingServiceGetRepeatedQueryParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceGetRepeatedQueryOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceGetRepeatedQueryParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_GetRepeatedQuery",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything_repeated/{pathRepeatedFloatValue}/{pathRepeatedDoubleValue}/{pathRepeatedInt64Value}/{pathRepeatedUint64Value}/{pathRepeatedInt32Value}/{pathRepeatedFixed64Value}/{pathRepeatedFixed32Value}/{pathRepeatedBoolValue}/{pathRepeatedStringValue}/{pathRepeatedBytesValue}/{pathRepeatedUint32Value}/{pathRepeatedEnumValue}/{pathRepeatedSfixed32Value}/{pathRepeatedSfixed64Value}/{pathRepeatedSint32Value}/{pathRepeatedSint64Value}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceGetRepeatedQueryReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceGetRepeatedQueryOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceGetRepeatedQueryDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceLookup a bit of everything service lookup API
 */
 func (a *Client) ABitOfEverythingServiceLookup(params *ABitOfEverythingServiceLookupParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceLookupOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceLookupParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Lookup",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuid}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceLookupReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceLookupOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceLookupDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceOverwriteRequestContentType a bit of everything service overwrite request content type API
 */
 func (a *Client) ABitOfEverythingServiceOverwriteRequestContentType(params *ABitOfEverythingServiceOverwriteRequestContentTypeParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceOverwriteRequestContentTypeOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceOverwriteRequestContentTypeParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_OverwriteRequestContentType",
-		Method:             "POST",
-		PathPattern:        "/v2/example/overwriterequestcontenttype",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/x-bar-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceOverwriteRequestContentTypeReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceOverwriteRequestContentTypeOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceOverwriteRequestContentTypeDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceOverwriteResponseContentType a bit of everything service overwrite response content type API
 */
 func (a *Client) ABitOfEverythingServiceOverwriteResponseContentType(params *ABitOfEverythingServiceOverwriteResponseContentTypeParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceOverwriteResponseContentTypeOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceOverwriteResponseContentTypeParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_OverwriteResponseContentType",
-		Method:             "GET",
-		PathPattern:        "/v2/example/overwriteresponsecontenttype",
-		ProducesMediaTypes: []string{"application/text"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceOverwriteResponseContentTypeReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceOverwriteResponseContentTypeOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceOverwriteResponseContentTypeDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServicePostOneofEnum a bit of everything service post oneof enum API
 */
 func (a *Client) ABitOfEverythingServicePostOneofEnum(params *ABitOfEverythingServicePostOneofEnumParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServicePostOneofEnumOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServicePostOneofEnumParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_PostOneofEnum",
-		Method:             "POST",
-		PathPattern:        "/v1/example/oneofenum",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServicePostOneofEnumReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServicePostOneofEnumOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServicePostOneofEnumDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServicePostRequiredMessageType a bit of everything service post required message type API
 */
 func (a *Client) ABitOfEverythingServicePostRequiredMessageType(params *ABitOfEverythingServicePostRequiredMessageTypeParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServicePostRequiredMessageTypeOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServicePostRequiredMessageTypeParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_PostRequiredMessageType",
-		Method:             "POST",
-		PathPattern:        "/v1/example/requiredmessagetype",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServicePostRequiredMessageTypeReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServicePostRequiredMessageTypeOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServicePostRequiredMessageTypeDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServicePostWithEmptyBody a bit of everything service post with empty body API
 */
 func (a *Client) ABitOfEverythingServicePostWithEmptyBody(params *ABitOfEverythingServicePostWithEmptyBodyParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServicePostWithEmptyBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServicePostWithEmptyBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_PostWithEmptyBody",
-		Method:             "POST",
-		PathPattern:        "/v2/example/postwithemptybody/{name}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServicePostWithEmptyBodyReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServicePostWithEmptyBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServicePostWithEmptyBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceTimeout a bit of everything service timeout API
 */
 func (a *Client) ABitOfEverythingServiceTimeout(params *ABitOfEverythingServiceTimeoutParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceTimeoutOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceTimeoutParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Timeout",
-		Method:             "GET",
-		PathPattern:        "/v2/example/timeout",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceTimeoutReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceTimeoutOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceTimeoutDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceUpdate a bit of everything service update API
 */
 func (a *Client) ABitOfEverythingServiceUpdate(params *ABitOfEverythingServiceUpdateParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceUpdateOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceUpdateParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Update",
-		Method:             "PUT",
-		PathPattern:        "/v1/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceUpdateReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceUpdateOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceUpdateDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceUpdateBook a bit of everything service update book API
 */
 func (a *Client) ABitOfEverythingServiceUpdateBook(params *ABitOfEverythingServiceUpdateBookParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceUpdateBookOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceUpdateBookParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_UpdateBook",
-		Method:             "PATCH",
-		PathPattern:        "/v1/{book.name}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceUpdateBookReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceUpdateBookOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceUpdateBookDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceUpdateV2 a bit of everything service update v2 API
 */
 func (a *Client) ABitOfEverythingServiceUpdateV2(params *ABitOfEverythingServiceUpdateV2Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceUpdateV2OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceUpdateV2Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_UpdateV2",
-		Method:             "PUT",
-		PathPattern:        "/v2/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceUpdateV2Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceUpdateV2OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceUpdateV2Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceUpdateV22 a bit of everything service update v22 API
 */
 func (a *Client) ABitOfEverythingServiceUpdateV22(params *ABitOfEverythingServiceUpdateV22Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceUpdateV22OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceUpdateV22Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_UpdateV22",
-		Method:             "PATCH",
-		PathPattern:        "/v2/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceUpdateV22Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceUpdateV22OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceUpdateV22Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceUpdateV23 a bit of everything service update v23 API
 */
 func (a *Client) ABitOfEverythingServiceUpdateV23(params *ABitOfEverythingServiceUpdateV23Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceUpdateV23OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceUpdateV23Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_UpdateV23",
-		Method:             "PATCH",
-		PathPattern:        "/v2a/example/a_bit_of_everything/{uuidName}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceUpdateV23Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceUpdateV23OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceUpdateV23Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 // SetTransport changes the transport on the client
-func (a *Client) SetTransport(transport runtime.ClientTransport) {
-	a.transport = transport
-}
+func (a *Client) SetTransport(transport runtime.ClientTransport) { _ = "STUB: not implemented"; return }

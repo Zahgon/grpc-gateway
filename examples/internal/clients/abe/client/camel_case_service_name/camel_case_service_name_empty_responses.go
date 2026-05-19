@@ -3,11 +3,6 @@
 package camel_case_service_name
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type CamelCaseServiceNameEmptyReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *CamelCaseServiceNameEmptyReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewCamelCaseServiceNameEmptyOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewCamelCaseServiceNameEmptyForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewCamelCaseServiceNameEmptyNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewCamelCaseServiceNameEmptyIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewCamelCaseServiceNameEmptyInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewCamelCaseServiceNameEmptyDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewCamelCaseServiceNameEmptyOK creates a CamelCaseServiceNameEmptyOK with default headers values
 func NewCamelCaseServiceNameEmptyOK() *CamelCaseServiceNameEmptyOK {
-	return &CamelCaseServiceNameEmptyOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,59 @@ type CamelCaseServiceNameEmptyOK struct {
 
 // IsSuccess returns true when this camel case service name empty o k response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this camel case service name empty o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this camel case service name empty o k response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this camel case service name empty o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this camel case service name empty o k response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this camel case service name empty o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this camel case service name empty o k response has a 5xx status code
 func (o *CamelCaseServiceNameEmptyOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this camel case service name empty o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this camel case service name empty o k response a status code equal to that given
 func (o *CamelCaseServiceNameEmptyOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty o k response
 }
 
-// Code gets the status code for the camel case service name empty o k response
-func (o *CamelCaseServiceNameEmptyOK) Code() int {
-	return 200
-}
+func (o *CamelCaseServiceNameEmptyOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *CamelCaseServiceNameEmptyOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyOK %s", 200, payload)
-}
+func (o *CamelCaseServiceNameEmptyOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyOK %s", 200, payload)
-}
+func (o *CamelCaseServiceNameEmptyOK) String() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyOK) GetPayload() any {
-	return o.Payload
-}
+func (o *CamelCaseServiceNameEmptyOK) GetPayload() any { _ = "STUB: not implemented"; return *new(any) }
 
 func (o *CamelCaseServiceNameEmptyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewCamelCaseServiceNameEmptyForbidden creates a CamelCaseServiceNameEmptyForbidden with default headers values
 func NewCamelCaseServiceNameEmptyForbidden() *CamelCaseServiceNameEmptyForbidden {
-	return &CamelCaseServiceNameEmptyForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +103,62 @@ type CamelCaseServiceNameEmptyForbidden struct {
 
 // IsSuccess returns true when this camel case service name empty forbidden response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this camel case service name empty forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this camel case service name empty forbidden response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this camel case service name empty forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this camel case service name empty forbidden response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this camel case service name empty forbidden response has a 5xx status code
-func (o *CamelCaseServiceNameEmptyForbidden) IsServerError() bool {
+	// IsServerError returns true when this camel case service name empty forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this camel case service name empty forbidden response a status code equal to that given
+func (o *CamelCaseServiceNameEmptyForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this camel case service name empty forbidden response a status code equal to that given
+	return false
+}
+
 func (o *CamelCaseServiceNameEmptyForbidden) IsCode(code int) bool {
-	return code == 403
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty forbidden response
 }
 
-// Code gets the status code for the camel case service name empty forbidden response
-func (o *CamelCaseServiceNameEmptyForbidden) Code() int {
-	return 403
-}
+func (o *CamelCaseServiceNameEmptyForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *CamelCaseServiceNameEmptyForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyForbidden %s", 403, payload)
-}
+func (o *CamelCaseServiceNameEmptyForbidden) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyForbidden %s", 403, payload)
-}
+func (o *CamelCaseServiceNameEmptyForbidden) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *CamelCaseServiceNameEmptyForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *CamelCaseServiceNameEmptyForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewCamelCaseServiceNameEmptyNotFound creates a CamelCaseServiceNameEmptyNotFound with default headers values
 func NewCamelCaseServiceNameEmptyNotFound() *CamelCaseServiceNameEmptyNotFound {
-	return &CamelCaseServiceNameEmptyNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +172,62 @@ type CamelCaseServiceNameEmptyNotFound struct {
 
 // IsSuccess returns true when this camel case service name empty not found response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this camel case service name empty not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this camel case service name empty not found response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this camel case service name empty not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this camel case service name empty not found response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this camel case service name empty not found response has a 5xx status code
-func (o *CamelCaseServiceNameEmptyNotFound) IsServerError() bool {
+	// IsServerError returns true when this camel case service name empty not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this camel case service name empty not found response a status code equal to that given
+func (o *CamelCaseServiceNameEmptyNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this camel case service name empty not found response a status code equal to that given
+	return false
+}
+
 func (o *CamelCaseServiceNameEmptyNotFound) IsCode(code int) bool {
-	return code == 404
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty not found response
 }
 
-// Code gets the status code for the camel case service name empty not found response
-func (o *CamelCaseServiceNameEmptyNotFound) Code() int {
-	return 404
-}
+func (o *CamelCaseServiceNameEmptyNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *CamelCaseServiceNameEmptyNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyNotFound %s", 404, payload)
-}
+func (o *CamelCaseServiceNameEmptyNotFound) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyNotFound %s", 404, payload)
-}
+func (o *CamelCaseServiceNameEmptyNotFound) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *CamelCaseServiceNameEmptyNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *CamelCaseServiceNameEmptyNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewCamelCaseServiceNameEmptyIMATeapot creates a CamelCaseServiceNameEmptyIMATeapot with default headers values
 func NewCamelCaseServiceNameEmptyIMATeapot() *CamelCaseServiceNameEmptyIMATeapot {
-	return &CamelCaseServiceNameEmptyIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +241,62 @@ type CamelCaseServiceNameEmptyIMATeapot struct {
 
 // IsSuccess returns true when this camel case service name empty i m a teapot response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this camel case service name empty i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this camel case service name empty i m a teapot response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this camel case service name empty i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this camel case service name empty i m a teapot response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this camel case service name empty i m a teapot response has a 5xx status code
-func (o *CamelCaseServiceNameEmptyIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this camel case service name empty i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this camel case service name empty i m a teapot response a status code equal to that given
+func (o *CamelCaseServiceNameEmptyIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this camel case service name empty i m a teapot response a status code equal to that given
+	return false
+}
+
 func (o *CamelCaseServiceNameEmptyIMATeapot) IsCode(code int) bool {
-	return code == 418
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty i m a teapot response
 }
 
-// Code gets the status code for the camel case service name empty i m a teapot response
-func (o *CamelCaseServiceNameEmptyIMATeapot) Code() int {
-	return 418
-}
+func (o *CamelCaseServiceNameEmptyIMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *CamelCaseServiceNameEmptyIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyIMATeapot %s", 418, payload)
-}
+func (o *CamelCaseServiceNameEmptyIMATeapot) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyIMATeapot %s", 418, payload)
-}
+func (o *CamelCaseServiceNameEmptyIMATeapot) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *CamelCaseServiceNameEmptyIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *CamelCaseServiceNameEmptyIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewCamelCaseServiceNameEmptyInternalServerError creates a CamelCaseServiceNameEmptyInternalServerError with default headers values
 func NewCamelCaseServiceNameEmptyInternalServerError() *CamelCaseServiceNameEmptyInternalServerError {
-	return &CamelCaseServiceNameEmptyInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +310,71 @@ type CamelCaseServiceNameEmptyInternalServerError struct {
 
 // IsSuccess returns true when this camel case service name empty internal server error response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this camel case service name empty internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this camel case service name empty internal server error response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this camel case service name empty internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this camel case service name empty internal server error response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this camel case service name empty internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this camel case service name empty internal server error response has a 5xx status code
 func (o *CamelCaseServiceNameEmptyInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this camel case service name empty internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this camel case service name empty internal server error response a status code equal to that given
 func (o *CamelCaseServiceNameEmptyInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty internal server error response
 }
 
-// Code gets the status code for the camel case service name empty internal server error response
 func (o *CamelCaseServiceNameEmptyInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *CamelCaseServiceNameEmptyInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *CamelCaseServiceNameEmptyInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceNameEmptyInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *CamelCaseServiceNameEmptyInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *CamelCaseServiceNameEmptyInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *CamelCaseServiceNameEmptyInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewCamelCaseServiceNameEmptyDefault creates a CamelCaseServiceNameEmptyDefault with default headers values
 func NewCamelCaseServiceNameEmptyDefault(code int) *CamelCaseServiceNameEmptyDefault {
-	return &CamelCaseServiceNameEmptyDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +390,50 @@ type CamelCaseServiceNameEmptyDefault struct {
 
 // IsSuccess returns true when this camel case service name empty default response has a 2xx status code
 func (o *CamelCaseServiceNameEmptyDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this camel case service name empty default response has a 3xx status code
 func (o *CamelCaseServiceNameEmptyDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this camel case service name empty default response has a 4xx status code
 func (o *CamelCaseServiceNameEmptyDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this camel case service name empty default response has a 5xx status code
 func (o *CamelCaseServiceNameEmptyDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this camel case service name empty default response a status code equal to that given
 func (o *CamelCaseServiceNameEmptyDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the camel case service name empty default response
 }
 
-// Code gets the status code for the camel case service name empty default response
-func (o *CamelCaseServiceNameEmptyDefault) Code() int {
-	return o._statusCode
-}
+func (o *CamelCaseServiceNameEmptyDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *CamelCaseServiceNameEmptyDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceName_Empty default %s", o._statusCode, payload)
-}
+func (o *CamelCaseServiceNameEmptyDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *CamelCaseServiceNameEmptyDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/empty][%d] camelCaseServiceName_Empty default %s", o._statusCode, payload)
-}
+func (o *CamelCaseServiceNameEmptyDefault) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *CamelCaseServiceNameEmptyDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *CamelCaseServiceNameEmptyDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

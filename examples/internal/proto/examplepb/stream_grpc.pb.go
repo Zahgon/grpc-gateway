@@ -8,11 +8,10 @@ package examplepb
 
 import (
 	context "context"
+
 	sub "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub"
 	httpbody "google.golang.org/genproto/googleapis/api/httpbody"
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
@@ -48,81 +47,45 @@ type streamServiceClient struct {
 }
 
 func NewStreamServiceClient(cc grpc.ClientConnInterface) StreamServiceClient {
-	return &streamServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(StreamServiceClient)
 }
 
 func (c *streamServiceClient) BulkCreate(ctx context.Context, opts ...grpc.CallOption) (grpc.ClientStreamingClient[ABitOfEverything, emptypb.Empty], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &StreamService_ServiceDesc.Streams[0], StreamService_BulkCreate_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[ABitOfEverything, emptypb.Empty]{ClientStream: stream}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkCreateClient = grpc.ClientStreamingClient[ABitOfEverything, emptypb.Empty]
 
 func (c *streamServiceClient) List(ctx context.Context, in *Options, opts ...grpc.CallOption) (grpc.ServerStreamingClient[ABitOfEverything], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &StreamService_ServiceDesc.Streams[1], StreamService_List_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[Options, ABitOfEverything]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_ListClient = grpc.ServerStreamingClient[ABitOfEverything]
 
 func (c *streamServiceClient) BulkEcho(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[sub.StringMessage, sub.StringMessage], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &StreamService_ServiceDesc.Streams[2], StreamService_BulkEcho_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[sub.StringMessage, sub.StringMessage]{ClientStream: stream}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkEchoClient = grpc.BidiStreamingClient[sub.StringMessage, sub.StringMessage]
 
 func (c *streamServiceClient) BulkEchoDuration(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[durationpb.Duration, durationpb.Duration], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &StreamService_ServiceDesc.Streams[3], StreamService_BulkEchoDuration_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[durationpb.Duration, durationpb.Duration]{ClientStream: stream}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkEchoDurationClient = grpc.BidiStreamingClient[durationpb.Duration, durationpb.Duration]
 
 func (c *streamServiceClient) Download(ctx context.Context, in *Options, opts ...grpc.CallOption) (grpc.ServerStreamingClient[httpbody.HttpBody], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &StreamService_ServiceDesc.Streams[4], StreamService_Download_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[Options, httpbody.HttpBody]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
@@ -149,78 +112,87 @@ type StreamServiceServer interface {
 type UnimplementedStreamServiceServer struct{}
 
 func (UnimplementedStreamServiceServer) BulkCreate(grpc.ClientStreamingServer[ABitOfEverything, emptypb.Empty]) error {
-	return status.Errorf(codes.Unimplemented, "method BulkCreate not implemented")
+	_ = "STUB: not implemented"
+	return nil
 }
-func (UnimplementedStreamServiceServer) List(*Options, grpc.ServerStreamingServer[ABitOfEverything]) error {
-	return status.Errorf(codes.Unimplemented, "method List not implemented")
-}
-func (UnimplementedStreamServiceServer) BulkEcho(grpc.BidiStreamingServer[sub.StringMessage, sub.StringMessage]) error {
-	return status.Errorf(codes.Unimplemented, "method BulkEcho not implemented")
-}
-func (UnimplementedStreamServiceServer) BulkEchoDuration(grpc.BidiStreamingServer[durationpb.Duration, durationpb.Duration]) error {
-	return status.Errorf(codes.Unimplemented, "method BulkEchoDuration not implemented")
-}
-func (UnimplementedStreamServiceServer) Download(*Options, grpc.ServerStreamingServer[httpbody.HttpBody]) error {
-	return status.Errorf(codes.Unimplemented, "method Download not implemented")
-}
-func (UnimplementedStreamServiceServer) testEmbeddedByValue() {}
 
-// UnsafeStreamServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to StreamServiceServer will
-// result in compilation errors.
+func (UnimplementedStreamServiceServer) List(*Options, grpc.ServerStreamingServer[ABitOfEverything]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedStreamServiceServer) BulkEcho(grpc.BidiStreamingServer[sub.StringMessage, sub.StringMessage]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedStreamServiceServer) BulkEchoDuration(grpc.BidiStreamingServer[durationpb.Duration, durationpb.Duration]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedStreamServiceServer) Download(*Options, grpc.ServerStreamingServer[httpbody.HttpBody]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedStreamServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeStreamServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to StreamServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeStreamServiceServer interface {
 	mustEmbedUnimplementedStreamServiceServer()
 }
 
 func RegisterStreamServiceServer(s grpc.ServiceRegistrar, srv StreamServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedStreamServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&StreamService_ServiceDesc, srv)
+	return
 }
 
 func _StreamService_BulkCreate_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(StreamServiceServer).BulkCreate(&grpc.GenericServerStream[ABitOfEverything, emptypb.Empty]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkCreateServer = grpc.ClientStreamingServer[ABitOfEverything, emptypb.Empty]
 
 func _StreamService_List_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(Options)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(StreamServiceServer).List(m, &grpc.GenericServerStream[Options, ABitOfEverything]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_ListServer = grpc.ServerStreamingServer[ABitOfEverything]
 
 func _StreamService_BulkEcho_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(StreamServiceServer).BulkEcho(&grpc.GenericServerStream[sub.StringMessage, sub.StringMessage]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkEchoServer = grpc.BidiStreamingServer[sub.StringMessage, sub.StringMessage]
 
 func _StreamService_BulkEchoDuration_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(StreamServiceServer).BulkEchoDuration(&grpc.GenericServerStream[durationpb.Duration, durationpb.Duration]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type StreamService_BulkEchoDurationServer = grpc.BidiStreamingServer[durationpb.Duration, durationpb.Duration]
 
 func _StreamService_Download_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(Options)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(StreamServiceServer).Download(m, &grpc.GenericServerStream[Options, httpbody.HttpBody]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.

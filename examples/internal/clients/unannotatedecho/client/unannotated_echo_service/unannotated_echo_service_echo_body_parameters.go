@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/unannotatedecho/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewUnannotatedEchoServiceEchoBodyParams() *UnannotatedEchoServiceEchoBodyParams {
-	return &UnannotatedEchoServiceEchoBodyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEchoBodyParamsWithTimeout creates a new UnannotatedEchoServiceEchoBodyParams object
 // with the ability to set a timeout on a request.
 func NewUnannotatedEchoServiceEchoBodyParamsWithTimeout(timeout time.Duration) *UnannotatedEchoServiceEchoBodyParams {
-	return &UnannotatedEchoServiceEchoBodyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEchoBodyParamsWithContext creates a new UnannotatedEchoServiceEchoBodyParams object
 // with the ability to set a context for a request.
 func NewUnannotatedEchoServiceEchoBodyParamsWithContext(ctx context.Context) *UnannotatedEchoServiceEchoBodyParams {
-	return &UnannotatedEchoServiceEchoBodyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEchoBodyParamsWithHTTPClient creates a new UnannotatedEchoServiceEchoBodyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewUnannotatedEchoServiceEchoBodyParamsWithHTTPClient(client *http.Client) *UnannotatedEchoServiceEchoBodyParams {
-	return &UnannotatedEchoServiceEchoBodyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,76 +69,75 @@ type UnannotatedEchoServiceEchoBodyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *UnannotatedEchoServiceEchoBodyParams) WithDefaults() *UnannotatedEchoServiceEchoBodyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the unannotated echo service echo body params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the unannotated echo service echo body params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *UnannotatedEchoServiceEchoBodyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) WithTimeout(timeout time.Duration) *UnannotatedEchoServiceEchoBodyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the unannotated echo service echo body params
 }
 
-// WithContext adds the context to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) WithContext(ctx context.Context) *UnannotatedEchoServiceEchoBodyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the unannotated echo service echo body params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) WithHTTPClient(client *http.Client) *UnannotatedEchoServiceEchoBodyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the unannotated echo service echo body params
 }
 
-// WithBody adds the body to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) WithBody(body *models.ExamplepbUnannotatedSimpleMessage) *UnannotatedEchoServiceEchoBodyParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the unannotated echo service echo body params
 }
 
-// SetBody adds the body to the unannotated echo service echo body params
 func (o *UnannotatedEchoServiceEchoBodyParams) SetBody(body *models.ExamplepbUnannotatedSimpleMessage) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *UnannotatedEchoServiceEchoBodyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

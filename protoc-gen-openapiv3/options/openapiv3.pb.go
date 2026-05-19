@@ -14,7 +14,6 @@ package options
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
 )
 
 const (
@@ -52,96 +51,40 @@ type Document struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Document) Reset() {
-	*x = Document{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Document) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Document) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Document) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Document) ProtoMessage() {}
+func (*Document) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Document) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Document) GetInfo() *Info {
-	if x != nil {
-		return x.Info
-	}
-	return nil
-}
+func (x *Document) GetInfo() *Info { _ = "STUB: not implemented"; return nil }
 
-func (x *Document) GetServers() []*Server {
-	if x != nil {
-		return x.Servers
-	}
-	return nil
-}
+func (x *Document) GetServers() []*Server { _ = "STUB: not implemented"; return nil }
 
-func (x *Document) GetExternalDocs() *ExternalDocs {
-	if x != nil {
-		return x.ExternalDocs
-	}
-	return nil
-}
+func (x *Document) GetExternalDocs() *ExternalDocs { _ = "STUB: not implemented"; return nil }
 
-func (x *Document) GetTags() []*Tag {
-	if x != nil {
-		return x.Tags
-	}
-	return nil
-}
+func (x *Document) GetTags() []*Tag { _ = "STUB: not implemented"; return nil }
 
-func (x *Document) SetInfo(v *Info) {
-	x.Info = v
-}
+func (x *Document) SetInfo(v *Info) { _ = "STUB: not implemented"; return }
 
-func (x *Document) SetServers(v []*Server) {
-	x.Servers = v
-}
+func (x *Document) SetServers(v []*Server) { _ = "STUB: not implemented"; return }
 
-func (x *Document) SetExternalDocs(v *ExternalDocs) {
-	x.ExternalDocs = v
-}
+func (x *Document) SetExternalDocs(v *ExternalDocs) { _ = "STUB: not implemented"; return }
 
-func (x *Document) SetTags(v []*Tag) {
-	x.Tags = v
-}
+func (x *Document) SetTags(v []*Tag) { _ = "STUB: not implemented"; return }
 
-func (x *Document) HasInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.Info != nil
-}
+func (x *Document) HasInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Document) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.ExternalDocs != nil
-}
+func (x *Document) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Document) ClearInfo() {
-	x.Info = nil
-}
+func (x *Document) ClearInfo() { _ = "STUB: not implemented"; return }
 
-func (x *Document) ClearExternalDocs() {
-	x.ExternalDocs = nil
-}
+func (x *Document) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Document_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -165,16 +108,7 @@ type Document_builder struct {
 	Tags []*Tag
 }
 
-func (b0 Document_builder) Build() *Document {
-	m0 := &Document{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Info = b.Info
-	x.Servers = b.Servers
-	x.ExternalDocs = b.ExternalDocs
-	x.Tags = b.Tags
-	return m0
-}
+func (b0 Document_builder) Build() *Document { _ = "STUB: not implemented"; return nil }
 
 // Info mirrors the fields of the OpenAPI 3.1.0 Info object that users most
 // often want to set from proto.
@@ -203,129 +137,52 @@ type Info struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Info) Reset() {
-	*x = Info{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Info) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Info) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Info) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Info) ProtoMessage() {}
+func (*Info) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Info) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Info) GetTitle() string {
-	if x != nil {
-		return x.Title
-	}
-	return ""
-}
+func (x *Info) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetSummary() string {
-	if x != nil {
-		return x.Summary
-	}
-	return ""
-}
+func (x *Info) GetSummary() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *Info) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetTermsOfService() string {
-	if x != nil {
-		return x.TermsOfService
-	}
-	return ""
-}
+func (x *Info) GetTermsOfService() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetContact() *Contact {
-	if x != nil {
-		return x.Contact
-	}
-	return nil
-}
+func (x *Info) GetContact() *Contact { _ = "STUB: not implemented"; return nil }
 
-func (x *Info) GetLicense() *License {
-	if x != nil {
-		return x.License
-	}
-	return nil
-}
+func (x *Info) GetLicense() *License { _ = "STUB: not implemented"; return nil }
 
-func (x *Info) GetVersion() string {
-	if x != nil {
-		return x.Version
-	}
-	return ""
-}
+func (x *Info) GetVersion() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) SetTitle(v string) {
-	x.Title = v
-}
+func (x *Info) SetTitle(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetSummary(v string) {
-	x.Summary = v
-}
+func (x *Info) SetSummary(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetDescription(v string) {
-	x.Description = v
-}
+func (x *Info) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetTermsOfService(v string) {
-	x.TermsOfService = v
-}
+func (x *Info) SetTermsOfService(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetContact(v *Contact) {
-	x.Contact = v
-}
+func (x *Info) SetContact(v *Contact) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetLicense(v *License) {
-	x.License = v
-}
+func (x *Info) SetLicense(v *License) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetVersion(v string) {
-	x.Version = v
-}
+func (x *Info) SetVersion(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) HasContact() bool {
-	if x == nil {
-		return false
-	}
-	return x.Contact != nil
-}
+func (x *Info) HasContact() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Info) HasLicense() bool {
-	if x == nil {
-		return false
-	}
-	return x.License != nil
-}
+func (x *Info) HasLicense() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Info) ClearContact() {
-	x.Contact = nil
-}
+func (x *Info) ClearContact() { _ = "STUB: not implemented"; return }
 
-func (x *Info) ClearLicense() {
-	x.License = nil
-}
+func (x *Info) ClearLicense() { _ = "STUB: not implemented"; return }
 
 type Info_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -349,19 +206,7 @@ type Info_builder struct {
 	Version string
 }
 
-func (b0 Info_builder) Build() *Info {
-	m0 := &Info{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Title = b.Title
-	x.Summary = b.Summary
-	x.Description = b.Description
-	x.TermsOfService = b.TermsOfService
-	x.Contact = b.Contact
-	x.License = b.License
-	x.Version = b.Version
-	return m0
-}
+func (b0 Info_builder) Build() *Info { _ = "STUB: not implemented"; return nil }
 
 // Contact information for the exposed API.
 //
@@ -380,63 +225,28 @@ type Contact struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Contact) Reset() {
-	*x = Contact{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Contact) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Contact) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Contact) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Contact) ProtoMessage() {}
+func (*Contact) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Contact) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Contact) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *Contact) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) GetUrl() string {
-	if x != nil {
-		return x.Url
-	}
-	return ""
-}
+func (x *Contact) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) GetEmail() string {
-	if x != nil {
-		return x.Email
-	}
-	return ""
-}
+func (x *Contact) GetEmail() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) SetName(v string) {
-	x.Name = v
-}
+func (x *Contact) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Contact) SetUrl(v string) {
-	x.Url = v
-}
+func (x *Contact) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Contact) SetEmail(v string) {
-	x.Email = v
-}
+func (x *Contact) SetEmail(v string) { _ = "STUB: not implemented"; return }
 
 type Contact_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -451,15 +261,7 @@ type Contact_builder struct {
 	Email string
 }
 
-func (b0 Contact_builder) Build() *Contact {
-	m0 := &Contact{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Name = b.Name
-	x.Url = b.Url
-	x.Email = b.Email
-	return m0
-}
+func (b0 Contact_builder) Build() *Contact { _ = "STUB: not implemented"; return nil }
 
 // License information for the exposed API. `identifier` and `url` are
 // mutually exclusive in the OpenAPI 3.1.0 spec, so they are modeled as a
@@ -482,130 +284,53 @@ type License struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *License) Reset() {
-	*x = License{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *License) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *License) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *License) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*License) ProtoMessage() {}
+func (*License) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *License) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *License) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *License) GetName() string { _ = "STUB: not implemented"; return "" }
 
 func (x *License) GetSource() isLicense_Source {
-	if x != nil {
-		return x.Source
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isLicense_Source)
 }
 
-func (x *License) GetIdentifier() string {
-	if x != nil {
-		if x, ok := x.Source.(*License_Identifier); ok {
-			return x.Identifier
-		}
-	}
-	return ""
-}
+func (x *License) GetIdentifier() string { _ = "STUB: not implemented"; return "" }
 
-func (x *License) GetUrl() string {
-	if x != nil {
-		if x, ok := x.Source.(*License_Url); ok {
-			return x.Url
-		}
-	}
-	return ""
-}
+func (x *License) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *License) SetName(v string) {
-	x.Name = v
-}
+func (x *License) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *License) SetIdentifier(v string) {
-	x.Source = &License_Identifier{v}
-}
+func (x *License) SetIdentifier(v string) { _ = "STUB: not implemented"; return }
 
-func (x *License) SetUrl(v string) {
-	x.Source = &License_Url{v}
-}
+func (x *License) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *License) HasSource() bool {
-	if x == nil {
-		return false
-	}
-	return x.Source != nil
-}
+func (x *License) HasSource() bool { _ = "STUB: not implemented"; return false }
 
-func (x *License) HasIdentifier() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.Source.(*License_Identifier)
-	return ok
-}
+func (x *License) HasIdentifier() bool { _ = "STUB: not implemented"; return false }
 
-func (x *License) HasUrl() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.Source.(*License_Url)
-	return ok
-}
+func (x *License) HasUrl() bool { _ = "STUB: not implemented"; return false }
 
-func (x *License) ClearSource() {
-	x.Source = nil
-}
+func (x *License) ClearSource() { _ = "STUB: not implemented"; return }
 
-func (x *License) ClearIdentifier() {
-	if _, ok := x.Source.(*License_Identifier); ok {
-		x.Source = nil
-	}
-}
+func (x *License) ClearIdentifier() { _ = "STUB: not implemented"; return }
 
-func (x *License) ClearUrl() {
-	if _, ok := x.Source.(*License_Url); ok {
-		x.Source = nil
-	}
-}
+func (x *License) ClearUrl() { _ = "STUB: not implemented"; return }
 
 const License_Source_not_set_case case_License_Source = 0
 const License_Identifier_case case_License_Source = 2
 const License_Url_case case_License_Source = 3
 
 func (x *License) WhichSource() case_License_Source {
-	if x == nil {
-		return License_Source_not_set_case
-	}
-	switch x.Source.(type) {
-	case *License_Identifier:
-		return License_Identifier_case
-	case *License_Url:
-		return License_Url_case
-	default:
-		return License_Source_not_set_case
-	}
+	_ = "STUB: not implemented"
+	return *new(case_License_Source)
 }
 
 type License_builder struct {
@@ -625,29 +350,11 @@ type License_builder struct {
 	// -- end of Source
 }
 
-func (b0 License_builder) Build() *License {
-	m0 := &License{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Name = b.Name
-	if b.Identifier != nil {
-		x.Source = &License_Identifier{*b.Identifier}
-	}
-	if b.Url != nil {
-		x.Source = &License_Url{*b.Url}
-	}
-	return m0
-}
+func (b0 License_builder) Build() *License { _ = "STUB: not implemented"; return nil }
 
 type case_License_Source protoreflect.FieldNumber
 
-func (x case_License_Source) String() string {
-	md := file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[3].Descriptor()
-	if x == 0 {
-		return "not set"
-	}
-	return protoimpl.X.MessageFieldStringOf(md, protoreflect.FieldNumber(x))
-}
+func (x case_License_Source) String() string { _ = "STUB: not implemented"; return "" }
 
 type isLicense_Source interface {
 	isLicense_Source()
@@ -664,13 +371,17 @@ type License_Url struct {
 	Url string `protobuf:"bytes,3,opt,name=url,proto3,oneof"`
 }
 
-func (*License_Identifier) isLicense_Source() {}
+func (*License_Identifier) isLicense_Source() { _ = "STUB: not implemented"; return }
 
-func (*License_Url) isLicense_Source() {}
+func (*License_Url) isLicense_Source() {
+	_ = "STUB: not implemented"
 
-// Server represents an API server.
-//
-// Spec: https://spec.openapis.org/oas/v3.1.0#server-object
+	// Server represents an API server.
+	//
+	// Spec: https://spec.openapis.org/oas/v3.1.0#server-object
+	return
+}
+
 type Server struct {
 	state protoimpl.MessageState `protogen:"hybrid.v1"`
 	// A URL to the target host. This URL supports Server Variables and MAY be
@@ -684,52 +395,24 @@ type Server struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Server) Reset() {
-	*x = Server{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Server) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Server) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Server) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Server) ProtoMessage() {}
+func (*Server) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Server) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Server) GetUrl() string {
-	if x != nil {
-		return x.Url
-	}
-	return ""
-}
+func (x *Server) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Server) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *Server) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Server) SetUrl(v string) {
-	x.Url = v
-}
+func (x *Server) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Server) SetDescription(v string) {
-	x.Description = v
-}
+func (x *Server) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
 type Server_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -743,14 +426,7 @@ type Server_builder struct {
 	Description string
 }
 
-func (b0 Server_builder) Build() *Server {
-	m0 := &Server{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Url = b.Url
-	x.Description = b.Description
-	return m0
-}
+func (b0 Server_builder) Build() *Server { _ = "STUB: not implemented"; return nil }
 
 // Operation is a method-level override applied to the generated Operation
 // object. Non-empty fields replace values the generator would otherwise
@@ -785,118 +461,48 @@ type Operation struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Operation) Reset() {
-	*x = Operation{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Operation) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Operation) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Operation) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Operation) ProtoMessage() {}
+func (*Operation) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Operation) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Operation) GetTags() []string {
-	if x != nil {
-		return x.Tags
-	}
-	return nil
-}
+func (x *Operation) GetTags() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetSummary() string {
-	if x != nil {
-		return x.Summary
-	}
-	return ""
-}
+func (x *Operation) GetSummary() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *Operation) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetExternalDocs() *ExternalDocs {
-	if x != nil {
-		return x.ExternalDocs
-	}
-	return nil
-}
+func (x *Operation) GetExternalDocs() *ExternalDocs { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetOperationId() string {
-	if x != nil {
-		return x.OperationId
-	}
-	return ""
-}
+func (x *Operation) GetOperationId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetDeprecated() bool {
-	if x != nil {
-		return x.Deprecated
-	}
-	return false
-}
+func (x *Operation) GetDeprecated() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Operation) GetServers() []*Server {
-	if x != nil {
-		return x.Servers
-	}
-	return nil
-}
+func (x *Operation) GetServers() []*Server { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) SetTags(v []string) {
-	x.Tags = v
-}
+func (x *Operation) SetTags(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetSummary(v string) {
-	x.Summary = v
-}
+func (x *Operation) SetSummary(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetDescription(v string) {
-	x.Description = v
-}
+func (x *Operation) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetExternalDocs(v *ExternalDocs) {
-	x.ExternalDocs = v
-}
+func (x *Operation) SetExternalDocs(v *ExternalDocs) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetOperationId(v string) {
-	x.OperationId = v
-}
+func (x *Operation) SetOperationId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetDeprecated(v bool) {
-	x.Deprecated = v
-}
+func (x *Operation) SetDeprecated(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetServers(v []*Server) {
-	x.Servers = v
-}
+func (x *Operation) SetServers(v []*Server) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.ExternalDocs != nil
-}
+func (x *Operation) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Operation) ClearExternalDocs() {
-	x.ExternalDocs = nil
-}
+func (x *Operation) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Operation_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -925,19 +531,7 @@ type Operation_builder struct {
 	Servers []*Server
 }
 
-func (b0 Operation_builder) Build() *Operation {
-	m0 := &Operation{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Tags = b.Tags
-	x.Summary = b.Summary
-	x.Description = b.Description
-	x.ExternalDocs = b.ExternalDocs
-	x.OperationId = b.OperationId
-	x.Deprecated = b.Deprecated
-	x.Servers = b.Servers
-	return m0
-}
+func (b0 Operation_builder) Build() *Operation { _ = "STUB: not implemented"; return nil }
 
 // Schema is a message- or field-level override applied to the generated
 // JSON Schema. Non-empty fields replace values the generator would
@@ -965,63 +559,28 @@ type Schema struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Schema) Reset() {
-	*x = Schema{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Schema) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Schema) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Schema) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Schema) ProtoMessage() {}
+func (*Schema) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Schema) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Schema) GetTitle() string {
-	if x != nil {
-		return x.Title
-	}
-	return ""
-}
+func (x *Schema) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Schema) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *Schema) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Schema) GetDeprecated() bool {
-	if x != nil {
-		return x.Deprecated
-	}
-	return false
-}
+func (x *Schema) GetDeprecated() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Schema) SetTitle(v string) {
-	x.Title = v
-}
+func (x *Schema) SetTitle(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetDescription(v string) {
-	x.Description = v
-}
+func (x *Schema) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetDeprecated(v bool) {
-	x.Deprecated = v
-}
+func (x *Schema) SetDeprecated(v bool) { _ = "STUB: not implemented"; return }
 
 type Schema_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1039,15 +598,7 @@ type Schema_builder struct {
 	Deprecated bool
 }
 
-func (b0 Schema_builder) Build() *Schema {
-	m0 := &Schema{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Title = b.Title
-	x.Description = b.Description
-	x.Deprecated = b.Deprecated
-	return m0
-}
+func (b0 Schema_builder) Build() *Schema { _ = "STUB: not implemented"; return nil }
 
 // ExternalDocs is a link to external documentation.
 //
@@ -1063,52 +614,24 @@ type ExternalDocs struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ExternalDocs) Reset() {
-	*x = ExternalDocs{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ExternalDocs) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ExternalDocs) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ExternalDocs) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ExternalDocs) ProtoMessage() {}
+func (*ExternalDocs) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ExternalDocs) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *ExternalDocs) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *ExternalDocs) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ExternalDocs) GetUrl() string {
-	if x != nil {
-		return x.Url
-	}
-	return ""
-}
+func (x *ExternalDocs) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ExternalDocs) SetDescription(v string) {
-	x.Description = v
-}
+func (x *ExternalDocs) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *ExternalDocs) SetUrl(v string) {
-	x.Url = v
-}
+func (x *ExternalDocs) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
 type ExternalDocs_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1120,14 +643,7 @@ type ExternalDocs_builder struct {
 	Url string
 }
 
-func (b0 ExternalDocs_builder) Build() *ExternalDocs {
-	m0 := &ExternalDocs{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Description = b.Description
-	x.Url = b.Url
-	return m0
-}
+func (b0 ExternalDocs_builder) Build() *ExternalDocs { _ = "STUB: not implemented"; return nil }
 
 // Tag adds metadata to a single tag that is used by the Operation Object. It
 // is not mandatory to have a Tag Object per tag defined in the Operation
@@ -1147,74 +663,32 @@ type Tag struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Tag) Reset() {
-	*x = Tag{}
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[8]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Tag) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Tag) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Tag) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Tag) ProtoMessage() {}
+func (*Tag) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Tag) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[8]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Tag) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *Tag) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Tag) GetDescription() string {
-	if x != nil {
-		return x.Description
-	}
-	return ""
-}
+func (x *Tag) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Tag) GetExternalDocs() *ExternalDocs {
-	if x != nil {
-		return x.ExternalDocs
-	}
-	return nil
-}
+func (x *Tag) GetExternalDocs() *ExternalDocs { _ = "STUB: not implemented"; return nil }
 
-func (x *Tag) SetName(v string) {
-	x.Name = v
-}
+func (x *Tag) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) SetDescription(v string) {
-	x.Description = v
-}
+func (x *Tag) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) SetExternalDocs(v *ExternalDocs) {
-	x.ExternalDocs = v
-}
+func (x *Tag) SetExternalDocs(v *ExternalDocs) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.ExternalDocs != nil
-}
+func (x *Tag) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Tag) ClearExternalDocs() {
-	x.ExternalDocs = nil
-}
+func (x *Tag) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Tag_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1228,15 +702,7 @@ type Tag_builder struct {
 	ExternalDocs *ExternalDocs
 }
 
-func (b0 Tag_builder) Build() *Tag {
-	m0 := &Tag{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.Name = b.Name
-	x.Description = b.Description
-	x.ExternalDocs = b.ExternalDocs
-	return m0
-}
+func (b0 Tag_builder) Build() *Tag { _ = "STUB: not implemented"; return nil }
 
 var File_protoc_gen_openapiv3_options_openapiv3_proto protoreflect.FileDescriptor
 
@@ -1378,31 +844,5 @@ var file_protoc_gen_openapiv3_options_openapiv3_proto_depIdxs = []int32{
 	0, // [0:9] is the sub-list for field type_name
 }
 
-func init() { file_protoc_gen_openapiv3_options_openapiv3_proto_init() }
-func file_protoc_gen_openapiv3_options_openapiv3_proto_init() {
-	if File_protoc_gen_openapiv3_options_openapiv3_proto != nil {
-		return
-	}
-	file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes[3].OneofWrappers = []any{
-		(*License_Identifier)(nil),
-		(*License_Url)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_protoc_gen_openapiv3_options_openapiv3_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   9,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_protoc_gen_openapiv3_options_openapiv3_proto_goTypes,
-		DependencyIndexes: file_protoc_gen_openapiv3_options_openapiv3_proto_depIdxs,
-		MessageInfos:      file_protoc_gen_openapiv3_options_openapiv3_proto_msgTypes,
-	}.Build()
-	File_protoc_gen_openapiv3_options_openapiv3_proto = out.File
-	file_protoc_gen_openapiv3_options_openapiv3_proto_rawDesc = nil
-	file_protoc_gen_openapiv3_options_openapiv3_proto_goTypes = nil
-	file_protoc_gen_openapiv3_options_openapiv3_proto_depIdxs = nil
-}
+func init()                                                   { file_protoc_gen_openapiv3_options_openapiv3_proto_init() }
+func file_protoc_gen_openapiv3_options_openapiv3_proto_init() { _ = "STUB: not implemented"; return }

@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceErrorWithDetailsParams() *ABitOfEverythingServiceErrorWithDetailsParams {
-	return &ABitOfEverythingServiceErrorWithDetailsParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceErrorWithDetailsParamsWithTimeout creates a new ABitOfEverythingServiceErrorWithDetailsParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceErrorWithDetailsParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceErrorWithDetailsParams {
-	return &ABitOfEverythingServiceErrorWithDetailsParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceErrorWithDetailsParamsWithContext creates a new ABitOfEverythingServiceErrorWithDetailsParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceErrorWithDetailsParamsWithContext(ctx context.Context) *ABitOfEverythingServiceErrorWithDetailsParams {
-	return &ABitOfEverythingServiceErrorWithDetailsParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceErrorWithDetailsParamsWithHTTPClient creates a new ABitOfEverythingServiceErrorWithDetailsParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceErrorWithDetailsParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceErrorWithDetailsParams {
-	return &ABitOfEverythingServiceErrorWithDetailsParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -66,60 +60,61 @@ type ABitOfEverythingServiceErrorWithDetailsParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) WithDefaults() *ABitOfEverythingServiceErrorWithDetailsParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service error with details params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service error with details params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceErrorWithDetailsParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service error with details params
 }
 
-// WithContext adds the context to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) WithContext(ctx context.Context) *ABitOfEverythingServiceErrorWithDetailsParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service error with details params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceErrorWithDetailsParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service error with details params
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WriteToRequest writes these params to a swagger request
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceErrorWithDetailsParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

@@ -7,10 +7,10 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -37,105 +37,39 @@ type Proto2Message struct {
 	RepeatedValue []string `protobuf:"bytes,10,rep,name=repeated_value,json=repeatedValue" json:"repeated_value,omitempty"`
 }
 
-func (x *Proto2Message) Reset() {
-	*x = Proto2Message{}
-	mi := &file_runtime_internal_examplepb_proto2_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Proto2Message) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Proto2Message) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Proto2Message) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Proto2Message) ProtoMessage() {}
+func (*Proto2Message) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Proto2Message) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_proto2_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Proto2Message.ProtoReflect.Descriptor instead.
-func (*Proto2Message) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_proto2_proto_rawDescGZIP(), []int{0}
-}
+func (*Proto2Message) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Proto2Message) GetFloatValue() float32 {
-	if x != nil && x.FloatValue != nil {
-		return *x.FloatValue
-	}
-	return 0
-}
+func (x *Proto2Message) GetFloatValue() float32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetDoubleValue() float64 {
-	if x != nil && x.DoubleValue != nil {
-		return *x.DoubleValue
-	}
-	return 0
-}
+func (x *Proto2Message) GetDoubleValue() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetInt64Value() int64 {
-	if x != nil && x.Int64Value != nil {
-		return *x.Int64Value
-	}
-	return 0
-}
+func (x *Proto2Message) GetInt64Value() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetInt32Value() int32 {
-	if x != nil && x.Int32Value != nil {
-		return *x.Int32Value
-	}
-	return 0
-}
+func (x *Proto2Message) GetInt32Value() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetUint64Value() uint64 {
-	if x != nil && x.Uint64Value != nil {
-		return *x.Uint64Value
-	}
-	return 0
-}
+func (x *Proto2Message) GetUint64Value() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetUint32Value() uint32 {
-	if x != nil && x.Uint32Value != nil {
-		return *x.Uint32Value
-	}
-	return 0
-}
+func (x *Proto2Message) GetUint32Value() uint32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Proto2Message) GetBoolValue() bool {
-	if x != nil && x.BoolValue != nil {
-		return *x.BoolValue
-	}
-	return false
-}
+func (x *Proto2Message) GetBoolValue() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Proto2Message) GetStringValue() string {
-	if x != nil && x.StringValue != nil {
-		return *x.StringValue
-	}
-	return ""
-}
+func (x *Proto2Message) GetStringValue() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Proto2Message) GetBytesValue() []byte {
-	if x != nil {
-		return x.BytesValue
-	}
-	return nil
-}
+func (x *Proto2Message) GetBytesValue() []byte { _ = "STUB: not implemented"; return nil }
 
-func (x *Proto2Message) GetRepeatedValue() []string {
-	if x != nil {
-		return x.RepeatedValue
-	}
-	return nil
-}
+func (x *Proto2Message) GetRepeatedValue() []string { _ = "STUB: not implemented"; return nil }
 
 var File_runtime_internal_examplepb_proto2_proto protoreflect.FileDescriptor
 
@@ -181,10 +115,8 @@ var (
 )
 
 func file_runtime_internal_examplepb_proto2_proto_rawDescGZIP() []byte {
-	file_runtime_internal_examplepb_proto2_proto_rawDescOnce.Do(func() {
-		file_runtime_internal_examplepb_proto2_proto_rawDescData = protoimpl.X.CompressGZIP(file_runtime_internal_examplepb_proto2_proto_rawDescData)
-	})
-	return file_runtime_internal_examplepb_proto2_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_runtime_internal_examplepb_proto2_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -199,27 +131,5 @@ var file_runtime_internal_examplepb_proto2_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_runtime_internal_examplepb_proto2_proto_init() }
-func file_runtime_internal_examplepb_proto2_proto_init() {
-	if File_runtime_internal_examplepb_proto2_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_runtime_internal_examplepb_proto2_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_runtime_internal_examplepb_proto2_proto_goTypes,
-		DependencyIndexes: file_runtime_internal_examplepb_proto2_proto_depIdxs,
-		MessageInfos:      file_runtime_internal_examplepb_proto2_proto_msgTypes,
-	}.Build()
-	File_runtime_internal_examplepb_proto2_proto = out.File
-	file_runtime_internal_examplepb_proto2_proto_rawDesc = nil
-	file_runtime_internal_examplepb_proto2_proto_goTypes = nil
-	file_runtime_internal_examplepb_proto2_proto_depIdxs = nil
-}
+func init()                                              { file_runtime_internal_examplepb_proto2_proto_init() }
+func file_runtime_internal_examplepb_proto2_proto_init() { _ = "STUB: not implemented"; return }

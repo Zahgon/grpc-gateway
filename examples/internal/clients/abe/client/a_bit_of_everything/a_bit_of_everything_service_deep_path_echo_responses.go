@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceDeepPathEchoReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceDeepPathEchoReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceDeepPathEchoOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceDeepPathEchoForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceDeepPathEchoNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceDeepPathEchoIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceDeepPathEchoInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceDeepPathEchoDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoOK creates a ABitOfEverythingServiceDeepPathEchoOK with default headers values
 func NewABitOfEverythingServiceDeepPathEchoOK() *ABitOfEverythingServiceDeepPathEchoOK {
-	return &ABitOfEverythingServiceDeepPathEchoOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,63 +37,68 @@ type ABitOfEverythingServiceDeepPathEchoOK struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo o k response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service deep path echo o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service deep path echo o k response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service deep path echo o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service deep path echo o k response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service deep path echo o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service deep path echo o k response has a 5xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service deep path echo o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service deep path echo o k response a status code equal to that given
 func (o *ABitOfEverythingServiceDeepPathEchoOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo o k response
 }
 
-// Code gets the status code for the a bit of everything service deep path echo o k response
-func (o *ABitOfEverythingServiceDeepPathEchoOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceDeepPathEchoOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoOK) GetPayload() *models.ExamplepbABitOfEverything {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceDeepPathEchoOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbABitOfEverything)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceDeepPathEchoOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceDeepPathEchoForbidden creates a ABitOfEverythingServiceDeepPathEchoForbidden with default headers values
 func NewABitOfEverythingServiceDeepPathEchoForbidden() *ABitOfEverythingServiceDeepPathEchoForbidden {
-	return &ABitOfEverythingServiceDeepPathEchoForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -150,61 +112,71 @@ type ABitOfEverythingServiceDeepPathEchoForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service deep path echo forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service deep path echo forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service deep path echo forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service deep path echo forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service deep path echo forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service deep path echo forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service deep path echo forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service deep path echo forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service deep path echo forbidden response
+func (o *ABitOfEverythingServiceDeepPathEchoForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo forbidden response
+}
+
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoNotFound creates a ABitOfEverythingServiceDeepPathEchoNotFound with default headers values
 func NewABitOfEverythingServiceDeepPathEchoNotFound() *ABitOfEverythingServiceDeepPathEchoNotFound {
-	return &ABitOfEverythingServiceDeepPathEchoNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -218,61 +190,71 @@ type ABitOfEverythingServiceDeepPathEchoNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo not found response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service deep path echo not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service deep path echo not found response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service deep path echo not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service deep path echo not found response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service deep path echo not found response has a 5xx status code
-func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service deep path echo not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service deep path echo not found response a status code equal to that given
-func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service deep path echo not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service deep path echo not found response
+func (o *ABitOfEverythingServiceDeepPathEchoNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo not found response
+}
+
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoIMATeapot creates a ABitOfEverythingServiceDeepPathEchoIMATeapot with default headers values
 func NewABitOfEverythingServiceDeepPathEchoIMATeapot() *ABitOfEverythingServiceDeepPathEchoIMATeapot {
-	return &ABitOfEverythingServiceDeepPathEchoIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -286,61 +268,71 @@ type ABitOfEverythingServiceDeepPathEchoIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service deep path echo i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service deep path echo i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service deep path echo i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service deep path echo i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service deep path echo i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service deep path echo i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service deep path echo i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service deep path echo i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service deep path echo i m a teapot response
+func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoInternalServerError creates a ABitOfEverythingServiceDeepPathEchoInternalServerError with default headers values
 func NewABitOfEverythingServiceDeepPathEchoInternalServerError() *ABitOfEverythingServiceDeepPathEchoInternalServerError {
-	return &ABitOfEverythingServiceDeepPathEchoInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -354,65 +346,71 @@ type ABitOfEverythingServiceDeepPathEchoInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service deep path echo internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service deep path echo internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service deep path echo internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service deep path echo internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service deep path echo internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service deep path echo internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service deep path echo internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service deep path echo internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo internal server error response
 }
 
-// Code gets the status code for the a bit of everything service deep path echo internal server error response
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] aBitOfEverythingServiceDeepPathEchoInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceDeepPathEchoInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceDeepPathEchoDefault creates a ABitOfEverythingServiceDeepPathEchoDefault with default headers values
 func NewABitOfEverythingServiceDeepPathEchoDefault(code int) *ABitOfEverythingServiceDeepPathEchoDefault {
-	return &ABitOfEverythingServiceDeepPathEchoDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -428,56 +426,59 @@ type ABitOfEverythingServiceDeepPathEchoDefault struct {
 
 // IsSuccess returns true when this a bit of everything service deep path echo default response has a 2xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service deep path echo default response has a 3xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service deep path echo default response has a 4xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service deep path echo default response has a 5xx status code
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service deep path echo default response a status code equal to that given
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service deep path echo default response
 }
 
-// Code gets the status code for the a bit of everything service deep path echo default response
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] ABitOfEverythingService_DeepPathEcho default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/deep_path/{singleNested.name}][%d] ABitOfEverythingService_DeepPathEcho default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceDeepPathEchoDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

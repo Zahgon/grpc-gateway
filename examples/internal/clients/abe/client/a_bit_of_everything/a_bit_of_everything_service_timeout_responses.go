@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceTimeoutReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceTimeoutReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceTimeoutOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceTimeoutForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceTimeoutNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceTimeoutIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceTimeoutInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceTimeoutDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceTimeoutOK creates a ABitOfEverythingServiceTimeoutOK with default headers values
 func NewABitOfEverythingServiceTimeoutOK() *ABitOfEverythingServiceTimeoutOK {
-	return &ABitOfEverythingServiceTimeoutOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,62 @@ type ABitOfEverythingServiceTimeoutOK struct {
 
 // IsSuccess returns true when this a bit of everything service timeout o k response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service timeout o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service timeout o k response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service timeout o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service timeout o k response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service timeout o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service timeout o k response has a 5xx status code
 func (o *ABitOfEverythingServiceTimeoutOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service timeout o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service timeout o k response a status code equal to that given
 func (o *ABitOfEverythingServiceTimeoutOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout o k response
 }
 
-// Code gets the status code for the a bit of everything service timeout o k response
-func (o *ABitOfEverythingServiceTimeoutOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceTimeoutOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceTimeoutOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceTimeoutOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceTimeoutOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceTimeoutOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceTimeoutOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceTimeoutOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceTimeoutForbidden creates a ABitOfEverythingServiceTimeoutForbidden with default headers values
 func NewABitOfEverythingServiceTimeoutForbidden() *ABitOfEverythingServiceTimeoutForbidden {
-	return &ABitOfEverythingServiceTimeoutForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +106,68 @@ type ABitOfEverythingServiceTimeoutForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service timeout forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service timeout forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service timeout forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service timeout forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service timeout forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service timeout forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceTimeoutForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service timeout forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service timeout forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceTimeoutForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceTimeoutForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service timeout forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service timeout forbidden response
-func (o *ABitOfEverythingServiceTimeoutForbidden) Code() int {
-	return 403
+func (o *ABitOfEverythingServiceTimeoutForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout forbidden response
 }
+
+func (o *ABitOfEverythingServiceTimeoutForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceTimeoutForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceTimeoutForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceTimeoutNotFound creates a ABitOfEverythingServiceTimeoutNotFound with default headers values
 func NewABitOfEverythingServiceTimeoutNotFound() *ABitOfEverythingServiceTimeoutNotFound {
-	return &ABitOfEverythingServiceTimeoutNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +181,68 @@ type ABitOfEverythingServiceTimeoutNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service timeout not found response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service timeout not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service timeout not found response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service timeout not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service timeout not found response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service timeout not found response has a 5xx status code
-func (o *ABitOfEverythingServiceTimeoutNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service timeout not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service timeout not found response a status code equal to that given
-func (o *ABitOfEverythingServiceTimeoutNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceTimeoutNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service timeout not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service timeout not found response
-func (o *ABitOfEverythingServiceTimeoutNotFound) Code() int {
-	return 404
+func (o *ABitOfEverythingServiceTimeoutNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout not found response
 }
+
+func (o *ABitOfEverythingServiceTimeoutNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceTimeoutNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceTimeoutIMATeapot creates a ABitOfEverythingServiceTimeoutIMATeapot with default headers values
 func NewABitOfEverythingServiceTimeoutIMATeapot() *ABitOfEverythingServiceTimeoutIMATeapot {
-	return &ABitOfEverythingServiceTimeoutIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +256,68 @@ type ABitOfEverythingServiceTimeoutIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service timeout i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service timeout i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service timeout i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service timeout i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service timeout i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service timeout i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service timeout i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service timeout i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service timeout i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service timeout i m a teapot response
-func (o *ABitOfEverythingServiceTimeoutIMATeapot) Code() int {
-	return 418
+func (o *ABitOfEverythingServiceTimeoutIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout i m a teapot response
 }
+
+func (o *ABitOfEverythingServiceTimeoutIMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceTimeoutIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceTimeoutInternalServerError creates a ABitOfEverythingServiceTimeoutInternalServerError with default headers values
 func NewABitOfEverythingServiceTimeoutInternalServerError() *ABitOfEverythingServiceTimeoutInternalServerError {
-	return &ABitOfEverythingServiceTimeoutInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +331,71 @@ type ABitOfEverythingServiceTimeoutInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service timeout internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service timeout internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service timeout internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service timeout internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service timeout internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service timeout internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service timeout internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service timeout internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service timeout internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout internal server error response
 }
 
-// Code gets the status code for the a bit of everything service timeout internal server error response
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] aBitOfEverythingServiceTimeoutInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceTimeoutInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceTimeoutInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceTimeoutDefault creates a ABitOfEverythingServiceTimeoutDefault with default headers values
 func NewABitOfEverythingServiceTimeoutDefault(code int) *ABitOfEverythingServiceTimeoutDefault {
-	return &ABitOfEverythingServiceTimeoutDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +411,56 @@ type ABitOfEverythingServiceTimeoutDefault struct {
 
 // IsSuccess returns true when this a bit of everything service timeout default response has a 2xx status code
 func (o *ABitOfEverythingServiceTimeoutDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service timeout default response has a 3xx status code
 func (o *ABitOfEverythingServiceTimeoutDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service timeout default response has a 4xx status code
 func (o *ABitOfEverythingServiceTimeoutDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service timeout default response has a 5xx status code
 func (o *ABitOfEverythingServiceTimeoutDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service timeout default response a status code equal to that given
 func (o *ABitOfEverythingServiceTimeoutDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service timeout default response
 }
 
-// Code gets the status code for the a bit of everything service timeout default response
-func (o *ABitOfEverythingServiceTimeoutDefault) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceTimeoutDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceTimeoutDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] ABitOfEverythingService_Timeout default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v2/example/timeout][%d] ABitOfEverythingService_Timeout default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceTimeoutDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceTimeoutDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

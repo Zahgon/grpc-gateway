@@ -3,8 +3,4 @@
 
 package genopenapi
 
-import "strings"
-
-func fieldName(k string) string {
-	return strings.Replace(strings.Title(k), "-", "_", -1)
-}
+func fieldName(k string) string { _ = "STUB: not implemented"; return "" }

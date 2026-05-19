@@ -16,9 +16,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -57,47 +56,28 @@ type unannotatedEchoServiceClient struct {
 }
 
 func NewUnannotatedEchoServiceClient(cc grpc.ClientConnInterface) UnannotatedEchoServiceClient {
-	return &unannotatedEchoServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(UnannotatedEchoServiceClient)
 }
 
 func (c *unannotatedEchoServiceClient) Echo(ctx context.Context, in *UnannotatedSimpleMessage, opts ...grpc.CallOption) (*UnannotatedSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(UnannotatedSimpleMessage)
-	err := c.cc.Invoke(ctx, UnannotatedEchoService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *unannotatedEchoServiceClient) EchoBody(ctx context.Context, in *UnannotatedSimpleMessage, opts ...grpc.CallOption) (*UnannotatedSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(UnannotatedSimpleMessage)
-	err := c.cc.Invoke(ctx, UnannotatedEchoService_EchoBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *unannotatedEchoServiceClient) EchoDelete(ctx context.Context, in *UnannotatedSimpleMessage, opts ...grpc.CallOption) (*UnannotatedSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(UnannotatedSimpleMessage)
-	err := c.cc.Invoke(ctx, UnannotatedEchoService_EchoDelete_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *unannotatedEchoServiceClient) EchoNested(ctx context.Context, in *UnannotatedSimpleMessage, opts ...grpc.CallOption) (*UnannotatedSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(UnannotatedSimpleMessage)
-	err := c.cc.Invoke(ctx, UnannotatedEchoService_EchoNested_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnannotatedEchoServiceServer is the server API for UnannotatedEchoService service.
@@ -127,107 +107,65 @@ type UnannotatedEchoServiceServer interface {
 type UnimplementedUnannotatedEchoServiceServer struct{}
 
 func (UnimplementedUnannotatedEchoServiceServer) Echo(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedUnannotatedEchoServiceServer) EchoBody(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoBody not implemented")
-}
-func (UnimplementedUnannotatedEchoServiceServer) EchoDelete(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoDelete not implemented")
-}
-func (UnimplementedUnannotatedEchoServiceServer) EchoNested(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoNested not implemented")
-}
-func (UnimplementedUnannotatedEchoServiceServer) testEmbeddedByValue() {}
 
-// UnsafeUnannotatedEchoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to UnannotatedEchoServiceServer will
-// result in compilation errors.
+func (UnimplementedUnannotatedEchoServiceServer) EchoBody(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedUnannotatedEchoServiceServer) EchoDelete(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedUnannotatedEchoServiceServer) EchoNested(context.Context, *UnannotatedSimpleMessage) (*UnannotatedSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedUnannotatedEchoServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeUnannotatedEchoServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to UnannotatedEchoServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeUnannotatedEchoServiceServer interface {
 	mustEmbedUnimplementedUnannotatedEchoServiceServer()
 }
 
 func RegisterUnannotatedEchoServiceServer(s grpc.ServiceRegistrar, srv UnannotatedEchoServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedUnannotatedEchoServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&UnannotatedEchoService_ServiceDesc, srv)
+	return
 }
 
 func _UnannotatedEchoService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UnannotatedSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(UnannotatedEchoServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: UnannotatedEchoService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(UnannotatedEchoServiceServer).Echo(ctx, req.(*UnannotatedSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _UnannotatedEchoService_EchoBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UnannotatedSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(UnannotatedEchoServiceServer).EchoBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: UnannotatedEchoService_EchoBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(UnannotatedEchoServiceServer).EchoBody(ctx, req.(*UnannotatedSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _UnannotatedEchoService_EchoDelete_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UnannotatedSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(UnannotatedEchoServiceServer).EchoDelete(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: UnannotatedEchoService_EchoDelete_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(UnannotatedEchoServiceServer).EchoDelete(ctx, req.(*UnannotatedSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _UnannotatedEchoService_EchoNested_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UnannotatedSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(UnannotatedEchoServiceServer).EchoNested(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: UnannotatedEchoService_EchoNested_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(UnannotatedEchoServiceServer).EchoNested(ctx, req.(*UnannotatedSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnannotatedEchoService_ServiceDesc is the grpc.ServiceDesc for UnannotatedEchoService service.

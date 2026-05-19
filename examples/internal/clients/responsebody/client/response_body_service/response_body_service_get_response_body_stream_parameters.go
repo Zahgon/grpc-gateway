@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewResponseBodyServiceGetResponseBodyStreamParams() *ResponseBodyServiceGetResponseBodyStreamParams {
-	return &ResponseBodyServiceGetResponseBodyStreamParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodyStreamParamsWithTimeout creates a new ResponseBodyServiceGetResponseBodyStreamParams object
 // with the ability to set a timeout on a request.
 func NewResponseBodyServiceGetResponseBodyStreamParamsWithTimeout(timeout time.Duration) *ResponseBodyServiceGetResponseBodyStreamParams {
-	return &ResponseBodyServiceGetResponseBodyStreamParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodyStreamParamsWithContext creates a new ResponseBodyServiceGetResponseBodyStreamParams object
 // with the ability to set a context for a request.
 func NewResponseBodyServiceGetResponseBodyStreamParamsWithContext(ctx context.Context) *ResponseBodyServiceGetResponseBodyStreamParams {
-	return &ResponseBodyServiceGetResponseBodyStreamParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewResponseBodyServiceGetResponseBodyStreamParamsWithHTTPClient creates a new ResponseBodyServiceGetResponseBodyStreamParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewResponseBodyServiceGetResponseBodyStreamParamsWithHTTPClient(client *http.Client) *ResponseBodyServiceGetResponseBodyStreamParams {
-	return &ResponseBodyServiceGetResponseBodyStreamParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,77 @@ type ResponseBodyServiceGetResponseBodyStreamParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WithDefaults() *ResponseBodyServiceGetResponseBodyStreamParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the response body service get response body stream params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the response body service get response body stream params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WithTimeout(timeout time.Duration) *ResponseBodyServiceGetResponseBodyStreamParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the response body service get response body stream params
 }
 
-// WithContext adds the context to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WithContext(ctx context.Context) *ResponseBodyServiceGetResponseBodyStreamParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the response body service get response body stream params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WithHTTPClient(client *http.Client) *ResponseBodyServiceGetResponseBodyStreamParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithData adds the data to the response body service get response body stream params
 }
 
-// WithData adds the data to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WithData(data string) *ResponseBodyServiceGetResponseBodyStreamParams {
-	o.SetData(data)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetData adds the data to the response body service get response body stream params
 }
 
-// SetData adds the data to the response body service get response body stream params
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) SetData(data string) {
-	o.Data = data
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ResponseBodyServiceGetResponseBodyStreamParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param data
-	if err := r.SetPathParam("data", o.Data); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param data

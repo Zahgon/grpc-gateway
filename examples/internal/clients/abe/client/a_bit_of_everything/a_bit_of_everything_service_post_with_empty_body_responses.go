@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServicePostWithEmptyBodyReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServicePostWithEmptyBodyReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServicePostWithEmptyBodyOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServicePostWithEmptyBodyForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServicePostWithEmptyBodyNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServicePostWithEmptyBodyIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServicePostWithEmptyBodyInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServicePostWithEmptyBodyDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyOK creates a ABitOfEverythingServicePostWithEmptyBodyOK with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyOK() *ABitOfEverythingServicePostWithEmptyBodyOK {
-	return &ABitOfEverythingServicePostWithEmptyBodyOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,71 @@ type ABitOfEverythingServicePostWithEmptyBodyOK struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body o k response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post with empty body o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post with empty body o k response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post with empty body o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post with empty body o k response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service post with empty body o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service post with empty body o k response has a 5xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post with empty body o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post with empty body o k response a status code equal to that given
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body o k response
 }
 
-// Code gets the status code for the a bit of everything service post with empty body o k response
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyForbidden creates a ABitOfEverythingServicePostWithEmptyBodyForbidden with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyForbidden() *ABitOfEverythingServicePostWithEmptyBodyForbidden {
-	return &ABitOfEverythingServicePostWithEmptyBodyForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +115,71 @@ type ABitOfEverythingServicePostWithEmptyBodyForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body forbidden response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post with empty body forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post with empty body forbidden response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post with empty body forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post with empty body forbidden response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post with empty body forbidden response has a 5xx status code
-func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post with empty body forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post with empty body forbidden response a status code equal to that given
-func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post with empty body forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post with empty body forbidden response
+func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body forbidden response
+}
+
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyNotFound creates a ABitOfEverythingServicePostWithEmptyBodyNotFound with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyNotFound() *ABitOfEverythingServicePostWithEmptyBodyNotFound {
-	return &ABitOfEverythingServicePostWithEmptyBodyNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +193,71 @@ type ABitOfEverythingServicePostWithEmptyBodyNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body not found response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post with empty body not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post with empty body not found response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post with empty body not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post with empty body not found response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post with empty body not found response has a 5xx status code
-func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post with empty body not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post with empty body not found response a status code equal to that given
-func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post with empty body not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post with empty body not found response
+func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body not found response
+}
+
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyIMATeapot creates a ABitOfEverythingServicePostWithEmptyBodyIMATeapot with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyIMATeapot() *ABitOfEverythingServicePostWithEmptyBodyIMATeapot {
-	return &ABitOfEverythingServicePostWithEmptyBodyIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +271,71 @@ type ABitOfEverythingServicePostWithEmptyBodyIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post with empty body i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post with empty body i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post with empty body i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post with empty body i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post with empty body i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post with empty body i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post with empty body i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post with empty body i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post with empty body i m a teapot response
+func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body i m a teapot response
+}
+
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyInternalServerError creates a ABitOfEverythingServicePostWithEmptyBodyInternalServerError with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyInternalServerError() *ABitOfEverythingServicePostWithEmptyBodyInternalServerError {
-	return &ABitOfEverythingServicePostWithEmptyBodyInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +349,71 @@ type ABitOfEverythingServicePostWithEmptyBodyInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body internal server error response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post with empty body internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post with empty body internal server error response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post with empty body internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post with empty body internal server error response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service post with empty body internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service post with empty body internal server error response has a 5xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post with empty body internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service post with empty body internal server error response a status code equal to that given
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body internal server error response
 }
 
-// Code gets the status code for the a bit of everything service post with empty body internal server error response
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] aBitOfEverythingServicePostWithEmptyBodyInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServicePostWithEmptyBodyInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServicePostWithEmptyBodyDefault creates a ABitOfEverythingServicePostWithEmptyBodyDefault with default headers values
 func NewABitOfEverythingServicePostWithEmptyBodyDefault(code int) *ABitOfEverythingServicePostWithEmptyBodyDefault {
-	return &ABitOfEverythingServicePostWithEmptyBodyDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +429,59 @@ type ABitOfEverythingServicePostWithEmptyBodyDefault struct {
 
 // IsSuccess returns true when this a bit of everything service post with empty body default response has a 2xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service post with empty body default response has a 3xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service post with empty body default response has a 4xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service post with empty body default response has a 5xx status code
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service post with empty body default response a status code equal to that given
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post with empty body default response
 }
 
-// Code gets the status code for the a bit of everything service post with empty body default response
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] ABitOfEverythingService_PostWithEmptyBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/postwithemptybody/{name}][%d] ABitOfEverythingService_PostWithEmptyBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServicePostWithEmptyBodyDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

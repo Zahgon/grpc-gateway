@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -34,17 +33,13 @@ type enumWithSingleValueServiceClient struct {
 }
 
 func NewEnumWithSingleValueServiceClient(cc grpc.ClientConnInterface) EnumWithSingleValueServiceClient {
-	return &enumWithSingleValueServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(EnumWithSingleValueServiceClient)
 }
 
 func (c *enumWithSingleValueServiceClient) Echo(ctx context.Context, in *EnumWithSingleValueServiceEchoRequest, opts ...grpc.CallOption) (*EnumWithSingleValueServiceEchoResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(EnumWithSingleValueServiceEchoResponse)
-	err := c.cc.Invoke(ctx, EnumWithSingleValueService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnumWithSingleValueServiceServer is the server API for EnumWithSingleValueService service.
@@ -62,44 +57,35 @@ type EnumWithSingleValueServiceServer interface {
 type UnimplementedEnumWithSingleValueServiceServer struct{}
 
 func (UnimplementedEnumWithSingleValueServiceServer) Echo(context.Context, *EnumWithSingleValueServiceEchoRequest) (*EnumWithSingleValueServiceEchoResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedEnumWithSingleValueServiceServer) testEmbeddedByValue() {}
 
-// UnsafeEnumWithSingleValueServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to EnumWithSingleValueServiceServer will
-// result in compilation errors.
+func (UnimplementedEnumWithSingleValueServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeEnumWithSingleValueServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to EnumWithSingleValueServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeEnumWithSingleValueServiceServer interface {
 	mustEmbedUnimplementedEnumWithSingleValueServiceServer()
 }
 
 func RegisterEnumWithSingleValueServiceServer(s grpc.ServiceRegistrar, srv EnumWithSingleValueServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedEnumWithSingleValueServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&EnumWithSingleValueService_ServiceDesc, srv)
+	return
 }
 
 func _EnumWithSingleValueService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(EnumWithSingleValueServiceEchoRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EnumWithSingleValueServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EnumWithSingleValueService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EnumWithSingleValueServiceServer).Echo(ctx, req.(*EnumWithSingleValueServiceEchoRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnumWithSingleValueService_ServiceDesc is the grpc.ServiceDesc for EnumWithSingleValueService service.

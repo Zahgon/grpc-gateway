@@ -12,6 +12,8 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	sub "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub"
 	sub2 "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub2"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
@@ -19,8 +21,6 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	fieldmaskpb "google.golang.org/protobuf/types/known/fieldmaskpb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -43,56 +43,28 @@ type Embedded struct {
 	Mark isEmbedded_Mark `protobuf_oneof:"mark"`
 }
 
-func (x *Embedded) Reset() {
-	*x = Embedded{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Embedded) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Embedded) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Embedded) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Embedded) ProtoMessage() {}
+func (*Embedded) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Embedded) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Embedded.ProtoReflect.Descriptor instead.
-func (*Embedded) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{0}
-}
+func (*Embedded) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (m *Embedded) GetMark() isEmbedded_Mark {
-	if m != nil {
-		return m.Mark
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isEmbedded_Mark)
 }
 
-func (x *Embedded) GetProgress() int64 {
-	if x, ok := x.GetMark().(*Embedded_Progress); ok {
-		return x.Progress
-	}
-	return 0
-}
+func (x *Embedded) GetProgress() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *Embedded) GetNote() string {
-	if x, ok := x.GetMark().(*Embedded_Note); ok {
-		return x.Note
-	}
-	return ""
-}
+func (x *Embedded) GetNote() string { _ = "STUB: not implemented"; return "" }
 
 type isEmbedded_Mark interface {
 	isEmbedded_Mark()
@@ -106,9 +78,9 @@ type Embedded_Note struct {
 	Note string `protobuf:"bytes,2,opt,name=note,proto3,oneof"`
 }
 
-func (*Embedded_Progress) isEmbedded_Mark() {}
+func (*Embedded_Progress) isEmbedded_Mark() { _ = "STUB: not implemented"; return }
 
-func (*Embedded_Note) isEmbedded_Mark() {}
+func (*Embedded_Note) isEmbedded_Mark() { _ = "STUB: not implemented"; return }
 
 type NestedMessage struct {
 	state         protoimpl.MessageState
@@ -119,49 +91,23 @@ type NestedMessage struct {
 	Val string `protobuf:"bytes,2,opt,name=val,proto3" json:"val,omitempty"`
 }
 
-func (x *NestedMessage) Reset() {
-	*x = NestedMessage{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedMessage) ProtoMessage() {}
+func (*NestedMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedMessage.ProtoReflect.Descriptor instead.
-func (*NestedMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{1}
-}
+func (*NestedMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedMessage) GetNId() string {
-	if x != nil {
-		return x.NId
-	}
-	return ""
-}
+func (x *NestedMessage) GetNId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NestedMessage) GetVal() string {
-	if x != nil {
-		return x.Val
-	}
-	return ""
-}
+func (x *NestedMessage) GetVal() string { _ = "STUB: not implemented"; return "" }
 
 // SimpleMessage represents a simple message sent to the Echo service.
 type SimpleMessage struct {
@@ -187,112 +133,47 @@ type SimpleMessage struct {
 	NId        *NestedMessage      `protobuf:"bytes,9,opt,name=n_id,json=nId,proto3" json:"n_id,omitempty"`
 }
 
-func (x *SimpleMessage) Reset() {
-	*x = SimpleMessage{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SimpleMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SimpleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SimpleMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SimpleMessage) ProtoMessage() {}
+func (*SimpleMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SimpleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use SimpleMessage.ProtoReflect.Descriptor instead.
-func (*SimpleMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{2}
-}
+func (*SimpleMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *SimpleMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *SimpleMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SimpleMessage) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *SimpleMessage) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (m *SimpleMessage) GetCode() isSimpleMessage_Code {
-	if m != nil {
-		return m.Code
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isSimpleMessage_Code)
 }
 
-func (x *SimpleMessage) GetLineNum() int64 {
-	if x, ok := x.GetCode().(*SimpleMessage_LineNum); ok {
-		return x.LineNum
-	}
-	return 0
-}
+func (x *SimpleMessage) GetLineNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *SimpleMessage) GetLang() string {
-	if x, ok := x.GetCode().(*SimpleMessage_Lang); ok {
-		return x.Lang
-	}
-	return ""
-}
+func (x *SimpleMessage) GetLang() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SimpleMessage) GetStatus() *Embedded {
-	if x != nil {
-		return x.Status
-	}
-	return nil
-}
+func (x *SimpleMessage) GetStatus() *Embedded { _ = "STUB: not implemented"; return nil }
 
 func (m *SimpleMessage) GetExt() isSimpleMessage_Ext {
-	if m != nil {
-		return m.Ext
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isSimpleMessage_Ext)
 }
 
-func (x *SimpleMessage) GetEn() int64 {
-	if x, ok := x.GetExt().(*SimpleMessage_En); ok {
-		return x.En
-	}
-	return 0
-}
+func (x *SimpleMessage) GetEn() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *SimpleMessage) GetNo() *Embedded {
-	if x, ok := x.GetExt().(*SimpleMessage_No); ok {
-		return x.No
-	}
-	return nil
-}
+func (x *SimpleMessage) GetNo() *Embedded { _ = "STUB: not implemented"; return nil }
 
-func (x *SimpleMessage) GetResourceId() string {
-	if x != nil {
-		return x.ResourceId
-	}
-	return ""
-}
+func (x *SimpleMessage) GetResourceId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SimpleMessage) GetNId() *NestedMessage {
-	if x != nil {
-		return x.NId
-	}
-	return nil
-}
+func (x *SimpleMessage) GetNId() *NestedMessage { _ = "STUB: not implemented"; return nil }
 
 type isSimpleMessage_Code interface {
 	isSimpleMessage_Code()
@@ -306,9 +187,9 @@ type SimpleMessage_Lang struct {
 	Lang string `protobuf:"bytes,4,opt,name=lang,proto3,oneof"`
 }
 
-func (*SimpleMessage_LineNum) isSimpleMessage_Code() {}
+func (*SimpleMessage_LineNum) isSimpleMessage_Code() { _ = "STUB: not implemented"; return }
 
-func (*SimpleMessage_Lang) isSimpleMessage_Code() {}
+func (*SimpleMessage_Lang) isSimpleMessage_Code() { _ = "STUB: not implemented"; return }
 
 type isSimpleMessage_Ext interface {
 	isSimpleMessage_Ext()
@@ -322,12 +203,16 @@ type SimpleMessage_No struct {
 	No *Embedded `protobuf:"bytes,7,opt,name=no,proto3,oneof"`
 }
 
-func (*SimpleMessage_En) isSimpleMessage_Ext() {}
+func (*SimpleMessage_En) isSimpleMessage_Ext() { _ = "STUB: not implemented"; return }
 
-func (*SimpleMessage_No) isSimpleMessage_Ext() {}
+func (*SimpleMessage_No) isSimpleMessage_Ext() {
+	_ = "STUB: not implemented"
 
-// DynamicMessage represents a message which can have its structure
-// built dynamically using Struct and Values.
+	// DynamicMessage represents a message which can have its structure
+	// built dynamically using Struct and Values.
+	return
+}
+
 type DynamicMessage struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -337,49 +222,23 @@ type DynamicMessage struct {
 	ValueField  *structpb.Value  `protobuf:"bytes,2,opt,name=value_field,json=valueField,proto3" json:"value_field,omitempty"`
 }
 
-func (x *DynamicMessage) Reset() {
-	*x = DynamicMessage{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *DynamicMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *DynamicMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *DynamicMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*DynamicMessage) ProtoMessage() {}
+func (*DynamicMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *DynamicMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use DynamicMessage.ProtoReflect.Descriptor instead.
-func (*DynamicMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{3}
-}
+func (*DynamicMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *DynamicMessage) GetStructField() *structpb.Struct {
-	if x != nil {
-		return x.StructField
-	}
-	return nil
-}
+func (x *DynamicMessage) GetStructField() *structpb.Struct { _ = "STUB: not implemented"; return nil }
 
-func (x *DynamicMessage) GetValueField() *structpb.Value {
-	if x != nil {
-		return x.ValueField
-	}
-	return nil
-}
+func (x *DynamicMessage) GetValueField() *structpb.Value { _ = "STUB: not implemented"; return nil }
 
 type DynamicMessageUpdate struct {
 	state         protoimpl.MessageState
@@ -390,47 +249,27 @@ type DynamicMessageUpdate struct {
 	UpdateMask *fieldmaskpb.FieldMask `protobuf:"bytes,2,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
 }
 
-func (x *DynamicMessageUpdate) Reset() {
-	*x = DynamicMessageUpdate{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *DynamicMessageUpdate) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *DynamicMessageUpdate) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *DynamicMessageUpdate) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*DynamicMessageUpdate) ProtoMessage() {}
+func (*DynamicMessageUpdate) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *DynamicMessageUpdate) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use DynamicMessageUpdate.ProtoReflect.Descriptor instead.
 func (*DynamicMessageUpdate) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{4}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *DynamicMessageUpdate) GetBody() *DynamicMessage {
-	if x != nil {
-		return x.Body
-	}
-	return nil
-}
+func (x *DynamicMessageUpdate) GetBody() *DynamicMessage { _ = "STUB: not implemented"; return nil }
 
 func (x *DynamicMessageUpdate) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -448,56 +287,25 @@ type StatusCheckRequest struct {
 	Sub2Status *sub2.Status `protobuf:"bytes,3,opt,name=sub2_status,json=sub2Status,proto3" json:"sub2_status,omitempty"`
 }
 
-func (x *StatusCheckRequest) Reset() {
-	*x = StatusCheckRequest{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *StatusCheckRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *StatusCheckRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *StatusCheckRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*StatusCheckRequest) ProtoMessage() {}
+func (*StatusCheckRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *StatusCheckRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use StatusCheckRequest.ProtoReflect.Descriptor instead.
-func (*StatusCheckRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{5}
-}
+func (*StatusCheckRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *StatusCheckRequest) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *StatusCheckRequest) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *StatusCheckRequest) GetSubStatus() *sub.Status {
-	if x != nil {
-		return x.SubStatus
-	}
-	return nil
-}
+func (x *StatusCheckRequest) GetSubStatus() *sub.Status { _ = "STUB: not implemented"; return nil }
 
-func (x *StatusCheckRequest) GetSub2Status() *sub2.Status {
-	if x != nil {
-		return x.Sub2Status
-	}
-	return nil
-}
+func (x *StatusCheckRequest) GetSub2Status() *sub2.Status { _ = "STUB: not implemented"; return nil }
 
 type StatusCheckResponse struct {
 	state         protoimpl.MessageState
@@ -510,56 +318,28 @@ type StatusCheckResponse struct {
 	Sub2Status *sub2.Status `protobuf:"bytes,3,opt,name=sub2_status,json=sub2Status,proto3" json:"sub2_status,omitempty"`
 }
 
-func (x *StatusCheckResponse) Reset() {
-	*x = StatusCheckResponse{}
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *StatusCheckResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *StatusCheckResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *StatusCheckResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*StatusCheckResponse) ProtoMessage() {}
+func (*StatusCheckResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *StatusCheckResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use StatusCheckResponse.ProtoReflect.Descriptor instead.
 func (*StatusCheckResponse) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP(), []int{6}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *StatusCheckResponse) GetResult() string {
-	if x != nil {
-		return x.Result
-	}
-	return ""
-}
+func (x *StatusCheckResponse) GetResult() string { _ = "STUB: not implemented"; return "" }
 
-func (x *StatusCheckResponse) GetSubStatus() *sub.Status {
-	if x != nil {
-		return x.SubStatus
-	}
-	return nil
-}
+func (x *StatusCheckResponse) GetSubStatus() *sub.Status { _ = "STUB: not implemented"; return nil }
 
-func (x *StatusCheckResponse) GetSub2Status() *sub2.Status {
-	if x != nil {
-		return x.Sub2Status
-	}
-	return nil
-}
+func (x *StatusCheckResponse) GetSub2Status() *sub2.Status { _ = "STUB: not implemented"; return nil }
 
 var File_examples_internal_proto_examplepb_echo_service_proto protoreflect.FileDescriptor
 
@@ -759,10 +539,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_echo_service_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_echo_service_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_echo_service_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_echo_service_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_echo_service_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_echo_service_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
@@ -813,35 +591,6 @@ var file_examples_internal_proto_examplepb_echo_service_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_examplepb_echo_service_proto_init() }
 func file_examples_internal_proto_examplepb_echo_service_proto_init() {
-	if File_examples_internal_proto_examplepb_echo_service_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[0].OneofWrappers = []any{
-		(*Embedded_Progress)(nil),
-		(*Embedded_Note)(nil),
-	}
-	file_examples_internal_proto_examplepb_echo_service_proto_msgTypes[2].OneofWrappers = []any{
-		(*SimpleMessage_LineNum)(nil),
-		(*SimpleMessage_Lang)(nil),
-		(*SimpleMessage_En)(nil),
-		(*SimpleMessage_No)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_echo_service_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   7,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_echo_service_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_echo_service_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_echo_service_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_echo_service_proto = out.File
-	file_examples_internal_proto_examplepb_echo_service_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_echo_service_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_echo_service_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

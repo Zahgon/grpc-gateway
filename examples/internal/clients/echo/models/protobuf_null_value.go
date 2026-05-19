@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // ProtobufNullValue `NullValue` is a singleton enumeration to represent the null value for the
@@ -22,13 +20,13 @@ import (
 type ProtobufNullValue string
 
 func NewProtobufNullValue(value ProtobufNullValue) *ProtobufNullValue {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated ProtobufNullValue.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated ProtobufNullValue.
-func (m ProtobufNullValue) Pointer() *ProtobufNullValue {
-	return &m
-}
+func (m ProtobufNullValue) Pointer() *ProtobufNullValue { _ = "STUB: not implemented"; return nil }
 
 const (
 
@@ -50,28 +48,20 @@ func init() {
 }
 
 func (m ProtobufNullValue) validateProtobufNullValueEnum(path, location string, value ProtobufNullValue) error {
-	if err := validate.EnumCase(path, location, value, protobufNullValueEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this protobuf null value
 func (m ProtobufNullValue) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateProtobufNullValueEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this protobuf null value based on context it is used
 func (m ProtobufNullValue) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

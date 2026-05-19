@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // OneofenumExampleEnum oneofenum example enum
@@ -17,17 +15,20 @@ import (
 type OneofenumExampleEnum string
 
 func NewOneofenumExampleEnum(value OneofenumExampleEnum) *OneofenumExampleEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated OneofenumExampleEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated OneofenumExampleEnum.
 func (m OneofenumExampleEnum) Pointer() *OneofenumExampleEnum {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// OneofenumExampleEnumEXAMPLEENUMUNSPECIFIED captures enum value "EXAMPLE_ENUM_UNSPECIFIED"
 }
 
 const (
-
-	// OneofenumExampleEnumEXAMPLEENUMUNSPECIFIED captures enum value "EXAMPLE_ENUM_UNSPECIFIED"
 	OneofenumExampleEnumEXAMPLEENUMUNSPECIFIED OneofenumExampleEnum = "EXAMPLE_ENUM_UNSPECIFIED"
 
 	// OneofenumExampleEnumEXAMPLEENUMFIRST captures enum value "EXAMPLE_ENUM_FIRST"
@@ -48,28 +49,20 @@ func init() {
 }
 
 func (m OneofenumExampleEnum) validateOneofenumExampleEnumEnum(path, location string, value OneofenumExampleEnum) error {
-	if err := validate.EnumCase(path, location, value, oneofenumExampleEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this oneofenum example enum
 func (m OneofenumExampleEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateOneofenumExampleEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this oneofenum example enum based on context it is used
 func (m OneofenumExampleEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

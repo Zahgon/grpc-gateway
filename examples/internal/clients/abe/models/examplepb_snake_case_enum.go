@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbSnakeCaseEnum Ignoring lint warnings as this enum type exist to validate proper functionality
@@ -22,17 +20,20 @@ import (
 type ExamplepbSnakeCaseEnum string
 
 func NewExamplepbSnakeCaseEnum(value ExamplepbSnakeCaseEnum) *ExamplepbSnakeCaseEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated ExamplepbSnakeCaseEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated ExamplepbSnakeCaseEnum.
 func (m ExamplepbSnakeCaseEnum) Pointer() *ExamplepbSnakeCaseEnum {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// ExamplepbSnakeCaseEnumValuec captures enum value "value_c"
 }
 
 const (
-
-	// ExamplepbSnakeCaseEnumValuec captures enum value "value_c"
 	ExamplepbSnakeCaseEnumValuec ExamplepbSnakeCaseEnum = "value_c"
 
 	// ExamplepbSnakeCaseEnumValued captures enum value "value_d"
@@ -53,28 +54,20 @@ func init() {
 }
 
 func (m ExamplepbSnakeCaseEnum) validateExamplepbSnakeCaseEnumEnum(path, location string, value ExamplepbSnakeCaseEnum) error {
-	if err := validate.EnumCase(path, location, value, examplepbSnakeCaseEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this examplepb snake case enum
 func (m ExamplepbSnakeCaseEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateExamplepbSnakeCaseEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this examplepb snake case enum based on context it is used
 func (m ExamplepbSnakeCaseEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

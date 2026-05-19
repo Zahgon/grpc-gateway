@@ -1,17 +1,9 @@
 package descriptor
 
 import (
-	"fmt"
-	"sort"
-	"strings"
-
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/codegenerator"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor/openapiconfig"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/options"
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 	"google.golang.org/genproto/googleapis/api/annotations"
-	"google.golang.org/grpc/grpclog"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/types/descriptorpb"
 	"google.golang.org/protobuf/types/pluginpb"
@@ -202,758 +194,365 @@ type annotationIdentifier struct {
 }
 
 // NewRegistry returns a new Registry.
-func NewRegistry() *Registry {
-	return &Registry{
-		msgs:                           make(map[string]*Message),
-		enums:                          make(map[string]*Enum),
-		meths:                          make(map[string]*Method),
-		files:                          make(map[string]*File),
-		pkgMap:                         make(map[string]string),
-		pkgAliases:                     make(map[string]string),
-		externalHTTPRules:              make(map[string][]*annotations.HttpRule),
-		openAPINamingStrategy:          "legacy",
-		visibilityRestrictionSelectors: make(map[string]bool),
-		repeatedPathParamSeparator: repeatedFieldSeparator{
-			name: "csv",
-			sep:  ',',
-		},
-		fileOptions:    make(map[string]*options.Swagger),
-		methodOptions:  make(map[string]*options.Operation),
-		messageOptions: make(map[string]*options.Schema),
-		serviceOptions: make(map[string]*options.Tag),
-		fieldOptions:   make(map[string]*options.JSONSchema),
-		annotationMap:  make(map[annotationIdentifier]struct{}),
-		recursiveDepth: 1000,
-	}
-}
+func NewRegistry() *Registry { _ = "STUB: not implemented"; return nil }
 
 // Load loads definitions of services, methods, messages, enumerations and fields from "req".
 func (r *Registry) Load(req *pluginpb.CodeGeneratorRequest) error {
-	gen, err := protogen.Options{}.New(req)
-	if err != nil {
-		return err
-	}
-	// Note: keep in mind that this might be not enough because
-	// protogen.Plugin is used only to load files here.
-	// The support for features must be set on the pluginpb.CodeGeneratorResponse.
-	codegenerator.SetSupportedFeaturesOnPluginGen(gen)
-	return r.load(gen)
-}
-
-func (r *Registry) LoadFromPlugin(gen *protogen.Plugin) error {
-	return r.load(gen)
-}
-
-func (r *Registry) load(gen *protogen.Plugin) error {
-	filePaths := make([]string, 0, len(gen.FilesByPath))
-	for filePath := range gen.FilesByPath {
-		filePaths = append(filePaths, filePath)
-	}
-	sort.Strings(filePaths)
-
-	for _, filePath := range filePaths {
-		r.loadFile(filePath, gen.FilesByPath[filePath])
-	}
-
-	for _, filePath := range filePaths {
-		if !gen.FilesByPath[filePath].Generate {
-			continue
-		}
-		file := r.files[filePath]
-		if err := r.loadServices(file); err != nil {
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// Note: keep in mind that this might be not enough because
+// protogen.Plugin is used only to load files here.
+// The support for features must be set on the pluginpb.CodeGeneratorResponse.
+
+func (r *Registry) LoadFromPlugin(gen *protogen.Plugin) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (r *Registry) load(gen *protogen.Plugin) error { _ = "STUB: not implemented"; return nil }
 
 // loadFile loads messages, enumerations and fields from "file".
 // It does not load services and methods in "file".  You need to call
 // loadServices after loadFiles is called for all files to load services and methods.
 func (r *Registry) loadFile(filePath string, file *protogen.File) {
-	pkg := GoPackage{
-		Path: string(file.GoImportPath),
-		Name: string(file.GoPackageName),
-	}
-	if r.standalone {
-		pkg.Alias = "ext" + cases.Title(language.AmericanEnglish).String(pkg.Name)
-	}
-
-	if err := r.ReserveGoPackageAlias(pkg.Name, pkg.Path); err != nil {
-		for i := 0; ; i++ {
-			alias := fmt.Sprintf("%s_%d", pkg.Name, i)
-			if err := r.ReserveGoPackageAlias(alias, pkg.Path); err == nil {
-				pkg.Alias = alias
-				break
-			}
-		}
-	}
-	f := &File{
-		FileDescriptorProto:     file.Proto,
-		GoPkg:                   pkg,
-		GeneratedFilenamePrefix: file.GeneratedFilenamePrefix,
-	}
-
-	r.files[filePath] = f
-	r.registerMsg(f, nil, file.Proto.MessageType)
-	r.registerEnum(f, nil, file.Proto.EnumType)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (r *Registry) registerMsg(file *File, outerPath []string, msgs []*descriptorpb.DescriptorProto) {
-	for i, md := range msgs {
-		m := &Message{
-			File:              file,
-			Outers:            outerPath,
-			DescriptorProto:   md,
-			Index:             i,
-			ForcePrefixedName: r.standalone,
-		}
-		for _, fd := range md.GetField() {
-			m.Fields = append(m.Fields, &Field{
-				Message:              m,
-				FieldDescriptorProto: fd,
-				ForcePrefixedName:    r.standalone,
-			})
-		}
-		file.Messages = append(file.Messages, m)
-		r.msgs[m.FQMN()] = m
-		if grpclog.V(1) {
-			grpclog.Infof("Register name: %s", m.FQMN())
-		}
-
-		var outers []string
-		outers = append(outers, outerPath...)
-		outers = append(outers, m.GetName())
-		r.registerMsg(file, outers, m.GetNestedType())
-		r.registerEnum(file, outers, m.GetEnumType())
-	}
+	_ = "STUB: not implemented"
+	return
 }
 
 func (r *Registry) registerEnum(file *File, outerPath []string, enums []*descriptorpb.EnumDescriptorProto) {
-	for i, ed := range enums {
-		e := &Enum{
-			File:                file,
-			Outers:              outerPath,
-			EnumDescriptorProto: ed,
-			Index:               i,
-			ForcePrefixedName:   r.standalone,
-		}
-		file.Enums = append(file.Enums, e)
-		r.enums[e.FQEN()] = e
-		if grpclog.V(1) {
-			grpclog.Infof("Register enum name: %s", e.FQEN())
-		}
-	}
+	_ = "STUB: not implemented"
+	return
 }
 
 // LookupMsg looks up a message type by "name".
 // It tries to resolve "name" from "location" if "name" is a relative message name.
 func (r *Registry) LookupMsg(location, name string) (*Message, error) {
-	if grpclog.V(1) {
-		grpclog.Infof("Lookup %s from %s", name, location)
-	}
-	if strings.HasPrefix(name, ".") {
-		m, ok := r.msgs[name]
-		if !ok {
-			return nil, fmt.Errorf("no message found: %s", name)
-		}
-		return m, nil
-	}
-
-	if !strings.HasPrefix(location, ".") {
-		location = fmt.Sprintf(".%s", location)
-	}
-	components := strings.Split(location, ".")
-	for len(components) > 0 {
-		fqmn := strings.Join(append(components, name), ".")
-		if m, ok := r.msgs[fqmn]; ok {
-			return m, nil
-		}
-		components = components[:len(components)-1]
-	}
-	return nil, fmt.Errorf("no message found: %s", name)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // LookupEnum looks up an enum type by "name".
 // It tries to resolve "name" from "location" if "name" is a relative enum name.
 func (r *Registry) LookupEnum(location, name string) (*Enum, error) {
-	if grpclog.V(1) {
-		grpclog.Infof("Lookup enum %s from %s", name, location)
-	}
-	if strings.HasPrefix(name, ".") {
-		e, ok := r.enums[name]
-		if !ok {
-			return nil, fmt.Errorf("no enum found: %s", name)
-		}
-		return e, nil
-	}
-
-	if !strings.HasPrefix(location, ".") {
-		location = fmt.Sprintf(".%s", location)
-	}
-	components := strings.Split(location, ".")
-	for len(components) > 0 {
-		fqen := strings.Join(append(components, name), ".")
-		if e, ok := r.enums[fqen]; ok {
-			return e, nil
-		}
-		components = components[:len(components)-1]
-	}
-	return nil, fmt.Errorf("no enum found: %s", name)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // LookupFile looks up a file by name.
 func (r *Registry) LookupFile(name string) (*File, error) {
-	f, ok := r.files[name]
-	if !ok {
-		return nil, fmt.Errorf("no such file given: %s", name)
-	}
-	return f, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (r *Registry) GetUseProto3FieldSemantics() bool {
-	return r.useProto3FieldSemantics
-}
+func (r *Registry) GetUseProto3FieldSemantics() bool { _ = "STUB: not implemented"; return false }
 
 func (r *Registry) SetUseProto3FieldSemantics(useProto3FieldSemantics bool) {
-	r.useProto3FieldSemantics = useProto3FieldSemantics
+	_ = "STUB: not implemented"
+	return
 }
 
 // LookupExternalHTTPRules looks up external http rules by fully qualified service method name
 func (r *Registry) LookupExternalHTTPRules(qualifiedMethodName string) []*annotations.HttpRule {
-	return r.externalHTTPRules[qualifiedMethodName]
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // AddExternalHTTPRule adds an external http rule for the given fully qualified service method name
 func (r *Registry) AddExternalHTTPRule(qualifiedMethodName string, rule *annotations.HttpRule) {
-	r.externalHTTPRules[qualifiedMethodName] = append(r.externalHTTPRules[qualifiedMethodName], rule)
+	_ = "STUB: not implemented"
+	return
 }
 
 // UnboundExternalHTTPRules returns the list of External HTTPRules
 // which does not have a matching method in the registry
-func (r *Registry) UnboundExternalHTTPRules() []string {
-	allServiceMethods := make(map[string]struct{})
-	for _, f := range r.files {
-		for _, s := range f.GetService() {
-			svc := &Service{File: f, ServiceDescriptorProto: s}
-			for _, m := range s.GetMethod() {
-				method := &Method{Service: svc, MethodDescriptorProto: m}
-				allServiceMethods[method.FQMN()] = struct{}{}
-			}
-		}
-	}
-
-	var missingMethods []string
-	for httpRuleMethod := range r.externalHTTPRules {
-		if _, ok := allServiceMethods[httpRuleMethod]; !ok {
-			missingMethods = append(missingMethods, httpRuleMethod)
-		}
-	}
-	return missingMethods
-}
+func (r *Registry) UnboundExternalHTTPRules() []string { _ = "STUB: not implemented"; return nil }
 
 // AddPkgMap adds a mapping from a .proto file to proto package name.
-func (r *Registry) AddPkgMap(file, protoPkg string) {
-	r.pkgMap[file] = protoPkg
-}
+func (r *Registry) AddPkgMap(file, protoPkg string) { _ = "STUB: not implemented"; return }
 
 // SetPrefix registers the prefix to be added to go package paths generated from proto package names.
 func (r *Registry) SetPrefix(prefix string) {
-	r.prefix = prefix
+	_ = "STUB: not implemented"
+
+	// SetStandalone registers standalone flag to control package prefix
+	return
 }
 
-// SetStandalone registers standalone flag to control package prefix
-func (r *Registry) SetStandalone(standalone bool) {
-	r.standalone = standalone
-}
+func (r *Registry) SetStandalone(standalone bool) { _ = "STUB: not implemented"; return }
 
 // SetRecursiveDepth records the max recursion count
-func (r *Registry) SetRecursiveDepth(count int) {
-	r.recursiveDepth = count
-}
+func (r *Registry) SetRecursiveDepth(count int) { _ = "STUB: not implemented"; return }
 
 // GetRecursiveDepth returns the max recursion count
-func (r *Registry) GetRecursiveDepth() int {
-	return r.recursiveDepth
-}
+func (r *Registry) GetRecursiveDepth() int { _ = "STUB: not implemented"; return 0 }
 
 // ReserveGoPackageAlias reserves the unique alias of go package.
 // If succeeded, the alias will be never used for other packages in generated go files.
 // If failed, the alias is already taken by another package, so you need to use another
 // alias for the package in your go files.
 func (r *Registry) ReserveGoPackageAlias(alias, pkgpath string) error {
-	if taken, ok := r.pkgAliases[alias]; ok {
-		if taken == pkgpath {
-			return nil
-		}
-		return fmt.Errorf("package name %s is already taken. Use another alias", alias)
-	}
-	r.pkgAliases[alias] = pkgpath
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // GetAllFQMNs returns a list of all FQMNs
-func (r *Registry) GetAllFQMNs() []string {
-	keys := make([]string, 0, len(r.msgs))
-	for k := range r.msgs {
-		keys = append(keys, k)
-	}
-	return keys
-}
+func (r *Registry) GetAllFQMNs() []string { _ = "STUB: not implemented"; return nil }
 
 // GetAllFQENs returns a list of all FQENs
-func (r *Registry) GetAllFQENs() []string {
-	keys := make([]string, 0, len(r.enums))
-	for k := range r.enums {
-		keys = append(keys, k)
-	}
-	return keys
-}
+func (r *Registry) GetAllFQENs() []string { _ = "STUB: not implemented"; return nil }
 
-func (r *Registry) GetAllFQMethNs() []string {
-	keys := make([]string, 0, len(r.meths))
-	for k := range r.meths {
-		keys = append(keys, k)
-	}
-	return keys
-}
+func (r *Registry) GetAllFQMethNs() []string { _ = "STUB: not implemented"; return nil }
 
 // SetAllowDeleteBody controls whether http delete methods may have a
 // body or fail loading if encountered.
-func (r *Registry) SetAllowDeleteBody(allow bool) {
-	r.allowDeleteBody = allow
-}
+func (r *Registry) SetAllowDeleteBody(allow bool) { _ = "STUB: not implemented"; return }
 
 // SetAllowMerge controls whether generation one OpenAPI file out of multiple protos
-func (r *Registry) SetAllowMerge(allow bool) {
-	r.allowMerge = allow
-}
+func (r *Registry) SetAllowMerge(allow bool) { _ = "STUB: not implemented"; return }
 
 // IsAllowMerge whether generation one OpenAPI file out of multiple protos
-func (r *Registry) IsAllowMerge() bool {
-	return r.allowMerge
-}
+func (r *Registry) IsAllowMerge() bool { _ = "STUB: not implemented"; return false }
 
 // SetMergeFileName controls the target OpenAPI file name out of multiple protos
-func (r *Registry) SetMergeFileName(mergeFileName string) {
-	r.mergeFileName = mergeFileName
-}
+func (r *Registry) SetMergeFileName(mergeFileName string) { _ = "STUB: not implemented"; return }
 
 // SetIncludePackageInTags controls whether the package name defined in the `package` directive
 // in the proto file can be prepended to the gRPC service name in the `Tags` field of every operation.
-func (r *Registry) SetIncludePackageInTags(allow bool) {
-	r.includePackageInTags = allow
-}
+func (r *Registry) SetIncludePackageInTags(allow bool) { _ = "STUB: not implemented"; return }
 
 // IsIncludePackageInTags checks whether the package name defined in the `package` directive
 // in the proto file can be prepended to the gRPC service name in the `Tags` field of every operation.
-func (r *Registry) IsIncludePackageInTags() bool {
-	return r.includePackageInTags
-}
+func (r *Registry) IsIncludePackageInTags() bool { _ = "STUB: not implemented"; return false }
 
 // GetRepeatedPathParamSeparator returns a rune specifying how
 // path parameter repeated fields are separated.
-func (r *Registry) GetRepeatedPathParamSeparator() rune {
-	return r.repeatedPathParamSeparator.sep
-}
+func (r *Registry) GetRepeatedPathParamSeparator() rune { _ = "STUB: not implemented"; return 0 }
 
 // GetRepeatedPathParamSeparatorName returns the name path parameter repeated
 // fields repeatedFieldSeparator. I.e. 'csv', 'pipe', 'ssv' or 'tsv'
-func (r *Registry) GetRepeatedPathParamSeparatorName() string {
-	return r.repeatedPathParamSeparator.name
-}
+func (r *Registry) GetRepeatedPathParamSeparatorName() string { _ = "STUB: not implemented"; return "" }
 
 // SetRepeatedPathParamSeparator sets how path parameter repeated fields are
 // separated. Allowed names are 'csv', 'pipe', 'ssv' and 'tsv'.
 func (r *Registry) SetRepeatedPathParamSeparator(name string) error {
-	var sep rune
-	switch name {
-	case "csv":
-		sep = ','
-	case "pipes":
-		sep = '|'
-	case "ssv":
-		sep = ' '
-	case "tsv":
-		sep = '\t'
-	default:
-		return fmt.Errorf("unknown repeated path parameter separator: %s", name)
-	}
-	r.repeatedPathParamSeparator = repeatedFieldSeparator{
-		name: name,
-		sep:  sep,
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // SetUseJSONNamesForFields sets useJSONNamesForFields
-func (r *Registry) SetUseJSONNamesForFields(use bool) {
-	r.useJSONNamesForFields = use
-}
+func (r *Registry) SetUseJSONNamesForFields(use bool) { _ = "STUB: not implemented"; return }
 
 // GetUseJSONNamesForFields returns useJSONNamesForFields
-func (r *Registry) GetUseJSONNamesForFields() bool {
-	return r.useJSONNamesForFields
-}
+func (r *Registry) GetUseJSONNamesForFields() bool { _ = "STUB: not implemented"; return false }
 
 // SetUseFQNForOpenAPIName sets useFQNForOpenAPIName
 // Deprecated: use SetOpenAPINamingStrategy instead.
-func (r *Registry) SetUseFQNForOpenAPIName(use bool) {
-	r.openAPINamingStrategy = "fqn"
-}
+func (r *Registry) SetUseFQNForOpenAPIName(use bool) { _ = "STUB: not implemented"; return }
 
 // GetUseFQNForOpenAPIName returns useFQNForOpenAPIName
 // Deprecated: Use GetOpenAPINamingStrategy().
-func (r *Registry) GetUseFQNForOpenAPIName() bool {
-	return r.openAPINamingStrategy == "fqn"
-}
+func (r *Registry) GetUseFQNForOpenAPIName() bool { _ = "STUB: not implemented"; return false }
 
 // GetMergeFileName return the target merge OpenAPI file name
-func (r *Registry) GetMergeFileName() string {
-	return r.mergeFileName
-}
+func (r *Registry) GetMergeFileName() string { _ = "STUB: not implemented"; return "" }
 
 // SetOpenAPINamingStrategy sets the naming strategy to be used.
-func (r *Registry) SetOpenAPINamingStrategy(strategy string) {
-	r.openAPINamingStrategy = strategy
-}
+func (r *Registry) SetOpenAPINamingStrategy(strategy string) { _ = "STUB: not implemented"; return }
 
 // GetOpenAPINamingStrategy retrieves the naming strategy that is in use.
-func (r *Registry) GetOpenAPINamingStrategy() string {
-	return r.openAPINamingStrategy
-}
+func (r *Registry) GetOpenAPINamingStrategy() string { _ = "STUB: not implemented"; return "" }
 
 // SetUseGoTemplate sets useGoTemplate
-func (r *Registry) SetUseGoTemplate(use bool) {
-	r.useGoTemplate = use
-}
+func (r *Registry) SetUseGoTemplate(use bool) { _ = "STUB: not implemented"; return }
 
 // GetUseGoTemplate returns useGoTemplate
-func (r *Registry) GetUseGoTemplate() bool {
-	return r.useGoTemplate
-}
+func (r *Registry) GetUseGoTemplate() bool { _ = "STUB: not implemented"; return false }
 
-func (r *Registry) SetGoTemplateArgs(kvs []string) {
-	r.goTemplateArgs = make(map[string]string)
-	for _, kv := range kvs {
-		if key, value, found := strings.Cut(kv, "="); found {
-			r.goTemplateArgs[key] = value
-		}
-	}
-}
+func (r *Registry) SetGoTemplateArgs(kvs []string) { _ = "STUB: not implemented"; return }
 
-func (r *Registry) GetGoTemplateArgs() map[string]string {
-	return r.goTemplateArgs
-}
+func (r *Registry) GetGoTemplateArgs() map[string]string { _ = "STUB: not implemented"; return nil }
 
 // SetIgnoreComments sets ignoreComments
-func (r *Registry) SetIgnoreComments(ignore bool) {
-	r.ignoreComments = ignore
-}
+func (r *Registry) SetIgnoreComments(ignore bool) { _ = "STUB: not implemented"; return }
 
 // GetIgnoreComments returns ignoreComments
-func (r *Registry) GetIgnoreComments() bool {
-	return r.ignoreComments
-}
+func (r *Registry) GetIgnoreComments() bool { _ = "STUB: not implemented"; return false }
 
 // SetRemoveInternalComments sets removeInternalComments
-func (r *Registry) SetRemoveInternalComments(remove bool) {
-	r.removeInternalComments = remove
-}
+func (r *Registry) SetRemoveInternalComments(remove bool) { _ = "STUB: not implemented"; return }
 
 // GetRemoveInternalComments returns removeInternalComments
-func (r *Registry) GetRemoveInternalComments() bool {
-	return r.removeInternalComments
-}
+func (r *Registry) GetRemoveInternalComments() bool { _ = "STUB: not implemented"; return false }
 
 // SetEnumsAsInts set enumsAsInts
-func (r *Registry) SetEnumsAsInts(enumsAsInts bool) {
-	r.enumsAsInts = enumsAsInts
-}
+func (r *Registry) SetEnumsAsInts(enumsAsInts bool) { _ = "STUB: not implemented"; return }
 
 // GetEnumsAsInts returns enumsAsInts
-func (r *Registry) GetEnumsAsInts() bool {
-	return r.enumsAsInts
-}
+func (r *Registry) GetEnumsAsInts() bool { _ = "STUB: not implemented"; return false }
 
 // SetOmitEnumDefaultValue sets omitEnumDefaultValue
-func (r *Registry) SetOmitEnumDefaultValue(omit bool) {
-	r.omitEnumDefaultValue = omit
-}
+func (r *Registry) SetOmitEnumDefaultValue(omit bool) { _ = "STUB: not implemented"; return }
 
 // GetOmitEnumDefaultValue returns omitEnumDefaultValue
-func (r *Registry) GetOmitEnumDefaultValue() bool {
-	return r.omitEnumDefaultValue
-}
+func (r *Registry) GetOmitEnumDefaultValue() bool { _ = "STUB: not implemented"; return false }
 
 // SetVisibilityRestrictionSelectors sets the visibility restriction selectors.
 func (r *Registry) SetVisibilityRestrictionSelectors(selectors []string) {
-	r.visibilityRestrictionSelectors = make(map[string]bool)
-	for _, selector := range selectors {
-		r.visibilityRestrictionSelectors[strings.TrimSpace(selector)] = true
-	}
+	_ = "STUB: not implemented"
+	return
 }
 
 // GetVisibilityRestrictionSelectors retrieves the visibility restriction selectors.
 func (r *Registry) GetVisibilityRestrictionSelectors() map[string]bool {
-	return r.visibilityRestrictionSelectors
-}
-
-// SetDisableDefaultErrors sets disableDefaultErrors
-func (r *Registry) SetDisableDefaultErrors(use bool) {
-	r.disableDefaultErrors = use
-}
-
-// GetDisableDefaultErrors returns disableDefaultErrors
-func (r *Registry) GetDisableDefaultErrors() bool {
-	return r.disableDefaultErrors
-}
-
-// SetSimpleOperationIDs sets simpleOperationIDs
-func (r *Registry) SetSimpleOperationIDs(use bool) {
-	r.simpleOperationIDs = use
-}
-
-// GetSimpleOperationIDs returns simpleOperationIDs
-func (r *Registry) GetSimpleOperationIDs() bool {
-	return r.simpleOperationIDs
-}
-
-// SetWarnOnUnboundMethods sets warnOnUnboundMethods
-func (r *Registry) SetWarnOnUnboundMethods(warn bool) {
-	r.warnOnUnboundMethods = warn
-}
-
-// SetGenerateUnboundMethods sets generateUnboundMethods
-func (r *Registry) SetGenerateUnboundMethods(generate bool) {
-	r.generateUnboundMethods = generate
-}
-
-// SetOmitPackageDoc controls whether the generated code contains a package comment (if set to false, it will contain one)
-func (r *Registry) SetOmitPackageDoc(omit bool) {
-	r.omitPackageDoc = omit
-}
-
-// GetOmitPackageDoc returns whether a package comment will be omitted from the generated code
-func (r *Registry) GetOmitPackageDoc() bool {
-	return r.omitPackageDoc
-}
-
-// SetProto3OptionalNullable set proto3OptionalNullable
-func (r *Registry) SetProto3OptionalNullable(proto3OptionalNullable bool) {
-	r.proto3OptionalNullable = proto3OptionalNullable
-}
-
-// GetProto3OptionalNullable returns proto3OptionalNullable
-func (r *Registry) GetProto3OptionalNullable() bool {
-	return r.proto3OptionalNullable
-}
-
-// RegisterOpenAPIOptions registers OpenAPI options
-func (r *Registry) RegisterOpenAPIOptions(opts *openapiconfig.OpenAPIOptions) error {
-	if opts == nil {
-		return nil
-	}
-
-	for _, opt := range opts.File {
-		if _, ok := r.files[opt.File]; !ok {
-			return fmt.Errorf("no file %s found", opt.File)
-		}
-		r.fileOptions[opt.File] = opt.Option
-	}
-
-	// build map of all registered methods
-	methods := make(map[string]struct{})
-	services := make(map[string]struct{})
-	for _, f := range r.files {
-		for _, s := range f.Services {
-			services[s.FQSN()] = struct{}{}
-			for _, m := range s.Methods {
-				methods[m.FQMN()] = struct{}{}
-			}
-		}
-	}
-
-	for _, opt := range opts.Method {
-		qualifiedMethod := "." + opt.Method
-		if _, ok := methods[qualifiedMethod]; !ok {
-			return fmt.Errorf("no method %s found", opt.Method)
-		}
-		r.methodOptions[qualifiedMethod] = opt.Option
-	}
-
-	for _, opt := range opts.Message {
-		qualifiedMessage := "." + opt.Message
-		if _, ok := r.msgs[qualifiedMessage]; !ok {
-			return fmt.Errorf("no message %s found", opt.Message)
-		}
-		r.messageOptions[qualifiedMessage] = opt.Option
-	}
-
-	for _, opt := range opts.Service {
-		qualifiedService := "." + opt.Service
-		if _, ok := services[qualifiedService]; !ok {
-			return fmt.Errorf("no service %s found", opt.Service)
-		}
-		r.serviceOptions[qualifiedService] = opt.Option
-	}
-
-	// build map of all registered fields
-	fields := make(map[string]struct{})
-	for _, m := range r.msgs {
-		for _, f := range m.Fields {
-			fields[f.FQFN()] = struct{}{}
-		}
-	}
-	for _, opt := range opts.Field {
-		qualifiedField := "." + opt.Field
-		if _, ok := fields[qualifiedField]; !ok {
-			return fmt.Errorf("no field %s found", opt.Field)
-		}
-		r.fieldOptions[qualifiedField] = opt.Option
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// SetDisableDefaultErrors sets disableDefaultErrors
+func (r *Registry) SetDisableDefaultErrors(use bool) { _ = "STUB: not implemented"; return }
+
+// GetDisableDefaultErrors returns disableDefaultErrors
+func (r *Registry) GetDisableDefaultErrors() bool { _ = "STUB: not implemented"; return false }
+
+// SetSimpleOperationIDs sets simpleOperationIDs
+func (r *Registry) SetSimpleOperationIDs(use bool) { _ = "STUB: not implemented"; return }
+
+// GetSimpleOperationIDs returns simpleOperationIDs
+func (r *Registry) GetSimpleOperationIDs() bool { _ = "STUB: not implemented"; return false }
+
+// SetWarnOnUnboundMethods sets warnOnUnboundMethods
+func (r *Registry) SetWarnOnUnboundMethods(warn bool) { _ = "STUB: not implemented"; return }
+
+// SetGenerateUnboundMethods sets generateUnboundMethods
+func (r *Registry) SetGenerateUnboundMethods(generate bool) { _ = "STUB: not implemented"; return }
+
+// SetOmitPackageDoc controls whether the generated code contains a package comment (if set to false, it will contain one)
+func (r *Registry) SetOmitPackageDoc(omit bool) { _ = "STUB: not implemented"; return }
+
+// GetOmitPackageDoc returns whether a package comment will be omitted from the generated code
+func (r *Registry) GetOmitPackageDoc() bool { _ = "STUB: not implemented"; return false }
+
+// SetProto3OptionalNullable set proto3OptionalNullable
+func (r *Registry) SetProto3OptionalNullable(proto3OptionalNullable bool) {
+	_ = "STUB: not implemented"
+	return
+}
+
+// GetProto3OptionalNullable returns proto3OptionalNullable
+func (r *Registry) GetProto3OptionalNullable() bool { _ = "STUB: not implemented"; return false }
+
+// RegisterOpenAPIOptions registers OpenAPI options
+func (r *Registry) RegisterOpenAPIOptions(opts *openapiconfig.OpenAPIOptions) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// build map of all registered methods
+
+// build map of all registered fields
+
 // GetOpenAPIFileOption returns a registered OpenAPI option for a file
 func (r *Registry) GetOpenAPIFileOption(file string) (*options.Swagger, bool) {
-	opt, ok := r.fileOptions[file]
-	return opt, ok
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // GetOpenAPIMethodOption returns a registered OpenAPI option for a method
 func (r *Registry) GetOpenAPIMethodOption(qualifiedMethod string) (*options.Operation, bool) {
-	opt, ok := r.methodOptions[qualifiedMethod]
-	return opt, ok
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // GetOpenAPIMessageOption returns a registered OpenAPI option for a message
 func (r *Registry) GetOpenAPIMessageOption(qualifiedMessage string) (*options.Schema, bool) {
-	opt, ok := r.messageOptions[qualifiedMessage]
-	return opt, ok
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // GetOpenAPIServiceOption returns a registered OpenAPI option for a service
 func (r *Registry) GetOpenAPIServiceOption(qualifiedService string) (*options.Tag, bool) {
-	opt, ok := r.serviceOptions[qualifiedService]
-	return opt, ok
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // GetOpenAPIFieldOption returns a registered OpenAPI option for a field
 func (r *Registry) GetOpenAPIFieldOption(qualifiedField string) (*options.JSONSchema, bool) {
-	opt, ok := r.fieldOptions[qualifiedField]
-	return opt, ok
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
-func (r *Registry) FieldName(f *Field) string {
-	if r.useJSONNamesForFields {
-		return f.GetJsonName()
-	}
-	return f.GetName()
-}
+func (r *Registry) FieldName(f *Field) string { _ = "STUB: not implemented"; return "" }
 
 func (r *Registry) CheckDuplicateAnnotation(httpMethod string, httpTemplate string, svc *Service) error {
-	a := annotationIdentifier{method: httpMethod, pathTemplate: httpTemplate, service: svc}
-	if _, ok := r.annotationMap[a]; ok {
-		return fmt.Errorf("duplicate annotation: method=%s, template=%s", httpMethod, httpTemplate)
-	}
-	r.annotationMap[a] = struct{}{}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // SetDisableServiceTags sets disableServiceTags
-func (r *Registry) SetDisableServiceTags(use bool) {
-	r.disableServiceTags = use
-}
+func (r *Registry) SetDisableServiceTags(use bool) { _ = "STUB: not implemented"; return }
 
 // GetDisableServiceTags returns disableServiceTags
-func (r *Registry) GetDisableServiceTags() bool {
-	return r.disableServiceTags
-}
+func (r *Registry) GetDisableServiceTags() bool { _ = "STUB: not implemented"; return false }
 
 // SetDisableDefaultResponses sets disableDefaultResponses
-func (r *Registry) SetDisableDefaultResponses(use bool) {
-	r.disableDefaultResponses = use
-}
+func (r *Registry) SetDisableDefaultResponses(use bool) { _ = "STUB: not implemented"; return }
 
 // GetDisableDefaultResponses returns disableDefaultResponses
-func (r *Registry) GetDisableDefaultResponses() bool {
-	return r.disableDefaultResponses
-}
+func (r *Registry) GetDisableDefaultResponses() bool { _ = "STUB: not implemented"; return false }
 
 // SetUseAllOfForRefs sets useAllOfForRefs
-func (r *Registry) SetUseAllOfForRefs(use bool) {
-	r.useAllOfForRefs = use
-}
+func (r *Registry) SetUseAllOfForRefs(use bool) { _ = "STUB: not implemented"; return }
 
 // GetUseAllOfForRefs returns useAllOfForRefs
-func (r *Registry) GetUseAllOfForRefs() bool {
-	return r.useAllOfForRefs
-}
+func (r *Registry) GetUseAllOfForRefs() bool { _ = "STUB: not implemented"; return false }
 
 // SetOmitArrayItemTypeWhenRefSibling sets omitArrayItemTypeWhenRefSibling
-func (r *Registry) SetOmitArrayItemTypeWhenRefSibling(omit bool) {
-	r.omitArrayItemTypeWhenRefSibling = omit
-}
+func (r *Registry) SetOmitArrayItemTypeWhenRefSibling(omit bool) { _ = "STUB: not implemented"; return }
 
 // GetOmitArrayItemTypeWhenRefSibling returns omitArrayItemTypeWhenRefSibling
 func (r *Registry) GetOmitArrayItemTypeWhenRefSibling() bool {
-	return r.omitArrayItemTypeWhenRefSibling
+	_ = "STUB: not implemented"
+	return false
 }
 
 // SetAllowPatchFeature sets allowPatchFeature
-func (r *Registry) SetAllowPatchFeature(allow bool) {
-	r.allowPatchFeature = allow
-}
+func (r *Registry) SetAllowPatchFeature(allow bool) { _ = "STUB: not implemented"; return }
 
 // GetAllowPatchFeature returns allowPatchFeature
-func (r *Registry) GetAllowPatchFeature() bool {
-	return r.allowPatchFeature
-}
+func (r *Registry) GetAllowPatchFeature() bool { _ = "STUB: not implemented"; return false }
 
 // SetPreserveRPCOrder sets preserveRPCOrder
-func (r *Registry) SetPreserveRPCOrder(preserve bool) {
-	r.preserveRPCOrder = preserve
-}
+func (r *Registry) SetPreserveRPCOrder(preserve bool) { _ = "STUB: not implemented"; return }
 
 // IsPreserveRPCOrder returns preserveRPCOrder
-func (r *Registry) IsPreserveRPCOrder() bool {
-	return r.preserveRPCOrder
-}
+func (r *Registry) IsPreserveRPCOrder() bool { _ = "STUB: not implemented"; return false }
 
 // SetEnableRpcDeprecation sets enableRpcDeprecation
-func (r *Registry) SetEnableRpcDeprecation(enable bool) {
-	r.enableRpcDeprecation = enable
-}
+func (r *Registry) SetEnableRpcDeprecation(enable bool) { _ = "STUB: not implemented"; return }
 
 // GetEnableRpcDeprecation returns enableRpcDeprecation
-func (r *Registry) GetEnableRpcDeprecation() bool {
-	return r.enableRpcDeprecation
-}
+func (r *Registry) GetEnableRpcDeprecation() bool { _ = "STUB: not implemented"; return false }
 
 // SetEnableFieldDeprecation sets enableFieldDeprecation
-func (r *Registry) SetEnableFieldDeprecation(enable bool) {
-	r.enableFieldDeprecation = enable
-}
+func (r *Registry) SetEnableFieldDeprecation(enable bool) { _ = "STUB: not implemented"; return }
 
 // GetEnableFieldDeprecation returns enableFieldDeprecation
-func (r *Registry) GetEnableFieldDeprecation() bool {
-	return r.enableFieldDeprecation
-}
+func (r *Registry) GetEnableFieldDeprecation() bool { _ = "STUB: not implemented"; return false }
 
 func (r *Registry) SetExpandSlashedPathPatterns(expandSlashedPathPatterns bool) {
-	r.expandSlashedPathPatterns = expandSlashedPathPatterns
+	_ = "STUB: not implemented"
+	return
 }
 
-func (r *Registry) GetExpandSlashedPathPatterns() bool {
-	return r.expandSlashedPathPatterns
-}
+func (r *Registry) GetExpandSlashedPathPatterns() bool { _ = "STUB: not implemented"; return false }
 
-func (r *Registry) SetGenerateXGoType(generateXGoType bool) {
-	r.generateXGoType = generateXGoType
-}
+func (r *Registry) SetGenerateXGoType(generateXGoType bool) { _ = "STUB: not implemented"; return }
 
-func (r *Registry) GetGenerateXGoType() bool {
-	return r.generateXGoType
-}
+func (r *Registry) GetGenerateXGoType() bool { _ = "STUB: not implemented"; return false }

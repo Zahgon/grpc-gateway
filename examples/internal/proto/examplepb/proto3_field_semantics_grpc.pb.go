@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -34,17 +33,13 @@ type proto3FieldSemanticsServiceClient struct {
 }
 
 func NewProto3FieldSemanticsServiceClient(cc grpc.ClientConnInterface) Proto3FieldSemanticsServiceClient {
-	return &proto3FieldSemanticsServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(Proto3FieldSemanticsServiceClient)
 }
 
 func (c *proto3FieldSemanticsServiceClient) GetFilter(ctx context.Context, in *GetFilterRequest, opts ...grpc.CallOption) (*GetFilterResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(GetFilterResponse)
-	err := c.cc.Invoke(ctx, Proto3FieldSemanticsService_GetFilter_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Proto3FieldSemanticsServiceServer is the server API for Proto3FieldSemanticsService service.
@@ -62,44 +57,35 @@ type Proto3FieldSemanticsServiceServer interface {
 type UnimplementedProto3FieldSemanticsServiceServer struct{}
 
 func (UnimplementedProto3FieldSemanticsServiceServer) GetFilter(context.Context, *GetFilterRequest) (*GetFilterResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetFilter not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedProto3FieldSemanticsServiceServer) testEmbeddedByValue() {}
 
-// UnsafeProto3FieldSemanticsServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to Proto3FieldSemanticsServiceServer will
-// result in compilation errors.
+func (UnimplementedProto3FieldSemanticsServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeProto3FieldSemanticsServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to Proto3FieldSemanticsServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeProto3FieldSemanticsServiceServer interface {
 	mustEmbedUnimplementedProto3FieldSemanticsServiceServer()
 }
 
 func RegisterProto3FieldSemanticsServiceServer(s grpc.ServiceRegistrar, srv Proto3FieldSemanticsServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedProto3FieldSemanticsServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&Proto3FieldSemanticsService_ServiceDesc, srv)
+	return
 }
 
 func _Proto3FieldSemanticsService_GetFilter_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetFilterRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(Proto3FieldSemanticsServiceServer).GetFilter(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: Proto3FieldSemanticsService_GetFilter_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(Proto3FieldSemanticsServiceServer).GetFilter(ctx, req.(*GetFilterRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Proto3FieldSemanticsService_ServiceDesc is the grpc.ServiceDesc for Proto3FieldSemanticsService service.

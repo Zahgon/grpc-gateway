@@ -4,12 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbRequiredMessageTypeRequest Required message type -> OpenAPI
@@ -29,104 +25,39 @@ type ExamplepbRequiredMessageTypeRequest struct {
 
 // Validate validates this examplepb required message type request
 func (m *ExamplepbRequiredMessageTypeRequest) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateFoo(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbRequiredMessageTypeRequest) validateFoo(formats strfmt.Registry) error {
-
-	if err := validate.Required("foo", "body", m.Foo); err != nil {
-		return err
-	}
-
-	if m.Foo != nil {
-		if err := m.Foo.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("foo")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("foo")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbRequiredMessageTypeRequest) validateID(formats strfmt.Registry) error {
-
-	if err := validate.Required("id", "body", m.ID); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // ContextValidate validate this examplepb required message type request based on the context it is used
 func (m *ExamplepbRequiredMessageTypeRequest) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateFoo(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbRequiredMessageTypeRequest) contextValidateFoo(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Foo != nil {
-
-		if err := m.Foo.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("foo")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("foo")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // MarshalBinary interface implementation
 func (m *ExamplepbRequiredMessageTypeRequest) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbRequiredMessageTypeRequest) UnmarshalBinary(b []byte) error {
-	var res ExamplepbRequiredMessageTypeRequest
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

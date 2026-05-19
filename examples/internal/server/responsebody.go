@@ -2,7 +2,6 @@ package server
 
 import (
 	"context"
-	"fmt"
 
 	examples "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/examplepb"
 )
@@ -12,56 +11,31 @@ import (
 type responseBodyServer struct{}
 
 func newResponseBodyServer() examples.ResponseBodyServiceServer {
-	return new(responseBodyServer)
+	_ = "STUB: not implemented"
+	return *new(examples.ResponseBodyServiceServer)
 }
 
 func (s *responseBodyServer) GetResponseBody(ctx context.Context, req *examples.ResponseBodyIn) (*examples.ResponseBodyOut, error) {
-	return &examples.ResponseBodyOut{
-		Response: &examples.ResponseBodyOut_Response{
-			Data: req.Data,
-		},
-	}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s *responseBodyServer) ListResponseBodies(ctx context.Context, req *examples.ResponseBodyIn) (*examples.RepeatedResponseBodyOut, error) {
-	return &examples.RepeatedResponseBodyOut{
-		Response: []*examples.RepeatedResponseBodyOut_Response{
-			{
-				Data: req.Data,
-			},
-		},
-	}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s *responseBodyServer) ListResponseStrings(ctx context.Context, req *examples.ResponseBodyIn) (*examples.RepeatedResponseStrings, error) {
-	if req.Data == "empty" {
-		return &examples.RepeatedResponseStrings{
-			Values: []string{},
-		}, nil
-	}
-	return &examples.RepeatedResponseStrings{
-		Values: []string{"hello", req.Data},
-	}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s *responseBodyServer) GetResponseBodyStream(req *examples.ResponseBodyIn, stream examples.ResponseBodyService_GetResponseBodyStreamServer) error {
-	if err := stream.Send(&examples.ResponseBodyOut{
-		Response: &examples.ResponseBodyOut_Response{
-			Data: fmt.Sprintf("first %s", req.Data),
-		},
-	}); err != nil {
-		return err
-	}
-
-	return stream.Send(&examples.ResponseBodyOut{
-		Response: &examples.ResponseBodyOut_Response{
-			Data: fmt.Sprintf("second %s", req.Data),
-		},
-	})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *responseBodyServer) GetResponseBodySameName(ctx context.Context, req *examples.ResponseBodyIn) (*examples.ResponseBodyValue, error) {
-	return &examples.ResponseBodyValue{
-		ResponseBodyValue: req.Data,
-	}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

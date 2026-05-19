@@ -3,11 +3,6 @@
 package generate_unbound_methods_echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,28 +16,14 @@ type GenerateUnboundMethodsEchoServiceEchoDeleteReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewGenerateUnboundMethodsEchoServiceEchoDeleteOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewGenerateUnboundMethodsEchoServiceEchoDeleteDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoDeleteOK creates a GenerateUnboundMethodsEchoServiceEchoDeleteOK with default headers values
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteOK() *GenerateUnboundMethodsEchoServiceEchoDeleteOK {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -56,65 +37,71 @@ type GenerateUnboundMethodsEchoServiceEchoDeleteOK struct {
 
 // IsSuccess returns true when this generate unbound methods echo service echo delete o k response has a 2xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this generate unbound methods echo service echo delete o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this generate unbound methods echo service echo delete o k response has a 3xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this generate unbound methods echo service echo delete o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this generate unbound methods echo service echo delete o k response has a 4xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this generate unbound methods echo service echo delete o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this generate unbound methods echo service echo delete o k response has a 5xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this generate unbound methods echo service echo delete o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this generate unbound methods echo service echo delete o k response a status code equal to that given
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the generate unbound methods echo service echo delete o k response
 }
 
-// Code gets the status code for the generate unbound methods echo service echo delete o k response
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoDelete][%d] generateUnboundMethodsEchoServiceEchoDeleteOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoDelete][%d] generateUnboundMethodsEchoServiceEchoDeleteOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) GetPayload() *models.ExamplepbGenerateUnboundMethodsSimpleMessage {
-	return o.Payload
-}
-
-func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbGenerateUnboundMethodsSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *GenerateUnboundMethodsEchoServiceEchoDeleteOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewGenerateUnboundMethodsEchoServiceEchoDeleteDefault creates a GenerateUnboundMethodsEchoServiceEchoDeleteDefault with default headers values
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteDefault(code int) *GenerateUnboundMethodsEchoServiceEchoDeleteDefault {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -130,56 +117,59 @@ type GenerateUnboundMethodsEchoServiceEchoDeleteDefault struct {
 
 // IsSuccess returns true when this generate unbound methods echo service echo delete default response has a 2xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this generate unbound methods echo service echo delete default response has a 3xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this generate unbound methods echo service echo delete default response has a 4xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this generate unbound methods echo service echo delete default response has a 5xx status code
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this generate unbound methods echo service echo delete default response a status code equal to that given
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the generate unbound methods echo service echo delete default response
 }
 
-// Code gets the status code for the generate unbound methods echo service echo delete default response
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoDelete][%d] GenerateUnboundMethodsEchoService_EchoDelete default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoDelete][%d] GenerateUnboundMethodsEchoService_EchoDelete default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) GetPayload() *models.RPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.RPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

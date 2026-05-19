@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -40,49 +40,23 @@ type Foo2Request struct {
 	Password string `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
 }
 
-func (x *Foo2Request) Reset() {
-	*x = Foo2Request{}
-	mi := &file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Foo2Request) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Foo2Request) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Foo2Request) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Foo2Request) ProtoMessage() {}
+func (*Foo2Request) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Foo2Request) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Foo2Request.ProtoReflect.Descriptor instead.
-func (*Foo2Request) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescGZIP(), []int{0}
-}
+func (*Foo2Request) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Foo2Request) GetUsername() string {
-	if x != nil {
-		return x.Username
-	}
-	return ""
-}
+func (x *Foo2Request) GetUsername() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Foo2Request) GetPassword() string {
-	if x != nil {
-		return x.Password
-	}
-	return ""
-}
+func (x *Foo2Request) GetPassword() string { _ = "STUB: not implemented"; return "" }
 
 // (-- This comment should be excluded from OpenAPI output --)
 type Foo2Reply struct {
@@ -91,35 +65,19 @@ type Foo2Reply struct {
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *Foo2Reply) Reset() {
-	*x = Foo2Reply{}
-	mi := &file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Foo2Reply) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Foo2Reply) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Foo2Reply) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Foo2Reply) ProtoMessage() {}
+func (*Foo2Reply) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Foo2Reply) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Foo2Reply.ProtoReflect.Descriptor instead.
-func (*Foo2Reply) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescGZIP(), []int{1}
-}
+func (*Foo2Reply) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 var File_examples_internal_proto_examplepb_remove_internal_comment_proto protoreflect.FileDescriptor
 
@@ -163,10 +121,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
@@ -186,25 +142,6 @@ var file_examples_internal_proto_examplepb_remove_internal_comment_proto_depIdxs
 
 func init() { file_examples_internal_proto_examplepb_remove_internal_comment_proto_init() }
 func file_examples_internal_proto_examplepb_remove_internal_comment_proto_init() {
-	if File_examples_internal_proto_examplepb_remove_internal_comment_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   2,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_remove_internal_comment_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_remove_internal_comment_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_remove_internal_comment_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_remove_internal_comment_proto = out.File
-	file_examples_internal_proto_examplepb_remove_internal_comment_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_remove_internal_comment_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_remove_internal_comment_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

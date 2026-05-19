@@ -13,11 +13,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,54 +39,29 @@ type GenerateUnboundMethodsSimpleMessage struct {
 	Duration *durationpb.Duration `protobuf:"bytes,3,opt,name=duration,proto3" json:"duration,omitempty"`
 }
 
-func (x *GenerateUnboundMethodsSimpleMessage) Reset() {
-	*x = GenerateUnboundMethodsSimpleMessage{}
-	mi := &file_examples_internal_proto_examplepb_generate_unbound_methods_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GenerateUnboundMethodsSimpleMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GenerateUnboundMethodsSimpleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GenerateUnboundMethodsSimpleMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GenerateUnboundMethodsSimpleMessage) ProtoMessage() {}
+func (*GenerateUnboundMethodsSimpleMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GenerateUnboundMethodsSimpleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_generate_unbound_methods_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GenerateUnboundMethodsSimpleMessage.ProtoReflect.Descriptor instead.
 func (*GenerateUnboundMethodsSimpleMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *GenerateUnboundMethodsSimpleMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *GenerateUnboundMethodsSimpleMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *GenerateUnboundMethodsSimpleMessage) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *GenerateUnboundMethodsSimpleMessage) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *GenerateUnboundMethodsSimpleMessage) GetDuration() *durationpb.Duration {
-	if x != nil {
-		return x.Duration
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -161,10 +136,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_generate_unbound_methods_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -189,25 +162,6 @@ var file_examples_internal_proto_examplepb_generate_unbound_methods_proto_depIdx
 
 func init() { file_examples_internal_proto_examplepb_generate_unbound_methods_proto_init() }
 func file_examples_internal_proto_examplepb_generate_unbound_methods_proto_init() {
-	if File_examples_internal_proto_examplepb_generate_unbound_methods_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_generate_unbound_methods_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_generate_unbound_methods_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_generate_unbound_methods_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_generate_unbound_methods_proto = out.File
-	file_examples_internal_proto_examplepb_generate_unbound_methods_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_generate_unbound_methods_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_generate_unbound_methods_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

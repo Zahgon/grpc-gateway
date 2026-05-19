@@ -7,10 +7,10 @@
 package oneofenum
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,32 +39,27 @@ var (
 	}
 )
 
-func (x ExampleEnum) Enum() *ExampleEnum {
-	p := new(ExampleEnum)
-	*p = x
-	return p
-}
+func (x ExampleEnum) Enum() *ExampleEnum { _ = "STUB: not implemented"; return nil }
 
-func (x ExampleEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x ExampleEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (ExampleEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_oneofenum_oneof_enum_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (ExampleEnum) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_oneofenum_oneof_enum_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x ExampleEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use ExampleEnum.Descriptor instead.
-func (ExampleEnum) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescGZIP(), []int{0}
-}
+func (ExampleEnum) EnumDescriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 type OneofEnumMessage struct {
 	state         protoimpl.MessageState
@@ -77,48 +72,28 @@ type OneofEnumMessage struct {
 	One isOneofEnumMessage_One `protobuf_oneof:"one"`
 }
 
-func (x *OneofEnumMessage) Reset() {
-	*x = OneofEnumMessage{}
-	mi := &file_examples_internal_proto_oneofenum_oneof_enum_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OneofEnumMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OneofEnumMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OneofEnumMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OneofEnumMessage) ProtoMessage() {}
+func (*OneofEnumMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OneofEnumMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_oneofenum_oneof_enum_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OneofEnumMessage.ProtoReflect.Descriptor instead.
-func (*OneofEnumMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescGZIP(), []int{0}
-}
+func (*OneofEnumMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (m *OneofEnumMessage) GetOne() isOneofEnumMessage_One {
-	if m != nil {
-		return m.One
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isOneofEnumMessage_One)
 }
 
 func (x *OneofEnumMessage) GetExampleEnum() ExampleEnum {
-	if x, ok := x.GetOne().(*OneofEnumMessage_ExampleEnum); ok {
-		return x.ExampleEnum
-	}
-	return ExampleEnum_EXAMPLE_ENUM_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(ExampleEnum)
 }
 
 type isOneofEnumMessage_One interface {
@@ -129,7 +104,7 @@ type OneofEnumMessage_ExampleEnum struct {
 	ExampleEnum ExampleEnum `protobuf:"varint,1,opt,name=example_enum,json=exampleEnum,proto3,enum=grpc.gateway.examples.internal.proto.oneofenum.ExampleEnum,oneof"`
 }
 
-func (*OneofEnumMessage_ExampleEnum) isOneofEnumMessage_One() {}
+func (*OneofEnumMessage_ExampleEnum) isOneofEnumMessage_One() { _ = "STUB: not implemented"; return }
 
 var File_examples_internal_proto_oneofenum_oneof_enum_proto protoreflect.FileDescriptor
 
@@ -166,10 +141,8 @@ var (
 )
 
 func file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescData)
-	})
-	return file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_oneofenum_oneof_enum_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
@@ -189,29 +162,6 @@ var file_examples_internal_proto_oneofenum_oneof_enum_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_oneofenum_oneof_enum_proto_init() }
 func file_examples_internal_proto_oneofenum_oneof_enum_proto_init() {
-	if File_examples_internal_proto_oneofenum_oneof_enum_proto != nil {
-		return
-	}
-	file_examples_internal_proto_oneofenum_oneof_enum_proto_msgTypes[0].OneofWrappers = []any{
-		(*OneofEnumMessage_ExampleEnum)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_examples_internal_proto_oneofenum_oneof_enum_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_oneofenum_oneof_enum_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_oneofenum_oneof_enum_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_oneofenum_oneof_enum_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_oneofenum_oneof_enum_proto = out.File
-	file_examples_internal_proto_oneofenum_oneof_enum_proto_rawDesc = nil
-	file_examples_internal_proto_oneofenum_oneof_enum_proto_goTypes = nil
-	file_examples_internal_proto_oneofenum_oneof_enum_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

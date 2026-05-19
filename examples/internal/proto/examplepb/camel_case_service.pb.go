@@ -7,12 +7,12 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	sub "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -44,32 +44,27 @@ var (
 	}
 )
 
-func (x CamelStatus) Enum() *CamelStatus {
-	p := new(CamelStatus)
-	*p = x
-	return p
-}
+func (x CamelStatus) Enum() *CamelStatus { _ = "STUB: not implemented"; return nil }
 
-func (x CamelStatus) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x CamelStatus) String() string { _ = "STUB: not implemented"; return "" }
 
 func (CamelStatus) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (CamelStatus) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_camel_case_service_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x CamelStatus) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use CamelStatus.Descriptor instead.
-func (CamelStatus) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP(), []int{0}
-}
+func (CamelStatus) EnumDescriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 type GetStatusRequest struct {
 	state         protoimpl.MessageState
@@ -79,41 +74,23 @@ type GetStatusRequest struct {
 	State CamelStatus `protobuf:"varint,1,opt,name=state,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.CamelStatus" json:"state,omitempty"`
 }
 
-func (x *GetStatusRequest) Reset() {
-	*x = GetStatusRequest{}
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GetStatusRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GetStatusRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GetStatusRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GetStatusRequest) ProtoMessage() {}
+func (*GetStatusRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GetStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.
-func (*GetStatusRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP(), []int{0}
-}
+func (*GetStatusRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *GetStatusRequest) GetState() CamelStatus {
-	if x != nil {
-		return x.State
-	}
-	return CamelStatus_CAMEL_STATUS_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(CamelStatus)
 }
 
 type GetStatusResponse struct {
@@ -124,41 +101,23 @@ type GetStatusResponse struct {
 	State CamelStatus `protobuf:"varint,1,opt,name=state,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.CamelStatus" json:"state,omitempty"`
 }
 
-func (x *GetStatusResponse) Reset() {
-	*x = GetStatusResponse{}
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *GetStatusResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *GetStatusResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *GetStatusResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*GetStatusResponse) ProtoMessage() {}
+func (*GetStatusResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *GetStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use GetStatusResponse.ProtoReflect.Descriptor instead.
-func (*GetStatusResponse) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP(), []int{1}
-}
+func (*GetStatusResponse) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *GetStatusResponse) GetState() CamelStatus {
-	if x != nil {
-		return x.State
-	}
-	return CamelStatus_CAMEL_STATUS_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(CamelStatus)
 }
 
 type PostBookRequest struct {
@@ -169,42 +128,21 @@ type PostBookRequest struct {
 	Book *sub.CreateBook `protobuf:"bytes,1,opt,name=book,proto3" json:"book,omitempty"`
 }
 
-func (x *PostBookRequest) Reset() {
-	*x = PostBookRequest{}
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *PostBookRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PostBookRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PostBookRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PostBookRequest) ProtoMessage() {}
+func (*PostBookRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PostBookRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PostBookRequest.ProtoReflect.Descriptor instead.
-func (*PostBookRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP(), []int{2}
-}
+func (*PostBookRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *PostBookRequest) GetBook() *sub.CreateBook {
-	if x != nil {
-		return x.Book
-	}
-	return nil
-}
+func (x *PostBookRequest) GetBook() *sub.CreateBook { _ = "STUB: not implemented"; return nil }
 
 type PostBookResponse struct {
 	state         protoimpl.MessageState
@@ -214,42 +152,21 @@ type PostBookResponse struct {
 	Book *sub.CreateBook `protobuf:"bytes,1,opt,name=book,proto3" json:"book,omitempty"`
 }
 
-func (x *PostBookResponse) Reset() {
-	*x = PostBookResponse{}
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *PostBookResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PostBookResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PostBookResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PostBookResponse) ProtoMessage() {}
+func (*PostBookResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PostBookResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PostBookResponse.ProtoReflect.Descriptor instead.
-func (*PostBookResponse) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP(), []int{3}
-}
+func (*PostBookResponse) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *PostBookResponse) GetBook() *sub.CreateBook {
-	if x != nil {
-		return x.Book
-	}
-	return nil
-}
+func (x *PostBookResponse) GetBook() *sub.CreateBook { _ = "STUB: not implemented"; return nil }
 
 var File_examples_internal_proto_examplepb_camel_case_service_proto protoreflect.FileDescriptor
 
@@ -335,10 +252,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_camel_case_service_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_camel_case_service_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
@@ -369,26 +284,6 @@ var file_examples_internal_proto_examplepb_camel_case_service_proto_depIdxs = []
 
 func init() { file_examples_internal_proto_examplepb_camel_case_service_proto_init() }
 func file_examples_internal_proto_examplepb_camel_case_service_proto_init() {
-	if File_examples_internal_proto_examplepb_camel_case_service_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_camel_case_service_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   4,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_camel_case_service_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_camel_case_service_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_examplepb_camel_case_service_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_examplepb_camel_case_service_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_camel_case_service_proto = out.File
-	file_examples_internal_proto_examplepb_camel_case_service_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_camel_case_service_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_camel_case_service_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

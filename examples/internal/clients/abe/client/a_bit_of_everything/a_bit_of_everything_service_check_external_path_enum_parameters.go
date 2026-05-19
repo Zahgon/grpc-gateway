@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceCheckExternalPathEnumParams() *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalPathEnumParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalPathEnumParamsWithTimeout creates a new ABitOfEverythingServiceCheckExternalPathEnumParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceCheckExternalPathEnumParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalPathEnumParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalPathEnumParamsWithContext creates a new ABitOfEverythingServiceCheckExternalPathEnumParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceCheckExternalPathEnumParamsWithContext(ctx context.Context) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalPathEnumParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalPathEnumParamsWithHTTPClient creates a new ABitOfEverythingServiceCheckExternalPathEnumParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceCheckExternalPathEnumParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalPathEnumParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,76 @@ type ABitOfEverythingServiceCheckExternalPathEnumParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WithDefaults() *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service check external path enum params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service check external path enum params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service check external path enum params
 }
 
-// WithContext adds the context to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WithContext(ctx context.Context) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service check external path enum params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithValue adds the value to the a bit of everything service check external path enum params
 }
 
-// WithValue adds the value to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WithValue(value string) *ABitOfEverythingServiceCheckExternalPathEnumParams {
-	o.SetValue(value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetValue adds the value to the a bit of everything service check external path enum params
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) SetValue(value string) {
-	o.Value = value
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceCheckExternalPathEnumParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param value
-	if err := r.SetPathParam("value", o.Value); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param value

@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceCreateBodyParams() *ABitOfEverythingServiceCreateBodyParams {
-	return &ABitOfEverythingServiceCreateBodyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCreateBodyParamsWithTimeout creates a new ABitOfEverythingServiceCreateBodyParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceCreateBodyParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceCreateBodyParams {
-	return &ABitOfEverythingServiceCreateBodyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCreateBodyParamsWithContext creates a new ABitOfEverythingServiceCreateBodyParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceCreateBodyParamsWithContext(ctx context.Context) *ABitOfEverythingServiceCreateBodyParams {
-	return &ABitOfEverythingServiceCreateBodyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCreateBodyParamsWithHTTPClient creates a new ABitOfEverythingServiceCreateBodyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceCreateBodyParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceCreateBodyParams {
-	return &ABitOfEverythingServiceCreateBodyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,76 +69,75 @@ type ABitOfEverythingServiceCreateBodyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCreateBodyParams) WithDefaults() *ABitOfEverythingServiceCreateBodyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service create body params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service create body params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCreateBodyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceCreateBodyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service create body params
 }
 
-// WithContext adds the context to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) WithContext(ctx context.Context) *ABitOfEverythingServiceCreateBodyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service create body params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceCreateBodyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the a bit of everything service create body params
 }
 
-// WithBody adds the body to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) WithBody(body *models.ExamplepbABitOfEverything) *ABitOfEverythingServiceCreateBodyParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the a bit of everything service create body params
 }
 
-// SetBody adds the body to the a bit of everything service create body params
 func (o *ABitOfEverythingServiceCreateBodyParams) SetBody(body *models.ExamplepbABitOfEverything) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceCreateBodyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

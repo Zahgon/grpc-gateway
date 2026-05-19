@@ -7,10 +7,10 @@
 package pathenum
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,32 +39,27 @@ var (
 	}
 )
 
-func (x PathEnum) Enum() *PathEnum {
-	p := new(PathEnum)
-	*p = x
-	return p
-}
+func (x PathEnum) Enum() *PathEnum { _ = "STUB: not implemented"; return nil }
 
-func (x PathEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x PathEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (PathEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (PathEnum) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x PathEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use PathEnum.Descriptor instead.
-func (PathEnum) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{0}
-}
+func (PathEnum) EnumDescriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 // Ignoring lint warnings as this enum type exist to validate proper functionality
 // for projects that don't follow these lint rules.
@@ -90,31 +85,29 @@ var (
 	}
 )
 
-func (x SnakeCaseForImport) Enum() *SnakeCaseForImport {
-	p := new(SnakeCaseForImport)
-	*p = x
-	return p
-}
+func (x SnakeCaseForImport) Enum() *SnakeCaseForImport { _ = "STUB: not implemented"; return nil }
 
-func (x SnakeCaseForImport) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x SnakeCaseForImport) String() string { _ = "STUB: not implemented"; return "" }
 
 func (SnakeCaseForImport) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[1].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (SnakeCaseForImport) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[1]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x SnakeCaseForImport) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use SnakeCaseForImport.Descriptor instead.
 func (SnakeCaseForImport) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type MessagePathEnum_NestedPathEnum int32
@@ -137,30 +130,31 @@ var (
 )
 
 func (x MessagePathEnum_NestedPathEnum) Enum() *MessagePathEnum_NestedPathEnum {
-	p := new(MessagePathEnum_NestedPathEnum)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x MessagePathEnum_NestedPathEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x MessagePathEnum_NestedPathEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (MessagePathEnum_NestedPathEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[2].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (MessagePathEnum_NestedPathEnum) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_pathenum_path_enum_proto_enumTypes[2]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x MessagePathEnum_NestedPathEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use MessagePathEnum_NestedPathEnum.Descriptor instead.
 func (MessagePathEnum_NestedPathEnum) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type MessagePathEnum struct {
@@ -169,35 +163,19 @@ type MessagePathEnum struct {
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *MessagePathEnum) Reset() {
-	*x = MessagePathEnum{}
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *MessagePathEnum) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *MessagePathEnum) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *MessagePathEnum) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*MessagePathEnum) ProtoMessage() {}
+func (*MessagePathEnum) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *MessagePathEnum) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use MessagePathEnum.ProtoReflect.Descriptor instead.
-func (*MessagePathEnum) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{0}
-}
+func (*MessagePathEnum) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 type MessageWithPathEnum struct {
 	state         protoimpl.MessageState
@@ -207,42 +185,24 @@ type MessageWithPathEnum struct {
 	Value PathEnum `protobuf:"varint,1,opt,name=value,proto3,enum=grpc.gateway.examples.internal.pathenum.PathEnum" json:"value,omitempty"`
 }
 
-func (x *MessageWithPathEnum) Reset() {
-	*x = MessageWithPathEnum{}
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *MessageWithPathEnum) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *MessageWithPathEnum) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *MessageWithPathEnum) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*MessageWithPathEnum) ProtoMessage() {}
+func (*MessageWithPathEnum) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *MessageWithPathEnum) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use MessageWithPathEnum.ProtoReflect.Descriptor instead.
 func (*MessageWithPathEnum) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *MessageWithPathEnum) GetValue() PathEnum {
-	if x != nil {
-		return x.Value
-	}
-	return PathEnum_ABC
-}
+func (x *MessageWithPathEnum) GetValue() PathEnum { _ = "STUB: not implemented"; return *new(PathEnum) }
 
 type MessageWithNestedPathEnum struct {
 	state         protoimpl.MessageState
@@ -252,41 +212,26 @@ type MessageWithNestedPathEnum struct {
 	Value MessagePathEnum_NestedPathEnum `protobuf:"varint,1,opt,name=value,proto3,enum=grpc.gateway.examples.internal.pathenum.MessagePathEnum_NestedPathEnum" json:"value,omitempty"`
 }
 
-func (x *MessageWithNestedPathEnum) Reset() {
-	*x = MessageWithNestedPathEnum{}
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *MessageWithNestedPathEnum) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *MessageWithNestedPathEnum) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *MessageWithNestedPathEnum) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*MessageWithNestedPathEnum) ProtoMessage() {}
+func (*MessageWithNestedPathEnum) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *MessageWithNestedPathEnum) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_pathenum_path_enum_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use MessageWithNestedPathEnum.ProtoReflect.Descriptor instead.
 func (*MessageWithNestedPathEnum) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *MessageWithNestedPathEnum) GetValue() MessagePathEnum_NestedPathEnum {
-	if x != nil {
-		return x.Value
-	}
-	return MessagePathEnum_GHI
+	_ = "STUB: not implemented"
+	return *new(MessagePathEnum_NestedPathEnum)
 }
 
 var File_examples_internal_proto_pathenum_path_enum_proto protoreflect.FileDescriptor
@@ -334,10 +279,8 @@ var (
 )
 
 func file_examples_internal_proto_pathenum_path_enum_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_pathenum_path_enum_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_pathenum_path_enum_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_pathenum_path_enum_proto_rawDescData)
-	})
-	return file_examples_internal_proto_pathenum_path_enum_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_pathenum_path_enum_proto_enumTypes = make([]protoimpl.EnumInfo, 3)
@@ -362,26 +305,6 @@ var file_examples_internal_proto_pathenum_path_enum_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_pathenum_path_enum_proto_init() }
 func file_examples_internal_proto_pathenum_path_enum_proto_init() {
-	if File_examples_internal_proto_pathenum_path_enum_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_pathenum_path_enum_proto_rawDesc,
-			NumEnums:      3,
-			NumMessages:   3,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_examples_internal_proto_pathenum_path_enum_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_pathenum_path_enum_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_pathenum_path_enum_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_pathenum_path_enum_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_pathenum_path_enum_proto = out.File
-	file_examples_internal_proto_pathenum_path_enum_proto_rawDesc = nil
-	file_examples_internal_proto_pathenum_path_enum_proto_goTypes = nil
-	file_examples_internal_proto_pathenum_path_enum_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

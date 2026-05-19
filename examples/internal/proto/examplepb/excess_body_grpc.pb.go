@@ -12,9 +12,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
@@ -45,62 +44,31 @@ type excessBodyServiceClient struct {
 }
 
 func NewExcessBodyServiceClient(cc grpc.ClientConnInterface) ExcessBodyServiceClient {
-	return &excessBodyServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(ExcessBodyServiceClient)
 }
 
 func (c *excessBodyServiceClient) NoBodyRpc(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ExcessBodyService_NoBodyRpc_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *excessBodyServiceClient) NoBodyServerStream(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (grpc.ServerStreamingClient[emptypb.Empty], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &ExcessBodyService_ServiceDesc.Streams[0], ExcessBodyService_NoBodyServerStream_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[emptypb.Empty, emptypb.Empty]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type ExcessBodyService_NoBodyServerStreamClient = grpc.ServerStreamingClient[emptypb.Empty]
 
 func (c *excessBodyServiceClient) WithBodyRpc(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ExcessBodyService_WithBodyRpc_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *excessBodyServiceClient) WithBodyServerStream(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (grpc.ServerStreamingClient[emptypb.Empty], error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &ExcessBodyService_ServiceDesc.Streams[1], ExcessBodyService_WithBodyServerStream_FullMethodName, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &grpc.GenericClientStream[emptypb.Empty, emptypb.Empty]{ClientStream: stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
@@ -124,90 +92,68 @@ type ExcessBodyServiceServer interface {
 type UnimplementedExcessBodyServiceServer struct{}
 
 func (UnimplementedExcessBodyServiceServer) NoBodyRpc(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method NoBodyRpc not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedExcessBodyServiceServer) NoBodyServerStream(*emptypb.Empty, grpc.ServerStreamingServer[emptypb.Empty]) error {
-	return status.Errorf(codes.Unimplemented, "method NoBodyServerStream not implemented")
-}
-func (UnimplementedExcessBodyServiceServer) WithBodyRpc(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method WithBodyRpc not implemented")
-}
-func (UnimplementedExcessBodyServiceServer) WithBodyServerStream(*emptypb.Empty, grpc.ServerStreamingServer[emptypb.Empty]) error {
-	return status.Errorf(codes.Unimplemented, "method WithBodyServerStream not implemented")
-}
-func (UnimplementedExcessBodyServiceServer) testEmbeddedByValue() {}
 
-// UnsafeExcessBodyServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ExcessBodyServiceServer will
-// result in compilation errors.
+func (UnimplementedExcessBodyServiceServer) NoBodyServerStream(*emptypb.Empty, grpc.ServerStreamingServer[emptypb.Empty]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedExcessBodyServiceServer) WithBodyRpc(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedExcessBodyServiceServer) WithBodyServerStream(*emptypb.Empty, grpc.ServerStreamingServer[emptypb.Empty]) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+func (UnimplementedExcessBodyServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeExcessBodyServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to ExcessBodyServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeExcessBodyServiceServer interface {
 	mustEmbedUnimplementedExcessBodyServiceServer()
 }
 
 func RegisterExcessBodyServiceServer(s grpc.ServiceRegistrar, srv ExcessBodyServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedExcessBodyServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&ExcessBodyService_ServiceDesc, srv)
+	return
 }
 
 func _ExcessBodyService_NoBodyRpc_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ExcessBodyServiceServer).NoBodyRpc(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ExcessBodyService_NoBodyRpc_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ExcessBodyServiceServer).NoBodyRpc(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ExcessBodyService_NoBodyServerStream_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(emptypb.Empty)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(ExcessBodyServiceServer).NoBodyServerStream(m, &grpc.GenericServerStream[emptypb.Empty, emptypb.Empty]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
 type ExcessBodyService_NoBodyServerStreamServer = grpc.ServerStreamingServer[emptypb.Empty]
 
 func _ExcessBodyService_WithBodyRpc_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ExcessBodyServiceServer).WithBodyRpc(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ExcessBodyService_WithBodyRpc_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ExcessBodyServiceServer).WithBodyRpc(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ExcessBodyService_WithBodyServerStream_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(emptypb.Empty)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(ExcessBodyServiceServer).WithBodyServerStream(m, &grpc.GenericServerStream[emptypb.Empty, emptypb.Empty]{ServerStream: stream})
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.

@@ -15,11 +15,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -42,56 +42,31 @@ type UnannotatedEmbedded struct {
 	Mark isUnannotatedEmbedded_Mark `protobuf_oneof:"mark"`
 }
 
-func (x *UnannotatedEmbedded) Reset() {
-	*x = UnannotatedEmbedded{}
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UnannotatedEmbedded) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UnannotatedEmbedded) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UnannotatedEmbedded) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UnannotatedEmbedded) ProtoMessage() {}
+func (*UnannotatedEmbedded) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UnannotatedEmbedded) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UnannotatedEmbedded.ProtoReflect.Descriptor instead.
 func (*UnannotatedEmbedded) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (m *UnannotatedEmbedded) GetMark() isUnannotatedEmbedded_Mark {
-	if m != nil {
-		return m.Mark
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isUnannotatedEmbedded_Mark)
 }
 
-func (x *UnannotatedEmbedded) GetProgress() int64 {
-	if x, ok := x.GetMark().(*UnannotatedEmbedded_Progress); ok {
-		return x.Progress
-	}
-	return 0
-}
+func (x *UnannotatedEmbedded) GetProgress() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *UnannotatedEmbedded) GetNote() string {
-	if x, ok := x.GetMark().(*UnannotatedEmbedded_Note); ok {
-		return x.Note
-	}
-	return ""
-}
+func (x *UnannotatedEmbedded) GetNote() string { _ = "STUB: not implemented"; return "" }
 
 type isUnannotatedEmbedded_Mark interface {
 	isUnannotatedEmbedded_Mark()
@@ -105,9 +80,12 @@ type UnannotatedEmbedded_Note struct {
 	Note string `protobuf:"bytes,2,opt,name=note,proto3,oneof"`
 }
 
-func (*UnannotatedEmbedded_Progress) isUnannotatedEmbedded_Mark() {}
+func (*UnannotatedEmbedded_Progress) isUnannotatedEmbedded_Mark() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*UnannotatedEmbedded_Note) isUnannotatedEmbedded_Mark() {}
+func (*UnannotatedEmbedded_Note) isUnannotatedEmbedded_Mark() { _ = "STUB: not implemented"; return }
 
 type UnannotatedNestedMessage struct {
 	state         protoimpl.MessageState
@@ -118,49 +96,26 @@ type UnannotatedNestedMessage struct {
 	Val string `protobuf:"bytes,2,opt,name=val,proto3" json:"val,omitempty"`
 }
 
-func (x *UnannotatedNestedMessage) Reset() {
-	*x = UnannotatedNestedMessage{}
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UnannotatedNestedMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UnannotatedNestedMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UnannotatedNestedMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UnannotatedNestedMessage) ProtoMessage() {}
+func (*UnannotatedNestedMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UnannotatedNestedMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UnannotatedNestedMessage.ProtoReflect.Descriptor instead.
 func (*UnannotatedNestedMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *UnannotatedNestedMessage) GetNId() string {
-	if x != nil {
-		return x.NId
-	}
-	return ""
-}
+func (x *UnannotatedNestedMessage) GetNId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *UnannotatedNestedMessage) GetVal() string {
-	if x != nil {
-		return x.Val
-	}
-	return ""
-}
+func (x *UnannotatedNestedMessage) GetVal() string { _ = "STUB: not implemented"; return "" }
 
 // UnannotatedSimpleMessage represents a simple message sent to the unannotated Echo service.
 type UnannotatedSimpleMessage struct {
@@ -187,117 +142,62 @@ type UnannotatedSimpleMessage struct {
 	NId        *UnannotatedNestedMessage      `protobuf:"bytes,10,opt,name=n_id,json=nId,proto3" json:"n_id,omitempty"`
 }
 
-func (x *UnannotatedSimpleMessage) Reset() {
-	*x = UnannotatedSimpleMessage{}
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UnannotatedSimpleMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UnannotatedSimpleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UnannotatedSimpleMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UnannotatedSimpleMessage) ProtoMessage() {}
+func (*UnannotatedSimpleMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UnannotatedSimpleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UnannotatedSimpleMessage.ProtoReflect.Descriptor instead.
 func (*UnannotatedSimpleMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *UnannotatedSimpleMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *UnannotatedSimpleMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *UnannotatedSimpleMessage) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *UnannotatedSimpleMessage) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *UnannotatedSimpleMessage) GetDuration() *durationpb.Duration {
-	if x != nil {
-		return x.Duration
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *UnannotatedSimpleMessage) GetCode() isUnannotatedSimpleMessage_Code {
-	if m != nil {
-		return m.Code
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isUnannotatedSimpleMessage_Code)
 }
 
-func (x *UnannotatedSimpleMessage) GetLineNum() int64 {
-	if x, ok := x.GetCode().(*UnannotatedSimpleMessage_LineNum); ok {
-		return x.LineNum
-	}
-	return 0
-}
+func (x *UnannotatedSimpleMessage) GetLineNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *UnannotatedSimpleMessage) GetLang() string {
-	if x, ok := x.GetCode().(*UnannotatedSimpleMessage_Lang); ok {
-		return x.Lang
-	}
-	return ""
-}
+func (x *UnannotatedSimpleMessage) GetLang() string { _ = "STUB: not implemented"; return "" }
 
 func (x *UnannotatedSimpleMessage) GetStatus() *UnannotatedEmbedded {
-	if x != nil {
-		return x.Status
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *UnannotatedSimpleMessage) GetExt() isUnannotatedSimpleMessage_Ext {
-	if m != nil {
-		return m.Ext
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isUnannotatedSimpleMessage_Ext)
 }
 
-func (x *UnannotatedSimpleMessage) GetEn() int64 {
-	if x, ok := x.GetExt().(*UnannotatedSimpleMessage_En); ok {
-		return x.En
-	}
-	return 0
-}
+func (x *UnannotatedSimpleMessage) GetEn() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *UnannotatedSimpleMessage) GetNo() *UnannotatedEmbedded {
-	if x, ok := x.GetExt().(*UnannotatedSimpleMessage_No); ok {
-		return x.No
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *UnannotatedSimpleMessage) GetResourceId() string {
-	if x != nil {
-		return x.ResourceId
-	}
-	return ""
-}
+func (x *UnannotatedSimpleMessage) GetResourceId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *UnannotatedSimpleMessage) GetNId() *UnannotatedNestedMessage {
-	if x != nil {
-		return x.NId
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -313,9 +213,15 @@ type UnannotatedSimpleMessage_Lang struct {
 	Lang string `protobuf:"bytes,5,opt,name=lang,proto3,oneof"`
 }
 
-func (*UnannotatedSimpleMessage_LineNum) isUnannotatedSimpleMessage_Code() {}
+func (*UnannotatedSimpleMessage_LineNum) isUnannotatedSimpleMessage_Code() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*UnannotatedSimpleMessage_Lang) isUnannotatedSimpleMessage_Code() {}
+func (*UnannotatedSimpleMessage_Lang) isUnannotatedSimpleMessage_Code() {
+	_ = "STUB: not implemented"
+	return
+}
 
 type isUnannotatedSimpleMessage_Ext interface {
 	isUnannotatedSimpleMessage_Ext()
@@ -329,9 +235,15 @@ type UnannotatedSimpleMessage_No struct {
 	No *UnannotatedEmbedded `protobuf:"bytes,8,opt,name=no,proto3,oneof"`
 }
 
-func (*UnannotatedSimpleMessage_En) isUnannotatedSimpleMessage_Ext() {}
+func (*UnannotatedSimpleMessage_En) isUnannotatedSimpleMessage_Ext() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*UnannotatedSimpleMessage_No) isUnannotatedSimpleMessage_Ext() {}
+func (*UnannotatedSimpleMessage_No) isUnannotatedSimpleMessage_Ext() {
+	_ = "STUB: not implemented"
+	return
+}
 
 var File_examples_internal_proto_examplepb_unannotated_echo_service_proto protoreflect.FileDescriptor
 
@@ -443,10 +355,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
@@ -478,35 +388,6 @@ var file_examples_internal_proto_examplepb_unannotated_echo_service_proto_depIdx
 
 func init() { file_examples_internal_proto_examplepb_unannotated_echo_service_proto_init() }
 func file_examples_internal_proto_examplepb_unannotated_echo_service_proto_init() {
-	if File_examples_internal_proto_examplepb_unannotated_echo_service_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[0].OneofWrappers = []any{
-		(*UnannotatedEmbedded_Progress)(nil),
-		(*UnannotatedEmbedded_Note)(nil),
-	}
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes[2].OneofWrappers = []any{
-		(*UnannotatedSimpleMessage_LineNum)(nil),
-		(*UnannotatedSimpleMessage_Lang)(nil),
-		(*UnannotatedSimpleMessage_En)(nil),
-		(*UnannotatedSimpleMessage_No)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   3,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_unannotated_echo_service_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_unannotated_echo_service_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_unannotated_echo_service_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_unannotated_echo_service_proto = out.File
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_unannotated_echo_service_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

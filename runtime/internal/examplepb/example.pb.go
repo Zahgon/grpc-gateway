@@ -7,14 +7,14 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	fieldmaskpb "google.golang.org/protobuf/types/known/fieldmaskpb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -46,32 +46,27 @@ var (
 	}
 )
 
-func (x NumericEnum) Enum() *NumericEnum {
-	p := new(NumericEnum)
-	*p = x
-	return p
-}
+func (x NumericEnum) Enum() *NumericEnum { _ = "STUB: not implemented"; return nil }
 
-func (x NumericEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x NumericEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (NumericEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_runtime_internal_examplepb_example_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (NumericEnum) Type() protoreflect.EnumType {
-	return &file_runtime_internal_examplepb_example_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x NumericEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use NumericEnum.Descriptor instead.
-func (NumericEnum) EnumDescriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{0}
-}
+func (NumericEnum) EnumDescriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 // DeepEnum is one or zero.
 type ABitOfEverything_Nested_DeepEnum int32
@@ -96,30 +91,31 @@ var (
 )
 
 func (x ABitOfEverything_Nested_DeepEnum) Enum() *ABitOfEverything_Nested_DeepEnum {
-	p := new(ABitOfEverything_Nested_DeepEnum)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x ABitOfEverything_Nested_DeepEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x ABitOfEverything_Nested_DeepEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (ABitOfEverything_Nested_DeepEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_runtime_internal_examplepb_example_proto_enumTypes[1].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (ABitOfEverything_Nested_DeepEnum) Type() protoreflect.EnumType {
-	return &file_runtime_internal_examplepb_example_proto_enumTypes[1]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x ABitOfEverything_Nested_DeepEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use ABitOfEverything_Nested_DeepEnum.Descriptor instead.
 func (ABitOfEverything_Nested_DeepEnum) EnumDescriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{1, 0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type RepeatedResponseBodyOut_Response_ResponseType int32
@@ -148,30 +144,34 @@ var (
 )
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) Enum() *RepeatedResponseBodyOut_Response_ResponseType {
-	p := new(RepeatedResponseBodyOut_Response_ResponseType)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (RepeatedResponseBodyOut_Response_ResponseType) Descriptor() protoreflect.EnumDescriptor {
-	return file_runtime_internal_examplepb_example_proto_enumTypes[2].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (RepeatedResponseBodyOut_Response_ResponseType) Type() protoreflect.EnumType {
-	return &file_runtime_internal_examplepb_example_proto_enumTypes[2]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x RepeatedResponseBodyOut_Response_ResponseType) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut_Response_ResponseType.Descriptor instead.
 func (RepeatedResponseBodyOut_Response_ResponseType) EnumDescriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{3, 0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SimpleMessage represents a simple message sent to the Echo service.
@@ -183,42 +183,21 @@ type SimpleMessage struct {
 	Id string `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
 }
 
-func (x *SimpleMessage) Reset() {
-	*x = SimpleMessage{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SimpleMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SimpleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SimpleMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SimpleMessage) ProtoMessage() {}
+func (*SimpleMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SimpleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use SimpleMessage.ProtoReflect.Descriptor instead.
-func (*SimpleMessage) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{0}
-}
+func (*SimpleMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *SimpleMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *SimpleMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
 type ABitOfEverything struct {
 	state         protoimpl.MessageState
@@ -275,294 +254,138 @@ type ABitOfEverything struct {
 	RepeatedAnytype   []*anypb.Any             `protobuf:"bytes,39,rep,name=repeated_anytype,json=repeatedAnytype,proto3" json:"repeated_anytype,omitempty"`
 }
 
-func (x *ABitOfEverything) Reset() {
-	*x = ABitOfEverything{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ABitOfEverything) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ABitOfEverything) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ABitOfEverything) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ABitOfEverything) ProtoMessage() {}
+func (*ABitOfEverything) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ABitOfEverything) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ABitOfEverything.ProtoReflect.Descriptor instead.
-func (*ABitOfEverything) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{1}
-}
+func (*ABitOfEverything) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *ABitOfEverything) GetSingleNested() *ABitOfEverything_Nested {
-	if x != nil {
-		return x.SingleNested
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *ABitOfEverything) GetUuid() string {
-	if x != nil {
-		return x.Uuid
-	}
-	return ""
-}
+func (x *ABitOfEverything) GetUuid() string { _ = "STUB: not implemented"; return "" }
 
 func (x *ABitOfEverything) GetNested() []*ABitOfEverything_Nested {
-	if x != nil {
-		return x.Nested
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *ABitOfEverything) GetFloatValue() float32 {
-	if x != nil {
-		return x.FloatValue
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetFloatValue() float32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetDoubleValue() float64 {
-	if x != nil {
-		return x.DoubleValue
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetDoubleValue() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetInt64Value() int64 {
-	if x != nil {
-		return x.Int64Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetInt64Value() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetUint64Value() uint64 {
-	if x != nil {
-		return x.Uint64Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetUint64Value() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetInt32Value() int32 {
-	if x != nil {
-		return x.Int32Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetInt32Value() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetFixed64Value() uint64 {
-	if x != nil {
-		return x.Fixed64Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetFixed64Value() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetFixed32Value() uint32 {
-	if x != nil {
-		return x.Fixed32Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetFixed32Value() uint32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetBoolValue() bool {
-	if x != nil {
-		return x.BoolValue
-	}
-	return false
-}
+func (x *ABitOfEverything) GetBoolValue() bool { _ = "STUB: not implemented"; return false }
 
-func (x *ABitOfEverything) GetStringValue() string {
-	if x != nil {
-		return x.StringValue
-	}
-	return ""
-}
+func (x *ABitOfEverything) GetStringValue() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ABitOfEverything) GetBytesValue() []byte {
-	if x != nil {
-		return x.BytesValue
-	}
-	return nil
-}
+func (x *ABitOfEverything) GetBytesValue() []byte { _ = "STUB: not implemented"; return nil }
 
-func (x *ABitOfEverything) GetUint32Value() uint32 {
-	if x != nil {
-		return x.Uint32Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetUint32Value() uint32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *ABitOfEverything) GetEnumValue() NumericEnum {
-	if x != nil {
-		return x.EnumValue
-	}
-	return NumericEnum_ZERO
+	_ = "STUB: not implemented"
+	return *new(NumericEnum)
 }
 
-func (x *ABitOfEverything) GetSfixed32Value() int32 {
-	if x != nil {
-		return x.Sfixed32Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetSfixed32Value() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetSfixed64Value() int64 {
-	if x != nil {
-		return x.Sfixed64Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetSfixed64Value() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetSint32Value() int32 {
-	if x != nil {
-		return x.Sint32Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetSint32Value() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetSint64Value() int64 {
-	if x != nil {
-		return x.Sint64Value
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetSint64Value() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetRepeatedStringValue() []string {
-	if x != nil {
-		return x.RepeatedStringValue
-	}
-	return nil
-}
+func (x *ABitOfEverything) GetRepeatedStringValue() []string { _ = "STUB: not implemented"; return nil }
 
 func (m *ABitOfEverything) GetOneofValue() isABitOfEverything_OneofValue {
-	if m != nil {
-		return m.OneofValue
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isABitOfEverything_OneofValue)
 }
 
-func (x *ABitOfEverything) GetOneofEmpty() *emptypb.Empty {
-	if x, ok := x.GetOneofValue().(*ABitOfEverything_OneofEmpty); ok {
-		return x.OneofEmpty
-	}
-	return nil
-}
+func (x *ABitOfEverything) GetOneofEmpty() *emptypb.Empty { _ = "STUB: not implemented"; return nil }
 
-func (x *ABitOfEverything) GetOneofString() string {
-	if x, ok := x.GetOneofValue().(*ABitOfEverything_OneofString); ok {
-		return x.OneofString
-	}
-	return ""
-}
+func (x *ABitOfEverything) GetOneofString() string { _ = "STUB: not implemented"; return "" }
 
 func (x *ABitOfEverything) GetMapValue() map[string]NumericEnum {
-	if x != nil {
-		return x.MapValue
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetMappedStringValue() map[string]string {
-	if x != nil {
-		return x.MappedStringValue
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetMappedNestedValue() map[string]*ABitOfEverything_Nested {
-	if x != nil {
-		return x.MappedNestedValue
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetNonConventionalNameValue() string {
-	if x != nil {
-		return x.NonConventionalNameValue
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *ABitOfEverything) GetTimestampValue() *timestamppb.Timestamp {
-	if x != nil {
-		return x.TimestampValue
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetRepeatedEnumValue() []NumericEnum {
-	if x != nil {
-		return x.RepeatedEnumValue
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetRepeatedEnumAnnotation() []NumericEnum {
-	if x != nil {
-		return x.RepeatedEnumAnnotation
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetEnumValueAnnotation() NumericEnum {
-	if x != nil {
-		return x.EnumValueAnnotation
-	}
-	return NumericEnum_ZERO
+	_ = "STUB: not implemented"
+	return *new(NumericEnum)
 }
 
 func (x *ABitOfEverything) GetRepeatedStringAnnotation() []string {
-	if x != nil {
-		return x.RepeatedStringAnnotation
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetRepeatedNestedAnnotation() []*ABitOfEverything_Nested {
-	if x != nil {
-		return x.RepeatedNestedAnnotation
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *ABitOfEverything) GetNestedAnnotation() *ABitOfEverything_Nested {
-	if x != nil {
-		return x.NestedAnnotation
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *ABitOfEverything) GetInt64OverrideType() int64 {
-	if x != nil {
-		return x.Int64OverrideType
-	}
-	return 0
-}
+func (x *ABitOfEverything) GetInt64OverrideType() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *ABitOfEverything) GetAnytype() *anypb.Any {
-	if x != nil {
-		return x.Anytype
-	}
-	return nil
-}
+func (x *ABitOfEverything) GetAnytype() *anypb.Any { _ = "STUB: not implemented"; return nil }
 
-func (x *ABitOfEverything) GetRepeatedAnytype() []*anypb.Any {
-	if x != nil {
-		return x.RepeatedAnytype
-	}
-	return nil
-}
+func (x *ABitOfEverything) GetRepeatedAnytype() []*anypb.Any { _ = "STUB: not implemented"; return nil }
 
 type isABitOfEverything_OneofValue interface {
 	isABitOfEverything_OneofValue()
@@ -576,9 +399,15 @@ type ABitOfEverything_OneofString struct {
 	OneofString string `protobuf:"bytes,21,opt,name=oneof_string,json=oneofString,proto3,oneof"`
 }
 
-func (*ABitOfEverything_OneofEmpty) isABitOfEverything_OneofValue() {}
+func (*ABitOfEverything_OneofEmpty) isABitOfEverything_OneofValue() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*ABitOfEverything_OneofString) isABitOfEverything_OneofValue() {}
+func (*ABitOfEverything_OneofString) isABitOfEverything_OneofValue() {
+	_ = "STUB: not implemented"
+	return
+}
 
 type ResponseBodyOut struct {
 	state         protoimpl.MessageState
@@ -588,40 +417,22 @@ type ResponseBodyOut struct {
 	Response *ResponseBodyOut_Response `protobuf:"bytes,2,opt,name=response,proto3" json:"response,omitempty"`
 }
 
-func (x *ResponseBodyOut) Reset() {
-	*x = ResponseBodyOut{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyOut) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyOut) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyOut) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyOut) ProtoMessage() {}
+func (*ResponseBodyOut) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyOut) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyOut.ProtoReflect.Descriptor instead.
-func (*ResponseBodyOut) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{2}
-}
+func (*ResponseBodyOut) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *ResponseBodyOut) GetResponse() *ResponseBodyOut_Response {
-	if x != nil {
-		return x.Response
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -633,40 +444,25 @@ type RepeatedResponseBodyOut struct {
 	Response []*RepeatedResponseBodyOut_Response `protobuf:"bytes,2,rep,name=response,proto3" json:"response,omitempty"`
 }
 
-func (x *RepeatedResponseBodyOut) Reset() {
-	*x = RepeatedResponseBodyOut{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *RepeatedResponseBodyOut) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *RepeatedResponseBodyOut) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *RepeatedResponseBodyOut) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*RepeatedResponseBodyOut) ProtoMessage() {}
+func (*RepeatedResponseBodyOut) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *RepeatedResponseBodyOut) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut.ProtoReflect.Descriptor instead.
 func (*RepeatedResponseBodyOut) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *RepeatedResponseBodyOut) GetResponse() []*RepeatedResponseBodyOut_Response {
-	if x != nil {
-		return x.Response
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -679,47 +475,27 @@ type UpdateMessage struct {
 	ABitOfEverything *ABitOfEverything      `protobuf:"bytes,2,opt,name=a_bit_of_everything,json=aBitOfEverything,proto3" json:"a_bit_of_everything,omitempty"`
 }
 
-func (x *UpdateMessage) Reset() {
-	*x = UpdateMessage{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UpdateMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UpdateMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UpdateMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UpdateMessage) ProtoMessage() {}
+func (*UpdateMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UpdateMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UpdateMessage.ProtoReflect.Descriptor instead.
-func (*UpdateMessage) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{4}
-}
+func (*UpdateMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 func (x *UpdateMessage) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *UpdateMessage) GetABitOfEverything() *ABitOfEverything {
-	if x != nil {
-		return x.ABitOfEverything
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -731,42 +507,21 @@ type NestedOuter struct {
 	One *NestedOne `protobuf:"bytes,1,opt,name=one,proto3" json:"one,omitempty"`
 }
 
-func (x *NestedOuter) Reset() {
-	*x = NestedOuter{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedOuter) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedOuter) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedOuter) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedOuter) ProtoMessage() {}
+func (*NestedOuter) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedOuter) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedOuter.ProtoReflect.Descriptor instead.
-func (*NestedOuter) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{5}
-}
+func (*NestedOuter) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedOuter) GetOne() *NestedOne {
-	if x != nil {
-		return x.One
-	}
-	return nil
-}
+func (x *NestedOuter) GetOne() *NestedOne { _ = "STUB: not implemented"; return nil }
 
 type NestedOne struct {
 	state         protoimpl.MessageState
@@ -776,42 +531,21 @@ type NestedOne struct {
 	Two *NestedTwo `protobuf:"bytes,1,opt,name=two,proto3" json:"two,omitempty"`
 }
 
-func (x *NestedOne) Reset() {
-	*x = NestedOne{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedOne) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedOne) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedOne) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedOne) ProtoMessage() {}
+func (*NestedOne) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedOne) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedOne.ProtoReflect.Descriptor instead.
-func (*NestedOne) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{6}
-}
+func (*NestedOne) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedOne) GetTwo() *NestedTwo {
-	if x != nil {
-		return x.Two
-	}
-	return nil
-}
+func (x *NestedOne) GetTwo() *NestedTwo { _ = "STUB: not implemented"; return nil }
 
 type NestedTwo struct {
 	state         protoimpl.MessageState
@@ -821,42 +555,21 @@ type NestedTwo struct {
 	Three *NestedThree `protobuf:"bytes,1,opt,name=three,proto3" json:"three,omitempty"`
 }
 
-func (x *NestedTwo) Reset() {
-	*x = NestedTwo{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedTwo) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedTwo) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedTwo) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedTwo) ProtoMessage() {}
+func (*NestedTwo) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedTwo) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedTwo.ProtoReflect.Descriptor instead.
-func (*NestedTwo) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{7}
-}
+func (*NestedTwo) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedTwo) GetThree() *NestedThree {
-	if x != nil {
-		return x.Three
-	}
-	return nil
-}
+func (x *NestedTwo) GetThree() *NestedThree { _ = "STUB: not implemented"; return nil }
 
 type NestedThree struct {
 	state         protoimpl.MessageState
@@ -867,49 +580,23 @@ type NestedThree struct {
 	B bool `protobuf:"varint,2,opt,name=b,proto3" json:"b,omitempty"`
 }
 
-func (x *NestedThree) Reset() {
-	*x = NestedThree{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[8]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedThree) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedThree) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedThree) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedThree) ProtoMessage() {}
+func (*NestedThree) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedThree) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[8]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedThree.ProtoReflect.Descriptor instead.
-func (*NestedThree) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{8}
-}
+func (*NestedThree) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedThree) GetA() bool {
-	if x != nil {
-		return x.A
-	}
-	return false
-}
+func (x *NestedThree) GetA() bool { _ = "STUB: not implemented"; return false }
 
-func (x *NestedThree) GetB() bool {
-	if x != nil {
-		return x.B
-	}
-	return false
-}
+func (x *NestedThree) GetB() bool { _ = "STUB: not implemented"; return false }
 
 type UpdateNestedRequest struct {
 	state         protoimpl.MessageState
@@ -920,47 +607,27 @@ type UpdateNestedRequest struct {
 	UpdateMask *fieldmaskpb.FieldMask `protobuf:"bytes,2,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
 }
 
-func (x *UpdateNestedRequest) Reset() {
-	*x = UpdateNestedRequest{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[9]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UpdateNestedRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UpdateNestedRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UpdateNestedRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UpdateNestedRequest) ProtoMessage() {}
+func (*UpdateNestedRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UpdateNestedRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[9]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UpdateNestedRequest.ProtoReflect.Descriptor instead.
 func (*UpdateNestedRequest) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{9}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *UpdateNestedRequest) GetNested() *NestedOuter {
-	if x != nil {
-		return x.Nested
-	}
-	return nil
-}
+func (x *UpdateNestedRequest) GetNested() *NestedOuter { _ = "STUB: not implemented"; return nil }
 
 func (x *UpdateNestedRequest) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -977,55 +644,30 @@ type ABitOfEverything_Nested struct {
 	Ok ABitOfEverything_Nested_DeepEnum `protobuf:"varint,3,opt,name=ok,proto3,enum=grpc.gateway.runtime.internal.examplepb.ABitOfEverything_Nested_DeepEnum" json:"ok,omitempty"`
 }
 
-func (x *ABitOfEverything_Nested) Reset() {
-	*x = ABitOfEverything_Nested{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[10]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ABitOfEverything_Nested) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ABitOfEverything_Nested) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ABitOfEverything_Nested) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ABitOfEverything_Nested) ProtoMessage() {}
+func (*ABitOfEverything_Nested) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ABitOfEverything_Nested) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[10]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ABitOfEverything_Nested.ProtoReflect.Descriptor instead.
 func (*ABitOfEverything_Nested) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{1, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *ABitOfEverything_Nested) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *ABitOfEverything_Nested) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ABitOfEverything_Nested) GetAmount() uint32 {
-	if x != nil {
-		return x.Amount
-	}
-	return 0
-}
+func (x *ABitOfEverything_Nested) GetAmount() uint32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *ABitOfEverything_Nested) GetOk() ABitOfEverything_Nested_DeepEnum {
-	if x != nil {
-		return x.Ok
-	}
-	return ABitOfEverything_Nested_FALSE
+	_ = "STUB: not implemented"
+	return *new(ABitOfEverything_Nested_DeepEnum)
 }
 
 type ResponseBodyOut_Response struct {
@@ -1036,42 +678,24 @@ type ResponseBodyOut_Response struct {
 	Data string `protobuf:"bytes,1,opt,name=data,proto3" json:"data,omitempty"`
 }
 
-func (x *ResponseBodyOut_Response) Reset() {
-	*x = ResponseBodyOut_Response{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[14]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ResponseBodyOut_Response) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ResponseBodyOut_Response) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ResponseBodyOut_Response) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ResponseBodyOut_Response) ProtoMessage() {}
+func (*ResponseBodyOut_Response) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ResponseBodyOut_Response) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[14]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use ResponseBodyOut_Response.ProtoReflect.Descriptor instead.
 func (*ResponseBodyOut_Response) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{2, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *ResponseBodyOut_Response) GetData() string {
-	if x != nil {
-		return x.Data
-	}
-	return ""
-}
+func (x *ResponseBodyOut_Response) GetData() string { _ = "STUB: not implemented"; return "" }
 
 type RepeatedResponseBodyOut_Response struct {
 	state         protoimpl.MessageState
@@ -1082,48 +706,28 @@ type RepeatedResponseBodyOut_Response struct {
 	Type RepeatedResponseBodyOut_Response_ResponseType `protobuf:"varint,3,opt,name=type,proto3,enum=grpc.gateway.runtime.internal.examplepb.RepeatedResponseBodyOut_Response_ResponseType" json:"type,omitempty"`
 }
 
-func (x *RepeatedResponseBodyOut_Response) Reset() {
-	*x = RepeatedResponseBodyOut_Response{}
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[15]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *RepeatedResponseBodyOut_Response) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *RepeatedResponseBodyOut_Response) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *RepeatedResponseBodyOut_Response) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*RepeatedResponseBodyOut_Response) ProtoMessage() {}
+func (*RepeatedResponseBodyOut_Response) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *RepeatedResponseBodyOut_Response) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_example_proto_msgTypes[15]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use RepeatedResponseBodyOut_Response.ProtoReflect.Descriptor instead.
 func (*RepeatedResponseBodyOut_Response) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_example_proto_rawDescGZIP(), []int{3, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *RepeatedResponseBodyOut_Response) GetData() string {
-	if x != nil {
-		return x.Data
-	}
-	return ""
-}
+func (x *RepeatedResponseBodyOut_Response) GetData() string { _ = "STUB: not implemented"; return "" }
 
 func (x *RepeatedResponseBodyOut_Response) GetType() RepeatedResponseBodyOut_Response_ResponseType {
-	if x != nil {
-		return x.Type
-	}
-	return RepeatedResponseBodyOut_Response_UNKNOWN
+	_ = "STUB: not implemented"
+	return *new(RepeatedResponseBodyOut_Response_ResponseType)
 }
 
 var File_runtime_internal_examplepb_example_proto protoreflect.FileDescriptor
@@ -1403,10 +1007,8 @@ var (
 )
 
 func file_runtime_internal_examplepb_example_proto_rawDescGZIP() []byte {
-	file_runtime_internal_examplepb_example_proto_rawDescOnce.Do(func() {
-		file_runtime_internal_examplepb_example_proto_rawDescData = protoimpl.X.CompressGZIP(file_runtime_internal_examplepb_example_proto_rawDescData)
-	})
-	return file_runtime_internal_examplepb_example_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_runtime_internal_examplepb_example_proto_enumTypes = make([]protoimpl.EnumInfo, 3)
@@ -1472,32 +1074,5 @@ var file_runtime_internal_examplepb_example_proto_depIdxs = []int32{
 	0,  // [0:28] is the sub-list for field type_name
 }
 
-func init() { file_runtime_internal_examplepb_example_proto_init() }
-func file_runtime_internal_examplepb_example_proto_init() {
-	if File_runtime_internal_examplepb_example_proto != nil {
-		return
-	}
-	file_runtime_internal_examplepb_example_proto_msgTypes[1].OneofWrappers = []any{
-		(*ABitOfEverything_OneofEmpty)(nil),
-		(*ABitOfEverything_OneofString)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_runtime_internal_examplepb_example_proto_rawDesc,
-			NumEnums:      3,
-			NumMessages:   16,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_runtime_internal_examplepb_example_proto_goTypes,
-		DependencyIndexes: file_runtime_internal_examplepb_example_proto_depIdxs,
-		EnumInfos:         file_runtime_internal_examplepb_example_proto_enumTypes,
-		MessageInfos:      file_runtime_internal_examplepb_example_proto_msgTypes,
-	}.Build()
-	File_runtime_internal_examplepb_example_proto = out.File
-	file_runtime_internal_examplepb_example_proto_rawDesc = nil
-	file_runtime_internal_examplepb_example_proto_goTypes = nil
-	file_runtime_internal_examplepb_example_proto_depIdxs = nil
-}
+func init()                                               { file_runtime_internal_examplepb_example_proto_init() }
+func file_runtime_internal_examplepb_example_proto_init() { _ = "STUB: not implemented"; return }

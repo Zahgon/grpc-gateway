@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // PathenumPathEnum pathenum path enum
@@ -17,13 +15,13 @@ import (
 type PathenumPathEnum string
 
 func NewPathenumPathEnum(value PathenumPathEnum) *PathenumPathEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated PathenumPathEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated PathenumPathEnum.
-func (m PathenumPathEnum) Pointer() *PathenumPathEnum {
-	return &m
-}
+func (m PathenumPathEnum) Pointer() *PathenumPathEnum { _ = "STUB: not implemented"; return nil }
 
 const (
 
@@ -48,28 +46,20 @@ func init() {
 }
 
 func (m PathenumPathEnum) validatePathenumPathEnumEnum(path, location string, value PathenumPathEnum) error {
-	if err := validate.EnumCase(path, location, value, pathenumPathEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this pathenum path enum
 func (m PathenumPathEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validatePathenumPathEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this pathenum path enum based on context it is used
 func (m PathenumPathEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

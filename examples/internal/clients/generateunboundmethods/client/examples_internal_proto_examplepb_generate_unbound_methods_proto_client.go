@@ -4,7 +4,6 @@ package client
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/generateunboundmethods/client/generate_unbound_methods_echo_service"
@@ -27,44 +26,30 @@ var DefaultSchemes = []string{"http"}
 
 // NewHTTPClient creates a new examples internal proto examplepb generate unbound methods proto HTTP client.
 func NewHTTPClient(formats strfmt.Registry) *ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto {
-	return NewHTTPClientWithConfig(formats, nil)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewHTTPClientWithConfig creates a new examples internal proto examplepb generate unbound methods proto HTTP client,
 // using a customizable transport config.
 func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto {
+	_ = "STUB: not implemented"
 	// ensure nullable parameters have default
-	if cfg == nil {
-		cfg = DefaultTransportConfig()
-	}
-
-	// create transport and client
-	transport := httptransport.New(cfg.Host, cfg.BasePath, cfg.Schemes)
-	return New(transport, formats)
+	return nil
 }
+
+// create transport and client
 
 // New creates a new examples internal proto examplepb generate unbound methods proto client
 func New(transport runtime.ClientTransport, formats strfmt.Registry) *ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto {
+	_ = "STUB: not implemented"
 	// ensure nullable parameters have default
-	if formats == nil {
-		formats = strfmt.Default
-	}
-
-	cli := new(ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto)
-	cli.Transport = transport
-	cli.GenerateUnboundMethodsEchoService = generate_unbound_methods_echo_service.New(transport, formats)
-	return cli
+	return nil
 }
 
 // DefaultTransportConfig creates a TransportConfig with the
 // default settings taken from the meta section of the spec file.
-func DefaultTransportConfig() *TransportConfig {
-	return &TransportConfig{
-		Host:     DefaultHost,
-		BasePath: DefaultBasePath,
-		Schemes:  DefaultSchemes,
-	}
-}
+func DefaultTransportConfig() *TransportConfig { _ = "STUB: not implemented"; return nil }
 
 // TransportConfig contains the transport related info,
 // found in the meta section of the spec file.
@@ -77,22 +62,22 @@ type TransportConfig struct {
 // WithHost overrides the default host,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithHost(host string) *TransportConfig {
-	cfg.Host = host
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // WithBasePath overrides the default basePath,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithBasePath(basePath string) *TransportConfig {
-	cfg.BasePath = basePath
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // WithSchemes overrides the default schemes,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
-	cfg.Schemes = schemes
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto is a client for examples internal proto examplepb generate unbound methods proto
@@ -104,6 +89,6 @@ type ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto struct {
 
 // SetTransport changes the transport on the client and all its subresources
 func (c *ExamplesInternalProtoExamplepbGenerateUnboundMethodsProto) SetTransport(transport runtime.ClientTransport) {
-	c.Transport = transport
-	c.GenerateUnboundMethodsEchoService.SetTransport(transport)
+	_ = "STUB: not implemented"
+	return
 }

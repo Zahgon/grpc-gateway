@@ -8,9 +8,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -40,27 +39,18 @@ type nonStandardServiceClient struct {
 }
 
 func NewNonStandardServiceClient(cc grpc.ClientConnInterface) NonStandardServiceClient {
-	return &nonStandardServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(NonStandardServiceClient)
 }
 
 func (c *nonStandardServiceClient) Update(ctx context.Context, in *NonStandardUpdateRequest, opts ...grpc.CallOption) (*NonStandardMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(NonStandardMessage)
-	err := c.cc.Invoke(ctx, NonStandardService_Update_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *nonStandardServiceClient) UpdateWithJSONNames(ctx context.Context, in *NonStandardWithJSONNamesUpdateRequest, opts ...grpc.CallOption) (*NonStandardMessageWithJSONNames, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(NonStandardMessageWithJSONNames)
-	err := c.cc.Invoke(ctx, NonStandardService_UpdateWithJSONNames_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NonStandardServiceServer is the server API for NonStandardService service.
@@ -83,65 +73,45 @@ type NonStandardServiceServer interface {
 type UnimplementedNonStandardServiceServer struct{}
 
 func (UnimplementedNonStandardServiceServer) Update(context.Context, *NonStandardUpdateRequest) (*NonStandardMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Update not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedNonStandardServiceServer) UpdateWithJSONNames(context.Context, *NonStandardWithJSONNamesUpdateRequest) (*NonStandardMessageWithJSONNames, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method UpdateWithJSONNames not implemented")
-}
-func (UnimplementedNonStandardServiceServer) testEmbeddedByValue() {}
 
-// UnsafeNonStandardServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to NonStandardServiceServer will
-// result in compilation errors.
+func (UnimplementedNonStandardServiceServer) UpdateWithJSONNames(context.Context, *NonStandardWithJSONNamesUpdateRequest) (*NonStandardMessageWithJSONNames, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedNonStandardServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeNonStandardServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to NonStandardServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeNonStandardServiceServer interface {
 	mustEmbedUnimplementedNonStandardServiceServer()
 }
 
 func RegisterNonStandardServiceServer(s grpc.ServiceRegistrar, srv NonStandardServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedNonStandardServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&NonStandardService_ServiceDesc, srv)
+	return
 }
 
 func _NonStandardService_Update_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(NonStandardUpdateRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(NonStandardServiceServer).Update(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: NonStandardService_Update_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(NonStandardServiceServer).Update(ctx, req.(*NonStandardUpdateRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _NonStandardService_UpdateWithJSONNames_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(NonStandardWithJSONNamesUpdateRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(NonStandardServiceServer).UpdateWithJSONNames(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: NonStandardService_UpdateWithJSONNames_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(NonStandardServiceServer).UpdateWithJSONNames(ctx, req.(*NonStandardWithJSONNamesUpdateRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NonStandardService_ServiceDesc is the grpc.ServiceDesc for NonStandardService service.

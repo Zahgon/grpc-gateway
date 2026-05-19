@@ -11,11 +11,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -35,42 +35,21 @@ type InMessageB struct {
 	Value string `protobuf:"bytes,1,opt,name=value,proto3" json:"value,omitempty"`
 }
 
-func (x *InMessageB) Reset() {
-	*x = InMessageB{}
-	mi := &file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *InMessageB) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *InMessageB) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *InMessageB) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*InMessageB) ProtoMessage() {}
+func (*InMessageB) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *InMessageB) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use InMessageB.ProtoReflect.Descriptor instead.
-func (*InMessageB) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescGZIP(), []int{0}
-}
+func (*InMessageB) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *InMessageB) GetValue() string {
-	if x != nil {
-		return x.Value
-	}
-	return ""
-}
+func (x *InMessageB) GetValue() string { _ = "STUB: not implemented"; return "" }
 
 // OutMessageB represents a message returned from ServiceB.
 type OutMessageB struct {
@@ -82,42 +61,21 @@ type OutMessageB struct {
 	Values []string `protobuf:"bytes,1,rep,name=values,proto3" json:"values,omitempty"`
 }
 
-func (x *OutMessageB) Reset() {
-	*x = OutMessageB{}
-	mi := &file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OutMessageB) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OutMessageB) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OutMessageB) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OutMessageB) ProtoMessage() {}
+func (*OutMessageB) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OutMessageB) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use OutMessageB.ProtoReflect.Descriptor instead.
-func (*OutMessageB) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescGZIP(), []int{1}
-}
+func (*OutMessageB) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *OutMessageB) GetValues() []string {
-	if x != nil {
-		return x.Values
-	}
-	return nil
-}
+func (x *OutMessageB) GetValues() []string { _ = "STUB: not implemented"; return nil }
 
 var File_examples_internal_proto_examplepb_openapi_merge_b_proto protoreflect.FileDescriptor
 
@@ -168,10 +126,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
@@ -193,25 +149,6 @@ var file_examples_internal_proto_examplepb_openapi_merge_b_proto_depIdxs = []int
 
 func init() { file_examples_internal_proto_examplepb_openapi_merge_b_proto_init() }
 func file_examples_internal_proto_examplepb_openapi_merge_b_proto_init() {
-	if File_examples_internal_proto_examplepb_openapi_merge_b_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   2,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_openapi_merge_b_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_openapi_merge_b_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_openapi_merge_b_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_openapi_merge_b_proto = out.File
-	file_examples_internal_proto_examplepb_openapi_merge_b_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_openapi_merge_b_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_openapi_merge_b_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

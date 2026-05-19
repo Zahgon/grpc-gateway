@@ -5,14 +5,7 @@ package helloworldv3
 
 import (
 	"context"
-	"encoding/json"
-	"fmt"
-	"io"
 	"net/http"
-	"net/url"
-	"strings"
-
-	"github.com/oapi-codegen/runtime"
 )
 
 // GoogleRpcStatus The Status type defines a logical error model suitable for different programming environments.
@@ -171,69 +164,26 @@ type GreeterSayHelloParams struct {
 // Getter for additional properties for GoogleRpcStatus_Details_Item. Returns the specified
 // element and whether it was found
 func (a GoogleRpcStatus_Details_Item) Get(fieldName string) (value interface{}, found bool) {
-	if a.AdditionalProperties != nil {
-		value, found = a.AdditionalProperties[fieldName]
-	}
-	return
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // Setter for additional properties for GoogleRpcStatus_Details_Item
 func (a *GoogleRpcStatus_Details_Item) Set(fieldName string, value interface{}) {
-	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
-	}
-	a.AdditionalProperties[fieldName] = value
+	_ = "STUB: not implemented"
+	return
 }
 
 // Override default JSON handling for GoogleRpcStatus_Details_Item to handle AdditionalProperties
 func (a *GoogleRpcStatus_Details_Item) UnmarshalJSON(b []byte) error {
-	object := make(map[string]json.RawMessage)
-	err := json.Unmarshal(b, &object)
-	if err != nil {
-		return err
-	}
-
-	if raw, found := object["@type"]; found {
-		err = json.Unmarshal(raw, &a.Type)
-		if err != nil {
-			return fmt.Errorf("error reading '@type': %w", err)
-		}
-		delete(object, "@type")
-	}
-
-	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
-		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
-			err := json.Unmarshal(fieldBuf, &fieldVal)
-			if err != nil {
-				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
-			}
-			a.AdditionalProperties[fieldName] = fieldVal
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Override default JSON handling for GoogleRpcStatus_Details_Item to handle AdditionalProperties
 func (a GoogleRpcStatus_Details_Item) MarshalJSON() ([]byte, error) {
-	var err error
-	object := make(map[string]json.RawMessage)
-
-	if a.Type != nil {
-		object["@type"], err = json.Marshal(a.Type)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling '@type': %w", err)
-		}
-	}
-
-	for fieldName, field := range a.AdditionalProperties {
-		object[fieldName], err = json.Marshal(field)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling '%s': %w", fieldName, err)
-		}
-	}
-	return json.Marshal(object)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RequestEditorFn  is the function signature for the RequestEditor callback function
@@ -268,43 +218,29 @@ type ClientOption func(*Client) error
 
 // Creates a new Client, with reasonable defaults
 func NewClient(server string, opts ...ClientOption) (*Client, error) {
+	_ = "STUB: not implemented"
 	// create a client with sane default values
-	client := Client{
-		Server: server,
-	}
-	// mutate client and add all optional params
-	for _, o := range opts {
-		if err := o(&client); err != nil {
-			return nil, err
-		}
-	}
-	// ensure the server URL always has a trailing slash
-	if !strings.HasSuffix(client.Server, "/") {
-		client.Server += "/"
-	}
-	// create httpClient, if not already present
-	if client.Client == nil {
-		client.Client = &http.Client{}
-	}
-	return &client, nil
+	return nil, nil
 }
+
+// mutate client and add all optional params
+
+// ensure the server URL always has a trailing slash
+
+// create httpClient, if not already present
 
 // WithHTTPClient allows overriding the default Doer, which is
 // automatically created using http.Client. This is useful for tests.
 func WithHTTPClient(doer HttpRequestDoer) ClientOption {
-	return func(c *Client) error {
-		c.Client = doer
-		return nil
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // WithRequestEditorFn allows setting up a callback function, which will be
 // called right before sending the request. This can be used to mutate the request.
 func WithRequestEditorFn(fn RequestEditorFn) ClientOption {
-	return func(c *Client) error {
-		c.RequestEditors = append(c.RequestEditors, fn)
-		return nil
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // The interface specification for the client above.
@@ -341,1976 +277,117 @@ type ClientInterface interface {
 }
 
 func (c *Client) GreeterSayHello4(ctx context.Context, boolVal bool, params *GreeterSayHello4Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello4Request(c.Server, boolVal, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello5(ctx context.Context, bytesVal []byte, params *GreeterSayHello5Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello5Request(c.Server, bytesVal, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello3(ctx context.Context, doubleVal float64, params *GreeterSayHello3Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello3Request(c.Server, doubleVal, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello2(ctx context.Context, floatVal float32, params *GreeterSayHello2Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello2Request(c.Server, floatVal, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello6(ctx context.Context, int32Val int32, params *GreeterSayHello6Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello6Request(c.Server, int32Val, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello8(ctx context.Context, int64Val string, params *GreeterSayHello8Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello8Request(c.Server, int64Val, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello1(ctx context.Context, strVal string, params *GreeterSayHello1Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello1Request(c.Server, strVal, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello7(ctx context.Context, uint32Val int64, params *GreeterSayHello7Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello7Request(c.Server, uint32Val, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello9(ctx context.Context, uint64Val string, params *GreeterSayHello9Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHello9Request(c.Server, uint64Val, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) GreeterSayHello(ctx context.Context, name string, params *GreeterSayHelloParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewGreeterSayHelloRequest(c.Server, name, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello4Request generates requests for GreeterSayHello4
 func NewGreeterSayHello4Request(server string, boolVal bool, params *GreeterSayHello4Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "boolVal", boolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "boolean", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/boolval/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello5Request generates requests for GreeterSayHello5
 func NewGreeterSayHello5Request(server string, bytesVal []byte, params *GreeterSayHello5Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "bytesVal", bytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "byte"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/bytesval/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello3Request generates requests for GreeterSayHello3
 func NewGreeterSayHello3Request(server string, doubleVal float64, params *GreeterSayHello3Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "doubleVal", doubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "number", Format: "double"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/doubleval/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello2Request generates requests for GreeterSayHello2
 func NewGreeterSayHello2Request(server string, floatVal float32, params *GreeterSayHello2Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "floatVal", floatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "number", Format: "float"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/floatval/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello6Request generates requests for GreeterSayHello6
 func NewGreeterSayHello6Request(server string, int32Val int32, params *GreeterSayHello6Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "int32Val", int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int32"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/int32val/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello8Request generates requests for GreeterSayHello8
 func NewGreeterSayHello8Request(server string, int64Val string, params *GreeterSayHello8Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "int64Val", int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/int64val/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello1Request generates requests for GreeterSayHello1
 func NewGreeterSayHello1Request(server string, strVal string, params *GreeterSayHello1Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "strVal", strVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/strval/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello7Request generates requests for GreeterSayHello7
 func NewGreeterSayHello7Request(server string, uint32Val int64, params *GreeterSayHello7Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uint32Val", uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/uint32val/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHello9Request generates requests for GreeterSayHello9
 func NewGreeterSayHello9Request(server string, uint64Val string, params *GreeterSayHello9Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uint64Val", uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uint64"})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/uint64val/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Name != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "name", *params.Name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewGreeterSayHelloRequest generates requests for GreeterSayHello
 func NewGreeterSayHelloRequest(server string, name string, params *GreeterSayHelloParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "name", name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/say/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.StrVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "strVal", *params.StrVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatVal", *params.FloatVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleVal", *params.DoubleVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolVal", *params.BoolVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesVal != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesVal", *params.BytesVal, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Val", *params.Int32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Val", *params.Uint32Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Val", *params.Int64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Val != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Val", *params.Uint64Val, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) applyEditors(ctx context.Context, req *http.Request, additionalEditors []RequestEditorFn) error {
-	for _, r := range c.RequestEditors {
-		if err := r(ctx, req); err != nil {
-			return err
-		}
-	}
-	for _, r := range additionalEditors {
-		if err := r(ctx, req); err != nil {
-			return err
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -2322,24 +399,12 @@ type ClientWithResponses struct {
 // NewClientWithResponses creates a new ClientWithResponses, which wraps
 // Client with return type handling
 func NewClientWithResponses(server string, opts ...ClientOption) (*ClientWithResponses, error) {
-	client, err := NewClient(server, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return &ClientWithResponses{client}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // WithBaseURL overrides the baseURL.
-func WithBaseURL(baseURL string) ClientOption {
-	return func(c *Client) error {
-		newBaseURL, err := url.Parse(baseURL)
-		if err != nil {
-			return err
-		}
-		c.Server = newBaseURL.String()
-		return nil
-	}
-}
+func WithBaseURL(baseURL string) ClientOption { _ = "STUB: not implemented"; return *new(ClientOption) }
 
 // ClientWithResponsesInterface is the interface specification for the client with responses above.
 type ClientWithResponsesInterface interface {
@@ -2382,20 +447,10 @@ type GreeterSayHello4Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello4Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello4Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello4Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello4Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello5Response struct {
 	Body         []byte
@@ -2405,20 +460,10 @@ type GreeterSayHello5Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello5Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello5Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello5Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello5Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello3Response struct {
 	Body         []byte
@@ -2428,20 +473,10 @@ type GreeterSayHello3Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello3Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello3Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello3Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello3Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello2Response struct {
 	Body         []byte
@@ -2451,20 +486,10 @@ type GreeterSayHello2Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello2Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello2Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello2Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello2Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello6Response struct {
 	Body         []byte
@@ -2474,20 +499,10 @@ type GreeterSayHello6Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello6Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello6Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello6Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello6Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello8Response struct {
 	Body         []byte
@@ -2497,20 +512,10 @@ type GreeterSayHello8Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello8Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello8Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello8Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello8Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello1Response struct {
 	Body         []byte
@@ -2520,20 +525,10 @@ type GreeterSayHello1Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello1Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello1Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello1Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello1Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello7Response struct {
 	Body         []byte
@@ -2543,20 +538,10 @@ type GreeterSayHello7Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello7Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello7Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello7Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello7Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHello9Response struct {
 	Body         []byte
@@ -2566,20 +551,10 @@ type GreeterSayHello9Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHello9Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHello9Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHello9Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHello9Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type GreeterSayHelloResponse struct {
 	Body         []byte
@@ -2589,437 +564,127 @@ type GreeterSayHelloResponse struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r GreeterSayHelloResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r GreeterSayHelloResponse) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r GreeterSayHelloResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r GreeterSayHelloResponse) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 // GreeterSayHello4WithResponse request returning *GreeterSayHello4Response
 func (c *ClientWithResponses) GreeterSayHello4WithResponse(ctx context.Context, boolVal bool, params *GreeterSayHello4Params, reqEditors ...RequestEditorFn) (*GreeterSayHello4Response, error) {
-	rsp, err := c.GreeterSayHello4(ctx, boolVal, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello4Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello5WithResponse request returning *GreeterSayHello5Response
 func (c *ClientWithResponses) GreeterSayHello5WithResponse(ctx context.Context, bytesVal []byte, params *GreeterSayHello5Params, reqEditors ...RequestEditorFn) (*GreeterSayHello5Response, error) {
-	rsp, err := c.GreeterSayHello5(ctx, bytesVal, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello5Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello3WithResponse request returning *GreeterSayHello3Response
 func (c *ClientWithResponses) GreeterSayHello3WithResponse(ctx context.Context, doubleVal float64, params *GreeterSayHello3Params, reqEditors ...RequestEditorFn) (*GreeterSayHello3Response, error) {
-	rsp, err := c.GreeterSayHello3(ctx, doubleVal, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello3Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello2WithResponse request returning *GreeterSayHello2Response
 func (c *ClientWithResponses) GreeterSayHello2WithResponse(ctx context.Context, floatVal float32, params *GreeterSayHello2Params, reqEditors ...RequestEditorFn) (*GreeterSayHello2Response, error) {
-	rsp, err := c.GreeterSayHello2(ctx, floatVal, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello2Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello6WithResponse request returning *GreeterSayHello6Response
 func (c *ClientWithResponses) GreeterSayHello6WithResponse(ctx context.Context, int32Val int32, params *GreeterSayHello6Params, reqEditors ...RequestEditorFn) (*GreeterSayHello6Response, error) {
-	rsp, err := c.GreeterSayHello6(ctx, int32Val, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello6Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello8WithResponse request returning *GreeterSayHello8Response
 func (c *ClientWithResponses) GreeterSayHello8WithResponse(ctx context.Context, int64Val string, params *GreeterSayHello8Params, reqEditors ...RequestEditorFn) (*GreeterSayHello8Response, error) {
-	rsp, err := c.GreeterSayHello8(ctx, int64Val, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello8Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello1WithResponse request returning *GreeterSayHello1Response
 func (c *ClientWithResponses) GreeterSayHello1WithResponse(ctx context.Context, strVal string, params *GreeterSayHello1Params, reqEditors ...RequestEditorFn) (*GreeterSayHello1Response, error) {
-	rsp, err := c.GreeterSayHello1(ctx, strVal, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello1Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello7WithResponse request returning *GreeterSayHello7Response
 func (c *ClientWithResponses) GreeterSayHello7WithResponse(ctx context.Context, uint32Val int64, params *GreeterSayHello7Params, reqEditors ...RequestEditorFn) (*GreeterSayHello7Response, error) {
-	rsp, err := c.GreeterSayHello7(ctx, uint32Val, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello7Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHello9WithResponse request returning *GreeterSayHello9Response
 func (c *ClientWithResponses) GreeterSayHello9WithResponse(ctx context.Context, uint64Val string, params *GreeterSayHello9Params, reqEditors ...RequestEditorFn) (*GreeterSayHello9Response, error) {
-	rsp, err := c.GreeterSayHello9(ctx, uint64Val, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHello9Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GreeterSayHelloWithResponse request returning *GreeterSayHelloResponse
 func (c *ClientWithResponses) GreeterSayHelloWithResponse(ctx context.Context, name string, params *GreeterSayHelloParams, reqEditors ...RequestEditorFn) (*GreeterSayHelloResponse, error) {
-	rsp, err := c.GreeterSayHello(ctx, name, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseGreeterSayHelloResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello4Response parses an HTTP response from a GreeterSayHello4WithResponse call
 func ParseGreeterSayHello4Response(rsp *http.Response) (*GreeterSayHello4Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello4Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello5Response parses an HTTP response from a GreeterSayHello5WithResponse call
 func ParseGreeterSayHello5Response(rsp *http.Response) (*GreeterSayHello5Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello5Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello3Response parses an HTTP response from a GreeterSayHello3WithResponse call
 func ParseGreeterSayHello3Response(rsp *http.Response) (*GreeterSayHello3Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello3Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello2Response parses an HTTP response from a GreeterSayHello2WithResponse call
 func ParseGreeterSayHello2Response(rsp *http.Response) (*GreeterSayHello2Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello2Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello6Response parses an HTTP response from a GreeterSayHello6WithResponse call
 func ParseGreeterSayHello6Response(rsp *http.Response) (*GreeterSayHello6Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello6Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello8Response parses an HTTP response from a GreeterSayHello8WithResponse call
 func ParseGreeterSayHello8Response(rsp *http.Response) (*GreeterSayHello8Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello8Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello1Response parses an HTTP response from a GreeterSayHello1WithResponse call
 func ParseGreeterSayHello1Response(rsp *http.Response) (*GreeterSayHello1Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello1Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello7Response parses an HTTP response from a GreeterSayHello7WithResponse call
 func ParseGreeterSayHello7Response(rsp *http.Response) (*GreeterSayHello7Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello7Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHello9Response parses an HTTP response from a GreeterSayHello9WithResponse call
 func ParseGreeterSayHello9Response(rsp *http.Response) (*GreeterSayHello9Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHello9Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseGreeterSayHelloResponse parses an HTTP response from a GreeterSayHelloWithResponse call
 func ParseGreeterSayHelloResponse(rsp *http.Response) (*GreeterSayHelloResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &GreeterSayHelloResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalHelloworldHelloReply
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

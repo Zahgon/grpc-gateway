@@ -7,12 +7,12 @@
 package helloworld
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,103 +39,46 @@ type HelloRequest struct {
 	Uint64Val *wrapperspb.UInt64Value `protobuf:"bytes,10,opt,name=uint64Val,proto3" json:"uint64Val,omitempty"`
 }
 
-func (x *HelloRequest) Reset() {
-	*x = HelloRequest{}
-	mi := &file_examples_internal_helloworld_helloworld_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *HelloRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *HelloRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *HelloRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*HelloRequest) ProtoMessage() {}
+func (*HelloRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *HelloRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_helloworld_helloworld_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use HelloRequest.ProtoReflect.Descriptor instead.
-func (*HelloRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_helloworld_helloworld_proto_rawDescGZIP(), []int{0}
-}
+func (*HelloRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *HelloRequest) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
+func (x *HelloRequest) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *HelloRequest) GetStrVal() *wrapperspb.StringValue {
-	if x != nil {
-		return x.StrVal
-	}
-	return nil
-}
+func (x *HelloRequest) GetStrVal() *wrapperspb.StringValue { _ = "STUB: not implemented"; return nil }
 
-func (x *HelloRequest) GetFloatVal() *wrapperspb.FloatValue {
-	if x != nil {
-		return x.FloatVal
-	}
-	return nil
-}
+func (x *HelloRequest) GetFloatVal() *wrapperspb.FloatValue { _ = "STUB: not implemented"; return nil }
 
 func (x *HelloRequest) GetDoubleVal() *wrapperspb.DoubleValue {
-	if x != nil {
-		return x.DoubleVal
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *HelloRequest) GetBoolVal() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.BoolVal
-	}
-	return nil
-}
+func (x *HelloRequest) GetBoolVal() *wrapperspb.BoolValue { _ = "STUB: not implemented"; return nil }
 
-func (x *HelloRequest) GetBytesVal() *wrapperspb.BytesValue {
-	if x != nil {
-		return x.BytesVal
-	}
-	return nil
-}
+func (x *HelloRequest) GetBytesVal() *wrapperspb.BytesValue { _ = "STUB: not implemented"; return nil }
 
-func (x *HelloRequest) GetInt32Val() *wrapperspb.Int32Value {
-	if x != nil {
-		return x.Int32Val
-	}
-	return nil
-}
+func (x *HelloRequest) GetInt32Val() *wrapperspb.Int32Value { _ = "STUB: not implemented"; return nil }
 
 func (x *HelloRequest) GetUint32Val() *wrapperspb.UInt32Value {
-	if x != nil {
-		return x.Uint32Val
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *HelloRequest) GetInt64Val() *wrapperspb.Int64Value {
-	if x != nil {
-		return x.Int64Val
-	}
-	return nil
-}
+func (x *HelloRequest) GetInt64Val() *wrapperspb.Int64Value { _ = "STUB: not implemented"; return nil }
 
 func (x *HelloRequest) GetUint64Val() *wrapperspb.UInt64Value {
-	if x != nil {
-		return x.Uint64Val
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -147,42 +90,21 @@ type HelloReply struct {
 	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
 }
 
-func (x *HelloReply) Reset() {
-	*x = HelloReply{}
-	mi := &file_examples_internal_helloworld_helloworld_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *HelloReply) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *HelloReply) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *HelloReply) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*HelloReply) ProtoMessage() {}
+func (*HelloReply) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *HelloReply) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_helloworld_helloworld_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use HelloReply.ProtoReflect.Descriptor instead.
-func (*HelloReply) Descriptor() ([]byte, []int) {
-	return file_examples_internal_helloworld_helloworld_proto_rawDescGZIP(), []int{1}
-}
+func (*HelloReply) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *HelloReply) GetMessage() string {
-	if x != nil {
-		return x.Message
-	}
-	return ""
-}
+func (x *HelloReply) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
 var File_examples_internal_helloworld_helloworld_proto protoreflect.FileDescriptor
 
@@ -273,10 +195,8 @@ var (
 )
 
 func file_examples_internal_helloworld_helloworld_proto_rawDescGZIP() []byte {
-	file_examples_internal_helloworld_helloworld_proto_rawDescOnce.Do(func() {
-		file_examples_internal_helloworld_helloworld_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_helloworld_helloworld_proto_rawDescData)
-	})
-	return file_examples_internal_helloworld_helloworld_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_helloworld_helloworld_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
@@ -312,27 +232,5 @@ var file_examples_internal_helloworld_helloworld_proto_depIdxs = []int32{
 	0,  // [0:9] is the sub-list for field type_name
 }
 
-func init() { file_examples_internal_helloworld_helloworld_proto_init() }
-func file_examples_internal_helloworld_helloworld_proto_init() {
-	if File_examples_internal_helloworld_helloworld_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_helloworld_helloworld_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   2,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_helloworld_helloworld_proto_goTypes,
-		DependencyIndexes: file_examples_internal_helloworld_helloworld_proto_depIdxs,
-		MessageInfos:      file_examples_internal_helloworld_helloworld_proto_msgTypes,
-	}.Build()
-	File_examples_internal_helloworld_helloworld_proto = out.File
-	file_examples_internal_helloworld_helloworld_proto_rawDesc = nil
-	file_examples_internal_helloworld_helloworld_proto_goTypes = nil
-	file_examples_internal_helloworld_helloworld_proto_depIdxs = nil
-}
+func init()                                                    { file_examples_internal_helloworld_helloworld_proto_init() }
+func file_examples_internal_helloworld_helloworld_proto_init() { _ = "STUB: not implemented"; return }

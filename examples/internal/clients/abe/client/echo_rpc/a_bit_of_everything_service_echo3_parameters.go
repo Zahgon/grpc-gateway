@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceEcho3Params() *ABitOfEverythingServiceEcho3Params {
-	return &ABitOfEverythingServiceEcho3Params{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceEcho3ParamsWithTimeout creates a new ABitOfEverythingServiceEcho3Params object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceEcho3ParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceEcho3Params {
-	return &ABitOfEverythingServiceEcho3Params{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceEcho3ParamsWithContext creates a new ABitOfEverythingServiceEcho3Params object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceEcho3ParamsWithContext(ctx context.Context) *ABitOfEverythingServiceEcho3Params {
-	return &ABitOfEverythingServiceEcho3Params{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceEcho3ParamsWithHTTPClient creates a new ABitOfEverythingServiceEcho3Params object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceEcho3ParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceEcho3Params {
-	return &ABitOfEverythingServiceEcho3Params{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,88 +64,76 @@ type ABitOfEverythingServiceEcho3Params struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceEcho3Params) WithDefaults() *ABitOfEverythingServiceEcho3Params {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service echo3 params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service echo3 params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceEcho3Params) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceEcho3Params {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service echo3 params
 }
 
-// WithContext adds the context to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) WithContext(ctx context.Context) *ABitOfEverythingServiceEcho3Params {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service echo3 params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceEcho3Params {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithValue adds the value to the a bit of everything service echo3 params
 }
 
-// WithValue adds the value to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) WithValue(value *string) *ABitOfEverythingServiceEcho3Params {
-	o.SetValue(value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetValue adds the value to the a bit of everything service echo3 params
 func (o *ABitOfEverythingServiceEcho3Params) SetValue(value *string) {
-	o.Value = value
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceEcho3Params) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if o.Value != nil {
-
-		// query param value
-		var qrValue string
-
-		if o.Value != nil {
-			qrValue = *o.Value
-		}
-		qValue := qrValue
-		if qValue != "" {
-
-			if err := r.SetQueryParam("value", qValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// query param value

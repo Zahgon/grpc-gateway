@@ -18,12 +18,12 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	_ "google.golang.org/genproto/googleapis/api/visibility"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -53,30 +53,31 @@ var (
 )
 
 func (x VisibilityRuleEnumInPreviewMethod) Enum() *VisibilityRuleEnumInPreviewMethod {
-	p := new(VisibilityRuleEnumInPreviewMethod)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x VisibilityRuleEnumInPreviewMethod) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x VisibilityRuleEnumInPreviewMethod) String() string { _ = "STUB: not implemented"; return "" }
 
 func (VisibilityRuleEnumInPreviewMethod) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (VisibilityRuleEnumInPreviewMethod) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x VisibilityRuleEnumInPreviewMethod) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use VisibilityRuleEnumInPreviewMethod.Descriptor instead.
 func (VisibilityRuleEnumInPreviewMethod) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type VisibilityRuleSimpleMessage_VisibilityEnum int32
@@ -105,30 +106,34 @@ var (
 )
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnum) Enum() *VisibilityRuleSimpleMessage_VisibilityEnum {
-	p := new(VisibilityRuleSimpleMessage_VisibilityEnum)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (VisibilityRuleSimpleMessage_VisibilityEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[1].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (VisibilityRuleSimpleMessage_VisibilityEnum) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[1]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use VisibilityRuleSimpleMessage_VisibilityEnum.Descriptor instead.
 func (VisibilityRuleSimpleMessage_VisibilityEnum) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{1, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault int32
@@ -151,30 +156,34 @@ var (
 )
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) Enum() *VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault {
-	p := new(VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[2].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes[2]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault.Descriptor instead.
 func (VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{1, 1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Embedded represents a message embedded in SimpleMessage.
@@ -192,70 +201,35 @@ type VisibilityRuleEmbedded struct {
 	Mark isVisibilityRuleEmbedded_Mark `protobuf_oneof:"mark"`
 }
 
-func (x *VisibilityRuleEmbedded) Reset() {
-	*x = VisibilityRuleEmbedded{}
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *VisibilityRuleEmbedded) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *VisibilityRuleEmbedded) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *VisibilityRuleEmbedded) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*VisibilityRuleEmbedded) ProtoMessage() {}
+func (*VisibilityRuleEmbedded) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleEmbedded) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use VisibilityRuleEmbedded.ProtoReflect.Descriptor instead.
 func (*VisibilityRuleEmbedded) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (m *VisibilityRuleEmbedded) GetMark() isVisibilityRuleEmbedded_Mark {
-	if m != nil {
-		return m.Mark
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isVisibilityRuleEmbedded_Mark)
 }
 
-func (x *VisibilityRuleEmbedded) GetProgress() int64 {
-	if x, ok := x.GetMark().(*VisibilityRuleEmbedded_Progress); ok {
-		return x.Progress
-	}
-	return 0
-}
+func (x *VisibilityRuleEmbedded) GetProgress() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *VisibilityRuleEmbedded) GetNote() string {
-	if x, ok := x.GetMark().(*VisibilityRuleEmbedded_Note); ok {
-		return x.Note
-	}
-	return ""
-}
+func (x *VisibilityRuleEmbedded) GetNote() string { _ = "STUB: not implemented"; return "" }
 
-func (x *VisibilityRuleEmbedded) GetInternalField() string {
-	if x, ok := x.GetMark().(*VisibilityRuleEmbedded_InternalField); ok {
-		return x.InternalField
-	}
-	return ""
-}
+func (x *VisibilityRuleEmbedded) GetInternalField() string { _ = "STUB: not implemented"; return "" }
 
-func (x *VisibilityRuleEmbedded) GetPreviewField() string {
-	if x, ok := x.GetMark().(*VisibilityRuleEmbedded_PreviewField); ok {
-		return x.PreviewField
-	}
-	return ""
-}
+func (x *VisibilityRuleEmbedded) GetPreviewField() string { _ = "STUB: not implemented"; return "" }
 
 type isVisibilityRuleEmbedded_Mark interface {
 	isVisibilityRuleEmbedded_Mark()
@@ -277,15 +251,28 @@ type VisibilityRuleEmbedded_PreviewField struct {
 	PreviewField string `protobuf:"bytes,4,opt,name=preview_field,json=previewField,proto3,oneof"`
 }
 
-func (*VisibilityRuleEmbedded_Progress) isVisibilityRuleEmbedded_Mark() {}
+func (*VisibilityRuleEmbedded_Progress) isVisibilityRuleEmbedded_Mark() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*VisibilityRuleEmbedded_Note) isVisibilityRuleEmbedded_Mark() {}
+func (*VisibilityRuleEmbedded_Note) isVisibilityRuleEmbedded_Mark() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*VisibilityRuleEmbedded_InternalField) isVisibilityRuleEmbedded_Mark() {}
+func (*VisibilityRuleEmbedded_InternalField) isVisibilityRuleEmbedded_Mark() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*VisibilityRuleEmbedded_PreviewField) isVisibilityRuleEmbedded_Mark() {}
+func (*VisibilityRuleEmbedded_PreviewField) isVisibilityRuleEmbedded_Mark() {
+	_ = "STUB: not implemented"
 
-// SimpleMessage represents a simple message sent to the Echo service.
+	// SimpleMessage represents a simple message sent to the Echo service.
+	return
+}
+
 type VisibilityRuleSimpleMessage struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -311,125 +298,71 @@ type VisibilityRuleSimpleMessage struct {
 	AhiddenDefaultEnum VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault `protobuf:"varint,11,opt,name=ahidden_default_enum,json=ahiddenDefaultEnum,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault" json:"ahidden_default_enum,omitempty"`
 }
 
-func (x *VisibilityRuleSimpleMessage) Reset() {
-	*x = VisibilityRuleSimpleMessage{}
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *VisibilityRuleSimpleMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *VisibilityRuleSimpleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *VisibilityRuleSimpleMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*VisibilityRuleSimpleMessage) ProtoMessage() {}
+func (*VisibilityRuleSimpleMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleSimpleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use VisibilityRuleSimpleMessage.ProtoReflect.Descriptor instead.
 func (*VisibilityRuleSimpleMessage) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *VisibilityRuleSimpleMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *VisibilityRuleSimpleMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *VisibilityRuleSimpleMessage) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *VisibilityRuleSimpleMessage) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (m *VisibilityRuleSimpleMessage) GetCode() isVisibilityRuleSimpleMessage_Code {
-	if m != nil {
-		return m.Code
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isVisibilityRuleSimpleMessage_Code)
 }
 
-func (x *VisibilityRuleSimpleMessage) GetLineNum() int64 {
-	if x, ok := x.GetCode().(*VisibilityRuleSimpleMessage_LineNum); ok {
-		return x.LineNum
-	}
-	return 0
-}
+func (x *VisibilityRuleSimpleMessage) GetLineNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *VisibilityRuleSimpleMessage) GetLang() string {
-	if x, ok := x.GetCode().(*VisibilityRuleSimpleMessage_Lang); ok {
-		return x.Lang
-	}
-	return ""
-}
+func (x *VisibilityRuleSimpleMessage) GetLang() string { _ = "STUB: not implemented"; return "" }
 
 func (x *VisibilityRuleSimpleMessage) GetStatus() *VisibilityRuleEmbedded {
-	if x != nil {
-		return x.Status
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *VisibilityRuleSimpleMessage) GetExt() isVisibilityRuleSimpleMessage_Ext {
-	if m != nil {
-		return m.Ext
-	}
-	return nil
+	_ = "STUB: not implemented"
+	return *new(isVisibilityRuleSimpleMessage_Ext)
 }
 
-func (x *VisibilityRuleSimpleMessage) GetEn() int64 {
-	if x, ok := x.GetExt().(*VisibilityRuleSimpleMessage_En); ok {
-		return x.En
-	}
-	return 0
-}
+func (x *VisibilityRuleSimpleMessage) GetEn() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *VisibilityRuleSimpleMessage) GetNo() *VisibilityRuleEmbedded {
-	if x, ok := x.GetExt().(*VisibilityRuleSimpleMessage_No); ok {
-		return x.No
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *VisibilityRuleSimpleMessage) GetInternalField() string {
-	if x != nil {
-		return x.InternalField
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *VisibilityRuleSimpleMessage) GetPreviewField() string {
-	if x != nil {
-		return x.PreviewField
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *VisibilityRuleSimpleMessage) GetAnEnum() VisibilityRuleSimpleMessage_VisibilityEnum {
-	if x != nil {
-		return x.AnEnum
-	}
-	return VisibilityRuleSimpleMessage_VISIBILITY_ENUM_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(VisibilityRuleSimpleMessage_VisibilityEnum)
 }
 
 func (x *VisibilityRuleSimpleMessage) GetAhiddenDefaultEnum() VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault {
-	if x != nil {
-		return x.AhiddenDefaultEnum
-	}
-	return VisibilityRuleSimpleMessage_VISIBILITY_ENUM_HIDDEN_DEFAULT_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(VisibilityRuleSimpleMessage_VisibilityEnumHiddenDefault)
 }
 
 type isVisibilityRuleSimpleMessage_Code interface {
@@ -444,9 +377,15 @@ type VisibilityRuleSimpleMessage_Lang struct {
 	Lang string `protobuf:"bytes,4,opt,name=lang,proto3,oneof"`
 }
 
-func (*VisibilityRuleSimpleMessage_LineNum) isVisibilityRuleSimpleMessage_Code() {}
+func (*VisibilityRuleSimpleMessage_LineNum) isVisibilityRuleSimpleMessage_Code() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*VisibilityRuleSimpleMessage_Lang) isVisibilityRuleSimpleMessage_Code() {}
+func (*VisibilityRuleSimpleMessage_Lang) isVisibilityRuleSimpleMessage_Code() {
+	_ = "STUB: not implemented"
+	return
+}
 
 type isVisibilityRuleSimpleMessage_Ext interface {
 	isVisibilityRuleSimpleMessage_Ext()
@@ -460,13 +399,20 @@ type VisibilityRuleSimpleMessage_No struct {
 	No *VisibilityRuleEmbedded `protobuf:"bytes,7,opt,name=no,proto3,oneof"`
 }
 
-func (*VisibilityRuleSimpleMessage_En) isVisibilityRuleSimpleMessage_Ext() {}
+func (*VisibilityRuleSimpleMessage_En) isVisibilityRuleSimpleMessage_Ext() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*VisibilityRuleSimpleMessage_No) isVisibilityRuleSimpleMessage_Ext() {}
+func (*VisibilityRuleSimpleMessage_No) isVisibilityRuleSimpleMessage_Ext() {
+	_ = "STUB: not implemented"
 
-// MessageInPreviewMethod doesn't define its own visibility restrictions,
-// but is only included in a method marked as "PREVIEW", so it will only
-// appear if `visibility_restriction_selectors` include "PREVIEW".
+	// MessageInPreviewMethod doesn't define its own visibility restrictions,
+	// but is only included in a method marked as "PREVIEW", so it will only
+	// appear if `visibility_restriction_selectors` include "PREVIEW".
+	return
+}
+
 type VisibilityRuleMessageInPreviewMethod struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -477,55 +423,36 @@ type VisibilityRuleMessageInPreviewMethod struct {
 	Enum       VisibilityRuleEnumInPreviewMethod        `protobuf:"varint,3,opt,name=enum,proto3,enum=grpc.gateway.examples.internal.proto.examplepb.VisibilityRuleEnumInPreviewMethod" json:"enum,omitempty"`
 }
 
-func (x *VisibilityRuleMessageInPreviewMethod) Reset() {
-	*x = VisibilityRuleMessageInPreviewMethod{}
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *VisibilityRuleMessageInPreviewMethod) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleMessageInPreviewMethod) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*VisibilityRuleMessageInPreviewMethod) ProtoMessage() {}
+func (*VisibilityRuleMessageInPreviewMethod) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleMessageInPreviewMethod) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use VisibilityRuleMessageInPreviewMethod.ProtoReflect.Descriptor instead.
 func (*VisibilityRuleMessageInPreviewMethod) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *VisibilityRuleMessageInPreviewMethod) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *VisibilityRuleMessageInPreviewMethod) GetId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *VisibilityRuleMessageInPreviewMethod) GetSubMessage() *VisibilityRuleSubMessageInPreviewMethod {
-	if x != nil {
-		return x.SubMessage
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *VisibilityRuleMessageInPreviewMethod) GetEnum() VisibilityRuleEnumInPreviewMethod {
-	if x != nil {
-		return x.Enum
-	}
-	return VisibilityRuleEnumInPreviewMethod_VISIBILITY_RULE_ENUM_IN_PREVIEW_METHOD_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(VisibilityRuleEnumInPreviewMethod)
 }
 
 // SubMessageInPreviewMethod doesn't define its own visibility restrictions,
@@ -539,40 +466,28 @@ type VisibilityRuleSubMessageInPreviewMethod struct {
 	Id string `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
 }
 
-func (x *VisibilityRuleSubMessageInPreviewMethod) Reset() {
-	*x = VisibilityRuleSubMessageInPreviewMethod{}
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *VisibilityRuleSubMessageInPreviewMethod) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleSubMessageInPreviewMethod) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*VisibilityRuleSubMessageInPreviewMethod) ProtoMessage() {}
+func (*VisibilityRuleSubMessageInPreviewMethod) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *VisibilityRuleSubMessageInPreviewMethod) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use VisibilityRuleSubMessageInPreviewMethod.ProtoReflect.Descriptor instead.
 func (*VisibilityRuleSubMessageInPreviewMethod) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *VisibilityRuleSubMessageInPreviewMethod) GetId() string {
-	if x != nil {
-		return x.Id
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
@@ -785,10 +700,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes = make([]protoimpl.EnumInfo, 3)
@@ -828,38 +741,6 @@ var file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_de
 
 func init() { file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_init() }
 func file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_init() {
-	if File_examples_internal_proto_examplepb_visibility_rule_echo_service_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[0].OneofWrappers = []any{
-		(*VisibilityRuleEmbedded_Progress)(nil),
-		(*VisibilityRuleEmbedded_Note)(nil),
-		(*VisibilityRuleEmbedded_InternalField)(nil),
-		(*VisibilityRuleEmbedded_PreviewField)(nil),
-	}
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes[1].OneofWrappers = []any{
-		(*VisibilityRuleSimpleMessage_LineNum)(nil),
-		(*VisibilityRuleSimpleMessage_Lang)(nil),
-		(*VisibilityRuleSimpleMessage_En)(nil),
-		(*VisibilityRuleSimpleMessage_No)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDesc,
-			NumEnums:      3,
-			NumMessages:   4,
-			NumExtensions: 0,
-			NumServices:   2,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_visibility_rule_echo_service_proto = out.File
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_visibility_rule_echo_service_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

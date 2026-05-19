@@ -42,80 +42,14 @@ type op struct {
 	num int
 }
 
-func (w wildcard) compile() []op {
-	return []op{
-		{code: utilities.OpPush},
-	}
-}
+func (w wildcard) compile() []op { _ = "STUB: not implemented"; return nil }
 
-func (w deepWildcard) compile() []op {
-	return []op{
-		{code: utilities.OpPushM},
-	}
-}
+func (w deepWildcard) compile() []op { _ = "STUB: not implemented"; return nil }
 
-func (l literal) compile() []op {
-	return []op{
-		{
-			code: utilities.OpLitPush,
-			str:  string(l),
-		},
-	}
-}
+func (l literal) compile() []op { _ = "STUB: not implemented"; return nil }
 
-func (v variable) compile() []op {
-	var ops []op
-	for _, s := range v.segments {
-		ops = append(ops, s.compile()...)
-	}
-	ops = append(ops, op{
-		code: utilities.OpConcatN,
-		num:  len(v.segments),
-	}, op{
-		code: utilities.OpCapture,
-		str:  v.path,
-	})
+func (v variable) compile() []op { _ = "STUB: not implemented"; return nil }
 
-	return ops
-}
+func (t template) Compile() Template { _ = "STUB: not implemented"; return *new(Template) }
 
-func (t template) Compile() Template {
-	var rawOps []op
-	for _, s := range t.segments {
-		rawOps = append(rawOps, s.compile()...)
-	}
-
-	var (
-		ops    []int
-		pool   []string
-		fields []string
-	)
-	consts := make(map[string]int)
-	for _, op := range rawOps {
-		ops = append(ops, int(op.code))
-		if op.str == "" {
-			ops = append(ops, op.num)
-		} else {
-			// eof segment literal represents the "/" path pattern
-			if op.str == eof {
-				op.str = ""
-			}
-			if _, ok := consts[op.str]; !ok {
-				consts[op.str] = len(pool)
-				pool = append(pool, op.str)
-			}
-			ops = append(ops, consts[op.str])
-		}
-		if op.code == utilities.OpCapture {
-			fields = append(fields, op.str)
-		}
-	}
-	return Template{
-		Version:  opcodeVersion,
-		OpCodes:  ops,
-		Pool:     pool,
-		Verb:     t.verb,
-		Fields:   fields,
-		Template: t.template,
-	}
-}
+// eof segment literal represents the "/" path pattern

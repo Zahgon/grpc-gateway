@@ -6,7 +6,6 @@ import (
 	"context"
 
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ExamplepbBody examplepb body
@@ -20,28 +19,20 @@ type ExamplepbBody struct {
 
 // Validate validates this examplepb body
 func (m *ExamplepbBody) Validate(formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// ContextValidate validates this examplepb body based on context it is used
 	return nil
 }
 
-// ContextValidate validates this examplepb body based on context it is used
 func (m *ExamplepbBody) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// MarshalBinary interface implementation
 	return nil
 }
 
-// MarshalBinary interface implementation
-func (m *ExamplepbBody) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
-}
+func (m *ExamplepbBody) MarshalBinary() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // UnmarshalBinary interface implementation
-func (m *ExamplepbBody) UnmarshalBinary(b []byte) error {
-	var res ExamplepbBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}
+func (m *ExamplepbBody) UnmarshalBinary(b []byte) error { _ = "STUB: not implemented"; return nil }

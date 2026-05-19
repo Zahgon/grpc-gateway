@@ -3,11 +3,6 @@
 package response_body_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,28 +16,14 @@ type ResponseBodyServiceGetResponseBodyReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ResponseBodyServiceGetResponseBodyReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewResponseBodyServiceGetResponseBodyOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewResponseBodyServiceGetResponseBodyDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewResponseBodyServiceGetResponseBodyOK creates a ResponseBodyServiceGetResponseBodyOK with default headers values
 func NewResponseBodyServiceGetResponseBodyOK() *ResponseBodyServiceGetResponseBodyOK {
-	return &ResponseBodyServiceGetResponseBodyOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -56,65 +37,65 @@ type ResponseBodyServiceGetResponseBodyOK struct {
 
 // IsSuccess returns true when this response body service get response body o k response has a 2xx status code
 func (o *ResponseBodyServiceGetResponseBodyOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this response body service get response body o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this response body service get response body o k response has a 3xx status code
 func (o *ResponseBodyServiceGetResponseBodyOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this response body service get response body o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this response body service get response body o k response has a 4xx status code
 func (o *ResponseBodyServiceGetResponseBodyOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this response body service get response body o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this response body service get response body o k response has a 5xx status code
 func (o *ResponseBodyServiceGetResponseBodyOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this response body service get response body o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this response body service get response body o k response a status code equal to that given
 func (o *ResponseBodyServiceGetResponseBodyOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the response body service get response body o k response
 }
 
-// Code gets the status code for the response body service get response body o k response
-func (o *ResponseBodyServiceGetResponseBodyOK) Code() int {
-	return 200
-}
+func (o *ResponseBodyServiceGetResponseBodyOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ResponseBodyServiceGetResponseBodyOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/{data}][%d] responseBodyServiceGetResponseBodyOK %s", 200, payload)
-}
+func (o *ResponseBodyServiceGetResponseBodyOK) Error() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ResponseBodyServiceGetResponseBodyOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/{data}][%d] responseBodyServiceGetResponseBodyOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyOK) GetPayload() *models.ExamplepbResponseBodyOutResponse {
-	return o.Payload
-}
-
-func (o *ResponseBodyServiceGetResponseBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbResponseBodyOutResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ResponseBodyServiceGetResponseBodyOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewResponseBodyServiceGetResponseBodyDefault creates a ResponseBodyServiceGetResponseBodyDefault with default headers values
 func NewResponseBodyServiceGetResponseBodyDefault(code int) *ResponseBodyServiceGetResponseBodyDefault {
-	return &ResponseBodyServiceGetResponseBodyDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -130,56 +111,56 @@ type ResponseBodyServiceGetResponseBodyDefault struct {
 
 // IsSuccess returns true when this response body service get response body default response has a 2xx status code
 func (o *ResponseBodyServiceGetResponseBodyDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this response body service get response body default response has a 3xx status code
 func (o *ResponseBodyServiceGetResponseBodyDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this response body service get response body default response has a 4xx status code
 func (o *ResponseBodyServiceGetResponseBodyDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this response body service get response body default response has a 5xx status code
 func (o *ResponseBodyServiceGetResponseBodyDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this response body service get response body default response a status code equal to that given
 func (o *ResponseBodyServiceGetResponseBodyDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the response body service get response body default response
 }
 
-// Code gets the status code for the response body service get response body default response
-func (o *ResponseBodyServiceGetResponseBodyDefault) Code() int {
-	return o._statusCode
-}
+func (o *ResponseBodyServiceGetResponseBodyDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ResponseBodyServiceGetResponseBodyDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/{data}][%d] ResponseBodyService_GetResponseBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/{data}][%d] ResponseBodyService_GetResponseBody default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ResponseBodyServiceGetResponseBodyDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

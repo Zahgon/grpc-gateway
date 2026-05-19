@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/echo/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewEchoServiceEchoBody2Params() *EchoServiceEchoBody2Params {
-	return &EchoServiceEchoBody2Params{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBody2ParamsWithTimeout creates a new EchoServiceEchoBody2Params object
 // with the ability to set a timeout on a request.
 func NewEchoServiceEchoBody2ParamsWithTimeout(timeout time.Duration) *EchoServiceEchoBody2Params {
-	return &EchoServiceEchoBody2Params{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBody2ParamsWithContext creates a new EchoServiceEchoBody2Params object
 // with the ability to set a context for a request.
 func NewEchoServiceEchoBody2ParamsWithContext(ctx context.Context) *EchoServiceEchoBody2Params {
-	return &EchoServiceEchoBody2Params{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBody2ParamsWithHTTPClient creates a new EchoServiceEchoBody2Params object
 // with the ability to set a custom HTTPClient for a request.
 func NewEchoServiceEchoBody2ParamsWithHTTPClient(client *http.Client) *EchoServiceEchoBody2Params {
-	return &EchoServiceEchoBody2Params{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -108,316 +102,206 @@ type EchoServiceEchoBody2Params struct {
 //
 // All values with no default are reset to their zero value.
 func (o *EchoServiceEchoBody2Params) WithDefaults() *EchoServiceEchoBody2Params {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the echo service echo body2 params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the echo service echo body2 params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *EchoServiceEchoBody2Params) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithTimeout(timeout time.Duration) *EchoServiceEchoBody2Params {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the echo service echo body2 params
 }
 
-// WithContext adds the context to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithContext(ctx context.Context) *EchoServiceEchoBody2Params {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the echo service echo body2 params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithHTTPClient(client *http.Client) *EchoServiceEchoBody2Params {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithID adds the id to the echo service echo body2 params
 }
 
-// WithID adds the id to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithID(id string) *EchoServiceEchoBody2Params {
-	o.SetID(id)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetID adds the id to the echo service echo body2 params
 }
 
-// SetID adds the id to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetID(id string) {
-	o.ID = id
+	_ = "STUB: not implemented"
+
+	// WithLang adds the lang to the echo service echo body2 params
+	return
 }
 
-// WithLang adds the lang to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithLang(lang *string) *EchoServiceEchoBody2Params {
-	o.SetLang(lang)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetLang adds the lang to the echo service echo body2 params
 }
 
-// SetLang adds the lang to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetLang(lang *string) {
-	o.Lang = lang
+	_ = "STUB: not implemented"
+
+	// WithLineNum adds the lineNum to the echo service echo body2 params
+	return
 }
 
-// WithLineNum adds the lineNum to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithLineNum(lineNum *string) *EchoServiceEchoBody2Params {
-	o.SetLineNum(lineNum)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetLineNum adds the lineNum to the echo service echo body2 params
-func (o *EchoServiceEchoBody2Params) SetLineNum(lineNum *string) {
-	o.LineNum = lineNum
-}
+func (o *EchoServiceEchoBody2Params) SetLineNum(lineNum *string) { _ = "STUB: not implemented"; return }
 
 // WithNIDnID adds the nIDnID to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithNIDnID(nIDnID *string) *EchoServiceEchoBody2Params {
-	o.SetNIDnID(nIDnID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDnID adds the nIdNId to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetNIDnID(nIDnID *string) {
-	o.NIDnID = nIDnID
+	_ = "STUB: not implemented"
+
+	// WithNIDVal adds the nIDVal to the echo service echo body2 params
+	return
 }
 
-// WithNIDVal adds the nIDVal to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithNIDVal(nIDVal *string) *EchoServiceEchoBody2Params {
-	o.SetNIDVal(nIDVal)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDVal adds the nIdVal to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetNIDVal(nIDVal *string) {
-	o.NIDVal = nIDVal
+	_ = "STUB: not implemented"
+
+	// WithNo adds the no to the echo service echo body2 params
+	return
 }
 
-// WithNo adds the no to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithNo(no *models.ExamplepbEmbedded) *EchoServiceEchoBody2Params {
-	o.SetNo(no)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetNo adds the no to the echo service echo body2 params
 }
 
-// SetNo adds the no to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetNo(no *models.ExamplepbEmbedded) {
-	o.No = no
+	_ = "STUB: not implemented"
+
+	// WithNum adds the num to the echo service echo body2 params
+	return
 }
 
-// WithNum adds the num to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithNum(num *string) *EchoServiceEchoBody2Params {
-	o.SetNum(num)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetNum adds the num to the echo service echo body2 params
 }
 
-// SetNum adds the num to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetNum(num *string) {
-	o.Num = num
+	_ = "STUB: not implemented"
+
+	// WithResourceID adds the resourceID to the echo service echo body2 params
+	return
 }
 
-// WithResourceID adds the resourceID to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithResourceID(resourceID *string) *EchoServiceEchoBody2Params {
-	o.SetResourceID(resourceID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetResourceID adds the resourceId to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetResourceID(resourceID *string) {
-	o.ResourceID = resourceID
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusNote adds the statusNote to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithStatusNote(statusNote *string) *EchoServiceEchoBody2Params {
-	o.SetStatusNote(statusNote)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusNote adds the statusNote to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetStatusNote(statusNote *string) {
-	o.StatusNote = statusNote
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusProgress adds the statusProgress to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) WithStatusProgress(statusProgress *string) *EchoServiceEchoBody2Params {
-	o.SetStatusProgress(statusProgress)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusProgress adds the statusProgress to the echo service echo body2 params
 func (o *EchoServiceEchoBody2Params) SetStatusProgress(statusProgress *string) {
-	o.StatusProgress = statusProgress
+	_ = "STUB: not implemented"
+	return
 }
 
 // WriteToRequest writes these params to a swagger request
 func (o *EchoServiceEchoBody2Params) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param id
-	if err := r.SetPathParam("id", o.ID); err != nil {
-		return err
-	}
-
-	if o.Lang != nil {
-
-		// query param lang
-		var qrLang string
-
-		if o.Lang != nil {
-			qrLang = *o.Lang
-		}
-		qLang := qrLang
-		if qLang != "" {
-
-			if err := r.SetQueryParam("lang", qLang); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.LineNum != nil {
-
-		// query param lineNum
-		var qrLineNum string
-
-		if o.LineNum != nil {
-			qrLineNum = *o.LineNum
-		}
-		qLineNum := qrLineNum
-		if qLineNum != "" {
-
-			if err := r.SetQueryParam("lineNum", qLineNum); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NIDnID != nil {
-
-		// query param nId.nId
-		var qrNIDnID string
-
-		if o.NIDnID != nil {
-			qrNIDnID = *o.NIDnID
-		}
-		qNIDnID := qrNIDnID
-		if qNIDnID != "" {
-
-			if err := r.SetQueryParam("nId.nId", qNIDnID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NIDVal != nil {
-
-		// query param nId.val
-		var qrNIDVal string
-
-		if o.NIDVal != nil {
-			qrNIDVal = *o.NIDVal
-		}
-		qNIDVal := qrNIDVal
-		if qNIDVal != "" {
-
-			if err := r.SetQueryParam("nId.val", qNIDVal); err != nil {
-				return err
-			}
-		}
-	}
-	if o.No != nil {
-		if err := r.SetBodyParam(o.No); err != nil {
-			return err
-		}
-	}
-
-	if o.Num != nil {
-
-		// query param num
-		var qrNum string
-
-		if o.Num != nil {
-			qrNum = *o.Num
-		}
-		qNum := qrNum
-		if qNum != "" {
-
-			if err := r.SetQueryParam("num", qNum); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.ResourceID != nil {
-
-		// query param resourceId
-		var qrResourceID string
-
-		if o.ResourceID != nil {
-			qrResourceID = *o.ResourceID
-		}
-		qResourceID := qrResourceID
-		if qResourceID != "" {
-
-			if err := r.SetQueryParam("resourceId", qResourceID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusNote != nil {
-
-		// query param status.note
-		var qrStatusNote string
-
-		if o.StatusNote != nil {
-			qrStatusNote = *o.StatusNote
-		}
-		qStatusNote := qrStatusNote
-		if qStatusNote != "" {
-
-			if err := r.SetQueryParam("status.note", qStatusNote); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusProgress != nil {
-
-		// query param status.progress
-		var qrStatusProgress string
-
-		if o.StatusProgress != nil {
-			qrStatusProgress = *o.StatusProgress
-		}
-		qStatusProgress := qrStatusProgress
-		if qStatusProgress != "" {
-
-			if err := r.SetQueryParam("status.progress", qStatusProgress); err != nil {
-				return err
-			}
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param id
+
+// query param lang
+
+// query param lineNum
+
+// query param nId.nId
+
+// query param nId.val
+
+// query param num
+
+// query param resourceId
+
+// query param status.note
+
+// query param status.progress

@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -27,35 +27,19 @@ type EmptyProto struct {
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *EmptyProto) Reset() {
-	*x = EmptyProto{}
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *EmptyProto) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *EmptyProto) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *EmptyProto) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*EmptyProto) ProtoMessage() {}
+func (*EmptyProto) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *EmptyProto) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use EmptyProto.ProtoReflect.Descriptor instead.
-func (*EmptyProto) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP(), []int{0}
-}
+func (*EmptyProto) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 type NonEmptyProto struct {
 	state         protoimpl.MessageState
@@ -67,56 +51,25 @@ type NonEmptyProto struct {
 	C string `protobuf:"bytes,3,opt,name=c,proto3" json:"c,omitempty"`
 }
 
-func (x *NonEmptyProto) Reset() {
-	*x = NonEmptyProto{}
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonEmptyProto) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonEmptyProto) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonEmptyProto) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonEmptyProto) ProtoMessage() {}
+func (*NonEmptyProto) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonEmptyProto) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonEmptyProto.ProtoReflect.Descriptor instead.
-func (*NonEmptyProto) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP(), []int{1}
-}
+func (*NonEmptyProto) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NonEmptyProto) GetA() string {
-	if x != nil {
-		return x.A
-	}
-	return ""
-}
+func (x *NonEmptyProto) GetA() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonEmptyProto) GetB() string {
-	if x != nil {
-		return x.B
-	}
-	return ""
-}
+func (x *NonEmptyProto) GetB() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonEmptyProto) GetC() string {
-	if x != nil {
-		return x.C
-	}
-	return ""
-}
+func (x *NonEmptyProto) GetC() string { _ = "STUB: not implemented"; return "" }
 
 type UnaryProto struct {
 	state         protoimpl.MessageState
@@ -126,42 +79,21 @@ type UnaryProto struct {
 	Str string `protobuf:"bytes,1,opt,name=str,proto3" json:"str,omitempty"`
 }
 
-func (x *UnaryProto) Reset() {
-	*x = UnaryProto{}
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *UnaryProto) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *UnaryProto) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *UnaryProto) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*UnaryProto) ProtoMessage() {}
+func (*UnaryProto) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *UnaryProto) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use UnaryProto.ProtoReflect.Descriptor instead.
-func (*UnaryProto) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP(), []int{2}
-}
+func (*UnaryProto) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *UnaryProto) GetStr() string {
-	if x != nil {
-		return x.Str
-	}
-	return ""
-}
+func (x *UnaryProto) GetStr() string { _ = "STUB: not implemented"; return "" }
 
 type NestedProto struct {
 	state         protoimpl.MessageState
@@ -173,56 +105,25 @@ type NestedProto struct {
 	C string      `protobuf:"bytes,3,opt,name=c,proto3" json:"c,omitempty"`
 }
 
-func (x *NestedProto) Reset() {
-	*x = NestedProto{}
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NestedProto) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NestedProto) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NestedProto) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NestedProto) ProtoMessage() {}
+func (*NestedProto) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NestedProto) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NestedProto.ProtoReflect.Descriptor instead.
-func (*NestedProto) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP(), []int{3}
-}
+func (*NestedProto) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NestedProto) GetA() *UnaryProto {
-	if x != nil {
-		return x.A
-	}
-	return nil
-}
+func (x *NestedProto) GetA() *UnaryProto { _ = "STUB: not implemented"; return nil }
 
-func (x *NestedProto) GetB() string {
-	if x != nil {
-		return x.B
-	}
-	return ""
-}
+func (x *NestedProto) GetB() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NestedProto) GetC() string {
-	if x != nil {
-		return x.C
-	}
-	return ""
-}
+func (x *NestedProto) GetC() string { _ = "STUB: not implemented"; return "" }
 
 type SingleNestedProto struct {
 	state         protoimpl.MessageState
@@ -232,42 +133,21 @@ type SingleNestedProto struct {
 	A *UnaryProto `protobuf:"bytes,1,opt,name=a,proto3" json:"a,omitempty"`
 }
 
-func (x *SingleNestedProto) Reset() {
-	*x = SingleNestedProto{}
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SingleNestedProto) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SingleNestedProto) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SingleNestedProto) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SingleNestedProto) ProtoMessage() {}
+func (*SingleNestedProto) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SingleNestedProto) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use SingleNestedProto.ProtoReflect.Descriptor instead.
-func (*SingleNestedProto) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP(), []int{4}
-}
+func (*SingleNestedProto) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *SingleNestedProto) GetA() *UnaryProto {
-	if x != nil {
-		return x.A
-	}
-	return nil
-}
+func (x *SingleNestedProto) GetA() *UnaryProto { _ = "STUB: not implemented"; return nil }
 
 var File_examples_internal_proto_examplepb_flow_combination_proto protoreflect.FileDescriptor
 
@@ -458,10 +338,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_flow_combination_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_flow_combination_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_flow_combination_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_flow_combination_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_flow_combination_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
@@ -504,25 +382,6 @@ var file_examples_internal_proto_examplepb_flow_combination_proto_depIdxs = []in
 
 func init() { file_examples_internal_proto_examplepb_flow_combination_proto_init() }
 func file_examples_internal_proto_examplepb_flow_combination_proto_init() {
-	if File_examples_internal_proto_examplepb_flow_combination_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_flow_combination_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   5,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_flow_combination_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_flow_combination_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_flow_combination_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_flow_combination_proto = out.File
-	file_examples_internal_proto_examplepb_flow_combination_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_flow_combination_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_flow_combination_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

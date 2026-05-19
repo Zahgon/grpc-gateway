@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceCheckExternalNestedPathEnumDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumOK creates a ABitOfEverythingServiceCheckExternalNestedPathEnumOK with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumOK() *ABitOfEverythingServiceCheckExternalNestedPathEnumOK {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,71 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumOK struct {
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum o k response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service check external nested path enum o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service check external nested path enum o k response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service check external nested path enum o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service check external nested path enum o k response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service check external nested path enum o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service check external nested path enum o k response has a 5xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service check external nested path enum o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service check external nested path enum o k response a status code equal to that given
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum o k response
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum o k response
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumForbidden creates a ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumForbidden() *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +115,71 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service check external nested path enum forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service check external nested path enum forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service check external nested path enum forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service check external nested path enum forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service check external nested path enum forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service check external nested path enum forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service check external nested path enum forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service check external nested path enum forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum forbidden response
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum forbidden response
+}
+
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumNotFound creates a ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumNotFound() *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +193,71 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum not found response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service check external nested path enum not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service check external nested path enum not found response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service check external nested path enum not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service check external nested path enum not found response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service check external nested path enum not found response has a 5xx status code
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service check external nested path enum not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service check external nested path enum not found response a status code equal to that given
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service check external nested path enum not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum not found response
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum not found response
+}
+
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot creates a ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot() *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +271,71 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service check external nested path enum i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service check external nested path enum i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service check external nested path enum i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service check external nested path enum i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service check external nested path enum i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service check external nested path enum i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service check external nested path enum i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service check external nested path enum i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum i m a teapot response
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError creates a ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError() *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +349,71 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError struc
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service check external nested path enum internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service check external nested path enum internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service check external nested path enum internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service check external nested path enum internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service check external nested path enum internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service check external nested path enum internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service check external nested path enum internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service check external nested path enum internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum internal server error response
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum internal server error response
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] aBitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumDefault creates a ABitOfEverythingServiceCheckExternalNestedPathEnumDefault with default headers values
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumDefault(code int) *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +429,59 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumDefault struct {
 
 // IsSuccess returns true when this a bit of everything service check external nested path enum default response has a 2xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service check external nested path enum default response has a 3xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service check external nested path enum default response has a 4xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service check external nested path enum default response has a 5xx status code
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service check external nested path enum default response a status code equal to that given
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service check external nested path enum default response
 }
 
-// Code gets the status code for the a bit of everything service check external nested path enum default response
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] ABitOfEverythingService_CheckExternalNestedPathEnum default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /v3/{value}:check][%d] ABitOfEverythingService_CheckExternalNestedPathEnum default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

@@ -4,13 +4,13 @@ package generate_unbound_methods_echo_service
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
 // New creates a new generate unbound methods echo service API client.
 func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientService {
-	return &Client{transport: transport, formats: formats}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new generate unbound methods echo service API client with basic auth credentials.
@@ -21,9 +21,8 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientServi
 // - user: user for basic authentication header.
 // - password: password for basic authentication header.
 func NewClientWithBasicAuth(host, basePath, scheme, user, password string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BasicAuth(user, password)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new generate unbound methods echo service API client with a bearer token for authentication.
@@ -33,9 +32,8 @@ func NewClientWithBasicAuth(host, basePath, scheme, user, password string) Clien
 // - scheme: http scheme ("http", "https").
 // - bearerToken: bearer token for Bearer authentication header.
 func NewClientWithBearerToken(host, basePath, scheme, bearerToken string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BearerToken(bearerToken)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 /*
@@ -68,129 +66,46 @@ type ClientService interface {
 returned.
 */
 func (a *Client) GenerateUnboundMethodsEchoServiceEcho(params *GenerateUnboundMethodsEchoServiceEchoParams, opts ...ClientOption) (*GenerateUnboundMethodsEchoServiceEchoOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewGenerateUnboundMethodsEchoServiceEchoParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "GenerateUnboundMethodsEchoService_Echo",
-		Method:             "POST",
-		PathPattern:        "/grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/Echo",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &GenerateUnboundMethodsEchoServiceEchoReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*GenerateUnboundMethodsEchoServiceEchoOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*GenerateUnboundMethodsEchoServiceEchoDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 GenerateUnboundMethodsEchoServiceEchoBody echos body method receives a simple message and returns it
 */
 func (a *Client) GenerateUnboundMethodsEchoServiceEchoBody(params *GenerateUnboundMethodsEchoServiceEchoBodyParams, opts ...ClientOption) (*GenerateUnboundMethodsEchoServiceEchoBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewGenerateUnboundMethodsEchoServiceEchoBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "GenerateUnboundMethodsEchoService_EchoBody",
-		Method:             "POST",
-		PathPattern:        "/grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoBody",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &GenerateUnboundMethodsEchoServiceEchoBodyReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*GenerateUnboundMethodsEchoServiceEchoBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*GenerateUnboundMethodsEchoServiceEchoBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 GenerateUnboundMethodsEchoServiceEchoDelete echos delete method receives a simple message and returns it
 */
 func (a *Client) GenerateUnboundMethodsEchoServiceEchoDelete(params *GenerateUnboundMethodsEchoServiceEchoDeleteParams, opts ...ClientOption) (*GenerateUnboundMethodsEchoServiceEchoDeleteOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewGenerateUnboundMethodsEchoServiceEchoDeleteParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "GenerateUnboundMethodsEchoService_EchoDelete",
-		Method:             "POST",
-		PathPattern:        "/grpc.gateway.examples.internal.proto.examplepb.GenerateUnboundMethodsEchoService/EchoDelete",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &GenerateUnboundMethodsEchoServiceEchoDeleteReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*GenerateUnboundMethodsEchoServiceEchoDeleteOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*GenerateUnboundMethodsEchoServiceEchoDeleteDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 // SetTransport changes the transport on the client
-func (a *Client) SetTransport(transport runtime.ClientTransport) {
-	a.transport = transport
-}
+func (a *Client) SetTransport(transport runtime.ClientTransport) { _ = "STUB: not implemented"; return }

@@ -13,9 +13,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -64,67 +63,38 @@ type echoServiceClient struct {
 }
 
 func NewEchoServiceClient(cc grpc.ClientConnInterface) EchoServiceClient {
-	return &echoServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(EchoServiceClient)
 }
 
 func (c *echoServiceClient) Echo(ctx context.Context, in *SimpleMessage, opts ...grpc.CallOption) (*SimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(SimpleMessage)
-	err := c.cc.Invoke(ctx, EchoService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *echoServiceClient) EchoBody(ctx context.Context, in *SimpleMessage, opts ...grpc.CallOption) (*SimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(SimpleMessage)
-	err := c.cc.Invoke(ctx, EchoService_EchoBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *echoServiceClient) EchoDelete(ctx context.Context, in *SimpleMessage, opts ...grpc.CallOption) (*SimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(SimpleMessage)
-	err := c.cc.Invoke(ctx, EchoService_EchoDelete_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *echoServiceClient) EchoPatch(ctx context.Context, in *DynamicMessageUpdate, opts ...grpc.CallOption) (*DynamicMessageUpdate, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(DynamicMessageUpdate)
-	err := c.cc.Invoke(ctx, EchoService_EchoPatch_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *echoServiceClient) EchoUnauthorized(ctx context.Context, in *SimpleMessage, opts ...grpc.CallOption) (*SimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(SimpleMessage)
-	err := c.cc.Invoke(ctx, EchoService_EchoUnauthorized_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *echoServiceClient) EchoStatus(ctx context.Context, in *StatusCheckRequest, opts ...grpc.CallOption) (*StatusCheckResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(StatusCheckResponse)
-	err := c.cc.Invoke(ctx, EchoService_EchoStatus_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EchoServiceServer is the server API for EchoService service.
@@ -162,149 +132,85 @@ type EchoServiceServer interface {
 type UnimplementedEchoServiceServer struct{}
 
 func (UnimplementedEchoServiceServer) Echo(context.Context, *SimpleMessage) (*SimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedEchoServiceServer) EchoBody(context.Context, *SimpleMessage) (*SimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoBody not implemented")
-}
-func (UnimplementedEchoServiceServer) EchoDelete(context.Context, *SimpleMessage) (*SimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoDelete not implemented")
-}
-func (UnimplementedEchoServiceServer) EchoPatch(context.Context, *DynamicMessageUpdate) (*DynamicMessageUpdate, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoPatch not implemented")
-}
-func (UnimplementedEchoServiceServer) EchoUnauthorized(context.Context, *SimpleMessage) (*SimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoUnauthorized not implemented")
-}
-func (UnimplementedEchoServiceServer) EchoStatus(context.Context, *StatusCheckRequest) (*StatusCheckResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoStatus not implemented")
-}
-func (UnimplementedEchoServiceServer) testEmbeddedByValue() {}
 
-// UnsafeEchoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to EchoServiceServer will
-// result in compilation errors.
+func (UnimplementedEchoServiceServer) EchoBody(context.Context, *SimpleMessage) (*SimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedEchoServiceServer) EchoDelete(context.Context, *SimpleMessage) (*SimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedEchoServiceServer) EchoPatch(context.Context, *DynamicMessageUpdate) (*DynamicMessageUpdate, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedEchoServiceServer) EchoUnauthorized(context.Context, *SimpleMessage) (*SimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedEchoServiceServer) EchoStatus(context.Context, *StatusCheckRequest) (*StatusCheckResponse, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedEchoServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeEchoServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to EchoServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeEchoServiceServer interface {
 	mustEmbedUnimplementedEchoServiceServer()
 }
 
 func RegisterEchoServiceServer(s grpc.ServiceRegistrar, srv EchoServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedEchoServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&EchoService_ServiceDesc, srv)
+	return
 }
 
 func _EchoService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).Echo(ctx, req.(*SimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _EchoService_EchoBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).EchoBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_EchoBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).EchoBody(ctx, req.(*SimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _EchoService_EchoDelete_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).EchoDelete(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_EchoDelete_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).EchoDelete(ctx, req.(*SimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _EchoService_EchoPatch_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(DynamicMessageUpdate)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).EchoPatch(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_EchoPatch_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).EchoPatch(ctx, req.(*DynamicMessageUpdate))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _EchoService_EchoUnauthorized_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).EchoUnauthorized(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_EchoUnauthorized_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).EchoUnauthorized(ctx, req.(*SimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _EchoService_EchoStatus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(StatusCheckRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EchoServiceServer).EchoStatus(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: EchoService_EchoStatus_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EchoServiceServer).EchoStatus(ctx, req.(*StatusCheckRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EchoService_ServiceDesc is the grpc.ServiceDesc for EchoService service.

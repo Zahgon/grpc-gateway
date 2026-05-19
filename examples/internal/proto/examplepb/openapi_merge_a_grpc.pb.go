@@ -12,9 +12,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -48,27 +47,18 @@ type serviceAClient struct {
 }
 
 func NewServiceAClient(cc grpc.ClientConnInterface) ServiceAClient {
-	return &serviceAClient{cc}
+	_ = "STUB: not implemented"
+	return *new(ServiceAClient)
 }
 
 func (c *serviceAClient) MethodOne(ctx context.Context, in *InMessageA, opts ...grpc.CallOption) (*OutMessageA, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OutMessageA)
-	err := c.cc.Invoke(ctx, ServiceA_MethodOne_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *serviceAClient) MethodTwo(ctx context.Context, in *OutMessageA, opts ...grpc.CallOption) (*InMessageA, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(InMessageA)
-	err := c.cc.Invoke(ctx, ServiceA_MethodTwo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ServiceAServer is the server API for ServiceA service.
@@ -95,65 +85,45 @@ type ServiceAServer interface {
 type UnimplementedServiceAServer struct{}
 
 func (UnimplementedServiceAServer) MethodOne(context.Context, *InMessageA) (*OutMessageA, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MethodOne not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedServiceAServer) MethodTwo(context.Context, *OutMessageA) (*InMessageA, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MethodTwo not implemented")
-}
-func (UnimplementedServiceAServer) testEmbeddedByValue() {}
 
-// UnsafeServiceAServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ServiceAServer will
-// result in compilation errors.
+func (UnimplementedServiceAServer) MethodTwo(context.Context, *OutMessageA) (*InMessageA, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedServiceAServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeServiceAServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to ServiceAServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeServiceAServer interface {
 	mustEmbedUnimplementedServiceAServer()
 }
 
 func RegisterServiceAServer(s grpc.ServiceRegistrar, srv ServiceAServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedServiceAServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&ServiceA_ServiceDesc, srv)
+	return
 }
 
 func _ServiceA_MethodOne_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(InMessageA)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ServiceAServer).MethodOne(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ServiceA_MethodOne_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ServiceAServer).MethodOne(ctx, req.(*InMessageA))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ServiceA_MethodTwo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OutMessageA)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ServiceAServer).MethodTwo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ServiceA_MethodTwo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ServiceAServer).MethodTwo(ctx, req.(*OutMessageA))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ServiceA_ServiceDesc is the grpc.ServiceDesc for ServiceA service.
@@ -202,27 +172,18 @@ type serviceCClient struct {
 }
 
 func NewServiceCClient(cc grpc.ClientConnInterface) ServiceCClient {
-	return &serviceCClient{cc}
+	_ = "STUB: not implemented"
+	return *new(ServiceCClient)
 }
 
 func (c *serviceCClient) MethodOne(ctx context.Context, in *InMessageA, opts ...grpc.CallOption) (*OutMessageC, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(OutMessageC)
-	err := c.cc.Invoke(ctx, ServiceC_MethodOne_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *serviceCClient) MethodTwo(ctx context.Context, in *OutMessageA, opts ...grpc.CallOption) (*InMessageA, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(InMessageA)
-	err := c.cc.Invoke(ctx, ServiceC_MethodTwo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ServiceCServer is the server API for ServiceC service.
@@ -249,65 +210,45 @@ type ServiceCServer interface {
 type UnimplementedServiceCServer struct{}
 
 func (UnimplementedServiceCServer) MethodOne(context.Context, *InMessageA) (*OutMessageC, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MethodOne not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedServiceCServer) MethodTwo(context.Context, *OutMessageA) (*InMessageA, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MethodTwo not implemented")
-}
-func (UnimplementedServiceCServer) testEmbeddedByValue() {}
 
-// UnsafeServiceCServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ServiceCServer will
-// result in compilation errors.
+func (UnimplementedServiceCServer) MethodTwo(context.Context, *OutMessageA) (*InMessageA, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedServiceCServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeServiceCServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to ServiceCServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeServiceCServer interface {
 	mustEmbedUnimplementedServiceCServer()
 }
 
 func RegisterServiceCServer(s grpc.ServiceRegistrar, srv ServiceCServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedServiceCServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&ServiceC_ServiceDesc, srv)
+	return
 }
 
 func _ServiceC_MethodOne_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(InMessageA)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ServiceCServer).MethodOne(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ServiceC_MethodOne_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ServiceCServer).MethodOne(ctx, req.(*InMessageA))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _ServiceC_MethodTwo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(OutMessageA)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ServiceCServer).MethodTwo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ServiceC_MethodTwo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ServiceCServer).MethodTwo(ctx, req.(*OutMessageA))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ServiceC_ServiceDesc is the grpc.ServiceDesc for ServiceC service.

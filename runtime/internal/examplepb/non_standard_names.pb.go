@@ -7,13 +7,13 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	fieldmaskpb "google.golang.org/protobuf/types/known/fieldmaskpb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -42,105 +42,45 @@ type NonStandardMessage struct {
 	ValueField  *structpb.Value           `protobuf:"bytes,10,opt,name=value_field,json=valueField,proto3" json:"value_field,omitempty"`
 }
 
-func (x *NonStandardMessage) Reset() {
-	*x = NonStandardMessage{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessage) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonStandardMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonStandardMessage) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonStandardMessage) ProtoMessage() {}
+func (*NonStandardMessage) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessage.ProtoReflect.Descriptor instead.
-func (*NonStandardMessage) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{0}
-}
+func (*NonStandardMessage) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NonStandardMessage) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *NonStandardMessage) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonStandardMessage) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *NonStandardMessage) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *NonStandardMessage) GetLineNum() int64 {
-	if x != nil {
-		return x.LineNum
-	}
-	return 0
-}
+func (x *NonStandardMessage) GetLineNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *NonStandardMessage) GetLangIdent() string {
-	if x != nil {
-		return x.LangIdent
-	}
-	return ""
-}
+func (x *NonStandardMessage) GetLangIdent() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonStandardMessage) GetSTATUS() string {
-	if x != nil {
-		return x.STATUS
-	}
-	return ""
-}
+func (x *NonStandardMessage) GetSTATUS() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonStandardMessage) GetEn_GB() int64 {
-	if x != nil {
-		return x.En_GB
-	}
-	return 0
-}
+func (x *NonStandardMessage) GetEn_GB() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *NonStandardMessage) GetNo() string {
-	if x != nil {
-		return x.No
-	}
-	return ""
-}
+func (x *NonStandardMessage) GetNo() string { _ = "STUB: not implemented"; return "" }
 
 func (x *NonStandardMessage) GetThing() *NonStandardMessage_Thing {
-	if x != nil {
-		return x.Thing
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *NonStandardMessage) GetStructField() *structpb.Struct {
-	if x != nil {
-		return x.StructField
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *NonStandardMessage) GetValueField() *structpb.Value {
-	if x != nil {
-		return x.ValueField
-	}
-	return nil
-}
+func (x *NonStandardMessage) GetValueField() *structpb.Value { _ = "STUB: not implemented"; return nil }
 
 type NonStandardUpdateRequest struct {
 	state         protoimpl.MessageState
@@ -151,47 +91,30 @@ type NonStandardUpdateRequest struct {
 	UpdateMask *fieldmaskpb.FieldMask `protobuf:"bytes,2,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
 }
 
-func (x *NonStandardUpdateRequest) Reset() {
-	*x = NonStandardUpdateRequest{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardUpdateRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonStandardUpdateRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonStandardUpdateRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonStandardUpdateRequest) ProtoMessage() {}
+func (*NonStandardUpdateRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardUpdateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardUpdateRequest.ProtoReflect.Descriptor instead.
 func (*NonStandardUpdateRequest) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{1}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardUpdateRequest) GetBody() *NonStandardMessage {
-	if x != nil {
-		return x.Body
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *NonStandardUpdateRequest) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -214,103 +137,52 @@ type NonStandardMessageWithJSONNames struct {
 	ValueField  *structpb.Value                        `protobuf:"bytes,10,opt,name=value_field,json=ValueField,proto3" json:"value_field,omitempty"`
 }
 
-func (x *NonStandardMessageWithJSONNames) Reset() {
-	*x = NonStandardMessageWithJSONNames{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessageWithJSONNames) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonStandardMessageWithJSONNames) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonStandardMessageWithJSONNames) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonStandardMessageWithJSONNames) ProtoMessage() {}
+func (*NonStandardMessageWithJSONNames) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessageWithJSONNames) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessageWithJSONNames.ProtoReflect.Descriptor instead.
 func (*NonStandardMessageWithJSONNames) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{2}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func (x *NonStandardMessageWithJSONNames) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
-}
+func (x *NonStandardMessageWithJSONNames) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonStandardMessageWithJSONNames) GetNum() int64 {
-	if x != nil {
-		return x.Num
-	}
-	return 0
-}
+func (x *NonStandardMessageWithJSONNames) GetNum() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *NonStandardMessageWithJSONNames) GetLineNum() int64 {
-	if x != nil {
-		return x.LineNum
-	}
-	return 0
-}
+func (x *NonStandardMessageWithJSONNames) GetLineNum() int64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *NonStandardMessageWithJSONNames) GetLangIdent() string {
-	if x != nil {
-		return x.LangIdent
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
-func (x *NonStandardMessageWithJSONNames) GetSTATUS() string {
-	if x != nil {
-		return x.STATUS
-	}
-	return ""
-}
+func (x *NonStandardMessageWithJSONNames) GetSTATUS() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NonStandardMessageWithJSONNames) GetEn_GB() int64 {
-	if x != nil {
-		return x.En_GB
-	}
-	return 0
-}
+func (x *NonStandardMessageWithJSONNames) GetEn_GB() int64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *NonStandardMessageWithJSONNames) GetNo() string {
-	if x != nil {
-		return x.No
-	}
-	return ""
-}
+func (x *NonStandardMessageWithJSONNames) GetNo() string { _ = "STUB: not implemented"; return "" }
 
 func (x *NonStandardMessageWithJSONNames) GetThing() *NonStandardMessageWithJSONNames_Thing {
-	if x != nil {
-		return x.Thing
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *NonStandardMessageWithJSONNames) GetStructField() *structpb.Struct {
-	if x != nil {
-		return x.StructField
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *NonStandardMessageWithJSONNames) GetValueField() *structpb.Value {
-	if x != nil {
-		return x.ValueField
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -323,47 +195,33 @@ type NonStandardWithJSONNamesUpdateRequest struct {
 	UpdateMask *fieldmaskpb.FieldMask           `protobuf:"bytes,2,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
 }
 
-func (x *NonStandardWithJSONNamesUpdateRequest) Reset() {
-	*x = NonStandardWithJSONNamesUpdateRequest{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardWithJSONNamesUpdateRequest) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardWithJSONNamesUpdateRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*NonStandardWithJSONNamesUpdateRequest) ProtoMessage() {}
+func (*NonStandardWithJSONNamesUpdateRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardWithJSONNamesUpdateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardWithJSONNamesUpdateRequest.ProtoReflect.Descriptor instead.
 func (*NonStandardWithJSONNamesUpdateRequest) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardWithJSONNamesUpdateRequest) GetBody() *NonStandardMessageWithJSONNames {
-	if x != nil {
-		return x.Body
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *NonStandardWithJSONNamesUpdateRequest) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -375,40 +233,25 @@ type NonStandardMessage_Thing struct {
 	SubThing *NonStandardMessage_Thing_SubThing `protobuf:"bytes,1,opt,name=subThing,proto3" json:"subThing,omitempty"`
 }
 
-func (x *NonStandardMessage_Thing) Reset() {
-	*x = NonStandardMessage_Thing{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessage_Thing) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonStandardMessage_Thing) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonStandardMessage_Thing) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonStandardMessage_Thing) ProtoMessage() {}
+func (*NonStandardMessage_Thing) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessage_Thing) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessage_Thing.ProtoReflect.Descriptor instead.
 func (*NonStandardMessage_Thing) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardMessage_Thing) GetSubThing() *NonStandardMessage_Thing_SubThing {
-	if x != nil {
-		return x.SubThing
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -420,40 +263,25 @@ type NonStandardMessage_Thing_SubThing struct {
 	SubValue string `protobuf:"bytes,1,opt,name=sub_value,json=subValue,proto3" json:"sub_value,omitempty"`
 }
 
-func (x *NonStandardMessage_Thing_SubThing) Reset() {
-	*x = NonStandardMessage_Thing_SubThing{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessage_Thing_SubThing) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NonStandardMessage_Thing_SubThing) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NonStandardMessage_Thing_SubThing) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NonStandardMessage_Thing_SubThing) ProtoMessage() {}
+func (*NonStandardMessage_Thing_SubThing) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessage_Thing_SubThing) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessage_Thing_SubThing.ProtoReflect.Descriptor instead.
 func (*NonStandardMessage_Thing_SubThing) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{0, 0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardMessage_Thing_SubThing) GetSubValue() string {
-	if x != nil {
-		return x.SubValue
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
@@ -465,40 +293,28 @@ type NonStandardMessageWithJSONNames_Thing struct {
 	SubThing *NonStandardMessageWithJSONNames_Thing_SubThing `protobuf:"bytes,1,opt,name=subThing,json=SubThing,proto3" json:"subThing,omitempty"`
 }
 
-func (x *NonStandardMessageWithJSONNames_Thing) Reset() {
-	*x = NonStandardMessageWithJSONNames_Thing{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessageWithJSONNames_Thing) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessageWithJSONNames_Thing) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*NonStandardMessageWithJSONNames_Thing) ProtoMessage() {}
+func (*NonStandardMessageWithJSONNames_Thing) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessageWithJSONNames_Thing) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessageWithJSONNames_Thing.ProtoReflect.Descriptor instead.
 func (*NonStandardMessageWithJSONNames_Thing) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{2, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardMessageWithJSONNames_Thing) GetSubThing() *NonStandardMessageWithJSONNames_Thing_SubThing {
-	if x != nil {
-		return x.SubThing
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -510,40 +326,31 @@ type NonStandardMessageWithJSONNames_Thing_SubThing struct {
 	SubValue string `protobuf:"bytes,1,opt,name=sub_value,json=sub_Value,proto3" json:"sub_value,omitempty"`
 }
 
-func (x *NonStandardMessageWithJSONNames_Thing_SubThing) Reset() {
-	*x = NonStandardMessageWithJSONNames_Thing_SubThing{}
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *NonStandardMessageWithJSONNames_Thing_SubThing) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *NonStandardMessageWithJSONNames_Thing_SubThing) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*NonStandardMessageWithJSONNames_Thing_SubThing) ProtoMessage() {}
+func (*NonStandardMessageWithJSONNames_Thing_SubThing) ProtoMessage() {
+	_ = "STUB: not implemented"
+	return
+}
 
 func (x *NonStandardMessageWithJSONNames_Thing_SubThing) ProtoReflect() protoreflect.Message {
-	mi := &file_runtime_internal_examplepb_non_standard_names_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NonStandardMessageWithJSONNames_Thing_SubThing.ProtoReflect.Descriptor instead.
 func (*NonStandardMessageWithJSONNames_Thing_SubThing) Descriptor() ([]byte, []int) {
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP(), []int{2, 0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *NonStandardMessageWithJSONNames_Thing_SubThing) GetSubValue() string {
-	if x != nil {
-		return x.SubValue
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
@@ -696,10 +503,8 @@ var (
 )
 
 func file_runtime_internal_examplepb_non_standard_names_proto_rawDescGZIP() []byte {
-	file_runtime_internal_examplepb_non_standard_names_proto_rawDescOnce.Do(func() {
-		file_runtime_internal_examplepb_non_standard_names_proto_rawDescData = protoimpl.X.CompressGZIP(file_runtime_internal_examplepb_non_standard_names_proto_rawDescData)
-	})
-	return file_runtime_internal_examplepb_non_standard_names_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_runtime_internal_examplepb_non_standard_names_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
@@ -742,25 +547,6 @@ var file_runtime_internal_examplepb_non_standard_names_proto_depIdxs = []int32{
 
 func init() { file_runtime_internal_examplepb_non_standard_names_proto_init() }
 func file_runtime_internal_examplepb_non_standard_names_proto_init() {
-	if File_runtime_internal_examplepb_non_standard_names_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_runtime_internal_examplepb_non_standard_names_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   8,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_runtime_internal_examplepb_non_standard_names_proto_goTypes,
-		DependencyIndexes: file_runtime_internal_examplepb_non_standard_names_proto_depIdxs,
-		MessageInfos:      file_runtime_internal_examplepb_non_standard_names_proto_msgTypes,
-	}.Build()
-	File_runtime_internal_examplepb_non_standard_names_proto = out.File
-	file_runtime_internal_examplepb_non_standard_names_proto_rawDesc = nil
-	file_runtime_internal_examplepb_non_standard_names_proto_goTypes = nil
-	file_runtime_internal_examplepb_non_standard_names_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

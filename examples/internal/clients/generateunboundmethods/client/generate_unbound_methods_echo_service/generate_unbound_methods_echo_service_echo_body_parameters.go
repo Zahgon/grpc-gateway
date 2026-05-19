@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/generateunboundmethods/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewGenerateUnboundMethodsEchoServiceEchoBodyParams() *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithTimeout creates a new GenerateUnboundMethodsEchoServiceEchoBodyParams object
 // with the ability to set a timeout on a request.
 func NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithTimeout(timeout time.Duration) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithContext creates a new GenerateUnboundMethodsEchoServiceEchoBodyParams object
 // with the ability to set a context for a request.
 func NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithContext(ctx context.Context) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithHTTPClient creates a new GenerateUnboundMethodsEchoServiceEchoBodyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewGenerateUnboundMethodsEchoServiceEchoBodyParamsWithHTTPClient(client *http.Client) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	return &GenerateUnboundMethodsEchoServiceEchoBodyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,76 +69,75 @@ type GenerateUnboundMethodsEchoServiceEchoBodyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WithDefaults() *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the generate unbound methods echo service echo body params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the generate unbound methods echo service echo body params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WithTimeout(timeout time.Duration) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the generate unbound methods echo service echo body params
 }
 
-// WithContext adds the context to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WithContext(ctx context.Context) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the generate unbound methods echo service echo body params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WithHTTPClient(client *http.Client) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the generate unbound methods echo service echo body params
 }
 
-// WithBody adds the body to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WithBody(body *models.ExamplepbGenerateUnboundMethodsSimpleMessage) *GenerateUnboundMethodsEchoServiceEchoBodyParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the generate unbound methods echo service echo body params
 }
 
-// SetBody adds the body to the generate unbound methods echo service echo body params
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) SetBody(body *models.ExamplepbGenerateUnboundMethodsSimpleMessage) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *GenerateUnboundMethodsEchoServiceEchoBodyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

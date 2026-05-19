@@ -1,9 +1,7 @@
 package genopenapi
 
 import (
-	"fmt"
 	"regexp"
-	"strings"
 )
 
 // pathParamPattern matches a single proto path parameter expression with an
@@ -42,37 +40,11 @@ type pathParam struct {
 // grpc-gateway runtime reconstructs the original proto value from the full
 // matched substring.
 func convertPathTemplate(template string) (string, []pathParam) {
-	var params []pathParam
-	out := pathParamPattern.ReplaceAllStringFunc(template, func(match string) string {
-		sub := pathParamPattern.FindStringSubmatch(match)
-		field, constraint := sub[1], sub[2]
-		if constraint == "" {
-			params = append(params, pathParam{openAPIName: field, fieldName: field})
-			return "{" + field + "}"
-		}
-		var b strings.Builder
-		wildIdx := 0
-		for i, segment := range strings.Split(constraint, "/") {
-			if i > 0 {
-				b.WriteByte('/')
-			}
-			// Both single-wildcard (*) and double-wildcard (**) produce one
-			// parameter placeholder. The gateway runtime reconstructs the full
-			// captured value from the matched URL regardless of segment count,
-			// so ** collapses to a single param just like *.
-			if segment != "*" && segment != "**" {
-				b.WriteString(segment)
-				continue
-			}
-			name := field
-			if wildIdx > 0 {
-				name = fmt.Sprintf("%s_%d", field, wildIdx)
-			}
-			b.WriteString("{" + name + "}")
-			params = append(params, pathParam{openAPIName: name, fieldName: field})
-			wildIdx++
-		}
-		return b.String()
-	})
-	return out, params
+	_ = "STUB: not implemented"
+	return "", nil
 }
+
+// Both single-wildcard (*) and double-wildcard (**) produce one
+// parameter placeholder. The gateway runtime reconstructs the full
+// captured value from the matched URL regardless of segment count,
+// so ** collapses to a single param just like *.

@@ -1,9 +1,6 @@
 package gengateway
 
 import (
-	"bytes"
-	"errors"
-	"fmt"
 	"net/http"
 	"strings"
 	"text/template"
@@ -11,8 +8,6 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/casing"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/utilities"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/protobuf/types/descriptorpb"
 )
 
 type param struct {
@@ -33,141 +28,63 @@ type binding struct {
 }
 
 // GetBodyFieldPath returns the binding body's field path.
-func (b binding) GetBodyFieldPath() string {
-	if b.Body != nil && len(b.Body.FieldPath) != 0 {
-		return b.Body.FieldPath.String()
-	}
-	return "*"
-}
+func (b binding) GetBodyFieldPath() string { _ = "STUB: not implemented"; return "" }
 
 // GetBodyFieldStructName returns the binding body's struct field name.
 func (b binding) GetBodyFieldStructName() (string, error) {
-	if b.Body != nil && len(b.Body.FieldPath) != 0 {
-		return casing.Camel(b.Body.FieldPath.String()), nil
-	}
-	return "", errors.New("no body field found")
+	_ = "STUB: not implemented"
+	return "", nil
 }
 
 // GetBodyFieldType returns the Go type of the body field.
-func (b binding) GetBodyFieldType() (string, error) {
-	if b.Body == nil || len(b.Body.FieldPath) == 0 {
-		return "", errors.New("no body field found")
-	}
+func (b binding) GetBodyFieldType() (string, error) { _ = "STUB: not implemented"; return "", nil }
 
-	lastComponent := b.Body.FieldPath[len(b.Body.FieldPath)-1]
-	fieldType := lastComponent.Target.GetType()
+// Handle message types
 
-	// Handle message types
-	if fieldType == descriptorpb.FieldDescriptorProto_TYPE_MESSAGE {
-		// Get the parent message to provide proper lookup context
-		parentMsg := lastComponent.Target.Message
-		msg, err := b.Registry.LookupMsg(parentMsg.FQMN(), lastComponent.Target.GetTypeName())
-		if err != nil {
-			return "", fmt.Errorf("failed to lookup message type %s: %w", lastComponent.Target.GetTypeName(), err)
-		}
-		return msg.GoType(b.Method.Service.File.GoPkg.Path), nil
-	}
-
-	return "", errors.New("unsupported body field type")
-}
+// Get the parent message to provide proper lookup context
 
 // HasQueryParam determines if the binding needs parameters in query string.
 //
 // It sometimes returns true even though actually the binding does not need.
 // But it is not serious because it just results in a small amount of extra codes generated.
-func (b binding) HasQueryParam() bool {
-	if b.Body != nil && len(b.Body.FieldPath) == 0 {
-		return false
-	}
-	fields := make(map[string]bool)
-	for _, f := range b.Method.RequestType.Fields {
-		fields[f.GetName()] = true
-	}
-	if b.Body != nil {
-		delete(fields, b.Body.FieldPath.String())
-	}
-	for _, p := range b.PathParams {
-		delete(fields, p.FieldPath.String())
-	}
-	return len(fields) > 0
-}
+func (b binding) HasQueryParam() bool { _ = "STUB: not implemented"; return false }
 
 func (b binding) QueryParamFilter() queryParamFilter {
-	var seqs [][]string
-	if b.Body != nil {
-		seqs = append(seqs, strings.Split(b.Body.FieldPath.String(), "."))
-	}
-	for _, p := range b.PathParams {
-		seqs = append(seqs, strings.Split(p.FieldPath.String(), "."))
-	}
-	return queryParamFilter{utilities.NewDoubleArray(seqs)}
+	_ = "STUB: not implemented"
+	return *new(queryParamFilter)
 }
 
 // HasEnumPathParam returns true if the path parameter slice contains a parameter
 // that maps to an enum proto field that is not repeated, if not false is returned.
-func (b binding) HasEnumPathParam() bool {
-	return b.hasEnumPathParam(false)
-}
+func (b binding) HasEnumPathParam() bool { _ = "STUB: not implemented"; return false }
 
 // HasRepeatedEnumPathParam returns true if the path parameter slice contains a parameter
 // that maps to a repeated enum proto field, if not false is returned.
-func (b binding) HasRepeatedEnumPathParam() bool {
-	return b.hasEnumPathParam(true)
-}
+func (b binding) HasRepeatedEnumPathParam() bool { _ = "STUB: not implemented"; return false }
 
 // hasEnumPathParam returns true if the path parameter slice contains a parameter
 // that maps to an enum proto field and that the enum proto field is or isn't repeated
 // based on the provided 'repeated' parameter.
-func (b binding) hasEnumPathParam(repeated bool) bool {
-	for _, p := range b.PathParams {
-		if p.IsEnum() && p.IsRepeated() == repeated {
-			return true
-		}
-	}
-	return false
-}
+func (b binding) hasEnumPathParam(repeated bool) bool { _ = "STUB: not implemented"; return false }
 
 // LookupEnum looks up an enum type by path parameter.
 func (b binding) LookupEnum(p descriptor.Parameter) *descriptor.Enum {
-	e, err := b.Registry.LookupEnum("", p.Target.GetTypeName())
-	if err != nil {
-		return nil
-	}
-	return e
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // FieldMaskField returns the golang-style name of the variable for a FieldMask, if there is exactly one of that type in
 // the message. Otherwise, it returns an empty string.
-func (b binding) FieldMaskField() string {
-	var fieldMaskField *descriptor.Field
-	for _, f := range b.Method.RequestType.Fields {
-		if f.GetTypeName() == ".google.protobuf.FieldMask" {
-			// if there is more than 1 FieldMask for this request, then return none
-			if fieldMaskField != nil {
-				return ""
-			}
-			fieldMaskField = f
-		}
-	}
-	if fieldMaskField != nil {
-		return casing.Camel(fieldMaskField.GetName())
-	}
-	return ""
-}
+func (b binding) FieldMaskField() string { _ = "STUB: not implemented"; return "" }
+
+// if there is more than 1 FieldMask for this request, then return none
 
 // queryParamFilter is a wrapper of utilities.DoubleArray which provides String() to output DoubleArray.Encoding in a stable and predictable format.
 type queryParamFilter struct {
 	*utilities.DoubleArray
 }
 
-func (f queryParamFilter) String() string {
-	encodings := make([]string, len(f.Encoding))
-	for str, enc := range f.Encoding {
-		encodings[enc] = fmt.Sprintf("%q: %d", str, enc)
-	}
-	e := strings.Join(encodings, ", ")
-	return fmt.Sprintf("&utilities.DoubleArray{Encoding: map[string]int{%s}, Base: %#v, Check: %#v}", e, f.Base, f.Check)
-}
+func (f queryParamFilter) String() string { _ = "STUB: not implemented"; return "" }
 
 type trailerParams struct {
 	Services           []*descriptor.Service
@@ -177,78 +94,13 @@ type trailerParams struct {
 }
 
 func applyTemplate(p param, reg *descriptor.Registry) (string, error) {
-	w := bytes.NewBuffer(nil)
-	if err := headerTemplate.Execute(w, p); err != nil {
-		return "", err
-	}
-	var targetServices []*descriptor.Service
-
-	for _, msg := range p.Messages {
-		msgName := casing.Camel(*msg.Name)
-		msg.Name = &msgName
-	}
-
-	for _, svc := range p.Services {
-		var methodWithBindingsSeen bool
-		svcName := casing.Camel(*svc.Name)
-		svc.Name = &svcName
-
-		for _, meth := range svc.Methods {
-			if grpclog.V(2) {
-				grpclog.Infof("Processing %s.%s", svc.GetName(), meth.GetName())
-			}
-			methName := casing.Camel(*meth.Name)
-			meth.Name = &methName
-			for _, b := range meth.Bindings {
-				if err := reg.CheckDuplicateAnnotation(b.HTTPMethod, b.PathTmpl.Template, svc); err != nil {
-					return "", err
-				}
-
-				methodWithBindingsSeen = true
-				if err := handlerTemplate.Execute(w, binding{
-					Binding:           b,
-					Registry:          reg,
-					AllowPatchFeature: p.AllowPatchFeature,
-					UseOpaqueAPI:      p.UseOpaqueAPI,
-				}); err != nil {
-					return "", err
-				}
-
-				// Local
-				if err := localHandlerTemplate.Execute(w, binding{
-					Binding:           b,
-					Registry:          reg,
-					AllowPatchFeature: p.AllowPatchFeature,
-					UseOpaqueAPI:      p.UseOpaqueAPI,
-				}); err != nil {
-					return "", err
-				}
-			}
-		}
-		if methodWithBindingsSeen {
-			targetServices = append(targetServices, svc)
-		}
-	}
-	if len(targetServices) == 0 {
-		return "", errNoTargetService
-	}
-
-	tp := trailerParams{
-		Services:           targetServices,
-		UseRequestContext:  p.UseRequestContext,
-		RegisterFuncSuffix: p.RegisterFuncSuffix,
-		UseOpaqueAPI:       p.UseOpaqueAPI,
-	}
-	// Local
-	if err := localTrailerTemplate.Execute(w, tp); err != nil {
-		return "", err
-	}
-
-	if err := trailerTemplate.Execute(w, tp); err != nil {
-		return "", err
-	}
-	return w.String(), nil
+	_ = "STUB: not implemented"
+	return "", nil
 }
+
+// Local
+
+// Local
 
 var (
 	httpMethods = map[string]string{

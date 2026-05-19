@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceDeepPathEchoParams() *ABitOfEverythingServiceDeepPathEchoParams {
-	return &ABitOfEverythingServiceDeepPathEchoParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoParamsWithTimeout creates a new ABitOfEverythingServiceDeepPathEchoParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceDeepPathEchoParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceDeepPathEchoParams {
-	return &ABitOfEverythingServiceDeepPathEchoParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoParamsWithContext creates a new ABitOfEverythingServiceDeepPathEchoParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceDeepPathEchoParamsWithContext(ctx context.Context) *ABitOfEverythingServiceDeepPathEchoParams {
-	return &ABitOfEverythingServiceDeepPathEchoParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoParamsWithHTTPClient creates a new ABitOfEverythingServiceDeepPathEchoParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceDeepPathEchoParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceDeepPathEchoParams {
-	return &ABitOfEverythingServiceDeepPathEchoParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -78,92 +72,89 @@ type ABitOfEverythingServiceDeepPathEchoParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithDefaults() *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service deep path echo params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service deep path echo params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service deep path echo params
 }
 
-// WithContext adds the context to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithContext(ctx context.Context) *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service deep path echo params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the a bit of everything service deep path echo params
 }
 
-// WithBody adds the body to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithBody(body *models.ABitOfEverythingServiceDeepPathEchoBody) *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the a bit of everything service deep path echo params
 }
 
-// SetBody adds the body to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetBody(body *models.ABitOfEverythingServiceDeepPathEchoBody) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WithSingleNestedName adds the singleNestedName to the a bit of everything service deep path echo params
+	return
 }
 
-// WithSingleNestedName adds the singleNestedName to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WithSingleNestedName(singleNestedName string) *ABitOfEverythingServiceDeepPathEchoParams {
-	o.SetSingleNestedName(singleNestedName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSingleNestedName adds the singleNestedName to the a bit of everything service deep path echo params
 func (o *ABitOfEverythingServiceDeepPathEchoParams) SetSingleNestedName(singleNestedName string) {
-	o.SingleNestedName = singleNestedName
+	_ = "STUB: not implemented"
+	return
 }
 
 // WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceDeepPathEchoParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	// path param singleNested.name
-	if err := r.SetPathParam("singleNested.name", o.SingleNestedName); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param singleNested.name

@@ -7,11 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // NewABitOfEverythingServiceExistsParams creates a new ABitOfEverythingServiceExistsParams object,
@@ -21,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceExistsParams() *ABitOfEverythingServiceExistsParams {
-	return &ABitOfEverythingServiceExistsParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceExistsParamsWithTimeout creates a new ABitOfEverythingServiceExistsParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceExistsParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceExistsParams {
-	return &ABitOfEverythingServiceExistsParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceExistsParamsWithContext creates a new ABitOfEverythingServiceExistsParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceExistsParamsWithContext(ctx context.Context) *ABitOfEverythingServiceExistsParams {
-	return &ABitOfEverythingServiceExistsParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceExistsParamsWithHTTPClient creates a new ABitOfEverythingServiceExistsParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceExistsParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceExistsParams {
-	return &ABitOfEverythingServiceExistsParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -371,1543 +364,875 @@ type ABitOfEverythingServiceExistsParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceExistsParams) WithDefaults() *ABitOfEverythingServiceExistsParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service exists params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service exists params (not the query body).
-//
-// All values with no default are reset to their zero value.
-func (o *ABitOfEverythingServiceExistsParams) SetDefaults() {
-	var (
-		enumValueDefault = string("ZERO")
-
-		enumValueAnnotationDefault = string("ZERO")
-
-		floatValueDefault = float32(0.2)
-
-		nestedAnnotationOkDefault = string("FALSE")
-
-		nestedPathEnumValueDefault = string("GHI")
-
-		pathEnumValueDefault = string("ABC")
-
-		singleNestedOkDefault = string("FALSE")
-	)
-
-	val := ABitOfEverythingServiceExistsParams{
-		EnumValue:           &enumValueDefault,
-		EnumValueAnnotation: &enumValueAnnotationDefault,
-		FloatValue:          floatValueDefault,
-		NestedAnnotationOk:  &nestedAnnotationOkDefault,
-		NestedPathEnumValue: &nestedPathEnumValueDefault,
-		PathEnumValue:       &pathEnumValueDefault,
-		SingleNestedOk:      &singleNestedOkDefault,
-	}
-
-	val.timeout = o.timeout
-	val.Context = o.Context
-	val.HTTPClient = o.HTTPClient
-	*o = val
-}
+func (o *ABitOfEverythingServiceExistsParams) SetDefaults() { _ = "STUB: not implemented"; return }
 
 // WithTimeout adds the timeout to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceExistsParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service exists params
 }
 
-// WithContext adds the context to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithContext(ctx context.Context) *ABitOfEverythingServiceExistsParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service exists params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceExistsParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBoolValue adds the boolValue to the a bit of everything service exists params
 }
 
-// WithBoolValue adds the boolValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithBoolValue(boolValue *bool) *ABitOfEverythingServiceExistsParams {
-	o.SetBoolValue(boolValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetBoolValue adds the boolValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetBoolValue(boolValue *bool) {
-	o.BoolValue = boolValue
+	_ = "STUB: not implemented"
+	return
+
+	// WithBytesValue adds the bytesValue to the a bit of everything service exists params
 }
 
-// WithBytesValue adds the bytesValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithBytesValue(bytesValue *strfmt.Base64) *ABitOfEverythingServiceExistsParams {
-	o.SetBytesValue(bytesValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetBytesValue adds the bytesValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetBytesValue(bytesValue *strfmt.Base64) {
-	o.BytesValue = bytesValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithDoubleValue adds the doubleValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithDoubleValue(doubleValue float64) *ABitOfEverythingServiceExistsParams {
-	o.SetDoubleValue(doubleValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetDoubleValue adds the doubleValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetDoubleValue(doubleValue float64) {
-	o.DoubleValue = doubleValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithEnumValue adds the enumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithEnumValue(enumValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetEnumValue(enumValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetEnumValue adds the enumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetEnumValue(enumValue *string) {
-	o.EnumValue = enumValue
+	_ = "STUB: not implemented"
+	return
+
+	// WithEnumValueAnnotation adds the enumValueAnnotation to the a bit of everything service exists params
 }
 
-// WithEnumValueAnnotation adds the enumValueAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithEnumValueAnnotation(enumValueAnnotation *string) *ABitOfEverythingServiceExistsParams {
-	o.SetEnumValueAnnotation(enumValueAnnotation)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetEnumValueAnnotation adds the enumValueAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetEnumValueAnnotation(enumValueAnnotation *string) {
-	o.EnumValueAnnotation = enumValueAnnotation
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithFixed32Value adds the fixed32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithFixed32Value(fixed32Value *int64) *ABitOfEverythingServiceExistsParams {
-	o.SetFixed32Value(fixed32Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetFixed32Value adds the fixed32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetFixed32Value(fixed32Value *int64) {
-	o.Fixed32Value = fixed32Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithFixed64Value adds the fixed64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithFixed64Value(fixed64Value *string) *ABitOfEverythingServiceExistsParams {
-	o.SetFixed64Value(fixed64Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetFixed64Value adds the fixed64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetFixed64Value(fixed64Value *string) {
-	o.Fixed64Value = fixed64Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithFloatValue adds the floatValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithFloatValue(floatValue float32) *ABitOfEverythingServiceExistsParams {
-	o.SetFloatValue(floatValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetFloatValue adds the floatValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetFloatValue(floatValue float32) {
-	o.FloatValue = floatValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithInt32Value adds the int32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithInt32Value(int32Value *int32) *ABitOfEverythingServiceExistsParams {
-	o.SetInt32Value(int32Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetInt32Value adds the int32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetInt32Value(int32Value *int32) {
-	o.Int32Value = int32Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithInt64OverrideType adds the int64OverrideType to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithInt64OverrideType(int64OverrideType *string) *ABitOfEverythingServiceExistsParams {
-	o.SetInt64OverrideType(int64OverrideType)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetInt64OverrideType adds the int64OverrideType to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetInt64OverrideType(int64OverrideType *string) {
-	o.Int64OverrideType = int64OverrideType
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithInt64Value adds the int64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithInt64Value(int64Value string) *ABitOfEverythingServiceExistsParams {
-	o.SetInt64Value(int64Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetInt64Value adds the int64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetInt64Value(int64Value string) {
-	o.Int64Value = int64Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithMapValue adds the mapValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithMapValue(mapValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetMapValue(mapValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetMapValue adds the mapValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetMapValue(mapValue *string) {
-	o.MapValue = mapValue
+	_ = "STUB: not implemented"
+	return
+
+	// WithMappedNestedValue adds the mappedNestedValue to the a bit of everything service exists params
 }
 
-// WithMappedNestedValue adds the mappedNestedValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithMappedNestedValue(mappedNestedValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetMappedNestedValue(mappedNestedValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetMappedNestedValue adds the mappedNestedValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetMappedNestedValue(mappedNestedValue *string) {
-	o.MappedNestedValue = mappedNestedValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithMappedStringValue adds the mappedStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithMappedStringValue(mappedStringValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetMappedStringValue(mappedStringValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetMappedStringValue adds the mappedStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetMappedStringValue(mappedStringValue *string) {
-	o.MappedStringValue = mappedStringValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNestedAnnotationAmount adds the nestedAnnotationAmount to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithNestedAnnotationAmount(nestedAnnotationAmount *int64) *ABitOfEverythingServiceExistsParams {
-	o.SetNestedAnnotationAmount(nestedAnnotationAmount)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNestedAnnotationAmount adds the nestedAnnotationAmount to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetNestedAnnotationAmount(nestedAnnotationAmount *int64) {
-	o.NestedAnnotationAmount = nestedAnnotationAmount
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNestedAnnotationName adds the nestedAnnotationName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithNestedAnnotationName(nestedAnnotationName *string) *ABitOfEverythingServiceExistsParams {
-	o.SetNestedAnnotationName(nestedAnnotationName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNestedAnnotationName adds the nestedAnnotationName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetNestedAnnotationName(nestedAnnotationName *string) {
-	o.NestedAnnotationName = nestedAnnotationName
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNestedAnnotationOk adds the nestedAnnotationOk to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithNestedAnnotationOk(nestedAnnotationOk *string) *ABitOfEverythingServiceExistsParams {
-	o.SetNestedAnnotationOk(nestedAnnotationOk)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNestedAnnotationOk adds the nestedAnnotationOk to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetNestedAnnotationOk(nestedAnnotationOk *string) {
-	o.NestedAnnotationOk = nestedAnnotationOk
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNestedPathEnumValue adds the nestedPathEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithNestedPathEnumValue(nestedPathEnumValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetNestedPathEnumValue(nestedPathEnumValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNestedPathEnumValue adds the nestedPathEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetNestedPathEnumValue(nestedPathEnumValue *string) {
-	o.NestedPathEnumValue = nestedPathEnumValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNonConventionalNameValue adds the nonConventionalNameValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithNonConventionalNameValue(nonConventionalNameValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetNonConventionalNameValue(nonConventionalNameValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNonConventionalNameValue adds the nonConventionalNameValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetNonConventionalNameValue(nonConventionalNameValue *string) {
-	o.NonConventionalNameValue = nonConventionalNameValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithOneofEmpty adds the oneofEmpty to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithOneofEmpty(oneofEmpty *string) *ABitOfEverythingServiceExistsParams {
-	o.SetOneofEmpty(oneofEmpty)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetOneofEmpty adds the oneofEmpty to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetOneofEmpty(oneofEmpty *string) {
-	o.OneofEmpty = oneofEmpty
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithOneofString adds the oneofString to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithOneofString(oneofString *string) *ABitOfEverythingServiceExistsParams {
-	o.SetOneofString(oneofString)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetOneofString adds the oneofString to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetOneofString(oneofString *string) {
-	o.OneofString = oneofString
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithOptionalStringField adds the optionalStringField to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithOptionalStringField(optionalStringField *string) *ABitOfEverythingServiceExistsParams {
-	o.SetOptionalStringField(optionalStringField)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetOptionalStringField adds the optionalStringField to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetOptionalStringField(optionalStringField *string) {
-	o.OptionalStringField = optionalStringField
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithOptionalStringValue adds the optionalStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithOptionalStringValue(optionalStringValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetOptionalStringValue(optionalStringValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetOptionalStringValue adds the optionalStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetOptionalStringValue(optionalStringValue *string) {
-	o.OptionalStringValue = optionalStringValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithOutputOnlyStringViaFieldBehaviorAnnotation adds the outputOnlyStringViaFieldBehaviorAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithOutputOnlyStringViaFieldBehaviorAnnotation(outputOnlyStringViaFieldBehaviorAnnotation *string) *ABitOfEverythingServiceExistsParams {
-	o.SetOutputOnlyStringViaFieldBehaviorAnnotation(outputOnlyStringViaFieldBehaviorAnnotation)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetOutputOnlyStringViaFieldBehaviorAnnotation adds the outputOnlyStringViaFieldBehaviorAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetOutputOnlyStringViaFieldBehaviorAnnotation(outputOnlyStringViaFieldBehaviorAnnotation *string) {
-	o.OutputOnlyStringViaFieldBehaviorAnnotation = outputOnlyStringViaFieldBehaviorAnnotation
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithPathEnumValue adds the pathEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithPathEnumValue(pathEnumValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetPathEnumValue(pathEnumValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetPathEnumValue adds the pathEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetPathEnumValue(pathEnumValue *string) {
-	o.PathEnumValue = pathEnumValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithProductID adds the productID to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithProductID(productID []string) *ABitOfEverythingServiceExistsParams {
-	o.SetProductID(productID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetProductID adds the productId to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetProductID(productID []string) {
-	o.ProductID = productID
+	_ = "STUB: not implemented"
+	return
+
+	// WithRepeatedEnumAnnotation adds the repeatedEnumAnnotation to the a bit of everything service exists params
 }
 
-// WithRepeatedEnumAnnotation adds the repeatedEnumAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRepeatedEnumAnnotation(repeatedEnumAnnotation []string) *ABitOfEverythingServiceExistsParams {
-	o.SetRepeatedEnumAnnotation(repeatedEnumAnnotation)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRepeatedEnumAnnotation adds the repeatedEnumAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRepeatedEnumAnnotation(repeatedEnumAnnotation []string) {
-	o.RepeatedEnumAnnotation = repeatedEnumAnnotation
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRepeatedEnumValue adds the repeatedEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRepeatedEnumValue(repeatedEnumValue []string) *ABitOfEverythingServiceExistsParams {
-	o.SetRepeatedEnumValue(repeatedEnumValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRepeatedEnumValue adds the repeatedEnumValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRepeatedEnumValue(repeatedEnumValue []string) {
-	o.RepeatedEnumValue = repeatedEnumValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRepeatedStringAnnotation adds the repeatedStringAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRepeatedStringAnnotation(repeatedStringAnnotation []string) *ABitOfEverythingServiceExistsParams {
-	o.SetRepeatedStringAnnotation(repeatedStringAnnotation)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRepeatedStringAnnotation adds the repeatedStringAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRepeatedStringAnnotation(repeatedStringAnnotation []string) {
-	o.RepeatedStringAnnotation = repeatedStringAnnotation
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRepeatedStringValue adds the repeatedStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRepeatedStringValue(repeatedStringValue []string) *ABitOfEverythingServiceExistsParams {
-	o.SetRepeatedStringValue(repeatedStringValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRepeatedStringValue adds the repeatedStringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRepeatedStringValue(repeatedStringValue []string) {
-	o.RepeatedStringValue = repeatedStringValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRequiredStringField1 adds the requiredStringField1 to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRequiredStringField1(requiredStringField1 string) *ABitOfEverythingServiceExistsParams {
-	o.SetRequiredStringField1(requiredStringField1)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRequiredStringField1 adds the requiredStringField1 to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRequiredStringField1(requiredStringField1 string) {
-	o.RequiredStringField1 = requiredStringField1
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRequiredStringField2 adds the requiredStringField2 to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRequiredStringField2(requiredStringField2 string) *ABitOfEverythingServiceExistsParams {
-	o.SetRequiredStringField2(requiredStringField2)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRequiredStringField2 adds the requiredStringField2 to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRequiredStringField2(requiredStringField2 string) {
-	o.RequiredStringField2 = requiredStringField2
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRequiredStringViaFieldBehaviorAnnotation adds the requiredStringViaFieldBehaviorAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRequiredStringViaFieldBehaviorAnnotation(requiredStringViaFieldBehaviorAnnotation string) *ABitOfEverythingServiceExistsParams {
-	o.SetRequiredStringViaFieldBehaviorAnnotation(requiredStringViaFieldBehaviorAnnotation)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRequiredStringViaFieldBehaviorAnnotation adds the requiredStringViaFieldBehaviorAnnotation to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRequiredStringViaFieldBehaviorAnnotation(requiredStringViaFieldBehaviorAnnotation string) {
-	o.RequiredStringViaFieldBehaviorAnnotation = requiredStringViaFieldBehaviorAnnotation
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRequiredFieldBehaviorJSONNameCustom adds the requiredFieldBehaviorJSONNameCustom to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRequiredFieldBehaviorJSONNameCustom(requiredFieldBehaviorJSONNameCustom string) *ABitOfEverythingServiceExistsParams {
-	o.SetRequiredFieldBehaviorJSONNameCustom(requiredFieldBehaviorJSONNameCustom)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRequiredFieldBehaviorJSONNameCustom adds the requiredFieldBehaviorJsonNameCustom to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRequiredFieldBehaviorJSONNameCustom(requiredFieldBehaviorJSONNameCustom string) {
-	o.RequiredFieldBehaviorJSONNameCustom = requiredFieldBehaviorJSONNameCustom
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithRequiredFieldSchemaJSONNameCustom adds the requiredFieldSchemaJSONNameCustom to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithRequiredFieldSchemaJSONNameCustom(requiredFieldSchemaJSONNameCustom string) *ABitOfEverythingServiceExistsParams {
-	o.SetRequiredFieldSchemaJSONNameCustom(requiredFieldSchemaJSONNameCustom)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetRequiredFieldSchemaJSONNameCustom adds the requiredFieldSchemaJsonNameCustom to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetRequiredFieldSchemaJSONNameCustom(requiredFieldSchemaJSONNameCustom string) {
-	o.RequiredFieldSchemaJSONNameCustom = requiredFieldSchemaJSONNameCustom
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSfixed32Value adds the sfixed32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSfixed32Value(sfixed32Value *int32) *ABitOfEverythingServiceExistsParams {
-	o.SetSfixed32Value(sfixed32Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSfixed32Value adds the sfixed32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSfixed32Value(sfixed32Value *int32) {
-	o.Sfixed32Value = sfixed32Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSfixed64Value adds the sfixed64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSfixed64Value(sfixed64Value *string) *ABitOfEverythingServiceExistsParams {
-	o.SetSfixed64Value(sfixed64Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSfixed64Value adds the sfixed64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSfixed64Value(sfixed64Value *string) {
-	o.Sfixed64Value = sfixed64Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSingleNestedAmount adds the singleNestedAmount to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSingleNestedAmount(singleNestedAmount *int64) *ABitOfEverythingServiceExistsParams {
-	o.SetSingleNestedAmount(singleNestedAmount)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSingleNestedAmount adds the singleNestedAmount to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSingleNestedAmount(singleNestedAmount *int64) {
-	o.SingleNestedAmount = singleNestedAmount
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSingleNestedName adds the singleNestedName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSingleNestedName(singleNestedName *string) *ABitOfEverythingServiceExistsParams {
-	o.SetSingleNestedName(singleNestedName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSingleNestedName adds the singleNestedName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSingleNestedName(singleNestedName *string) {
-	o.SingleNestedName = singleNestedName
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSingleNestedOk adds the singleNestedOk to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSingleNestedOk(singleNestedOk *string) *ABitOfEverythingServiceExistsParams {
-	o.SetSingleNestedOk(singleNestedOk)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSingleNestedOk adds the singleNestedOk to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSingleNestedOk(singleNestedOk *string) {
-	o.SingleNestedOk = singleNestedOk
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSint32Value adds the sint32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSint32Value(sint32Value *int32) *ABitOfEverythingServiceExistsParams {
-	o.SetSint32Value(sint32Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSint32Value adds the sint32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSint32Value(sint32Value *int32) {
-	o.Sint32Value = sint32Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithSint64Value adds the sint64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithSint64Value(sint64Value *string) *ABitOfEverythingServiceExistsParams {
-	o.SetSint64Value(sint64Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetSint64Value adds the sint64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetSint64Value(sint64Value *string) {
-	o.Sint64Value = sint64Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStringValue adds the stringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithStringValue(stringValue *string) *ABitOfEverythingServiceExistsParams {
-	o.SetStringValue(stringValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStringValue adds the stringValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetStringValue(stringValue *string) {
-	o.StringValue = stringValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithTimestampValue adds the timestampValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTimestampValue(timestampValue *strfmt.DateTime) *ABitOfEverythingServiceExistsParams {
-	o.SetTimestampValue(timestampValue)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimestampValue adds the timestampValue to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTimestampValue(timestampValue *strfmt.DateTime) {
-	o.TimestampValue = timestampValue
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithTrailingBoth adds the trailingBoth to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTrailingBoth(trailingBoth *string) *ABitOfEverythingServiceExistsParams {
-	o.SetTrailingBoth(trailingBoth)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTrailingBoth adds the trailingBoth to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTrailingBoth(trailingBoth *string) {
-	o.TrailingBoth = trailingBoth
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithTrailingMultiline adds the trailingMultiline to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTrailingMultiline(trailingMultiline *string) *ABitOfEverythingServiceExistsParams {
-	o.SetTrailingMultiline(trailingMultiline)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTrailingMultiline adds the trailingMultiline to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTrailingMultiline(trailingMultiline *string) {
-	o.TrailingMultiline = trailingMultiline
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithTrailingOnly adds the trailingOnly to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTrailingOnly(trailingOnly *string) *ABitOfEverythingServiceExistsParams {
-	o.SetTrailingOnly(trailingOnly)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTrailingOnly adds the trailingOnly to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTrailingOnly(trailingOnly *string) {
-	o.TrailingOnly = trailingOnly
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithTrailingOnlyDot adds the trailingOnlyDot to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithTrailingOnlyDot(trailingOnlyDot *string) *ABitOfEverythingServiceExistsParams {
-	o.SetTrailingOnlyDot(trailingOnlyDot)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTrailingOnlyDot adds the trailingOnlyDot to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetTrailingOnlyDot(trailingOnlyDot *string) {
-	o.TrailingOnlyDot = trailingOnlyDot
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithUint32Value adds the uint32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithUint32Value(uint32Value *int64) *ABitOfEverythingServiceExistsParams {
-	o.SetUint32Value(uint32Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUint32Value adds the uint32Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetUint32Value(uint32Value *int64) {
-	o.Uint32Value = uint32Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithUint64Value adds the uint64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithUint64Value(uint64Value *string) *ABitOfEverythingServiceExistsParams {
-	o.SetUint64Value(uint64Value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUint64Value adds the uint64Value to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetUint64Value(uint64Value *string) {
-	o.Uint64Value = uint64Value
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithUUIDName adds the uuidName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithUUIDName(uuidName strfmt.UUID) *ABitOfEverythingServiceExistsParams {
-	o.SetUUIDName(uuidName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUUIDName adds the uuidName to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetUUIDName(uuidName strfmt.UUID) {
-	o.UUIDName = uuidName
+	_ = "STUB: not implemented"
+	return
+
+	// WithUuids adds the uuids to the a bit of everything service exists params
 }
 
-// WithUuids adds the uuids to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) WithUuids(uuids []strfmt.UUID) *ABitOfEverythingServiceExistsParams {
-	o.SetUuids(uuids)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUuids adds the uuids to the a bit of everything service exists params
 func (o *ABitOfEverythingServiceExistsParams) SetUuids(uuids []strfmt.UUID) {
-	o.Uuids = uuids
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceExistsParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if o.BoolValue != nil {
-
-		// query param boolValue
-		var qrBoolValue bool
-
-		if o.BoolValue != nil {
-			qrBoolValue = *o.BoolValue
-		}
-		qBoolValue := swag.FormatBool(qrBoolValue)
-		if qBoolValue != "" {
-
-			if err := r.SetQueryParam("boolValue", qBoolValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.BytesValue != nil {
-
-		// query param bytesValue
-		var qrBytesValue strfmt.Base64
-
-		if o.BytesValue != nil {
-			qrBytesValue = *o.BytesValue
-		}
-		qBytesValue := qrBytesValue.String()
-		if qBytesValue != "" {
-
-			if err := r.SetQueryParam("bytesValue", qBytesValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	// query param doubleValue
-	qrDoubleValue := o.DoubleValue
-	qDoubleValue := swag.FormatFloat64(qrDoubleValue)
-	if qDoubleValue != "" {
-
-		if err := r.SetQueryParam("doubleValue", qDoubleValue); err != nil {
-			return err
-		}
-	}
-
-	if o.EnumValue != nil {
-
-		// query param enumValue
-		var qrEnumValue string
-
-		if o.EnumValue != nil {
-			qrEnumValue = *o.EnumValue
-		}
-		qEnumValue := qrEnumValue
-		if qEnumValue != "" {
-
-			if err := r.SetQueryParam("enumValue", qEnumValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.EnumValueAnnotation != nil {
-
-		// query param enumValueAnnotation
-		var qrEnumValueAnnotation string
-
-		if o.EnumValueAnnotation != nil {
-			qrEnumValueAnnotation = *o.EnumValueAnnotation
-		}
-		qEnumValueAnnotation := qrEnumValueAnnotation
-		if qEnumValueAnnotation != "" {
-
-			if err := r.SetQueryParam("enumValueAnnotation", qEnumValueAnnotation); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Fixed32Value != nil {
-
-		// query param fixed32Value
-		var qrFixed32Value int64
-
-		if o.Fixed32Value != nil {
-			qrFixed32Value = *o.Fixed32Value
-		}
-		qFixed32Value := swag.FormatInt64(qrFixed32Value)
-		if qFixed32Value != "" {
-
-			if err := r.SetQueryParam("fixed32Value", qFixed32Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Fixed64Value != nil {
-
-		// query param fixed64Value
-		var qrFixed64Value string
-
-		if o.Fixed64Value != nil {
-			qrFixed64Value = *o.Fixed64Value
-		}
-		qFixed64Value := qrFixed64Value
-		if qFixed64Value != "" {
-
-			if err := r.SetQueryParam("fixed64Value", qFixed64Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	// query param floatValue
-	qrFloatValue := o.FloatValue
-	qFloatValue := swag.FormatFloat32(qrFloatValue)
-	if qFloatValue != "" {
-
-		if err := r.SetQueryParam("floatValue", qFloatValue); err != nil {
-			return err
-		}
-	}
-
-	if o.Int32Value != nil {
-
-		// query param int32Value
-		var qrInt32Value int32
-
-		if o.Int32Value != nil {
-			qrInt32Value = *o.Int32Value
-		}
-		qInt32Value := swag.FormatInt32(qrInt32Value)
-		if qInt32Value != "" {
-
-			if err := r.SetQueryParam("int32Value", qInt32Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Int64OverrideType != nil {
-
-		// query param int64OverrideType
-		var qrInt64OverrideType string
-
-		if o.Int64OverrideType != nil {
-			qrInt64OverrideType = *o.Int64OverrideType
-		}
-		qInt64OverrideType := qrInt64OverrideType
-		if qInt64OverrideType != "" {
-
-			if err := r.SetQueryParam("int64OverrideType", qInt64OverrideType); err != nil {
-				return err
-			}
-		}
-	}
-
-	// query param int64Value
-	qrInt64Value := o.Int64Value
-	qInt64Value := qrInt64Value
-	if qInt64Value != "" {
-
-		if err := r.SetQueryParam("int64Value", qInt64Value); err != nil {
-			return err
-		}
-	}
-
-	if o.MapValue != nil {
-
-		// query param mapValue
-		var qrMapValue string
-
-		if o.MapValue != nil {
-			qrMapValue = *o.MapValue
-		}
-		qMapValue := qrMapValue
-		if qMapValue != "" {
-
-			if err := r.SetQueryParam("mapValue", qMapValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.MappedNestedValue != nil {
-
-		// query param mappedNestedValue
-		var qrMappedNestedValue string
-
-		if o.MappedNestedValue != nil {
-			qrMappedNestedValue = *o.MappedNestedValue
-		}
-		qMappedNestedValue := qrMappedNestedValue
-		if qMappedNestedValue != "" {
-
-			if err := r.SetQueryParam("mappedNestedValue", qMappedNestedValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.MappedStringValue != nil {
-
-		// query param mappedStringValue
-		var qrMappedStringValue string
-
-		if o.MappedStringValue != nil {
-			qrMappedStringValue = *o.MappedStringValue
-		}
-		qMappedStringValue := qrMappedStringValue
-		if qMappedStringValue != "" {
-
-			if err := r.SetQueryParam("mappedStringValue", qMappedStringValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NestedAnnotationAmount != nil {
-
-		// query param nestedAnnotation.amount
-		var qrNestedAnnotationAmount int64
-
-		if o.NestedAnnotationAmount != nil {
-			qrNestedAnnotationAmount = *o.NestedAnnotationAmount
-		}
-		qNestedAnnotationAmount := swag.FormatInt64(qrNestedAnnotationAmount)
-		if qNestedAnnotationAmount != "" {
-
-			if err := r.SetQueryParam("nestedAnnotation.amount", qNestedAnnotationAmount); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NestedAnnotationName != nil {
-
-		// query param nestedAnnotation.name
-		var qrNestedAnnotationName string
-
-		if o.NestedAnnotationName != nil {
-			qrNestedAnnotationName = *o.NestedAnnotationName
-		}
-		qNestedAnnotationName := qrNestedAnnotationName
-		if qNestedAnnotationName != "" {
-
-			if err := r.SetQueryParam("nestedAnnotation.name", qNestedAnnotationName); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NestedAnnotationOk != nil {
-
-		// query param nestedAnnotation.ok
-		var qrNestedAnnotationOk string
-
-		if o.NestedAnnotationOk != nil {
-			qrNestedAnnotationOk = *o.NestedAnnotationOk
-		}
-		qNestedAnnotationOk := qrNestedAnnotationOk
-		if qNestedAnnotationOk != "" {
-
-			if err := r.SetQueryParam("nestedAnnotation.ok", qNestedAnnotationOk); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NestedPathEnumValue != nil {
-
-		// query param nestedPathEnumValue
-		var qrNestedPathEnumValue string
-
-		if o.NestedPathEnumValue != nil {
-			qrNestedPathEnumValue = *o.NestedPathEnumValue
-		}
-		qNestedPathEnumValue := qrNestedPathEnumValue
-		if qNestedPathEnumValue != "" {
-
-			if err := r.SetQueryParam("nestedPathEnumValue", qNestedPathEnumValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NonConventionalNameValue != nil {
-
-		// query param nonConventionalNameValue
-		var qrNonConventionalNameValue string
-
-		if o.NonConventionalNameValue != nil {
-			qrNonConventionalNameValue = *o.NonConventionalNameValue
-		}
-		qNonConventionalNameValue := qrNonConventionalNameValue
-		if qNonConventionalNameValue != "" {
-
-			if err := r.SetQueryParam("nonConventionalNameValue", qNonConventionalNameValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.OneofEmpty != nil {
-
-		// query param oneofEmpty
-		var qrOneofEmpty string
-
-		if o.OneofEmpty != nil {
-			qrOneofEmpty = *o.OneofEmpty
-		}
-		qOneofEmpty := qrOneofEmpty
-		if qOneofEmpty != "" {
-
-			if err := r.SetQueryParam("oneofEmpty", qOneofEmpty); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.OneofString != nil {
-
-		// query param oneofString
-		var qrOneofString string
-
-		if o.OneofString != nil {
-			qrOneofString = *o.OneofString
-		}
-		qOneofString := qrOneofString
-		if qOneofString != "" {
-
-			if err := r.SetQueryParam("oneofString", qOneofString); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.OptionalStringField != nil {
-
-		// query param optionalStringField
-		var qrOptionalStringField string
-
-		if o.OptionalStringField != nil {
-			qrOptionalStringField = *o.OptionalStringField
-		}
-		qOptionalStringField := qrOptionalStringField
-		if qOptionalStringField != "" {
-
-			if err := r.SetQueryParam("optionalStringField", qOptionalStringField); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.OptionalStringValue != nil {
-
-		// query param optionalStringValue
-		var qrOptionalStringValue string
-
-		if o.OptionalStringValue != nil {
-			qrOptionalStringValue = *o.OptionalStringValue
-		}
-		qOptionalStringValue := qrOptionalStringValue
-		if qOptionalStringValue != "" {
-
-			if err := r.SetQueryParam("optionalStringValue", qOptionalStringValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-		// query param outputOnlyStringViaFieldBehaviorAnnotation
-		var qrOutputOnlyStringViaFieldBehaviorAnnotation string
-
-		if o.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-			qrOutputOnlyStringViaFieldBehaviorAnnotation = *o.OutputOnlyStringViaFieldBehaviorAnnotation
-		}
-		qOutputOnlyStringViaFieldBehaviorAnnotation := qrOutputOnlyStringViaFieldBehaviorAnnotation
-		if qOutputOnlyStringViaFieldBehaviorAnnotation != "" {
-
-			if err := r.SetQueryParam("outputOnlyStringViaFieldBehaviorAnnotation", qOutputOnlyStringViaFieldBehaviorAnnotation); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.PathEnumValue != nil {
-
-		// query param pathEnumValue
-		var qrPathEnumValue string
-
-		if o.PathEnumValue != nil {
-			qrPathEnumValue = *o.PathEnumValue
-		}
-		qPathEnumValue := qrPathEnumValue
-		if qPathEnumValue != "" {
-
-			if err := r.SetQueryParam("pathEnumValue", qPathEnumValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.ProductID != nil {
-
-		// binding items for productId
-		joinedProductID := o.bindParamProductID(reg)
-
-		// query array param productId
-		if err := r.SetQueryParam("productId", joinedProductID...); err != nil {
-			return err
-		}
-	}
-
-	if o.RepeatedEnumAnnotation != nil {
-
-		// binding items for repeatedEnumAnnotation
-		joinedRepeatedEnumAnnotation := o.bindParamRepeatedEnumAnnotation(reg)
-
-		// query array param repeatedEnumAnnotation
-		if err := r.SetQueryParam("repeatedEnumAnnotation", joinedRepeatedEnumAnnotation...); err != nil {
-			return err
-		}
-	}
-
-	if o.RepeatedEnumValue != nil {
-
-		// binding items for repeatedEnumValue
-		joinedRepeatedEnumValue := o.bindParamRepeatedEnumValue(reg)
-
-		// query array param repeatedEnumValue
-		if err := r.SetQueryParam("repeatedEnumValue", joinedRepeatedEnumValue...); err != nil {
-			return err
-		}
-	}
-
-	if o.RepeatedStringAnnotation != nil {
-
-		// binding items for repeatedStringAnnotation
-		joinedRepeatedStringAnnotation := o.bindParamRepeatedStringAnnotation(reg)
-
-		// query array param repeatedStringAnnotation
-		if err := r.SetQueryParam("repeatedStringAnnotation", joinedRepeatedStringAnnotation...); err != nil {
-			return err
-		}
-	}
-
-	if o.RepeatedStringValue != nil {
-
-		// binding items for repeatedStringValue
-		joinedRepeatedStringValue := o.bindParamRepeatedStringValue(reg)
-
-		// query array param repeatedStringValue
-		if err := r.SetQueryParam("repeatedStringValue", joinedRepeatedStringValue...); err != nil {
-			return err
-		}
-	}
-
-	// query param requiredStringField1
-	qrRequiredStringField1 := o.RequiredStringField1
-	qRequiredStringField1 := qrRequiredStringField1
-	if qRequiredStringField1 != "" {
-
-		if err := r.SetQueryParam("requiredStringField1", qRequiredStringField1); err != nil {
-			return err
-		}
-	}
-
-	// query param requiredStringField2
-	qrRequiredStringField2 := o.RequiredStringField2
-	qRequiredStringField2 := qrRequiredStringField2
-	if qRequiredStringField2 != "" {
-
-		if err := r.SetQueryParam("requiredStringField2", qRequiredStringField2); err != nil {
-			return err
-		}
-	}
-
-	// query param requiredStringViaFieldBehaviorAnnotation
-	qrRequiredStringViaFieldBehaviorAnnotation := o.RequiredStringViaFieldBehaviorAnnotation
-	qRequiredStringViaFieldBehaviorAnnotation := qrRequiredStringViaFieldBehaviorAnnotation
-	if qRequiredStringViaFieldBehaviorAnnotation != "" {
-
-		if err := r.SetQueryParam("requiredStringViaFieldBehaviorAnnotation", qRequiredStringViaFieldBehaviorAnnotation); err != nil {
-			return err
-		}
-	}
-
-	// query param required_field_behavior_json_name_custom
-	qrRequiredFieldBehaviorJSONNameCustom := o.RequiredFieldBehaviorJSONNameCustom
-	qRequiredFieldBehaviorJSONNameCustom := qrRequiredFieldBehaviorJSONNameCustom
-	if qRequiredFieldBehaviorJSONNameCustom != "" {
-
-		if err := r.SetQueryParam("required_field_behavior_json_name_custom", qRequiredFieldBehaviorJSONNameCustom); err != nil {
-			return err
-		}
-	}
-
-	// query param required_field_schema_json_name_custom
-	qrRequiredFieldSchemaJSONNameCustom := o.RequiredFieldSchemaJSONNameCustom
-	qRequiredFieldSchemaJSONNameCustom := qrRequiredFieldSchemaJSONNameCustom
-	if qRequiredFieldSchemaJSONNameCustom != "" {
-
-		if err := r.SetQueryParam("required_field_schema_json_name_custom", qRequiredFieldSchemaJSONNameCustom); err != nil {
-			return err
-		}
-	}
-
-	if o.Sfixed32Value != nil {
-
-		// query param sfixed32Value
-		var qrSfixed32Value int32
-
-		if o.Sfixed32Value != nil {
-			qrSfixed32Value = *o.Sfixed32Value
-		}
-		qSfixed32Value := swag.FormatInt32(qrSfixed32Value)
-		if qSfixed32Value != "" {
-
-			if err := r.SetQueryParam("sfixed32Value", qSfixed32Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Sfixed64Value != nil {
-
-		// query param sfixed64Value
-		var qrSfixed64Value string
-
-		if o.Sfixed64Value != nil {
-			qrSfixed64Value = *o.Sfixed64Value
-		}
-		qSfixed64Value := qrSfixed64Value
-		if qSfixed64Value != "" {
-
-			if err := r.SetQueryParam("sfixed64Value", qSfixed64Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.SingleNestedAmount != nil {
-
-		// query param singleNested.amount
-		var qrSingleNestedAmount int64
-
-		if o.SingleNestedAmount != nil {
-			qrSingleNestedAmount = *o.SingleNestedAmount
-		}
-		qSingleNestedAmount := swag.FormatInt64(qrSingleNestedAmount)
-		if qSingleNestedAmount != "" {
-
-			if err := r.SetQueryParam("singleNested.amount", qSingleNestedAmount); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.SingleNestedName != nil {
-
-		// query param singleNested.name
-		var qrSingleNestedName string
-
-		if o.SingleNestedName != nil {
-			qrSingleNestedName = *o.SingleNestedName
-		}
-		qSingleNestedName := qrSingleNestedName
-		if qSingleNestedName != "" {
-
-			if err := r.SetQueryParam("singleNested.name", qSingleNestedName); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.SingleNestedOk != nil {
-
-		// query param singleNested.ok
-		var qrSingleNestedOk string
-
-		if o.SingleNestedOk != nil {
-			qrSingleNestedOk = *o.SingleNestedOk
-		}
-		qSingleNestedOk := qrSingleNestedOk
-		if qSingleNestedOk != "" {
-
-			if err := r.SetQueryParam("singleNested.ok", qSingleNestedOk); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Sint32Value != nil {
-
-		// query param sint32Value
-		var qrSint32Value int32
-
-		if o.Sint32Value != nil {
-			qrSint32Value = *o.Sint32Value
-		}
-		qSint32Value := swag.FormatInt32(qrSint32Value)
-		if qSint32Value != "" {
-
-			if err := r.SetQueryParam("sint32Value", qSint32Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Sint64Value != nil {
-
-		// query param sint64Value
-		var qrSint64Value string
-
-		if o.Sint64Value != nil {
-			qrSint64Value = *o.Sint64Value
-		}
-		qSint64Value := qrSint64Value
-		if qSint64Value != "" {
-
-			if err := r.SetQueryParam("sint64Value", qSint64Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StringValue != nil {
-
-		// query param stringValue
-		var qrStringValue string
-
-		if o.StringValue != nil {
-			qrStringValue = *o.StringValue
-		}
-		qStringValue := qrStringValue
-		if qStringValue != "" {
-
-			if err := r.SetQueryParam("stringValue", qStringValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.TimestampValue != nil {
-
-		// query param timestampValue
-		var qrTimestampValue strfmt.DateTime
-
-		if o.TimestampValue != nil {
-			qrTimestampValue = *o.TimestampValue
-		}
-		qTimestampValue := qrTimestampValue.String()
-		if qTimestampValue != "" {
-
-			if err := r.SetQueryParam("timestampValue", qTimestampValue); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.TrailingBoth != nil {
-
-		// query param trailingBoth
-		var qrTrailingBoth string
-
-		if o.TrailingBoth != nil {
-			qrTrailingBoth = *o.TrailingBoth
-		}
-		qTrailingBoth := qrTrailingBoth
-		if qTrailingBoth != "" {
-
-			if err := r.SetQueryParam("trailingBoth", qTrailingBoth); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.TrailingMultiline != nil {
-
-		// query param trailingMultiline
-		var qrTrailingMultiline string
-
-		if o.TrailingMultiline != nil {
-			qrTrailingMultiline = *o.TrailingMultiline
-		}
-		qTrailingMultiline := qrTrailingMultiline
-		if qTrailingMultiline != "" {
-
-			if err := r.SetQueryParam("trailingMultiline", qTrailingMultiline); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.TrailingOnly != nil {
-
-		// query param trailingOnly
-		var qrTrailingOnly string
-
-		if o.TrailingOnly != nil {
-			qrTrailingOnly = *o.TrailingOnly
-		}
-		qTrailingOnly := qrTrailingOnly
-		if qTrailingOnly != "" {
-
-			if err := r.SetQueryParam("trailingOnly", qTrailingOnly); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.TrailingOnlyDot != nil {
-
-		// query param trailingOnlyDot
-		var qrTrailingOnlyDot string
-
-		if o.TrailingOnlyDot != nil {
-			qrTrailingOnlyDot = *o.TrailingOnlyDot
-		}
-		qTrailingOnlyDot := qrTrailingOnlyDot
-		if qTrailingOnlyDot != "" {
-
-			if err := r.SetQueryParam("trailingOnlyDot", qTrailingOnlyDot); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Uint32Value != nil {
-
-		// query param uint32Value
-		var qrUint32Value int64
-
-		if o.Uint32Value != nil {
-			qrUint32Value = *o.Uint32Value
-		}
-		qUint32Value := swag.FormatInt64(qrUint32Value)
-		if qUint32Value != "" {
-
-			if err := r.SetQueryParam("uint32Value", qUint32Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Uint64Value != nil {
-
-		// query param uint64Value
-		var qrUint64Value string
-
-		if o.Uint64Value != nil {
-			qrUint64Value = *o.Uint64Value
-		}
-		qUint64Value := qrUint64Value
-		if qUint64Value != "" {
-
-			if err := r.SetQueryParam("uint64Value", qUint64Value); err != nil {
-				return err
-			}
-		}
-	}
-
-	// path param uuidName
-	if err := r.SetPathParam("uuidName", o.UUIDName.String()); err != nil {
-		return err
-	}
-
-	if o.Uuids != nil {
-
-		// binding items for uuids
-		joinedUuids := o.bindParamUuids(reg)
-
-		// query array param uuids
-		if err := r.SetQueryParam("uuids", joinedUuids...); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// query param boolValue
+
+// query param bytesValue
+
+// query param doubleValue
+
+// query param enumValue
+
+// query param enumValueAnnotation
+
+// query param fixed32Value
+
+// query param fixed64Value
+
+// query param floatValue
+
+// query param int32Value
+
+// query param int64OverrideType
+
+// query param int64Value
+
+// query param mapValue
+
+// query param mappedNestedValue
+
+// query param mappedStringValue
+
+// query param nestedAnnotation.amount
+
+// query param nestedAnnotation.name
+
+// query param nestedAnnotation.ok
+
+// query param nestedPathEnumValue
+
+// query param nonConventionalNameValue
+
+// query param oneofEmpty
+
+// query param oneofString
+
+// query param optionalStringField
+
+// query param optionalStringValue
+
+// query param outputOnlyStringViaFieldBehaviorAnnotation
+
+// query param pathEnumValue
+
+// binding items for productId
+
+// query array param productId
+
+// binding items for repeatedEnumAnnotation
+
+// query array param repeatedEnumAnnotation
+
+// binding items for repeatedEnumValue
+
+// query array param repeatedEnumValue
+
+// binding items for repeatedStringAnnotation
+
+// query array param repeatedStringAnnotation
+
+// binding items for repeatedStringValue
+
+// query array param repeatedStringValue
+
+// query param requiredStringField1
+
+// query param requiredStringField2
+
+// query param requiredStringViaFieldBehaviorAnnotation
+
+// query param required_field_behavior_json_name_custom
+
+// query param required_field_schema_json_name_custom
+
+// query param sfixed32Value
+
+// query param sfixed64Value
+
+// query param singleNested.amount
+
+// query param singleNested.name
+
+// query param singleNested.ok
+
+// query param sint32Value
+
+// query param sint64Value
+
+// query param stringValue
+
+// query param timestampValue
+
+// query param trailingBoth
+
+// query param trailingMultiline
+
+// query param trailingOnly
+
+// query param trailingOnlyDot
+
+// query param uint32Value
+
+// query param uint64Value
+
+// path param uuidName
+
+// binding items for uuids
+
+// query array param uuids
+
 // bindParamABitOfEverythingServiceExists binds the parameter productId
 func (o *ABitOfEverythingServiceExistsParams) bindParamProductID(formats strfmt.Registry) []string {
-	productIDIR := o.ProductID
-
-	var productIDIC []string
-	for _, productIDIIR := range productIDIR { // explode []string
-
-		productIDIIV := productIDIIR // string as string
-		productIDIC = append(productIDIC, productIDIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	productIDIS := swag.JoinByFormat(productIDIC, "multi")
-
-	return productIDIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []string
+
+// string as string
+
+// items.CollectionFormat: "multi"
 
 // bindParamABitOfEverythingServiceExists binds the parameter repeatedEnumAnnotation
 func (o *ABitOfEverythingServiceExistsParams) bindParamRepeatedEnumAnnotation(formats strfmt.Registry) []string {
-	repeatedEnumAnnotationIR := o.RepeatedEnumAnnotation
-
-	var repeatedEnumAnnotationIC []string
-	for _, repeatedEnumAnnotationIIR := range repeatedEnumAnnotationIR { // explode []string
-
-		repeatedEnumAnnotationIIV := repeatedEnumAnnotationIIR // string as string
-		repeatedEnumAnnotationIC = append(repeatedEnumAnnotationIC, repeatedEnumAnnotationIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	repeatedEnumAnnotationIS := swag.JoinByFormat(repeatedEnumAnnotationIC, "multi")
-
-	return repeatedEnumAnnotationIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []string
+
+// string as string
+
+// items.CollectionFormat: "multi"
 
 // bindParamABitOfEverythingServiceExists binds the parameter repeatedEnumValue
 func (o *ABitOfEverythingServiceExistsParams) bindParamRepeatedEnumValue(formats strfmt.Registry) []string {
-	repeatedEnumValueIR := o.RepeatedEnumValue
-
-	var repeatedEnumValueIC []string
-	for _, repeatedEnumValueIIR := range repeatedEnumValueIR { // explode []string
-
-		repeatedEnumValueIIV := repeatedEnumValueIIR // string as string
-		repeatedEnumValueIC = append(repeatedEnumValueIC, repeatedEnumValueIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	repeatedEnumValueIS := swag.JoinByFormat(repeatedEnumValueIC, "multi")
-
-	return repeatedEnumValueIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []string
+
+// string as string
+
+// items.CollectionFormat: "multi"
 
 // bindParamABitOfEverythingServiceExists binds the parameter repeatedStringAnnotation
 func (o *ABitOfEverythingServiceExistsParams) bindParamRepeatedStringAnnotation(formats strfmt.Registry) []string {
-	repeatedStringAnnotationIR := o.RepeatedStringAnnotation
-
-	var repeatedStringAnnotationIC []string
-	for _, repeatedStringAnnotationIIR := range repeatedStringAnnotationIR { // explode []string
-
-		repeatedStringAnnotationIIV := repeatedStringAnnotationIIR // string as string
-		repeatedStringAnnotationIC = append(repeatedStringAnnotationIC, repeatedStringAnnotationIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	repeatedStringAnnotationIS := swag.JoinByFormat(repeatedStringAnnotationIC, "multi")
-
-	return repeatedStringAnnotationIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []string
+
+// string as string
+
+// items.CollectionFormat: "multi"
 
 // bindParamABitOfEverythingServiceExists binds the parameter repeatedStringValue
 func (o *ABitOfEverythingServiceExistsParams) bindParamRepeatedStringValue(formats strfmt.Registry) []string {
-	repeatedStringValueIR := o.RepeatedStringValue
-
-	var repeatedStringValueIC []string
-	for _, repeatedStringValueIIR := range repeatedStringValueIR { // explode []string
-
-		repeatedStringValueIIV := repeatedStringValueIIR // string as string
-		repeatedStringValueIC = append(repeatedStringValueIC, repeatedStringValueIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	repeatedStringValueIS := swag.JoinByFormat(repeatedStringValueIC, "multi")
-
-	return repeatedStringValueIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []string
+
+// string as string
+
+// items.CollectionFormat: "multi"
 
 // bindParamABitOfEverythingServiceExists binds the parameter uuids
 func (o *ABitOfEverythingServiceExistsParams) bindParamUuids(formats strfmt.Registry) []string {
-	uuidsIR := o.Uuids
-
-	var uuidsIC []string
-	for _, uuidsIIR := range uuidsIR { // explode []strfmt.UUID
-
-		uuidsIIV := uuidsIIR.String() // strfmt.UUID as string
-		uuidsIC = append(uuidsIC, uuidsIIV)
-	}
-
-	// items.CollectionFormat: "multi"
-	uuidsIS := swag.JoinByFormat(uuidsIC, "multi")
-
-	return uuidsIS
+	_ = "STUB: not implemented"
+	return nil
 }
+
+// explode []strfmt.UUID
+
+// strfmt.UUID as string
+
+// items.CollectionFormat: "multi"

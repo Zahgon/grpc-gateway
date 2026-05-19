@@ -12,7 +12,6 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	structpb "google.golang.org/protobuf/types/known/structpb"
-	reflect "reflect"
 )
 
 const (
@@ -52,26 +51,23 @@ var (
 	}
 )
 
-func (x Scheme) Enum() *Scheme {
-	p := new(Scheme)
-	*p = x
-	return p
-}
+func (x Scheme) Enum() *Scheme { _ = "STUB: not implemented"; return nil }
 
-func (x Scheme) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x Scheme) String() string { _ = "STUB: not implemented"; return "" }
 
 func (Scheme) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (Scheme) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x Scheme) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // `Type` is a supported HTTP header type.
@@ -104,26 +100,23 @@ var (
 	}
 )
 
-func (x HeaderParameter_Type) Enum() *HeaderParameter_Type {
-	p := new(HeaderParameter_Type)
-	*p = x
-	return p
-}
+func (x HeaderParameter_Type) Enum() *HeaderParameter_Type { _ = "STUB: not implemented"; return nil }
 
-func (x HeaderParameter_Type) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x HeaderParameter_Type) String() string { _ = "STUB: not implemented"; return "" }
 
 func (HeaderParameter_Type) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[1].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (HeaderParameter_Type) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[1]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x HeaderParameter_Type) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type JSONSchema_JSONSchemaSimpleTypes int32
@@ -164,25 +157,25 @@ var (
 )
 
 func (x JSONSchema_JSONSchemaSimpleTypes) Enum() *JSONSchema_JSONSchemaSimpleTypes {
-	p := new(JSONSchema_JSONSchemaSimpleTypes)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x JSONSchema_JSONSchemaSimpleTypes) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x JSONSchema_JSONSchemaSimpleTypes) String() string { _ = "STUB: not implemented"; return "" }
 
 func (JSONSchema_JSONSchemaSimpleTypes) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[2].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (JSONSchema_JSONSchemaSimpleTypes) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[2]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x JSONSchema_JSONSchemaSimpleTypes) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // The type of the security scheme. Valid values are "basic",
@@ -212,26 +205,23 @@ var (
 	}
 )
 
-func (x SecurityScheme_Type) Enum() *SecurityScheme_Type {
-	p := new(SecurityScheme_Type)
-	*p = x
-	return p
-}
+func (x SecurityScheme_Type) Enum() *SecurityScheme_Type { _ = "STUB: not implemented"; return nil }
 
-func (x SecurityScheme_Type) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x SecurityScheme_Type) String() string { _ = "STUB: not implemented"; return "" }
 
 func (SecurityScheme_Type) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[3].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (SecurityScheme_Type) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[3]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x SecurityScheme_Type) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // The location of the API key. Valid values are "query" or "header".
@@ -257,26 +247,23 @@ var (
 	}
 )
 
-func (x SecurityScheme_In) Enum() *SecurityScheme_In {
-	p := new(SecurityScheme_In)
-	*p = x
-	return p
-}
+func (x SecurityScheme_In) Enum() *SecurityScheme_In { _ = "STUB: not implemented"; return nil }
 
-func (x SecurityScheme_In) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x SecurityScheme_In) String() string { _ = "STUB: not implemented"; return "" }
 
 func (SecurityScheme_In) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[4].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (SecurityScheme_In) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[4]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x SecurityScheme_In) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // The flow used by the OAuth2 security scheme. Valid values are
@@ -309,26 +296,23 @@ var (
 	}
 )
 
-func (x SecurityScheme_Flow) Enum() *SecurityScheme_Flow {
-	p := new(SecurityScheme_Flow)
-	*p = x
-	return p
-}
+func (x SecurityScheme_Flow) Enum() *SecurityScheme_Flow { _ = "STUB: not implemented"; return nil }
 
-func (x SecurityScheme_Flow) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x SecurityScheme_Flow) String() string { _ = "STUB: not implemented"; return "" }
 
 func (SecurityScheme_Flow) Descriptor() protoreflect.EnumDescriptor {
-	return file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[5].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (SecurityScheme_Flow) Type() protoreflect.EnumType {
-	return &file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes[5]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x SecurityScheme_Flow) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // `Swagger` is a representation of OpenAPI v2 specification's Swagger object.
@@ -375,210 +359,83 @@ type Swagger struct {
 	sizeCache                      protoimpl.SizeCache
 }
 
-func (x *Swagger) Reset() {
-	*x = Swagger{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Swagger) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Swagger) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Swagger) ProtoMessage() {}
+func (*Swagger) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Swagger) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Swagger) GetSwagger() string {
-	if x != nil {
-		return x.xxx_hidden_Swagger
-	}
-	return ""
-}
+func (x *Swagger) GetSwagger() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Swagger) GetInfo() *Info {
-	if x != nil {
-		return x.xxx_hidden_Info
-	}
-	return nil
-}
+func (x *Swagger) GetInfo() *Info { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetHost() string {
-	if x != nil {
-		return x.xxx_hidden_Host
-	}
-	return ""
-}
+func (x *Swagger) GetHost() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Swagger) GetBasePath() string {
-	if x != nil {
-		return x.xxx_hidden_BasePath
-	}
-	return ""
-}
+func (x *Swagger) GetBasePath() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Swagger) GetSchemes() []Scheme {
-	if x != nil {
-		return x.xxx_hidden_Schemes
-	}
-	return nil
-}
+func (x *Swagger) GetSchemes() []Scheme { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetConsumes() []string {
-	if x != nil {
-		return x.xxx_hidden_Consumes
-	}
-	return nil
-}
+func (x *Swagger) GetConsumes() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetProduces() []string {
-	if x != nil {
-		return x.xxx_hidden_Produces
-	}
-	return nil
-}
+func (x *Swagger) GetProduces() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetResponses() map[string]*Response {
-	if x != nil {
-		return x.xxx_hidden_Responses
-	}
-	return nil
-}
+func (x *Swagger) GetResponses() map[string]*Response { _ = "STUB: not implemented"; return nil }
 
 func (x *Swagger) GetSecurityDefinitions() *SecurityDefinitions {
-	if x != nil {
-		return x.xxx_hidden_SecurityDefinitions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *Swagger) GetSecurity() []*SecurityRequirement {
-	if x != nil {
-		if x.xxx_hidden_Security != nil {
-			return *x.xxx_hidden_Security
-		}
-	}
-	return nil
-}
+func (x *Swagger) GetSecurity() []*SecurityRequirement { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetTags() []*Tag {
-	if x != nil {
-		if x.xxx_hidden_Tags != nil {
-			return *x.xxx_hidden_Tags
-		}
-	}
-	return nil
-}
+func (x *Swagger) GetTags() []*Tag { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetExternalDocs() *ExternalDocumentation {
-	if x != nil {
-		return x.xxx_hidden_ExternalDocs
-	}
-	return nil
-}
+func (x *Swagger) GetExternalDocs() *ExternalDocumentation { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
-	return nil
-}
+func (x *Swagger) GetExtensions() map[string]*structpb.Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Swagger) SetSwagger(v string) {
-	x.xxx_hidden_Swagger = v
-}
+func (x *Swagger) SetSwagger(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetInfo(v *Info) {
-	x.xxx_hidden_Info = v
-}
+func (x *Swagger) SetInfo(v *Info) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetHost(v string) {
-	x.xxx_hidden_Host = v
-}
+func (x *Swagger) SetHost(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetBasePath(v string) {
-	x.xxx_hidden_BasePath = v
-}
+func (x *Swagger) SetBasePath(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetSchemes(v []Scheme) {
-	x.xxx_hidden_Schemes = v
-}
+func (x *Swagger) SetSchemes(v []Scheme) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetConsumes(v []string) {
-	x.xxx_hidden_Consumes = v
-}
+func (x *Swagger) SetConsumes(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetProduces(v []string) {
-	x.xxx_hidden_Produces = v
-}
+func (x *Swagger) SetProduces(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetResponses(v map[string]*Response) {
-	x.xxx_hidden_Responses = v
-}
+func (x *Swagger) SetResponses(v map[string]*Response) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetSecurityDefinitions(v *SecurityDefinitions) {
-	x.xxx_hidden_SecurityDefinitions = v
-}
+func (x *Swagger) SetSecurityDefinitions(v *SecurityDefinitions) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetSecurity(v []*SecurityRequirement) {
-	x.xxx_hidden_Security = &v
-}
+func (x *Swagger) SetSecurity(v []*SecurityRequirement) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetTags(v []*Tag) {
-	x.xxx_hidden_Tags = &v
-}
+func (x *Swagger) SetTags(v []*Tag) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetExternalDocs(v *ExternalDocumentation) {
-	x.xxx_hidden_ExternalDocs = v
-}
+func (x *Swagger) SetExternalDocs(v *ExternalDocumentation) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *Swagger) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) HasInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Info != nil
-}
+func (x *Swagger) HasInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Swagger) HasSecurityDefinitions() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_SecurityDefinitions != nil
-}
+func (x *Swagger) HasSecurityDefinitions() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Swagger) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExternalDocs != nil
-}
+func (x *Swagger) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Swagger) ClearInfo() {
-	x.xxx_hidden_Info = nil
-}
+func (x *Swagger) ClearInfo() { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) ClearSecurityDefinitions() {
-	x.xxx_hidden_SecurityDefinitions = nil
-}
+func (x *Swagger) ClearSecurityDefinitions() { _ = "STUB: not implemented"; return }
 
-func (x *Swagger) ClearExternalDocs() {
-	x.xxx_hidden_ExternalDocs = nil
-}
+func (x *Swagger) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Swagger_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -638,25 +495,7 @@ type Swagger_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 Swagger_builder) Build() *Swagger {
-	m0 := &Swagger{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Swagger = b.Swagger
-	x.xxx_hidden_Info = b.Info
-	x.xxx_hidden_Host = b.Host
-	x.xxx_hidden_BasePath = b.BasePath
-	x.xxx_hidden_Schemes = b.Schemes
-	x.xxx_hidden_Consumes = b.Consumes
-	x.xxx_hidden_Produces = b.Produces
-	x.xxx_hidden_Responses = b.Responses
-	x.xxx_hidden_SecurityDefinitions = b.SecurityDefinitions
-	x.xxx_hidden_Security = &b.Security
-	x.xxx_hidden_Tags = &b.Tags
-	x.xxx_hidden_ExternalDocs = b.ExternalDocs
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 Swagger_builder) Build() *Swagger { _ = "STUB: not implemented"; return nil }
 
 // `Operation` is a representation of OpenAPI v2 specification's Operation object.
 //
@@ -702,197 +541,79 @@ type Operation struct {
 	sizeCache               protoimpl.SizeCache
 }
 
-func (x *Operation) Reset() {
-	*x = Operation{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Operation) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Operation) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Operation) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Operation) ProtoMessage() {}
+func (*Operation) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Operation) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Operation) GetTags() []string {
-	if x != nil {
-		return x.xxx_hidden_Tags
-	}
-	return nil
-}
+func (x *Operation) GetTags() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetSummary() string {
-	if x != nil {
-		return x.xxx_hidden_Summary
-	}
-	return ""
-}
+func (x *Operation) GetSummary() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *Operation) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetExternalDocs() *ExternalDocumentation {
-	if x != nil {
-		return x.xxx_hidden_ExternalDocs
-	}
-	return nil
-}
+func (x *Operation) GetExternalDocs() *ExternalDocumentation { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetOperationId() string {
-	if x != nil {
-		return x.xxx_hidden_OperationId
-	}
-	return ""
-}
+func (x *Operation) GetOperationId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Operation) GetConsumes() []string {
-	if x != nil {
-		return x.xxx_hidden_Consumes
-	}
-	return nil
-}
+func (x *Operation) GetConsumes() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetProduces() []string {
-	if x != nil {
-		return x.xxx_hidden_Produces
-	}
-	return nil
-}
+func (x *Operation) GetProduces() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetResponses() map[string]*Response {
-	if x != nil {
-		return x.xxx_hidden_Responses
-	}
-	return nil
-}
+func (x *Operation) GetResponses() map[string]*Response { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetSchemes() []Scheme {
-	if x != nil {
-		return x.xxx_hidden_Schemes
-	}
-	return nil
-}
+func (x *Operation) GetSchemes() []Scheme { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) GetDeprecated() bool {
-	if x != nil {
-		return x.xxx_hidden_Deprecated
-	}
-	return false
-}
+func (x *Operation) GetDeprecated() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Operation) GetSecurity() []*SecurityRequirement {
-	if x != nil {
-		if x.xxx_hidden_Security != nil {
-			return *x.xxx_hidden_Security
-		}
-	}
-	return nil
-}
+func (x *Operation) GetSecurity() []*SecurityRequirement { _ = "STUB: not implemented"; return nil }
 
 func (x *Operation) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *Operation) GetParameters() *Parameters {
-	if x != nil {
-		return x.xxx_hidden_Parameters
-	}
-	return nil
-}
+func (x *Operation) GetParameters() *Parameters { _ = "STUB: not implemented"; return nil }
 
-func (x *Operation) SetTags(v []string) {
-	x.xxx_hidden_Tags = v
-}
+func (x *Operation) SetTags(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetSummary(v string) {
-	x.xxx_hidden_Summary = v
-}
+func (x *Operation) SetSummary(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *Operation) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetExternalDocs(v *ExternalDocumentation) {
-	x.xxx_hidden_ExternalDocs = v
-}
+func (x *Operation) SetExternalDocs(v *ExternalDocumentation) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetOperationId(v string) {
-	x.xxx_hidden_OperationId = v
-}
+func (x *Operation) SetOperationId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetConsumes(v []string) {
-	x.xxx_hidden_Consumes = v
-}
+func (x *Operation) SetConsumes(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetProduces(v []string) {
-	x.xxx_hidden_Produces = v
-}
+func (x *Operation) SetProduces(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetResponses(v map[string]*Response) {
-	x.xxx_hidden_Responses = v
-}
+func (x *Operation) SetResponses(v map[string]*Response) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetSchemes(v []Scheme) {
-	x.xxx_hidden_Schemes = v
-}
+func (x *Operation) SetSchemes(v []Scheme) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetDeprecated(v bool) {
-	x.xxx_hidden_Deprecated = v
-}
+func (x *Operation) SetDeprecated(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetSecurity(v []*SecurityRequirement) {
-	x.xxx_hidden_Security = &v
-}
+func (x *Operation) SetSecurity(v []*SecurityRequirement) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *Operation) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) SetParameters(v *Parameters) {
-	x.xxx_hidden_Parameters = v
-}
+func (x *Operation) SetParameters(v *Parameters) { _ = "STUB: not implemented"; return }
 
-func (x *Operation) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExternalDocs != nil
-}
+func (x *Operation) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Operation) HasParameters() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Parameters != nil
-}
+func (x *Operation) HasParameters() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Operation) ClearExternalDocs() {
-	x.xxx_hidden_ExternalDocs = nil
-}
+func (x *Operation) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
-func (x *Operation) ClearParameters() {
-	x.xxx_hidden_Parameters = nil
-}
+func (x *Operation) ClearParameters() { _ = "STUB: not implemented"; return }
 
 type Operation_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -947,25 +668,7 @@ type Operation_builder struct {
 	Parameters *Parameters
 }
 
-func (b0 Operation_builder) Build() *Operation {
-	m0 := &Operation{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Tags = b.Tags
-	x.xxx_hidden_Summary = b.Summary
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_ExternalDocs = b.ExternalDocs
-	x.xxx_hidden_OperationId = b.OperationId
-	x.xxx_hidden_Consumes = b.Consumes
-	x.xxx_hidden_Produces = b.Produces
-	x.xxx_hidden_Responses = b.Responses
-	x.xxx_hidden_Schemes = b.Schemes
-	x.xxx_hidden_Deprecated = b.Deprecated
-	x.xxx_hidden_Security = &b.Security
-	x.xxx_hidden_Extensions = b.Extensions
-	x.xxx_hidden_Parameters = b.Parameters
-	return m0
-}
+func (b0 Operation_builder) Build() *Operation { _ = "STUB: not implemented"; return nil }
 
 // `Parameters` is a representation of OpenAPI v2 specification's parameters object.
 // Note: This technically breaks compatibility with the OpenAPI 2 definition structure as we only
@@ -979,43 +682,20 @@ type Parameters struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *Parameters) Reset() {
-	*x = Parameters{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Parameters) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Parameters) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Parameters) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Parameters) ProtoMessage() {}
+func (*Parameters) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Parameters) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Parameters) GetHeaders() []*HeaderParameter {
-	if x != nil {
-		if x.xxx_hidden_Headers != nil {
-			return *x.xxx_hidden_Headers
-		}
-	}
-	return nil
-}
+func (x *Parameters) GetHeaders() []*HeaderParameter { _ = "STUB: not implemented"; return nil }
 
-func (x *Parameters) SetHeaders(v []*HeaderParameter) {
-	x.xxx_hidden_Headers = &v
-}
+func (x *Parameters) SetHeaders(v []*HeaderParameter) { _ = "STUB: not implemented"; return }
 
 type Parameters_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1025,13 +705,7 @@ type Parameters_builder struct {
 	Headers []*HeaderParameter
 }
 
-func (b0 Parameters_builder) Build() *Parameters {
-	m0 := &Parameters{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Headers = &b.Headers
-	return m0
-}
+func (b0 Parameters_builder) Build() *Parameters { _ = "STUB: not implemented"; return nil }
 
 // `HeaderParameter` a HTTP header parameter.
 // See: https://swagger.io/specification/v2/#parameter-object
@@ -1046,85 +720,39 @@ type HeaderParameter struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *HeaderParameter) Reset() {
-	*x = HeaderParameter{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *HeaderParameter) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *HeaderParameter) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *HeaderParameter) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*HeaderParameter) ProtoMessage() {}
+func (*HeaderParameter) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *HeaderParameter) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *HeaderParameter) GetName() string {
-	if x != nil {
-		return x.xxx_hidden_Name
-	}
-	return ""
-}
+func (x *HeaderParameter) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *HeaderParameter) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *HeaderParameter) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
 func (x *HeaderParameter) GetType() HeaderParameter_Type {
-	if x != nil {
-		return x.xxx_hidden_Type
-	}
-	return HeaderParameter_UNKNOWN
+	_ = "STUB: not implemented"
+	return *new(HeaderParameter_Type)
 }
 
-func (x *HeaderParameter) GetFormat() string {
-	if x != nil {
-		return x.xxx_hidden_Format
-	}
-	return ""
-}
+func (x *HeaderParameter) GetFormat() string { _ = "STUB: not implemented"; return "" }
 
-func (x *HeaderParameter) GetRequired() bool {
-	if x != nil {
-		return x.xxx_hidden_Required
-	}
-	return false
-}
+func (x *HeaderParameter) GetRequired() bool { _ = "STUB: not implemented"; return false }
 
-func (x *HeaderParameter) SetName(v string) {
-	x.xxx_hidden_Name = v
-}
+func (x *HeaderParameter) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *HeaderParameter) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *HeaderParameter) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *HeaderParameter) SetType(v HeaderParameter_Type) {
-	x.xxx_hidden_Type = v
-}
+func (x *HeaderParameter) SetType(v HeaderParameter_Type) { _ = "STUB: not implemented"; return }
 
-func (x *HeaderParameter) SetFormat(v string) {
-	x.xxx_hidden_Format = v
-}
+func (x *HeaderParameter) SetFormat(v string) { _ = "STUB: not implemented"; return }
 
-func (x *HeaderParameter) SetRequired(v bool) {
-	x.xxx_hidden_Required = v
-}
+func (x *HeaderParameter) SetRequired(v bool) { _ = "STUB: not implemented"; return }
 
 type HeaderParameter_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1142,17 +770,7 @@ type HeaderParameter_builder struct {
 	Required bool
 }
 
-func (b0 HeaderParameter_builder) Build() *HeaderParameter {
-	m0 := &HeaderParameter{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Name = b.Name
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Type = b.Type
-	x.xxx_hidden_Format = b.Format
-	x.xxx_hidden_Required = b.Required
-	return m0
-}
+func (b0 HeaderParameter_builder) Build() *HeaderParameter { _ = "STUB: not implemented"; return nil }
 
 // `Header` is a representation of OpenAPI v2 specification's Header object.
 //
@@ -1168,85 +786,36 @@ type Header struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *Header) Reset() {
-	*x = Header{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Header) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Header) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Header) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Header) ProtoMessage() {}
+func (*Header) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Header) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Header) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *Header) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Header) GetType() string {
-	if x != nil {
-		return x.xxx_hidden_Type
-	}
-	return ""
-}
+func (x *Header) GetType() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Header) GetFormat() string {
-	if x != nil {
-		return x.xxx_hidden_Format
-	}
-	return ""
-}
+func (x *Header) GetFormat() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Header) GetDefault() string {
-	if x != nil {
-		return x.xxx_hidden_Default
-	}
-	return ""
-}
+func (x *Header) GetDefault() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Header) GetPattern() string {
-	if x != nil {
-		return x.xxx_hidden_Pattern
-	}
-	return ""
-}
+func (x *Header) GetPattern() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Header) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *Header) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Header) SetType(v string) {
-	x.xxx_hidden_Type = v
-}
+func (x *Header) SetType(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Header) SetFormat(v string) {
-	x.xxx_hidden_Format = v
-}
+func (x *Header) SetFormat(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Header) SetDefault(v string) {
-	x.xxx_hidden_Default = v
-}
+func (x *Header) SetDefault(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Header) SetPattern(v string) {
-	x.xxx_hidden_Pattern = v
-}
+func (x *Header) SetPattern(v string) { _ = "STUB: not implemented"; return }
 
 type Header_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1265,17 +834,7 @@ type Header_builder struct {
 	Pattern string
 }
 
-func (b0 Header_builder) Build() *Header {
-	m0 := &Header{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Type = b.Type
-	x.xxx_hidden_Format = b.Format
-	x.xxx_hidden_Default = b.Default
-	x.xxx_hidden_Pattern = b.Pattern
-	return m0
-}
+func (b0 Header_builder) Build() *Header { _ = "STUB: not implemented"; return nil }
 
 // `Response` is a representation of OpenAPI v2 specification's Response object.
 //
@@ -1291,96 +850,43 @@ type Response struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *Response) Reset() {
-	*x = Response{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Response) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Response) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Response) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Response) ProtoMessage() {}
+func (*Response) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Response) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Response) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *Response) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Response) GetSchema() *Schema {
-	if x != nil {
-		return x.xxx_hidden_Schema
-	}
-	return nil
-}
+func (x *Response) GetSchema() *Schema { _ = "STUB: not implemented"; return nil }
 
-func (x *Response) GetHeaders() map[string]*Header {
-	if x != nil {
-		return x.xxx_hidden_Headers
-	}
-	return nil
-}
+func (x *Response) GetHeaders() map[string]*Header { _ = "STUB: not implemented"; return nil }
 
-func (x *Response) GetExamples() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Examples
-	}
-	return nil
-}
+func (x *Response) GetExamples() map[string]string { _ = "STUB: not implemented"; return nil }
 
 func (x *Response) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *Response) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *Response) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Response) SetSchema(v *Schema) {
-	x.xxx_hidden_Schema = v
-}
+func (x *Response) SetSchema(v *Schema) { _ = "STUB: not implemented"; return }
 
-func (x *Response) SetHeaders(v map[string]*Header) {
-	x.xxx_hidden_Headers = v
-}
+func (x *Response) SetHeaders(v map[string]*Header) { _ = "STUB: not implemented"; return }
 
-func (x *Response) SetExamples(v map[string]string) {
-	x.xxx_hidden_Examples = v
-}
+func (x *Response) SetExamples(v map[string]string) { _ = "STUB: not implemented"; return }
 
-func (x *Response) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *Response) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *Response) HasSchema() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Schema != nil
-}
+func (x *Response) HasSchema() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Response) ClearSchema() {
-	x.xxx_hidden_Schema = nil
-}
+func (x *Response) ClearSchema() { _ = "STUB: not implemented"; return }
 
 type Response_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1404,17 +910,7 @@ type Response_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 Response_builder) Build() *Response {
-	m0 := &Response{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Schema = b.Schema
-	x.xxx_hidden_Headers = b.Headers
-	x.xxx_hidden_Examples = b.Examples
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 Response_builder) Build() *Response { _ = "STUB: not implemented"; return nil }
 
 // `Info` is a representation of OpenAPI v2 specification's Info object.
 //
@@ -1452,129 +948,52 @@ type Info struct {
 	sizeCache                 protoimpl.SizeCache
 }
 
-func (x *Info) Reset() {
-	*x = Info{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Info) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Info) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Info) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Info) ProtoMessage() {}
+func (*Info) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Info) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Info) GetTitle() string {
-	if x != nil {
-		return x.xxx_hidden_Title
-	}
-	return ""
-}
+func (x *Info) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *Info) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetTermsOfService() string {
-	if x != nil {
-		return x.xxx_hidden_TermsOfService
-	}
-	return ""
-}
+func (x *Info) GetTermsOfService() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetContact() *Contact {
-	if x != nil {
-		return x.xxx_hidden_Contact
-	}
-	return nil
-}
+func (x *Info) GetContact() *Contact { _ = "STUB: not implemented"; return nil }
 
-func (x *Info) GetLicense() *License {
-	if x != nil {
-		return x.xxx_hidden_License
-	}
-	return nil
-}
+func (x *Info) GetLicense() *License { _ = "STUB: not implemented"; return nil }
 
-func (x *Info) GetVersion() string {
-	if x != nil {
-		return x.xxx_hidden_Version
-	}
-	return ""
-}
+func (x *Info) GetVersion() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Info) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
-	return nil
-}
+func (x *Info) GetExtensions() map[string]*structpb.Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Info) SetTitle(v string) {
-	x.xxx_hidden_Title = v
-}
+func (x *Info) SetTitle(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *Info) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetTermsOfService(v string) {
-	x.xxx_hidden_TermsOfService = v
-}
+func (x *Info) SetTermsOfService(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetContact(v *Contact) {
-	x.xxx_hidden_Contact = v
-}
+func (x *Info) SetContact(v *Contact) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetLicense(v *License) {
-	x.xxx_hidden_License = v
-}
+func (x *Info) SetLicense(v *License) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetVersion(v string) {
-	x.xxx_hidden_Version = v
-}
+func (x *Info) SetVersion(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Info) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *Info) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *Info) HasContact() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Contact != nil
-}
+func (x *Info) HasContact() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Info) HasLicense() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_License != nil
-}
+func (x *Info) HasLicense() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Info) ClearContact() {
-	x.xxx_hidden_Contact = nil
-}
+func (x *Info) ClearContact() { _ = "STUB: not implemented"; return }
 
-func (x *Info) ClearLicense() {
-	x.xxx_hidden_License = nil
-}
+func (x *Info) ClearLicense() { _ = "STUB: not implemented"; return }
 
 type Info_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1599,19 +1018,7 @@ type Info_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 Info_builder) Build() *Info {
-	m0 := &Info{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Title = b.Title
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_TermsOfService = b.TermsOfService
-	x.xxx_hidden_Contact = b.Contact
-	x.xxx_hidden_License = b.License
-	x.xxx_hidden_Version = b.Version
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 Info_builder) Build() *Info { _ = "STUB: not implemented"; return nil }
 
 // `Contact` is a representation of OpenAPI v2 specification's Contact object.
 //
@@ -1640,63 +1047,28 @@ type Contact struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *Contact) Reset() {
-	*x = Contact{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Contact) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Contact) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Contact) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Contact) ProtoMessage() {}
+func (*Contact) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Contact) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Contact) GetName() string {
-	if x != nil {
-		return x.xxx_hidden_Name
-	}
-	return ""
-}
+func (x *Contact) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) GetUrl() string {
-	if x != nil {
-		return x.xxx_hidden_Url
-	}
-	return ""
-}
+func (x *Contact) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) GetEmail() string {
-	if x != nil {
-		return x.xxx_hidden_Email
-	}
-	return ""
-}
+func (x *Contact) GetEmail() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Contact) SetName(v string) {
-	x.xxx_hidden_Name = v
-}
+func (x *Contact) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Contact) SetUrl(v string) {
-	x.xxx_hidden_Url = v
-}
+func (x *Contact) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Contact) SetEmail(v string) {
-	x.xxx_hidden_Email = v
-}
+func (x *Contact) SetEmail(v string) { _ = "STUB: not implemented"; return }
 
 type Contact_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1711,15 +1083,7 @@ type Contact_builder struct {
 	Email string
 }
 
-func (b0 Contact_builder) Build() *Contact {
-	m0 := &Contact{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Name = b.Name
-	x.xxx_hidden_Url = b.Url
-	x.xxx_hidden_Email = b.Email
-	return m0
-}
+func (b0 Contact_builder) Build() *Contact { _ = "STUB: not implemented"; return nil }
 
 // `License` is a representation of OpenAPI v2 specification's License object.
 //
@@ -1746,52 +1110,24 @@ type License struct {
 	sizeCache       protoimpl.SizeCache
 }
 
-func (x *License) Reset() {
-	*x = License{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[8]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *License) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *License) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *License) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*License) ProtoMessage() {}
+func (*License) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *License) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[8]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *License) GetName() string {
-	if x != nil {
-		return x.xxx_hidden_Name
-	}
-	return ""
-}
+func (x *License) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *License) GetUrl() string {
-	if x != nil {
-		return x.xxx_hidden_Url
-	}
-	return ""
-}
+func (x *License) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *License) SetName(v string) {
-	x.xxx_hidden_Name = v
-}
+func (x *License) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *License) SetUrl(v string) {
-	x.xxx_hidden_Url = v
-}
+func (x *License) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
 type License_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1802,14 +1138,7 @@ type License_builder struct {
 	Url string
 }
 
-func (b0 License_builder) Build() *License {
-	m0 := &License{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Name = b.Name
-	x.xxx_hidden_Url = b.Url
-	return m0
-}
+func (b0 License_builder) Build() *License { _ = "STUB: not implemented"; return nil }
 
 // `ExternalDocumentation` is a representation of OpenAPI v2 specification's
 // ExternalDocumentation object.
@@ -1834,52 +1163,24 @@ type ExternalDocumentation struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *ExternalDocumentation) Reset() {
-	*x = ExternalDocumentation{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[9]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *ExternalDocumentation) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *ExternalDocumentation) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *ExternalDocumentation) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*ExternalDocumentation) ProtoMessage() {}
+func (*ExternalDocumentation) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *ExternalDocumentation) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[9]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *ExternalDocumentation) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *ExternalDocumentation) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ExternalDocumentation) GetUrl() string {
-	if x != nil {
-		return x.xxx_hidden_Url
-	}
-	return ""
-}
+func (x *ExternalDocumentation) GetUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *ExternalDocumentation) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *ExternalDocumentation) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *ExternalDocumentation) SetUrl(v string) {
-	x.xxx_hidden_Url = v
-}
+func (x *ExternalDocumentation) SetUrl(v string) { _ = "STUB: not implemented"; return }
 
 type ExternalDocumentation_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1893,12 +1194,8 @@ type ExternalDocumentation_builder struct {
 }
 
 func (b0 ExternalDocumentation_builder) Build() *ExternalDocumentation {
-	m0 := &ExternalDocumentation{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Url = b.Url
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // `Schema` is a representation of OpenAPI v2 specification's Schema object.
@@ -1915,107 +1212,44 @@ type Schema struct {
 	sizeCache                protoimpl.SizeCache
 }
 
-func (x *Schema) Reset() {
-	*x = Schema{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[10]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Schema) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Schema) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Schema) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Schema) ProtoMessage() {}
+func (*Schema) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Schema) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[10]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Schema) GetJsonSchema() *JSONSchema {
-	if x != nil {
-		return x.xxx_hidden_JsonSchema
-	}
-	return nil
-}
+func (x *Schema) GetJsonSchema() *JSONSchema { _ = "STUB: not implemented"; return nil }
 
-func (x *Schema) GetDiscriminator() string {
-	if x != nil {
-		return x.xxx_hidden_Discriminator
-	}
-	return ""
-}
+func (x *Schema) GetDiscriminator() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Schema) GetReadOnly() bool {
-	if x != nil {
-		return x.xxx_hidden_ReadOnly
-	}
-	return false
-}
+func (x *Schema) GetReadOnly() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Schema) GetExternalDocs() *ExternalDocumentation {
-	if x != nil {
-		return x.xxx_hidden_ExternalDocs
-	}
-	return nil
-}
+func (x *Schema) GetExternalDocs() *ExternalDocumentation { _ = "STUB: not implemented"; return nil }
 
-func (x *Schema) GetExample() string {
-	if x != nil {
-		return x.xxx_hidden_Example
-	}
-	return ""
-}
+func (x *Schema) GetExample() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Schema) SetJsonSchema(v *JSONSchema) {
-	x.xxx_hidden_JsonSchema = v
-}
+func (x *Schema) SetJsonSchema(v *JSONSchema) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetDiscriminator(v string) {
-	x.xxx_hidden_Discriminator = v
-}
+func (x *Schema) SetDiscriminator(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetReadOnly(v bool) {
-	x.xxx_hidden_ReadOnly = v
-}
+func (x *Schema) SetReadOnly(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetExternalDocs(v *ExternalDocumentation) {
-	x.xxx_hidden_ExternalDocs = v
-}
+func (x *Schema) SetExternalDocs(v *ExternalDocumentation) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) SetExample(v string) {
-	x.xxx_hidden_Example = v
-}
+func (x *Schema) SetExample(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Schema) HasJsonSchema() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_JsonSchema != nil
-}
+func (x *Schema) HasJsonSchema() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Schema) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExternalDocs != nil
-}
+func (x *Schema) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Schema) ClearJsonSchema() {
-	x.xxx_hidden_JsonSchema = nil
-}
+func (x *Schema) ClearJsonSchema() { _ = "STUB: not implemented"; return }
 
-func (x *Schema) ClearExternalDocs() {
-	x.xxx_hidden_ExternalDocs = nil
-}
+func (x *Schema) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Schema_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2040,17 +1274,7 @@ type Schema_builder struct {
 	Example string
 }
 
-func (b0 Schema_builder) Build() *Schema {
-	m0 := &Schema{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_JsonSchema = b.JsonSchema
-	x.xxx_hidden_Discriminator = b.Discriminator
-	x.xxx_hidden_ReadOnly = b.ReadOnly
-	x.xxx_hidden_ExternalDocs = b.ExternalDocs
-	x.xxx_hidden_Example = b.Example
-	return m0
-}
+func (b0 Schema_builder) Build() *Schema { _ = "STUB: not implemented"; return nil }
 
 // `EnumSchema` is subset of fields from the OpenAPI v2 specification's Schema object.
 // Only fields that are applicable to Enums are included
@@ -2081,140 +1305,62 @@ type EnumSchema struct {
 	sizeCache               protoimpl.SizeCache
 }
 
-func (x *EnumSchema) Reset() {
-	*x = EnumSchema{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[11]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *EnumSchema) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *EnumSchema) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*EnumSchema) ProtoMessage() {}
+func (*EnumSchema) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *EnumSchema) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[11]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *EnumSchema) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *EnumSchema) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *EnumSchema) GetDefault() string {
-	if x != nil {
-		return x.xxx_hidden_Default
-	}
-	return ""
-}
+func (x *EnumSchema) GetDefault() string { _ = "STUB: not implemented"; return "" }
 
-func (x *EnumSchema) GetTitle() string {
-	if x != nil {
-		return x.xxx_hidden_Title
-	}
-	return ""
-}
+func (x *EnumSchema) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *EnumSchema) GetRequired() bool {
-	if x != nil {
-		return x.xxx_hidden_Required
-	}
-	return false
-}
+func (x *EnumSchema) GetRequired() bool { _ = "STUB: not implemented"; return false }
 
-func (x *EnumSchema) GetReadOnly() bool {
-	if x != nil {
-		return x.xxx_hidden_ReadOnly
-	}
-	return false
-}
+func (x *EnumSchema) GetReadOnly() bool { _ = "STUB: not implemented"; return false }
 
 func (x *EnumSchema) GetExternalDocs() *ExternalDocumentation {
-	if x != nil {
-		return x.xxx_hidden_ExternalDocs
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *EnumSchema) GetExample() string {
-	if x != nil {
-		return x.xxx_hidden_Example
-	}
-	return ""
-}
+func (x *EnumSchema) GetExample() string { _ = "STUB: not implemented"; return "" }
 
-func (x *EnumSchema) GetRef() string {
-	if x != nil {
-		return x.xxx_hidden_Ref
-	}
-	return ""
-}
+func (x *EnumSchema) GetRef() string { _ = "STUB: not implemented"; return "" }
 
 func (x *EnumSchema) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *EnumSchema) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *EnumSchema) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetDefault(v string) {
-	x.xxx_hidden_Default = v
-}
+func (x *EnumSchema) SetDefault(v string) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetTitle(v string) {
-	x.xxx_hidden_Title = v
-}
+func (x *EnumSchema) SetTitle(v string) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetRequired(v bool) {
-	x.xxx_hidden_Required = v
-}
+func (x *EnumSchema) SetRequired(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetReadOnly(v bool) {
-	x.xxx_hidden_ReadOnly = v
-}
+func (x *EnumSchema) SetReadOnly(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetExternalDocs(v *ExternalDocumentation) {
-	x.xxx_hidden_ExternalDocs = v
-}
+func (x *EnumSchema) SetExternalDocs(v *ExternalDocumentation) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetExample(v string) {
-	x.xxx_hidden_Example = v
-}
+func (x *EnumSchema) SetExample(v string) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetRef(v string) {
-	x.xxx_hidden_Ref = v
-}
+func (x *EnumSchema) SetRef(v string) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *EnumSchema) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *EnumSchema) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExternalDocs != nil
-}
+func (x *EnumSchema) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *EnumSchema) ClearExternalDocs() {
-	x.xxx_hidden_ExternalDocs = nil
-}
+func (x *EnumSchema) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type EnumSchema_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2243,21 +1389,7 @@ type EnumSchema_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 EnumSchema_builder) Build() *EnumSchema {
-	m0 := &EnumSchema{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Default = b.Default
-	x.xxx_hidden_Title = b.Title
-	x.xxx_hidden_Required = b.Required
-	x.xxx_hidden_ReadOnly = b.ReadOnly
-	x.xxx_hidden_ExternalDocs = b.ExternalDocs
-	x.xxx_hidden_Example = b.Example
-	x.xxx_hidden_Ref = b.Ref
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 EnumSchema_builder) Build() *EnumSchema { _ = "STUB: not implemented"; return nil }
 
 // `JSONSchema` represents properties from JSON Schema taken, and as used, in
 // the OpenAPI v2 spec.
@@ -2318,327 +1450,139 @@ type JSONSchema struct {
 	sizeCache                     protoimpl.SizeCache
 }
 
-func (x *JSONSchema) Reset() {
-	*x = JSONSchema{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[12]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *JSONSchema) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *JSONSchema) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*JSONSchema) ProtoMessage() {}
+func (*JSONSchema) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *JSONSchema) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[12]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *JSONSchema) GetRef() string {
-	if x != nil {
-		return x.xxx_hidden_Ref
-	}
-	return ""
-}
+func (x *JSONSchema) GetRef() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetTitle() string {
-	if x != nil {
-		return x.xxx_hidden_Title
-	}
-	return ""
-}
+func (x *JSONSchema) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *JSONSchema) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetDefault() string {
-	if x != nil {
-		return x.xxx_hidden_Default
-	}
-	return ""
-}
+func (x *JSONSchema) GetDefault() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetReadOnly() bool {
-	if x != nil {
-		return x.xxx_hidden_ReadOnly
-	}
-	return false
-}
+func (x *JSONSchema) GetReadOnly() bool { _ = "STUB: not implemented"; return false }
 
-func (x *JSONSchema) GetExample() string {
-	if x != nil {
-		return x.xxx_hidden_Example
-	}
-	return ""
-}
+func (x *JSONSchema) GetExample() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetMultipleOf() float64 {
-	if x != nil {
-		return x.xxx_hidden_MultipleOf
-	}
-	return 0
-}
+func (x *JSONSchema) GetMultipleOf() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetMaximum() float64 {
-	if x != nil {
-		return x.xxx_hidden_Maximum
-	}
-	return 0
-}
+func (x *JSONSchema) GetMaximum() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetExclusiveMaximum() bool {
-	if x != nil {
-		return x.xxx_hidden_ExclusiveMaximum
-	}
-	return false
-}
+func (x *JSONSchema) GetExclusiveMaximum() bool { _ = "STUB: not implemented"; return false }
 
-func (x *JSONSchema) GetMinimum() float64 {
-	if x != nil {
-		return x.xxx_hidden_Minimum
-	}
-	return 0
-}
+func (x *JSONSchema) GetMinimum() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetExclusiveMinimum() bool {
-	if x != nil {
-		return x.xxx_hidden_ExclusiveMinimum
-	}
-	return false
-}
+func (x *JSONSchema) GetExclusiveMinimum() bool { _ = "STUB: not implemented"; return false }
 
-func (x *JSONSchema) GetMaxLength() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MaxLength
-	}
-	return 0
-}
+func (x *JSONSchema) GetMaxLength() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetMinLength() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MinLength
-	}
-	return 0
-}
+func (x *JSONSchema) GetMinLength() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetPattern() string {
-	if x != nil {
-		return x.xxx_hidden_Pattern
-	}
-	return ""
-}
+func (x *JSONSchema) GetPattern() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetMaxItems() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MaxItems
-	}
-	return 0
-}
+func (x *JSONSchema) GetMaxItems() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetMinItems() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MinItems
-	}
-	return 0
-}
+func (x *JSONSchema) GetMinItems() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetUniqueItems() bool {
-	if x != nil {
-		return x.xxx_hidden_UniqueItems
-	}
-	return false
-}
+func (x *JSONSchema) GetUniqueItems() bool { _ = "STUB: not implemented"; return false }
 
-func (x *JSONSchema) GetMaxProperties() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MaxProperties
-	}
-	return 0
-}
+func (x *JSONSchema) GetMaxProperties() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetMinProperties() uint64 {
-	if x != nil {
-		return x.xxx_hidden_MinProperties
-	}
-	return 0
-}
+func (x *JSONSchema) GetMinProperties() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *JSONSchema) GetRequired() []string {
-	if x != nil {
-		return x.xxx_hidden_Required
-	}
-	return nil
-}
+func (x *JSONSchema) GetRequired() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *JSONSchema) GetArray() []string {
-	if x != nil {
-		return x.xxx_hidden_Array
-	}
-	return nil
-}
+func (x *JSONSchema) GetArray() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *JSONSchema) GetType() []JSONSchema_JSONSchemaSimpleTypes {
-	if x != nil {
-		return x.xxx_hidden_Type
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *JSONSchema) GetFormat() string {
-	if x != nil {
-		return x.xxx_hidden_Format
-	}
-	return ""
-}
+func (x *JSONSchema) GetFormat() string { _ = "STUB: not implemented"; return "" }
 
-func (x *JSONSchema) GetEnum() []string {
-	if x != nil {
-		return x.xxx_hidden_Enum
-	}
-	return nil
-}
+func (x *JSONSchema) GetEnum() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *JSONSchema) GetFieldConfiguration() *JSONSchema_FieldConfiguration {
-	if x != nil {
-		return x.xxx_hidden_FieldConfiguration
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *JSONSchema) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *JSONSchema) SetRef(v string) {
-	x.xxx_hidden_Ref = v
-}
+func (x *JSONSchema) SetRef(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetTitle(v string) {
-	x.xxx_hidden_Title = v
-}
+func (x *JSONSchema) SetTitle(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *JSONSchema) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetDefault(v string) {
-	x.xxx_hidden_Default = v
-}
+func (x *JSONSchema) SetDefault(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetReadOnly(v bool) {
-	x.xxx_hidden_ReadOnly = v
-}
+func (x *JSONSchema) SetReadOnly(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetExample(v string) {
-	x.xxx_hidden_Example = v
-}
+func (x *JSONSchema) SetExample(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMultipleOf(v float64) {
-	x.xxx_hidden_MultipleOf = v
-}
+func (x *JSONSchema) SetMultipleOf(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMaximum(v float64) {
-	x.xxx_hidden_Maximum = v
-}
+func (x *JSONSchema) SetMaximum(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetExclusiveMaximum(v bool) {
-	x.xxx_hidden_ExclusiveMaximum = v
-}
+func (x *JSONSchema) SetExclusiveMaximum(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMinimum(v float64) {
-	x.xxx_hidden_Minimum = v
-}
+func (x *JSONSchema) SetMinimum(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetExclusiveMinimum(v bool) {
-	x.xxx_hidden_ExclusiveMinimum = v
-}
+func (x *JSONSchema) SetExclusiveMinimum(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMaxLength(v uint64) {
-	x.xxx_hidden_MaxLength = v
-}
+func (x *JSONSchema) SetMaxLength(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMinLength(v uint64) {
-	x.xxx_hidden_MinLength = v
-}
+func (x *JSONSchema) SetMinLength(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetPattern(v string) {
-	x.xxx_hidden_Pattern = v
-}
+func (x *JSONSchema) SetPattern(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMaxItems(v uint64) {
-	x.xxx_hidden_MaxItems = v
-}
+func (x *JSONSchema) SetMaxItems(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMinItems(v uint64) {
-	x.xxx_hidden_MinItems = v
-}
+func (x *JSONSchema) SetMinItems(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetUniqueItems(v bool) {
-	x.xxx_hidden_UniqueItems = v
-}
+func (x *JSONSchema) SetUniqueItems(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMaxProperties(v uint64) {
-	x.xxx_hidden_MaxProperties = v
-}
+func (x *JSONSchema) SetMaxProperties(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetMinProperties(v uint64) {
-	x.xxx_hidden_MinProperties = v
-}
+func (x *JSONSchema) SetMinProperties(v uint64) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetRequired(v []string) {
-	x.xxx_hidden_Required = v
-}
+func (x *JSONSchema) SetRequired(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetArray(v []string) {
-	x.xxx_hidden_Array = v
-}
+func (x *JSONSchema) SetArray(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *JSONSchema) SetType(v []JSONSchema_JSONSchemaSimpleTypes) {
-	x.xxx_hidden_Type = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *JSONSchema) SetFormat(v string) {
-	x.xxx_hidden_Format = v
-}
+func (x *JSONSchema) SetFormat(v string) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) SetEnum(v []string) {
-	x.xxx_hidden_Enum = v
-}
+func (x *JSONSchema) SetEnum(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *JSONSchema) SetFieldConfiguration(v *JSONSchema_FieldConfiguration) {
-	x.xxx_hidden_FieldConfiguration = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *JSONSchema) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *JSONSchema) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema) HasFieldConfiguration() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_FieldConfiguration != nil
-}
+func (x *JSONSchema) HasFieldConfiguration() bool { _ = "STUB: not implemented"; return false }
 
-func (x *JSONSchema) ClearFieldConfiguration() {
-	x.xxx_hidden_FieldConfiguration = nil
-}
+func (x *JSONSchema) ClearFieldConfiguration() { _ = "STUB: not implemented"; return }
 
 type JSONSchema_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2694,38 +1638,7 @@ type JSONSchema_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 JSONSchema_builder) Build() *JSONSchema {
-	m0 := &JSONSchema{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Ref = b.Ref
-	x.xxx_hidden_Title = b.Title
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Default = b.Default
-	x.xxx_hidden_ReadOnly = b.ReadOnly
-	x.xxx_hidden_Example = b.Example
-	x.xxx_hidden_MultipleOf = b.MultipleOf
-	x.xxx_hidden_Maximum = b.Maximum
-	x.xxx_hidden_ExclusiveMaximum = b.ExclusiveMaximum
-	x.xxx_hidden_Minimum = b.Minimum
-	x.xxx_hidden_ExclusiveMinimum = b.ExclusiveMinimum
-	x.xxx_hidden_MaxLength = b.MaxLength
-	x.xxx_hidden_MinLength = b.MinLength
-	x.xxx_hidden_Pattern = b.Pattern
-	x.xxx_hidden_MaxItems = b.MaxItems
-	x.xxx_hidden_MinItems = b.MinItems
-	x.xxx_hidden_UniqueItems = b.UniqueItems
-	x.xxx_hidden_MaxProperties = b.MaxProperties
-	x.xxx_hidden_MinProperties = b.MinProperties
-	x.xxx_hidden_Required = b.Required
-	x.xxx_hidden_Array = b.Array
-	x.xxx_hidden_Type = b.Type
-	x.xxx_hidden_Format = b.Format
-	x.xxx_hidden_Enum = b.Enum
-	x.xxx_hidden_FieldConfiguration = b.FieldConfiguration
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 JSONSchema_builder) Build() *JSONSchema { _ = "STUB: not implemented"; return nil }
 
 // `Tag` is a representation of OpenAPI v2 specification's Tag object.
 //
@@ -2740,85 +1653,36 @@ type Tag struct {
 	sizeCache               protoimpl.SizeCache
 }
 
-func (x *Tag) Reset() {
-	*x = Tag{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[13]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Tag) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Tag) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Tag) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Tag) ProtoMessage() {}
+func (*Tag) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Tag) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[13]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Tag) GetName() string {
-	if x != nil {
-		return x.xxx_hidden_Name
-	}
-	return ""
-}
+func (x *Tag) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Tag) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *Tag) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *Tag) GetExternalDocs() *ExternalDocumentation {
-	if x != nil {
-		return x.xxx_hidden_ExternalDocs
-	}
-	return nil
-}
+func (x *Tag) GetExternalDocs() *ExternalDocumentation { _ = "STUB: not implemented"; return nil }
 
-func (x *Tag) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
-	return nil
-}
+func (x *Tag) GetExtensions() map[string]*structpb.Value { _ = "STUB: not implemented"; return nil }
 
-func (x *Tag) SetName(v string) {
-	x.xxx_hidden_Name = v
-}
+func (x *Tag) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *Tag) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) SetExternalDocs(v *ExternalDocumentation) {
-	x.xxx_hidden_ExternalDocs = v
-}
+func (x *Tag) SetExternalDocs(v *ExternalDocumentation) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
-}
+func (x *Tag) SetExtensions(v map[string]*structpb.Value) { _ = "STUB: not implemented"; return }
 
-func (x *Tag) HasExternalDocs() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExternalDocs != nil
-}
+func (x *Tag) HasExternalDocs() bool { _ = "STUB: not implemented"; return false }
 
-func (x *Tag) ClearExternalDocs() {
-	x.xxx_hidden_ExternalDocs = nil
-}
+func (x *Tag) ClearExternalDocs() { _ = "STUB: not implemented"; return }
 
 type Tag_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2838,16 +1702,7 @@ type Tag_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 Tag_builder) Build() *Tag {
-	m0 := &Tag{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Name = b.Name
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_ExternalDocs = b.ExternalDocs
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 Tag_builder) Build() *Tag { _ = "STUB: not implemented"; return nil }
 
 // `SecurityDefinitions` is a representation of OpenAPI v2 specification's
 // Security Definitions object.
@@ -2864,40 +1719,25 @@ type SecurityDefinitions struct {
 	sizeCache           protoimpl.SizeCache
 }
 
-func (x *SecurityDefinitions) Reset() {
-	*x = SecurityDefinitions{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[14]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SecurityDefinitions) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SecurityDefinitions) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SecurityDefinitions) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SecurityDefinitions) ProtoMessage() {}
+func (*SecurityDefinitions) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SecurityDefinitions) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[14]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *SecurityDefinitions) GetSecurity() map[string]*SecurityScheme {
-	if x != nil {
-		return x.xxx_hidden_Security
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *SecurityDefinitions) SetSecurity(v map[string]*SecurityScheme) {
-	x.xxx_hidden_Security = v
+	_ = "STUB: not implemented"
+	return
 }
 
 type SecurityDefinitions_builder struct {
@@ -2909,11 +1749,8 @@ type SecurityDefinitions_builder struct {
 }
 
 func (b0 SecurityDefinitions_builder) Build() *SecurityDefinitions {
-	m0 := &SecurityDefinitions{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Security = b.Security
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // `SecurityScheme` is a representation of OpenAPI v2 specification's
@@ -2940,140 +1777,71 @@ type SecurityScheme struct {
 	sizeCache                   protoimpl.SizeCache
 }
 
-func (x *SecurityScheme) Reset() {
-	*x = SecurityScheme{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[15]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SecurityScheme) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SecurityScheme) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SecurityScheme) ProtoMessage() {}
+func (*SecurityScheme) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SecurityScheme) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[15]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *SecurityScheme) GetType() SecurityScheme_Type {
-	if x != nil {
-		return x.xxx_hidden_Type
-	}
-	return SecurityScheme_TYPE_INVALID
+	_ = "STUB: not implemented"
+	return *new(SecurityScheme_Type)
 }
 
-func (x *SecurityScheme) GetDescription() string {
-	if x != nil {
-		return x.xxx_hidden_Description
-	}
-	return ""
-}
+func (x *SecurityScheme) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SecurityScheme) GetName() string {
-	if x != nil {
-		return x.xxx_hidden_Name
-	}
-	return ""
-}
+func (x *SecurityScheme) GetName() string { _ = "STUB: not implemented"; return "" }
 
 func (x *SecurityScheme) GetIn() SecurityScheme_In {
-	if x != nil {
-		return x.xxx_hidden_In
-	}
-	return SecurityScheme_IN_INVALID
+	_ = "STUB: not implemented"
+	return *new(SecurityScheme_In)
 }
 
 func (x *SecurityScheme) GetFlow() SecurityScheme_Flow {
-	if x != nil {
-		return x.xxx_hidden_Flow
-	}
-	return SecurityScheme_FLOW_INVALID
+	_ = "STUB: not implemented"
+	return *new(SecurityScheme_Flow)
 }
 
-func (x *SecurityScheme) GetAuthorizationUrl() string {
-	if x != nil {
-		return x.xxx_hidden_AuthorizationUrl
-	}
-	return ""
-}
+func (x *SecurityScheme) GetAuthorizationUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SecurityScheme) GetTokenUrl() string {
-	if x != nil {
-		return x.xxx_hidden_TokenUrl
-	}
-	return ""
-}
+func (x *SecurityScheme) GetTokenUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *SecurityScheme) GetScopes() *Scopes {
-	if x != nil {
-		return x.xxx_hidden_Scopes
-	}
-	return nil
-}
+func (x *SecurityScheme) GetScopes() *Scopes { _ = "STUB: not implemented"; return nil }
 
 func (x *SecurityScheme) GetExtensions() map[string]*structpb.Value {
-	if x != nil {
-		return x.xxx_hidden_Extensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *SecurityScheme) SetType(v SecurityScheme_Type) {
-	x.xxx_hidden_Type = v
-}
+func (x *SecurityScheme) SetType(v SecurityScheme_Type) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetDescription(v string) {
-	x.xxx_hidden_Description = v
-}
+func (x *SecurityScheme) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetName(v string) {
-	x.xxx_hidden_Name = v
-}
+func (x *SecurityScheme) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetIn(v SecurityScheme_In) {
-	x.xxx_hidden_In = v
-}
+func (x *SecurityScheme) SetIn(v SecurityScheme_In) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetFlow(v SecurityScheme_Flow) {
-	x.xxx_hidden_Flow = v
-}
+func (x *SecurityScheme) SetFlow(v SecurityScheme_Flow) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetAuthorizationUrl(v string) {
-	x.xxx_hidden_AuthorizationUrl = v
-}
+func (x *SecurityScheme) SetAuthorizationUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetTokenUrl(v string) {
-	x.xxx_hidden_TokenUrl = v
-}
+func (x *SecurityScheme) SetTokenUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *SecurityScheme) SetScopes(v *Scopes) {
-	x.xxx_hidden_Scopes = v
-}
+func (x *SecurityScheme) SetScopes(v *Scopes) { _ = "STUB: not implemented"; return }
 
 func (x *SecurityScheme) SetExtensions(v map[string]*structpb.Value) {
-	x.xxx_hidden_Extensions = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *SecurityScheme) HasScopes() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Scopes != nil
-}
+func (x *SecurityScheme) HasScopes() bool { _ = "STUB: not implemented"; return false }
 
-func (x *SecurityScheme) ClearScopes() {
-	x.xxx_hidden_Scopes = nil
-}
+func (x *SecurityScheme) ClearScopes() { _ = "STUB: not implemented"; return }
 
 type SecurityScheme_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -3111,21 +1879,7 @@ type SecurityScheme_builder struct {
 	Extensions map[string]*structpb.Value
 }
 
-func (b0 SecurityScheme_builder) Build() *SecurityScheme {
-	m0 := &SecurityScheme{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Type = b.Type
-	x.xxx_hidden_Description = b.Description
-	x.xxx_hidden_Name = b.Name
-	x.xxx_hidden_In = b.In
-	x.xxx_hidden_Flow = b.Flow
-	x.xxx_hidden_AuthorizationUrl = b.AuthorizationUrl
-	x.xxx_hidden_TokenUrl = b.TokenUrl
-	x.xxx_hidden_Scopes = b.Scopes
-	x.xxx_hidden_Extensions = b.Extensions
-	return m0
-}
+func (b0 SecurityScheme_builder) Build() *SecurityScheme { _ = "STUB: not implemented"; return nil }
 
 // `SecurityRequirement` is a representation of OpenAPI v2 specification's
 // Security Requirement object.
@@ -3145,40 +1899,25 @@ type SecurityRequirement struct {
 	sizeCache                      protoimpl.SizeCache
 }
 
-func (x *SecurityRequirement) Reset() {
-	*x = SecurityRequirement{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[16]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SecurityRequirement) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *SecurityRequirement) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *SecurityRequirement) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*SecurityRequirement) ProtoMessage() {}
+func (*SecurityRequirement) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *SecurityRequirement) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[16]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *SecurityRequirement) GetSecurityRequirement() map[string]*SecurityRequirement_SecurityRequirementValue {
-	if x != nil {
-		return x.xxx_hidden_SecurityRequirement
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *SecurityRequirement) SetSecurityRequirement(v map[string]*SecurityRequirement_SecurityRequirementValue) {
-	x.xxx_hidden_SecurityRequirement = v
+	_ = "STUB: not implemented"
+	return
 }
 
 type SecurityRequirement_builder struct {
@@ -3192,11 +1931,8 @@ type SecurityRequirement_builder struct {
 }
 
 func (b0 SecurityRequirement_builder) Build() *SecurityRequirement {
-	m0 := &SecurityRequirement{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_SecurityRequirement = b.SecurityRequirement
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // `Scopes` is a representation of OpenAPI v2 specification's Scopes object.
@@ -3211,41 +1947,20 @@ type Scopes struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *Scopes) Reset() {
-	*x = Scopes{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[17]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Scopes) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Scopes) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Scopes) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Scopes) ProtoMessage() {}
+func (*Scopes) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Scopes) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[17]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *Scopes) GetScope() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Scope
-	}
-	return nil
-}
+func (x *Scopes) GetScope() map[string]string { _ = "STUB: not implemented"; return nil }
 
-func (x *Scopes) SetScope(v map[string]string) {
-	x.xxx_hidden_Scope = v
-}
+func (x *Scopes) SetScope(v map[string]string) { _ = "STUB: not implemented"; return }
 
 type Scopes_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -3255,13 +1970,7 @@ type Scopes_builder struct {
 	Scope map[string]string
 }
 
-func (b0 Scopes_builder) Build() *Scopes {
-	m0 := &Scopes{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Scope = b.Scope
-	return m0
-}
+func (b0 Scopes_builder) Build() *Scopes { _ = "STUB: not implemented"; return nil }
 
 // 'FieldConfiguration' provides additional field level properties used when generating the OpenAPI v2 file.
 // These properties are not defined by OpenAPIv2, but they are used to control the generation.
@@ -3273,52 +1982,33 @@ type JSONSchema_FieldConfiguration struct {
 	sizeCache                protoimpl.SizeCache
 }
 
-func (x *JSONSchema_FieldConfiguration) Reset() {
-	*x = JSONSchema_FieldConfiguration{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[27]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *JSONSchema_FieldConfiguration) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *JSONSchema_FieldConfiguration) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *JSONSchema_FieldConfiguration) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*JSONSchema_FieldConfiguration) ProtoMessage() {}
+func (*JSONSchema_FieldConfiguration) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *JSONSchema_FieldConfiguration) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[27]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *JSONSchema_FieldConfiguration) GetPathParamName() string {
-	if x != nil {
-		return x.xxx_hidden_PathParamName
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *JSONSchema_FieldConfiguration) GetDeprecated() bool {
-	if x != nil {
-		return x.xxx_hidden_Deprecated
-	}
+	_ = "STUB: not implemented"
 	return false
 }
 
 func (x *JSONSchema_FieldConfiguration) SetPathParamName(v string) {
-	x.xxx_hidden_PathParamName = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *JSONSchema_FieldConfiguration) SetDeprecated(v bool) {
-	x.xxx_hidden_Deprecated = v
-}
+func (x *JSONSchema_FieldConfiguration) SetDeprecated(v bool) { _ = "STUB: not implemented"; return }
 
 type JSONSchema_FieldConfiguration_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -3334,12 +2024,8 @@ type JSONSchema_FieldConfiguration_builder struct {
 }
 
 func (b0 JSONSchema_FieldConfiguration_builder) Build() *JSONSchema_FieldConfiguration {
-	m0 := &JSONSchema_FieldConfiguration{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_PathParamName = b.PathParamName
-	x.xxx_hidden_Deprecated = b.Deprecated
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // If the security scheme is of type "oauth2", then the value is a list of
@@ -3352,40 +2038,31 @@ type SecurityRequirement_SecurityRequirementValue struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *SecurityRequirement_SecurityRequirementValue) Reset() {
-	*x = SecurityRequirement_SecurityRequirementValue{}
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[32]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *SecurityRequirement_SecurityRequirementValue) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *SecurityRequirement_SecurityRequirementValue) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*SecurityRequirement_SecurityRequirementValue) ProtoMessage() {}
+func (*SecurityRequirement_SecurityRequirementValue) ProtoMessage() {
+	_ = "STUB: not implemented"
+	return
+}
 
 func (x *SecurityRequirement_SecurityRequirementValue) ProtoReflect() protoreflect.Message {
-	mi := &file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes[32]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *SecurityRequirement_SecurityRequirementValue) GetScope() []string {
-	if x != nil {
-		return x.xxx_hidden_Scope
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *SecurityRequirement_SecurityRequirementValue) SetScope(v []string) {
-	x.xxx_hidden_Scope = v
+	_ = "STUB: not implemented"
+	return
 }
 
 type SecurityRequirement_SecurityRequirementValue_builder struct {
@@ -3395,11 +2072,8 @@ type SecurityRequirement_SecurityRequirementValue_builder struct {
 }
 
 func (b0 SecurityRequirement_SecurityRequirementValue_builder) Build() *SecurityRequirement_SecurityRequirementValue {
-	m0 := &SecurityRequirement_SecurityRequirementValue{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Scope = b.Scope
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var File_protoc_gen_openapiv2_options_openapiv2_proto protoreflect.FileDescriptor
@@ -4046,28 +2720,5 @@ var file_protoc_gen_openapiv2_options_openapiv2_proto_depIdxs = []int32{
 	0,  // [0:53] is the sub-list for field type_name
 }
 
-func init() { file_protoc_gen_openapiv2_options_openapiv2_proto_init() }
-func file_protoc_gen_openapiv2_options_openapiv2_proto_init() {
-	if File_protoc_gen_openapiv2_options_openapiv2_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_protoc_gen_openapiv2_options_openapiv2_proto_rawDesc,
-			NumEnums:      6,
-			NumMessages:   35,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_protoc_gen_openapiv2_options_openapiv2_proto_goTypes,
-		DependencyIndexes: file_protoc_gen_openapiv2_options_openapiv2_proto_depIdxs,
-		EnumInfos:         file_protoc_gen_openapiv2_options_openapiv2_proto_enumTypes,
-		MessageInfos:      file_protoc_gen_openapiv2_options_openapiv2_proto_msgTypes,
-	}.Build()
-	File_protoc_gen_openapiv2_options_openapiv2_proto = out.File
-	file_protoc_gen_openapiv2_options_openapiv2_proto_rawDesc = nil
-	file_protoc_gen_openapiv2_options_openapiv2_proto_goTypes = nil
-	file_protoc_gen_openapiv2_options_openapiv2_proto_depIdxs = nil
-}
+func init()                                                   { file_protoc_gen_openapiv2_options_openapiv2_proto_init() }
+func file_protoc_gen_openapiv2_options_openapiv2_proto_init() { _ = "STUB: not implemented"; return }

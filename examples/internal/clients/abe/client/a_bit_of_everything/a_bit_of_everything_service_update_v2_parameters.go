@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceUpdateV2Params() *ABitOfEverythingServiceUpdateV2Params {
-	return &ABitOfEverythingServiceUpdateV2Params{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV2ParamsWithTimeout creates a new ABitOfEverythingServiceUpdateV2Params object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceUpdateV2ParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceUpdateV2Params {
-	return &ABitOfEverythingServiceUpdateV2Params{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV2ParamsWithContext creates a new ABitOfEverythingServiceUpdateV2Params object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceUpdateV2ParamsWithContext(ctx context.Context) *ABitOfEverythingServiceUpdateV2Params {
-	return &ABitOfEverythingServiceUpdateV2Params{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateV2ParamsWithHTTPClient creates a new ABitOfEverythingServiceUpdateV2Params object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceUpdateV2ParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceUpdateV2Params {
-	return &ABitOfEverythingServiceUpdateV2Params{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -86,118 +80,104 @@ type ABitOfEverythingServiceUpdateV2Params struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceUpdateV2Params) WithDefaults() *ABitOfEverythingServiceUpdateV2Params {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service update v2 params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service update v2 params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceUpdateV2Params) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service update v2 params
 }
 
-// WithContext adds the context to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithContext(ctx context.Context) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service update v2 params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithAbe adds the abe to the a bit of everything service update v2 params
 }
 
-// WithAbe adds the abe to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithAbe(abe ABitOfEverythingServiceUpdateV2Body) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetAbe(abe)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetAbe adds the abe to the a bit of everything service update v2 params
 }
 
-// SetAbe adds the abe to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetAbe(abe ABitOfEverythingServiceUpdateV2Body) {
-	o.Abe = abe
+	_ = "STUB: not implemented"
+
+	// WithUpdateMask adds the updateMask to the a bit of everything service update v2 params
+	return
 }
 
-// WithUpdateMask adds the updateMask to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithUpdateMask(updateMask *string) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetUpdateMask(updateMask)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUpdateMask adds the updateMask to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetUpdateMask(updateMask *string) {
-	o.UpdateMask = updateMask
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithUUIDName adds the uuidName to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) WithUUIDName(uuidName strfmt.UUID) *ABitOfEverythingServiceUpdateV2Params {
-	o.SetUUIDName(uuidName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetUUIDName adds the uuidName to the a bit of everything service update v2 params
 func (o *ABitOfEverythingServiceUpdateV2Params) SetUUIDName(uuidName strfmt.UUID) {
-	o.UUIDName = uuidName
+	_ = "STUB: not implemented"
+	return
+
+	// WriteToRequest writes these params to a swagger request
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceUpdateV2Params) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if err := r.SetBodyParam(o.Abe); err != nil {
-		return err
-	}
-
-	if o.UpdateMask != nil {
-
-		// query param updateMask
-		var qrUpdateMask string
-
-		if o.UpdateMask != nil {
-			qrUpdateMask = *o.UpdateMask
-		}
-		qUpdateMask := qrUpdateMask
-		if qUpdateMask != "" {
-
-			if err := r.SetQueryParam("updateMask", qUpdateMask); err != nil {
-				return err
-			}
-		}
-	}
-
-	// path param uuidName
-	if err := r.SetPathParam("uuidName", o.UUIDName.String()); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// query param updateMask
+
+// path param uuidName

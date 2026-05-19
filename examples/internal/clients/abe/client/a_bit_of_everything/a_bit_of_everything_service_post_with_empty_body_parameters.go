@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServicePostWithEmptyBodyParams() *ABitOfEverythingServicePostWithEmptyBodyParams {
-	return &ABitOfEverythingServicePostWithEmptyBodyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyParamsWithTimeout creates a new ABitOfEverythingServicePostWithEmptyBodyParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServicePostWithEmptyBodyParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	return &ABitOfEverythingServicePostWithEmptyBodyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyParamsWithContext creates a new ABitOfEverythingServicePostWithEmptyBodyParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServicePostWithEmptyBodyParamsWithContext(ctx context.Context) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	return &ABitOfEverythingServicePostWithEmptyBodyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyParamsWithHTTPClient creates a new ABitOfEverythingServicePostWithEmptyBodyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServicePostWithEmptyBodyParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	return &ABitOfEverythingServicePostWithEmptyBodyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,92 +69,91 @@ type ABitOfEverythingServicePostWithEmptyBodyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithDefaults() *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service post with empty body params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service post with empty body params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service post with empty body params
 }
 
-// WithContext adds the context to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithContext(ctx context.Context) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service post with empty body params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the a bit of everything service post with empty body params
 }
 
-// WithBody adds the body to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithBody(body models.ABitOfEverythingServicePostWithEmptyBodyBody) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the a bit of everything service post with empty body params
 }
 
-// SetBody adds the body to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetBody(body models.ABitOfEverythingServicePostWithEmptyBodyBody) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WithName adds the name to the a bit of everything service post with empty body params
+	return
 }
 
-// WithName adds the name to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WithName(name string) *ABitOfEverythingServicePostWithEmptyBodyParams {
-	o.SetName(name)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetName adds the name to the a bit of everything service post with empty body params
 }
 
-// SetName adds the name to the a bit of everything service post with empty body params
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) SetName(name string) {
-	o.Name = name
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServicePostWithEmptyBodyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	// path param name
-	if err := r.SetPathParam("name", o.Name); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param name

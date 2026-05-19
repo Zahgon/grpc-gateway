@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbNumericEnum NumericEnum
@@ -20,17 +18,20 @@ import (
 type ExamplepbNumericEnum string
 
 func NewExamplepbNumericEnum(value ExamplepbNumericEnum) *ExamplepbNumericEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated ExamplepbNumericEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated ExamplepbNumericEnum.
 func (m ExamplepbNumericEnum) Pointer() *ExamplepbNumericEnum {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// ExamplepbNumericEnumZERO captures enum value "ZERO"
 }
 
 const (
-
-	// ExamplepbNumericEnumZERO captures enum value "ZERO"
 	ExamplepbNumericEnumZERO ExamplepbNumericEnum = "ZERO"
 
 	// ExamplepbNumericEnumONE captures enum value "ONE"
@@ -51,28 +52,20 @@ func init() {
 }
 
 func (m ExamplepbNumericEnum) validateExamplepbNumericEnumEnum(path, location string, value ExamplepbNumericEnum) error {
-	if err := validate.EnumCase(path, location, value, examplepbNumericEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this examplepb numeric enum
 func (m ExamplepbNumericEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateExamplepbNumericEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this examplepb numeric enum based on context it is used
 func (m ExamplepbNumericEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

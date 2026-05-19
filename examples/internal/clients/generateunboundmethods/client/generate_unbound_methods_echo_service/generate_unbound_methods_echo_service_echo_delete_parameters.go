@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/generateunboundmethods/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteParams() *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithTimeout creates a new GenerateUnboundMethodsEchoServiceEchoDeleteParams object
 // with the ability to set a timeout on a request.
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithTimeout(timeout time.Duration) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithContext creates a new GenerateUnboundMethodsEchoServiceEchoDeleteParams object
 // with the ability to set a context for a request.
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithContext(ctx context.Context) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithHTTPClient creates a new GenerateUnboundMethodsEchoServiceEchoDeleteParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewGenerateUnboundMethodsEchoServiceEchoDeleteParamsWithHTTPClient(client *http.Client) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	return &GenerateUnboundMethodsEchoServiceEchoDeleteParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,76 +69,75 @@ type GenerateUnboundMethodsEchoServiceEchoDeleteParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WithDefaults() *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the generate unbound methods echo service echo delete params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the generate unbound methods echo service echo delete params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WithTimeout(timeout time.Duration) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the generate unbound methods echo service echo delete params
 }
 
-// WithContext adds the context to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WithContext(ctx context.Context) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the generate unbound methods echo service echo delete params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WithHTTPClient(client *http.Client) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the generate unbound methods echo service echo delete params
 }
 
-// WithBody adds the body to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WithBody(body *models.ExamplepbGenerateUnboundMethodsSimpleMessage) *GenerateUnboundMethodsEchoServiceEchoDeleteParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the generate unbound methods echo service echo delete params
 }
 
-// SetBody adds the body to the generate unbound methods echo service echo delete params
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) SetBody(body *models.ExamplepbGenerateUnboundMethodsSimpleMessage) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *GenerateUnboundMethodsEchoServiceEchoDeleteParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

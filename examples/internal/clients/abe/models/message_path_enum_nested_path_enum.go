@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // MessagePathEnumNestedPathEnum message path enum nested path enum
@@ -17,17 +15,20 @@ import (
 type MessagePathEnumNestedPathEnum string
 
 func NewMessagePathEnumNestedPathEnum(value MessagePathEnumNestedPathEnum) *MessagePathEnumNestedPathEnum {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated MessagePathEnumNestedPathEnum.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated MessagePathEnumNestedPathEnum.
 func (m MessagePathEnumNestedPathEnum) Pointer() *MessagePathEnumNestedPathEnum {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// MessagePathEnumNestedPathEnumGHI captures enum value "GHI"
 }
 
 const (
-
-	// MessagePathEnumNestedPathEnumGHI captures enum value "GHI"
 	MessagePathEnumNestedPathEnumGHI MessagePathEnumNestedPathEnum = "GHI"
 
 	// MessagePathEnumNestedPathEnumJKL captures enum value "JKL"
@@ -48,28 +49,20 @@ func init() {
 }
 
 func (m MessagePathEnumNestedPathEnum) validateMessagePathEnumNestedPathEnumEnum(path, location string, value MessagePathEnumNestedPathEnum) error {
-	if err := validate.EnumCase(path, location, value, messagePathEnumNestedPathEnumEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this message path enum nested path enum
 func (m MessagePathEnumNestedPathEnum) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validateMessagePathEnumNestedPathEnumEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this message path enum nested path enum based on context it is used
 func (m MessagePathEnumNestedPathEnum) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

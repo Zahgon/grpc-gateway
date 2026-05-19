@@ -6,7 +6,6 @@ import (
 	"context"
 
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ProtoSub2Status Status message in sub2 package (different structure from sub.Status)
@@ -26,28 +25,23 @@ type ProtoSub2Status struct {
 
 // Validate validates this proto sub2 status
 func (m *ProtoSub2Status) Validate(formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// ContextValidate validates this proto sub2 status based on context it is used
 	return nil
 }
 
-// ContextValidate validates this proto sub2 status based on context it is used
 func (m *ProtoSub2Status) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// MarshalBinary interface implementation
 	return nil
 }
 
-// MarshalBinary interface implementation
 func (m *ProtoSub2Status) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
-func (m *ProtoSub2Status) UnmarshalBinary(b []byte) error {
-	var res ProtoSub2Status
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}
+func (m *ProtoSub2Status) UnmarshalBinary(b []byte) error { _ = "STUB: not implemented"; return nil }

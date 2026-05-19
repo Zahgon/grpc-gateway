@@ -14,9 +14,8 @@ package examplepb
 
 import (
 	context "context"
+
 	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -52,37 +51,23 @@ type generateUnboundMethodsEchoServiceClient struct {
 }
 
 func NewGenerateUnboundMethodsEchoServiceClient(cc grpc.ClientConnInterface) GenerateUnboundMethodsEchoServiceClient {
-	return &generateUnboundMethodsEchoServiceClient{cc}
+	_ = "STUB: not implemented"
+	return *new(GenerateUnboundMethodsEchoServiceClient)
 }
 
 func (c *generateUnboundMethodsEchoServiceClient) Echo(ctx context.Context, in *GenerateUnboundMethodsSimpleMessage, opts ...grpc.CallOption) (*GenerateUnboundMethodsSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(GenerateUnboundMethodsSimpleMessage)
-	err := c.cc.Invoke(ctx, GenerateUnboundMethodsEchoService_Echo_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *generateUnboundMethodsEchoServiceClient) EchoBody(ctx context.Context, in *GenerateUnboundMethodsSimpleMessage, opts ...grpc.CallOption) (*GenerateUnboundMethodsSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(GenerateUnboundMethodsSimpleMessage)
-	err := c.cc.Invoke(ctx, GenerateUnboundMethodsEchoService_EchoBody_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *generateUnboundMethodsEchoServiceClient) EchoDelete(ctx context.Context, in *GenerateUnboundMethodsSimpleMessage, opts ...grpc.CallOption) (*GenerateUnboundMethodsSimpleMessage, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(GenerateUnboundMethodsSimpleMessage)
-	err := c.cc.Invoke(ctx, GenerateUnboundMethodsEchoService_EchoDelete_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateUnboundMethodsEchoServiceServer is the server API for GenerateUnboundMethodsEchoService service.
@@ -110,86 +95,55 @@ type GenerateUnboundMethodsEchoServiceServer interface {
 type UnimplementedGenerateUnboundMethodsEchoServiceServer struct{}
 
 func (UnimplementedGenerateUnboundMethodsEchoServiceServer) Echo(context.Context, *GenerateUnboundMethodsSimpleMessage) (*GenerateUnboundMethodsSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Echo not implemented")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
-func (UnimplementedGenerateUnboundMethodsEchoServiceServer) EchoBody(context.Context, *GenerateUnboundMethodsSimpleMessage) (*GenerateUnboundMethodsSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoBody not implemented")
-}
-func (UnimplementedGenerateUnboundMethodsEchoServiceServer) EchoDelete(context.Context, *GenerateUnboundMethodsSimpleMessage) (*GenerateUnboundMethodsSimpleMessage, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method EchoDelete not implemented")
-}
-func (UnimplementedGenerateUnboundMethodsEchoServiceServer) testEmbeddedByValue() {}
 
-// UnsafeGenerateUnboundMethodsEchoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to GenerateUnboundMethodsEchoServiceServer will
-// result in compilation errors.
+func (UnimplementedGenerateUnboundMethodsEchoServiceServer) EchoBody(context.Context, *GenerateUnboundMethodsSimpleMessage) (*GenerateUnboundMethodsSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedGenerateUnboundMethodsEchoServiceServer) EchoDelete(context.Context, *GenerateUnboundMethodsSimpleMessage) (*GenerateUnboundMethodsSimpleMessage, error) {
+	_ = "STUB: not implemented"
+	return nil, nil
+}
+
+func (UnimplementedGenerateUnboundMethodsEchoServiceServer) testEmbeddedByValue() {
+	_ = "STUB: not implemented"
+
+	// UnsafeGenerateUnboundMethodsEchoServiceServer may be embedded to opt out of forward compatibility for this service.
+	// Use of this interface is not recommended, as added methods to GenerateUnboundMethodsEchoServiceServer will
+	// result in compilation errors.
+	return
+}
+
 type UnsafeGenerateUnboundMethodsEchoServiceServer interface {
 	mustEmbedUnimplementedGenerateUnboundMethodsEchoServiceServer()
 }
 
 func RegisterGenerateUnboundMethodsEchoServiceServer(s grpc.ServiceRegistrar, srv GenerateUnboundMethodsEchoServiceServer) {
+	_ = "STUB: not implemented"
 	// If the following call pancis, it indicates UnimplementedGenerateUnboundMethodsEchoServiceServer was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&GenerateUnboundMethodsEchoService_ServiceDesc, srv)
+	return
 }
 
 func _GenerateUnboundMethodsEchoService_Echo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GenerateUnboundMethodsSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).Echo(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: GenerateUnboundMethodsEchoService_Echo_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).Echo(ctx, req.(*GenerateUnboundMethodsSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _GenerateUnboundMethodsEchoService_EchoBody_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GenerateUnboundMethodsSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).EchoBody(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: GenerateUnboundMethodsEchoService_EchoBody_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).EchoBody(ctx, req.(*GenerateUnboundMethodsSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func _GenerateUnboundMethodsEchoService_EchoDelete_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GenerateUnboundMethodsSimpleMessage)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).EchoDelete(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: GenerateUnboundMethodsEchoService_EchoDelete_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(GenerateUnboundMethodsEchoServiceServer).EchoDelete(ctx, req.(*GenerateUnboundMethodsSimpleMessage))
-	}
-	return interceptor(ctx, in, info, handler)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateUnboundMethodsEchoService_ServiceDesc is the grpc.ServiceDesc for GenerateUnboundMethodsEchoService service.

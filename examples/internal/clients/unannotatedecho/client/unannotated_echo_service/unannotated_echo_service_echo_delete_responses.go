@@ -3,11 +3,6 @@
 package unannotated_echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,40 +16,14 @@ type UnannotatedEchoServiceEchoDeleteReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *UnannotatedEchoServiceEchoDeleteReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewUnannotatedEchoServiceEchoDeleteOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewUnannotatedEchoServiceEchoDeleteForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewUnannotatedEchoServiceEchoDeleteNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewUnannotatedEchoServiceEchoDeleteDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewUnannotatedEchoServiceEchoDeleteOK creates a UnannotatedEchoServiceEchoDeleteOK with default headers values
 func NewUnannotatedEchoServiceEchoDeleteOK() *UnannotatedEchoServiceEchoDeleteOK {
-	return &UnannotatedEchoServiceEchoDeleteOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -68,63 +37,62 @@ type UnannotatedEchoServiceEchoDeleteOK struct {
 
 // IsSuccess returns true when this unannotated echo service echo delete o k response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoDeleteOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo delete o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo delete o k response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoDeleteOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo delete o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo delete o k response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoDeleteOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this unannotated echo service echo delete o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this unannotated echo service echo delete o k response has a 5xx status code
 func (o *UnannotatedEchoServiceEchoDeleteOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo delete o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo delete o k response a status code equal to that given
 func (o *UnannotatedEchoServiceEchoDeleteOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo delete o k response
 }
 
-// Code gets the status code for the unannotated echo service echo delete o k response
-func (o *UnannotatedEchoServiceEchoDeleteOK) Code() int {
-	return 200
-}
+func (o *UnannotatedEchoServiceEchoDeleteOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *UnannotatedEchoServiceEchoDeleteOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteOK %s", 200, payload)
-}
+func (o *UnannotatedEchoServiceEchoDeleteOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *UnannotatedEchoServiceEchoDeleteOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteOK %s", 200, payload)
-}
+func (o *UnannotatedEchoServiceEchoDeleteOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *UnannotatedEchoServiceEchoDeleteOK) GetPayload() *models.ExamplepbUnannotatedSimpleMessage {
-	return o.Payload
-}
-
-func (o *UnannotatedEchoServiceEchoDeleteOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbUnannotatedSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *UnannotatedEchoServiceEchoDeleteOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewUnannotatedEchoServiceEchoDeleteForbidden creates a UnannotatedEchoServiceEchoDeleteForbidden with default headers values
 func NewUnannotatedEchoServiceEchoDeleteForbidden() *UnannotatedEchoServiceEchoDeleteForbidden {
-	return &UnannotatedEchoServiceEchoDeleteForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -138,61 +106,68 @@ type UnannotatedEchoServiceEchoDeleteForbidden struct {
 
 // IsSuccess returns true when this unannotated echo service echo delete forbidden response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo delete forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo delete forbidden response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo delete forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo delete forbidden response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this unannotated echo service echo delete forbidden response has a 5xx status code
-func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsServerError() bool {
+	// IsServerError returns true when this unannotated echo service echo delete forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo delete forbidden response a status code equal to that given
-func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo delete forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the unannotated echo service echo delete forbidden response
-func (o *UnannotatedEchoServiceEchoDeleteForbidden) Code() int {
-	return 403
+func (o *UnannotatedEchoServiceEchoDeleteForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo delete forbidden response
 }
+
+func (o *UnannotatedEchoServiceEchoDeleteForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewUnannotatedEchoServiceEchoDeleteNotFound creates a UnannotatedEchoServiceEchoDeleteNotFound with default headers values
 func NewUnannotatedEchoServiceEchoDeleteNotFound() *UnannotatedEchoServiceEchoDeleteNotFound {
-	return &UnannotatedEchoServiceEchoDeleteNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -206,63 +181,68 @@ type UnannotatedEchoServiceEchoDeleteNotFound struct {
 
 // IsSuccess returns true when this unannotated echo service echo delete not found response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo delete not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo delete not found response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo delete not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo delete not found response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this unannotated echo service echo delete not found response has a 5xx status code
-func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsServerError() bool {
+	// IsServerError returns true when this unannotated echo service echo delete not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo delete not found response a status code equal to that given
-func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo delete not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the unannotated echo service echo delete not found response
-func (o *UnannotatedEchoServiceEchoDeleteNotFound) Code() int {
-	return 404
+func (o *UnannotatedEchoServiceEchoDeleteNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo delete not found response
 }
+
+func (o *UnannotatedEchoServiceEchoDeleteNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] unannotatedEchoServiceEchoDeleteNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewUnannotatedEchoServiceEchoDeleteDefault creates a UnannotatedEchoServiceEchoDeleteDefault with default headers values
 func NewUnannotatedEchoServiceEchoDeleteDefault(code int) *UnannotatedEchoServiceEchoDeleteDefault {
-	return &UnannotatedEchoServiceEchoDeleteDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -278,56 +258,56 @@ type UnannotatedEchoServiceEchoDeleteDefault struct {
 
 // IsSuccess returns true when this unannotated echo service echo delete default response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoDeleteDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this unannotated echo service echo delete default response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoDeleteDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this unannotated echo service echo delete default response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoDeleteDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this unannotated echo service echo delete default response has a 5xx status code
 func (o *UnannotatedEchoServiceEchoDeleteDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this unannotated echo service echo delete default response a status code equal to that given
 func (o *UnannotatedEchoServiceEchoDeleteDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo delete default response
 }
 
-// Code gets the status code for the unannotated echo service echo delete default response
-func (o *UnannotatedEchoServiceEchoDeleteDefault) Code() int {
-	return o._statusCode
-}
+func (o *UnannotatedEchoServiceEchoDeleteDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *UnannotatedEchoServiceEchoDeleteDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] UnannotatedEchoService_EchoDelete default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/echo_delete][%d] UnannotatedEchoService_EchoDelete default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteDefault) GetPayload() *models.RPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *UnannotatedEchoServiceEchoDeleteDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.RPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

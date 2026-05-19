@@ -35,15 +35,23 @@ type Encoder interface {
 type DecoderFunc func(v interface{}) error
 
 // Decode delegates invocations to the underlying function itself.
-func (f DecoderFunc) Decode(v interface{}) error { return f(v) }
+func (f DecoderFunc) Decode(v interface{}) error {
+	_ = "STUB: not implemented"
 
-// EncoderFunc adapts an encoder function into Encoder
+	// EncoderFunc adapts an encoder function into Encoder
+	return nil
+}
+
 type EncoderFunc func(v interface{}) error
 
 // Encode delegates invocations to the underlying function itself.
-func (f EncoderFunc) Encode(v interface{}) error { return f(v) }
+func (f EncoderFunc) Encode(v interface{}) error {
+	_ = "STUB: not implemented"
 
-// Delimited defines the streaming delimiter.
+	// Delimited defines the streaming delimiter.
+	return nil
+}
+
 type Delimited interface {
 	// Delimiter returns the record separator for the stream.
 	Delimiter() []byte

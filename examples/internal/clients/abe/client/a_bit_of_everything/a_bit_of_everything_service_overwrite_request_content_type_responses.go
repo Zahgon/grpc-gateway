@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceOverwriteRequestContentTypeDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeOK creates a ABitOfEverythingServiceOverwriteRequestContentTypeOK with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeOK() *ABitOfEverythingServiceOverwriteRequestContentTypeOK {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,71 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeOK struct {
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type o k response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service overwrite request content type o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service overwrite request content type o k response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service overwrite request content type o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service overwrite request content type o k response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service overwrite request content type o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service overwrite request content type o k response has a 5xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service overwrite request content type o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service overwrite request content type o k response a status code equal to that given
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type o k response
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type o k response
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeForbidden creates a ABitOfEverythingServiceOverwriteRequestContentTypeForbidden with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeForbidden() *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +115,71 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service overwrite request content type forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service overwrite request content type forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service overwrite request content type forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service overwrite request content type forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service overwrite request content type forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service overwrite request content type forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service overwrite request content type forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service overwrite request content type forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type forbidden response
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type forbidden response
+}
+
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeNotFound creates a ABitOfEverythingServiceOverwriteRequestContentTypeNotFound with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeNotFound() *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +193,71 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type not found response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service overwrite request content type not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service overwrite request content type not found response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service overwrite request content type not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service overwrite request content type not found response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service overwrite request content type not found response has a 5xx status code
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service overwrite request content type not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service overwrite request content type not found response a status code equal to that given
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service overwrite request content type not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type not found response
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type not found response
+}
+
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot creates a ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot() *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +271,71 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service overwrite request content type i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service overwrite request content type i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service overwrite request content type i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service overwrite request content type i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service overwrite request content type i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service overwrite request content type i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service overwrite request content type i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service overwrite request content type i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type i m a teapot response
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError creates a ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError() *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +349,71 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError struc
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service overwrite request content type internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service overwrite request content type internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service overwrite request content type internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service overwrite request content type internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service overwrite request content type internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service overwrite request content type internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service overwrite request content type internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service overwrite request content type internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type internal server error response
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type internal server error response
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] aBitOfEverythingServiceOverwriteRequestContentTypeInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceOverwriteRequestContentTypeInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceOverwriteRequestContentTypeDefault creates a ABitOfEverythingServiceOverwriteRequestContentTypeDefault with default headers values
 func NewABitOfEverythingServiceOverwriteRequestContentTypeDefault(code int) *ABitOfEverythingServiceOverwriteRequestContentTypeDefault {
-	return &ABitOfEverythingServiceOverwriteRequestContentTypeDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +429,59 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeDefault struct {
 
 // IsSuccess returns true when this a bit of everything service overwrite request content type default response has a 2xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service overwrite request content type default response has a 3xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service overwrite request content type default response has a 4xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service overwrite request content type default response has a 5xx status code
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service overwrite request content type default response a status code equal to that given
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service overwrite request content type default response
 }
 
-// Code gets the status code for the a bit of everything service overwrite request content type default response
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] ABitOfEverythingService_OverwriteRequestContentType default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v2/example/overwriterequestcontenttype][%d] ABitOfEverythingService_OverwriteRequestContentType default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceOverwriteRequestContentTypeDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

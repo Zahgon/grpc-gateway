@@ -4,15 +4,9 @@ package response_body_service
 
 import (
 	"context"
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/responsebody/models"
 )
@@ -24,28 +18,14 @@ type ResponseBodyServiceGetResponseBodyStreamReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ResponseBodyServiceGetResponseBodyStreamReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewResponseBodyServiceGetResponseBodyStreamOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewResponseBodyServiceGetResponseBodyStreamDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewResponseBodyServiceGetResponseBodyStreamOK creates a ResponseBodyServiceGetResponseBodyStreamOK with default headers values
 func NewResponseBodyServiceGetResponseBodyStreamOK() *ResponseBodyServiceGetResponseBodyStreamOK {
-	return &ResponseBodyServiceGetResponseBodyStreamOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -59,65 +39,71 @@ type ResponseBodyServiceGetResponseBodyStreamOK struct {
 
 // IsSuccess returns true when this response body service get response body stream o k response has a 2xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this response body service get response body stream o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this response body service get response body stream o k response has a 3xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this response body service get response body stream o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this response body service get response body stream o k response has a 4xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this response body service get response body stream o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this response body service get response body stream o k response has a 5xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this response body service get response body stream o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this response body service get response body stream o k response a status code equal to that given
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the response body service get response body stream o k response
 }
 
-// Code gets the status code for the response body service get response body stream o k response
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) Code() int {
-	return 200
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/stream/{data}][%d] responseBodyServiceGetResponseBodyStreamOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/stream/{data}][%d] responseBodyServiceGetResponseBodyStreamOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOK) GetPayload() *ResponseBodyServiceGetResponseBodyStreamOKBody {
-	return o.Payload
-}
-
-func (o *ResponseBodyServiceGetResponseBodyStreamOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(ResponseBodyServiceGetResponseBodyStreamOKBody)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ResponseBodyServiceGetResponseBodyStreamOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewResponseBodyServiceGetResponseBodyStreamDefault creates a ResponseBodyServiceGetResponseBodyStreamDefault with default headers values
 func NewResponseBodyServiceGetResponseBodyStreamDefault(code int) *ResponseBodyServiceGetResponseBodyStreamDefault {
-	return &ResponseBodyServiceGetResponseBodyStreamDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -133,59 +119,62 @@ type ResponseBodyServiceGetResponseBodyStreamDefault struct {
 
 // IsSuccess returns true when this response body service get response body stream default response has a 2xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this response body service get response body stream default response has a 3xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this response body service get response body stream default response has a 4xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this response body service get response body stream default response has a 5xx status code
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this response body service get response body stream default response a status code equal to that given
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the response body service get response body stream default response
 }
 
-// Code gets the status code for the response body service get response body stream default response
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/stream/{data}][%d] ResponseBodyService_GetResponseBodyStream default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[GET /responsebody/stream/{data}][%d] ResponseBodyService_GetResponseBodyStream default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload
 
 /*
 ResponseBodyServiceGetResponseBodyStreamOKBody Stream result of examplepbResponseBodyOut
@@ -202,150 +191,50 @@ type ResponseBodyServiceGetResponseBodyStreamOKBody struct {
 
 // Validate validates this response body service get response body stream o k body
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.validateError(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.validateResult(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) validateError(formats strfmt.Registry) error {
-	if swag.IsZero(o.Error) { // not required
-		return nil
-	}
-
-	if o.Error != nil {
-		if err := o.Error.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "error")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "error")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) validateResult(formats strfmt.Registry) error {
-	if swag.IsZero(o.Result) { // not required
-		return nil
-	}
-
-	if o.Result != nil {
-		if err := o.Result.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "result")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "result")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this response body service get response body stream o k body based on the context it is used
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.contextValidateError(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateResult(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) contextValidateError(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.Error != nil {
-
-		if swag.IsZero(o.Error) { // not required
-			return nil
-		}
-
-		if err := o.Error.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "error")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "error")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) contextValidateResult(ctx context.Context, formats strfmt.Registry) error {
-
-	if o.Result != nil {
-
-		if swag.IsZero(o.Result) { // not required
-			return nil
-		}
-
-		if err := o.Result.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "result")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("responseBodyServiceGetResponseBodyStreamOK" + "." + "result")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 // MarshalBinary interface implementation
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (o *ResponseBodyServiceGetResponseBodyStreamOKBody) UnmarshalBinary(b []byte) error {
-	var res ResponseBodyServiceGetResponseBodyStreamOKBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
+	_ = "STUB: not implemented"
 	return nil
 }

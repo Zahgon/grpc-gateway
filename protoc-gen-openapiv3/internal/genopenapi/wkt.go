@@ -26,62 +26,7 @@ package genopenapi
 //
 // Each call should return a fresh schema so callers can mutate it without
 // risk of cross-contamination.
-func wellKnownTypeSchema(typeName string) *Schema {
-	switch typeName {
-	case ".google.protobuf.Timestamp":
-		return &Schema{Type: SchemaType{"string"}, Format: "date-time"}
-	case ".google.protobuf.Duration":
-		return &Schema{Type: SchemaType{"string"}}
-	case ".google.protobuf.FieldMask":
-		return &Schema{Type: SchemaType{"string"}}
+func wellKnownTypeSchema(typeName string) *Schema { _ = "STUB: not implemented"; return nil }
 
-	case ".google.protobuf.StringValue":
-		return &Schema{Type: SchemaType{"string"}}
-	case ".google.protobuf.BytesValue":
-		return &Schema{Type: SchemaType{"string"}, Format: "byte"}
-	case ".google.protobuf.Int32Value":
-		return &Schema{Type: SchemaType{"integer"}, Format: "int32"}
-	case ".google.protobuf.UInt32Value":
-		// uint32's range (0..4294967295) exceeds int32; OpenAPI has no
-		// "uint32" format, so int64 is the narrowest that fits.
-		return &Schema{Type: SchemaType{"integer"}, Format: "int64"}
-	case ".google.protobuf.Int64Value":
-		return &Schema{Type: SchemaType{"string"}, Format: "int64"}
-	case ".google.protobuf.UInt64Value":
-		return &Schema{Type: SchemaType{"string"}, Format: "uint64"}
-	case ".google.protobuf.FloatValue":
-		return &Schema{Type: SchemaType{"number"}, Format: "float"}
-	case ".google.protobuf.DoubleValue":
-		return &Schema{Type: SchemaType{"number"}, Format: "double"}
-	case ".google.protobuf.BoolValue":
-		return &Schema{Type: SchemaType{"boolean"}}
-
-	case ".google.protobuf.Empty":
-		return &Schema{Type: SchemaType{"object"}}
-	case ".google.protobuf.Struct":
-		return &Schema{Type: SchemaType{"object"}}
-	case ".google.protobuf.Value":
-		return &Schema{}
-	case ".google.protobuf.ListValue":
-		return &Schema{
-			Type:  SchemaType{"array"},
-			Items: &SchemaOrRef{Value: &Schema{}},
-		}
-	case ".google.protobuf.NullValue":
-		return &Schema{Type: SchemaType{"null"}}
-
-	case ".google.protobuf.Any":
-		t := true
-		return &Schema{
-			Type: SchemaType{"object"},
-			Properties: map[string]*SchemaOrRef{
-				"@type": {Value: &Schema{
-					Type:        SchemaType{"string"},
-					Description: "A URL/resource name that uniquely identifies the type of the serialized protocol buffer message.",
-				}},
-			},
-			AdditionalProperties: &AdditionalProperties{Bool: &t},
-		}
-	}
-	return nil
-}
+// uint32's range (0..4294967295) exceeds int32; OpenAPI has no
+// "uint32" format, so int64 is the narrowest that fits.

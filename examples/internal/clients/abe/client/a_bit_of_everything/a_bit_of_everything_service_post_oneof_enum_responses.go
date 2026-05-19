@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServicePostOneofEnumReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServicePostOneofEnumReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServicePostOneofEnumOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServicePostOneofEnumForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServicePostOneofEnumNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServicePostOneofEnumIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServicePostOneofEnumInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServicePostOneofEnumDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumOK creates a ABitOfEverythingServicePostOneofEnumOK with default headers values
 func NewABitOfEverythingServicePostOneofEnumOK() *ABitOfEverythingServicePostOneofEnumOK {
-	return &ABitOfEverythingServicePostOneofEnumOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,68 @@ type ABitOfEverythingServicePostOneofEnumOK struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum o k response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post oneof enum o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post oneof enum o k response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post oneof enum o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post oneof enum o k response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service post oneof enum o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service post oneof enum o k response has a 5xx status code
 func (o *ABitOfEverythingServicePostOneofEnumOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post oneof enum o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post oneof enum o k response a status code equal to that given
 func (o *ABitOfEverythingServicePostOneofEnumOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum o k response
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum o k response
-func (o *ABitOfEverythingServicePostOneofEnumOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServicePostOneofEnumOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServicePostOneofEnumOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumOK %s", 200, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumForbidden creates a ABitOfEverythingServicePostOneofEnumForbidden with default headers values
 func NewABitOfEverythingServicePostOneofEnumForbidden() *ABitOfEverythingServicePostOneofEnumForbidden {
-	return &ABitOfEverythingServicePostOneofEnumForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +112,71 @@ type ABitOfEverythingServicePostOneofEnumForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum forbidden response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post oneof enum forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post oneof enum forbidden response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post oneof enum forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post oneof enum forbidden response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post oneof enum forbidden response has a 5xx status code
-func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post oneof enum forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post oneof enum forbidden response a status code equal to that given
-func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post oneof enum forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum forbidden response
+func (o *ABitOfEverythingServicePostOneofEnumForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum forbidden response
+}
+
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumNotFound creates a ABitOfEverythingServicePostOneofEnumNotFound with default headers values
 func NewABitOfEverythingServicePostOneofEnumNotFound() *ABitOfEverythingServicePostOneofEnumNotFound {
-	return &ABitOfEverythingServicePostOneofEnumNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +190,71 @@ type ABitOfEverythingServicePostOneofEnumNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum not found response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post oneof enum not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post oneof enum not found response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post oneof enum not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post oneof enum not found response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post oneof enum not found response has a 5xx status code
-func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post oneof enum not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post oneof enum not found response a status code equal to that given
-func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post oneof enum not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum not found response
+func (o *ABitOfEverythingServicePostOneofEnumNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum not found response
+}
+
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) Code() int {
-	return 404
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumIMATeapot creates a ABitOfEverythingServicePostOneofEnumIMATeapot with default headers values
 func NewABitOfEverythingServicePostOneofEnumIMATeapot() *ABitOfEverythingServicePostOneofEnumIMATeapot {
-	return &ABitOfEverythingServicePostOneofEnumIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +268,71 @@ type ABitOfEverythingServicePostOneofEnumIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post oneof enum i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post oneof enum i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post oneof enum i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post oneof enum i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service post oneof enum i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service post oneof enum i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service post oneof enum i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post oneof enum i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum i m a teapot response
+func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum i m a teapot response
+}
+
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumInternalServerError creates a ABitOfEverythingServicePostOneofEnumInternalServerError with default headers values
 func NewABitOfEverythingServicePostOneofEnumInternalServerError() *ABitOfEverythingServicePostOneofEnumInternalServerError {
-	return &ABitOfEverythingServicePostOneofEnumInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +346,71 @@ type ABitOfEverythingServicePostOneofEnumInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum internal server error response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service post oneof enum internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service post oneof enum internal server error response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service post oneof enum internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service post oneof enum internal server error response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service post oneof enum internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service post oneof enum internal server error response has a 5xx status code
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service post oneof enum internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service post oneof enum internal server error response a status code equal to that given
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum internal server error response
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum internal server error response
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] aBitOfEverythingServicePostOneofEnumInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServicePostOneofEnumInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServicePostOneofEnumDefault creates a ABitOfEverythingServicePostOneofEnumDefault with default headers values
 func NewABitOfEverythingServicePostOneofEnumDefault(code int) *ABitOfEverythingServicePostOneofEnumDefault {
-	return &ABitOfEverythingServicePostOneofEnumDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +426,59 @@ type ABitOfEverythingServicePostOneofEnumDefault struct {
 
 // IsSuccess returns true when this a bit of everything service post oneof enum default response has a 2xx status code
 func (o *ABitOfEverythingServicePostOneofEnumDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service post oneof enum default response has a 3xx status code
 func (o *ABitOfEverythingServicePostOneofEnumDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service post oneof enum default response has a 4xx status code
 func (o *ABitOfEverythingServicePostOneofEnumDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service post oneof enum default response has a 5xx status code
 func (o *ABitOfEverythingServicePostOneofEnumDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service post oneof enum default response a status code equal to that given
 func (o *ABitOfEverythingServicePostOneofEnumDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service post oneof enum default response
 }
 
-// Code gets the status code for the a bit of everything service post oneof enum default response
 func (o *ABitOfEverythingServicePostOneofEnumDefault) Code() int {
-	return o._statusCode
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] ABitOfEverythingService_PostOneofEnum default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/oneofenum][%d] ABitOfEverythingService_PostOneofEnum default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServicePostOneofEnumDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

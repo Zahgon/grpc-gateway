@@ -4,13 +4,13 @@ package echo_service
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
 // New creates a new echo service API client.
 func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientService {
-	return &Client{transport: transport, formats: formats}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new echo service API client with basic auth credentials.
@@ -21,9 +21,8 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientServi
 // - user: user for basic authentication header.
 // - password: password for basic authentication header.
 func NewClientWithBasicAuth(host, basePath, scheme, user, password string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BasicAuth(user, password)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new echo service API client with a bearer token for authentication.
@@ -33,9 +32,8 @@ func NewClientWithBasicAuth(host, basePath, scheme, user, password string) Clien
 // - scheme: http scheme ("http", "https").
 // - bearerToken: bearer token for Bearer authentication header.
 func NewClientWithBearerToken(host, basePath, scheme, bearerToken string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BearerToken(bearerToken)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 /*
@@ -88,43 +86,16 @@ type ClientService interface {
 returned.
 */
 func (a *Client) EchoServiceEcho(params *EchoServiceEchoParams, opts ...ClientOption) (*EchoServiceEchoOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo",
-		Method:             "POST",
-		PathPattern:        "/v1/example/echo/{id}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho2 echos method receives a simple message and returns it
@@ -134,43 +105,16 @@ func (a *Client) EchoServiceEcho(params *EchoServiceEchoParams, opts ...ClientOp
 returned.
 */
 func (a *Client) EchoServiceEcho2(params *EchoServiceEcho2Params, opts ...ClientOption) (*EchoServiceEcho2OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho2Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo2",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo/{id}/{num}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho2Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho2OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho2Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho3 echos method receives a simple message and returns it
@@ -180,43 +124,16 @@ func (a *Client) EchoServiceEcho2(params *EchoServiceEcho2Params, opts ...Client
 returned.
 */
 func (a *Client) EchoServiceEcho3(params *EchoServiceEcho3Params, opts ...ClientOption) (*EchoServiceEcho3OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho3Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo3",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo/{id}/{num}/{lang}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho3Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho3OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho3Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho4 echos method receives a simple message and returns it
@@ -226,43 +143,16 @@ func (a *Client) EchoServiceEcho3(params *EchoServiceEcho3Params, opts ...Client
 returned.
 */
 func (a *Client) EchoServiceEcho4(params *EchoServiceEcho4Params, opts ...ClientOption) (*EchoServiceEcho4OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho4Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo4",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo1/{id}/{lineNum}/{status.note}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho4Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho4OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho4Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho5 echos method receives a simple message and returns it
@@ -272,43 +162,16 @@ func (a *Client) EchoServiceEcho4(params *EchoServiceEcho4Params, opts ...Client
 returned.
 */
 func (a *Client) EchoServiceEcho5(params *EchoServiceEcho5Params, opts ...ClientOption) (*EchoServiceEcho5OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho5Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo5",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo2/{no.note}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho5Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho5OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho5Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho6 echos method receives a simple message and returns it
@@ -318,43 +181,16 @@ func (a *Client) EchoServiceEcho5(params *EchoServiceEcho5Params, opts ...Client
 returned.
 */
 func (a *Client) EchoServiceEcho6(params *EchoServiceEcho6Params, opts ...ClientOption) (*EchoServiceEcho6OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho6Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo6",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo/resource/{resourceId}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho6Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho6OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho6Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 	EchoServiceEcho7 echos method receives a simple message and returns it
@@ -364,297 +200,106 @@ func (a *Client) EchoServiceEcho6(params *EchoServiceEcho6Params, opts ...Client
 returned.
 */
 func (a *Client) EchoServiceEcho7(params *EchoServiceEcho7Params, opts ...ClientOption) (*EchoServiceEcho7OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEcho7Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_Echo7",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo/nested/{nId.nId}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEcho7Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEcho7OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEcho7Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoBody echos body method receives a simple message and returns it
 */
 func (a *Client) EchoServiceEchoBody(params *EchoServiceEchoBodyParams, opts ...ClientOption) (*EchoServiceEchoBodyOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoBodyParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoBody",
-		Method:             "POST",
-		PathPattern:        "/v1/example/echo_body",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoBodyReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoBodyOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoBodyDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoBody2 echos body method receives a simple message and returns it
 */
 func (a *Client) EchoServiceEchoBody2(params *EchoServiceEchoBody2Params, opts ...ClientOption) (*EchoServiceEchoBody2OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoBody2Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoBody2",
-		Method:             "PUT",
-		PathPattern:        "/v1/example/echo_body/{id}",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoBody2Reader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoBody2OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoBody2Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoDelete echos delete method receives a simple message and returns it
 */
 func (a *Client) EchoServiceEchoDelete(params *EchoServiceEchoDeleteParams, opts ...ClientOption) (*EchoServiceEchoDeleteOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoDeleteParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoDelete",
-		Method:             "DELETE",
-		PathPattern:        "/v1/example/echo_delete",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoDeleteReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoDeleteOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoDeleteDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoPatch echos patch method receives a non standard update request and returns it
 */
 func (a *Client) EchoServiceEchoPatch(params *EchoServiceEchoPatchParams, opts ...ClientOption) (*EchoServiceEchoPatchOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoPatchParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoPatch",
-		Method:             "PATCH",
-		PathPattern:        "/v1/example/echo_patch",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoPatchReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoPatchOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoPatchDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoStatus echos status demonstrates handling of name collisions it uses status types from both sub and sub2 packages which have the same name but different structures demonstrating how the open API generator handles this scenario
 */
 func (a *Client) EchoServiceEchoStatus(params *EchoServiceEchoStatusParams, opts ...ClientOption) (*EchoServiceEchoStatusOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoStatusParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoStatus",
-		Method:             "POST",
-		PathPattern:        "/v1/example/echo_status",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoStatusReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoStatusOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoStatusDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 EchoServiceEchoUnauthorized echos unauthorized method receives a simple message and returns it it must always return a google rpc code of u n a u t h e n t i c a t e d and a HTTP status code of 401
 */
 func (a *Client) EchoServiceEchoUnauthorized(params *EchoServiceEchoUnauthorizedParams, opts ...ClientOption) (*EchoServiceEchoUnauthorizedOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewEchoServiceEchoUnauthorizedParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "EchoService_EchoUnauthorized",
-		Method:             "GET",
-		PathPattern:        "/v1/example/echo_unauthorized",
-		ProducesMediaTypes: []string{"application/json"},
-		ConsumesMediaTypes: []string{"application/json"},
-		Schemes:            []string{"http"},
-		Params:             params,
-		Reader:             &EchoServiceEchoUnauthorizedReader{formats: a.formats},
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*EchoServiceEchoUnauthorizedOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*EchoServiceEchoUnauthorizedDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 // SetTransport changes the transport on the client
-func (a *Client) SetTransport(transport runtime.ClientTransport) {
-	a.transport = transport
-}
+func (a *Client) SetTransport(transport runtime.ClientTransport) { _ = "STUB: not implemented"; return }

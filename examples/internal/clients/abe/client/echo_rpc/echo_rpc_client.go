@@ -4,13 +4,13 @@ package echo_rpc
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
 // New creates a new echo rpc API client.
 func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientService {
-	return &Client{transport: transport, formats: formats}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new echo rpc API client with basic auth credentials.
@@ -21,9 +21,8 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) ClientServi
 // - user: user for basic authentication header.
 // - password: password for basic authentication header.
 func NewClientWithBasicAuth(host, basePath, scheme, user, password string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BasicAuth(user, password)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 // New creates a new echo rpc API client with a bearer token for authentication.
@@ -33,9 +32,8 @@ func NewClientWithBasicAuth(host, basePath, scheme, user, password string) Clien
 // - scheme: http scheme ("http", "https").
 // - bearerToken: bearer token for Bearer authentication header.
 func NewClientWithBearerToken(host, basePath, scheme, bearerToken string) ClientService {
-	transport := httptransport.New(host, basePath, []string{scheme})
-	transport.DefaultAuthentication = httptransport.BearerToken(bearerToken)
-	return &Client{transport: transport, formats: strfmt.Default}
+	_ = "STUB: not implemented"
+	return *new(ClientService)
 }
 
 /*
@@ -58,40 +56,30 @@ type ClientOption func(*runtime.ClientOperation)
 //
 // You may use this option to set arbitrary extensions to your MIME media type.
 func WithContentType(mime string) ClientOption {
-	return func(r *runtime.ClientOperation) {
-		r.ConsumesMediaTypes = []string{mime}
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // WithContentTypeApplicationJSON sets the Content-Type header to "application/json".
-func WithContentTypeApplicationJSON(r *runtime.ClientOperation) {
-	r.ConsumesMediaTypes = []string{"application/json"}
-}
+func WithContentTypeApplicationJSON(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // WithContentTypeApplicationxFooMime sets the Content-Type header to "application/x-foo-mime".
 func WithContentTypeApplicationxFooMime(r *runtime.ClientOperation) {
-	r.ConsumesMediaTypes = []string{"application/x-foo-mime"}
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithAccept allows the client to force the Accept header
 // to negotiate a specific Producer from the server.
 //
 // You may use this option to set arbitrary extensions to your MIME media type.
-func WithAccept(mime string) ClientOption {
-	return func(r *runtime.ClientOperation) {
-		r.ProducesMediaTypes = []string{mime}
-	}
-}
+func WithAccept(mime string) ClientOption { _ = "STUB: not implemented"; return *new(ClientOption) }
 
 // WithAcceptApplicationJSON sets the Accept header to "application/json".
-func WithAcceptApplicationJSON(r *runtime.ClientOperation) {
-	r.ProducesMediaTypes = []string{"application/json"}
-}
+func WithAcceptApplicationJSON(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // WithAcceptApplicationxFooMime sets the Accept header to "application/x-foo-mime".
-func WithAcceptApplicationxFooMime(r *runtime.ClientOperation) {
-	r.ProducesMediaTypes = []string{"application/x-foo-mime"}
-}
+func WithAcceptApplicationxFooMime(r *runtime.ClientOperation) { _ = "STUB: not implemented"; return }
 
 // ClientService is the interface for Client methods
 type ClientService interface {
@@ -110,44 +98,16 @@ ABitOfEverythingServiceEcho summaries echo rpc
 Description Echo
 */
 func (a *Client) ABitOfEverythingServiceEcho(params *ABitOfEverythingServiceEchoParams, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceEchoOK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceEchoParams()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Echo",
-		Method:             "GET",
-		PathPattern:        "/v1/example/a_bit_of_everything/echo/{value}",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceEchoReader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceEchoOK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceEchoDefault)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceEcho2 summaries echo rpc
@@ -155,44 +115,16 @@ ABitOfEverythingServiceEcho2 summaries echo rpc
 Description Echo
 */
 func (a *Client) ABitOfEverythingServiceEcho2(params *ABitOfEverythingServiceEcho2Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceEcho2OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceEcho2Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Echo2",
-		Method:             "POST",
-		PathPattern:        "/v2/example/echo",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceEcho2Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceEcho2OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceEcho2Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 /*
 ABitOfEverythingServiceEcho3 summaries echo rpc
@@ -200,46 +132,16 @@ ABitOfEverythingServiceEcho3 summaries echo rpc
 Description Echo
 */
 func (a *Client) ABitOfEverythingServiceEcho3(params *ABitOfEverythingServiceEcho3Params, authInfo runtime.ClientAuthInfoWriter, opts ...ClientOption) (*ABitOfEverythingServiceEcho3OK, error) {
+	_ = "STUB: not implemented"
 	// NOTE: parameters are not validated before sending
-	if params == nil {
-		params = NewABitOfEverythingServiceEcho3Params()
-	}
-	op := &runtime.ClientOperation{
-		ID:                 "ABitOfEverythingService_Echo3",
-		Method:             "GET",
-		PathPattern:        "/v2/example/echo",
-		ProducesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		ConsumesMediaTypes: []string{"application/json", "application/x-foo-mime"},
-		Schemes:            []string{"http", "https", "wss"},
-		Params:             params,
-		Reader:             &ABitOfEverythingServiceEcho3Reader{formats: a.formats},
-		AuthInfo:           authInfo,
-		Context:            params.Context,
-		Client:             params.HTTPClient,
-	}
-	for _, opt := range opts {
-		opt(op)
-	}
-	result, err := a.transport.Submit(op)
-	if err != nil {
-		return nil, err
-	}
-
-	// only one success response has to be checked
-	success, ok := result.(*ABitOfEverythingServiceEcho3OK)
-	if ok {
-		return success, nil
-	}
-
-	// unexpected success response.
-	//
-	// a default response is provided: fill this and return an error
-	unexpectedSuccess := result.(*ABitOfEverythingServiceEcho3Default)
-
-	return nil, runtime.NewAPIError("unexpected success response: content available as default response in error", unexpectedSuccess, unexpectedSuccess.Code())
+	return nil, nil
 }
+
+// only one success response has to be checked
+
+// unexpected success response.
+//
+// a default response is provided: fill this and return an error
 
 // SetTransport changes the transport on the client
-func (a *Client) SetTransport(transport runtime.ClientTransport) {
-	a.transport = transport
-}
+func (a *Client) SetTransport(transport runtime.ClientTransport) { _ = "STUB: not implemented"; return }

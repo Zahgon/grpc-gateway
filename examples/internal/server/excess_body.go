@@ -5,8 +5,6 @@ import (
 
 	examples "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/examplepb"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 
@@ -16,39 +14,38 @@ var (
 )
 
 func ExcessBodyServer_RetrieveContextRPC() context.Context {
-	return <-excessBody_contextChRPC
+	_ = "STUB: not implemented"
+	return *new(context.Context)
 }
 
 func ExcessBodyServer_RetrieveContextStream() context.Context {
-	return <-excessBody_contextChStream
+	_ = "STUB: not implemented"
+	return *new(context.Context)
 }
 
 type excessBodyServer struct{}
 
 func newExcessBodyServer() examples.ExcessBodyServiceServer {
-	return &excessBodyServer{}
+	_ = "STUB: not implemented"
+	return *new(examples.ExcessBodyServiceServer)
 }
 
 func (s excessBodyServer) NoBodyRpc(ctx context.Context, req *emptypb.Empty) (*emptypb.Empty, error) {
-	excessBody_contextChRPC <- ctx
-	<-ctx.Done()
-	return nil, status.Error(codes.Canceled, "context canceled")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s excessBodyServer) NoBodyServerStream(req *emptypb.Empty, stream grpc.ServerStreamingServer[emptypb.Empty]) error {
-	excessBody_contextChStream <- stream.Context()
-	<-stream.Context().Done()
-	return status.Error(codes.Canceled, "context canceled")
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s excessBodyServer) WithBodyRpc(ctx context.Context, req *emptypb.Empty) (*emptypb.Empty, error) {
-	excessBody_contextChRPC <- ctx
-	<-ctx.Done()
-	return nil, status.Error(codes.Canceled, "context canceled")
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s excessBodyServer) WithBodyServerStream(req *emptypb.Empty, stream grpc.ServerStreamingServer[emptypb.Empty]) error {
-	excessBody_contextChStream <- stream.Context()
-	<-stream.Context().Done()
-	return status.Error(codes.Canceled, "context canceled")
+	_ = "STUB: not implemented"
+	return nil
 }

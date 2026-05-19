@@ -15,7 +15,6 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
-	reflect "reflect"
 )
 
 const (
@@ -95,24 +94,6 @@ var file_examples_internal_proto_examplepb_excess_body_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_examplepb_excess_body_proto_init() }
 func file_examples_internal_proto_examplepb_excess_body_proto_init() {
-	if File_examples_internal_proto_examplepb_excess_body_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_excess_body_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   0,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_excess_body_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_excess_body_proto_depIdxs,
-	}.Build()
-	File_examples_internal_proto_examplepb_excess_body_proto = out.File
-	file_examples_internal_proto_examplepb_excess_body_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_excess_body_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_excess_body_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

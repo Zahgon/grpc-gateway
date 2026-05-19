@@ -4,11 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ABitOfEverythingNested Nested is nested type.
@@ -29,94 +26,37 @@ type ABitOfEverythingNested struct {
 
 // Validate validates this a bit of everything nested
 func (m *ABitOfEverythingNested) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateOk(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ABitOfEverythingNested) validateOk(formats strfmt.Registry) error {
-	if swag.IsZero(m.Ok) { // not required
-		return nil
-	}
-
-	if m.Ok != nil {
-		if err := m.Ok.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("ok")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("ok")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this a bit of everything nested based on the context it is used
 func (m *ABitOfEverythingNested) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateOk(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ABitOfEverythingNested) contextValidateOk(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Ok != nil {
-
-		if swag.IsZero(m.Ok) { // not required
-			return nil
-		}
-
-		if err := m.Ok.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("ok")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("ok")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 // MarshalBinary interface implementation
 func (m *ABitOfEverythingNested) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ABitOfEverythingNested) UnmarshalBinary(b []byte) error {
-	var res ABitOfEverythingNested
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

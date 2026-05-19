@@ -4,10 +4,8 @@ package models
 
 import (
 	"context"
-	"encoding/json"
 
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ProtobufAny protobuf any
@@ -24,101 +22,52 @@ type ProtobufAny struct {
 
 // UnmarshalJSON unmarshals this object with additional properties from JSON
 func (m *ProtobufAny) UnmarshalJSON(data []byte) error {
+	_ = "STUB: not implemented"
 	// stage 1, bind the properties
-	var stage1 struct {
-
-		// at type
-		AtType string `json:"@type,omitempty"`
-	}
-	if err := json.Unmarshal(data, &stage1); err != nil {
-		return err
-	}
-	var rcv ProtobufAny
-
-	rcv.AtType = stage1.AtType
-	*m = rcv
-
-	// stage 2, remove properties and add to map
-	stage2 := make(map[string]json.RawMessage)
-	if err := json.Unmarshal(data, &stage2); err != nil {
-		return err
-	}
-
-	delete(stage2, "@type")
-	// stage 3, add additional properties values
-	if len(stage2) > 0 {
-		result := make(map[string]any)
-		for k, v := range stage2 {
-			var toadd any
-			if err := json.Unmarshal(v, &toadd); err != nil {
-				return err
-			}
-			result[k] = toadd
-		}
-		m.ProtobufAny = result
-	}
-
 	return nil
 }
+
+// at type
+
+// stage 2, remove properties and add to map
+
+// stage 3, add additional properties values
 
 // MarshalJSON marshals this object with additional properties into a JSON object
 func (m ProtobufAny) MarshalJSON() ([]byte, error) {
-	var stage1 struct {
+	_ = "STUB: not implemented"
+	return nil,
 
 		// at type
-		AtType string `json:"@type,omitempty"`
-	}
-
-	stage1.AtType = m.AtType
-
-	// make JSON object for known properties
-	props, err := json.Marshal(stage1)
-	if err != nil {
-		return nil, err
-	}
-
-	if len(m.ProtobufAny) == 0 { // no additional properties
-		return props, nil
-	}
-
-	// make JSON object for the additional properties
-	additional, err := json.Marshal(m.ProtobufAny)
-	if err != nil {
-		return nil, err
-	}
-
-	if len(props) < 3 { // "{}": only additional properties
-		return additional, nil
-	}
-
-	// concatenate the 2 objects
-	return swag.ConcatJSON(props, additional), nil
+		nil
 }
+
+// make JSON object for known properties
+
+// no additional properties
+
+// make JSON object for the additional properties
+
+// "{}": only additional properties
+
+// concatenate the 2 objects
 
 // Validate validates this protobuf any
 func (m *ProtobufAny) Validate(formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// ContextValidate validates this protobuf any based on context it is used
 	return nil
 }
 
-// ContextValidate validates this protobuf any based on context it is used
 func (m *ProtobufAny) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+
+	// MarshalBinary interface implementation
 	return nil
 }
 
-// MarshalBinary interface implementation
-func (m *ProtobufAny) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
-}
+func (m *ProtobufAny) MarshalBinary() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
 // UnmarshalBinary interface implementation
-func (m *ProtobufAny) UnmarshalBinary(b []byte) error {
-	var res ProtobufAny
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}
+func (m *ProtobufAny) UnmarshalBinary(b []byte) error { _ = "STUB: not implemented"; return nil }

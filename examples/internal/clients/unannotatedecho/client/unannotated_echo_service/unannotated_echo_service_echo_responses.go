@@ -3,11 +3,6 @@
 package unannotated_echo_service
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,46 +16,14 @@ type UnannotatedEchoServiceEchoReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *UnannotatedEchoServiceEchoReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewUnannotatedEchoServiceEchoOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewUnannotatedEchoServiceEchoForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewUnannotatedEchoServiceEchoNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 503:
-		result := NewUnannotatedEchoServiceEchoServiceUnavailable()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewUnannotatedEchoServiceEchoDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewUnannotatedEchoServiceEchoOK creates a UnannotatedEchoServiceEchoOK with default headers values
 func NewUnannotatedEchoServiceEchoOK() *UnannotatedEchoServiceEchoOK {
-	return &UnannotatedEchoServiceEchoOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -74,63 +37,62 @@ type UnannotatedEchoServiceEchoOK struct {
 
 // IsSuccess returns true when this unannotated echo service echo o k response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo o k response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo o k response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this unannotated echo service echo o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this unannotated echo service echo o k response has a 5xx status code
 func (o *UnannotatedEchoServiceEchoOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo o k response a status code equal to that given
 func (o *UnannotatedEchoServiceEchoOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo o k response
 }
 
-// Code gets the status code for the unannotated echo service echo o k response
-func (o *UnannotatedEchoServiceEchoOK) Code() int {
-	return 200
-}
+func (o *UnannotatedEchoServiceEchoOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *UnannotatedEchoServiceEchoOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoOK %s", 200, payload)
-}
+func (o *UnannotatedEchoServiceEchoOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *UnannotatedEchoServiceEchoOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoOK %s", 200, payload)
-}
+func (o *UnannotatedEchoServiceEchoOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *UnannotatedEchoServiceEchoOK) GetPayload() *models.ExamplepbUnannotatedSimpleMessage {
-	return o.Payload
-}
-
-func (o *UnannotatedEchoServiceEchoOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbUnannotatedSimpleMessage)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *UnannotatedEchoServiceEchoOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewUnannotatedEchoServiceEchoForbidden creates a UnannotatedEchoServiceEchoForbidden with default headers values
 func NewUnannotatedEchoServiceEchoForbidden() *UnannotatedEchoServiceEchoForbidden {
-	return &UnannotatedEchoServiceEchoForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -144,61 +106,62 @@ type UnannotatedEchoServiceEchoForbidden struct {
 
 // IsSuccess returns true when this unannotated echo service echo forbidden response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo forbidden response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo forbidden response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this unannotated echo service echo forbidden response has a 5xx status code
-func (o *UnannotatedEchoServiceEchoForbidden) IsServerError() bool {
+	// IsServerError returns true when this unannotated echo service echo forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo forbidden response a status code equal to that given
+func (o *UnannotatedEchoServiceEchoForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo forbidden response a status code equal to that given
+	return false
+}
+
 func (o *UnannotatedEchoServiceEchoForbidden) IsCode(code int) bool {
-	return code == 403
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo forbidden response
 }
 
-// Code gets the status code for the unannotated echo service echo forbidden response
-func (o *UnannotatedEchoServiceEchoForbidden) Code() int {
-	return 403
-}
+func (o *UnannotatedEchoServiceEchoForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *UnannotatedEchoServiceEchoForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoForbidden %s", 403, payload)
-}
+func (o *UnannotatedEchoServiceEchoForbidden) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *UnannotatedEchoServiceEchoForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoForbidden %s", 403, payload)
-}
+func (o *UnannotatedEchoServiceEchoForbidden) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *UnannotatedEchoServiceEchoForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *UnannotatedEchoServiceEchoForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewUnannotatedEchoServiceEchoNotFound creates a UnannotatedEchoServiceEchoNotFound with default headers values
 func NewUnannotatedEchoServiceEchoNotFound() *UnannotatedEchoServiceEchoNotFound {
-	return &UnannotatedEchoServiceEchoNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -212,61 +175,62 @@ type UnannotatedEchoServiceEchoNotFound struct {
 
 // IsSuccess returns true when this unannotated echo service echo not found response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo not found response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo not found response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this unannotated echo service echo not found response has a 5xx status code
-func (o *UnannotatedEchoServiceEchoNotFound) IsServerError() bool {
+	// IsServerError returns true when this unannotated echo service echo not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this unannotated echo service echo not found response a status code equal to that given
+func (o *UnannotatedEchoServiceEchoNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo not found response a status code equal to that given
+	return false
+}
+
 func (o *UnannotatedEchoServiceEchoNotFound) IsCode(code int) bool {
-	return code == 404
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo not found response
 }
 
-// Code gets the status code for the unannotated echo service echo not found response
-func (o *UnannotatedEchoServiceEchoNotFound) Code() int {
-	return 404
-}
+func (o *UnannotatedEchoServiceEchoNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *UnannotatedEchoServiceEchoNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoNotFound %s", 404, payload)
-}
+func (o *UnannotatedEchoServiceEchoNotFound) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *UnannotatedEchoServiceEchoNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoNotFound %s", 404, payload)
-}
+func (o *UnannotatedEchoServiceEchoNotFound) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *UnannotatedEchoServiceEchoNotFound) GetPayload() int64 {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *UnannotatedEchoServiceEchoNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewUnannotatedEchoServiceEchoServiceUnavailable creates a UnannotatedEchoServiceEchoServiceUnavailable with default headers values
 func NewUnannotatedEchoServiceEchoServiceUnavailable() *UnannotatedEchoServiceEchoServiceUnavailable {
-	return &UnannotatedEchoServiceEchoServiceUnavailable{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -280,63 +244,71 @@ type UnannotatedEchoServiceEchoServiceUnavailable struct {
 
 // IsSuccess returns true when this unannotated echo service echo service unavailable response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this unannotated echo service echo service unavailable response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this unannotated echo service echo service unavailable response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this unannotated echo service echo service unavailable response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this unannotated echo service echo service unavailable response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this unannotated echo service echo service unavailable response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this unannotated echo service echo service unavailable response has a 5xx status code
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this unannotated echo service echo service unavailable response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this unannotated echo service echo service unavailable response a status code equal to that given
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) IsCode(code int) bool {
-	return code == 503
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo service unavailable response
 }
 
-// Code gets the status code for the unannotated echo service echo service unavailable response
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) Code() int {
-	return 503
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoServiceUnavailable %s", 503, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] unannotatedEchoServiceEchoServiceUnavailable %s", 503, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *UnannotatedEchoServiceEchoServiceUnavailable) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewUnannotatedEchoServiceEchoDefault creates a UnannotatedEchoServiceEchoDefault with default headers values
 func NewUnannotatedEchoServiceEchoDefault(code int) *UnannotatedEchoServiceEchoDefault {
-	return &UnannotatedEchoServiceEchoDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,56 +324,50 @@ type UnannotatedEchoServiceEchoDefault struct {
 
 // IsSuccess returns true when this unannotated echo service echo default response has a 2xx status code
 func (o *UnannotatedEchoServiceEchoDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this unannotated echo service echo default response has a 3xx status code
 func (o *UnannotatedEchoServiceEchoDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this unannotated echo service echo default response has a 4xx status code
 func (o *UnannotatedEchoServiceEchoDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this unannotated echo service echo default response has a 5xx status code
 func (o *UnannotatedEchoServiceEchoDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this unannotated echo service echo default response a status code equal to that given
 func (o *UnannotatedEchoServiceEchoDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the unannotated echo service echo default response
 }
 
-// Code gets the status code for the unannotated echo service echo default response
-func (o *UnannotatedEchoServiceEchoDefault) Code() int {
-	return o._statusCode
-}
+func (o *UnannotatedEchoServiceEchoDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *UnannotatedEchoServiceEchoDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] UnannotatedEchoService_Echo default %s", o._statusCode, payload)
-}
+func (o *UnannotatedEchoServiceEchoDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *UnannotatedEchoServiceEchoDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[POST /v1/example/echo/{id}][%d] UnannotatedEchoService_Echo default %s", o._statusCode, payload)
-}
+func (o *UnannotatedEchoServiceEchoDefault) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *UnannotatedEchoServiceEchoDefault) GetPayload() *models.RPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *UnannotatedEchoServiceEchoDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.RPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

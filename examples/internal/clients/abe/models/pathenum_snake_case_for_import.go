@@ -6,9 +6,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/validate"
 )
 
 // PathenumSnakeCaseForImport Ignoring lint warnings as this enum type exist to validate proper functionality
@@ -22,17 +20,20 @@ import (
 type PathenumSnakeCaseForImport string
 
 func NewPathenumSnakeCaseForImport(value PathenumSnakeCaseForImport) *PathenumSnakeCaseForImport {
-	return &value
+	_ = "STUB: not implemented"
+
+	// Pointer returns a pointer to a freshly-allocated PathenumSnakeCaseForImport.
+	return nil
 }
 
-// Pointer returns a pointer to a freshly-allocated PathenumSnakeCaseForImport.
 func (m PathenumSnakeCaseForImport) Pointer() *PathenumSnakeCaseForImport {
-	return &m
+	_ = "STUB: not implemented"
+	return nil
+
+	// PathenumSnakeCaseForImportValuex captures enum value "value_x"
 }
 
 const (
-
-	// PathenumSnakeCaseForImportValuex captures enum value "value_x"
 	PathenumSnakeCaseForImportValuex PathenumSnakeCaseForImport = "value_x"
 
 	// PathenumSnakeCaseForImportValuey captures enum value "value_y"
@@ -53,28 +54,20 @@ func init() {
 }
 
 func (m PathenumSnakeCaseForImport) validatePathenumSnakeCaseForImportEnum(path, location string, value PathenumSnakeCaseForImport) error {
-	if err := validate.EnumCase(path, location, value, pathenumSnakeCaseForImportEnum, true); err != nil {
-		return err
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Validate validates this pathenum snake case for import
 func (m PathenumSnakeCaseForImport) Validate(formats strfmt.Registry) error {
-	var res []error
+	_ = "STUB: not implemented"
 
 	// value enum
-	if err := m.validatePathenumSnakeCaseForImportEnum("", "body", m); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
 	return nil
 }
 
 // ContextValidate validates this pathenum snake case for import based on context it is used
 func (m PathenumSnakeCaseForImport) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 	return nil
 }

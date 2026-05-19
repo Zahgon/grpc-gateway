@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumParams() *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithTimeout creates a new ABitOfEverythingServiceCheckExternalNestedPathEnumParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithContext creates a new ABitOfEverythingServiceCheckExternalNestedPathEnumParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithContext(ctx context.Context) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithHTTPClient creates a new ABitOfEverythingServiceCheckExternalNestedPathEnumParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	return &ABitOfEverythingServiceCheckExternalNestedPathEnumParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,76 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WithDefaults() *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service check external nested path enum params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service check external nested path enum params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service check external nested path enum params
 }
 
-// WithContext adds the context to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WithContext(ctx context.Context) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service check external nested path enum params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithValue adds the value to the a bit of everything service check external nested path enum params
 }
 
-// WithValue adds the value to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WithValue(value string) *ABitOfEverythingServiceCheckExternalNestedPathEnumParams {
-	o.SetValue(value)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetValue adds the value to the a bit of everything service check external nested path enum params
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) SetValue(value string) {
-	o.Value = value
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceCheckExternalNestedPathEnumParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param value
-	if err := r.SetPathParam("value", o.Value); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param value

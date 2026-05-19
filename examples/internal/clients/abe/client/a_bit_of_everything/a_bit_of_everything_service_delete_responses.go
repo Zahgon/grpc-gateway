@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,52 +16,14 @@ type ABitOfEverythingServiceDeleteReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceDeleteReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceDeleteOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceDeleteForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceDeleteNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceDeleteIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceDeleteInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceDeleteDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceDeleteOK creates a ABitOfEverythingServiceDeleteOK with default headers values
 func NewABitOfEverythingServiceDeleteOK() *ABitOfEverythingServiceDeleteOK {
-	return &ABitOfEverythingServiceDeleteOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -80,61 +37,62 @@ type ABitOfEverythingServiceDeleteOK struct {
 
 // IsSuccess returns true when this a bit of everything service delete o k response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service delete o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service delete o k response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service delete o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service delete o k response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service delete o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service delete o k response has a 5xx status code
 func (o *ABitOfEverythingServiceDeleteOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service delete o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service delete o k response a status code equal to that given
 func (o *ABitOfEverythingServiceDeleteOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete o k response
 }
 
-// Code gets the status code for the a bit of everything service delete o k response
-func (o *ABitOfEverythingServiceDeleteOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceDeleteOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceDeleteOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceDeleteOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceDeleteOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceDeleteOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceDeleteOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceDeleteOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeleteForbidden creates a ABitOfEverythingServiceDeleteForbidden with default headers values
 func NewABitOfEverythingServiceDeleteForbidden() *ABitOfEverythingServiceDeleteForbidden {
-	return &ABitOfEverythingServiceDeleteForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -148,61 +106,68 @@ type ABitOfEverythingServiceDeleteForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service delete forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service delete forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service delete forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service delete forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service delete forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service delete forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceDeleteForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service delete forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service delete forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceDeleteForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceDeleteForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service delete forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service delete forbidden response
-func (o *ABitOfEverythingServiceDeleteForbidden) Code() int {
-	return 403
+func (o *ABitOfEverythingServiceDeleteForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete forbidden response
 }
+
+func (o *ABitOfEverythingServiceDeleteForbidden) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceDeleteForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceDeleteForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeleteNotFound creates a ABitOfEverythingServiceDeleteNotFound with default headers values
 func NewABitOfEverythingServiceDeleteNotFound() *ABitOfEverythingServiceDeleteNotFound {
-	return &ABitOfEverythingServiceDeleteNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -216,61 +181,68 @@ type ABitOfEverythingServiceDeleteNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service delete not found response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service delete not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service delete not found response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service delete not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service delete not found response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service delete not found response has a 5xx status code
-func (o *ABitOfEverythingServiceDeleteNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service delete not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service delete not found response a status code equal to that given
-func (o *ABitOfEverythingServiceDeleteNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceDeleteNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service delete not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service delete not found response
-func (o *ABitOfEverythingServiceDeleteNotFound) Code() int {
-	return 404
+func (o *ABitOfEverythingServiceDeleteNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete not found response
 }
+
+func (o *ABitOfEverythingServiceDeleteNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceDeleteNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeleteIMATeapot creates a ABitOfEverythingServiceDeleteIMATeapot with default headers values
 func NewABitOfEverythingServiceDeleteIMATeapot() *ABitOfEverythingServiceDeleteIMATeapot {
-	return &ABitOfEverythingServiceDeleteIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -284,61 +256,68 @@ type ABitOfEverythingServiceDeleteIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service delete i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service delete i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service delete i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service delete i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service delete i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service delete i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceDeleteIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service delete i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service delete i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceDeleteIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceDeleteIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service delete i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service delete i m a teapot response
-func (o *ABitOfEverythingServiceDeleteIMATeapot) Code() int {
-	return 418
+func (o *ABitOfEverythingServiceDeleteIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete i m a teapot response
 }
+
+func (o *ABitOfEverythingServiceDeleteIMATeapot) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceDeleteIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceDeleteIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceDeleteInternalServerError creates a ABitOfEverythingServiceDeleteInternalServerError with default headers values
 func NewABitOfEverythingServiceDeleteInternalServerError() *ABitOfEverythingServiceDeleteInternalServerError {
-	return &ABitOfEverythingServiceDeleteInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -352,65 +331,71 @@ type ABitOfEverythingServiceDeleteInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service delete internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service delete internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service delete internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service delete internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service delete internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service delete internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service delete internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceDeleteInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service delete internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service delete internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceDeleteInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete internal server error response
 }
 
-// Code gets the status code for the a bit of everything service delete internal server error response
 func (o *ABitOfEverythingServiceDeleteInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceDeleteInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] aBitOfEverythingServiceDeleteInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceDeleteInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceDeleteInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceDeleteDefault creates a ABitOfEverythingServiceDeleteDefault with default headers values
 func NewABitOfEverythingServiceDeleteDefault(code int) *ABitOfEverythingServiceDeleteDefault {
-	return &ABitOfEverythingServiceDeleteDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -426,56 +411,53 @@ type ABitOfEverythingServiceDeleteDefault struct {
 
 // IsSuccess returns true when this a bit of everything service delete default response has a 2xx status code
 func (o *ABitOfEverythingServiceDeleteDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service delete default response has a 3xx status code
 func (o *ABitOfEverythingServiceDeleteDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service delete default response has a 4xx status code
 func (o *ABitOfEverythingServiceDeleteDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service delete default response has a 5xx status code
 func (o *ABitOfEverythingServiceDeleteDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service delete default response a status code equal to that given
 func (o *ABitOfEverythingServiceDeleteDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service delete default response
 }
 
-// Code gets the status code for the a bit of everything service delete default response
-func (o *ABitOfEverythingServiceDeleteDefault) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceDeleteDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceDeleteDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] ABitOfEverythingService_Delete default %s", o._statusCode, payload)
-}
+func (o *ABitOfEverythingServiceDeleteDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceDeleteDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[DELETE /v1/example/a_bit_of_everything/{uuid}][%d] ABitOfEverythingService_Delete default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceDeleteDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceDeleteDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

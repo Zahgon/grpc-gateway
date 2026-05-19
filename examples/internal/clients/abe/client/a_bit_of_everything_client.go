@@ -4,7 +4,6 @@ package client
 
 import (
 	"github.com/go-openapi/runtime"
-	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/client/a_bit_of_everything"
@@ -30,47 +29,30 @@ var DefaultSchemes = []string{"http", "https", "wss"}
 
 // NewHTTPClient creates a new a bit of everything HTTP client.
 func NewHTTPClient(formats strfmt.Registry) *ABitOfEverything {
-	return NewHTTPClientWithConfig(formats, nil)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewHTTPClientWithConfig creates a new a bit of everything HTTP client,
 // using a customizable transport config.
 func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *ABitOfEverything {
+	_ = "STUB: not implemented"
 	// ensure nullable parameters have default
-	if cfg == nil {
-		cfg = DefaultTransportConfig()
-	}
-
-	// create transport and client
-	transport := httptransport.New(cfg.Host, cfg.BasePath, cfg.Schemes)
-	return New(transport, formats)
+	return nil
 }
+
+// create transport and client
 
 // New creates a new a bit of everything client
 func New(transport runtime.ClientTransport, formats strfmt.Registry) *ABitOfEverything {
+	_ = "STUB: not implemented"
 	// ensure nullable parameters have default
-	if formats == nil {
-		formats = strfmt.Default
-	}
-
-	cli := new(ABitOfEverything)
-	cli.Transport = transport
-	cli.ABitOfEverything = a_bit_of_everything.New(transport, formats)
-	cli.CamelCaseServiceName = camel_case_service_name.New(transport, formats)
-	cli.EchoRPC = echo_rpc.New(transport, formats)
-	cli.SnakeEnumService = snake_enum_service.New(transport, formats)
-	return cli
+	return nil
 }
 
 // DefaultTransportConfig creates a TransportConfig with the
 // default settings taken from the meta section of the spec file.
-func DefaultTransportConfig() *TransportConfig {
-	return &TransportConfig{
-		Host:     DefaultHost,
-		BasePath: DefaultBasePath,
-		Schemes:  DefaultSchemes,
-	}
-}
+func DefaultTransportConfig() *TransportConfig { _ = "STUB: not implemented"; return nil }
 
 // TransportConfig contains the transport related info,
 // found in the meta section of the spec file.
@@ -83,22 +65,22 @@ type TransportConfig struct {
 // WithHost overrides the default host,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithHost(host string) *TransportConfig {
-	cfg.Host = host
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // WithBasePath overrides the default basePath,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithBasePath(basePath string) *TransportConfig {
-	cfg.BasePath = basePath
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // WithSchemes overrides the default schemes,
 // provided by the meta section of the spec file.
 func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
-	cfg.Schemes = schemes
-	return cfg
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ABitOfEverything is a client for a bit of everything
@@ -116,9 +98,6 @@ type ABitOfEverything struct {
 
 // SetTransport changes the transport on the client and all its subresources
 func (c *ABitOfEverything) SetTransport(transport runtime.ClientTransport) {
-	c.Transport = transport
-	c.ABitOfEverything.SetTransport(transport)
-	c.CamelCaseServiceName.SetTransport(transport)
-	c.EchoRPC.SetTransport(transport)
-	c.SnakeEnumService.SetTransport(transport)
+	_ = "STUB: not implemented"
+	return
 }

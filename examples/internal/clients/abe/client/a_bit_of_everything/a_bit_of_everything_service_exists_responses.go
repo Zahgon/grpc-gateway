@@ -3,11 +3,6 @@
 package a_bit_of_everything
 
 import (
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
-
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
@@ -21,28 +16,14 @@ type ABitOfEverythingServiceExistsReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceExistsReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceExistsOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	default:
-		result := NewABitOfEverythingServiceExistsDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceExistsOK creates a ABitOfEverythingServiceExistsOK with default headers values
 func NewABitOfEverythingServiceExistsOK() *ABitOfEverythingServiceExistsOK {
-	return &ABitOfEverythingServiceExistsOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -56,63 +37,62 @@ type ABitOfEverythingServiceExistsOK struct {
 
 // IsSuccess returns true when this a bit of everything service exists o k response has a 2xx status code
 func (o *ABitOfEverythingServiceExistsOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service exists o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service exists o k response has a 3xx status code
 func (o *ABitOfEverythingServiceExistsOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service exists o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service exists o k response has a 4xx status code
 func (o *ABitOfEverythingServiceExistsOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service exists o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service exists o k response has a 5xx status code
 func (o *ABitOfEverythingServiceExistsOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service exists o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service exists o k response a status code equal to that given
 func (o *ABitOfEverythingServiceExistsOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service exists o k response
 }
 
-// Code gets the status code for the a bit of everything service exists o k response
-func (o *ABitOfEverythingServiceExistsOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceExistsOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceExistsOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[HEAD /v1/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceExistsOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceExistsOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceExistsOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[HEAD /v1/example/a_bit_of_everything/{uuidName}][%d] aBitOfEverythingServiceExistsOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceExistsOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceExistsOK) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceExistsOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceExistsDefault creates a ABitOfEverythingServiceExistsDefault with default headers values
 func NewABitOfEverythingServiceExistsDefault(code int) *ABitOfEverythingServiceExistsDefault {
-	return &ABitOfEverythingServiceExistsDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -128,56 +108,53 @@ type ABitOfEverythingServiceExistsDefault struct {
 
 // IsSuccess returns true when this a bit of everything service exists default response has a 2xx status code
 func (o *ABitOfEverythingServiceExistsDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service exists default response has a 3xx status code
 func (o *ABitOfEverythingServiceExistsDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service exists default response has a 4xx status code
 func (o *ABitOfEverythingServiceExistsDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service exists default response has a 5xx status code
 func (o *ABitOfEverythingServiceExistsDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service exists default response a status code equal to that given
 func (o *ABitOfEverythingServiceExistsDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service exists default response
 }
 
-// Code gets the status code for the a bit of everything service exists default response
-func (o *ABitOfEverythingServiceExistsDefault) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceExistsDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceExistsDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[HEAD /v1/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_Exists default %s", o._statusCode, payload)
-}
+func (o *ABitOfEverythingServiceExistsDefault) Error() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceExistsDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[HEAD /v1/example/a_bit_of_everything/{uuidName}][%d] ABitOfEverythingService_Exists default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceExistsDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceExistsDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload

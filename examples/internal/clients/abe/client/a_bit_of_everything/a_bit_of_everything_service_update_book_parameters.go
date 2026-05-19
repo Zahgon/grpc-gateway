@@ -7,11 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // NewABitOfEverythingServiceUpdateBookParams creates a new ABitOfEverythingServiceUpdateBookParams object,
@@ -21,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceUpdateBookParams() *ABitOfEverythingServiceUpdateBookParams {
-	return &ABitOfEverythingServiceUpdateBookParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookParamsWithTimeout creates a new ABitOfEverythingServiceUpdateBookParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceUpdateBookParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceUpdateBookParams {
-	return &ABitOfEverythingServiceUpdateBookParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookParamsWithContext creates a new ABitOfEverythingServiceUpdateBookParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceUpdateBookParamsWithContext(ctx context.Context) *ABitOfEverythingServiceUpdateBookParams {
-	return &ABitOfEverythingServiceUpdateBookParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookParamsWithHTTPClient creates a new ABitOfEverythingServiceUpdateBookParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceUpdateBookParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceUpdateBookParams {
-	return &ABitOfEverythingServiceUpdateBookParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -94,118 +87,104 @@ type ABitOfEverythingServiceUpdateBookParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceUpdateBookParams) WithDefaults() *ABitOfEverythingServiceUpdateBookParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service update book params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service update book params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceUpdateBookParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service update book params
 }
 
-// WithContext adds the context to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithContext(ctx context.Context) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service update book params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithAllowMissing adds the allowMissing to the a bit of everything service update book params
 }
 
-// WithAllowMissing adds the allowMissing to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithAllowMissing(allowMissing *bool) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetAllowMissing(allowMissing)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetAllowMissing adds the allowMissing to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetAllowMissing(allowMissing *bool) {
-	o.AllowMissing = allowMissing
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithBook adds the book to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithBook(book ABitOfEverythingServiceUpdateBookBody) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetBook(book)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBook adds the book to the a bit of everything service update book params
 }
 
-// SetBook adds the book to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetBook(book ABitOfEverythingServiceUpdateBookBody) {
-	o.Book = book
+	_ = "STUB: not implemented"
+
+	// WithBookName adds the bookName to the a bit of everything service update book params
+	return
 }
 
-// WithBookName adds the bookName to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) WithBookName(bookName string) *ABitOfEverythingServiceUpdateBookParams {
-	o.SetBookName(bookName)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetBookName adds the bookName to the a bit of everything service update book params
 func (o *ABitOfEverythingServiceUpdateBookParams) SetBookName(bookName string) {
-	o.BookName = bookName
+	_ = "STUB: not implemented"
+	return
+
+	// WriteToRequest writes these params to a swagger request
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceUpdateBookParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if o.AllowMissing != nil {
-
-		// query param allowMissing
-		var qrAllowMissing bool
-
-		if o.AllowMissing != nil {
-			qrAllowMissing = *o.AllowMissing
-		}
-		qAllowMissing := swag.FormatBool(qrAllowMissing)
-		if qAllowMissing != "" {
-
-			if err := r.SetQueryParam("allowMissing", qAllowMissing); err != nil {
-				return err
-			}
-		}
-	}
-	if err := r.SetBodyParam(o.Book); err != nil {
-		return err
-	}
-
-	// path param book.name
-	if err := r.SetPathParam("book.name", o.BookName); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// query param allowMissing
+
+// path param book.name

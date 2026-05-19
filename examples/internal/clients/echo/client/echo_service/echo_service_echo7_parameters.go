@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -19,34 +17,27 @@ import (
 // Default values are not hydrated, since defaults are normally applied by the API server side.
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
-func NewEchoServiceEcho7Params() *EchoServiceEcho7Params {
-	return &EchoServiceEcho7Params{
-		timeout: cr.DefaultTimeout,
-	}
-}
+func NewEchoServiceEcho7Params() *EchoServiceEcho7Params { _ = "STUB: not implemented"; return nil }
 
 // NewEchoServiceEcho7ParamsWithTimeout creates a new EchoServiceEcho7Params object
 // with the ability to set a timeout on a request.
 func NewEchoServiceEcho7ParamsWithTimeout(timeout time.Duration) *EchoServiceEcho7Params {
-	return &EchoServiceEcho7Params{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEcho7ParamsWithContext creates a new EchoServiceEcho7Params object
 // with the ability to set a context for a request.
 func NewEchoServiceEcho7ParamsWithContext(ctx context.Context) *EchoServiceEcho7Params {
-	return &EchoServiceEcho7Params{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEcho7ParamsWithHTTPClient creates a new EchoServiceEcho7Params object
 // with the ability to set a custom HTTPClient for a request.
 func NewEchoServiceEcho7ParamsWithHTTPClient(client *http.Client) *EchoServiceEcho7Params {
-	return &EchoServiceEcho7Params{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -116,384 +107,237 @@ type EchoServiceEcho7Params struct {
 //
 // All values with no default are reset to their zero value.
 func (o *EchoServiceEcho7Params) WithDefaults() *EchoServiceEcho7Params {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the echo service echo7 params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the echo service echo7 params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *EchoServiceEcho7Params) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithTimeout(timeout time.Duration) *EchoServiceEcho7Params {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the echo service echo7 params
 }
 
-// WithContext adds the context to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithContext(ctx context.Context) *EchoServiceEcho7Params {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the echo service echo7 params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithHTTPClient(client *http.Client) *EchoServiceEcho7Params {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithEn adds the en to the echo service echo7 params
 }
 
-// WithEn adds the en to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithEn(en *string) *EchoServiceEcho7Params {
-	o.SetEn(en)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetEn adds the en to the echo service echo7 params
 }
 
-// SetEn adds the en to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetEn(en *string) {
-	o.En = en
+	_ = "STUB: not implemented"
+
+	// WithID adds the id to the echo service echo7 params
+	return
 }
 
-// WithID adds the id to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithID(id *string) *EchoServiceEcho7Params {
-	o.SetID(id)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetID adds the id to the echo service echo7 params
 }
 
-// SetID adds the id to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetID(id *string) {
-	o.ID = id
+	_ = "STUB: not implemented"
+
+	// WithLang adds the lang to the echo service echo7 params
+	return
 }
 
-// WithLang adds the lang to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithLang(lang *string) *EchoServiceEcho7Params {
-	o.SetLang(lang)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetLang adds the lang to the echo service echo7 params
 }
 
-// SetLang adds the lang to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetLang(lang *string) {
-	o.Lang = lang
+	_ = "STUB: not implemented"
+
+	// WithLineNum adds the lineNum to the echo service echo7 params
+	return
 }
 
-// WithLineNum adds the lineNum to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithLineNum(lineNum *string) *EchoServiceEcho7Params {
-	o.SetLineNum(lineNum)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetLineNum adds the lineNum to the echo service echo7 params
-func (o *EchoServiceEcho7Params) SetLineNum(lineNum *string) {
-	o.LineNum = lineNum
-}
+func (o *EchoServiceEcho7Params) SetLineNum(lineNum *string) { _ = "STUB: not implemented"; return }
 
 // WithNIDnID adds the nIDnID to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithNIDnID(nIDnID string) *EchoServiceEcho7Params {
-	o.SetNIDnID(nIDnID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDnID adds the nIdNId to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetNIDnID(nIDnID string) {
-	o.NIDnID = nIDnID
+	_ = "STUB: not implemented"
+
+	// WithNIDVal adds the nIDVal to the echo service echo7 params
+	return
 }
 
-// WithNIDVal adds the nIDVal to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithNIDVal(nIDVal *string) *EchoServiceEcho7Params {
-	o.SetNIDVal(nIDVal)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDVal adds the nIdVal to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetNIDVal(nIDVal *string) {
-	o.NIDVal = nIDVal
+	_ = "STUB: not implemented"
+
+	// WithNoNote adds the noNote to the echo service echo7 params
+	return
 }
 
-// WithNoNote adds the noNote to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithNoNote(noNote *string) *EchoServiceEcho7Params {
-	o.SetNoNote(noNote)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNoNote adds the noNote to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetNoNote(noNote *string) {
-	o.NoNote = noNote
+	_ = "STUB: not implemented"
+
+	// WithNoProgress adds the noProgress to the echo service echo7 params
+	return
 }
 
-// WithNoProgress adds the noProgress to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithNoProgress(noProgress *string) *EchoServiceEcho7Params {
-	o.SetNoProgress(noProgress)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNoProgress adds the noProgress to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetNoProgress(noProgress *string) {
-	o.NoProgress = noProgress
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNum adds the num to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithNum(num *string) *EchoServiceEcho7Params {
-	o.SetNum(num)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetNum adds the num to the echo service echo7 params
 }
 
-// SetNum adds the num to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetNum(num *string) {
-	o.Num = num
+	_ = "STUB: not implemented"
+
+	// WithResourceID adds the resourceID to the echo service echo7 params
+	return
 }
 
-// WithResourceID adds the resourceID to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithResourceID(resourceID *string) *EchoServiceEcho7Params {
-	o.SetResourceID(resourceID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetResourceID adds the resourceId to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetResourceID(resourceID *string) {
-	o.ResourceID = resourceID
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusNote adds the statusNote to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithStatusNote(statusNote *string) *EchoServiceEcho7Params {
-	o.SetStatusNote(statusNote)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusNote adds the statusNote to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetStatusNote(statusNote *string) {
-	o.StatusNote = statusNote
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusProgress adds the statusProgress to the echo service echo7 params
 func (o *EchoServiceEcho7Params) WithStatusProgress(statusProgress *string) *EchoServiceEcho7Params {
-	o.SetStatusProgress(statusProgress)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusProgress adds the statusProgress to the echo service echo7 params
 func (o *EchoServiceEcho7Params) SetStatusProgress(statusProgress *string) {
-	o.StatusProgress = statusProgress
+	_ = "STUB: not implemented"
+	return
 }
 
 // WriteToRequest writes these params to a swagger request
 func (o *EchoServiceEcho7Params) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if o.En != nil {
-
-		// query param en
-		var qrEn string
-
-		if o.En != nil {
-			qrEn = *o.En
-		}
-		qEn := qrEn
-		if qEn != "" {
-
-			if err := r.SetQueryParam("en", qEn); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.ID != nil {
-
-		// query param id
-		var qrID string
-
-		if o.ID != nil {
-			qrID = *o.ID
-		}
-		qID := qrID
-		if qID != "" {
-
-			if err := r.SetQueryParam("id", qID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Lang != nil {
-
-		// query param lang
-		var qrLang string
-
-		if o.Lang != nil {
-			qrLang = *o.Lang
-		}
-		qLang := qrLang
-		if qLang != "" {
-
-			if err := r.SetQueryParam("lang", qLang); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.LineNum != nil {
-
-		// query param lineNum
-		var qrLineNum string
-
-		if o.LineNum != nil {
-			qrLineNum = *o.LineNum
-		}
-		qLineNum := qrLineNum
-		if qLineNum != "" {
-
-			if err := r.SetQueryParam("lineNum", qLineNum); err != nil {
-				return err
-			}
-		}
-	}
-
-	// path param nId.nId
-	if err := r.SetPathParam("nId.nId", o.NIDnID); err != nil {
-		return err
-	}
-
-	if o.NIDVal != nil {
-
-		// query param nId.val
-		var qrNIDVal string
-
-		if o.NIDVal != nil {
-			qrNIDVal = *o.NIDVal
-		}
-		qNIDVal := qrNIDVal
-		if qNIDVal != "" {
-
-			if err := r.SetQueryParam("nId.val", qNIDVal); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NoNote != nil {
-
-		// query param no.note
-		var qrNoNote string
-
-		if o.NoNote != nil {
-			qrNoNote = *o.NoNote
-		}
-		qNoNote := qrNoNote
-		if qNoNote != "" {
-
-			if err := r.SetQueryParam("no.note", qNoNote); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NoProgress != nil {
-
-		// query param no.progress
-		var qrNoProgress string
-
-		if o.NoProgress != nil {
-			qrNoProgress = *o.NoProgress
-		}
-		qNoProgress := qrNoProgress
-		if qNoProgress != "" {
-
-			if err := r.SetQueryParam("no.progress", qNoProgress); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.Num != nil {
-
-		// query param num
-		var qrNum string
-
-		if o.Num != nil {
-			qrNum = *o.Num
-		}
-		qNum := qrNum
-		if qNum != "" {
-
-			if err := r.SetQueryParam("num", qNum); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.ResourceID != nil {
-
-		// query param resourceId
-		var qrResourceID string
-
-		if o.ResourceID != nil {
-			qrResourceID = *o.ResourceID
-		}
-		qResourceID := qrResourceID
-		if qResourceID != "" {
-
-			if err := r.SetQueryParam("resourceId", qResourceID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusNote != nil {
-
-		// query param status.note
-		var qrStatusNote string
-
-		if o.StatusNote != nil {
-			qrStatusNote = *o.StatusNote
-		}
-		qStatusNote := qrStatusNote
-		if qStatusNote != "" {
-
-			if err := r.SetQueryParam("status.note", qStatusNote); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusProgress != nil {
-
-		// query param status.progress
-		var qrStatusProgress string
-
-		if o.StatusProgress != nil {
-			qrStatusProgress = *o.StatusProgress
-		}
-		qStatusProgress := qrStatusProgress
-		if qStatusProgress != "" {
-
-			if err := r.SetQueryParam("status.progress", qStatusProgress); err != nil {
-				return err
-			}
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// query param en
+
+// query param id
+
+// query param lang
+
+// query param lineNum
+
+// path param nId.nId
+
+// query param nId.val
+
+// query param no.note
+
+// query param no.progress
+
+// query param num
+
+// query param resourceId
+
+// query param status.note
+
+// query param status.progress

@@ -7,6 +7,8 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	sub "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/sub"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	httpbody "google.golang.org/genproto/googleapis/api/httpbody"
@@ -14,8 +16,6 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -33,42 +33,21 @@ type Options struct {
 	Error bool `protobuf:"varint,1,opt,name=error,proto3" json:"error,omitempty"`
 }
 
-func (x *Options) Reset() {
-	*x = Options{}
-	mi := &file_examples_internal_proto_examplepb_stream_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *Options) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *Options) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *Options) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*Options) ProtoMessage() {}
+func (*Options) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *Options) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_stream_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use Options.ProtoReflect.Descriptor instead.
-func (*Options) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_stream_proto_rawDescGZIP(), []int{0}
-}
+func (*Options) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *Options) GetError() bool {
-	if x != nil {
-		return x.Error
-	}
-	return false
-}
+func (x *Options) GetError() bool { _ = "STUB: not implemented"; return false }
 
 var File_examples_internal_proto_examplepb_stream_proto protoreflect.FileDescriptor
 
@@ -158,10 +137,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_stream_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_stream_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_stream_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_stream_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_stream_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_stream_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -191,28 +168,5 @@ var file_examples_internal_proto_examplepb_stream_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_examples_internal_proto_examplepb_stream_proto_init() }
-func file_examples_internal_proto_examplepb_stream_proto_init() {
-	if File_examples_internal_proto_examplepb_stream_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_a_bit_of_everything_proto_init()
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_stream_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_stream_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_stream_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_stream_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_stream_proto = out.File
-	file_examples_internal_proto_examplepb_stream_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_stream_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_stream_proto_depIdxs = nil
-}
+func init()                                                     { file_examples_internal_proto_examplepb_stream_proto_init() }
+func file_examples_internal_proto_examplepb_stream_proto_init() { _ = "STUB: not implemented"; return }

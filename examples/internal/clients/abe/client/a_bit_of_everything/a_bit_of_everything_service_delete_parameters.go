@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceDeleteParams() *ABitOfEverythingServiceDeleteParams {
-	return &ABitOfEverythingServiceDeleteParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeleteParamsWithTimeout creates a new ABitOfEverythingServiceDeleteParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceDeleteParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceDeleteParams {
-	return &ABitOfEverythingServiceDeleteParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeleteParamsWithContext creates a new ABitOfEverythingServiceDeleteParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceDeleteParamsWithContext(ctx context.Context) *ABitOfEverythingServiceDeleteParams {
-	return &ABitOfEverythingServiceDeleteParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceDeleteParamsWithHTTPClient creates a new ABitOfEverythingServiceDeleteParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceDeleteParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceDeleteParams {
-	return &ABitOfEverythingServiceDeleteParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,77 @@ type ABitOfEverythingServiceDeleteParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceDeleteParams) WithDefaults() *ABitOfEverythingServiceDeleteParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service delete params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service delete params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceDeleteParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceDeleteParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service delete params
 }
 
-// WithContext adds the context to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) WithContext(ctx context.Context) *ABitOfEverythingServiceDeleteParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service delete params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceDeleteParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithUUID adds the uuid to the a bit of everything service delete params
 }
 
-// WithUUID adds the uuid to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) WithUUID(uuid string) *ABitOfEverythingServiceDeleteParams {
-	o.SetUUID(uuid)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetUUID adds the uuid to the a bit of everything service delete params
 }
 
-// SetUUID adds the uuid to the a bit of everything service delete params
 func (o *ABitOfEverythingServiceDeleteParams) SetUUID(uuid string) {
-	o.UUID = uuid
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceDeleteParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param uuid
-	if err := r.SetPathParam("uuid", o.UUID); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param uuid

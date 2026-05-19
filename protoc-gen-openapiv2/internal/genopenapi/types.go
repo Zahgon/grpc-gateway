@@ -1,12 +1,9 @@
 package genopenapi
 
 import (
-	"bytes"
 	"encoding/json"
-	"fmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor"
-	"go.yaml.in/yaml/v3"
 )
 
 type param struct {
@@ -196,13 +193,9 @@ type allOfEntry struct {
 
 type RawExample json.RawMessage
 
-func (m RawExample) MarshalJSON() ([]byte, error) {
-	return (json.RawMessage)(m).MarshalJSON()
-}
+func (m RawExample) MarshalJSON() ([]byte, error) { _ = "STUB: not implemented"; return nil, nil }
 
-func (m *RawExample) UnmarshalJSON(data []byte) error {
-	return (*json.RawMessage)(m).UnmarshalJSON(data)
-}
+func (m *RawExample) UnmarshalJSON(data []byte) error { _ = "STUB: not implemented"; return nil }
 
 // MarshalYAML implements yaml.Marshaler interface.
 //
@@ -213,6 +206,7 @@ func (m *RawExample) UnmarshalJSON(data []byte) error {
 // document. The returned value is marshaled in place of the original
 // value implementing Marshaler.
 func (e RawExample) MarshalYAML() (interface{}, error) {
+	_ = "STUB: not implemented"
 	// From docs, json.Unmarshal will store one of next types to data:
 	// - bool, for JSON booleans;
 	// - float64, for JSON numbers;
@@ -220,20 +214,11 @@ func (e RawExample) MarshalYAML() (interface{}, error) {
 	// - []interface{}, for JSON arrays;
 	// - map[string]interface{}, for JSON objects;
 	// - nil for JSON null.
-	var data interface{}
-	if err := json.Unmarshal(e, &data); err != nil {
-		return nil, err
-	}
-
-	return data, nil
+	return nil, nil
 }
 
 func (s *schemaCore) setRefFromFQN(ref string, reg *descriptor.Registry) error {
-	name, ok := fullyQualifiedNameToOpenAPIName(ref, reg)
-	if !ok {
-		return fmt.Errorf("setRefFromFQN: can't resolve OpenAPI name from %q", ref)
-	}
-	s.Ref = fmt.Sprintf("#/definitions/%s", name)
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -271,47 +256,13 @@ type keyVal struct {
 type openapiSchemaObjectProperties []keyVal
 
 func (p openapiSchemaObjectProperties) MarshalYAML() (interface{}, error) {
-	n := yaml.Node{
-		Kind:    yaml.MappingNode,
-		Content: make([]*yaml.Node, len(p)*2),
-	}
-	for i, v := range p {
-		keyNode := yaml.Node{}
-		if err := keyNode.Encode(v.Key); err != nil {
-			return nil, err
-		}
-		valueNode := yaml.Node{}
-		if err := valueNode.Encode(v.Value); err != nil {
-			return nil, err
-		}
-		n.Content[i*2+0] = &keyNode
-		n.Content[i*2+1] = &valueNode
-	}
-	return n, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (op openapiSchemaObjectProperties) MarshalJSON() ([]byte, error) {
-	var buf bytes.Buffer
-	buf.WriteString("{")
-	for i, kv := range op {
-		if i != 0 {
-			buf.WriteString(",")
-		}
-		key, err := json.Marshal(kv.Key)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(key)
-		buf.WriteString(":")
-		val, err := json.Marshal(kv.Value)
-		if err != nil {
-			return nil, err
-		}
-		buf.Write(val)
-	}
-
-	buf.WriteString("}")
-	return buf.Bytes(), nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // http://swagger.io/specification/#schemaObject

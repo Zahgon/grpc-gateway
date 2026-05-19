@@ -4,17 +4,11 @@
 package abev3
 
 import (
-	"bytes"
 	"context"
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
-	"net/url"
-	"strings"
 	"time"
-
-	"github.com/oapi-codegen/runtime"
 )
 
 // Defines values for GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum.
@@ -25,14 +19,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum enum.
 func (e GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum) Valid() bool {
-	switch e {
-	case GHI:
-		return true
-	case JKL:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalPathenumPathEnum.
@@ -43,14 +31,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalPathenumPathEnum enum.
 func (e GrpcGatewayExamplesInternalPathenumPathEnum) Valid() bool {
-	switch e {
-	case ABC:
-		return true
-	case DEF:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalPathenumSnakeCaseForImport.
@@ -61,14 +43,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalPathenumSnakeCaseForImport enum.
 func (e GrpcGatewayExamplesInternalPathenumSnakeCaseForImport) Valid() bool {
-	switch e {
-	case ValueX:
-		return true
-	case ValueY:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum.
@@ -79,14 +55,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum enum.
 func (e GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum) Valid() bool {
-	switch e {
-	case FALSE:
-		return true
-	case TRUE:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalProtoExamplepbNumericEnum.
@@ -97,14 +67,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalProtoExamplepbNumericEnum enum.
 func (e GrpcGatewayExamplesInternalProtoExamplepbNumericEnum) Valid() bool {
-	switch e {
-	case ONE:
-		return true
-	case ZERO:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum.
@@ -115,14 +79,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum enum.
 func (e GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum) Valid() bool {
-	switch e {
-	case ValueE:
-		return true
-	case ValueF:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum.
@@ -133,14 +91,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum enum.
 func (e GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum) Valid() bool {
-	switch e {
-	case ValueC:
-		return true
-	case ValueD:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // Defines values for GrpcGatewayExamplesInternalProtoOneofenumExampleEnum.
@@ -151,14 +103,8 @@ const (
 
 // Valid indicates whether the value is a known member of the GrpcGatewayExamplesInternalProtoOneofenumExampleEnum enum.
 func (e GrpcGatewayExamplesInternalProtoOneofenumExampleEnum) Valid() bool {
-	switch e {
-	case EXAMPLEENUMFIRST:
-		return true
-	case EXAMPLEENUMUNSPECIFIED:
-		return true
-	default:
-		return false
-	}
+	_ = "STUB: not implemented"
+	return false
 }
 
 // GoogleRpcStatus The Status type defines a logical error model suitable for different programming environments.
@@ -1768,869 +1714,90 @@ type ABitOfEverythingServiceUpdateV22JSONRequestBody ABitOfEverythingServiceUpda
 // Getter for additional properties for GoogleRpcStatus_Details_Item. Returns the specified
 // element and whether it was found
 func (a GoogleRpcStatus_Details_Item) Get(fieldName string) (value interface{}, found bool) {
-	if a.AdditionalProperties != nil {
-		value, found = a.AdditionalProperties[fieldName]
-	}
-	return
+	_ = "STUB: not implemented"
+	return nil, false
 }
 
 // Setter for additional properties for GoogleRpcStatus_Details_Item
 func (a *GoogleRpcStatus_Details_Item) Set(fieldName string, value interface{}) {
-	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
-	}
-	a.AdditionalProperties[fieldName] = value
+	_ = "STUB: not implemented"
+	return
 }
 
 // Override default JSON handling for GoogleRpcStatus_Details_Item to handle AdditionalProperties
 func (a *GoogleRpcStatus_Details_Item) UnmarshalJSON(b []byte) error {
-	object := make(map[string]json.RawMessage)
-	err := json.Unmarshal(b, &object)
-	if err != nil {
-		return err
-	}
-
-	if raw, found := object["@type"]; found {
-		err = json.Unmarshal(raw, &a.Type)
-		if err != nil {
-			return fmt.Errorf("error reading '@type': %w", err)
-		}
-		delete(object, "@type")
-	}
-
-	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
-		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
-			err := json.Unmarshal(fieldBuf, &fieldVal)
-			if err != nil {
-				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
-			}
-			a.AdditionalProperties[fieldName] = fieldVal
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Override default JSON handling for GoogleRpcStatus_Details_Item to handle AdditionalProperties
 func (a GoogleRpcStatus_Details_Item) MarshalJSON() ([]byte, error) {
-	var err error
-	object := make(map[string]json.RawMessage)
-
-	if a.Type != nil {
-		object["@type"], err = json.Marshal(a.Type)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling '@type': %w", err)
-		}
-	}
-
-	for fieldName, field := range a.AdditionalProperties {
-		object[fieldName], err = json.Marshal(field)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling '%s': %w", fieldName, err)
-		}
-	}
-	return json.Marshal(object)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0 returns the union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as a GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0
 func (t GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0() (GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0, error) {
-	var body GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
+	_ = "STUB: not implemented"
+	return *new(GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0), nil
 }
 
 // FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0 overwrites any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0 performs a merge with any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything, using the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1 returns the union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as a GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1
 func (t GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1() (GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1, error) {
-	var body GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
+	_ = "STUB: not implemented"
+	return *new(GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1), nil
 }
 
 // FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1 overwrites any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1 performs a merge with any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything, using the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2 returns the union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as a GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2
 func (t GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) AsGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2() (GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2, error) {
-	var body GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2
-	err := json.Unmarshal(t.union, &body)
-	return body, err
+	_ = "STUB: not implemented"
+	return *new(GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2), nil
 }
 
 // FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2 overwrites any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything as the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) FromGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2 performs a merge with any union data inside the GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything, using the provided GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) MergeGrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2(v GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything2) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (t GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	if err != nil {
-		return nil, err
-	}
-	object := make(map[string]json.RawMessage)
-	if t.union != nil {
-		err = json.Unmarshal(b, &object)
-		if err != nil {
-			return nil, err
-		}
-	}
-
-	if t.BoolValue != nil {
-		object["boolValue"], err = json.Marshal(t.BoolValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'boolValue': %w", err)
-		}
-	}
-
-	if t.BytesValue != nil {
-		object["bytesValue"], err = json.Marshal(t.BytesValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'bytesValue': %w", err)
-		}
-	}
-
-	if t.DoubleValue != nil {
-		object["doubleValue"], err = json.Marshal(t.DoubleValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'doubleValue': %w", err)
-		}
-	}
-
-	if t.EnumValue != nil {
-		object["enumValue"], err = json.Marshal(t.EnumValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'enumValue': %w", err)
-		}
-	}
-
-	if t.EnumValueAnnotation != nil {
-		object["enumValueAnnotation"], err = json.Marshal(t.EnumValueAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'enumValueAnnotation': %w", err)
-		}
-	}
-
-	if t.Fixed32Value != nil {
-		object["fixed32Value"], err = json.Marshal(t.Fixed32Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'fixed32Value': %w", err)
-		}
-	}
-
-	if t.Fixed64Value != nil {
-		object["fixed64Value"], err = json.Marshal(t.Fixed64Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'fixed64Value': %w", err)
-		}
-	}
-
-	if t.FloatValue != nil {
-		object["floatValue"], err = json.Marshal(t.FloatValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'floatValue': %w", err)
-		}
-	}
-
-	if t.Int32Value != nil {
-		object["int32Value"], err = json.Marshal(t.Int32Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'int32Value': %w", err)
-		}
-	}
-
-	if t.Int64OverrideType != nil {
-		object["int64OverrideType"], err = json.Marshal(t.Int64OverrideType)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'int64OverrideType': %w", err)
-		}
-	}
-
-	if t.Int64Value != nil {
-		object["int64Value"], err = json.Marshal(t.Int64Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'int64Value': %w", err)
-		}
-	}
-
-	if t.MapValue != nil {
-		object["mapValue"], err = json.Marshal(t.MapValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'mapValue': %w", err)
-		}
-	}
-
-	if t.MappedNestedValue != nil {
-		object["mappedNestedValue"], err = json.Marshal(t.MappedNestedValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'mappedNestedValue': %w", err)
-		}
-	}
-
-	if t.MappedStringValue != nil {
-		object["mappedStringValue"], err = json.Marshal(t.MappedStringValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'mappedStringValue': %w", err)
-		}
-	}
-
-	if t.Nested != nil {
-		object["nested"], err = json.Marshal(t.Nested)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'nested': %w", err)
-		}
-	}
-
-	if t.NestedAnnotation != nil {
-		object["nestedAnnotation"], err = json.Marshal(t.NestedAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'nestedAnnotation': %w", err)
-		}
-	}
-
-	if t.NestedPathEnumValue != nil {
-		object["nestedPathEnumValue"], err = json.Marshal(t.NestedPathEnumValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'nestedPathEnumValue': %w", err)
-		}
-	}
-
-	if t.NonConventionalNameValue != nil {
-		object["nonConventionalNameValue"], err = json.Marshal(t.NonConventionalNameValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'nonConventionalNameValue': %w", err)
-		}
-	}
-
-	if t.OneofEmpty != nil {
-		object["oneofEmpty"], err = json.Marshal(t.OneofEmpty)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'oneofEmpty': %w", err)
-		}
-	}
-
-	if t.OneofString != nil {
-		object["oneofString"], err = json.Marshal(t.OneofString)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'oneofString': %w", err)
-		}
-	}
-
-	if t.OptionalStringField != nil {
-		object["optionalStringField"], err = json.Marshal(t.OptionalStringField)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'optionalStringField': %w", err)
-		}
-	}
-
-	if t.OptionalStringValue != nil {
-		object["optionalStringValue"], err = json.Marshal(t.OptionalStringValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'optionalStringValue': %w", err)
-		}
-	}
-
-	if t.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-		object["outputOnlyStringViaFieldBehaviorAnnotation"], err = json.Marshal(t.OutputOnlyStringViaFieldBehaviorAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'outputOnlyStringViaFieldBehaviorAnnotation': %w", err)
-		}
-	}
-
-	if t.PathEnumValue != nil {
-		object["pathEnumValue"], err = json.Marshal(t.PathEnumValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'pathEnumValue': %w", err)
-		}
-	}
-
-	if t.ProductId != nil {
-		object["productId"], err = json.Marshal(t.ProductId)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'productId': %w", err)
-		}
-	}
-
-	if t.RepeatedEnumAnnotation != nil {
-		object["repeatedEnumAnnotation"], err = json.Marshal(t.RepeatedEnumAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'repeatedEnumAnnotation': %w", err)
-		}
-	}
-
-	if t.RepeatedEnumValue != nil {
-		object["repeatedEnumValue"], err = json.Marshal(t.RepeatedEnumValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'repeatedEnumValue': %w", err)
-		}
-	}
-
-	if t.RepeatedNestedAnnotation != nil {
-		object["repeatedNestedAnnotation"], err = json.Marshal(t.RepeatedNestedAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'repeatedNestedAnnotation': %w", err)
-		}
-	}
-
-	if t.RepeatedStringAnnotation != nil {
-		object["repeatedStringAnnotation"], err = json.Marshal(t.RepeatedStringAnnotation)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'repeatedStringAnnotation': %w", err)
-		}
-	}
-
-	if t.RepeatedStringValue != nil {
-		object["repeatedStringValue"], err = json.Marshal(t.RepeatedStringValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'repeatedStringValue': %w", err)
-		}
-	}
-
-	object["requiredStringField1"], err = json.Marshal(t.RequiredStringField1)
-	if err != nil {
-		return nil, fmt.Errorf("error marshaling 'requiredStringField1': %w", err)
-	}
-
-	object["requiredStringField2"], err = json.Marshal(t.RequiredStringField2)
-	if err != nil {
-		return nil, fmt.Errorf("error marshaling 'requiredStringField2': %w", err)
-	}
-
-	object["requiredStringViaFieldBehaviorAnnotation"], err = json.Marshal(t.RequiredStringViaFieldBehaviorAnnotation)
-	if err != nil {
-		return nil, fmt.Errorf("error marshaling 'requiredStringViaFieldBehaviorAnnotation': %w", err)
-	}
-
-	object["required_field_behavior_json_name_custom"], err = json.Marshal(t.RequiredFieldBehaviorJsonNameCustom)
-	if err != nil {
-		return nil, fmt.Errorf("error marshaling 'required_field_behavior_json_name_custom': %w", err)
-	}
-
-	if t.RequiredFieldSchemaJsonNameCustom != nil {
-		object["required_field_schema_json_name_custom"], err = json.Marshal(t.RequiredFieldSchemaJsonNameCustom)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'required_field_schema_json_name_custom': %w", err)
-		}
-	}
-
-	if t.Sfixed32Value != nil {
-		object["sfixed32Value"], err = json.Marshal(t.Sfixed32Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'sfixed32Value': %w", err)
-		}
-	}
-
-	if t.Sfixed64Value != nil {
-		object["sfixed64Value"], err = json.Marshal(t.Sfixed64Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'sfixed64Value': %w", err)
-		}
-	}
-
-	if t.SingleNested != nil {
-		object["singleNested"], err = json.Marshal(t.SingleNested)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'singleNested': %w", err)
-		}
-	}
-
-	if t.Sint32Value != nil {
-		object["sint32Value"], err = json.Marshal(t.Sint32Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'sint32Value': %w", err)
-		}
-	}
-
-	if t.Sint64Value != nil {
-		object["sint64Value"], err = json.Marshal(t.Sint64Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'sint64Value': %w", err)
-		}
-	}
-
-	if t.StringValue != nil {
-		object["stringValue"], err = json.Marshal(t.StringValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'stringValue': %w", err)
-		}
-	}
-
-	if t.TimestampValue != nil {
-		object["timestampValue"], err = json.Marshal(t.TimestampValue)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'timestampValue': %w", err)
-		}
-	}
-
-	if t.TrailingBoth != nil {
-		object["trailingBoth"], err = json.Marshal(t.TrailingBoth)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'trailingBoth': %w", err)
-		}
-	}
-
-	if t.TrailingMultiline != nil {
-		object["trailingMultiline"], err = json.Marshal(t.TrailingMultiline)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'trailingMultiline': %w", err)
-		}
-	}
-
-	if t.TrailingOnly != nil {
-		object["trailingOnly"], err = json.Marshal(t.TrailingOnly)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'trailingOnly': %w", err)
-		}
-	}
-
-	if t.TrailingOnlyDot != nil {
-		object["trailingOnlyDot"], err = json.Marshal(t.TrailingOnlyDot)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'trailingOnlyDot': %w", err)
-		}
-	}
-
-	if t.Uint32Value != nil {
-		object["uint32Value"], err = json.Marshal(t.Uint32Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'uint32Value': %w", err)
-		}
-	}
-
-	if t.Uint64Value != nil {
-		object["uint64Value"], err = json.Marshal(t.Uint64Value)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'uint64Value': %w", err)
-		}
-	}
-
-	if t.Uuid != nil {
-		object["uuid"], err = json.Marshal(t.Uuid)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'uuid': %w", err)
-		}
-	}
-
-	if t.Uuids != nil {
-		object["uuids"], err = json.Marshal(t.Uuids)
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling 'uuids': %w", err)
-		}
-	}
-	b, err = json.Marshal(object)
-	return b, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (t *GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	if err != nil {
-		return err
-	}
-	object := make(map[string]json.RawMessage)
-	err = json.Unmarshal(b, &object)
-	if err != nil {
-		return err
-	}
-
-	if raw, found := object["boolValue"]; found {
-		err = json.Unmarshal(raw, &t.BoolValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'boolValue': %w", err)
-		}
-	}
-
-	if raw, found := object["bytesValue"]; found {
-		err = json.Unmarshal(raw, &t.BytesValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'bytesValue': %w", err)
-		}
-	}
-
-	if raw, found := object["doubleValue"]; found {
-		err = json.Unmarshal(raw, &t.DoubleValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'doubleValue': %w", err)
-		}
-	}
-
-	if raw, found := object["enumValue"]; found {
-		err = json.Unmarshal(raw, &t.EnumValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'enumValue': %w", err)
-		}
-	}
-
-	if raw, found := object["enumValueAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.EnumValueAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'enumValueAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["fixed32Value"]; found {
-		err = json.Unmarshal(raw, &t.Fixed32Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'fixed32Value': %w", err)
-		}
-	}
-
-	if raw, found := object["fixed64Value"]; found {
-		err = json.Unmarshal(raw, &t.Fixed64Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'fixed64Value': %w", err)
-		}
-	}
-
-	if raw, found := object["floatValue"]; found {
-		err = json.Unmarshal(raw, &t.FloatValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'floatValue': %w", err)
-		}
-	}
-
-	if raw, found := object["int32Value"]; found {
-		err = json.Unmarshal(raw, &t.Int32Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'int32Value': %w", err)
-		}
-	}
-
-	if raw, found := object["int64OverrideType"]; found {
-		err = json.Unmarshal(raw, &t.Int64OverrideType)
-		if err != nil {
-			return fmt.Errorf("error reading 'int64OverrideType': %w", err)
-		}
-	}
-
-	if raw, found := object["int64Value"]; found {
-		err = json.Unmarshal(raw, &t.Int64Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'int64Value': %w", err)
-		}
-	}
-
-	if raw, found := object["mapValue"]; found {
-		err = json.Unmarshal(raw, &t.MapValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'mapValue': %w", err)
-		}
-	}
-
-	if raw, found := object["mappedNestedValue"]; found {
-		err = json.Unmarshal(raw, &t.MappedNestedValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'mappedNestedValue': %w", err)
-		}
-	}
-
-	if raw, found := object["mappedStringValue"]; found {
-		err = json.Unmarshal(raw, &t.MappedStringValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'mappedStringValue': %w", err)
-		}
-	}
-
-	if raw, found := object["nested"]; found {
-		err = json.Unmarshal(raw, &t.Nested)
-		if err != nil {
-			return fmt.Errorf("error reading 'nested': %w", err)
-		}
-	}
-
-	if raw, found := object["nestedAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.NestedAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'nestedAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["nestedPathEnumValue"]; found {
-		err = json.Unmarshal(raw, &t.NestedPathEnumValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'nestedPathEnumValue': %w", err)
-		}
-	}
-
-	if raw, found := object["nonConventionalNameValue"]; found {
-		err = json.Unmarshal(raw, &t.NonConventionalNameValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'nonConventionalNameValue': %w", err)
-		}
-	}
-
-	if raw, found := object["oneofEmpty"]; found {
-		err = json.Unmarshal(raw, &t.OneofEmpty)
-		if err != nil {
-			return fmt.Errorf("error reading 'oneofEmpty': %w", err)
-		}
-	}
-
-	if raw, found := object["oneofString"]; found {
-		err = json.Unmarshal(raw, &t.OneofString)
-		if err != nil {
-			return fmt.Errorf("error reading 'oneofString': %w", err)
-		}
-	}
-
-	if raw, found := object["optionalStringField"]; found {
-		err = json.Unmarshal(raw, &t.OptionalStringField)
-		if err != nil {
-			return fmt.Errorf("error reading 'optionalStringField': %w", err)
-		}
-	}
-
-	if raw, found := object["optionalStringValue"]; found {
-		err = json.Unmarshal(raw, &t.OptionalStringValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'optionalStringValue': %w", err)
-		}
-	}
-
-	if raw, found := object["outputOnlyStringViaFieldBehaviorAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.OutputOnlyStringViaFieldBehaviorAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'outputOnlyStringViaFieldBehaviorAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["pathEnumValue"]; found {
-		err = json.Unmarshal(raw, &t.PathEnumValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'pathEnumValue': %w", err)
-		}
-	}
-
-	if raw, found := object["productId"]; found {
-		err = json.Unmarshal(raw, &t.ProductId)
-		if err != nil {
-			return fmt.Errorf("error reading 'productId': %w", err)
-		}
-	}
-
-	if raw, found := object["repeatedEnumAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.RepeatedEnumAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'repeatedEnumAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["repeatedEnumValue"]; found {
-		err = json.Unmarshal(raw, &t.RepeatedEnumValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'repeatedEnumValue': %w", err)
-		}
-	}
-
-	if raw, found := object["repeatedNestedAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.RepeatedNestedAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'repeatedNestedAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["repeatedStringAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.RepeatedStringAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'repeatedStringAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["repeatedStringValue"]; found {
-		err = json.Unmarshal(raw, &t.RepeatedStringValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'repeatedStringValue': %w", err)
-		}
-	}
-
-	if raw, found := object["requiredStringField1"]; found {
-		err = json.Unmarshal(raw, &t.RequiredStringField1)
-		if err != nil {
-			return fmt.Errorf("error reading 'requiredStringField1': %w", err)
-		}
-	}
-
-	if raw, found := object["requiredStringField2"]; found {
-		err = json.Unmarshal(raw, &t.RequiredStringField2)
-		if err != nil {
-			return fmt.Errorf("error reading 'requiredStringField2': %w", err)
-		}
-	}
-
-	if raw, found := object["requiredStringViaFieldBehaviorAnnotation"]; found {
-		err = json.Unmarshal(raw, &t.RequiredStringViaFieldBehaviorAnnotation)
-		if err != nil {
-			return fmt.Errorf("error reading 'requiredStringViaFieldBehaviorAnnotation': %w", err)
-		}
-	}
-
-	if raw, found := object["required_field_behavior_json_name_custom"]; found {
-		err = json.Unmarshal(raw, &t.RequiredFieldBehaviorJsonNameCustom)
-		if err != nil {
-			return fmt.Errorf("error reading 'required_field_behavior_json_name_custom': %w", err)
-		}
-	}
-
-	if raw, found := object["required_field_schema_json_name_custom"]; found {
-		err = json.Unmarshal(raw, &t.RequiredFieldSchemaJsonNameCustom)
-		if err != nil {
-			return fmt.Errorf("error reading 'required_field_schema_json_name_custom': %w", err)
-		}
-	}
-
-	if raw, found := object["sfixed32Value"]; found {
-		err = json.Unmarshal(raw, &t.Sfixed32Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'sfixed32Value': %w", err)
-		}
-	}
-
-	if raw, found := object["sfixed64Value"]; found {
-		err = json.Unmarshal(raw, &t.Sfixed64Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'sfixed64Value': %w", err)
-		}
-	}
-
-	if raw, found := object["singleNested"]; found {
-		err = json.Unmarshal(raw, &t.SingleNested)
-		if err != nil {
-			return fmt.Errorf("error reading 'singleNested': %w", err)
-		}
-	}
-
-	if raw, found := object["sint32Value"]; found {
-		err = json.Unmarshal(raw, &t.Sint32Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'sint32Value': %w", err)
-		}
-	}
-
-	if raw, found := object["sint64Value"]; found {
-		err = json.Unmarshal(raw, &t.Sint64Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'sint64Value': %w", err)
-		}
-	}
-
-	if raw, found := object["stringValue"]; found {
-		err = json.Unmarshal(raw, &t.StringValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'stringValue': %w", err)
-		}
-	}
-
-	if raw, found := object["timestampValue"]; found {
-		err = json.Unmarshal(raw, &t.TimestampValue)
-		if err != nil {
-			return fmt.Errorf("error reading 'timestampValue': %w", err)
-		}
-	}
-
-	if raw, found := object["trailingBoth"]; found {
-		err = json.Unmarshal(raw, &t.TrailingBoth)
-		if err != nil {
-			return fmt.Errorf("error reading 'trailingBoth': %w", err)
-		}
-	}
-
-	if raw, found := object["trailingMultiline"]; found {
-		err = json.Unmarshal(raw, &t.TrailingMultiline)
-		if err != nil {
-			return fmt.Errorf("error reading 'trailingMultiline': %w", err)
-		}
-	}
-
-	if raw, found := object["trailingOnly"]; found {
-		err = json.Unmarshal(raw, &t.TrailingOnly)
-		if err != nil {
-			return fmt.Errorf("error reading 'trailingOnly': %w", err)
-		}
-	}
-
-	if raw, found := object["trailingOnlyDot"]; found {
-		err = json.Unmarshal(raw, &t.TrailingOnlyDot)
-		if err != nil {
-			return fmt.Errorf("error reading 'trailingOnlyDot': %w", err)
-		}
-	}
-
-	if raw, found := object["uint32Value"]; found {
-		err = json.Unmarshal(raw, &t.Uint32Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'uint32Value': %w", err)
-		}
-	}
-
-	if raw, found := object["uint64Value"]; found {
-		err = json.Unmarshal(raw, &t.Uint64Value)
-		if err != nil {
-			return fmt.Errorf("error reading 'uint64Value': %w", err)
-		}
-	}
-
-	if raw, found := object["uuid"]; found {
-		err = json.Unmarshal(raw, &t.Uuid)
-		if err != nil {
-			return fmt.Errorf("error reading 'uuid': %w", err)
-		}
-	}
-
-	if raw, found := object["uuids"]; found {
-		err = json.Unmarshal(raw, &t.Uuids)
-		if err != nil {
-			return fmt.Errorf("error reading 'uuids': %w", err)
-		}
-	}
-
-	return err
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // RequestEditorFn  is the function signature for the RequestEditor callback function
@@ -2665,43 +1832,29 @@ type ClientOption func(*Client) error
 
 // Creates a new Client, with reasonable defaults
 func NewClient(server string, opts ...ClientOption) (*Client, error) {
+	_ = "STUB: not implemented"
 	// create a client with sane default values
-	client := Client{
-		Server: server,
-	}
-	// mutate client and add all optional params
-	for _, o := range opts {
-		if err := o(&client); err != nil {
-			return nil, err
-		}
-	}
-	// ensure the server URL always has a trailing slash
-	if !strings.HasSuffix(client.Server, "/") {
-		client.Server += "/"
-	}
-	// create httpClient, if not already present
-	if client.Client == nil {
-		client.Client = &http.Client{}
-	}
-	return &client, nil
+	return nil, nil
 }
+
+// mutate client and add all optional params
+
+// ensure the server URL always has a trailing slash
+
+// create httpClient, if not already present
 
 // WithHTTPClient allows overriding the default Doer, which is
 // automatically created using http.Client. This is useful for tests.
 func WithHTTPClient(doer HttpRequestDoer) ClientOption {
-	return func(c *Client) error {
-		c.Client = doer
-		return nil
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // WithRequestEditorFn allows setting up a callback function, which will be
 // called right before sending the request. This can be used to mutate the request.
 func WithRequestEditorFn(fn RequestEditorFn) ClientOption {
-	return func(c *Client) error {
-		c.RequestEditors = append(c.RequestEditors, fn)
-		return nil
-	}
+	_ = "STUB: not implemented"
+	return *new(ClientOption)
 }
 
 // The interface specification for the client above.
@@ -2852,11178 +2005,590 @@ type ClientInterface interface {
 }
 
 func (c *Client) ABitOfEverythingServiceCreateBodyWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCreateBodyRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCreateBody(ctx context.Context, body ABitOfEverythingServiceCreateBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCreateBodyRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCustom1(ctx context.Context, optionalStringValue string, params *ABitOfEverythingServiceCustom1Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCustom1Request(c.Server, optionalStringValue, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceEcho(ctx context.Context, value string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceEchoRequest(c.Server, value)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckNestedEnumGetQueryParams(ctx context.Context, singleNestedOk GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum, params *ABitOfEverythingServiceCheckNestedEnumGetQueryParamsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckNestedEnumGetQueryParamsRequest(c.Server, singleNestedOk, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckGetQueryParams(ctx context.Context, singleNestedName string, params *ABitOfEverythingServiceCheckGetQueryParamsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckGetQueryParamsRequest(c.Server, singleNestedName, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckPostQueryParamsWithBody(ctx context.Context, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckPostQueryParamsRequestWithBody(c.Server, stringValue, params, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckPostQueryParams(ctx context.Context, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, body ABitOfEverythingServiceCheckPostQueryParamsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckPostQueryParamsRequest(c.Server, stringValue, params, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceGetQuery(ctx context.Context, uuid string, params *ABitOfEverythingServiceGetQueryParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceGetQueryRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCreate(ctx context.Context, floatValue float32, doubleValue float64, int64Value string, uint64Value string, int32Value int32, fixed64Value string, fixed32Value int64, boolValue bool, stringValue string, uint32Value int64, sfixed32Value int32, sfixed64Value string, sint32Value int32, sint64Value string, nonConventionalNameValue string, enumValue GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathEnumValue GrpcGatewayExamplesInternalPathenumPathEnum, nestedPathEnumValue GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum, enumValueAnnotation GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, params *ABitOfEverythingServiceCreateParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCreateRequest(c.Server, floatValue, doubleValue, int64Value, uint64Value, int32Value, fixed64Value, fixed32Value, boolValue, stringValue, uint32Value, sfixed32Value, sfixed64Value, sint32Value, sint64Value, nonConventionalNameValue, enumValue, pathEnumValue, nestedPathEnumValue, enumValueAnnotation, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceDelete(ctx context.Context, uuid string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceDeleteRequest(c.Server, uuid)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceLookup(ctx context.Context, uuid string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceLookupRequest(c.Server, uuid)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceExists(ctx context.Context, uuid string, params *ABitOfEverythingServiceExistsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceExistsRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCustomOptionsRequest(ctx context.Context, uuid string, params *ABitOfEverythingServiceCustomOptionsRequestParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCustomOptionsRequestRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateWithBody(ctx context.Context, uuid string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateRequestWithBody(c.Server, uuid, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdate(ctx context.Context, uuid string, body ABitOfEverythingServiceUpdateJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateRequest(c.Server, uuid, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceTraceRequest(ctx context.Context, uuid string, params *ABitOfEverythingServiceTraceRequestParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceTraceRequestRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCustom(ctx context.Context, uuid string, params *ABitOfEverythingServiceCustomParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCustomRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceDoubleColon(ctx context.Context, uuid string, params *ABitOfEverythingServiceDoubleColonParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceDoubleColonRequest(c.Server, uuid, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceGetRepeatedQuery(ctx context.Context, pathRepeatedFloatValue []float32, pathRepeatedDoubleValue []float64, pathRepeatedInt64Value []string, pathRepeatedUint64Value []string, pathRepeatedInt32Value []int32, pathRepeatedFixed64Value []string, pathRepeatedFixed32Value []int64, pathRepeatedBoolValue []bool, pathRepeatedStringValue []string, pathRepeatedBytesValue [][]byte, pathRepeatedUint32Value []int64, pathRepeatedEnumValue []GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathRepeatedSfixed32Value []int32, pathRepeatedSfixed64Value []string, pathRepeatedSint32Value []int32, pathRepeatedSint64Value []string, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceGetRepeatedQueryRequest(c.Server, pathRepeatedFloatValue, pathRepeatedDoubleValue, pathRepeatedInt64Value, pathRepeatedUint64Value, pathRepeatedInt32Value, pathRepeatedFixed64Value, pathRepeatedFixed32Value, pathRepeatedBoolValue, pathRepeatedStringValue, pathRepeatedBytesValue, pathRepeatedUint32Value, pathRepeatedEnumValue, pathRepeatedSfixed32Value, pathRepeatedSfixed64Value, pathRepeatedSint32Value, pathRepeatedSint64Value)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckStatus(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckStatusRequest(c.Server)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceDeepPathEchoWithBody(ctx context.Context, singleNestedName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceDeepPathEchoRequestWithBody(c.Server, singleNestedName, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceDeepPathEcho(ctx context.Context, singleNestedName string, body ABitOfEverythingServiceDeepPathEchoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceDeepPathEchoRequest(c.Server, singleNestedName, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostOneofEnumWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostOneofEnumRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostOneofEnum(ctx context.Context, body ABitOfEverythingServicePostOneofEnumJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostOneofEnumRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostRequiredMessageTypeWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostRequiredMessageTypeRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostRequiredMessageType(ctx context.Context, body ABitOfEverythingServicePostRequiredMessageTypeJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostRequiredMessageTypeRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) SnakeEnumServiceSnakeEnum(ctx context.Context, who GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum, what GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum, where GrpcGatewayExamplesInternalPathenumSnakeCaseForImport, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewSnakeEnumServiceSnakeEnumRequest(c.Server, who, what, where)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateBookWithBody(ctx context.Context, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateBookRequestWithBody(c.Server, bookName, bookName1, params, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateBook(ctx context.Context, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, body ABitOfEverythingServiceUpdateBookJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateBookRequest(c.Server, bookName, bookName1, params, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCreateBookWithBody(ctx context.Context, parent string, params *ABitOfEverythingServiceCreateBookParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCreateBookRequestWithBody(c.Server, parent, params, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCreateBook(ctx context.Context, parent string, params *ABitOfEverythingServiceCreateBookParams, body ABitOfEverythingServiceCreateBookJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCreateBookRequest(c.Server, parent, params, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV21WithBody(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV21RequestWithBody(c.Server, abeUuid, params, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV21(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, body ABitOfEverythingServiceUpdateV21JSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV21Request(c.Server, abeUuid, params, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV2WithBody(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV2RequestWithBody(c.Server, abeUuid, params, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV2(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, body ABitOfEverythingServiceUpdateV2JSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV2Request(c.Server, abeUuid, params, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceEcho2(ctx context.Context, params *ABitOfEverythingServiceEcho2Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceEcho2Request(c.Server, params)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceEcho1WithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceEcho1RequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceEcho1(ctx context.Context, body ABitOfEverythingServiceEcho1JSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceEcho1Request(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) CamelCaseServiceNameEmpty(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewCamelCaseServiceNameEmptyRequest(c.Server)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceErrorWithDetails(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceErrorWithDetailsRequest(c.Server)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceOverwriteRequestContentTypeWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceOverwriteRequestContentTypeRequestWithBody(c.Server, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceOverwriteRequestContentType(ctx context.Context, body ABitOfEverythingServiceOverwriteRequestContentTypeJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceOverwriteRequestContentTypeRequest(c.Server, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceOverwriteResponseContentType(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceOverwriteResponseContentTypeRequest(c.Server)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostWithEmptyBodyWithBody(ctx context.Context, name string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostWithEmptyBodyRequestWithBody(c.Server, name, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServicePostWithEmptyBody(ctx context.Context, name string, body ABitOfEverythingServicePostWithEmptyBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServicePostWithEmptyBodyRequest(c.Server, name, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceTimeout(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceTimeoutRequest(c.Server)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceGetMessageWithBodyWithBody(ctx context.Context, id string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceGetMessageWithBodyRequestWithBody(c.Server, id, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceGetMessageWithBody(ctx context.Context, id string, body ABitOfEverythingServiceGetMessageWithBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceGetMessageWithBodyRequest(c.Server, id, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckExternalPathEnum(ctx context.Context, value GrpcGatewayExamplesInternalPathenumPathEnum, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckExternalPathEnumRequest(c.Server, value)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV22WithBody(ctx context.Context, abeUuid string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV22RequestWithBody(c.Server, abeUuid, contentType, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceUpdateV22(ctx context.Context, abeUuid string, body ABitOfEverythingServiceUpdateV22JSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceUpdateV22Request(c.Server, abeUuid, body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) ABitOfEverythingServiceCheckExternalNestedPathEnum(ctx context.Context, value GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewABitOfEverythingServiceCheckExternalNestedPathEnumRequest(c.Server, value)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
-	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
-		return nil, err
-	}
-	return c.Client.Do(req)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCreateBodyRequest calls the generic ABitOfEverythingServiceCreateBody builder with application/json body
 func NewABitOfEverythingServiceCreateBodyRequest(server string, body ABitOfEverythingServiceCreateBodyJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceCreateBodyRequestWithBody(server, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCreateBodyRequestWithBody generates requests for ABitOfEverythingServiceCreateBody with any type of body
 func NewABitOfEverythingServiceCreateBodyRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCustom1Request generates requests for ABitOfEverythingServiceCustom1
 func NewABitOfEverythingServiceCustom1Request(server string, optionalStringValue string, params *ABitOfEverythingServiceCustom1Params) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "optional_string_value", optionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/custom/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuid != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuid", *params.Uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceEchoRequest generates requests for ABitOfEverythingServiceEcho
 func NewABitOfEverythingServiceEchoRequest(server string, value string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "value", value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/echo/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckNestedEnumGetQueryParamsRequest generates requests for ABitOfEverythingServiceCheckNestedEnumGetQueryParams
 func NewABitOfEverythingServiceCheckNestedEnumGetQueryParamsRequest(server string, singleNestedOk GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum, params *ABitOfEverythingServiceCheckNestedEnumGetQueryParamsParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "single_nested.ok", singleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/params/get/nested_enum/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuid != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuid", *params.Uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckGetQueryParamsRequest generates requests for ABitOfEverythingServiceCheckGetQueryParams
 func NewABitOfEverythingServiceCheckGetQueryParamsRequest(server string, singleNestedName string, params *ABitOfEverythingServiceCheckGetQueryParamsParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "single_nested.name", singleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/params/get/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuid != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuid", *params.Uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckPostQueryParamsRequest calls the generic ABitOfEverythingServiceCheckPostQueryParams builder with application/json body
 func NewABitOfEverythingServiceCheckPostQueryParamsRequest(server string, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, body ABitOfEverythingServiceCheckPostQueryParamsJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceCheckPostQueryParamsRequestWithBody(server, stringValue, params, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckPostQueryParamsRequestWithBody generates requests for ABitOfEverythingServiceCheckPostQueryParams with any type of body
 func NewABitOfEverythingServiceCheckPostQueryParamsRequestWithBody(server string, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "string_value", stringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/params/post/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Uuid != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuid", *params.Uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceGetQueryRequest generates requests for ABitOfEverythingServiceGetQuery
 func NewABitOfEverythingServiceGetQueryRequest(server string, uuid string, params *ABitOfEverythingServiceGetQueryParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/query/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCreateRequest generates requests for ABitOfEverythingServiceCreate
 func NewABitOfEverythingServiceCreateRequest(server string, floatValue float32, doubleValue float64, int64Value string, uint64Value string, int32Value int32, fixed64Value string, fixed32Value int64, boolValue bool, stringValue string, uint32Value int64, sfixed32Value int32, sfixed64Value string, sint32Value int32, sint64Value string, nonConventionalNameValue string, enumValue GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathEnumValue GrpcGatewayExamplesInternalPathenumPathEnum, nestedPathEnumValue GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum, enumValueAnnotation GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, params *ABitOfEverythingServiceCreateParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "float_value", floatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "number", Format: "float"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam1 string
-
-	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "double_value", doubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "number", Format: "double"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam2 string
-
-	pathParam2, err = runtime.StyleParamWithOptions("simple", false, "int64_value", int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam3 string
-
-	pathParam3, err = runtime.StyleParamWithOptions("simple", false, "uint64_value", uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uint64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam4 string
-
-	pathParam4, err = runtime.StyleParamWithOptions("simple", false, "int32_value", int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int32"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam5 string
-
-	pathParam5, err = runtime.StyleParamWithOptions("simple", false, "fixed64_value", fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "uint64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam6 string
-
-	pathParam6, err = runtime.StyleParamWithOptions("simple", false, "fixed32_value", fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam7 string
-
-	pathParam7, err = runtime.StyleParamWithOptions("simple", false, "bool_value", boolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "boolean", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam8 string
-
-	pathParam8, err = runtime.StyleParamWithOptions("simple", false, "string_value", stringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam9 string
-
-	pathParam9, err = runtime.StyleParamWithOptions("simple", false, "uint32_value", uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam10 string
-
-	pathParam10, err = runtime.StyleParamWithOptions("simple", false, "sfixed32_value", sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int32"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam11 string
-
-	pathParam11, err = runtime.StyleParamWithOptions("simple", false, "sfixed64_value", sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam12 string
-
-	pathParam12, err = runtime.StyleParamWithOptions("simple", false, "sint32_value", sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "integer", Format: "int32"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam13 string
-
-	pathParam13, err = runtime.StyleParamWithOptions("simple", false, "sint64_value", sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: "int64"})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam14 string
-
-	pathParam14, err = runtime.StyleParamWithOptions("simple", false, "nonConventionalNameValue", nonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam15 string
-
-	pathParam15, err = runtime.StyleParamWithOptions("simple", false, "enum_value", enumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam16 string
-
-	pathParam16, err = runtime.StyleParamWithOptions("simple", false, "path_enum_value", pathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam17 string
-
-	pathParam17, err = runtime.StyleParamWithOptions("simple", false, "nested_path_enum_value", nestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam18 string
-
-	pathParam18, err = runtime.StyleParamWithOptions("simple", false, "enum_value_annotation", enumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s/%s/%s/separator/%s/%s/%s/%s/%s/strprefix/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s", pathParam0, pathParam1, pathParam2, pathParam3, pathParam4, pathParam5, pathParam6, pathParam7, pathParam8, pathParam9, pathParam10, pathParam11, pathParam12, pathParam13, pathParam14, pathParam15, pathParam16, pathParam17, pathParam18)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuid != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuid", *params.Uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceDeleteRequest generates requests for ABitOfEverythingServiceDelete
 func NewABitOfEverythingServiceDeleteRequest(server string, uuid string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("DELETE", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceLookupRequest generates requests for ABitOfEverythingServiceLookup
 func NewABitOfEverythingServiceLookupRequest(server string, uuid string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceExistsRequest generates requests for ABitOfEverythingServiceExists
 func NewABitOfEverythingServiceExistsRequest(server string, uuid string, params *ABitOfEverythingServiceExistsParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("HEAD", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCustomOptionsRequestRequest generates requests for ABitOfEverythingServiceCustomOptionsRequest
 func NewABitOfEverythingServiceCustomOptionsRequestRequest(server string, uuid string, params *ABitOfEverythingServiceCustomOptionsRequestParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("OPTIONS", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateRequest calls the generic ABitOfEverythingServiceUpdate builder with application/json body
 func NewABitOfEverythingServiceUpdateRequest(server string, uuid string, body ABitOfEverythingServiceUpdateJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceUpdateRequestWithBody(server, uuid, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateRequestWithBody generates requests for ABitOfEverythingServiceUpdate with any type of body
 func NewABitOfEverythingServiceUpdateRequestWithBody(server string, uuid string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("PUT", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceTraceRequestRequest generates requests for ABitOfEverythingServiceTraceRequest
 func NewABitOfEverythingServiceTraceRequestRequest(server string, uuid string, params *ABitOfEverythingServiceTraceRequestParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("TRACE", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCustomRequest generates requests for ABitOfEverythingServiceCustom
 func NewABitOfEverythingServiceCustomRequest(server string, uuid string, params *ABitOfEverythingServiceCustomParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s:custom", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceDoubleColonRequest generates requests for ABitOfEverythingServiceDoubleColon
 func NewABitOfEverythingServiceDoubleColonRequest(server string, uuid string, params *ABitOfEverythingServiceDoubleColonParams) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "uuid", uuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything/%s:custom:custom", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.SingleNestedName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.name", *params.SingleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.amount", *params.SingleNestedAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.SingleNestedOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "singleNested.ok", *params.SingleNestedOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.FloatValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "floatValue", *params.FloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "float"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.DoubleValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "doubleValue", *params.DoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "number", Format: "double"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64Value", *params.Int64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint64Value", *params.Uint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int32Value", *params.Int32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed64Value", *params.Fixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uint64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Fixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "fixed32Value", *params.Fixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BoolValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "boolValue", *params.BoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.StringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "stringValue", *params.StringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.BytesValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bytesValue", *params.BytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "byte"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uint32Value", *params.Uint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValue", *params.EnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.PathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "pathEnumValue", *params.PathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedPathEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedPathEnumValue", *params.NestedPathEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed32Value", *params.Sfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sfixed64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sfixed64Value", *params.Sfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint32Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint32Value", *params.Sint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int32"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Sint64Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sint64Value", *params.Sint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringValue", *params.RepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofEmpty != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofEmpty", *params.OneofEmpty, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OneofString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "oneofString", *params.OneofString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MapValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mapValue[string]", *params.MapValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedStringValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedStringValue[string]", *params.MappedStringValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.MappedNestedValueString != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "mappedNestedValue[string]", *params.MappedNestedValueString, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "object", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NonConventionalNameValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nonConventionalNameValue", *params.NonConventionalNameValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TimestampValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "timestampValue", *params.TimestampValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "date-time"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumValue", *params.RepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedEnumAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedEnumAnnotation", *params.RepeatedEnumAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.EnumValueAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "enumValueAnnotation", *params.EnumValueAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RepeatedStringAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "repeatedStringAnnotation", *params.RepeatedStringAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationName != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.name", *params.NestedAnnotationName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationAmount != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.amount", *params.NestedAnnotationAmount, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.NestedAnnotationOk != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "nestedAnnotation.ok", *params.NestedAnnotationOk, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Int64OverrideType != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "int64OverrideType", *params.Int64OverrideType, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "int64"}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringViaFieldBehaviorAnnotation", *params.RequiredStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OutputOnlyStringViaFieldBehaviorAnnotation != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "outputOnlyStringViaFieldBehaviorAnnotation", *params.OutputOnlyStringViaFieldBehaviorAnnotation, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringValue != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringValue", *params.OptionalStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.ProductId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "productId", *params.ProductId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.OptionalStringField != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "optionalStringField", *params.OptionalStringField, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField1 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField1", *params.RequiredStringField1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredStringField2 != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "requiredStringField2", *params.RequiredStringField2, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldBehaviorJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_behavior_json_name_custom", *params.RequiredFieldBehaviorJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.RequiredFieldSchemaJsonNameCustom != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "required_field_schema_json_name_custom", *params.RequiredFieldSchemaJsonNameCustom, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnly != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnly", *params.TrailingOnly, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingOnlyDot != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingOnlyDot", *params.TrailingOnlyDot, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingBoth != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingBoth", *params.TrailingBoth, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.TrailingMultiline != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "trailingMultiline", *params.TrailingMultiline, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.Uuids != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "uuids", *params.Uuids, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "array", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceGetRepeatedQueryRequest generates requests for ABitOfEverythingServiceGetRepeatedQuery
 func NewABitOfEverythingServiceGetRepeatedQueryRequest(server string, pathRepeatedFloatValue []float32, pathRepeatedDoubleValue []float64, pathRepeatedInt64Value []string, pathRepeatedUint64Value []string, pathRepeatedInt32Value []int32, pathRepeatedFixed64Value []string, pathRepeatedFixed32Value []int64, pathRepeatedBoolValue []bool, pathRepeatedStringValue []string, pathRepeatedBytesValue [][]byte, pathRepeatedUint32Value []int64, pathRepeatedEnumValue []GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathRepeatedSfixed32Value []int32, pathRepeatedSfixed64Value []string, pathRepeatedSint32Value []int32, pathRepeatedSint64Value []string) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_float_value", pathRepeatedFloatValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam1 string
-
-	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_double_value", pathRepeatedDoubleValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam2 string
-
-	pathParam2, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_int64_value", pathRepeatedInt64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam3 string
-
-	pathParam3, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_uint64_value", pathRepeatedUint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam4 string
-
-	pathParam4, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_int32_value", pathRepeatedInt32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam5 string
-
-	pathParam5, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_fixed64_value", pathRepeatedFixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam6 string
-
-	pathParam6, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_fixed32_value", pathRepeatedFixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam7 string
-
-	pathParam7, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_bool_value", pathRepeatedBoolValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam8 string
-
-	pathParam8, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_string_value", pathRepeatedStringValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam9 string
-
-	pathParam9, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_bytes_value", pathRepeatedBytesValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam10 string
-
-	pathParam10, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_uint32_value", pathRepeatedUint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam11 string
-
-	pathParam11, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_enum_value", pathRepeatedEnumValue, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam12 string
-
-	pathParam12, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_sfixed32_value", pathRepeatedSfixed32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam13 string
-
-	pathParam13, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_sfixed64_value", pathRepeatedSfixed64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam14 string
-
-	pathParam14, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_sint32_value", pathRepeatedSint32Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam15 string
-
-	pathParam15, err = runtime.StyleParamWithOptions("simple", false, "path_repeated_sint64_value", pathRepeatedSint64Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "array", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/a_bit_of_everything_repeated/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s", pathParam0, pathParam1, pathParam2, pathParam3, pathParam4, pathParam5, pathParam6, pathParam7, pathParam8, pathParam9, pathParam10, pathParam11, pathParam12, pathParam13, pathParam14, pathParam15)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckStatusRequest generates requests for ABitOfEverythingServiceCheckStatus
 func NewABitOfEverythingServiceCheckStatusRequest(server string) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/checkStatus")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoRequest calls the generic ABitOfEverythingServiceDeepPathEcho builder with application/json body
 func NewABitOfEverythingServiceDeepPathEchoRequest(server string, singleNestedName string, body ABitOfEverythingServiceDeepPathEchoJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceDeepPathEchoRequestWithBody(server, singleNestedName, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceDeepPathEchoRequestWithBody generates requests for ABitOfEverythingServiceDeepPathEcho with any type of body
 func NewABitOfEverythingServiceDeepPathEchoRequestWithBody(server string, singleNestedName string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "single_nested.name", singleNestedName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/deep_path/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumRequest calls the generic ABitOfEverythingServicePostOneofEnum builder with application/json body
 func NewABitOfEverythingServicePostOneofEnumRequest(server string, body ABitOfEverythingServicePostOneofEnumJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServicePostOneofEnumRequestWithBody(server, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostOneofEnumRequestWithBody generates requests for ABitOfEverythingServicePostOneofEnum with any type of body
 func NewABitOfEverythingServicePostOneofEnumRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/oneofenum")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostRequiredMessageTypeRequest calls the generic ABitOfEverythingServicePostRequiredMessageType builder with application/json body
 func NewABitOfEverythingServicePostRequiredMessageTypeRequest(server string, body ABitOfEverythingServicePostRequiredMessageTypeJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServicePostRequiredMessageTypeRequestWithBody(server, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostRequiredMessageTypeRequestWithBody generates requests for ABitOfEverythingServicePostRequiredMessageType with any type of body
 func NewABitOfEverythingServicePostRequiredMessageTypeRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/requiredmessagetype")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewSnakeEnumServiceSnakeEnumRequest generates requests for SnakeEnumServiceSnakeEnum
 func NewSnakeEnumServiceSnakeEnumRequest(server string, who GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum, what GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum, where GrpcGatewayExamplesInternalPathenumSnakeCaseForImport) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "who", who, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam1 string
-
-	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "what", what, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam2 string
-
-	pathParam2, err = runtime.StyleParamWithOptions("simple", false, "where", where, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/example/snake/%s/%s/%s", pathParam0, pathParam1, pathParam2)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateBookRequest calls the generic ABitOfEverythingServiceUpdateBook builder with application/json body
 func NewABitOfEverythingServiceUpdateBookRequest(server string, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, body ABitOfEverythingServiceUpdateBookJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceUpdateBookRequestWithBody(server, bookName, bookName1, params, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateBookRequestWithBody generates requests for ABitOfEverythingServiceUpdateBook with any type of body
 func NewABitOfEverythingServiceUpdateBookRequestWithBody(server string, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "book.name", bookName, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	var pathParam1 string
-
-	pathParam1, err = runtime.StyleParamWithOptions("simple", false, "book.name_1", bookName1, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/publishers/%s/books/%s", pathParam0, pathParam1)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.UpdateMask != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "updateMask", *params.UpdateMask, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		if params.AllowMissing != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "allowMissing", *params.AllowMissing, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "boolean", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("PATCH", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCreateBookRequest calls the generic ABitOfEverythingServiceCreateBook builder with application/json body
 func NewABitOfEverythingServiceCreateBookRequest(server string, parent string, params *ABitOfEverythingServiceCreateBookParams, body ABitOfEverythingServiceCreateBookJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceCreateBookRequestWithBody(server, parent, params, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCreateBookRequestWithBody generates requests for ABitOfEverythingServiceCreateBook with any type of body
 func NewABitOfEverythingServiceCreateBookRequestWithBody(server string, parent string, params *ABitOfEverythingServiceCreateBookParams, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "parent", parent, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v1/publishers/%s/books", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.BookId != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "bookId", *params.BookId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV21Request calls the generic ABitOfEverythingServiceUpdateV21 builder with application/json body
 func NewABitOfEverythingServiceUpdateV21Request(server string, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, body ABitOfEverythingServiceUpdateV21JSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceUpdateV21RequestWithBody(server, abeUuid, params, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV21RequestWithBody generates requests for ABitOfEverythingServiceUpdateV21 with any type of body
 func NewABitOfEverythingServiceUpdateV21RequestWithBody(server string, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "abe.uuid", abeUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.UpdateMask != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "updateMask", *params.UpdateMask, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("PATCH", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV2Request calls the generic ABitOfEverythingServiceUpdateV2 builder with application/json body
 func NewABitOfEverythingServiceUpdateV2Request(server string, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, body ABitOfEverythingServiceUpdateV2JSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceUpdateV2RequestWithBody(server, abeUuid, params, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV2RequestWithBody generates requests for ABitOfEverythingServiceUpdateV2 with any type of body
 func NewABitOfEverythingServiceUpdateV2RequestWithBody(server string, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "abe.uuid", abeUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.UpdateMask != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "updateMask", *params.UpdateMask, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("PUT", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceEcho2Request generates requests for ABitOfEverythingServiceEcho2
 func NewABitOfEverythingServiceEcho2Request(server string, params *ABitOfEverythingServiceEcho2Params) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/echo")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	if params != nil {
-		queryValues := queryURL.Query()
-
-		if params.Value != nil {
-
-			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "value", *params.Value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-				return nil, err
-			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
-				return nil, err
-			} else {
-				for k, v := range parsed {
-					for _, v2 := range v {
-						queryValues.Add(k, v2)
-					}
-				}
-			}
-
-		}
-
-		queryURL.RawQuery = queryValues.Encode()
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceEcho1Request calls the generic ABitOfEverythingServiceEcho1 builder with application/json body
 func NewABitOfEverythingServiceEcho1Request(server string, body ABitOfEverythingServiceEcho1JSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceEcho1RequestWithBody(server, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceEcho1RequestWithBody generates requests for ABitOfEverythingServiceEcho1 with any type of body
 func NewABitOfEverythingServiceEcho1RequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/echo")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewCamelCaseServiceNameEmptyRequest generates requests for CamelCaseServiceNameEmpty
 func NewCamelCaseServiceNameEmptyRequest(server string) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/empty")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceErrorWithDetailsRequest generates requests for ABitOfEverythingServiceErrorWithDetails
 func NewABitOfEverythingServiceErrorWithDetailsRequest(server string) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/errorwithdetails")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeRequest calls the generic ABitOfEverythingServiceOverwriteRequestContentType builder with application/json body
 func NewABitOfEverythingServiceOverwriteRequestContentTypeRequest(server string, body ABitOfEverythingServiceOverwriteRequestContentTypeJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceOverwriteRequestContentTypeRequestWithBody(server, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceOverwriteRequestContentTypeRequestWithBody generates requests for ABitOfEverythingServiceOverwriteRequestContentType with any type of body
 func NewABitOfEverythingServiceOverwriteRequestContentTypeRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/overwriterequestcontenttype")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceOverwriteResponseContentTypeRequest generates requests for ABitOfEverythingServiceOverwriteResponseContentType
 func NewABitOfEverythingServiceOverwriteResponseContentTypeRequest(server string) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/overwriteresponsecontenttype")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyRequest calls the generic ABitOfEverythingServicePostWithEmptyBody builder with application/json body
 func NewABitOfEverythingServicePostWithEmptyBodyRequest(server string, name string, body ABitOfEverythingServicePostWithEmptyBodyJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServicePostWithEmptyBodyRequestWithBody(server, name, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServicePostWithEmptyBodyRequestWithBody generates requests for ABitOfEverythingServicePostWithEmptyBody with any type of body
 func NewABitOfEverythingServicePostWithEmptyBodyRequestWithBody(server string, name string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "name", name, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/postwithemptybody/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceTimeoutRequest generates requests for ABitOfEverythingServiceTimeout
 func NewABitOfEverythingServiceTimeoutRequest(server string) (*http.Request, error) {
-	var err error
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/timeout")
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceGetMessageWithBodyRequest calls the generic ABitOfEverythingServiceGetMessageWithBody builder with application/json body
 func NewABitOfEverythingServiceGetMessageWithBodyRequest(server string, id string, body ABitOfEverythingServiceGetMessageWithBodyJSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceGetMessageWithBodyRequestWithBody(server, id, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceGetMessageWithBodyRequestWithBody generates requests for ABitOfEverythingServiceGetMessageWithBody with any type of body
 func NewABitOfEverythingServiceGetMessageWithBodyRequestWithBody(server string, id string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "id", id, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/example/withbody/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckExternalPathEnumRequest generates requests for ABitOfEverythingServiceCheckExternalPathEnum
 func NewABitOfEverythingServiceCheckExternalPathEnumRequest(server string, value GrpcGatewayExamplesInternalPathenumPathEnum) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "value", value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2/%s:check", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV22Request calls the generic ABitOfEverythingServiceUpdateV22 builder with application/json body
 func NewABitOfEverythingServiceUpdateV22Request(server string, abeUuid string, body ABitOfEverythingServiceUpdateV22JSONRequestBody) (*http.Request, error) {
-	var bodyReader io.Reader
-	buf, err := json.Marshal(body)
-	if err != nil {
-		return nil, err
-	}
-	bodyReader = bytes.NewReader(buf)
-	return NewABitOfEverythingServiceUpdateV22RequestWithBody(server, abeUuid, "application/json", bodyReader)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceUpdateV22RequestWithBody generates requests for ABitOfEverythingServiceUpdateV22 with any type of body
 func NewABitOfEverythingServiceUpdateV22RequestWithBody(server string, abeUuid string, contentType string, body io.Reader) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "abe.uuid", abeUuid, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v2a/example/a_bit_of_everything/%s", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("PATCH", queryURL.String(), body)
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Add("Content-Type", contentType)
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // NewABitOfEverythingServiceCheckExternalNestedPathEnumRequest generates requests for ABitOfEverythingServiceCheckExternalNestedPathEnum
 func NewABitOfEverythingServiceCheckExternalNestedPathEnumRequest(server string, value GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum) (*http.Request, error) {
-	var err error
-
-	var pathParam0 string
-
-	pathParam0, err = runtime.StyleParamWithOptions("simple", false, "value", value, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationPath, Type: "string", Format: ""})
-	if err != nil {
-		return nil, err
-	}
-
-	serverURL, err := url.Parse(server)
-	if err != nil {
-		return nil, err
-	}
-
-	operationPath := fmt.Sprintf("/v3/%s:check", pathParam0)
-	if operationPath[0] == '/' {
-		operationPath = "." + operationPath
-	}
-
-	queryURL, err := serverURL.Parse(operationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("GET", queryURL.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	return req, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *Client) applyEditors(ctx context.Context, req *http.Request, additionalEditors []RequestEditorFn) error {
-	for _, r := range c.RequestEditors {
-		if err := r(ctx, req); err != nil {
-			return err
-		}
-	}
-	for _, r := range additionalEditors {
-		if err := r(ctx, req); err != nil {
-			return err
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -14035,24 +2600,12 @@ type ClientWithResponses struct {
 // NewClientWithResponses creates a new ClientWithResponses, which wraps
 // Client with return type handling
 func NewClientWithResponses(server string, opts ...ClientOption) (*ClientWithResponses, error) {
-	client, err := NewClient(server, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return &ClientWithResponses{client}, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // WithBaseURL overrides the baseURL.
-func WithBaseURL(baseURL string) ClientOption {
-	return func(c *Client) error {
-		newBaseURL, err := url.Parse(baseURL)
-		if err != nil {
-			return err
-		}
-		c.Server = newBaseURL.String()
-		return nil
-	}
-}
+func WithBaseURL(baseURL string) ClientOption { _ = "STUB: not implemented"; return *new(ClientOption) }
 
 // ClientWithResponsesInterface is the interface specification for the client with responses above.
 type ClientWithResponsesInterface interface {
@@ -14210,17 +2763,13 @@ type ABitOfEverythingServiceCreateBodyResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCreateBodyResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCreateBodyResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14233,17 +2782,13 @@ type ABitOfEverythingServiceCustom1Response struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCustom1Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCustom1Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14255,20 +2800,10 @@ type ABitOfEverythingServiceEchoResponse struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r ABitOfEverythingServiceEchoResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r ABitOfEverythingServiceEchoResponse) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r ABitOfEverythingServiceEchoResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r ABitOfEverythingServiceEchoResponse) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse struct {
 	Body         []byte
@@ -14279,17 +2814,13 @@ type ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14302,17 +2833,13 @@ type ABitOfEverythingServiceCheckGetQueryParamsResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckGetQueryParamsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckGetQueryParamsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14325,17 +2852,13 @@ type ABitOfEverythingServiceCheckPostQueryParamsResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckPostQueryParamsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckPostQueryParamsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14348,17 +2871,13 @@ type ABitOfEverythingServiceGetQueryResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceGetQueryResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceGetQueryResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14371,17 +2890,13 @@ type ABitOfEverythingServiceCreateResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCreateResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCreateResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14394,17 +2909,13 @@ type ABitOfEverythingServiceDeleteResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceDeleteResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceDeleteResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14417,17 +2928,13 @@ type ABitOfEverythingServiceLookupResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceLookupResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceLookupResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14440,17 +2947,13 @@ type ABitOfEverythingServiceExistsResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceExistsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceExistsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14463,17 +2966,13 @@ type ABitOfEverythingServiceCustomOptionsRequestResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCustomOptionsRequestResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCustomOptionsRequestResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14486,17 +2985,13 @@ type ABitOfEverythingServiceUpdateResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceUpdateResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceUpdateResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14509,17 +3004,13 @@ type ABitOfEverythingServiceTraceRequestResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceTraceRequestResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceTraceRequestResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14532,17 +3023,13 @@ type ABitOfEverythingServiceCustomResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCustomResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCustomResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14555,17 +3042,13 @@ type ABitOfEverythingServiceDoubleColonResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceDoubleColonResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceDoubleColonResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14578,17 +3061,13 @@ type ABitOfEverythingServiceGetRepeatedQueryResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceGetRepeatedQueryResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceGetRepeatedQueryResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14601,17 +3080,13 @@ type ABitOfEverythingServiceCheckStatusResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckStatusResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckStatusResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14624,17 +3099,13 @@ type ABitOfEverythingServiceDeepPathEchoResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceDeepPathEchoResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceDeepPathEchoResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14647,17 +3118,13 @@ type ABitOfEverythingServicePostOneofEnumResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServicePostOneofEnumResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServicePostOneofEnumResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14670,17 +3137,13 @@ type ABitOfEverythingServicePostRequiredMessageTypeResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServicePostRequiredMessageTypeResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServicePostRequiredMessageTypeResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14692,20 +3155,10 @@ type SnakeEnumServiceSnakeEnumResponse struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r SnakeEnumServiceSnakeEnumResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r SnakeEnumServiceSnakeEnumResponse) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r SnakeEnumServiceSnakeEnumResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r SnakeEnumServiceSnakeEnumResponse) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type ABitOfEverythingServiceUpdateBookResponse struct {
 	Body         []byte
@@ -14716,17 +3169,13 @@ type ABitOfEverythingServiceUpdateBookResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceUpdateBookResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceUpdateBookResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14739,17 +3188,13 @@ type ABitOfEverythingServiceCreateBookResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCreateBookResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCreateBookResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14762,17 +3207,13 @@ type ABitOfEverythingServiceUpdateV21Response struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceUpdateV21Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceUpdateV21Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14785,17 +3226,13 @@ type ABitOfEverythingServiceUpdateV2Response struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceUpdateV2Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceUpdateV2Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14807,20 +3244,10 @@ type ABitOfEverythingServiceEcho2Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r ABitOfEverythingServiceEcho2Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r ABitOfEverythingServiceEcho2Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r ABitOfEverythingServiceEcho2Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r ABitOfEverythingServiceEcho2Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type ABitOfEverythingServiceEcho1Response struct {
 	Body         []byte
@@ -14830,20 +3257,10 @@ type ABitOfEverythingServiceEcho1Response struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r ABitOfEverythingServiceEcho1Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r ABitOfEverythingServiceEcho1Response) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r ABitOfEverythingServiceEcho1Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r ABitOfEverythingServiceEcho1Response) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type CamelCaseServiceNameEmptyResponse struct {
 	Body         []byte
@@ -14853,20 +3270,10 @@ type CamelCaseServiceNameEmptyResponse struct {
 }
 
 // Status returns HTTPResponse.Status
-func (r CamelCaseServiceNameEmptyResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
-}
+func (r CamelCaseServiceNameEmptyResponse) Status() string { _ = "STUB: not implemented"; return "" }
 
 // StatusCode returns HTTPResponse.StatusCode
-func (r CamelCaseServiceNameEmptyResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
-	return 0
-}
+func (r CamelCaseServiceNameEmptyResponse) StatusCode() int { _ = "STUB: not implemented"; return 0 }
 
 type ABitOfEverythingServiceErrorWithDetailsResponse struct {
 	Body         []byte
@@ -14877,17 +3284,13 @@ type ABitOfEverythingServiceErrorWithDetailsResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceErrorWithDetailsResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceErrorWithDetailsResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14900,17 +3303,13 @@ type ABitOfEverythingServiceOverwriteRequestContentTypeResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceOverwriteRequestContentTypeResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceOverwriteRequestContentTypeResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14923,17 +3322,13 @@ type ABitOfEverythingServiceOverwriteResponseContentTypeResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceOverwriteResponseContentTypeResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceOverwriteResponseContentTypeResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14946,17 +3341,13 @@ type ABitOfEverythingServicePostWithEmptyBodyResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServicePostWithEmptyBodyResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServicePostWithEmptyBodyResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14969,17 +3360,13 @@ type ABitOfEverythingServiceTimeoutResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceTimeoutResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceTimeoutResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -14992,17 +3379,13 @@ type ABitOfEverythingServiceGetMessageWithBodyResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceGetMessageWithBodyResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceGetMessageWithBodyResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -15015,17 +3398,13 @@ type ABitOfEverythingServiceCheckExternalPathEnumResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckExternalPathEnumResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckExternalPathEnumResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -15038,17 +3417,13 @@ type ABitOfEverythingServiceUpdateV22Response struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceUpdateV22Response) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceUpdateV22Response) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
@@ -15061,1732 +3436,543 @@ type ABitOfEverythingServiceCheckExternalNestedPathEnumResponse struct {
 
 // Status returns HTTPResponse.Status
 func (r ABitOfEverythingServiceCheckExternalNestedPathEnumResponse) Status() string {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.Status
-	}
-	return http.StatusText(0)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r ABitOfEverythingServiceCheckExternalNestedPathEnumResponse) StatusCode() int {
-	if r.HTTPResponse != nil {
-		return r.HTTPResponse.StatusCode
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
 // ABitOfEverythingServiceCreateBodyWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceCreateBodyResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCreateBodyWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCreateBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCreateBodyWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCreateBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceCreateBodyWithResponse(ctx context.Context, body ABitOfEverythingServiceCreateBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCreateBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCreateBody(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCreateBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCustom1WithResponse request returning *ABitOfEverythingServiceCustom1Response
 func (c *ClientWithResponses) ABitOfEverythingServiceCustom1WithResponse(ctx context.Context, optionalStringValue string, params *ABitOfEverythingServiceCustom1Params, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCustom1Response, error) {
-	rsp, err := c.ABitOfEverythingServiceCustom1(ctx, optionalStringValue, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCustom1Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceEchoWithResponse request returning *ABitOfEverythingServiceEchoResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceEchoWithResponse(ctx context.Context, value string, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceEchoResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceEcho(ctx, value, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceEchoResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckNestedEnumGetQueryParamsWithResponse request returning *ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckNestedEnumGetQueryParamsWithResponse(ctx context.Context, singleNestedOk GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingNestedDeepEnum, params *ABitOfEverythingServiceCheckNestedEnumGetQueryParamsParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckNestedEnumGetQueryParams(ctx, singleNestedOk, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckGetQueryParamsWithResponse request returning *ABitOfEverythingServiceCheckGetQueryParamsResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckGetQueryParamsWithResponse(ctx context.Context, singleNestedName string, params *ABitOfEverythingServiceCheckGetQueryParamsParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckGetQueryParamsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckGetQueryParams(ctx, singleNestedName, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckGetQueryParamsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckPostQueryParamsWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceCheckPostQueryParamsResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckPostQueryParamsWithBodyWithResponse(ctx context.Context, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckPostQueryParamsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckPostQueryParamsWithBody(ctx, stringValue, params, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckPostQueryParamsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckPostQueryParamsWithResponse(ctx context.Context, stringValue string, params *ABitOfEverythingServiceCheckPostQueryParamsParams, body ABitOfEverythingServiceCheckPostQueryParamsJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckPostQueryParamsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckPostQueryParams(ctx, stringValue, params, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckPostQueryParamsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceGetQueryWithResponse request returning *ABitOfEverythingServiceGetQueryResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceGetQueryWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceGetQueryParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceGetQueryResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceGetQuery(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceGetQueryResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCreateWithResponse request returning *ABitOfEverythingServiceCreateResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCreateWithResponse(ctx context.Context, floatValue float32, doubleValue float64, int64Value string, uint64Value string, int32Value int32, fixed64Value string, fixed32Value int64, boolValue bool, stringValue string, uint32Value int64, sfixed32Value int32, sfixed64Value string, sint32Value int32, sint64Value string, nonConventionalNameValue string, enumValue GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathEnumValue GrpcGatewayExamplesInternalPathenumPathEnum, nestedPathEnumValue GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum, enumValueAnnotation GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, params *ABitOfEverythingServiceCreateParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCreateResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCreate(ctx, floatValue, doubleValue, int64Value, uint64Value, int32Value, fixed64Value, fixed32Value, boolValue, stringValue, uint32Value, sfixed32Value, sfixed64Value, sint32Value, sint64Value, nonConventionalNameValue, enumValue, pathEnumValue, nestedPathEnumValue, enumValueAnnotation, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCreateResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceDeleteWithResponse request returning *ABitOfEverythingServiceDeleteResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceDeleteWithResponse(ctx context.Context, uuid string, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceDeleteResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceDelete(ctx, uuid, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceDeleteResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceLookupWithResponse request returning *ABitOfEverythingServiceLookupResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceLookupWithResponse(ctx context.Context, uuid string, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceLookupResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceLookup(ctx, uuid, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceLookupResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceExistsWithResponse request returning *ABitOfEverythingServiceExistsResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceExistsWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceExistsParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceExistsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceExists(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceExistsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCustomOptionsRequestWithResponse request returning *ABitOfEverythingServiceCustomOptionsRequestResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCustomOptionsRequestWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceCustomOptionsRequestParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCustomOptionsRequestResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCustomOptionsRequest(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCustomOptionsRequestResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceUpdateWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceUpdateResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateWithBodyWithResponse(ctx context.Context, uuid string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateWithBody(ctx, uuid, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateWithResponse(ctx context.Context, uuid string, body ABitOfEverythingServiceUpdateJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdate(ctx, uuid, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceTraceRequestWithResponse request returning *ABitOfEverythingServiceTraceRequestResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceTraceRequestWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceTraceRequestParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceTraceRequestResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceTraceRequest(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceTraceRequestResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCustomWithResponse request returning *ABitOfEverythingServiceCustomResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCustomWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceCustomParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCustomResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCustom(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCustomResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceDoubleColonWithResponse request returning *ABitOfEverythingServiceDoubleColonResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceDoubleColonWithResponse(ctx context.Context, uuid string, params *ABitOfEverythingServiceDoubleColonParams, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceDoubleColonResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceDoubleColon(ctx, uuid, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceDoubleColonResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceGetRepeatedQueryWithResponse request returning *ABitOfEverythingServiceGetRepeatedQueryResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceGetRepeatedQueryWithResponse(ctx context.Context, pathRepeatedFloatValue []float32, pathRepeatedDoubleValue []float64, pathRepeatedInt64Value []string, pathRepeatedUint64Value []string, pathRepeatedInt32Value []int32, pathRepeatedFixed64Value []string, pathRepeatedFixed32Value []int64, pathRepeatedBoolValue []bool, pathRepeatedStringValue []string, pathRepeatedBytesValue [][]byte, pathRepeatedUint32Value []int64, pathRepeatedEnumValue []GrpcGatewayExamplesInternalProtoExamplepbNumericEnum, pathRepeatedSfixed32Value []int32, pathRepeatedSfixed64Value []string, pathRepeatedSint32Value []int32, pathRepeatedSint64Value []string, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceGetRepeatedQueryResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceGetRepeatedQuery(ctx, pathRepeatedFloatValue, pathRepeatedDoubleValue, pathRepeatedInt64Value, pathRepeatedUint64Value, pathRepeatedInt32Value, pathRepeatedFixed64Value, pathRepeatedFixed32Value, pathRepeatedBoolValue, pathRepeatedStringValue, pathRepeatedBytesValue, pathRepeatedUint32Value, pathRepeatedEnumValue, pathRepeatedSfixed32Value, pathRepeatedSfixed64Value, pathRepeatedSint32Value, pathRepeatedSint64Value, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceGetRepeatedQueryResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckStatusWithResponse request returning *ABitOfEverythingServiceCheckStatusResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckStatusWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckStatusResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckStatus(ctx, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckStatusResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceDeepPathEchoWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceDeepPathEchoResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceDeepPathEchoWithBodyWithResponse(ctx context.Context, singleNestedName string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceDeepPathEchoResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceDeepPathEchoWithBody(ctx, singleNestedName, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceDeepPathEchoResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceDeepPathEchoWithResponse(ctx context.Context, singleNestedName string, body ABitOfEverythingServiceDeepPathEchoJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceDeepPathEchoResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceDeepPathEcho(ctx, singleNestedName, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceDeepPathEchoResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServicePostOneofEnumWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServicePostOneofEnumResponse
 func (c *ClientWithResponses) ABitOfEverythingServicePostOneofEnumWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostOneofEnumResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostOneofEnumWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostOneofEnumResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServicePostOneofEnumWithResponse(ctx context.Context, body ABitOfEverythingServicePostOneofEnumJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostOneofEnumResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostOneofEnum(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostOneofEnumResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServicePostRequiredMessageTypeWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServicePostRequiredMessageTypeResponse
 func (c *ClientWithResponses) ABitOfEverythingServicePostRequiredMessageTypeWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostRequiredMessageTypeResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostRequiredMessageTypeWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostRequiredMessageTypeResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServicePostRequiredMessageTypeWithResponse(ctx context.Context, body ABitOfEverythingServicePostRequiredMessageTypeJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostRequiredMessageTypeResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostRequiredMessageType(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostRequiredMessageTypeResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SnakeEnumServiceSnakeEnumWithResponse request returning *SnakeEnumServiceSnakeEnumResponse
 func (c *ClientWithResponses) SnakeEnumServiceSnakeEnumWithResponse(ctx context.Context, who GrpcGatewayExamplesInternalProtoExamplepbSnakeCase0Enum, what GrpcGatewayExamplesInternalProtoExamplepbSnakeCaseEnum, where GrpcGatewayExamplesInternalPathenumSnakeCaseForImport, reqEditors ...RequestEditorFn) (*SnakeEnumServiceSnakeEnumResponse, error) {
-	rsp, err := c.SnakeEnumServiceSnakeEnum(ctx, who, what, where, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseSnakeEnumServiceSnakeEnumResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceUpdateBookWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceUpdateBookResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateBookWithBodyWithResponse(ctx context.Context, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateBookResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateBookWithBody(ctx, bookName, bookName1, params, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateBookResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateBookWithResponse(ctx context.Context, bookName string, bookName1 string, params *ABitOfEverythingServiceUpdateBookParams, body ABitOfEverythingServiceUpdateBookJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateBookResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateBook(ctx, bookName, bookName1, params, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateBookResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCreateBookWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceCreateBookResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCreateBookWithBodyWithResponse(ctx context.Context, parent string, params *ABitOfEverythingServiceCreateBookParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCreateBookResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCreateBookWithBody(ctx, parent, params, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCreateBookResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceCreateBookWithResponse(ctx context.Context, parent string, params *ABitOfEverythingServiceCreateBookParams, body ABitOfEverythingServiceCreateBookJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCreateBookResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCreateBook(ctx, parent, params, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCreateBookResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceUpdateV21WithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceUpdateV21Response
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV21WithBodyWithResponse(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV21Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV21WithBody(ctx, abeUuid, params, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV21Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV21WithResponse(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV21Params, body ABitOfEverythingServiceUpdateV21JSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV21Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV21(ctx, abeUuid, params, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV21Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceUpdateV2WithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceUpdateV2Response
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV2WithBodyWithResponse(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV2Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV2WithBody(ctx, abeUuid, params, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV2Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV2WithResponse(ctx context.Context, abeUuid string, params *ABitOfEverythingServiceUpdateV2Params, body ABitOfEverythingServiceUpdateV2JSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV2Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV2(ctx, abeUuid, params, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV2Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceEcho2WithResponse request returning *ABitOfEverythingServiceEcho2Response
 func (c *ClientWithResponses) ABitOfEverythingServiceEcho2WithResponse(ctx context.Context, params *ABitOfEverythingServiceEcho2Params, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceEcho2Response, error) {
-	rsp, err := c.ABitOfEverythingServiceEcho2(ctx, params, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceEcho2Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceEcho1WithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceEcho1Response
 func (c *ClientWithResponses) ABitOfEverythingServiceEcho1WithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceEcho1Response, error) {
-	rsp, err := c.ABitOfEverythingServiceEcho1WithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceEcho1Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceEcho1WithResponse(ctx context.Context, body ABitOfEverythingServiceEcho1JSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceEcho1Response, error) {
-	rsp, err := c.ABitOfEverythingServiceEcho1(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceEcho1Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CamelCaseServiceNameEmptyWithResponse request returning *CamelCaseServiceNameEmptyResponse
 func (c *ClientWithResponses) CamelCaseServiceNameEmptyWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*CamelCaseServiceNameEmptyResponse, error) {
-	rsp, err := c.CamelCaseServiceNameEmpty(ctx, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseCamelCaseServiceNameEmptyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceErrorWithDetailsWithResponse request returning *ABitOfEverythingServiceErrorWithDetailsResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceErrorWithDetailsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceErrorWithDetailsResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceErrorWithDetails(ctx, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceErrorWithDetailsResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceOverwriteRequestContentTypeWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceOverwriteRequestContentTypeResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceOverwriteRequestContentTypeWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceOverwriteRequestContentTypeResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceOverwriteRequestContentTypeWithBody(ctx, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceOverwriteRequestContentTypeResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceOverwriteRequestContentTypeWithResponse(ctx context.Context, body ABitOfEverythingServiceOverwriteRequestContentTypeJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceOverwriteRequestContentTypeResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceOverwriteRequestContentType(ctx, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceOverwriteRequestContentTypeResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceOverwriteResponseContentTypeWithResponse request returning *ABitOfEverythingServiceOverwriteResponseContentTypeResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceOverwriteResponseContentTypeWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceOverwriteResponseContentTypeResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceOverwriteResponseContentType(ctx, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceOverwriteResponseContentTypeResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServicePostWithEmptyBodyWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServicePostWithEmptyBodyResponse
 func (c *ClientWithResponses) ABitOfEverythingServicePostWithEmptyBodyWithBodyWithResponse(ctx context.Context, name string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostWithEmptyBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostWithEmptyBodyWithBody(ctx, name, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostWithEmptyBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServicePostWithEmptyBodyWithResponse(ctx context.Context, name string, body ABitOfEverythingServicePostWithEmptyBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServicePostWithEmptyBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServicePostWithEmptyBody(ctx, name, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServicePostWithEmptyBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceTimeoutWithResponse request returning *ABitOfEverythingServiceTimeoutResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceTimeoutWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceTimeoutResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceTimeout(ctx, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceTimeoutResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceGetMessageWithBodyWithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceGetMessageWithBodyResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceGetMessageWithBodyWithBodyWithResponse(ctx context.Context, id string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceGetMessageWithBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceGetMessageWithBodyWithBody(ctx, id, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceGetMessageWithBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceGetMessageWithBodyWithResponse(ctx context.Context, id string, body ABitOfEverythingServiceGetMessageWithBodyJSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceGetMessageWithBodyResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceGetMessageWithBody(ctx, id, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceGetMessageWithBodyResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckExternalPathEnumWithResponse request returning *ABitOfEverythingServiceCheckExternalPathEnumResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckExternalPathEnumWithResponse(ctx context.Context, value GrpcGatewayExamplesInternalPathenumPathEnum, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckExternalPathEnumResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckExternalPathEnum(ctx, value, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckExternalPathEnumResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceUpdateV22WithBodyWithResponse request with arbitrary body returning *ABitOfEverythingServiceUpdateV22Response
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV22WithBodyWithResponse(ctx context.Context, abeUuid string, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV22Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV22WithBody(ctx, abeUuid, contentType, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV22Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (c *ClientWithResponses) ABitOfEverythingServiceUpdateV22WithResponse(ctx context.Context, abeUuid string, body ABitOfEverythingServiceUpdateV22JSONRequestBody, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceUpdateV22Response, error) {
-	rsp, err := c.ABitOfEverythingServiceUpdateV22(ctx, abeUuid, body, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceUpdateV22Response(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ABitOfEverythingServiceCheckExternalNestedPathEnumWithResponse request returning *ABitOfEverythingServiceCheckExternalNestedPathEnumResponse
 func (c *ClientWithResponses) ABitOfEverythingServiceCheckExternalNestedPathEnumWithResponse(ctx context.Context, value GrpcGatewayExamplesInternalPathenumMessagePathEnumNestedPathEnum, reqEditors ...RequestEditorFn) (*ABitOfEverythingServiceCheckExternalNestedPathEnumResponse, error) {
-	rsp, err := c.ABitOfEverythingServiceCheckExternalNestedPathEnum(ctx, value, reqEditors...)
-	if err != nil {
-		return nil, err
-	}
-	return ParseABitOfEverythingServiceCheckExternalNestedPathEnumResponse(rsp)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCreateBodyResponse parses an HTTP response from a ABitOfEverythingServiceCreateBodyWithResponse call
 func ParseABitOfEverythingServiceCreateBodyResponse(rsp *http.Response) (*ABitOfEverythingServiceCreateBodyResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCreateBodyResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCustom1Response parses an HTTP response from a ABitOfEverythingServiceCustom1WithResponse call
 func ParseABitOfEverythingServiceCustom1Response(rsp *http.Response) (*ABitOfEverythingServiceCustom1Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCustom1Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceEchoResponse parses an HTTP response from a ABitOfEverythingServiceEchoWithResponse call
 func ParseABitOfEverythingServiceEchoResponse(rsp *http.Response) (*ABitOfEverythingServiceEchoResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceEchoResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoSubStringMessage
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse parses an HTTP response from a ABitOfEverythingServiceCheckNestedEnumGetQueryParamsWithResponse call
 func ParseABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckNestedEnumGetQueryParamsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckGetQueryParamsResponse parses an HTTP response from a ABitOfEverythingServiceCheckGetQueryParamsWithResponse call
 func ParseABitOfEverythingServiceCheckGetQueryParamsResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckGetQueryParamsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckGetQueryParamsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckPostQueryParamsResponse parses an HTTP response from a ABitOfEverythingServiceCheckPostQueryParamsWithResponse call
 func ParseABitOfEverythingServiceCheckPostQueryParamsResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckPostQueryParamsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckPostQueryParamsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceGetQueryResponse parses an HTTP response from a ABitOfEverythingServiceGetQueryWithResponse call
 func ParseABitOfEverythingServiceGetQueryResponse(rsp *http.Response) (*ABitOfEverythingServiceGetQueryResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceGetQueryResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCreateResponse parses an HTTP response from a ABitOfEverythingServiceCreateWithResponse call
 func ParseABitOfEverythingServiceCreateResponse(rsp *http.Response) (*ABitOfEverythingServiceCreateResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCreateResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceDeleteResponse parses an HTTP response from a ABitOfEverythingServiceDeleteWithResponse call
 func ParseABitOfEverythingServiceDeleteResponse(rsp *http.Response) (*ABitOfEverythingServiceDeleteResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceDeleteResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceLookupResponse parses an HTTP response from a ABitOfEverythingServiceLookupWithResponse call
 func ParseABitOfEverythingServiceLookupResponse(rsp *http.Response) (*ABitOfEverythingServiceLookupResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceLookupResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceExistsResponse parses an HTTP response from a ABitOfEverythingServiceExistsWithResponse call
 func ParseABitOfEverythingServiceExistsResponse(rsp *http.Response) (*ABitOfEverythingServiceExistsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceExistsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCustomOptionsRequestResponse parses an HTTP response from a ABitOfEverythingServiceCustomOptionsRequestWithResponse call
 func ParseABitOfEverythingServiceCustomOptionsRequestResponse(rsp *http.Response) (*ABitOfEverythingServiceCustomOptionsRequestResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCustomOptionsRequestResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceUpdateResponse parses an HTTP response from a ABitOfEverythingServiceUpdateWithResponse call
 func ParseABitOfEverythingServiceUpdateResponse(rsp *http.Response) (*ABitOfEverythingServiceUpdateResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceUpdateResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceTraceRequestResponse parses an HTTP response from a ABitOfEverythingServiceTraceRequestWithResponse call
 func ParseABitOfEverythingServiceTraceRequestResponse(rsp *http.Response) (*ABitOfEverythingServiceTraceRequestResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceTraceRequestResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCustomResponse parses an HTTP response from a ABitOfEverythingServiceCustomWithResponse call
 func ParseABitOfEverythingServiceCustomResponse(rsp *http.Response) (*ABitOfEverythingServiceCustomResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCustomResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceDoubleColonResponse parses an HTTP response from a ABitOfEverythingServiceDoubleColonWithResponse call
 func ParseABitOfEverythingServiceDoubleColonResponse(rsp *http.Response) (*ABitOfEverythingServiceDoubleColonResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceDoubleColonResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceGetRepeatedQueryResponse parses an HTTP response from a ABitOfEverythingServiceGetRepeatedQueryWithResponse call
 func ParseABitOfEverythingServiceGetRepeatedQueryResponse(rsp *http.Response) (*ABitOfEverythingServiceGetRepeatedQueryResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceGetRepeatedQueryResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverythingRepeated
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckStatusResponse parses an HTTP response from a ABitOfEverythingServiceCheckStatusWithResponse call
 func ParseABitOfEverythingServiceCheckStatusResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckStatusResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckStatusResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbCheckStatusResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceDeepPathEchoResponse parses an HTTP response from a ABitOfEverythingServiceDeepPathEchoWithResponse call
 func ParseABitOfEverythingServiceDeepPathEchoResponse(rsp *http.Response) (*ABitOfEverythingServiceDeepPathEchoResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceDeepPathEchoResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbABitOfEverything
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServicePostOneofEnumResponse parses an HTTP response from a ABitOfEverythingServicePostOneofEnumWithResponse call
 func ParseABitOfEverythingServicePostOneofEnumResponse(rsp *http.Response) (*ABitOfEverythingServicePostOneofEnumResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServicePostOneofEnumResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServicePostRequiredMessageTypeResponse parses an HTTP response from a ABitOfEverythingServicePostRequiredMessageTypeWithResponse call
 func ParseABitOfEverythingServicePostRequiredMessageTypeResponse(rsp *http.Response) (*ABitOfEverythingServicePostRequiredMessageTypeResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServicePostRequiredMessageTypeResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseSnakeEnumServiceSnakeEnumResponse parses an HTTP response from a SnakeEnumServiceSnakeEnumWithResponse call
 func ParseSnakeEnumServiceSnakeEnumResponse(rsp *http.Response) (*SnakeEnumServiceSnakeEnumResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &SnakeEnumServiceSnakeEnumResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbSnakeEnumResponse
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceUpdateBookResponse parses an HTTP response from a ABitOfEverythingServiceUpdateBookWithResponse call
 func ParseABitOfEverythingServiceUpdateBookResponse(rsp *http.Response) (*ABitOfEverythingServiceUpdateBookResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceUpdateBookResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbBook
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCreateBookResponse parses an HTTP response from a ABitOfEverythingServiceCreateBookWithResponse call
 func ParseABitOfEverythingServiceCreateBookResponse(rsp *http.Response) (*ABitOfEverythingServiceCreateBookResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCreateBookResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoExamplepbBook
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceUpdateV21Response parses an HTTP response from a ABitOfEverythingServiceUpdateV21WithResponse call
 func ParseABitOfEverythingServiceUpdateV21Response(rsp *http.Response) (*ABitOfEverythingServiceUpdateV21Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceUpdateV21Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceUpdateV2Response parses an HTTP response from a ABitOfEverythingServiceUpdateV2WithResponse call
 func ParseABitOfEverythingServiceUpdateV2Response(rsp *http.Response) (*ABitOfEverythingServiceUpdateV2Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceUpdateV2Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceEcho2Response parses an HTTP response from a ABitOfEverythingServiceEcho2WithResponse call
 func ParseABitOfEverythingServiceEcho2Response(rsp *http.Response) (*ABitOfEverythingServiceEcho2Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceEcho2Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoSubStringMessage
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceEcho1Response parses an HTTP response from a ABitOfEverythingServiceEcho1WithResponse call
 func ParseABitOfEverythingServiceEcho1Response(rsp *http.Response) (*ABitOfEverythingServiceEcho1Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceEcho1Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest GrpcGatewayExamplesInternalProtoSubStringMessage
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseCamelCaseServiceNameEmptyResponse parses an HTTP response from a CamelCaseServiceNameEmptyWithResponse call
 func ParseCamelCaseServiceNameEmptyResponse(rsp *http.Response) (*CamelCaseServiceNameEmptyResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &CamelCaseServiceNameEmptyResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceErrorWithDetailsResponse parses an HTTP response from a ABitOfEverythingServiceErrorWithDetailsWithResponse call
 func ParseABitOfEverythingServiceErrorWithDetailsResponse(rsp *http.Response) (*ABitOfEverythingServiceErrorWithDetailsResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceErrorWithDetailsResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceOverwriteRequestContentTypeResponse parses an HTTP response from a ABitOfEverythingServiceOverwriteRequestContentTypeWithResponse call
 func ParseABitOfEverythingServiceOverwriteRequestContentTypeResponse(rsp *http.Response) (*ABitOfEverythingServiceOverwriteRequestContentTypeResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceOverwriteRequestContentTypeResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceOverwriteResponseContentTypeResponse parses an HTTP response from a ABitOfEverythingServiceOverwriteResponseContentTypeWithResponse call
 func ParseABitOfEverythingServiceOverwriteResponseContentTypeResponse(rsp *http.Response) (*ABitOfEverythingServiceOverwriteResponseContentTypeResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceOverwriteResponseContentTypeResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest string
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServicePostWithEmptyBodyResponse parses an HTTP response from a ABitOfEverythingServicePostWithEmptyBodyWithResponse call
 func ParseABitOfEverythingServicePostWithEmptyBodyResponse(rsp *http.Response) (*ABitOfEverythingServicePostWithEmptyBodyResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServicePostWithEmptyBodyResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceTimeoutResponse parses an HTTP response from a ABitOfEverythingServiceTimeoutWithResponse call
 func ParseABitOfEverythingServiceTimeoutResponse(rsp *http.Response) (*ABitOfEverythingServiceTimeoutResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceTimeoutResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceGetMessageWithBodyResponse parses an HTTP response from a ABitOfEverythingServiceGetMessageWithBodyWithResponse call
 func ParseABitOfEverythingServiceGetMessageWithBodyResponse(rsp *http.Response) (*ABitOfEverythingServiceGetMessageWithBodyResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceGetMessageWithBodyResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckExternalPathEnumResponse parses an HTTP response from a ABitOfEverythingServiceCheckExternalPathEnumWithResponse call
 func ParseABitOfEverythingServiceCheckExternalPathEnumResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckExternalPathEnumResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckExternalPathEnumResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceUpdateV22Response parses an HTTP response from a ABitOfEverythingServiceUpdateV22WithResponse call
 func ParseABitOfEverythingServiceUpdateV22Response(rsp *http.Response) (*ABitOfEverythingServiceUpdateV22Response, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceUpdateV22Response{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ParseABitOfEverythingServiceCheckExternalNestedPathEnumResponse parses an HTTP response from a ABitOfEverythingServiceCheckExternalNestedPathEnumWithResponse call
 func ParseABitOfEverythingServiceCheckExternalNestedPathEnumResponse(rsp *http.Response) (*ABitOfEverythingServiceCheckExternalNestedPathEnumResponse, error) {
-	bodyBytes, err := io.ReadAll(rsp.Body)
-	defer func() { _ = rsp.Body.Close() }()
-	if err != nil {
-		return nil, err
-	}
-
-	response := &ABitOfEverythingServiceCheckExternalNestedPathEnumResponse{
-		Body:         bodyBytes,
-		HTTPResponse: rsp,
-	}
-
-	switch {
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest map[string]interface{}
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSON200 = &dest
-
-	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && true:
-		var dest GoogleRpcStatus
-		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
-			return nil, err
-		}
-		response.JSONDefault = &dest
-
-	}
-
-	return response, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

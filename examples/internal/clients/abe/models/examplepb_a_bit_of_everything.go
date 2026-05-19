@@ -4,13 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
-	"strconv"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 )
 
 // ExamplepbABitOfEverything A bit of everything
@@ -209,954 +204,264 @@ type ExamplepbABitOfEverything struct {
 
 // Validate validates this examplepb a bit of everything
 func (m *ExamplepbABitOfEverything) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateDoubleValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateEnumValueAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateFloatValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateInt64Value(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateMapValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateMappedNestedValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNested(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNestedAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateNestedPathEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validatePathEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateProductID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRepeatedEnumAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRepeatedEnumValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRepeatedNestedAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRequiredStringField1(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRequiredStringField2(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRequiredStringViaFieldBehaviorAnnotation(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRequiredFieldBehaviorJSONNameCustom(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateRequiredFieldSchemaJSONNameCustom(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateSingleNested(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateTimestampValue(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateUUID(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.validateUuids(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateDoubleValue(formats strfmt.Registry) error {
-
-	if err := validate.Required("doubleValue", "body", m.DoubleValue); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.EnumValue) { // not required
-		return nil
-	}
-
-	if m.EnumValue != nil {
-		if err := m.EnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("enumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("enumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (m *ExamplepbABitOfEverything) validateEnumValueAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(m.EnumValueAnnotation) { // not required
-		return nil
-	}
-
-	if m.EnumValueAnnotation != nil {
-		if err := m.EnumValueAnnotation.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("enumValueAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("enumValueAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbABitOfEverything) validateFloatValue(formats strfmt.Registry) error {
-
-	if err := validate.Required("floatValue", "body", m.FloatValue); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateInt64Value(formats strfmt.Registry) error {
-
-	if err := validate.Required("int64Value", "body", m.Int64Value); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateMapValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.MapValue) { // not required
-		return nil
-	}
-
-	for k := range m.MapValue {
-
-		if swag.IsZero(m.MapValue[k]) { // not required
-			continue
-		}
-		if val, ok := m.MapValue[k]; ok {
-			if err := val.Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("mapValue" + "." + k)
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("mapValue" + "." + k)
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateMappedNestedValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.MappedNestedValue) { // not required
-		return nil
-	}
-
-	for k := range m.MappedNestedValue {
-
-		if err := validate.Required("mappedNestedValue"+"."+k, "body", m.MappedNestedValue[k]); err != nil {
-			return err
-		}
-		if val, ok := m.MappedNestedValue[k]; ok {
-			if err := val.Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("mappedNestedValue" + "." + k)
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("mappedNestedValue" + "." + k)
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateNested(formats strfmt.Registry) error {
-	if swag.IsZero(m.Nested) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.Nested); i++ {
-		if swag.IsZero(m.Nested[i]) { // not required
-			continue
-		}
-
-		if m.Nested[i] != nil {
-			if err := m.Nested[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("nested" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("nested" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateNestedAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(m.NestedAnnotation) { // not required
-		return nil
-	}
-
-	if m.NestedAnnotation != nil {
-		if err := m.NestedAnnotation.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nestedAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nestedAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateNestedPathEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.NestedPathEnumValue) { // not required
-		return nil
-	}
-
-	if m.NestedPathEnumValue != nil {
-		if err := m.NestedPathEnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nestedPathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nestedPathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validatePathEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.PathEnumValue) { // not required
-		return nil
-	}
-
-	if m.PathEnumValue != nil {
-		if err := m.PathEnumValue.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("pathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("pathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbABitOfEverything) validateProductID(formats strfmt.Registry) error {
-	if swag.IsZero(m.ProductID) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.ProductID); i++ {
-
-		if err := validate.MinLength("productId"+"."+strconv.Itoa(i), "body", m.ProductID[i], 1); err != nil {
-			return err
-		}
-
-		if err := validate.MaxLength("productId"+"."+strconv.Itoa(i), "body", m.ProductID[i], 19); err != nil {
-			return err
-		}
-
-		if err := validate.Pattern("productId"+"."+strconv.Itoa(i), "body", m.ProductID[i], `^[0-9]+$`); err != nil {
-			return err
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 func (m *ExamplepbABitOfEverything) validateRepeatedEnumAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(m.RepeatedEnumAnnotation) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.RepeatedEnumAnnotation); i++ {
-		if swag.IsZero(m.RepeatedEnumAnnotation[i]) { // not required
-			continue
-		}
-
-		if m.RepeatedEnumAnnotation[i] != nil {
-			if err := m.RepeatedEnumAnnotation[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateRepeatedEnumValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.RepeatedEnumValue) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.RepeatedEnumValue); i++ {
-		if swag.IsZero(m.RepeatedEnumValue[i]) { // not required
-			continue
-		}
-
-		if m.RepeatedEnumValue[i] != nil {
-			if err := m.RepeatedEnumValue[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateRepeatedNestedAnnotation(formats strfmt.Registry) error {
-	if swag.IsZero(m.RepeatedNestedAnnotation) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.RepeatedNestedAnnotation); i++ {
-		if swag.IsZero(m.RepeatedNestedAnnotation[i]) { // not required
-			continue
-		}
-
-		if m.RepeatedNestedAnnotation[i] != nil {
-			if err := m.RepeatedNestedAnnotation[i].Validate(formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
+// not required
+
 func (m *ExamplepbABitOfEverything) validateRequiredStringField1(formats strfmt.Registry) error {
-
-	if err := validate.Required("requiredStringField1", "body", m.RequiredStringField1); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateRequiredStringField2(formats strfmt.Registry) error {
-
-	if err := validate.Required("requiredStringField2", "body", m.RequiredStringField2); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateRequiredStringViaFieldBehaviorAnnotation(formats strfmt.Registry) error {
-
-	if err := validate.Required("requiredStringViaFieldBehaviorAnnotation", "body", m.RequiredStringViaFieldBehaviorAnnotation); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateRequiredFieldBehaviorJSONNameCustom(formats strfmt.Registry) error {
-
-	if err := validate.Required("required_field_behavior_json_name_custom", "body", m.RequiredFieldBehaviorJSONNameCustom); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateRequiredFieldSchemaJSONNameCustom(formats strfmt.Registry) error {
-
-	if err := validate.Required("required_field_schema_json_name_custom", "body", m.RequiredFieldSchemaJSONNameCustom); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateSingleNested(formats strfmt.Registry) error {
-	if swag.IsZero(m.SingleNested) { // not required
-		return nil
-	}
-
-	if m.SingleNested != nil {
-		if err := m.SingleNested.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("singleNested")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("singleNested")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) validateTimestampValue(formats strfmt.Registry) error {
-	if swag.IsZero(m.TimestampValue) { // not required
-		return nil
-	}
-
-	if err := validate.FormatOf("timestampValue", "body", "date-time", m.TimestampValue.String(), formats); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbABitOfEverything) validateUUID(formats strfmt.Registry) error {
-
-	if err := validate.Required("uuid", "body", m.UUID); err != nil {
-		return err
-	}
-
-	if err := validate.MinLength("uuid", "body", m.UUID.String(), 1); err != nil {
-		return err
-	}
-
-	if err := validate.Pattern("uuid", "body", m.UUID.String(), `[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}`); err != nil {
-		return err
-	}
-
-	if err := validate.FormatOf("uuid", "body", "uuid", m.UUID.String(), formats); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) validateUuids(formats strfmt.Registry) error {
-	if swag.IsZero(m.Uuids) { // not required
-		return nil
-	}
-
-	for i := 0; i < len(m.Uuids); i++ {
-
-		if err := validate.FormatOf("uuids"+"."+strconv.Itoa(i), "body", "uuid", m.Uuids[i].String(), formats); err != nil {
-			return err
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this examplepb a bit of everything based on the context it is used
 func (m *ExamplepbABitOfEverything) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateEnumValueAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateMapValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateMappedNestedValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateNested(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateNestedAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateNestedPathEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateOutputOnlyStringViaFieldBehaviorAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidatePathEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateRepeatedEnumAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateRepeatedEnumValue(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateRepeatedNestedAnnotation(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := m.contextValidateSingleNested(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) contextValidateEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.EnumValue != nil {
-
-		if swag.IsZero(m.EnumValue) { // not required
-			return nil
-		}
-
-		if err := m.EnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("enumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("enumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateEnumValueAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.EnumValueAnnotation != nil {
-
-		if swag.IsZero(m.EnumValueAnnotation) { // not required
-			return nil
-		}
-
-		if err := m.EnumValueAnnotation.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("enumValueAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("enumValueAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbABitOfEverything) contextValidateMapValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for k := range m.MapValue {
-
-		if val, ok := m.MapValue[k]; ok {
-			if err := val.ContextValidate(ctx, formats); err != nil {
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) contextValidateMappedNestedValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for k := range m.MappedNestedValue {
-
-		if val, ok := m.MappedNestedValue[k]; ok {
-			if err := val.ContextValidate(ctx, formats); err != nil {
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) contextValidateNested(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.Nested); i++ {
-
-		if m.Nested[i] != nil {
-
-			if swag.IsZero(m.Nested[i]) { // not required
-				return nil
-			}
-
-			if err := m.Nested[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("nested" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("nested" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateNestedAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.NestedAnnotation != nil {
-
-		if swag.IsZero(m.NestedAnnotation) { // not required
-			return nil
-		}
-
-		if err := m.NestedAnnotation.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nestedAnnotation")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nestedAnnotation")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateNestedPathEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.NestedPathEnumValue != nil {
-
-		if swag.IsZero(m.NestedPathEnumValue) { // not required
-			return nil
-		}
-
-		if err := m.NestedPathEnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("nestedPathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("nestedPathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 func (m *ExamplepbABitOfEverything) contextValidateOutputOnlyStringViaFieldBehaviorAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	if err := validate.ReadOnly(ctx, "outputOnlyStringViaFieldBehaviorAnnotation", "body", m.OutputOnlyStringViaFieldBehaviorAnnotation); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbABitOfEverything) contextValidatePathEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.PathEnumValue != nil {
-
-		if swag.IsZero(m.PathEnumValue) { // not required
-			return nil
-		}
-
-		if err := m.PathEnumValue.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("pathEnumValue")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("pathEnumValue")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateRepeatedEnumAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.RepeatedEnumAnnotation); i++ {
-
-		if m.RepeatedEnumAnnotation[i] != nil {
-
-			if swag.IsZero(m.RepeatedEnumAnnotation[i]) { // not required
-				return nil
-			}
-
-			if err := m.RepeatedEnumAnnotation[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedEnumAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateRepeatedEnumValue(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.RepeatedEnumValue); i++ {
-
-		if m.RepeatedEnumValue[i] != nil {
-
-			if swag.IsZero(m.RepeatedEnumValue[i]) { // not required
-				return nil
-			}
-
-			if err := m.RepeatedEnumValue[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedEnumValue" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateRepeatedNestedAnnotation(ctx context.Context, formats strfmt.Registry) error {
-
-	for i := 0; i < len(m.RepeatedNestedAnnotation); i++ {
-
-		if m.RepeatedNestedAnnotation[i] != nil {
-
-			if swag.IsZero(m.RepeatedNestedAnnotation[i]) { // not required
-				return nil
-			}
-
-			if err := m.RepeatedNestedAnnotation[i].ContextValidate(ctx, formats); err != nil {
-				ve := new(errors.Validation)
-				if stderrors.As(err, &ve) {
-					return ve.ValidateName("repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-				ce := new(errors.CompositeError)
-				if stderrors.As(err, &ce) {
-					return ce.ValidateName("repeatedNestedAnnotation" + "." + strconv.Itoa(i))
-				}
-
-				return err
-			}
-		}
-
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 func (m *ExamplepbABitOfEverything) contextValidateSingleNested(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.SingleNested != nil {
-
-		if swag.IsZero(m.SingleNested) { // not required
-			return nil
-		}
-
-		if err := m.SingleNested.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("singleNested")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("singleNested")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// not required
 
 // MarshalBinary interface implementation
 func (m *ExamplepbABitOfEverything) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbABitOfEverything) UnmarshalBinary(b []byte) error {
-	var res ExamplepbABitOfEverything
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

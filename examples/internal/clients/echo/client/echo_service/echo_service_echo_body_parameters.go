@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/echo/models"
@@ -22,33 +20,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewEchoServiceEchoBodyParams() *EchoServiceEchoBodyParams {
-	return &EchoServiceEchoBodyParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBodyParamsWithTimeout creates a new EchoServiceEchoBodyParams object
 // with the ability to set a timeout on a request.
 func NewEchoServiceEchoBodyParamsWithTimeout(timeout time.Duration) *EchoServiceEchoBodyParams {
-	return &EchoServiceEchoBodyParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBodyParamsWithContext creates a new EchoServiceEchoBodyParams object
 // with the ability to set a context for a request.
 func NewEchoServiceEchoBodyParamsWithContext(ctx context.Context) *EchoServiceEchoBodyParams {
-	return &EchoServiceEchoBodyParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewEchoServiceEchoBodyParamsWithHTTPClient creates a new EchoServiceEchoBodyParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewEchoServiceEchoBodyParamsWithHTTPClient(client *http.Client) *EchoServiceEchoBodyParams {
-	return &EchoServiceEchoBodyParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -75,76 +69,75 @@ type EchoServiceEchoBodyParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *EchoServiceEchoBodyParams) WithDefaults() *EchoServiceEchoBodyParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the echo service echo body params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the echo service echo body params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *EchoServiceEchoBodyParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) WithTimeout(timeout time.Duration) *EchoServiceEchoBodyParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the echo service echo body params
 }
 
-// WithContext adds the context to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) WithContext(ctx context.Context) *EchoServiceEchoBodyParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the echo service echo body params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) WithHTTPClient(client *http.Client) *EchoServiceEchoBodyParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithBody adds the body to the echo service echo body params
 }
 
-// WithBody adds the body to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) WithBody(body *models.ExamplepbSimpleMessage) *EchoServiceEchoBodyParams {
-	o.SetBody(body)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetBody adds the body to the echo service echo body params
 }
 
-// SetBody adds the body to the echo service echo body params
 func (o *EchoServiceEchoBodyParams) SetBody(body *models.ExamplepbSimpleMessage) {
-	o.Body = body
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *EchoServiceEchoBodyParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-	if o.Body != nil {
-		if err := r.SetBodyParam(o.Body); err != nil {
-			return err
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewUnannotatedEchoServiceEcho2Params() *UnannotatedEchoServiceEcho2Params {
-	return &UnannotatedEchoServiceEcho2Params{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEcho2ParamsWithTimeout creates a new UnannotatedEchoServiceEcho2Params object
 // with the ability to set a timeout on a request.
 func NewUnannotatedEchoServiceEcho2ParamsWithTimeout(timeout time.Duration) *UnannotatedEchoServiceEcho2Params {
-	return &UnannotatedEchoServiceEcho2Params{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEcho2ParamsWithContext creates a new UnannotatedEchoServiceEcho2Params object
 // with the ability to set a context for a request.
 func NewUnannotatedEchoServiceEcho2ParamsWithContext(ctx context.Context) *UnannotatedEchoServiceEcho2Params {
-	return &UnannotatedEchoServiceEcho2Params{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewUnannotatedEchoServiceEcho2ParamsWithHTTPClient creates a new UnannotatedEchoServiceEcho2Params object
 // with the ability to set a custom HTTPClient for a request.
 func NewUnannotatedEchoServiceEcho2ParamsWithHTTPClient(client *http.Client) *UnannotatedEchoServiceEcho2Params {
-	return &UnannotatedEchoServiceEcho2Params{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -123,411 +117,252 @@ type UnannotatedEchoServiceEcho2Params struct {
 //
 // All values with no default are reset to their zero value.
 func (o *UnannotatedEchoServiceEcho2Params) WithDefaults() *UnannotatedEchoServiceEcho2Params {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the unannotated echo service echo2 params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the unannotated echo service echo2 params (not the query body).
-//
-// All values with no default are reset to their zero value.
-func (o *UnannotatedEchoServiceEcho2Params) SetDefaults() {
-	var (
-		numDefault = string("42")
-	)
-
-	val := UnannotatedEchoServiceEcho2Params{
-		Num: numDefault,
-	}
-
-	val.timeout = o.timeout
-	val.Context = o.Context
-	val.HTTPClient = o.HTTPClient
-	*o = val
-}
+func (o *UnannotatedEchoServiceEcho2Params) SetDefaults() { _ = "STUB: not implemented"; return }
 
 // WithTimeout adds the timeout to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithTimeout(timeout time.Duration) *UnannotatedEchoServiceEcho2Params {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the unannotated echo service echo2 params
 }
 
-// WithContext adds the context to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithContext(ctx context.Context) *UnannotatedEchoServiceEcho2Params {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the unannotated echo service echo2 params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithHTTPClient(client *http.Client) *UnannotatedEchoServiceEcho2Params {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithDuration adds the duration to the unannotated echo service echo2 params
 }
 
-// WithDuration adds the duration to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithDuration(duration *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetDuration(duration)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetDuration adds the duration to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetDuration(duration *string) {
-	o.Duration = duration
+	_ = "STUB: not implemented"
+	return
+
+	// WithEn adds the en to the unannotated echo service echo2 params
 }
 
-// WithEn adds the en to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithEn(en *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetEn(en)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetEn adds the en to the unannotated echo service echo2 params
 }
 
-// SetEn adds the en to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetEn(en *string) {
-	o.En = en
+	_ = "STUB: not implemented"
+
+	// WithID adds the id to the unannotated echo service echo2 params
+	return
 }
 
-// WithID adds the id to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithID(id string) *UnannotatedEchoServiceEcho2Params {
-	o.SetID(id)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetID adds the id to the unannotated echo service echo2 params
 }
 
-// SetID adds the id to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetID(id string) {
-	o.ID = id
+	_ = "STUB: not implemented"
+
+	// WithLang adds the lang to the unannotated echo service echo2 params
+	return
 }
 
-// WithLang adds the lang to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithLang(lang *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetLang(lang)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetLang adds the lang to the unannotated echo service echo2 params
 }
 
-// SetLang adds the lang to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetLang(lang *string) {
-	o.Lang = lang
+	_ = "STUB: not implemented"
+
+	// WithLineNum adds the lineNum to the unannotated echo service echo2 params
+	return
 }
 
-// WithLineNum adds the lineNum to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithLineNum(lineNum *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetLineNum(lineNum)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetLineNum adds the lineNum to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetLineNum(lineNum *string) {
-	o.LineNum = lineNum
+	_ = "STUB: not implemented"
+	return
+
+	// WithNIDnID adds the nIDnID to the unannotated echo service echo2 params
 }
 
-// WithNIDnID adds the nIDnID to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithNIDnID(nIDnID *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetNIDnID(nIDnID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDnID adds the nIdNId to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetNIDnID(nIDnID *string) {
-	o.NIDnID = nIDnID
+	_ = "STUB: not implemented"
+
+	// WithNIDVal adds the nIDVal to the unannotated echo service echo2 params
+	return
 }
 
-// WithNIDVal adds the nIDVal to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithNIDVal(nIDVal *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetNIDVal(nIDVal)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNIDVal adds the nIdVal to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetNIDVal(nIDVal *string) {
-	o.NIDVal = nIDVal
+	_ = "STUB: not implemented"
+
+	// WithNoNote adds the noNote to the unannotated echo service echo2 params
+	return
 }
 
-// WithNoNote adds the noNote to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithNoNote(noNote *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetNoNote(noNote)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNoNote adds the noNote to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetNoNote(noNote *string) {
-	o.NoNote = noNote
+	_ = "STUB: not implemented"
+
+	// WithNoProgress adds the noProgress to the unannotated echo service echo2 params
+	return
 }
 
-// WithNoProgress adds the noProgress to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithNoProgress(noProgress *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetNoProgress(noProgress)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetNoProgress adds the noProgress to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetNoProgress(noProgress *string) {
-	o.NoProgress = noProgress
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithNum adds the num to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithNum(num string) *UnannotatedEchoServiceEcho2Params {
-	o.SetNum(num)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetNum adds the num to the unannotated echo service echo2 params
 }
 
-// SetNum adds the num to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetNum(num string) {
-	o.Num = num
+	_ = "STUB: not implemented"
+
+	// WithResourceID adds the resourceID to the unannotated echo service echo2 params
+	return
 }
 
-// WithResourceID adds the resourceID to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithResourceID(resourceID *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetResourceID(resourceID)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetResourceID adds the resourceId to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetResourceID(resourceID *string) {
-	o.ResourceID = resourceID
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusNote adds the statusNote to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithStatusNote(statusNote *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetStatusNote(statusNote)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusNote adds the statusNote to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetStatusNote(statusNote *string) {
-	o.StatusNote = statusNote
+	_ = "STUB: not implemented"
+	return
 }
 
 // WithStatusProgress adds the statusProgress to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) WithStatusProgress(statusProgress *string) *UnannotatedEchoServiceEcho2Params {
-	o.SetStatusProgress(statusProgress)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetStatusProgress adds the statusProgress to the unannotated echo service echo2 params
 func (o *UnannotatedEchoServiceEcho2Params) SetStatusProgress(statusProgress *string) {
-	o.StatusProgress = statusProgress
+	_ = "STUB: not implemented"
+	return
 }
 
 // WriteToRequest writes these params to a swagger request
 func (o *UnannotatedEchoServiceEcho2Params) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if o.Duration != nil {
-
-		// query param duration
-		var qrDuration string
-
-		if o.Duration != nil {
-			qrDuration = *o.Duration
-		}
-		qDuration := qrDuration
-		if qDuration != "" {
-
-			if err := r.SetQueryParam("duration", qDuration); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.En != nil {
-
-		// query param en
-		var qrEn string
-
-		if o.En != nil {
-			qrEn = *o.En
-		}
-		qEn := qrEn
-		if qEn != "" {
-
-			if err := r.SetQueryParam("en", qEn); err != nil {
-				return err
-			}
-		}
-	}
-
-	// path param id
-	if err := r.SetPathParam("id", o.ID); err != nil {
-		return err
-	}
-
-	if o.Lang != nil {
-
-		// query param lang
-		var qrLang string
-
-		if o.Lang != nil {
-			qrLang = *o.Lang
-		}
-		qLang := qrLang
-		if qLang != "" {
-
-			if err := r.SetQueryParam("lang", qLang); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.LineNum != nil {
-
-		// query param lineNum
-		var qrLineNum string
-
-		if o.LineNum != nil {
-			qrLineNum = *o.LineNum
-		}
-		qLineNum := qrLineNum
-		if qLineNum != "" {
-
-			if err := r.SetQueryParam("lineNum", qLineNum); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NIDnID != nil {
-
-		// query param nId.nId
-		var qrNIDnID string
-
-		if o.NIDnID != nil {
-			qrNIDnID = *o.NIDnID
-		}
-		qNIDnID := qrNIDnID
-		if qNIDnID != "" {
-
-			if err := r.SetQueryParam("nId.nId", qNIDnID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NIDVal != nil {
-
-		// query param nId.val
-		var qrNIDVal string
-
-		if o.NIDVal != nil {
-			qrNIDVal = *o.NIDVal
-		}
-		qNIDVal := qrNIDVal
-		if qNIDVal != "" {
-
-			if err := r.SetQueryParam("nId.val", qNIDVal); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NoNote != nil {
-
-		// query param no.note
-		var qrNoNote string
-
-		if o.NoNote != nil {
-			qrNoNote = *o.NoNote
-		}
-		qNoNote := qrNoNote
-		if qNoNote != "" {
-
-			if err := r.SetQueryParam("no.note", qNoNote); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.NoProgress != nil {
-
-		// query param no.progress
-		var qrNoProgress string
-
-		if o.NoProgress != nil {
-			qrNoProgress = *o.NoProgress
-		}
-		qNoProgress := qrNoProgress
-		if qNoProgress != "" {
-
-			if err := r.SetQueryParam("no.progress", qNoProgress); err != nil {
-				return err
-			}
-		}
-	}
-
-	// path param num
-	if err := r.SetPathParam("num", o.Num); err != nil {
-		return err
-	}
-
-	if o.ResourceID != nil {
-
-		// query param resourceId
-		var qrResourceID string
-
-		if o.ResourceID != nil {
-			qrResourceID = *o.ResourceID
-		}
-		qResourceID := qrResourceID
-		if qResourceID != "" {
-
-			if err := r.SetQueryParam("resourceId", qResourceID); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusNote != nil {
-
-		// query param status.note
-		var qrStatusNote string
-
-		if o.StatusNote != nil {
-			qrStatusNote = *o.StatusNote
-		}
-		qStatusNote := qrStatusNote
-		if qStatusNote != "" {
-
-			if err := r.SetQueryParam("status.note", qStatusNote); err != nil {
-				return err
-			}
-		}
-	}
-
-	if o.StatusProgress != nil {
-
-		// query param status.progress
-		var qrStatusProgress string
-
-		if o.StatusProgress != nil {
-			qrStatusProgress = *o.StatusProgress
-		}
-		qStatusProgress := qrStatusProgress
-		if qStatusProgress != "" {
-
-			if err := r.SetQueryParam("status.progress", qStatusProgress); err != nil {
-				return err
-			}
-		}
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// query param duration
+
+// query param en
+
+// path param id
+
+// query param lang
+
+// query param lineNum
+
+// query param nId.nId
+
+// query param nId.val
+
+// query param no.note
+
+// query param no.progress
+
+// path param num
+
+// query param resourceId
+
+// query param status.note
+
+// query param status.progress

@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceCheckStatusParams() *ABitOfEverythingServiceCheckStatusParams {
-	return &ABitOfEverythingServiceCheckStatusParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckStatusParamsWithTimeout creates a new ABitOfEverythingServiceCheckStatusParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceCheckStatusParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckStatusParams {
-	return &ABitOfEverythingServiceCheckStatusParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckStatusParamsWithContext creates a new ABitOfEverythingServiceCheckStatusParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceCheckStatusParamsWithContext(ctx context.Context) *ABitOfEverythingServiceCheckStatusParams {
-	return &ABitOfEverythingServiceCheckStatusParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceCheckStatusParamsWithHTTPClient creates a new ABitOfEverythingServiceCheckStatusParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceCheckStatusParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckStatusParams {
-	return &ABitOfEverythingServiceCheckStatusParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -66,60 +60,61 @@ type ABitOfEverythingServiceCheckStatusParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckStatusParams) WithDefaults() *ABitOfEverythingServiceCheckStatusParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service check status params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service check status params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceCheckStatusParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceCheckStatusParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service check status params
 }
 
-// WithContext adds the context to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) WithContext(ctx context.Context) *ABitOfEverythingServiceCheckStatusParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service check status params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceCheckStatusParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service check status params
 func (o *ABitOfEverythingServiceCheckStatusParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WriteToRequest writes these params to a swagger request
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceCheckStatusParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }

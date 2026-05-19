@@ -7,10 +7,10 @@
 package sub
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,32 +39,27 @@ var (
 	}
 )
 
-func (x StatusEnum) Enum() *StatusEnum {
-	p := new(StatusEnum)
-	*p = x
-	return p
-}
+func (x StatusEnum) Enum() *StatusEnum { _ = "STUB: not implemented"; return nil }
 
-func (x StatusEnum) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x StatusEnum) String() string { _ = "STUB: not implemented"; return "" }
 
 func (StatusEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_sub_camel_case_message_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (StatusEnum) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_sub_camel_case_message_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x StatusEnum) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Use StatusEnum.Descriptor instead.
-func (StatusEnum) EnumDescriptor() ([]byte, []int) {
-	return file_examples_internal_proto_sub_camel_case_message_proto_rawDescGZIP(), []int{0}
-}
+func (StatusEnum) EnumDescriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
 // Create_book and Status_enum demonstrate snake_case identifiers that need to
 // be resolved to Go camel case when referenced by other packages.
@@ -77,49 +72,23 @@ type CreateBook struct {
 	Author string `protobuf:"bytes,2,opt,name=author,proto3" json:"author,omitempty"`
 }
 
-func (x *CreateBook) Reset() {
-	*x = CreateBook{}
-	mi := &file_examples_internal_proto_sub_camel_case_message_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *CreateBook) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *CreateBook) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *CreateBook) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*CreateBook) ProtoMessage() {}
+func (*CreateBook) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *CreateBook) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_sub_camel_case_message_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use CreateBook.ProtoReflect.Descriptor instead.
-func (*CreateBook) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_sub_camel_case_message_proto_rawDescGZIP(), []int{0}
-}
+func (*CreateBook) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *CreateBook) GetTitle() string {
-	if x != nil {
-		return x.Title
-	}
-	return ""
-}
+func (x *CreateBook) GetTitle() string { _ = "STUB: not implemented"; return "" }
 
-func (x *CreateBook) GetAuthor() string {
-	if x != nil {
-		return x.Author
-	}
-	return ""
-}
+func (x *CreateBook) GetAuthor() string { _ = "STUB: not implemented"; return "" }
 
 var File_examples_internal_proto_sub_camel_case_message_proto protoreflect.FileDescriptor
 
@@ -152,10 +121,8 @@ var (
 )
 
 func file_examples_internal_proto_sub_camel_case_message_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_sub_camel_case_message_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_sub_camel_case_message_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_sub_camel_case_message_proto_rawDescData)
-	})
-	return file_examples_internal_proto_sub_camel_case_message_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_sub_camel_case_message_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
@@ -174,26 +141,6 @@ var file_examples_internal_proto_sub_camel_case_message_proto_depIdxs = []int32{
 
 func init() { file_examples_internal_proto_sub_camel_case_message_proto_init() }
 func file_examples_internal_proto_sub_camel_case_message_proto_init() {
-	if File_examples_internal_proto_sub_camel_case_message_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_sub_camel_case_message_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_examples_internal_proto_sub_camel_case_message_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_sub_camel_case_message_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_sub_camel_case_message_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_sub_camel_case_message_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_sub_camel_case_message_proto = out.File
-	file_examples_internal_proto_sub_camel_case_message_proto_rawDesc = nil
-	file_examples_internal_proto_sub_camel_case_message_proto_goTypes = nil
-	file_examples_internal_proto_sub_camel_case_message_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

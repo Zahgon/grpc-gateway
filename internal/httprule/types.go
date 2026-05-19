@@ -2,7 +2,6 @@ package httprule
 
 import (
 	"fmt"
-	"strings"
 )
 
 type template struct {
@@ -27,34 +26,12 @@ type variable struct {
 	segments []segment
 }
 
-func (wildcard) String() string {
-	return "*"
-}
+func (wildcard) String() string { _ = "STUB: not implemented"; return "" }
 
-func (deepWildcard) String() string {
-	return "**"
-}
+func (deepWildcard) String() string { _ = "STUB: not implemented"; return "" }
 
-func (l literal) String() string {
-	return string(l)
-}
+func (l literal) String() string { _ = "STUB: not implemented"; return "" }
 
-func (v variable) String() string {
-	var segs []string
-	for _, s := range v.segments {
-		segs = append(segs, s.String())
-	}
-	return fmt.Sprintf("{%s=%s}", v.path, strings.Join(segs, "/"))
-}
+func (v variable) String() string { _ = "STUB: not implemented"; return "" }
 
-func (t template) String() string {
-	var segs []string
-	for _, s := range t.segments {
-		segs = append(segs, s.String())
-	}
-	str := strings.Join(segs, "/")
-	if t.verb != "" {
-		str = fmt.Sprintf("%s:%s", str, t.verb)
-	}
-	return "/" + str
-}
+func (t template) String() string { _ = "STUB: not implemented"; return "" }

@@ -7,11 +7,11 @@
 package examplepb
 
 import (
+	sync "sync"
+
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -32,49 +32,23 @@ type LoginRequest struct {
 	Password string `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
 }
 
-func (x *LoginRequest) Reset() {
-	*x = LoginRequest{}
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *LoginRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *LoginRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *LoginRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*LoginRequest) ProtoMessage() {}
+func (*LoginRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *LoginRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use LoginRequest.ProtoReflect.Descriptor instead.
-func (*LoginRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_use_go_template_proto_rawDescGZIP(), []int{0}
-}
+func (*LoginRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *LoginRequest) GetUsername() string {
-	if x != nil {
-		return x.Username
-	}
-	return ""
-}
+func (x *LoginRequest) GetUsername() string { _ = "STUB: not implemented"; return "" }
 
-func (x *LoginRequest) GetPassword() string {
-	if x != nil {
-		return x.Password
-	}
-	return ""
-}
+func (x *LoginRequest) GetPassword() string { _ = "STUB: not implemented"; return "" }
 
 type LoginReply struct {
 	state         protoimpl.MessageState
@@ -86,49 +60,23 @@ type LoginReply struct {
 	Access bool `protobuf:"varint,2,opt,name=access,proto3" json:"access,omitempty"`
 }
 
-func (x *LoginReply) Reset() {
-	*x = LoginReply{}
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *LoginReply) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *LoginReply) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *LoginReply) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*LoginReply) ProtoMessage() {}
+func (*LoginReply) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *LoginReply) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use LoginReply.ProtoReflect.Descriptor instead.
-func (*LoginReply) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_use_go_template_proto_rawDescGZIP(), []int{1}
-}
+func (*LoginReply) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *LoginReply) GetMessage() string {
-	if x != nil {
-		return x.Message
-	}
-	return ""
-}
+func (x *LoginReply) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
-func (x *LoginReply) GetAccess() bool {
-	if x != nil {
-		return x.Access
-	}
-	return false
-}
+func (x *LoginReply) GetAccess() bool { _ = "STUB: not implemented"; return false }
 
 type LogoutRequest struct {
 	state         protoimpl.MessageState
@@ -150,56 +98,25 @@ type LogoutRequest struct {
 	Stringarray []string `protobuf:"bytes,3,rep,name=stringarray,proto3" json:"stringarray,omitempty"`
 }
 
-func (x *LogoutRequest) Reset() {
-	*x = LogoutRequest{}
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *LogoutRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *LogoutRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *LogoutRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*LogoutRequest) ProtoMessage() {}
+func (*LogoutRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *LogoutRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use LogoutRequest.ProtoReflect.Descriptor instead.
-func (*LogoutRequest) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_use_go_template_proto_rawDescGZIP(), []int{2}
-}
+func (*LogoutRequest) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *LogoutRequest) GetTimeoflogout() string {
-	if x != nil {
-		return x.Timeoflogout
-	}
-	return ""
-}
+func (x *LogoutRequest) GetTimeoflogout() string { _ = "STUB: not implemented"; return "" }
 
-func (x *LogoutRequest) GetTest() int32 {
-	if x != nil {
-		return x.Test
-	}
-	return 0
-}
+func (x *LogoutRequest) GetTest() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *LogoutRequest) GetStringarray() []string {
-	if x != nil {
-		return x.Stringarray
-	}
-	return nil
-}
+func (x *LogoutRequest) GetStringarray() []string { _ = "STUB: not implemented"; return nil }
 
 type LogoutReply struct {
 	state         protoimpl.MessageState
@@ -211,42 +128,21 @@ type LogoutReply struct {
 	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
 }
 
-func (x *LogoutReply) Reset() {
-	*x = LogoutReply{}
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *LogoutReply) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *LogoutReply) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *LogoutReply) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*LogoutReply) ProtoMessage() {}
+func (*LogoutReply) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *LogoutReply) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use LogoutReply.ProtoReflect.Descriptor instead.
-func (*LogoutReply) Descriptor() ([]byte, []int) {
-	return file_examples_internal_proto_examplepb_use_go_template_proto_rawDescGZIP(), []int{3}
-}
+func (*LogoutReply) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *LogoutReply) GetMessage() string {
-	if x != nil {
-		return x.Message
-	}
-	return ""
-}
+func (x *LogoutReply) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
 var File_examples_internal_proto_examplepb_use_go_template_proto protoreflect.FileDescriptor
 
@@ -313,10 +209,8 @@ var (
 )
 
 func file_examples_internal_proto_examplepb_use_go_template_proto_rawDescGZIP() []byte {
-	file_examples_internal_proto_examplepb_use_go_template_proto_rawDescOnce.Do(func() {
-		file_examples_internal_proto_examplepb_use_go_template_proto_rawDescData = protoimpl.X.CompressGZIP(file_examples_internal_proto_examplepb_use_go_template_proto_rawDescData)
-	})
-	return file_examples_internal_proto_examplepb_use_go_template_proto_rawDescData
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
@@ -340,25 +234,6 @@ var file_examples_internal_proto_examplepb_use_go_template_proto_depIdxs = []int
 
 func init() { file_examples_internal_proto_examplepb_use_go_template_proto_init() }
 func file_examples_internal_proto_examplepb_use_go_template_proto_init() {
-	if File_examples_internal_proto_examplepb_use_go_template_proto != nil {
-		return
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_examples_internal_proto_examplepb_use_go_template_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   4,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_use_go_template_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_use_go_template_proto_depIdxs,
-		MessageInfos:      file_examples_internal_proto_examplepb_use_go_template_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_use_go_template_proto = out.File
-	file_examples_internal_proto_examplepb_use_go_template_proto_rawDesc = nil
-	file_examples_internal_proto_examplepb_use_go_template_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_use_go_template_proto_depIdxs = nil
+	_ = "STUB: not implemented"
+	return
 }

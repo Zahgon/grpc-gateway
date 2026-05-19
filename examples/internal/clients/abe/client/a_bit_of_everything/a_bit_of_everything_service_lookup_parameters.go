@@ -7,9 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
-	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 )
 
@@ -20,33 +18,29 @@ import (
 //
 // To enforce default values in parameter, use SetDefaults or WithDefaults.
 func NewABitOfEverythingServiceLookupParams() *ABitOfEverythingServiceLookupParams {
-	return &ABitOfEverythingServiceLookupParams{
-		timeout: cr.DefaultTimeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceLookupParamsWithTimeout creates a new ABitOfEverythingServiceLookupParams object
 // with the ability to set a timeout on a request.
 func NewABitOfEverythingServiceLookupParamsWithTimeout(timeout time.Duration) *ABitOfEverythingServiceLookupParams {
-	return &ABitOfEverythingServiceLookupParams{
-		timeout: timeout,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceLookupParamsWithContext creates a new ABitOfEverythingServiceLookupParams object
 // with the ability to set a context for a request.
 func NewABitOfEverythingServiceLookupParamsWithContext(ctx context.Context) *ABitOfEverythingServiceLookupParams {
-	return &ABitOfEverythingServiceLookupParams{
-		Context: ctx,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // NewABitOfEverythingServiceLookupParamsWithHTTPClient creates a new ABitOfEverythingServiceLookupParams object
 // with the ability to set a custom HTTPClient for a request.
 func NewABitOfEverythingServiceLookupParamsWithHTTPClient(client *http.Client) *ABitOfEverythingServiceLookupParams {
-	return &ABitOfEverythingServiceLookupParams{
-		HTTPClient: client,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -70,76 +64,77 @@ type ABitOfEverythingServiceLookupParams struct {
 //
 // All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceLookupParams) WithDefaults() *ABitOfEverythingServiceLookupParams {
-	o.SetDefaults()
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetDefaults hydrates default values in the a bit of everything service lookup params (not the query body).
+	//
+	// All values with no default are reset to their zero value.
 }
 
-// SetDefaults hydrates default values in the a bit of everything service lookup params (not the query body).
-//
-// All values with no default are reset to their zero value.
 func (o *ABitOfEverythingServiceLookupParams) SetDefaults() {
+	_ = "STUB: not implemented"
 	// no default values defined for this parameter
+	return
 }
 
 // WithTimeout adds the timeout to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) WithTimeout(timeout time.Duration) *ABitOfEverythingServiceLookupParams {
-	o.SetTimeout(timeout)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetTimeout adds the timeout to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) SetTimeout(timeout time.Duration) {
-	o.timeout = timeout
+	_ = "STUB: not implemented"
+	return
+
+	// WithContext adds the context to the a bit of everything service lookup params
 }
 
-// WithContext adds the context to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) WithContext(ctx context.Context) *ABitOfEverythingServiceLookupParams {
-	o.SetContext(ctx)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetContext adds the context to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) SetContext(ctx context.Context) {
-	o.Context = ctx
+	_ = "STUB: not implemented"
+
+	// WithHTTPClient adds the HTTPClient to the a bit of everything service lookup params
+	return
 }
 
-// WithHTTPClient adds the HTTPClient to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) WithHTTPClient(client *http.Client) *ABitOfEverythingServiceLookupParams {
-	o.SetHTTPClient(client)
-	return o
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // SetHTTPClient adds the HTTPClient to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) SetHTTPClient(client *http.Client) {
-	o.HTTPClient = client
+	_ = "STUB: not implemented"
+	return
+
+	// WithUUID adds the uuid to the a bit of everything service lookup params
 }
 
-// WithUUID adds the uuid to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) WithUUID(uuid string) *ABitOfEverythingServiceLookupParams {
-	o.SetUUID(uuid)
-	return o
+	_ = "STUB: not implemented"
+	return nil
+
+	// SetUUID adds the uuid to the a bit of everything service lookup params
 }
 
-// SetUUID adds the uuid to the a bit of everything service lookup params
 func (o *ABitOfEverythingServiceLookupParams) SetUUID(uuid string) {
-	o.UUID = uuid
+	_ = "STUB: not implemented"
+
+	// WriteToRequest writes these params to a swagger request
+	return
 }
 
-// WriteToRequest writes these params to a swagger request
 func (o *ABitOfEverythingServiceLookupParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
-
-	if err := r.SetTimeout(o.timeout); err != nil {
-		return err
-	}
-	var res []error
-
-	// path param uuid
-	if err := r.SetPathParam("uuid", o.UUID); err != nil {
-		return err
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// path param uuid

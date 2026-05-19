@@ -15,8 +15,6 @@ import (
 	fieldmaskpb "google.golang.org/protobuf/types/known/fieldmaskpb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
-	reflect "reflect"
-	unsafe "unsafe"
 )
 
 const (
@@ -61,25 +59,28 @@ var (
 )
 
 func (x OpaqueSearchProductsRequest_OpaqueSortOrder) Enum() *OpaqueSearchProductsRequest_OpaqueSortOrder {
-	p := new(OpaqueSearchProductsRequest_OpaqueSortOrder)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x OpaqueSearchProductsRequest_OpaqueSortOrder) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (OpaqueSearchProductsRequest_OpaqueSortOrder) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueSearchProductsRequest_OpaqueSortOrder) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueSearchProductsRequest_OpaqueSortOrder) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueAddress_OpaqueAddressType int32
@@ -111,25 +112,25 @@ var (
 )
 
 func (x OpaqueAddress_OpaqueAddressType) Enum() *OpaqueAddress_OpaqueAddressType {
-	p := new(OpaqueAddress_OpaqueAddressType)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x OpaqueAddress_OpaqueAddressType) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x OpaqueAddress_OpaqueAddressType) String() string { _ = "STUB: not implemented"; return "" }
 
 func (OpaqueAddress_OpaqueAddressType) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[1].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueAddress_OpaqueAddressType) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[1]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueAddress_OpaqueAddressType) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueProduct_OpaqueProductStatus int32
@@ -161,25 +162,25 @@ var (
 )
 
 func (x OpaqueProduct_OpaqueProductStatus) Enum() *OpaqueProduct_OpaqueProductStatus {
-	p := new(OpaqueProduct_OpaqueProductStatus)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x OpaqueProduct_OpaqueProductStatus) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x OpaqueProduct_OpaqueProductStatus) String() string { _ = "STUB: not implemented"; return "" }
 
 func (OpaqueProduct_OpaqueProductStatus) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[2].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueProduct_OpaqueProductStatus) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[2]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueProduct_OpaqueProductStatus) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueProduct_OpaqueProductDimensions_OpaqueUnit int32
@@ -205,25 +206,28 @@ var (
 )
 
 func (x OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) Enum() *OpaqueProduct_OpaqueProductDimensions_OpaqueUnit {
-	p := new(OpaqueProduct_OpaqueProductDimensions_OpaqueUnit)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[3].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[3]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueCustomer_OpaqueCustomerStatus int32
@@ -255,25 +259,25 @@ var (
 )
 
 func (x OpaqueCustomer_OpaqueCustomerStatus) Enum() *OpaqueCustomer_OpaqueCustomerStatus {
-	p := new(OpaqueCustomer_OpaqueCustomerStatus)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x OpaqueCustomer_OpaqueCustomerStatus) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x OpaqueCustomer_OpaqueCustomerStatus) String() string { _ = "STUB: not implemented"; return "" }
 
 func (OpaqueCustomer_OpaqueCustomerStatus) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[4].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueCustomer_OpaqueCustomerStatus) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[4]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueCustomer_OpaqueCustomerStatus) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueOrder_OpaqueOrderStatus int32
@@ -311,25 +315,25 @@ var (
 )
 
 func (x OpaqueOrder_OpaqueOrderStatus) Enum() *OpaqueOrder_OpaqueOrderStatus {
-	p := new(OpaqueOrder_OpaqueOrderStatus)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x OpaqueOrder_OpaqueOrderStatus) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x OpaqueOrder_OpaqueOrderStatus) String() string { _ = "STUB: not implemented"; return "" }
 
 func (OpaqueOrder_OpaqueOrderStatus) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[5].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueOrder_OpaqueOrderStatus) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[5]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueOrder_OpaqueOrderStatus) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueCustomerEvent_OpaqueEventType int32
@@ -373,25 +377,25 @@ var (
 )
 
 func (x OpaqueCustomerEvent_OpaqueEventType) Enum() *OpaqueCustomerEvent_OpaqueEventType {
-	p := new(OpaqueCustomerEvent_OpaqueEventType)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x OpaqueCustomerEvent_OpaqueEventType) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x OpaqueCustomerEvent_OpaqueEventType) String() string { _ = "STUB: not implemented"; return "" }
 
 func (OpaqueCustomerEvent_OpaqueEventType) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[6].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueCustomerEvent_OpaqueEventType) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[6]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueCustomerEvent_OpaqueEventType) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 type OpaqueActivityUpdate_OpaqueUpdateType int32
@@ -429,25 +433,28 @@ var (
 )
 
 func (x OpaqueActivityUpdate_OpaqueUpdateType) Enum() *OpaqueActivityUpdate_OpaqueUpdateType {
-	p := new(OpaqueActivityUpdate_OpaqueUpdateType)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (x OpaqueActivityUpdate_OpaqueUpdateType) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (OpaqueActivityUpdate_OpaqueUpdateType) Descriptor() protoreflect.EnumDescriptor {
-	return file_examples_internal_proto_examplepb_opaque_proto_enumTypes[7].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (OpaqueActivityUpdate_OpaqueUpdateType) Type() protoreflect.EnumType {
-	return &file_examples_internal_proto_examplepb_opaque_proto_enumTypes[7]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x OpaqueActivityUpdate_OpaqueUpdateType) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // OpaqueUpdateProductRequest represents a request to update a product
@@ -459,74 +466,44 @@ type OpaqueUpdateProductRequest struct {
 	sizeCache             protoimpl.SizeCache
 }
 
-func (x *OpaqueUpdateProductRequest) Reset() {
-	*x = OpaqueUpdateProductRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueUpdateProductRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueUpdateProductRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueUpdateProductRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueUpdateProductRequest) ProtoMessage() {}
+func (*OpaqueUpdateProductRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueUpdateProductRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueUpdateProductRequest) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueUpdateProductRequest) GetUpdateMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.xxx_hidden_UpdateMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueUpdateProductRequest) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueUpdateProductRequest) SetUpdateMask(v *fieldmaskpb.FieldMask) {
-	x.xxx_hidden_UpdateMask = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueUpdateProductRequest) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueUpdateProductRequest) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueUpdateProductRequest) HasUpdateMask() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_UpdateMask != nil
-}
+func (x *OpaqueUpdateProductRequest) HasUpdateMask() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueUpdateProductRequest) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueUpdateProductRequest) ClearProduct() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueUpdateProductRequest) ClearUpdateMask() {
-	x.xxx_hidden_UpdateMask = nil
-}
+func (x *OpaqueUpdateProductRequest) ClearUpdateMask() { _ = "STUB: not implemented"; return }
 
 type OpaqueUpdateProductRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -536,12 +513,8 @@ type OpaqueUpdateProductRequest_builder struct {
 }
 
 func (b0 OpaqueUpdateProductRequest_builder) Build() *OpaqueUpdateProductRequest {
-	m0 := &OpaqueUpdateProductRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	x.xxx_hidden_UpdateMask = b.UpdateMask
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueUpdateProductResponse represents the response for OpaqueUpdateProduct
@@ -552,52 +525,30 @@ type OpaqueUpdateProductResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueUpdateProductResponse) Reset() {
-	*x = OpaqueUpdateProductResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueUpdateProductResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueUpdateProductResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueUpdateProductResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueUpdateProductResponse) ProtoMessage() {}
+func (*OpaqueUpdateProductResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueUpdateProductResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueUpdateProductResponse) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueUpdateProductResponse) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueUpdateProductResponse) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueUpdateProductResponse) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueUpdateProductResponse) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueUpdateProductResponse) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueUpdateProductResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -606,11 +557,8 @@ type OpaqueUpdateProductResponse_builder struct {
 }
 
 func (b0 OpaqueUpdateProductResponse_builder) Build() *OpaqueUpdateProductResponse {
-	m0 := &OpaqueUpdateProductResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueGetProductRequest represents a request for product information
@@ -627,159 +575,71 @@ type OpaqueGetProductRequest struct {
 	sizeCache                         protoimpl.SizeCache
 }
 
-func (x *OpaqueGetProductRequest) Reset() {
-	*x = OpaqueGetProductRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueGetProductRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueGetProductRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueGetProductRequest) ProtoMessage() {}
+func (*OpaqueGetProductRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueGetProductRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueGetProductRequest) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueGetProductRequest) GetProductId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueGetProductRequest) GetIncludeVariants() bool {
-	if x != nil {
-		return x.xxx_hidden_IncludeVariants
-	}
+	_ = "STUB: not implemented"
 	return false
 }
 
 func (x *OpaqueGetProductRequest) GetIncludeRelatedProducts() bool {
-	if x != nil {
-		return x.xxx_hidden_IncludeRelatedProducts
-	}
+	_ = "STUB: not implemented"
 	return false
 }
 
-func (x *OpaqueGetProductRequest) GetLanguageCode() string {
-	if x != nil {
-		if x.xxx_hidden_LanguageCode != nil {
-			return *x.xxx_hidden_LanguageCode
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueGetProductRequest) GetLanguageCode() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueGetProductRequest) GetCurrencyCode() string {
-	if x != nil {
-		if x.xxx_hidden_CurrencyCode != nil {
-			return *x.xxx_hidden_CurrencyCode
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueGetProductRequest) GetCurrencyCode() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueGetProductRequest) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 5)
-}
+func (x *OpaqueGetProductRequest) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) SetIncludeVariants(v bool) {
-	x.xxx_hidden_IncludeVariants = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 5)
-}
+func (x *OpaqueGetProductRequest) SetIncludeVariants(v bool) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueGetProductRequest) SetIncludeRelatedProducts(v bool) {
-	x.xxx_hidden_IncludeRelatedProducts = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueGetProductRequest) SetLanguageCode(v string) {
-	x.xxx_hidden_LanguageCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 5)
-}
+func (x *OpaqueGetProductRequest) SetLanguageCode(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) SetCurrencyCode(v string) {
-	x.xxx_hidden_CurrencyCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 5)
-}
+func (x *OpaqueGetProductRequest) SetCurrencyCode(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueGetProductRequest) HasProductId() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaqueGetProductRequest) HasIncludeVariants() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueGetProductRequest) HasIncludeRelatedProducts() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueGetProductRequest) HasLanguageCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
-}
+func (x *OpaqueGetProductRequest) HasLanguageCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueGetProductRequest) HasCurrencyCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueGetProductRequest) HasCurrencyCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueGetProductRequest) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueGetProductRequest) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) ClearIncludeVariants() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_IncludeVariants = false
-}
+func (x *OpaqueGetProductRequest) ClearIncludeVariants() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) ClearIncludeRelatedProducts() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_IncludeRelatedProducts = false
-}
+func (x *OpaqueGetProductRequest) ClearIncludeRelatedProducts() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) ClearLanguageCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_LanguageCode = nil
-}
+func (x *OpaqueGetProductRequest) ClearLanguageCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductRequest) ClearCurrencyCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_CurrencyCode = nil
-}
+func (x *OpaqueGetProductRequest) ClearCurrencyCode() { _ = "STUB: not implemented"; return }
 
 type OpaqueGetProductRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -792,30 +652,8 @@ type OpaqueGetProductRequest_builder struct {
 }
 
 func (b0 OpaqueGetProductRequest_builder) Build() *OpaqueGetProductRequest {
-	m0 := &OpaqueGetProductRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 5)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	if b.IncludeVariants != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 5)
-		x.xxx_hidden_IncludeVariants = *b.IncludeVariants
-	}
-	if b.IncludeRelatedProducts != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 5)
-		x.xxx_hidden_IncludeRelatedProducts = *b.IncludeRelatedProducts
-	}
-	if b.LanguageCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 5)
-		x.xxx_hidden_LanguageCode = b.LanguageCode
-	}
-	if b.CurrencyCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 5)
-		x.xxx_hidden_CurrencyCode = b.CurrencyCode
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueGetProductResponse represents a response with product information
@@ -826,52 +664,27 @@ type OpaqueGetProductResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueGetProductResponse) Reset() {
-	*x = OpaqueGetProductResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueGetProductResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueGetProductResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueGetProductResponse) ProtoMessage() {}
+func (*OpaqueGetProductResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueGetProductResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[3]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueGetProductResponse) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueGetProductResponse) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
-}
+func (x *OpaqueGetProductResponse) SetProduct(v *OpaqueProduct) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueGetProductResponse) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueGetProductResponse) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueGetProductResponse) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueGetProductResponse) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueGetProductResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -880,11 +693,8 @@ type OpaqueGetProductResponse_builder struct {
 }
 
 func (b0 OpaqueGetProductResponse_builder) Build() *OpaqueGetProductResponse {
-	m0 := &OpaqueGetProductResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueSearchProductsRequest represents a product search request
@@ -909,295 +719,149 @@ type OpaqueSearchProductsRequest struct {
 	sizeCache               protoimpl.SizeCache
 }
 
-func (x *OpaqueSearchProductsRequest) Reset() {
-	*x = OpaqueSearchProductsRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueSearchProductsRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueSearchProductsRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueSearchProductsRequest) ProtoMessage() {}
+func (*OpaqueSearchProductsRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchProductsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[4]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueSearchProductsRequest) GetQuery() string {
-	if x != nil {
-		if x.xxx_hidden_Query != nil {
-			return *x.xxx_hidden_Query
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueSearchProductsRequest) GetQuery() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueSearchProductsRequest) GetCategoryIds() []string {
-	if x != nil {
-		return x.xxx_hidden_CategoryIds
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueSearchProductsRequest) GetBrands() []string {
-	if x != nil {
-		return x.xxx_hidden_Brands
-	}
-	return nil
-}
+func (x *OpaqueSearchProductsRequest) GetBrands() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueSearchProductsRequest) GetMinPrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_MinPrice
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueSearchProductsRequest) GetMaxPrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_MaxPrice
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueSearchProductsRequest) GetTags() []string {
-	if x != nil {
-		return x.xxx_hidden_Tags
-	}
-	return nil
-}
+func (x *OpaqueSearchProductsRequest) GetTags() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueSearchProductsRequest) GetSortBy() OpaqueSearchProductsRequest_OpaqueSortOrder {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 6) {
-			return x.xxx_hidden_SortBy
-		}
-	}
-	return OpaqueSearchProductsRequest_OPAQUE_SORT_ORDER_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueSearchProductsRequest_OpaqueSortOrder)
 }
 
-func (x *OpaqueSearchProductsRequest) GetPage() int32 {
-	if x != nil {
-		return x.xxx_hidden_Page
-	}
-	return 0
-}
+func (x *OpaqueSearchProductsRequest) GetPage() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueSearchProductsRequest) GetPageSize() int32 {
-	if x != nil {
-		return x.xxx_hidden_PageSize
-	}
-	return 0
-}
+func (x *OpaqueSearchProductsRequest) GetPageSize() int32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueSearchProductsRequest) GetLanguageCode() string {
-	if x != nil {
-		if x.xxx_hidden_LanguageCode != nil {
-			return *x.xxx_hidden_LanguageCode
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueSearchProductsRequest) GetCurrencyCode() string {
-	if x != nil {
-		if x.xxx_hidden_CurrencyCode != nil {
-			return *x.xxx_hidden_CurrencyCode
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueSearchProductsRequest) GetFieldMask() *fieldmaskpb.FieldMask {
-	if x != nil {
-		return x.xxx_hidden_FieldMask
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueSearchProductsRequest) GetFilters() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Filters
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueSearchProductsRequest) SetQuery(v string) {
-	x.xxx_hidden_Query = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 13)
-}
+func (x *OpaqueSearchProductsRequest) SetQuery(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) SetCategoryIds(v []string) {
-	x.xxx_hidden_CategoryIds = v
-}
+func (x *OpaqueSearchProductsRequest) SetCategoryIds(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) SetBrands(v []string) {
-	x.xxx_hidden_Brands = v
-}
+func (x *OpaqueSearchProductsRequest) SetBrands(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchProductsRequest) SetMinPrice(v *OpaquePrice) {
-	x.xxx_hidden_MinPrice = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueSearchProductsRequest) SetMaxPrice(v *OpaquePrice) {
-	x.xxx_hidden_MaxPrice = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueSearchProductsRequest) SetTags(v []string) {
-	x.xxx_hidden_Tags = v
-}
+func (x *OpaqueSearchProductsRequest) SetTags(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchProductsRequest) SetSortBy(v OpaqueSearchProductsRequest_OpaqueSortOrder) {
-	x.xxx_hidden_SortBy = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 6, 13)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueSearchProductsRequest) SetPage(v int32) {
-	x.xxx_hidden_Page = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 7, 13)
-}
+func (x *OpaqueSearchProductsRequest) SetPage(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) SetPageSize(v int32) {
-	x.xxx_hidden_PageSize = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 13)
-}
+func (x *OpaqueSearchProductsRequest) SetPageSize(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) SetLanguageCode(v string) {
-	x.xxx_hidden_LanguageCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 9, 13)
-}
+func (x *OpaqueSearchProductsRequest) SetLanguageCode(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) SetCurrencyCode(v string) {
-	x.xxx_hidden_CurrencyCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 10, 13)
-}
+func (x *OpaqueSearchProductsRequest) SetCurrencyCode(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchProductsRequest) SetFieldMask(v *fieldmaskpb.FieldMask) {
-	x.xxx_hidden_FieldMask = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueSearchProductsRequest) SetFilters(v map[string]string) {
-	x.xxx_hidden_Filters = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueSearchProductsRequest) HasQuery() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueSearchProductsRequest) HasQuery() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) HasMinPrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_MinPrice != nil
-}
+func (x *OpaqueSearchProductsRequest) HasMinPrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) HasMaxPrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_MaxPrice != nil
-}
+func (x *OpaqueSearchProductsRequest) HasMaxPrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) HasSortBy() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 6)
-}
+func (x *OpaqueSearchProductsRequest) HasSortBy() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) HasPage() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 7)
-}
+func (x *OpaqueSearchProductsRequest) HasPage() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) HasPageSize() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueSearchProductsRequest) HasPageSize() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaqueSearchProductsRequest) HasLanguageCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 9)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueSearchProductsRequest) HasCurrencyCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 10)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueSearchProductsRequest) HasFieldMask() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_FieldMask != nil
-}
+func (x *OpaqueSearchProductsRequest) HasFieldMask() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsRequest) ClearQuery() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_Query = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearQuery() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearMinPrice() {
-	x.xxx_hidden_MinPrice = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearMinPrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearMaxPrice() {
-	x.xxx_hidden_MaxPrice = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearMaxPrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearSortBy() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 6)
-	x.xxx_hidden_SortBy = OpaqueSearchProductsRequest_OPAQUE_SORT_ORDER_UNSPECIFIED
-}
+func (x *OpaqueSearchProductsRequest) ClearSortBy() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearPage() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 7)
-	x.xxx_hidden_Page = 0
-}
+func (x *OpaqueSearchProductsRequest) ClearPage() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearPageSize() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_PageSize = 0
-}
+func (x *OpaqueSearchProductsRequest) ClearPageSize() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearLanguageCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 9)
-	x.xxx_hidden_LanguageCode = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearLanguageCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearCurrencyCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 10)
-	x.xxx_hidden_CurrencyCode = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearCurrencyCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsRequest) ClearFieldMask() {
-	x.xxx_hidden_FieldMask = nil
-}
+func (x *OpaqueSearchProductsRequest) ClearFieldMask() { _ = "STUB: not implemented"; return }
 
 type OpaqueSearchProductsRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1218,41 +882,8 @@ type OpaqueSearchProductsRequest_builder struct {
 }
 
 func (b0 OpaqueSearchProductsRequest_builder) Build() *OpaqueSearchProductsRequest {
-	m0 := &OpaqueSearchProductsRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.Query != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 13)
-		x.xxx_hidden_Query = b.Query
-	}
-	x.xxx_hidden_CategoryIds = b.CategoryIds
-	x.xxx_hidden_Brands = b.Brands
-	x.xxx_hidden_MinPrice = b.MinPrice
-	x.xxx_hidden_MaxPrice = b.MaxPrice
-	x.xxx_hidden_Tags = b.Tags
-	if b.SortBy != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 6, 13)
-		x.xxx_hidden_SortBy = *b.SortBy
-	}
-	if b.Page != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 7, 13)
-		x.xxx_hidden_Page = *b.Page
-	}
-	if b.PageSize != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 13)
-		x.xxx_hidden_PageSize = *b.PageSize
-	}
-	if b.LanguageCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 9, 13)
-		x.xxx_hidden_LanguageCode = b.LanguageCode
-	}
-	if b.CurrencyCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 10, 13)
-		x.xxx_hidden_CurrencyCode = b.CurrencyCode
-	}
-	x.xxx_hidden_FieldMask = b.FieldMask
-	x.xxx_hidden_Filters = b.Filters
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueSearchProductsResponse represents a single product in search results
@@ -1263,52 +894,30 @@ type OpaqueSearchProductsResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueSearchProductsResponse) Reset() {
-	*x = OpaqueSearchProductsResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueSearchProductsResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchProductsResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueSearchProductsResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueSearchProductsResponse) ProtoMessage() {}
+func (*OpaqueSearchProductsResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchProductsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[5]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueSearchProductsResponse) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueSearchProductsResponse) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueSearchProductsResponse) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueSearchProductsResponse) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchProductsResponse) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueSearchProductsResponse) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueSearchProductsResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1317,11 +926,8 @@ type OpaqueSearchProductsResponse_builder struct {
 }
 
 func (b0 OpaqueSearchProductsResponse_builder) Build() *OpaqueSearchProductsResponse {
-	m0 := &OpaqueSearchProductsResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueCreateProductRequest represents a request to create a product
@@ -1335,79 +941,38 @@ type OpaqueCreateProductRequest struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueCreateProductRequest) Reset() {
-	*x = OpaqueCreateProductRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCreateProductRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCreateProductRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCreateProductRequest) ProtoMessage() {}
+func (*OpaqueCreateProductRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueCreateProductRequest) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCreateProductRequest) GetProductId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueCreateProductRequest) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCreateProductRequest) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 2)
-}
+func (x *OpaqueCreateProductRequest) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductRequest) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCreateProductRequest) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueCreateProductRequest) HasProductId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCreateProductRequest) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueCreateProductRequest) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCreateProductRequest) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueCreateProductRequest) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductRequest) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueCreateProductRequest) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueCreateProductRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1417,15 +982,8 @@ type OpaqueCreateProductRequest_builder struct {
 }
 
 func (b0 OpaqueCreateProductRequest_builder) Build() *OpaqueCreateProductRequest {
-	m0 := &OpaqueCreateProductRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 2)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueCreateProductResponse represents the created product
@@ -1436,52 +994,30 @@ type OpaqueCreateProductResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueCreateProductResponse) Reset() {
-	*x = OpaqueCreateProductResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCreateProductResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCreateProductResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCreateProductResponse) ProtoMessage() {}
+func (*OpaqueCreateProductResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueCreateProductResponse) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCreateProductResponse) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCreateProductResponse) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
-}
+func (x *OpaqueCreateProductResponse) HasProduct() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCreateProductResponse) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueCreateProductResponse) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueCreateProductResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1490,11 +1026,8 @@ type OpaqueCreateProductResponse_builder struct {
 }
 
 func (b0 OpaqueCreateProductResponse_builder) Build() *OpaqueCreateProductResponse {
-	m0 := &OpaqueCreateProductResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueCreateProductFieldRequest represents a request to create a product
@@ -1508,79 +1041,47 @@ type OpaqueCreateProductFieldRequest struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueCreateProductFieldRequest) Reset() {
-	*x = OpaqueCreateProductFieldRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[8]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCreateProductFieldRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductFieldRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCreateProductFieldRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCreateProductFieldRequest) ProtoMessage() {}
+func (*OpaqueCreateProductFieldRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductFieldRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[8]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueCreateProductFieldRequest) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueCreateProductFieldRequest) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCreateProductFieldRequest) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 2)
-}
+func (x *OpaqueCreateProductFieldRequest) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductFieldRequest) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCreateProductFieldRequest) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCreateProductFieldRequest) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueCreateProductFieldRequest) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueCreateProductFieldRequest) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductFieldRequest) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueCreateProductFieldRequest) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueCreateProductFieldRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1590,15 +1091,8 @@ type OpaqueCreateProductFieldRequest_builder struct {
 }
 
 func (b0 OpaqueCreateProductFieldRequest_builder) Build() *OpaqueCreateProductFieldRequest {
-	m0 := &OpaqueCreateProductFieldRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 2)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueCreateProductFieldResponse represents the created product
@@ -1609,52 +1103,33 @@ type OpaqueCreateProductFieldResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueCreateProductFieldResponse) Reset() {
-	*x = OpaqueCreateProductFieldResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[9]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCreateProductFieldResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCreateProductFieldResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCreateProductFieldResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCreateProductFieldResponse) ProtoMessage() {}
+func (*OpaqueCreateProductFieldResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCreateProductFieldResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[9]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueCreateProductFieldResponse) GetProduct() *OpaqueProduct {
-	if x != nil {
-		return x.xxx_hidden_Product
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCreateProductFieldResponse) SetProduct(v *OpaqueProduct) {
-	x.xxx_hidden_Product = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCreateProductFieldResponse) HasProduct() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Product != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueCreateProductFieldResponse) ClearProduct() {
-	x.xxx_hidden_Product = nil
-}
+func (x *OpaqueCreateProductFieldResponse) ClearProduct() { _ = "STUB: not implemented"; return }
 
 type OpaqueCreateProductFieldResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1663,11 +1138,8 @@ type OpaqueCreateProductFieldResponse_builder struct {
 }
 
 func (b0 OpaqueCreateProductFieldResponse_builder) Build() *OpaqueCreateProductFieldResponse {
-	m0 := &OpaqueCreateProductFieldResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Product = b.Product
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueProcessOrdersRequest represents a request to process order
@@ -1678,52 +1150,24 @@ type OpaqueProcessOrdersRequest struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *OpaqueProcessOrdersRequest) Reset() {
-	*x = OpaqueProcessOrdersRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[10]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProcessOrdersRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProcessOrdersRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueProcessOrdersRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueProcessOrdersRequest) ProtoMessage() {}
+func (*OpaqueProcessOrdersRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProcessOrdersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[10]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueProcessOrdersRequest) GetOrder() *OpaqueOrder {
-	if x != nil {
-		return x.xxx_hidden_Order
-	}
-	return nil
-}
+func (x *OpaqueProcessOrdersRequest) GetOrder() *OpaqueOrder { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueProcessOrdersRequest) SetOrder(v *OpaqueOrder) {
-	x.xxx_hidden_Order = v
-}
+func (x *OpaqueProcessOrdersRequest) SetOrder(v *OpaqueOrder) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProcessOrdersRequest) HasOrder() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Order != nil
-}
+func (x *OpaqueProcessOrdersRequest) HasOrder() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProcessOrdersRequest) ClearOrder() {
-	x.xxx_hidden_Order = nil
-}
+func (x *OpaqueProcessOrdersRequest) ClearOrder() { _ = "STUB: not implemented"; return }
 
 type OpaqueProcessOrdersRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1732,11 +1176,8 @@ type OpaqueProcessOrdersRequest_builder struct {
 }
 
 func (b0 OpaqueProcessOrdersRequest_builder) Build() *OpaqueProcessOrdersRequest {
-	m0 := &OpaqueProcessOrdersRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Order = b.Order
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueProcessOrdersResponse represents orders processing result
@@ -1747,52 +1188,30 @@ type OpaqueProcessOrdersResponse struct {
 	sizeCache          protoimpl.SizeCache
 }
 
-func (x *OpaqueProcessOrdersResponse) Reset() {
-	*x = OpaqueProcessOrdersResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[11]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProcessOrdersResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProcessOrdersResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueProcessOrdersResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueProcessOrdersResponse) ProtoMessage() {}
+func (*OpaqueProcessOrdersResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProcessOrdersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[11]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueProcessOrdersResponse) GetSummary() *OpaqueOrderSummary {
-	if x != nil {
-		return x.xxx_hidden_Summary
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProcessOrdersResponse) SetSummary(v *OpaqueOrderSummary) {
-	x.xxx_hidden_Summary = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProcessOrdersResponse) HasSummary() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Summary != nil
-}
+func (x *OpaqueProcessOrdersResponse) HasSummary() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProcessOrdersResponse) ClearSummary() {
-	x.xxx_hidden_Summary = nil
-}
+func (x *OpaqueProcessOrdersResponse) ClearSummary() { _ = "STUB: not implemented"; return }
 
 type OpaqueProcessOrdersResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1801,11 +1220,8 @@ type OpaqueProcessOrdersResponse_builder struct {
 }
 
 func (b0 OpaqueProcessOrdersResponse_builder) Build() *OpaqueProcessOrdersResponse {
-	m0 := &OpaqueProcessOrdersResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Summary = b.Summary
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueStreamCustomerActivityRequest represents a report of user activity
@@ -1816,52 +1232,33 @@ type OpaqueStreamCustomerActivityRequest struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *OpaqueStreamCustomerActivityRequest) Reset() {
-	*x = OpaqueStreamCustomerActivityRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[12]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueStreamCustomerActivityRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueStreamCustomerActivityRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueStreamCustomerActivityRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueStreamCustomerActivityRequest) ProtoMessage() {}
+func (*OpaqueStreamCustomerActivityRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueStreamCustomerActivityRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[12]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueStreamCustomerActivityRequest) GetEvent() *OpaqueCustomerEvent {
-	if x != nil {
-		return x.xxx_hidden_Event
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueStreamCustomerActivityRequest) SetEvent(v *OpaqueCustomerEvent) {
-	x.xxx_hidden_Event = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueStreamCustomerActivityRequest) HasEvent() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Event != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueStreamCustomerActivityRequest) ClearEvent() {
-	x.xxx_hidden_Event = nil
-}
+func (x *OpaqueStreamCustomerActivityRequest) ClearEvent() { _ = "STUB: not implemented"; return }
 
 type OpaqueStreamCustomerActivityRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1870,11 +1267,8 @@ type OpaqueStreamCustomerActivityRequest_builder struct {
 }
 
 func (b0 OpaqueStreamCustomerActivityRequest_builder) Build() *OpaqueStreamCustomerActivityRequest {
-	m0 := &OpaqueStreamCustomerActivityRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Event = b.Event
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueStreamCustomerActivityRequest represents a report of server activity
@@ -1885,52 +1279,36 @@ type OpaqueStreamCustomerActivityResponse struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *OpaqueStreamCustomerActivityResponse) Reset() {
-	*x = OpaqueStreamCustomerActivityResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[13]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueStreamCustomerActivityResponse) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueStreamCustomerActivityResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*OpaqueStreamCustomerActivityResponse) ProtoMessage() {}
+func (*OpaqueStreamCustomerActivityResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueStreamCustomerActivityResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[13]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueStreamCustomerActivityResponse) GetEvent() *OpaqueActivityUpdate {
-	if x != nil {
-		return x.xxx_hidden_Event
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueStreamCustomerActivityResponse) SetEvent(v *OpaqueActivityUpdate) {
-	x.xxx_hidden_Event = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueStreamCustomerActivityResponse) HasEvent() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Event != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueStreamCustomerActivityResponse) ClearEvent() {
-	x.xxx_hidden_Event = nil
-}
+func (x *OpaqueStreamCustomerActivityResponse) ClearEvent() { _ = "STUB: not implemented"; return }
 
 type OpaqueStreamCustomerActivityResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -1939,11 +1317,8 @@ type OpaqueStreamCustomerActivityResponse_builder struct {
 }
 
 func (b0 OpaqueStreamCustomerActivityResponse_builder) Build() *OpaqueStreamCustomerActivityResponse {
-	m0 := &OpaqueStreamCustomerActivityResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Event = b.Event
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueSearchOrdersRequest represents queryable information to find orders
@@ -1954,52 +1329,24 @@ type OpaqueSearchOrdersRequest struct {
 	sizeCache        protoimpl.SizeCache
 }
 
-func (x *OpaqueSearchOrdersRequest) Reset() {
-	*x = OpaqueSearchOrdersRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[14]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueSearchOrdersRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchOrdersRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueSearchOrdersRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueSearchOrdersRequest) ProtoMessage() {}
+func (*OpaqueSearchOrdersRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchOrdersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[14]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueSearchOrdersRequest) GetOrder() *OpaqueOrder {
-	if x != nil {
-		return x.xxx_hidden_Order
-	}
-	return nil
-}
+func (x *OpaqueSearchOrdersRequest) GetOrder() *OpaqueOrder { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueSearchOrdersRequest) SetOrder(v *OpaqueOrder) {
-	x.xxx_hidden_Order = v
-}
+func (x *OpaqueSearchOrdersRequest) SetOrder(v *OpaqueOrder) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchOrdersRequest) HasOrder() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Order != nil
-}
+func (x *OpaqueSearchOrdersRequest) HasOrder() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueSearchOrdersRequest) ClearOrder() {
-	x.xxx_hidden_Order = nil
-}
+func (x *OpaqueSearchOrdersRequest) ClearOrder() { _ = "STUB: not implemented"; return }
 
 type OpaqueSearchOrdersRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2008,11 +1355,8 @@ type OpaqueSearchOrdersRequest_builder struct {
 }
 
 func (b0 OpaqueSearchOrdersRequest_builder) Build() *OpaqueSearchOrdersRequest {
-	m0 := &OpaqueSearchOrdersRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Order = b.Order
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueSearchOrdersResponse represents a list of orders found
@@ -2023,43 +1367,23 @@ type OpaqueSearchOrdersResponse struct {
 	sizeCache         protoimpl.SizeCache
 }
 
-func (x *OpaqueSearchOrdersResponse) Reset() {
-	*x = OpaqueSearchOrdersResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[15]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueSearchOrdersResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueSearchOrdersResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueSearchOrdersResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueSearchOrdersResponse) ProtoMessage() {}
+func (*OpaqueSearchOrdersResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueSearchOrdersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[15]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueSearchOrdersResponse) GetOrders() []*OpaqueOrder {
-	if x != nil {
-		if x.xxx_hidden_Orders != nil {
-			return *x.xxx_hidden_Orders
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueSearchOrdersResponse) SetOrders(v []*OpaqueOrder) {
-	x.xxx_hidden_Orders = &v
-}
+func (x *OpaqueSearchOrdersResponse) SetOrders(v []*OpaqueOrder) { _ = "STUB: not implemented"; return }
 
 type OpaqueSearchOrdersResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2068,11 +1392,8 @@ type OpaqueSearchOrdersResponse_builder struct {
 }
 
 func (b0 OpaqueSearchOrdersResponse_builder) Build() *OpaqueSearchOrdersResponse {
-	m0 := &OpaqueSearchOrdersResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Orders = &b.Orders
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueEchoNoteRequest demonstrates an opaque body that maps to a foreign message.
@@ -2083,52 +1404,24 @@ type OpaqueEchoNoteRequest struct {
 	sizeCache       protoimpl.SizeCache
 }
 
-func (x *OpaqueEchoNoteRequest) Reset() {
-	*x = OpaqueEchoNoteRequest{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[16]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueEchoNoteRequest) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueEchoNoteRequest) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueEchoNoteRequest) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueEchoNoteRequest) ProtoMessage() {}
+func (*OpaqueEchoNoteRequest) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueEchoNoteRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[16]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueEchoNoteRequest) GetNote() *sub.StringMessage {
-	if x != nil {
-		return x.xxx_hidden_Note
-	}
-	return nil
-}
+func (x *OpaqueEchoNoteRequest) GetNote() *sub.StringMessage { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueEchoNoteRequest) SetNote(v *sub.StringMessage) {
-	x.xxx_hidden_Note = v
-}
+func (x *OpaqueEchoNoteRequest) SetNote(v *sub.StringMessage) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueEchoNoteRequest) HasNote() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Note != nil
-}
+func (x *OpaqueEchoNoteRequest) HasNote() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueEchoNoteRequest) ClearNote() {
-	x.xxx_hidden_Note = nil
-}
+func (x *OpaqueEchoNoteRequest) ClearNote() { _ = "STUB: not implemented"; return }
 
 type OpaqueEchoNoteRequest_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2137,11 +1430,8 @@ type OpaqueEchoNoteRequest_builder struct {
 }
 
 func (b0 OpaqueEchoNoteRequest_builder) Build() *OpaqueEchoNoteRequest {
-	m0 := &OpaqueEchoNoteRequest{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Note = b.Note
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueEchoNoteResponse mirrors the request payload for simplicity.
@@ -2152,52 +1442,27 @@ type OpaqueEchoNoteResponse struct {
 	sizeCache       protoimpl.SizeCache
 }
 
-func (x *OpaqueEchoNoteResponse) Reset() {
-	*x = OpaqueEchoNoteResponse{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[17]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueEchoNoteResponse) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueEchoNoteResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueEchoNoteResponse) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueEchoNoteResponse) ProtoMessage() {}
+func (*OpaqueEchoNoteResponse) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueEchoNoteResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[17]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueEchoNoteResponse) GetNote() *sub.StringMessage {
-	if x != nil {
-		return x.xxx_hidden_Note
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueEchoNoteResponse) SetNote(v *sub.StringMessage) {
-	x.xxx_hidden_Note = v
-}
+func (x *OpaqueEchoNoteResponse) SetNote(v *sub.StringMessage) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueEchoNoteResponse) HasNote() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Note != nil
-}
+func (x *OpaqueEchoNoteResponse) HasNote() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueEchoNoteResponse) ClearNote() {
-	x.xxx_hidden_Note = nil
-}
+func (x *OpaqueEchoNoteResponse) ClearNote() { _ = "STUB: not implemented"; return }
 
 type OpaqueEchoNoteResponse_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2206,11 +1471,8 @@ type OpaqueEchoNoteResponse_builder struct {
 }
 
 func (b0 OpaqueEchoNoteResponse_builder) Build() *OpaqueEchoNoteResponse {
-	m0 := &OpaqueEchoNoteResponse{}
-	b, x := &b0, m0
-	_, _ = b, x
-	x.xxx_hidden_Note = b.Note
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueAddress represents a physical address
@@ -2231,251 +1493,90 @@ type OpaqueAddress struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueAddress) Reset() {
-	*x = OpaqueAddress{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[18]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueAddress) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueAddress) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueAddress) ProtoMessage() {}
+func (*OpaqueAddress) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueAddress) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[18]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueAddress) GetStreetLine1() string {
-	if x != nil {
-		if x.xxx_hidden_StreetLine1 != nil {
-			return *x.xxx_hidden_StreetLine1
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetStreetLine1() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueAddress) GetStreetLine2() string {
-	if x != nil {
-		if x.xxx_hidden_StreetLine2 != nil {
-			return *x.xxx_hidden_StreetLine2
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetStreetLine2() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueAddress) GetCity() string {
-	if x != nil {
-		if x.xxx_hidden_City != nil {
-			return *x.xxx_hidden_City
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetCity() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueAddress) GetState() string {
-	if x != nil {
-		if x.xxx_hidden_State != nil {
-			return *x.xxx_hidden_State
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetState() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueAddress) GetCountry() string {
-	if x != nil {
-		if x.xxx_hidden_Country != nil {
-			return *x.xxx_hidden_Country
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetCountry() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueAddress) GetPostalCode() string {
-	if x != nil {
-		if x.xxx_hidden_PostalCode != nil {
-			return *x.xxx_hidden_PostalCode
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueAddress) GetPostalCode() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueAddress) GetAddressType() OpaqueAddress_OpaqueAddressType {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 6) {
-			return x.xxx_hidden_AddressType
-		}
-	}
-	return OpaqueAddress_OPAQUE_ADDRESS_TYPE_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueAddress_OpaqueAddressType)
 }
 
-func (x *OpaqueAddress) GetIsDefault() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.xxx_hidden_IsDefault
-	}
-	return nil
-}
+func (x *OpaqueAddress) GetIsDefault() *wrapperspb.BoolValue { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueAddress) GetMetadata() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Metadata
-	}
-	return nil
-}
+func (x *OpaqueAddress) GetMetadata() map[string]string { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueAddress) SetStreetLine1(v string) {
-	x.xxx_hidden_StreetLine1 = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 9)
-}
+func (x *OpaqueAddress) SetStreetLine1(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetStreetLine2(v string) {
-	x.xxx_hidden_StreetLine2 = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 9)
-}
+func (x *OpaqueAddress) SetStreetLine2(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetCity(v string) {
-	x.xxx_hidden_City = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 9)
-}
+func (x *OpaqueAddress) SetCity(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetState(v string) {
-	x.xxx_hidden_State = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 9)
-}
+func (x *OpaqueAddress) SetState(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetCountry(v string) {
-	x.xxx_hidden_Country = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 9)
-}
+func (x *OpaqueAddress) SetCountry(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetPostalCode(v string) {
-	x.xxx_hidden_PostalCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 5, 9)
-}
+func (x *OpaqueAddress) SetPostalCode(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueAddress) SetAddressType(v OpaqueAddress_OpaqueAddressType) {
-	x.xxx_hidden_AddressType = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 6, 9)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueAddress) SetIsDefault(v *wrapperspb.BoolValue) {
-	x.xxx_hidden_IsDefault = v
-}
+func (x *OpaqueAddress) SetIsDefault(v *wrapperspb.BoolValue) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) SetMetadata(v map[string]string) {
-	x.xxx_hidden_Metadata = v
-}
+func (x *OpaqueAddress) SetMetadata(v map[string]string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) HasStreetLine1() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueAddress) HasStreetLine1() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasStreetLine2() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueAddress) HasStreetLine2() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasCity() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueAddress) HasCity() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasState() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
-}
+func (x *OpaqueAddress) HasState() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasCountry() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueAddress) HasCountry() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasPostalCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 5)
-}
+func (x *OpaqueAddress) HasPostalCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasAddressType() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 6)
-}
+func (x *OpaqueAddress) HasAddressType() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) HasIsDefault() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_IsDefault != nil
-}
+func (x *OpaqueAddress) HasIsDefault() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueAddress) ClearStreetLine1() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_StreetLine1 = nil
-}
+func (x *OpaqueAddress) ClearStreetLine1() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearStreetLine2() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_StreetLine2 = nil
-}
+func (x *OpaqueAddress) ClearStreetLine2() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearCity() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_City = nil
-}
+func (x *OpaqueAddress) ClearCity() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearState() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_State = nil
-}
+func (x *OpaqueAddress) ClearState() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearCountry() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_Country = nil
-}
+func (x *OpaqueAddress) ClearCountry() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearPostalCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 5)
-	x.xxx_hidden_PostalCode = nil
-}
+func (x *OpaqueAddress) ClearPostalCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearAddressType() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 6)
-	x.xxx_hidden_AddressType = OpaqueAddress_OPAQUE_ADDRESS_TYPE_UNSPECIFIED
-}
+func (x *OpaqueAddress) ClearAddressType() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueAddress) ClearIsDefault() {
-	x.xxx_hidden_IsDefault = nil
-}
+func (x *OpaqueAddress) ClearIsDefault() { _ = "STUB: not implemented"; return }
 
 type OpaqueAddress_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2491,42 +1592,7 @@ type OpaqueAddress_builder struct {
 	Metadata    map[string]string
 }
 
-func (b0 OpaqueAddress_builder) Build() *OpaqueAddress {
-	m0 := &OpaqueAddress{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.StreetLine1 != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 9)
-		x.xxx_hidden_StreetLine1 = b.StreetLine1
-	}
-	if b.StreetLine2 != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 9)
-		x.xxx_hidden_StreetLine2 = b.StreetLine2
-	}
-	if b.City != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 9)
-		x.xxx_hidden_City = b.City
-	}
-	if b.State != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 9)
-		x.xxx_hidden_State = b.State
-	}
-	if b.Country != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 9)
-		x.xxx_hidden_Country = b.Country
-	}
-	if b.PostalCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 5, 9)
-		x.xxx_hidden_PostalCode = b.PostalCode
-	}
-	if b.AddressType != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 6, 9)
-		x.xxx_hidden_AddressType = *b.AddressType
-	}
-	x.xxx_hidden_IsDefault = b.IsDefault
-	x.xxx_hidden_Metadata = b.Metadata
-	return m0
-}
+func (b0 OpaqueAddress_builder) Build() *OpaqueAddress { _ = "STUB: not implemented"; return nil }
 
 // OpaquePrice represents a monetary value with currency
 type OpaquePrice struct {
@@ -2542,149 +1608,68 @@ type OpaquePrice struct {
 	sizeCache                  protoimpl.SizeCache
 }
 
-func (x *OpaquePrice) Reset() {
-	*x = OpaquePrice{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[19]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaquePrice) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaquePrice) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaquePrice) ProtoMessage() {}
+func (*OpaquePrice) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaquePrice) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[19]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaquePrice) GetAmount() float64 {
-	if x != nil {
-		return x.xxx_hidden_Amount
-	}
-	return 0
-}
+func (x *OpaquePrice) GetAmount() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaquePrice) GetCurrencyCode() string {
-	if x != nil {
-		if x.xxx_hidden_CurrencyCode != nil {
-			return *x.xxx_hidden_CurrencyCode
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaquePrice) GetCurrencyCode() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaquePrice) GetIsDiscounted() bool {
-	if x != nil {
-		return x.xxx_hidden_IsDiscounted
-	}
-	return false
-}
+func (x *OpaquePrice) GetIsDiscounted() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaquePrice) GetOriginalAmount() *wrapperspb.DoubleValue {
-	if x != nil {
-		return x.xxx_hidden_OriginalAmount
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaquePrice) GetPriceValidUntil() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_PriceValidUntil
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaquePrice) SetAmount(v float64) {
-	x.xxx_hidden_Amount = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 5)
-}
+func (x *OpaquePrice) SetAmount(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) SetCurrencyCode(v string) {
-	x.xxx_hidden_CurrencyCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 5)
-}
+func (x *OpaquePrice) SetCurrencyCode(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) SetIsDiscounted(v bool) {
-	x.xxx_hidden_IsDiscounted = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 5)
-}
+func (x *OpaquePrice) SetIsDiscounted(v bool) { _ = "STUB: not implemented"; return }
 
 func (x *OpaquePrice) SetOriginalAmount(v *wrapperspb.DoubleValue) {
-	x.xxx_hidden_OriginalAmount = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaquePrice) SetPriceValidUntil(v *timestamppb.Timestamp) {
-	x.xxx_hidden_PriceValidUntil = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaquePrice) HasAmount() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaquePrice) HasAmount() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaquePrice) HasCurrencyCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaquePrice) HasCurrencyCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaquePrice) HasIsDiscounted() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaquePrice) HasIsDiscounted() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaquePrice) HasOriginalAmount() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_OriginalAmount != nil
-}
+func (x *OpaquePrice) HasOriginalAmount() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaquePrice) HasPriceValidUntil() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_PriceValidUntil != nil
-}
+func (x *OpaquePrice) HasPriceValidUntil() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaquePrice) ClearAmount() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_Amount = 0
-}
+func (x *OpaquePrice) ClearAmount() { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) ClearCurrencyCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_CurrencyCode = nil
-}
+func (x *OpaquePrice) ClearCurrencyCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) ClearIsDiscounted() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_IsDiscounted = false
-}
+func (x *OpaquePrice) ClearIsDiscounted() { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) ClearOriginalAmount() {
-	x.xxx_hidden_OriginalAmount = nil
-}
+func (x *OpaquePrice) ClearOriginalAmount() { _ = "STUB: not implemented"; return }
 
-func (x *OpaquePrice) ClearPriceValidUntil() {
-	x.xxx_hidden_PriceValidUntil = nil
-}
+func (x *OpaquePrice) ClearPriceValidUntil() { _ = "STUB: not implemented"; return }
 
 type OpaquePrice_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2696,26 +1681,7 @@ type OpaquePrice_builder struct {
 	PriceValidUntil *timestamppb.Timestamp
 }
 
-func (b0 OpaquePrice_builder) Build() *OpaquePrice {
-	m0 := &OpaquePrice{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.Amount != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 5)
-		x.xxx_hidden_Amount = *b.Amount
-	}
-	if b.CurrencyCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 5)
-		x.xxx_hidden_CurrencyCode = b.CurrencyCode
-	}
-	if b.IsDiscounted != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 5)
-		x.xxx_hidden_IsDiscounted = *b.IsDiscounted
-	}
-	x.xxx_hidden_OriginalAmount = b.OriginalAmount
-	x.xxx_hidden_PriceValidUntil = b.PriceValidUntil
-	return m0
-}
+func (b0 OpaquePrice_builder) Build() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
 // OpaqueProductCategory represents a product category
 type OpaqueProductCategory struct {
@@ -2733,188 +1699,86 @@ type OpaqueProductCategory struct {
 	sizeCache                 protoimpl.SizeCache
 }
 
-func (x *OpaqueProductCategory) Reset() {
-	*x = OpaqueProductCategory{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[20]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProductCategory) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueProductCategory) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueProductCategory) ProtoMessage() {}
+func (*OpaqueProductCategory) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductCategory) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[20]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueProductCategory) GetCategoryId() string {
-	if x != nil {
-		if x.xxx_hidden_CategoryId != nil {
-			return *x.xxx_hidden_CategoryId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductCategory) GetCategoryId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProductCategory) GetName() string {
-	if x != nil {
-		if x.xxx_hidden_Name != nil {
-			return *x.xxx_hidden_Name
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductCategory) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProductCategory) GetDescription() string {
-	if x != nil {
-		if x.xxx_hidden_Description != nil {
-			return *x.xxx_hidden_Description
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductCategory) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueProductCategory) GetParentCategory() *OpaqueProductCategory {
-	if x != nil {
-		return x.xxx_hidden_ParentCategory
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProductCategory) GetTags() []string {
-	if x != nil {
-		return x.xxx_hidden_Tags
-	}
-	return nil
-}
+func (x *OpaqueProductCategory) GetTags() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueProductCategory) GetCreatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_CreatedAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProductCategory) GetUpdatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_UpdatedAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProductCategory) SetCategoryId(v string) {
-	x.xxx_hidden_CategoryId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 7)
-}
+func (x *OpaqueProductCategory) SetCategoryId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) SetName(v string) {
-	x.xxx_hidden_Name = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 7)
-}
+func (x *OpaqueProductCategory) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) SetDescription(v string) {
-	x.xxx_hidden_Description = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 7)
-}
+func (x *OpaqueProductCategory) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductCategory) SetParentCategory(v *OpaqueProductCategory) {
-	x.xxx_hidden_ParentCategory = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProductCategory) SetTags(v []string) {
-	x.xxx_hidden_Tags = v
-}
+func (x *OpaqueProductCategory) SetTags(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductCategory) SetCreatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_CreatedAt = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProductCategory) SetUpdatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_UpdatedAt = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProductCategory) HasCategoryId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueProductCategory) HasCategoryId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) HasName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueProductCategory) HasName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) HasDescription() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueProductCategory) HasDescription() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) HasParentCategory() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ParentCategory != nil
-}
+func (x *OpaqueProductCategory) HasParentCategory() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) HasCreatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_CreatedAt != nil
-}
+func (x *OpaqueProductCategory) HasCreatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) HasUpdatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_UpdatedAt != nil
-}
+func (x *OpaqueProductCategory) HasUpdatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductCategory) ClearCategoryId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_CategoryId = nil
-}
+func (x *OpaqueProductCategory) ClearCategoryId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) ClearName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Name = nil
-}
+func (x *OpaqueProductCategory) ClearName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) ClearDescription() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_Description = nil
-}
+func (x *OpaqueProductCategory) ClearDescription() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) ClearParentCategory() {
-	x.xxx_hidden_ParentCategory = nil
-}
+func (x *OpaqueProductCategory) ClearParentCategory() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) ClearCreatedAt() {
-	x.xxx_hidden_CreatedAt = nil
-}
+func (x *OpaqueProductCategory) ClearCreatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductCategory) ClearUpdatedAt() {
-	x.xxx_hidden_UpdatedAt = nil
-}
+func (x *OpaqueProductCategory) ClearUpdatedAt() { _ = "STUB: not implemented"; return }
 
 type OpaqueProductCategory_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -2929,26 +1793,8 @@ type OpaqueProductCategory_builder struct {
 }
 
 func (b0 OpaqueProductCategory_builder) Build() *OpaqueProductCategory {
-	m0 := &OpaqueProductCategory{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.CategoryId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 7)
-		x.xxx_hidden_CategoryId = b.CategoryId
-	}
-	if b.Name != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 7)
-		x.xxx_hidden_Name = b.Name
-	}
-	if b.Description != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 7)
-		x.xxx_hidden_Description = b.Description
-	}
-	x.xxx_hidden_ParentCategory = b.ParentCategory
-	x.xxx_hidden_Tags = b.Tags
-	x.xxx_hidden_CreatedAt = b.CreatedAt
-	x.xxx_hidden_UpdatedAt = b.UpdatedAt
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueProductVariant represents a specific variant of a product
@@ -2970,310 +1816,120 @@ type OpaqueProductVariant struct {
 	sizeCache                 protoimpl.SizeCache
 }
 
-func (x *OpaqueProductVariant) Reset() {
-	*x = OpaqueProductVariant{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[21]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProductVariant) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueProductVariant) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueProductVariant) ProtoMessage() {}
+func (*OpaqueProductVariant) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductVariant) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[21]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueProductVariant) GetVariantId() string {
-	if x != nil {
-		if x.xxx_hidden_VariantId != nil {
-			return *x.xxx_hidden_VariantId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductVariant) GetVariantId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProductVariant) GetSku() string {
-	if x != nil {
-		if x.xxx_hidden_Sku != nil {
-			return *x.xxx_hidden_Sku
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductVariant) GetSku() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProductVariant) GetName() string {
-	if x != nil {
-		if x.xxx_hidden_Name != nil {
-			return *x.xxx_hidden_Name
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProductVariant) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProductVariant) GetPrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_Price
-	}
-	return nil
-}
+func (x *OpaqueProductVariant) GetPrice() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueProductVariant) GetInventoryCount() int32 {
-	if x != nil {
-		return x.xxx_hidden_InventoryCount
-	}
-	return 0
-}
+func (x *OpaqueProductVariant) GetInventoryCount() int32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueProductVariant) GetAttributes() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Attributes
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProductVariant) GetImageData() []byte {
-	if x != nil {
-		return x.xxx_hidden_ImageData
-	}
-	return nil
-}
+func (x *OpaqueProductVariant) GetImageData() []byte { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueProductVariant) GetImageUrls() []string {
-	if x != nil {
-		return x.xxx_hidden_ImageUrls
-	}
-	return nil
-}
+func (x *OpaqueProductVariant) GetImageUrls() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueProductVariant) GetIsAvailable() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.xxx_hidden_IsAvailable
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProductVariant) GetPercentageOff() float64 {
-	if x != nil {
-		if x, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_PercentageOff); ok {
-			return x.PercentageOff
-		}
-	}
-	return 0
-}
+func (x *OpaqueProductVariant) GetPercentageOff() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueProductVariant) GetFixedAmountOff() float64 {
-	if x != nil {
-		if x, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_FixedAmountOff); ok {
-			return x.FixedAmountOff
-		}
-	}
-	return 0
-}
+func (x *OpaqueProductVariant) GetFixedAmountOff() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueProductVariant) SetVariantId(v string) {
-	x.xxx_hidden_VariantId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 10)
-}
+func (x *OpaqueProductVariant) SetVariantId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetSku(v string) {
-	x.xxx_hidden_Sku = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 10)
-}
+func (x *OpaqueProductVariant) SetSku(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetName(v string) {
-	x.xxx_hidden_Name = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 10)
-}
+func (x *OpaqueProductVariant) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetPrice(v *OpaquePrice) {
-	x.xxx_hidden_Price = v
-}
+func (x *OpaqueProductVariant) SetPrice(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetInventoryCount(v int32) {
-	x.xxx_hidden_InventoryCount = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 10)
-}
+func (x *OpaqueProductVariant) SetInventoryCount(v int32) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductVariant) SetAttributes(v map[string]string) {
-	x.xxx_hidden_Attributes = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProductVariant) SetImageData(v []byte) {
-	if v == nil {
-		v = []byte{}
-	}
-	x.xxx_hidden_ImageData = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 6, 10)
-}
+func (x *OpaqueProductVariant) SetImageData(v []byte) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetImageUrls(v []string) {
-	x.xxx_hidden_ImageUrls = v
-}
+func (x *OpaqueProductVariant) SetImageUrls(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProductVariant) SetIsAvailable(v *wrapperspb.BoolValue) {
-	x.xxx_hidden_IsAvailable = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProductVariant) SetPercentageOff(v float64) {
-	x.xxx_hidden_DiscountInfo = &opaqueProductVariant_PercentageOff{v}
-}
+func (x *OpaqueProductVariant) SetPercentageOff(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) SetFixedAmountOff(v float64) {
-	x.xxx_hidden_DiscountInfo = &opaqueProductVariant_FixedAmountOff{v}
-}
+func (x *OpaqueProductVariant) SetFixedAmountOff(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) HasVariantId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueProductVariant) HasVariantId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasSku() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueProductVariant) HasSku() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueProductVariant) HasName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasPrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Price != nil
-}
+func (x *OpaqueProductVariant) HasPrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasInventoryCount() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueProductVariant) HasInventoryCount() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasImageData() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 6)
-}
+func (x *OpaqueProductVariant) HasImageData() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasIsAvailable() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_IsAvailable != nil
-}
+func (x *OpaqueProductVariant) HasIsAvailable() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasDiscountInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_DiscountInfo != nil
-}
+func (x *OpaqueProductVariant) HasDiscountInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasPercentageOff() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_PercentageOff)
-	return ok
-}
+func (x *OpaqueProductVariant) HasPercentageOff() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) HasFixedAmountOff() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_FixedAmountOff)
-	return ok
-}
+func (x *OpaqueProductVariant) HasFixedAmountOff() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProductVariant) ClearVariantId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_VariantId = nil
-}
+func (x *OpaqueProductVariant) ClearVariantId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearSku() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Sku = nil
-}
+func (x *OpaqueProductVariant) ClearSku() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_Name = nil
-}
+func (x *OpaqueProductVariant) ClearName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearPrice() {
-	x.xxx_hidden_Price = nil
-}
+func (x *OpaqueProductVariant) ClearPrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearInventoryCount() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_InventoryCount = 0
-}
+func (x *OpaqueProductVariant) ClearInventoryCount() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearImageData() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 6)
-	x.xxx_hidden_ImageData = nil
-}
+func (x *OpaqueProductVariant) ClearImageData() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearIsAvailable() {
-	x.xxx_hidden_IsAvailable = nil
-}
+func (x *OpaqueProductVariant) ClearIsAvailable() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearDiscountInfo() {
-	x.xxx_hidden_DiscountInfo = nil
-}
+func (x *OpaqueProductVariant) ClearDiscountInfo() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearPercentageOff() {
-	if _, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_PercentageOff); ok {
-		x.xxx_hidden_DiscountInfo = nil
-	}
-}
+func (x *OpaqueProductVariant) ClearPercentageOff() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProductVariant) ClearFixedAmountOff() {
-	if _, ok := x.xxx_hidden_DiscountInfo.(*opaqueProductVariant_FixedAmountOff); ok {
-		x.xxx_hidden_DiscountInfo = nil
-	}
-}
+func (x *OpaqueProductVariant) ClearFixedAmountOff() { _ = "STUB: not implemented"; return }
 
 const OpaqueProductVariant_DiscountInfo_not_set_case case_OpaqueProductVariant_DiscountInfo = 0
 const OpaqueProductVariant_PercentageOff_case case_OpaqueProductVariant_DiscountInfo = 10
 const OpaqueProductVariant_FixedAmountOff_case case_OpaqueProductVariant_DiscountInfo = 11
 
 func (x *OpaqueProductVariant) WhichDiscountInfo() case_OpaqueProductVariant_DiscountInfo {
-	if x == nil {
-		return OpaqueProductVariant_DiscountInfo_not_set_case
-	}
-	switch x.xxx_hidden_DiscountInfo.(type) {
-	case *opaqueProductVariant_PercentageOff:
-		return OpaqueProductVariant_PercentageOff_case
-	case *opaqueProductVariant_FixedAmountOff:
-		return OpaqueProductVariant_FixedAmountOff_case
-	default:
-		return OpaqueProductVariant_DiscountInfo_not_set_case
-	}
+	_ = "STUB: not implemented"
+	return *new(case_OpaqueProductVariant_DiscountInfo)
 }
 
 type OpaqueProductVariant_builder struct {
@@ -3295,50 +1951,15 @@ type OpaqueProductVariant_builder struct {
 }
 
 func (b0 OpaqueProductVariant_builder) Build() *OpaqueProductVariant {
-	m0 := &OpaqueProductVariant{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.VariantId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 10)
-		x.xxx_hidden_VariantId = b.VariantId
-	}
-	if b.Sku != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 10)
-		x.xxx_hidden_Sku = b.Sku
-	}
-	if b.Name != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 10)
-		x.xxx_hidden_Name = b.Name
-	}
-	x.xxx_hidden_Price = b.Price
-	if b.InventoryCount != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 10)
-		x.xxx_hidden_InventoryCount = *b.InventoryCount
-	}
-	x.xxx_hidden_Attributes = b.Attributes
-	if b.ImageData != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 6, 10)
-		x.xxx_hidden_ImageData = b.ImageData
-	}
-	x.xxx_hidden_ImageUrls = b.ImageUrls
-	x.xxx_hidden_IsAvailable = b.IsAvailable
-	if b.PercentageOff != nil {
-		x.xxx_hidden_DiscountInfo = &opaqueProductVariant_PercentageOff{*b.PercentageOff}
-	}
-	if b.FixedAmountOff != nil {
-		x.xxx_hidden_DiscountInfo = &opaqueProductVariant_FixedAmountOff{*b.FixedAmountOff}
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type case_OpaqueProductVariant_DiscountInfo protoreflect.FieldNumber
 
 func (x case_OpaqueProductVariant_DiscountInfo) String() string {
-	md := file_examples_internal_proto_examplepb_opaque_proto_msgTypes[21].Descriptor()
-	if x == 0 {
-		return "not set"
-	}
-	return protoimpl.X.MessageFieldStringOf(md, protoreflect.FieldNumber(x))
+	_ = "STUB: not implemented"
+	return ""
 }
 
 type isOpaqueProductVariant_DiscountInfo interface {
@@ -3353,11 +1974,18 @@ type opaqueProductVariant_FixedAmountOff struct {
 	FixedAmountOff float64 `protobuf:"fixed64,11,opt,name=fixed_amount_off,json=fixedAmountOff,oneof"`
 }
 
-func (*opaqueProductVariant_PercentageOff) isOpaqueProductVariant_DiscountInfo() {}
+func (*opaqueProductVariant_PercentageOff) isOpaqueProductVariant_DiscountInfo() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*opaqueProductVariant_FixedAmountOff) isOpaqueProductVariant_DiscountInfo() {}
+func (*opaqueProductVariant_FixedAmountOff) isOpaqueProductVariant_DiscountInfo() {
+	_ = "STUB: not implemented"
 
-// OpaqueProduct represents a product in the e-commerce system
+	// OpaqueProduct represents a product in the e-commerce system
+	return
+}
+
 type OpaqueProduct struct {
 	state                          protoimpl.MessageState                 `protogen:"opaque.v1"`
 	xxx_hidden_ProductId           *string                                `protobuf:"bytes,1,opt,name=product_id,json=productId"`
@@ -3385,494 +2013,208 @@ type OpaqueProduct struct {
 	sizeCache                      protoimpl.SizeCache
 }
 
-func (x *OpaqueProduct) Reset() {
-	*x = OpaqueProduct{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[22]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProduct) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueProduct) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueProduct) ProtoMessage() {}
+func (*OpaqueProduct) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProduct) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[22]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueProduct) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProduct) GetProductId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProduct) GetName() string {
-	if x != nil {
-		if x.xxx_hidden_Name != nil {
-			return *x.xxx_hidden_Name
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProduct) GetName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProduct) GetDescription() string {
-	if x != nil {
-		if x.xxx_hidden_Description != nil {
-			return *x.xxx_hidden_Description
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProduct) GetDescription() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProduct) GetBrand() string {
-	if x != nil {
-		if x.xxx_hidden_Brand != nil {
-			return *x.xxx_hidden_Brand
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueProduct) GetBrand() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueProduct) GetBasePrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_BasePrice
-	}
-	return nil
-}
+func (x *OpaqueProduct) GetBasePrice() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueProduct) GetCategory() *OpaqueProductCategory {
-	if x != nil {
-		return x.xxx_hidden_Category
-	}
-	return nil
-}
+func (x *OpaqueProduct) GetCategory() *OpaqueProductCategory { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueProduct) GetVariants() []*OpaqueProductVariant {
-	if x != nil {
-		if x.xxx_hidden_Variants != nil {
-			return *x.xxx_hidden_Variants
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProduct) GetTags() []string {
-	if x != nil {
-		return x.xxx_hidden_Tags
-	}
-	return nil
-}
+func (x *OpaqueProduct) GetTags() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueProduct) GetAverageRating() float64 {
-	if x != nil {
-		return x.xxx_hidden_AverageRating
-	}
-	return 0
-}
+func (x *OpaqueProduct) GetAverageRating() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueProduct) GetReviewCount() int32 {
-	if x != nil {
-		return x.xxx_hidden_ReviewCount
-	}
-	return 0
-}
+func (x *OpaqueProduct) GetReviewCount() int32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueProduct) GetIsFeatured() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.xxx_hidden_IsFeatured
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProduct) GetCreatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_CreatedAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProduct) GetUpdatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_UpdatedAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProduct) GetAverageShippingTime() *durationpb.Duration {
-	if x != nil {
-		return x.xxx_hidden_AverageShippingTime
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProduct) GetStatus() OpaqueProduct_OpaqueProductStatus {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 14) {
-			return x.xxx_hidden_Status
-		}
-	}
-	return OpaqueProduct_OPAQUE_PRODUCT_STATUS_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueProduct_OpaqueProductStatus)
 }
 
-func (x *OpaqueProduct) GetMetadata() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Metadata
-	}
-	return nil
-}
+func (x *OpaqueProduct) GetMetadata() map[string]string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueProduct) GetRegionalPrices() map[string]*OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_RegionalPrices
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueProduct) GetDimensions() *OpaqueProduct_OpaqueProductDimensions {
-	if x != nil {
-		return x.xxx_hidden_Dimensions
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueProduct) GetTaxPercentage() float64 {
-	if x != nil {
-		if x, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxPercentage); ok {
-			return x.TaxPercentage
-		}
-	}
-	return 0
-}
+func (x *OpaqueProduct) GetTaxPercentage() float64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueProduct) GetTaxExempt() bool {
-	if x != nil {
-		if x, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxExempt); ok {
-			return x.TaxExempt
-		}
-	}
-	return false
-}
+func (x *OpaqueProduct) GetTaxExempt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 19)
-}
+func (x *OpaqueProduct) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetName(v string) {
-	x.xxx_hidden_Name = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 19)
-}
+func (x *OpaqueProduct) SetName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetDescription(v string) {
-	x.xxx_hidden_Description = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 19)
-}
+func (x *OpaqueProduct) SetDescription(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetBrand(v string) {
-	x.xxx_hidden_Brand = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 19)
-}
+func (x *OpaqueProduct) SetBrand(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetBasePrice(v *OpaquePrice) {
-	x.xxx_hidden_BasePrice = v
-}
+func (x *OpaqueProduct) SetBasePrice(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetCategory(v *OpaqueProductCategory) {
-	x.xxx_hidden_Category = v
-}
+func (x *OpaqueProduct) SetCategory(v *OpaqueProductCategory) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetVariants(v []*OpaqueProductVariant) {
-	x.xxx_hidden_Variants = &v
-}
+func (x *OpaqueProduct) SetVariants(v []*OpaqueProductVariant) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetTags(v []string) {
-	x.xxx_hidden_Tags = v
-}
+func (x *OpaqueProduct) SetTags(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetAverageRating(v float64) {
-	x.xxx_hidden_AverageRating = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 19)
-}
+func (x *OpaqueProduct) SetAverageRating(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetReviewCount(v int32) {
-	x.xxx_hidden_ReviewCount = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 9, 19)
-}
+func (x *OpaqueProduct) SetReviewCount(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetIsFeatured(v *wrapperspb.BoolValue) {
-	x.xxx_hidden_IsFeatured = v
-}
+func (x *OpaqueProduct) SetIsFeatured(v *wrapperspb.BoolValue) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetCreatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_CreatedAt = v
-}
+func (x *OpaqueProduct) SetCreatedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetUpdatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_UpdatedAt = v
-}
+func (x *OpaqueProduct) SetUpdatedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProduct) SetAverageShippingTime(v *durationpb.Duration) {
-	x.xxx_hidden_AverageShippingTime = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct) SetStatus(v OpaqueProduct_OpaqueProductStatus) {
-	x.xxx_hidden_Status = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 14, 19)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProduct) SetMetadata(v map[string]string) {
-	x.xxx_hidden_Metadata = v
-}
+func (x *OpaqueProduct) SetMetadata(v map[string]string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProduct) SetRegionalPrices(v map[string]*OpaquePrice) {
-	x.xxx_hidden_RegionalPrices = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct) SetDimensions(v *OpaqueProduct_OpaqueProductDimensions) {
-	x.xxx_hidden_Dimensions = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueProduct) SetTaxPercentage(v float64) {
-	x.xxx_hidden_TaxInfo = &opaqueProduct_TaxPercentage{v}
-}
+func (x *OpaqueProduct) SetTaxPercentage(v float64) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) SetTaxExempt(v bool) {
-	x.xxx_hidden_TaxInfo = &opaqueProduct_TaxExempt{v}
-}
+func (x *OpaqueProduct) SetTaxExempt(v bool) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueProduct) HasProductId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueProduct) HasName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasDescription() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueProduct) HasDescription() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasBrand() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
-}
+func (x *OpaqueProduct) HasBrand() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasBasePrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_BasePrice != nil
-}
+func (x *OpaqueProduct) HasBasePrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasCategory() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Category != nil
-}
+func (x *OpaqueProduct) HasCategory() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasAverageRating() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueProduct) HasAverageRating() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasReviewCount() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 9)
-}
+func (x *OpaqueProduct) HasReviewCount() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasIsFeatured() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_IsFeatured != nil
-}
+func (x *OpaqueProduct) HasIsFeatured() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasCreatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_CreatedAt != nil
-}
+func (x *OpaqueProduct) HasCreatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasUpdatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_UpdatedAt != nil
-}
+func (x *OpaqueProduct) HasUpdatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasAverageShippingTime() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_AverageShippingTime != nil
-}
+func (x *OpaqueProduct) HasAverageShippingTime() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasStatus() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 14)
-}
+func (x *OpaqueProduct) HasStatus() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasDimensions() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Dimensions != nil
-}
+func (x *OpaqueProduct) HasDimensions() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasTaxInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_TaxInfo != nil
-}
+func (x *OpaqueProduct) HasTaxInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasTaxPercentage() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxPercentage)
-	return ok
-}
+func (x *OpaqueProduct) HasTaxPercentage() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) HasTaxExempt() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxExempt)
-	return ok
-}
+func (x *OpaqueProduct) HasTaxExempt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueProduct) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueProduct) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Name = nil
-}
+func (x *OpaqueProduct) ClearName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearDescription() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_Description = nil
-}
+func (x *OpaqueProduct) ClearDescription() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearBrand() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_Brand = nil
-}
+func (x *OpaqueProduct) ClearBrand() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearBasePrice() {
-	x.xxx_hidden_BasePrice = nil
-}
+func (x *OpaqueProduct) ClearBasePrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearCategory() {
-	x.xxx_hidden_Category = nil
-}
+func (x *OpaqueProduct) ClearCategory() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearAverageRating() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_AverageRating = 0
-}
+func (x *OpaqueProduct) ClearAverageRating() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearReviewCount() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 9)
-	x.xxx_hidden_ReviewCount = 0
-}
+func (x *OpaqueProduct) ClearReviewCount() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearIsFeatured() {
-	x.xxx_hidden_IsFeatured = nil
-}
+func (x *OpaqueProduct) ClearIsFeatured() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearCreatedAt() {
-	x.xxx_hidden_CreatedAt = nil
-}
+func (x *OpaqueProduct) ClearCreatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearUpdatedAt() {
-	x.xxx_hidden_UpdatedAt = nil
-}
+func (x *OpaqueProduct) ClearUpdatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearAverageShippingTime() {
-	x.xxx_hidden_AverageShippingTime = nil
-}
+func (x *OpaqueProduct) ClearAverageShippingTime() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearStatus() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 14)
-	x.xxx_hidden_Status = OpaqueProduct_OPAQUE_PRODUCT_STATUS_UNSPECIFIED
-}
+func (x *OpaqueProduct) ClearStatus() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearDimensions() {
-	x.xxx_hidden_Dimensions = nil
-}
+func (x *OpaqueProduct) ClearDimensions() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearTaxInfo() {
-	x.xxx_hidden_TaxInfo = nil
-}
+func (x *OpaqueProduct) ClearTaxInfo() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearTaxPercentage() {
-	if _, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxPercentage); ok {
-		x.xxx_hidden_TaxInfo = nil
-	}
-}
+func (x *OpaqueProduct) ClearTaxPercentage() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct) ClearTaxExempt() {
-	if _, ok := x.xxx_hidden_TaxInfo.(*opaqueProduct_TaxExempt); ok {
-		x.xxx_hidden_TaxInfo = nil
-	}
-}
+func (x *OpaqueProduct) ClearTaxExempt() { _ = "STUB: not implemented"; return }
 
 const OpaqueProduct_TaxInfo_not_set_case case_OpaqueProduct_TaxInfo = 0
 const OpaqueProduct_TaxPercentage_case case_OpaqueProduct_TaxInfo = 19
 const OpaqueProduct_TaxExempt_case case_OpaqueProduct_TaxInfo = 20
 
 func (x *OpaqueProduct) WhichTaxInfo() case_OpaqueProduct_TaxInfo {
-	if x == nil {
-		return OpaqueProduct_TaxInfo_not_set_case
-	}
-	switch x.xxx_hidden_TaxInfo.(type) {
-	case *opaqueProduct_TaxPercentage:
-		return OpaqueProduct_TaxPercentage_case
-	case *opaqueProduct_TaxExempt:
-		return OpaqueProduct_TaxExempt_case
-	default:
-		return OpaqueProduct_TaxInfo_not_set_case
-	}
+	_ = "STUB: not implemented"
+	return *new(case_OpaqueProduct_TaxInfo)
 }
 
 type OpaqueProduct_builder struct {
@@ -3902,67 +2244,11 @@ type OpaqueProduct_builder struct {
 	// -- end of xxx_hidden_TaxInfo
 }
 
-func (b0 OpaqueProduct_builder) Build() *OpaqueProduct {
-	m0 := &OpaqueProduct{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 19)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	if b.Name != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 19)
-		x.xxx_hidden_Name = b.Name
-	}
-	if b.Description != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 19)
-		x.xxx_hidden_Description = b.Description
-	}
-	if b.Brand != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 19)
-		x.xxx_hidden_Brand = b.Brand
-	}
-	x.xxx_hidden_BasePrice = b.BasePrice
-	x.xxx_hidden_Category = b.Category
-	x.xxx_hidden_Variants = &b.Variants
-	x.xxx_hidden_Tags = b.Tags
-	if b.AverageRating != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 19)
-		x.xxx_hidden_AverageRating = *b.AverageRating
-	}
-	if b.ReviewCount != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 9, 19)
-		x.xxx_hidden_ReviewCount = *b.ReviewCount
-	}
-	x.xxx_hidden_IsFeatured = b.IsFeatured
-	x.xxx_hidden_CreatedAt = b.CreatedAt
-	x.xxx_hidden_UpdatedAt = b.UpdatedAt
-	x.xxx_hidden_AverageShippingTime = b.AverageShippingTime
-	if b.Status != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 14, 19)
-		x.xxx_hidden_Status = *b.Status
-	}
-	x.xxx_hidden_Metadata = b.Metadata
-	x.xxx_hidden_RegionalPrices = b.RegionalPrices
-	x.xxx_hidden_Dimensions = b.Dimensions
-	if b.TaxPercentage != nil {
-		x.xxx_hidden_TaxInfo = &opaqueProduct_TaxPercentage{*b.TaxPercentage}
-	}
-	if b.TaxExempt != nil {
-		x.xxx_hidden_TaxInfo = &opaqueProduct_TaxExempt{*b.TaxExempt}
-	}
-	return m0
-}
+func (b0 OpaqueProduct_builder) Build() *OpaqueProduct { _ = "STUB: not implemented"; return nil }
 
 type case_OpaqueProduct_TaxInfo protoreflect.FieldNumber
 
-func (x case_OpaqueProduct_TaxInfo) String() string {
-	md := file_examples_internal_proto_examplepb_opaque_proto_msgTypes[22].Descriptor()
-	if x == 0 {
-		return "not set"
-	}
-	return protoimpl.X.MessageFieldStringOf(md, protoreflect.FieldNumber(x))
-}
+func (x case_OpaqueProduct_TaxInfo) String() string { _ = "STUB: not implemented"; return "" }
 
 type isOpaqueProduct_TaxInfo interface {
 	isOpaqueProduct_TaxInfo()
@@ -3976,11 +2262,15 @@ type opaqueProduct_TaxExempt struct {
 	TaxExempt bool `protobuf:"varint,20,opt,name=tax_exempt,json=taxExempt,oneof"`
 }
 
-func (*opaqueProduct_TaxPercentage) isOpaqueProduct_TaxInfo() {}
+func (*opaqueProduct_TaxPercentage) isOpaqueProduct_TaxInfo() { _ = "STUB: not implemented"; return }
 
-func (*opaqueProduct_TaxExempt) isOpaqueProduct_TaxInfo() {}
+func (*opaqueProduct_TaxExempt) isOpaqueProduct_TaxInfo() {
+	_ = "STUB: not implemented"
 
-// OpaqueCustomer represents a customer in the e-commerce system
+	// OpaqueCustomer represents a customer in the e-commerce system
+	return
+}
+
 type OpaqueCustomer struct {
 	state                     protoimpl.MessageState                 `protogen:"opaque.v1"`
 	xxx_hidden_CustomerId     *string                                `protobuf:"bytes,1,opt,name=customer_id,json=customerId"`
@@ -4001,294 +2291,124 @@ type OpaqueCustomer struct {
 	sizeCache                 protoimpl.SizeCache
 }
 
-func (x *OpaqueCustomer) Reset() {
-	*x = OpaqueCustomer{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[23]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCustomer) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCustomer) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCustomer) ProtoMessage() {}
+func (*OpaqueCustomer) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[23]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueCustomer) GetCustomerId() string {
-	if x != nil {
-		if x.xxx_hidden_CustomerId != nil {
-			return *x.xxx_hidden_CustomerId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer) GetCustomerId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer) GetEmail() string {
-	if x != nil {
-		if x.xxx_hidden_Email != nil {
-			return *x.xxx_hidden_Email
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer) GetEmail() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer) GetFirstName() string {
-	if x != nil {
-		if x.xxx_hidden_FirstName != nil {
-			return *x.xxx_hidden_FirstName
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer) GetFirstName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer) GetLastName() string {
-	if x != nil {
-		if x.xxx_hidden_LastName != nil {
-			return *x.xxx_hidden_LastName
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer) GetLastName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer) GetPhoneNumber() string {
-	if x != nil {
-		if x.xxx_hidden_PhoneNumber != nil {
-			return *x.xxx_hidden_PhoneNumber
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer) GetPhoneNumber() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer) GetAddresses() []*OpaqueAddress {
-	if x != nil {
-		if x.xxx_hidden_Addresses != nil {
-			return *x.xxx_hidden_Addresses
-		}
-	}
-	return nil
-}
+func (x *OpaqueCustomer) GetAddresses() []*OpaqueAddress { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueCustomer) GetCreatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_CreatedAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCustomer) GetLastLogin() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_LastLogin
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCustomer) GetStatus() OpaqueCustomer_OpaqueCustomerStatus {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 8) {
-			return x.xxx_hidden_Status
-		}
-	}
-	return OpaqueCustomer_OPAQUE_CUSTOMER_STATUS_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueCustomer_OpaqueCustomerStatus)
 }
 
 func (x *OpaqueCustomer) GetLoyaltyInfo() *OpaqueCustomer_OpaqueLoyaltyInfo {
-	if x != nil {
-		return x.xxx_hidden_LoyaltyInfo
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCustomer) GetPreferences() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Preferences
-	}
-	return nil
-}
+func (x *OpaqueCustomer) GetPreferences() map[string]string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueCustomer) GetPaymentMethods() []*OpaqueCustomer_OpaquePaymentMethod {
-	if x != nil {
-		if x.xxx_hidden_PaymentMethods != nil {
-			return *x.xxx_hidden_PaymentMethods
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCustomer) SetCustomerId(v string) {
-	x.xxx_hidden_CustomerId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 12)
-}
+func (x *OpaqueCustomer) SetCustomerId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetEmail(v string) {
-	x.xxx_hidden_Email = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 12)
-}
+func (x *OpaqueCustomer) SetEmail(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetFirstName(v string) {
-	x.xxx_hidden_FirstName = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 12)
-}
+func (x *OpaqueCustomer) SetFirstName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetLastName(v string) {
-	x.xxx_hidden_LastName = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 12)
-}
+func (x *OpaqueCustomer) SetLastName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetPhoneNumber(v string) {
-	x.xxx_hidden_PhoneNumber = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 12)
-}
+func (x *OpaqueCustomer) SetPhoneNumber(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetAddresses(v []*OpaqueAddress) {
-	x.xxx_hidden_Addresses = &v
-}
+func (x *OpaqueCustomer) SetAddresses(v []*OpaqueAddress) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetCreatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_CreatedAt = v
-}
+func (x *OpaqueCustomer) SetCreatedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) SetLastLogin(v *timestamppb.Timestamp) {
-	x.xxx_hidden_LastLogin = v
-}
+func (x *OpaqueCustomer) SetLastLogin(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer) SetStatus(v OpaqueCustomer_OpaqueCustomerStatus) {
-	x.xxx_hidden_Status = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 12)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer) SetLoyaltyInfo(v *OpaqueCustomer_OpaqueLoyaltyInfo) {
-	x.xxx_hidden_LoyaltyInfo = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCustomer) SetPreferences(v map[string]string) {
-	x.xxx_hidden_Preferences = v
-}
+func (x *OpaqueCustomer) SetPreferences(v map[string]string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer) SetPaymentMethods(v []*OpaqueCustomer_OpaquePaymentMethod) {
-	x.xxx_hidden_PaymentMethods = &v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCustomer) HasCustomerId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueCustomer) HasCustomerId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasEmail() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueCustomer) HasEmail() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasFirstName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueCustomer) HasFirstName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasLastName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
-}
+func (x *OpaqueCustomer) HasLastName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasPhoneNumber() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueCustomer) HasPhoneNumber() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasCreatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_CreatedAt != nil
-}
+func (x *OpaqueCustomer) HasCreatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasLastLogin() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_LastLogin != nil
-}
+func (x *OpaqueCustomer) HasLastLogin() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasStatus() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueCustomer) HasStatus() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) HasLoyaltyInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_LoyaltyInfo != nil
-}
+func (x *OpaqueCustomer) HasLoyaltyInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomer) ClearCustomerId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_CustomerId = nil
-}
+func (x *OpaqueCustomer) ClearCustomerId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearEmail() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Email = nil
-}
+func (x *OpaqueCustomer) ClearEmail() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearFirstName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_FirstName = nil
-}
+func (x *OpaqueCustomer) ClearFirstName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearLastName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_LastName = nil
-}
+func (x *OpaqueCustomer) ClearLastName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearPhoneNumber() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_PhoneNumber = nil
-}
+func (x *OpaqueCustomer) ClearPhoneNumber() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearCreatedAt() {
-	x.xxx_hidden_CreatedAt = nil
-}
+func (x *OpaqueCustomer) ClearCreatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearLastLogin() {
-	x.xxx_hidden_LastLogin = nil
-}
+func (x *OpaqueCustomer) ClearLastLogin() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearStatus() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_Status = OpaqueCustomer_OPAQUE_CUSTOMER_STATUS_UNSPECIFIED
-}
+func (x *OpaqueCustomer) ClearStatus() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer) ClearLoyaltyInfo() {
-	x.xxx_hidden_LoyaltyInfo = nil
-}
+func (x *OpaqueCustomer) ClearLoyaltyInfo() { _ = "STUB: not implemented"; return }
 
 type OpaqueCustomer_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -4307,42 +2427,7 @@ type OpaqueCustomer_builder struct {
 	PaymentMethods []*OpaqueCustomer_OpaquePaymentMethod
 }
 
-func (b0 OpaqueCustomer_builder) Build() *OpaqueCustomer {
-	m0 := &OpaqueCustomer{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.CustomerId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 12)
-		x.xxx_hidden_CustomerId = b.CustomerId
-	}
-	if b.Email != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 12)
-		x.xxx_hidden_Email = b.Email
-	}
-	if b.FirstName != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 12)
-		x.xxx_hidden_FirstName = b.FirstName
-	}
-	if b.LastName != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 12)
-		x.xxx_hidden_LastName = b.LastName
-	}
-	if b.PhoneNumber != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 12)
-		x.xxx_hidden_PhoneNumber = b.PhoneNumber
-	}
-	x.xxx_hidden_Addresses = &b.Addresses
-	x.xxx_hidden_CreatedAt = b.CreatedAt
-	x.xxx_hidden_LastLogin = b.LastLogin
-	if b.Status != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 12)
-		x.xxx_hidden_Status = *b.Status
-	}
-	x.xxx_hidden_LoyaltyInfo = b.LoyaltyInfo
-	x.xxx_hidden_Preferences = b.Preferences
-	x.xxx_hidden_PaymentMethods = &b.PaymentMethods
-	return m0
-}
+func (b0 OpaqueCustomer_builder) Build() *OpaqueCustomer { _ = "STUB: not implemented"; return nil }
 
 // OpaqueOrderItem represents an item in an order
 type OpaqueOrderItem struct {
@@ -4362,239 +2447,96 @@ type OpaqueOrderItem struct {
 	sizeCache                     protoimpl.SizeCache
 }
 
-func (x *OpaqueOrderItem) Reset() {
-	*x = OpaqueOrderItem{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[24]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueOrderItem) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueOrderItem) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueOrderItem) ProtoMessage() {}
+func (*OpaqueOrderItem) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderItem) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[24]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueOrderItem) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrderItem) GetProductId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrderItem) GetVariantId() string {
-	if x != nil {
-		if x.xxx_hidden_VariantId != nil {
-			return *x.xxx_hidden_VariantId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrderItem) GetVariantId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrderItem) GetProductName() string {
-	if x != nil {
-		if x.xxx_hidden_ProductName != nil {
-			return *x.xxx_hidden_ProductName
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrderItem) GetProductName() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrderItem) GetQuantity() int32 {
-	if x != nil {
-		return x.xxx_hidden_Quantity
-	}
-	return 0
-}
+func (x *OpaqueOrderItem) GetQuantity() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueOrderItem) GetUnitPrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_UnitPrice
-	}
-	return nil
-}
+func (x *OpaqueOrderItem) GetUnitPrice() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrderItem) GetTotalPrice() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_TotalPrice
-	}
-	return nil
-}
+func (x *OpaqueOrderItem) GetTotalPrice() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueOrderItem) GetSelectedAttributes() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_SelectedAttributes
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueOrderItem) GetGiftWrapped() *wrapperspb.BoolValue {
-	if x != nil {
-		return x.xxx_hidden_GiftWrapped
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueOrderItem) GetGiftMessage() string {
-	if x != nil {
-		if x.xxx_hidden_GiftMessage != nil {
-			return *x.xxx_hidden_GiftMessage
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrderItem) GetGiftMessage() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrderItem) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 9)
-}
+func (x *OpaqueOrderItem) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) SetVariantId(v string) {
-	x.xxx_hidden_VariantId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 9)
-}
+func (x *OpaqueOrderItem) SetVariantId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) SetProductName(v string) {
-	x.xxx_hidden_ProductName = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 9)
-}
+func (x *OpaqueOrderItem) SetProductName(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) SetQuantity(v int32) {
-	x.xxx_hidden_Quantity = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 9)
-}
+func (x *OpaqueOrderItem) SetQuantity(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) SetUnitPrice(v *OpaquePrice) {
-	x.xxx_hidden_UnitPrice = v
-}
+func (x *OpaqueOrderItem) SetUnitPrice(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) SetTotalPrice(v *OpaquePrice) {
-	x.xxx_hidden_TotalPrice = v
-}
+func (x *OpaqueOrderItem) SetTotalPrice(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderItem) SetSelectedAttributes(v map[string]string) {
-	x.xxx_hidden_SelectedAttributes = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderItem) SetGiftWrapped(v *wrapperspb.BoolValue) {
-	x.xxx_hidden_GiftWrapped = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueOrderItem) SetGiftMessage(v string) {
-	x.xxx_hidden_GiftMessage = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 9)
-}
+func (x *OpaqueOrderItem) SetGiftMessage(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueOrderItem) HasProductId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasVariantId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueOrderItem) HasVariantId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasProductName() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueOrderItem) HasProductName() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasQuantity() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
-}
+func (x *OpaqueOrderItem) HasQuantity() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasUnitPrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_UnitPrice != nil
-}
+func (x *OpaqueOrderItem) HasUnitPrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasTotalPrice() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_TotalPrice != nil
-}
+func (x *OpaqueOrderItem) HasTotalPrice() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasGiftWrapped() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_GiftWrapped != nil
-}
+func (x *OpaqueOrderItem) HasGiftWrapped() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) HasGiftMessage() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueOrderItem) HasGiftMessage() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderItem) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueOrderItem) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearVariantId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_VariantId = nil
-}
+func (x *OpaqueOrderItem) ClearVariantId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearProductName() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_ProductName = nil
-}
+func (x *OpaqueOrderItem) ClearProductName() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearQuantity() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_Quantity = 0
-}
+func (x *OpaqueOrderItem) ClearQuantity() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearUnitPrice() {
-	x.xxx_hidden_UnitPrice = nil
-}
+func (x *OpaqueOrderItem) ClearUnitPrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearTotalPrice() {
-	x.xxx_hidden_TotalPrice = nil
-}
+func (x *OpaqueOrderItem) ClearTotalPrice() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearGiftWrapped() {
-	x.xxx_hidden_GiftWrapped = nil
-}
+func (x *OpaqueOrderItem) ClearGiftWrapped() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderItem) ClearGiftMessage() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_GiftMessage = nil
-}
+func (x *OpaqueOrderItem) ClearGiftMessage() { _ = "STUB: not implemented"; return }
 
 type OpaqueOrderItem_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -4610,36 +2552,7 @@ type OpaqueOrderItem_builder struct {
 	GiftMessage        *string
 }
 
-func (b0 OpaqueOrderItem_builder) Build() *OpaqueOrderItem {
-	m0 := &OpaqueOrderItem{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 9)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	if b.VariantId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 9)
-		x.xxx_hidden_VariantId = b.VariantId
-	}
-	if b.ProductName != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 9)
-		x.xxx_hidden_ProductName = b.ProductName
-	}
-	if b.Quantity != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 9)
-		x.xxx_hidden_Quantity = *b.Quantity
-	}
-	x.xxx_hidden_UnitPrice = b.UnitPrice
-	x.xxx_hidden_TotalPrice = b.TotalPrice
-	x.xxx_hidden_SelectedAttributes = b.SelectedAttributes
-	x.xxx_hidden_GiftWrapped = b.GiftWrapped
-	if b.GiftMessage != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 9)
-		x.xxx_hidden_GiftMessage = b.GiftMessage
-	}
-	return m0
-}
+func (b0 OpaqueOrderItem_builder) Build() *OpaqueOrderItem { _ = "STUB: not implemented"; return nil }
 
 // OpaqueOrder represents a customer order
 type OpaqueOrder struct {
@@ -4669,512 +2582,192 @@ type OpaqueOrder struct {
 	sizeCache                  protoimpl.SizeCache
 }
 
-func (x *OpaqueOrder) Reset() {
-	*x = OpaqueOrder{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[25]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueOrder) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueOrder) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueOrder) ProtoMessage() {}
+func (*OpaqueOrder) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrder) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[25]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueOrder) GetOrderId() string {
-	if x != nil {
-		if x.xxx_hidden_OrderId != nil {
-			return *x.xxx_hidden_OrderId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetOrderId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) GetCustomerId() string {
-	if x != nil {
-		if x.xxx_hidden_CustomerId != nil {
-			return *x.xxx_hidden_CustomerId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetCustomerId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) GetItems() []*OpaqueOrderItem {
-	if x != nil {
-		if x.xxx_hidden_Items != nil {
-			return *x.xxx_hidden_Items
-		}
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetItems() []*OpaqueOrderItem { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetSubtotal() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_Subtotal
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetSubtotal() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetTax() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_Tax
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetTax() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetShipping() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_Shipping
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetShipping() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetTotal() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_Total
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetTotal() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetShippingAddress() *OpaqueAddress {
-	if x != nil {
-		return x.xxx_hidden_ShippingAddress
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetShippingAddress() *OpaqueAddress { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetBillingAddress() *OpaqueAddress {
-	if x != nil {
-		return x.xxx_hidden_BillingAddress
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetBillingAddress() *OpaqueAddress { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueOrder) GetStatus() OpaqueOrder_OpaqueOrderStatus {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 9) {
-			return x.xxx_hidden_Status
-		}
-	}
-	return OpaqueOrder_OPAQUE_ORDER_STATUS_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueOrder_OpaqueOrderStatus)
 }
 
-func (x *OpaqueOrder) GetPaymentMethodId() string {
-	if x != nil {
-		if x.xxx_hidden_PaymentMethodId != nil {
-			return *x.xxx_hidden_PaymentMethodId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetPaymentMethodId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) GetTrackingNumber() string {
-	if x != nil {
-		if x.xxx_hidden_TrackingNumber != nil {
-			return *x.xxx_hidden_TrackingNumber
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetTrackingNumber() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) GetCreatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_CreatedAt
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetCreatedAt() *timestamppb.Timestamp { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetUpdatedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_UpdatedAt
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetUpdatedAt() *timestamppb.Timestamp { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetShippedAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_ShippedAt
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetShippedAt() *timestamppb.Timestamp { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueOrder) GetDeliveredAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_DeliveredAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueOrder) GetShippingInfo() *OpaqueOrder_OpaqueShippingInfo {
-	if x != nil {
-		return x.xxx_hidden_ShippingInfo
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueOrder) GetMetadata() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_Metadata
-	}
-	return nil
-}
+func (x *OpaqueOrder) GetMetadata() map[string]string { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrder) GetCouponCode() string {
-	if x != nil {
-		if x, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_CouponCode); ok {
-			return x.CouponCode
-		}
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetCouponCode() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) GetPromotionId() string {
-	if x != nil {
-		if x, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_PromotionId); ok {
-			return x.PromotionId
-		}
-	}
-	return ""
-}
+func (x *OpaqueOrder) GetPromotionId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder) SetOrderId(v string) {
-	x.xxx_hidden_OrderId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 19)
-}
+func (x *OpaqueOrder) SetOrderId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetCustomerId(v string) {
-	x.xxx_hidden_CustomerId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 19)
-}
+func (x *OpaqueOrder) SetCustomerId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetItems(v []*OpaqueOrderItem) {
-	x.xxx_hidden_Items = &v
-}
+func (x *OpaqueOrder) SetItems(v []*OpaqueOrderItem) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetSubtotal(v *OpaquePrice) {
-	x.xxx_hidden_Subtotal = v
-}
+func (x *OpaqueOrder) SetSubtotal(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetTax(v *OpaquePrice) {
-	x.xxx_hidden_Tax = v
-}
+func (x *OpaqueOrder) SetTax(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetShipping(v *OpaquePrice) {
-	x.xxx_hidden_Shipping = v
-}
+func (x *OpaqueOrder) SetShipping(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetTotal(v *OpaquePrice) {
-	x.xxx_hidden_Total = v
-}
+func (x *OpaqueOrder) SetTotal(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetShippingAddress(v *OpaqueAddress) {
-	x.xxx_hidden_ShippingAddress = v
-}
+func (x *OpaqueOrder) SetShippingAddress(v *OpaqueAddress) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetBillingAddress(v *OpaqueAddress) {
-	x.xxx_hidden_BillingAddress = v
-}
+func (x *OpaqueOrder) SetBillingAddress(v *OpaqueAddress) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetStatus(v OpaqueOrder_OpaqueOrderStatus) {
-	x.xxx_hidden_Status = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 9, 19)
-}
+func (x *OpaqueOrder) SetStatus(v OpaqueOrder_OpaqueOrderStatus) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetPaymentMethodId(v string) {
-	x.xxx_hidden_PaymentMethodId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 10, 19)
-}
+func (x *OpaqueOrder) SetPaymentMethodId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetTrackingNumber(v string) {
-	x.xxx_hidden_TrackingNumber = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 11, 19)
-}
+func (x *OpaqueOrder) SetTrackingNumber(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetCreatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_CreatedAt = v
-}
+func (x *OpaqueOrder) SetCreatedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetUpdatedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_UpdatedAt = v
-}
+func (x *OpaqueOrder) SetUpdatedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetShippedAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_ShippedAt = v
-}
+func (x *OpaqueOrder) SetShippedAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetDeliveredAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_DeliveredAt = v
-}
+func (x *OpaqueOrder) SetDeliveredAt(v *timestamppb.Timestamp) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrder) SetShippingInfo(v *OpaqueOrder_OpaqueShippingInfo) {
-	x.xxx_hidden_ShippingInfo = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueOrder) SetMetadata(v map[string]string) {
-	x.xxx_hidden_Metadata = v
-}
+func (x *OpaqueOrder) SetMetadata(v map[string]string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetCouponCode(v string) {
-	x.xxx_hidden_DiscountApplied = &opaqueOrder_CouponCode{v}
-}
+func (x *OpaqueOrder) SetCouponCode(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) SetPromotionId(v string) {
-	x.xxx_hidden_DiscountApplied = &opaqueOrder_PromotionId{v}
-}
+func (x *OpaqueOrder) SetPromotionId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) HasOrderId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueOrder) HasOrderId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasCustomerId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueOrder) HasCustomerId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasSubtotal() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Subtotal != nil
-}
+func (x *OpaqueOrder) HasSubtotal() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasTax() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Tax != nil
-}
+func (x *OpaqueOrder) HasTax() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasShipping() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Shipping != nil
-}
+func (x *OpaqueOrder) HasShipping() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasTotal() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Total != nil
-}
+func (x *OpaqueOrder) HasTotal() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasShippingAddress() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ShippingAddress != nil
-}
+func (x *OpaqueOrder) HasShippingAddress() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasBillingAddress() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_BillingAddress != nil
-}
+func (x *OpaqueOrder) HasBillingAddress() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasStatus() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 9)
-}
+func (x *OpaqueOrder) HasStatus() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasPaymentMethodId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 10)
-}
+func (x *OpaqueOrder) HasPaymentMethodId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasTrackingNumber() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 11)
-}
+func (x *OpaqueOrder) HasTrackingNumber() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasCreatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_CreatedAt != nil
-}
+func (x *OpaqueOrder) HasCreatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasUpdatedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_UpdatedAt != nil
-}
+func (x *OpaqueOrder) HasUpdatedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasShippedAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ShippedAt != nil
-}
+func (x *OpaqueOrder) HasShippedAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasDeliveredAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_DeliveredAt != nil
-}
+func (x *OpaqueOrder) HasDeliveredAt() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasShippingInfo() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ShippingInfo != nil
-}
+func (x *OpaqueOrder) HasShippingInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasDiscountApplied() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_DiscountApplied != nil
-}
+func (x *OpaqueOrder) HasDiscountApplied() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasCouponCode() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_CouponCode)
-	return ok
-}
+func (x *OpaqueOrder) HasCouponCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) HasPromotionId() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_PromotionId)
-	return ok
-}
+func (x *OpaqueOrder) HasPromotionId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder) ClearOrderId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_OrderId = nil
-}
+func (x *OpaqueOrder) ClearOrderId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearCustomerId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_CustomerId = nil
-}
+func (x *OpaqueOrder) ClearCustomerId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearSubtotal() {
-	x.xxx_hidden_Subtotal = nil
-}
+func (x *OpaqueOrder) ClearSubtotal() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearTax() {
-	x.xxx_hidden_Tax = nil
-}
+func (x *OpaqueOrder) ClearTax() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearShipping() {
-	x.xxx_hidden_Shipping = nil
-}
+func (x *OpaqueOrder) ClearShipping() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearTotal() {
-	x.xxx_hidden_Total = nil
-}
+func (x *OpaqueOrder) ClearTotal() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearShippingAddress() {
-	x.xxx_hidden_ShippingAddress = nil
-}
+func (x *OpaqueOrder) ClearShippingAddress() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearBillingAddress() {
-	x.xxx_hidden_BillingAddress = nil
-}
+func (x *OpaqueOrder) ClearBillingAddress() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearStatus() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 9)
-	x.xxx_hidden_Status = OpaqueOrder_OPAQUE_ORDER_STATUS_UNSPECIFIED
-}
+func (x *OpaqueOrder) ClearStatus() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearPaymentMethodId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 10)
-	x.xxx_hidden_PaymentMethodId = nil
-}
+func (x *OpaqueOrder) ClearPaymentMethodId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearTrackingNumber() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 11)
-	x.xxx_hidden_TrackingNumber = nil
-}
+func (x *OpaqueOrder) ClearTrackingNumber() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearCreatedAt() {
-	x.xxx_hidden_CreatedAt = nil
-}
+func (x *OpaqueOrder) ClearCreatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearUpdatedAt() {
-	x.xxx_hidden_UpdatedAt = nil
-}
+func (x *OpaqueOrder) ClearUpdatedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearShippedAt() {
-	x.xxx_hidden_ShippedAt = nil
-}
+func (x *OpaqueOrder) ClearShippedAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearDeliveredAt() {
-	x.xxx_hidden_DeliveredAt = nil
-}
+func (x *OpaqueOrder) ClearDeliveredAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearShippingInfo() {
-	x.xxx_hidden_ShippingInfo = nil
-}
+func (x *OpaqueOrder) ClearShippingInfo() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearDiscountApplied() {
-	x.xxx_hidden_DiscountApplied = nil
-}
+func (x *OpaqueOrder) ClearDiscountApplied() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearCouponCode() {
-	if _, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_CouponCode); ok {
-		x.xxx_hidden_DiscountApplied = nil
-	}
-}
+func (x *OpaqueOrder) ClearCouponCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder) ClearPromotionId() {
-	if _, ok := x.xxx_hidden_DiscountApplied.(*opaqueOrder_PromotionId); ok {
-		x.xxx_hidden_DiscountApplied = nil
-	}
-}
+func (x *OpaqueOrder) ClearPromotionId() { _ = "STUB: not implemented"; return }
 
 const OpaqueOrder_DiscountApplied_not_set_case case_OpaqueOrder_DiscountApplied = 0
 const OpaqueOrder_CouponCode_case case_OpaqueOrder_DiscountApplied = 19
 const OpaqueOrder_PromotionId_case case_OpaqueOrder_DiscountApplied = 20
 
 func (x *OpaqueOrder) WhichDiscountApplied() case_OpaqueOrder_DiscountApplied {
-	if x == nil {
-		return OpaqueOrder_DiscountApplied_not_set_case
-	}
-	switch x.xxx_hidden_DiscountApplied.(type) {
-	case *opaqueOrder_CouponCode:
-		return OpaqueOrder_CouponCode_case
-	case *opaqueOrder_PromotionId:
-		return OpaqueOrder_PromotionId_case
-	default:
-		return OpaqueOrder_DiscountApplied_not_set_case
-	}
+	_ = "STUB: not implemented"
+	return *new(case_OpaqueOrder_DiscountApplied)
 }
 
 type OpaqueOrder_builder struct {
@@ -5204,61 +2797,11 @@ type OpaqueOrder_builder struct {
 	// -- end of xxx_hidden_DiscountApplied
 }
 
-func (b0 OpaqueOrder_builder) Build() *OpaqueOrder {
-	m0 := &OpaqueOrder{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.OrderId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 19)
-		x.xxx_hidden_OrderId = b.OrderId
-	}
-	if b.CustomerId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 19)
-		x.xxx_hidden_CustomerId = b.CustomerId
-	}
-	x.xxx_hidden_Items = &b.Items
-	x.xxx_hidden_Subtotal = b.Subtotal
-	x.xxx_hidden_Tax = b.Tax
-	x.xxx_hidden_Shipping = b.Shipping
-	x.xxx_hidden_Total = b.Total
-	x.xxx_hidden_ShippingAddress = b.ShippingAddress
-	x.xxx_hidden_BillingAddress = b.BillingAddress
-	if b.Status != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 9, 19)
-		x.xxx_hidden_Status = *b.Status
-	}
-	if b.PaymentMethodId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 10, 19)
-		x.xxx_hidden_PaymentMethodId = b.PaymentMethodId
-	}
-	if b.TrackingNumber != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 11, 19)
-		x.xxx_hidden_TrackingNumber = b.TrackingNumber
-	}
-	x.xxx_hidden_CreatedAt = b.CreatedAt
-	x.xxx_hidden_UpdatedAt = b.UpdatedAt
-	x.xxx_hidden_ShippedAt = b.ShippedAt
-	x.xxx_hidden_DeliveredAt = b.DeliveredAt
-	x.xxx_hidden_ShippingInfo = b.ShippingInfo
-	x.xxx_hidden_Metadata = b.Metadata
-	if b.CouponCode != nil {
-		x.xxx_hidden_DiscountApplied = &opaqueOrder_CouponCode{*b.CouponCode}
-	}
-	if b.PromotionId != nil {
-		x.xxx_hidden_DiscountApplied = &opaqueOrder_PromotionId{*b.PromotionId}
-	}
-	return m0
-}
+func (b0 OpaqueOrder_builder) Build() *OpaqueOrder { _ = "STUB: not implemented"; return nil }
 
 type case_OpaqueOrder_DiscountApplied protoreflect.FieldNumber
 
-func (x case_OpaqueOrder_DiscountApplied) String() string {
-	md := file_examples_internal_proto_examplepb_opaque_proto_msgTypes[25].Descriptor()
-	if x == 0 {
-		return "not set"
-	}
-	return protoimpl.X.MessageFieldStringOf(md, protoreflect.FieldNumber(x))
-}
+func (x case_OpaqueOrder_DiscountApplied) String() string { _ = "STUB: not implemented"; return "" }
 
 type isOpaqueOrder_DiscountApplied interface {
 	isOpaqueOrder_DiscountApplied()
@@ -5272,11 +2815,15 @@ type opaqueOrder_PromotionId struct {
 	PromotionId string `protobuf:"bytes,20,opt,name=promotion_id,json=promotionId,oneof"`
 }
 
-func (*opaqueOrder_CouponCode) isOpaqueOrder_DiscountApplied() {}
+func (*opaqueOrder_CouponCode) isOpaqueOrder_DiscountApplied() { _ = "STUB: not implemented"; return }
 
-func (*opaqueOrder_PromotionId) isOpaqueOrder_DiscountApplied() {}
+func (*opaqueOrder_PromotionId) isOpaqueOrder_DiscountApplied() {
+	_ = "STUB: not implemented"
 
-// OpaqueOrderSummary represents a summary of processed orders
+	// OpaqueOrderSummary represents a summary of processed orders
+	return
+}
+
 type OpaqueOrderSummary struct {
 	state                           protoimpl.MessageState                  `protogen:"opaque.v1"`
 	xxx_hidden_TotalOrdersProcessed int32                                   `protobuf:"varint,1,opt,name=total_orders_processed,json=totalOrdersProcessed"`
@@ -5293,181 +2840,89 @@ type OpaqueOrderSummary struct {
 	sizeCache                       protoimpl.SizeCache
 }
 
-func (x *OpaqueOrderSummary) Reset() {
-	*x = OpaqueOrderSummary{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[26]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueOrderSummary) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueOrderSummary) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueOrderSummary) ProtoMessage() {}
+func (*OpaqueOrderSummary) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderSummary) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[26]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueOrderSummary) GetTotalOrdersProcessed() int32 {
-	if x != nil {
-		return x.xxx_hidden_TotalOrdersProcessed
-	}
-	return 0
-}
+func (x *OpaqueOrderSummary) GetTotalOrdersProcessed() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueOrderSummary) GetSuccessfulOrders() int32 {
-	if x != nil {
-		return x.xxx_hidden_SuccessfulOrders
-	}
-	return 0
-}
+func (x *OpaqueOrderSummary) GetSuccessfulOrders() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueOrderSummary) GetFailedOrders() int32 {
-	if x != nil {
-		return x.xxx_hidden_FailedOrders
-	}
-	return 0
-}
+func (x *OpaqueOrderSummary) GetFailedOrders() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueOrderSummary) GetTotalValue() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_TotalValue
-	}
-	return nil
-}
+func (x *OpaqueOrderSummary) GetTotalValue() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueOrderSummary) GetOrderIds() []string {
-	if x != nil {
-		return x.xxx_hidden_OrderIds
-	}
-	return nil
-}
+func (x *OpaqueOrderSummary) GetOrderIds() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *OpaqueOrderSummary) GetErrorDetails() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_ErrorDetails
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueOrderSummary) GetProcessingTime() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_ProcessingTime
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueOrderSummary) GetErrors() []*OpaqueOrderSummary_OpaqueOrderError {
-	if x != nil {
-		if x.xxx_hidden_Errors != nil {
-			return *x.xxx_hidden_Errors
-		}
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueOrderSummary) SetTotalOrdersProcessed(v int32) {
-	x.xxx_hidden_TotalOrdersProcessed = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 8)
-}
+func (x *OpaqueOrderSummary) SetTotalOrdersProcessed(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) SetSuccessfulOrders(v int32) {
-	x.xxx_hidden_SuccessfulOrders = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 8)
-}
+func (x *OpaqueOrderSummary) SetSuccessfulOrders(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) SetFailedOrders(v int32) {
-	x.xxx_hidden_FailedOrders = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 8)
-}
+func (x *OpaqueOrderSummary) SetFailedOrders(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) SetTotalValue(v *OpaquePrice) {
-	x.xxx_hidden_TotalValue = v
-}
+func (x *OpaqueOrderSummary) SetTotalValue(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) SetOrderIds(v []string) {
-	x.xxx_hidden_OrderIds = v
-}
+func (x *OpaqueOrderSummary) SetOrderIds(v []string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderSummary) SetErrorDetails(v map[string]string) {
-	x.xxx_hidden_ErrorDetails = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary) SetProcessingTime(v *timestamppb.Timestamp) {
-	x.xxx_hidden_ProcessingTime = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary) SetErrors(v []*OpaqueOrderSummary_OpaqueOrderError) {
-	x.xxx_hidden_Errors = &v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary) HasTotalOrdersProcessed() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueOrderSummary) HasSuccessfulOrders() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueOrderSummary) HasSuccessfulOrders() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderSummary) HasFailedOrders() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueOrderSummary) HasFailedOrders() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderSummary) HasTotalValue() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_TotalValue != nil
-}
+func (x *OpaqueOrderSummary) HasTotalValue() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderSummary) HasProcessingTime() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ProcessingTime != nil
-}
+func (x *OpaqueOrderSummary) HasProcessingTime() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrderSummary) ClearTotalOrdersProcessed() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_TotalOrdersProcessed = 0
-}
+func (x *OpaqueOrderSummary) ClearTotalOrdersProcessed() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) ClearSuccessfulOrders() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_SuccessfulOrders = 0
-}
+func (x *OpaqueOrderSummary) ClearSuccessfulOrders() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) ClearFailedOrders() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_FailedOrders = 0
-}
+func (x *OpaqueOrderSummary) ClearFailedOrders() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) ClearTotalValue() {
-	x.xxx_hidden_TotalValue = nil
-}
+func (x *OpaqueOrderSummary) ClearTotalValue() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary) ClearProcessingTime() {
-	x.xxx_hidden_ProcessingTime = nil
-}
+func (x *OpaqueOrderSummary) ClearProcessingTime() { _ = "STUB: not implemented"; return }
 
 type OpaqueOrderSummary_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -5483,27 +2938,8 @@ type OpaqueOrderSummary_builder struct {
 }
 
 func (b0 OpaqueOrderSummary_builder) Build() *OpaqueOrderSummary {
-	m0 := &OpaqueOrderSummary{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.TotalOrdersProcessed != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 8)
-		x.xxx_hidden_TotalOrdersProcessed = *b.TotalOrdersProcessed
-	}
-	if b.SuccessfulOrders != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 8)
-		x.xxx_hidden_SuccessfulOrders = *b.SuccessfulOrders
-	}
-	if b.FailedOrders != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 8)
-		x.xxx_hidden_FailedOrders = *b.FailedOrders
-	}
-	x.xxx_hidden_TotalValue = b.TotalValue
-	x.xxx_hidden_OrderIds = b.OrderIds
-	x.xxx_hidden_ErrorDetails = b.ErrorDetails
-	x.xxx_hidden_ProcessingTime = b.ProcessingTime
-	x.xxx_hidden_Errors = &b.Errors
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueCustomerEvent represents a customer activity event
@@ -5528,356 +2964,131 @@ type OpaqueCustomerEvent struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueCustomerEvent) Reset() {
-	*x = OpaqueCustomerEvent{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[27]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCustomerEvent) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCustomerEvent) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCustomerEvent) ProtoMessage() {}
+func (*OpaqueCustomerEvent) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomerEvent) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[27]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueCustomerEvent) GetCustomerId() string {
-	if x != nil {
-		if x.xxx_hidden_CustomerId != nil {
-			return *x.xxx_hidden_CustomerId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetCustomerId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetSessionId() string {
-	if x != nil {
-		if x.xxx_hidden_SessionId != nil {
-			return *x.xxx_hidden_SessionId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetSessionId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueCustomerEvent) GetEventType() OpaqueCustomerEvent_OpaqueEventType {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 2) {
-			return x.xxx_hidden_EventType
-		}
-	}
-	return OpaqueCustomerEvent_OPAQUE_EVENT_TYPE_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueCustomerEvent_OpaqueEventType)
 }
 
 func (x *OpaqueCustomerEvent) GetTimestamp() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_Timestamp
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCustomerEvent) GetProductId() string {
-	if x != nil {
-		if x.xxx_hidden_ProductId != nil {
-			return *x.xxx_hidden_ProductId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetProductId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetCategoryId() string {
-	if x != nil {
-		if x.xxx_hidden_CategoryId != nil {
-			return *x.xxx_hidden_CategoryId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetCategoryId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetSearchQuery() string {
-	if x != nil {
-		if x.xxx_hidden_SearchQuery != nil {
-			return *x.xxx_hidden_SearchQuery
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetSearchQuery() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetPageUrl() string {
-	if x != nil {
-		if x.xxx_hidden_PageUrl != nil {
-			return *x.xxx_hidden_PageUrl
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetPageUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetValue() int32 {
-	if x != nil {
-		return x.xxx_hidden_Value
-	}
-	return 0
-}
+func (x *OpaqueCustomerEvent) GetValue() int32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueCustomerEvent) GetEventData() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_EventData
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCustomerEvent) GetDeviceType() string {
-	if x != nil {
-		if x.xxx_hidden_DeviceType != nil {
-			return *x.xxx_hidden_DeviceType
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetDeviceType() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetIpAddress() string {
-	if x != nil {
-		if x.xxx_hidden_IpAddress != nil {
-			return *x.xxx_hidden_IpAddress
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetIpAddress() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) GetUserAgent() string {
-	if x != nil {
-		if x.xxx_hidden_UserAgent != nil {
-			return *x.xxx_hidden_UserAgent
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomerEvent) GetUserAgent() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomerEvent) SetCustomerId(v string) {
-	x.xxx_hidden_CustomerId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 13)
-}
+func (x *OpaqueCustomerEvent) SetCustomerId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetSessionId(v string) {
-	x.xxx_hidden_SessionId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 13)
-}
+func (x *OpaqueCustomerEvent) SetSessionId(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomerEvent) SetEventType(v OpaqueCustomerEvent_OpaqueEventType) {
-	x.xxx_hidden_EventType = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 13)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomerEvent) SetTimestamp(v *timestamppb.Timestamp) {
-	x.xxx_hidden_Timestamp = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCustomerEvent) SetProductId(v string) {
-	x.xxx_hidden_ProductId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 13)
-}
+func (x *OpaqueCustomerEvent) SetProductId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetCategoryId(v string) {
-	x.xxx_hidden_CategoryId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 5, 13)
-}
+func (x *OpaqueCustomerEvent) SetCategoryId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetSearchQuery(v string) {
-	x.xxx_hidden_SearchQuery = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 6, 13)
-}
+func (x *OpaqueCustomerEvent) SetSearchQuery(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetPageUrl(v string) {
-	x.xxx_hidden_PageUrl = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 7, 13)
-}
+func (x *OpaqueCustomerEvent) SetPageUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetValue(v int32) {
-	x.xxx_hidden_Value = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 13)
-}
+func (x *OpaqueCustomerEvent) SetValue(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetEventData(v map[string]string) {
-	x.xxx_hidden_EventData = v
-}
+func (x *OpaqueCustomerEvent) SetEventData(v map[string]string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetDeviceType(v string) {
-	x.xxx_hidden_DeviceType = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 10, 13)
-}
+func (x *OpaqueCustomerEvent) SetDeviceType(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetIpAddress(v string) {
-	x.xxx_hidden_IpAddress = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 11, 13)
-}
+func (x *OpaqueCustomerEvent) SetIpAddress(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) SetUserAgent(v string) {
-	x.xxx_hidden_UserAgent = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 12, 13)
-}
+func (x *OpaqueCustomerEvent) SetUserAgent(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) HasCustomerId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueCustomerEvent) HasCustomerId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasSessionId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueCustomerEvent) HasSessionId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasEventType() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueCustomerEvent) HasEventType() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasTimestamp() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Timestamp != nil
-}
+func (x *OpaqueCustomerEvent) HasTimestamp() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasProductId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueCustomerEvent) HasProductId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasCategoryId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 5)
-}
+func (x *OpaqueCustomerEvent) HasCategoryId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasSearchQuery() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 6)
-}
+func (x *OpaqueCustomerEvent) HasSearchQuery() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasPageUrl() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 7)
-}
+func (x *OpaqueCustomerEvent) HasPageUrl() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasValue() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueCustomerEvent) HasValue() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasDeviceType() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 10)
-}
+func (x *OpaqueCustomerEvent) HasDeviceType() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasIpAddress() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 11)
-}
+func (x *OpaqueCustomerEvent) HasIpAddress() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) HasUserAgent() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 12)
-}
+func (x *OpaqueCustomerEvent) HasUserAgent() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueCustomerEvent) ClearCustomerId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_CustomerId = nil
-}
+func (x *OpaqueCustomerEvent) ClearCustomerId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearSessionId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_SessionId = nil
-}
+func (x *OpaqueCustomerEvent) ClearSessionId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearEventType() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_EventType = OpaqueCustomerEvent_OPAQUE_EVENT_TYPE_UNSPECIFIED
-}
+func (x *OpaqueCustomerEvent) ClearEventType() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearTimestamp() {
-	x.xxx_hidden_Timestamp = nil
-}
+func (x *OpaqueCustomerEvent) ClearTimestamp() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearProductId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_ProductId = nil
-}
+func (x *OpaqueCustomerEvent) ClearProductId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearCategoryId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 5)
-	x.xxx_hidden_CategoryId = nil
-}
+func (x *OpaqueCustomerEvent) ClearCategoryId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearSearchQuery() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 6)
-	x.xxx_hidden_SearchQuery = nil
-}
+func (x *OpaqueCustomerEvent) ClearSearchQuery() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearPageUrl() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 7)
-	x.xxx_hidden_PageUrl = nil
-}
+func (x *OpaqueCustomerEvent) ClearPageUrl() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearValue() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_Value = 0
-}
+func (x *OpaqueCustomerEvent) ClearValue() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearDeviceType() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 10)
-	x.xxx_hidden_DeviceType = nil
-}
+func (x *OpaqueCustomerEvent) ClearDeviceType() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearIpAddress() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 11)
-	x.xxx_hidden_IpAddress = nil
-}
+func (x *OpaqueCustomerEvent) ClearIpAddress() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomerEvent) ClearUserAgent() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 12)
-	x.xxx_hidden_UserAgent = nil
-}
+func (x *OpaqueCustomerEvent) ClearUserAgent() { _ = "STUB: not implemented"; return }
 
 type OpaqueCustomerEvent_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -5898,56 +3109,8 @@ type OpaqueCustomerEvent_builder struct {
 }
 
 func (b0 OpaqueCustomerEvent_builder) Build() *OpaqueCustomerEvent {
-	m0 := &OpaqueCustomerEvent{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.CustomerId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 13)
-		x.xxx_hidden_CustomerId = b.CustomerId
-	}
-	if b.SessionId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 13)
-		x.xxx_hidden_SessionId = b.SessionId
-	}
-	if b.EventType != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 13)
-		x.xxx_hidden_EventType = *b.EventType
-	}
-	x.xxx_hidden_Timestamp = b.Timestamp
-	if b.ProductId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 13)
-		x.xxx_hidden_ProductId = b.ProductId
-	}
-	if b.CategoryId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 5, 13)
-		x.xxx_hidden_CategoryId = b.CategoryId
-	}
-	if b.SearchQuery != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 6, 13)
-		x.xxx_hidden_SearchQuery = b.SearchQuery
-	}
-	if b.PageUrl != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 7, 13)
-		x.xxx_hidden_PageUrl = b.PageUrl
-	}
-	if b.Value != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 13)
-		x.xxx_hidden_Value = *b.Value
-	}
-	x.xxx_hidden_EventData = b.EventData
-	if b.DeviceType != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 10, 13)
-		x.xxx_hidden_DeviceType = b.DeviceType
-	}
-	if b.IpAddress != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 11, 13)
-		x.xxx_hidden_IpAddress = b.IpAddress
-	}
-	if b.UserAgent != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 12, 13)
-		x.xxx_hidden_UserAgent = b.UserAgent
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // OpaqueActivityUpdate represents a server response to customer activity
@@ -5973,406 +3136,167 @@ type OpaqueActivityUpdate struct {
 	sizeCache                     protoimpl.SizeCache
 }
 
-func (x *OpaqueActivityUpdate) Reset() {
-	*x = OpaqueActivityUpdate{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[28]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueActivityUpdate) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueActivityUpdate) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueActivityUpdate) ProtoMessage() {}
+func (*OpaqueActivityUpdate) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueActivityUpdate) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[28]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueActivityUpdate) GetCustomerId() string {
-	if x != nil {
-		if x.xxx_hidden_CustomerId != nil {
-			return *x.xxx_hidden_CustomerId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetCustomerId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueActivityUpdate) GetSessionId() string {
-	if x != nil {
-		if x.xxx_hidden_SessionId != nil {
-			return *x.xxx_hidden_SessionId
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetSessionId() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueActivityUpdate) GetUpdateType() OpaqueActivityUpdate_OpaqueUpdateType {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 2) {
-			return x.xxx_hidden_UpdateType
-		}
-	}
-	return OpaqueActivityUpdate_OPAQUE_UPDATE_TYPE_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueActivityUpdate_OpaqueUpdateType)
 }
 
 func (x *OpaqueActivityUpdate) GetTimestamp() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_Timestamp
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueActivityUpdate) GetMessage() string {
-	if x != nil {
-		if x.xxx_hidden_Message != nil {
-			return *x.xxx_hidden_Message
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetMessage() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueActivityUpdate) GetProductIds() []string {
-	if x != nil {
-		return x.xxx_hidden_ProductIds
-	}
-	return nil
-}
+func (x *OpaqueActivityUpdate) GetProductIds() []string { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueActivityUpdate) GetPriceUpdate() *OpaquePrice {
-	if x != nil {
-		return x.xxx_hidden_PriceUpdate
-	}
-	return nil
-}
+func (x *OpaqueActivityUpdate) GetPriceUpdate() *OpaquePrice { _ = "STUB: not implemented"; return nil }
 
-func (x *OpaqueActivityUpdate) GetInventoryCount() int32 {
-	if x != nil {
-		return x.xxx_hidden_InventoryCount
-	}
-	return 0
-}
+func (x *OpaqueActivityUpdate) GetInventoryCount() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueActivityUpdate) GetOfferCode() string {
-	if x != nil {
-		if x.xxx_hidden_OfferCode != nil {
-			return *x.xxx_hidden_OfferCode
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetOfferCode() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueActivityUpdate) GetOfferExpiry() *durationpb.Duration {
-	if x != nil {
-		return x.xxx_hidden_OfferExpiry
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueActivityUpdate) GetDiscountPercentage() float64 {
-	if x != nil {
-		return x.xxx_hidden_DiscountPercentage
-	}
-	return 0
-}
+func (x *OpaqueActivityUpdate) GetDiscountPercentage() float64 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueActivityUpdate) GetUpdateData() map[string]string {
-	if x != nil {
-		return x.xxx_hidden_UpdateData
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueActivityUpdate) GetPriority() int32 {
-	if x != nil {
-		return x.xxx_hidden_Priority
-	}
-	return 0
-}
+func (x *OpaqueActivityUpdate) GetPriority() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *OpaqueActivityUpdate) GetRedirectUrl() string {
-	if x != nil {
-		if x, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_RedirectUrl); ok {
-			return x.RedirectUrl
-		}
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetRedirectUrl() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueActivityUpdate) GetNotificationId() string {
-	if x != nil {
-		if x, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_NotificationId); ok {
-			return x.NotificationId
-		}
-	}
-	return ""
-}
+func (x *OpaqueActivityUpdate) GetNotificationId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueActivityUpdate) SetCustomerId(v string) {
-	x.xxx_hidden_CustomerId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 14)
-}
+func (x *OpaqueActivityUpdate) SetCustomerId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetSessionId(v string) {
-	x.xxx_hidden_SessionId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 14)
-}
+func (x *OpaqueActivityUpdate) SetSessionId(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueActivityUpdate) SetUpdateType(v OpaqueActivityUpdate_OpaqueUpdateType) {
-	x.xxx_hidden_UpdateType = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 14)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueActivityUpdate) SetTimestamp(v *timestamppb.Timestamp) {
-	x.xxx_hidden_Timestamp = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueActivityUpdate) SetMessage(v string) {
-	x.xxx_hidden_Message = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 14)
-}
+func (x *OpaqueActivityUpdate) SetMessage(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetProductIds(v []string) {
-	x.xxx_hidden_ProductIds = v
-}
+func (x *OpaqueActivityUpdate) SetProductIds(v []string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetPriceUpdate(v *OpaquePrice) {
-	x.xxx_hidden_PriceUpdate = v
-}
+func (x *OpaqueActivityUpdate) SetPriceUpdate(v *OpaquePrice) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetInventoryCount(v int32) {
-	x.xxx_hidden_InventoryCount = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 7, 14)
-}
+func (x *OpaqueActivityUpdate) SetInventoryCount(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetOfferCode(v string) {
-	x.xxx_hidden_OfferCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 8, 14)
-}
+func (x *OpaqueActivityUpdate) SetOfferCode(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueActivityUpdate) SetOfferExpiry(v *durationpb.Duration) {
-	x.xxx_hidden_OfferExpiry = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueActivityUpdate) SetDiscountPercentage(v float64) {
-	x.xxx_hidden_DiscountPercentage = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 10, 14)
-}
+func (x *OpaqueActivityUpdate) SetDiscountPercentage(v float64) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueActivityUpdate) SetUpdateData(v map[string]string) {
-	x.xxx_hidden_UpdateData = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueActivityUpdate) SetPriority(v int32) {
-	x.xxx_hidden_Priority = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 12, 14)
-}
+func (x *OpaqueActivityUpdate) SetPriority(v int32) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetRedirectUrl(v string) {
-	x.xxx_hidden_ActionData = &opaqueActivityUpdate_RedirectUrl{v}
-}
+func (x *OpaqueActivityUpdate) SetRedirectUrl(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) SetNotificationId(v string) {
-	x.xxx_hidden_ActionData = &opaqueActivityUpdate_NotificationId{v}
-}
+func (x *OpaqueActivityUpdate) SetNotificationId(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) HasCustomerId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueActivityUpdate) HasCustomerId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasSessionId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueActivityUpdate) HasSessionId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasUpdateType() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
-}
+func (x *OpaqueActivityUpdate) HasUpdateType() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasTimestamp() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_Timestamp != nil
-}
+func (x *OpaqueActivityUpdate) HasTimestamp() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasMessage() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
-}
+func (x *OpaqueActivityUpdate) HasMessage() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasPriceUpdate() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_PriceUpdate != nil
-}
+func (x *OpaqueActivityUpdate) HasPriceUpdate() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasInventoryCount() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 7)
-}
+func (x *OpaqueActivityUpdate) HasInventoryCount() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasOfferCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 8)
-}
+func (x *OpaqueActivityUpdate) HasOfferCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasOfferExpiry() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_OfferExpiry != nil
-}
+func (x *OpaqueActivityUpdate) HasOfferExpiry() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaqueActivityUpdate) HasDiscountPercentage() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 10)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueActivityUpdate) HasPriority() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 12)
-}
+func (x *OpaqueActivityUpdate) HasPriority() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasActionData() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ActionData != nil
-}
+func (x *OpaqueActivityUpdate) HasActionData() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasRedirectUrl() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_RedirectUrl)
-	return ok
-}
+func (x *OpaqueActivityUpdate) HasRedirectUrl() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) HasNotificationId() bool {
-	if x == nil {
-		return false
-	}
-	_, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_NotificationId)
-	return ok
-}
+func (x *OpaqueActivityUpdate) HasNotificationId() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueActivityUpdate) ClearCustomerId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_CustomerId = nil
-}
+func (x *OpaqueActivityUpdate) ClearCustomerId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearSessionId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_SessionId = nil
-}
+func (x *OpaqueActivityUpdate) ClearSessionId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearUpdateType() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_UpdateType = OpaqueActivityUpdate_OPAQUE_UPDATE_TYPE_UNSPECIFIED
-}
+func (x *OpaqueActivityUpdate) ClearUpdateType() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearTimestamp() {
-	x.xxx_hidden_Timestamp = nil
-}
+func (x *OpaqueActivityUpdate) ClearTimestamp() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearMessage() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_Message = nil
-}
+func (x *OpaqueActivityUpdate) ClearMessage() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearPriceUpdate() {
-	x.xxx_hidden_PriceUpdate = nil
-}
+func (x *OpaqueActivityUpdate) ClearPriceUpdate() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearInventoryCount() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 7)
-	x.xxx_hidden_InventoryCount = 0
-}
+func (x *OpaqueActivityUpdate) ClearInventoryCount() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearOfferCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 8)
-	x.xxx_hidden_OfferCode = nil
-}
+func (x *OpaqueActivityUpdate) ClearOfferCode() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearOfferExpiry() {
-	x.xxx_hidden_OfferExpiry = nil
-}
+func (x *OpaqueActivityUpdate) ClearOfferExpiry() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearDiscountPercentage() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 10)
-	x.xxx_hidden_DiscountPercentage = 0
-}
+func (x *OpaqueActivityUpdate) ClearDiscountPercentage() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearPriority() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 12)
-	x.xxx_hidden_Priority = 0
-}
+func (x *OpaqueActivityUpdate) ClearPriority() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearActionData() {
-	x.xxx_hidden_ActionData = nil
-}
+func (x *OpaqueActivityUpdate) ClearActionData() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearRedirectUrl() {
-	if _, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_RedirectUrl); ok {
-		x.xxx_hidden_ActionData = nil
-	}
-}
+func (x *OpaqueActivityUpdate) ClearRedirectUrl() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueActivityUpdate) ClearNotificationId() {
-	if _, ok := x.xxx_hidden_ActionData.(*opaqueActivityUpdate_NotificationId); ok {
-		x.xxx_hidden_ActionData = nil
-	}
-}
+func (x *OpaqueActivityUpdate) ClearNotificationId() { _ = "STUB: not implemented"; return }
 
 const OpaqueActivityUpdate_ActionData_not_set_case case_OpaqueActivityUpdate_ActionData = 0
 const OpaqueActivityUpdate_RedirectUrl_case case_OpaqueActivityUpdate_ActionData = 14
 const OpaqueActivityUpdate_NotificationId_case case_OpaqueActivityUpdate_ActionData = 15
 
 func (x *OpaqueActivityUpdate) WhichActionData() case_OpaqueActivityUpdate_ActionData {
-	if x == nil {
-		return OpaqueActivityUpdate_ActionData_not_set_case
-	}
-	switch x.xxx_hidden_ActionData.(type) {
-	case *opaqueActivityUpdate_RedirectUrl:
-		return OpaqueActivityUpdate_RedirectUrl_case
-	case *opaqueActivityUpdate_NotificationId:
-		return OpaqueActivityUpdate_NotificationId_case
-	default:
-		return OpaqueActivityUpdate_ActionData_not_set_case
-	}
+	_ = "STUB: not implemented"
+	return *new(case_OpaqueActivityUpdate_ActionData)
 }
 
 type OpaqueActivityUpdate_builder struct {
@@ -6398,64 +3322,13 @@ type OpaqueActivityUpdate_builder struct {
 }
 
 func (b0 OpaqueActivityUpdate_builder) Build() *OpaqueActivityUpdate {
-	m0 := &OpaqueActivityUpdate{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.CustomerId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 14)
-		x.xxx_hidden_CustomerId = b.CustomerId
-	}
-	if b.SessionId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 14)
-		x.xxx_hidden_SessionId = b.SessionId
-	}
-	if b.UpdateType != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 14)
-		x.xxx_hidden_UpdateType = *b.UpdateType
-	}
-	x.xxx_hidden_Timestamp = b.Timestamp
-	if b.Message != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 14)
-		x.xxx_hidden_Message = b.Message
-	}
-	x.xxx_hidden_ProductIds = b.ProductIds
-	x.xxx_hidden_PriceUpdate = b.PriceUpdate
-	if b.InventoryCount != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 7, 14)
-		x.xxx_hidden_InventoryCount = *b.InventoryCount
-	}
-	if b.OfferCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 8, 14)
-		x.xxx_hidden_OfferCode = b.OfferCode
-	}
-	x.xxx_hidden_OfferExpiry = b.OfferExpiry
-	if b.DiscountPercentage != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 10, 14)
-		x.xxx_hidden_DiscountPercentage = *b.DiscountPercentage
-	}
-	x.xxx_hidden_UpdateData = b.UpdateData
-	if b.Priority != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 12, 14)
-		x.xxx_hidden_Priority = *b.Priority
-	}
-	if b.RedirectUrl != nil {
-		x.xxx_hidden_ActionData = &opaqueActivityUpdate_RedirectUrl{*b.RedirectUrl}
-	}
-	if b.NotificationId != nil {
-		x.xxx_hidden_ActionData = &opaqueActivityUpdate_NotificationId{*b.NotificationId}
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type case_OpaqueActivityUpdate_ActionData protoreflect.FieldNumber
 
-func (x case_OpaqueActivityUpdate_ActionData) String() string {
-	md := file_examples_internal_proto_examplepb_opaque_proto_msgTypes[28].Descriptor()
-	if x == 0 {
-		return "not set"
-	}
-	return protoimpl.X.MessageFieldStringOf(md, protoreflect.FieldNumber(x))
-}
+func (x case_OpaqueActivityUpdate_ActionData) String() string { _ = "STUB: not implemented"; return "" }
 
 type isOpaqueActivityUpdate_ActionData interface {
 	isOpaqueActivityUpdate_ActionData()
@@ -6469,9 +3342,15 @@ type opaqueActivityUpdate_NotificationId struct {
 	NotificationId string `protobuf:"bytes,15,opt,name=notification_id,json=notificationId,oneof"`
 }
 
-func (*opaqueActivityUpdate_RedirectUrl) isOpaqueActivityUpdate_ActionData() {}
+func (*opaqueActivityUpdate_RedirectUrl) isOpaqueActivityUpdate_ActionData() {
+	_ = "STUB: not implemented"
+	return
+}
 
-func (*opaqueActivityUpdate_NotificationId) isOpaqueActivityUpdate_ActionData() {}
+func (*opaqueActivityUpdate_NotificationId) isOpaqueActivityUpdate_ActionData() {
+	_ = "STUB: not implemented"
+	return
+}
 
 type OpaqueProduct_OpaqueProductDimensions struct {
 	state                  protoimpl.MessageState                           `protogen:"opaque.v1"`
@@ -6486,152 +3365,104 @@ type OpaqueProduct_OpaqueProductDimensions struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) Reset() {
-	*x = OpaqueProduct_OpaqueProductDimensions{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[34]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) Reset() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) String() string {
-	return protoimpl.X.MessageStringOf(x)
+	_ = "STUB: not implemented"
+	return ""
 }
 
-func (*OpaqueProduct_OpaqueProductDimensions) ProtoMessage() {}
+func (*OpaqueProduct_OpaqueProductDimensions) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[34]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) GetLength() float64 {
-	if x != nil {
-		return x.xxx_hidden_Length
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) GetWidth() float64 {
-	if x != nil {
-		return x.xxx_hidden_Width
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) GetHeight() float64 {
-	if x != nil {
-		return x.xxx_hidden_Height
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) GetWeight() float64 {
-	if x != nil {
-		return x.xxx_hidden_Weight
-	}
+	_ = "STUB: not implemented"
 	return 0
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) GetUnit() OpaqueProduct_OpaqueProductDimensions_OpaqueUnit {
-	if x != nil {
-		if protoimpl.X.Present(&(x.XXX_presence[0]), 4) {
-			return x.xxx_hidden_Unit
-		}
-	}
-	return OpaqueProduct_OpaqueProductDimensions_OPAQUE_UNIT_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(OpaqueProduct_OpaqueProductDimensions_OpaqueUnit)
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) SetLength(v float64) {
-	x.xxx_hidden_Length = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) SetWidth(v float64) {
-	x.xxx_hidden_Width = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) SetHeight(v float64) {
-	x.xxx_hidden_Height = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) SetWeight(v float64) {
-	x.xxx_hidden_Weight = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) SetUnit(v OpaqueProduct_OpaqueProductDimensions_OpaqueUnit) {
-	x.xxx_hidden_Unit = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 5)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) HasLength() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) HasWidth() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) HasHeight() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) HasWeight() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueProduct_OpaqueProductDimensions) HasUnit() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) ClearLength() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_Length = 0
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) ClearLength() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) ClearWidth() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Width = 0
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) ClearWidth() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) ClearHeight() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_Height = 0
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) ClearHeight() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) ClearWeight() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_Weight = 0
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) ClearWeight() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueProduct_OpaqueProductDimensions) ClearUnit() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
-	x.xxx_hidden_Unit = OpaqueProduct_OpaqueProductDimensions_OPAQUE_UNIT_UNSPECIFIED
-}
+func (x *OpaqueProduct_OpaqueProductDimensions) ClearUnit() { _ = "STUB: not implemented"; return }
 
 type OpaqueProduct_OpaqueProductDimensions_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -6644,30 +3475,8 @@ type OpaqueProduct_OpaqueProductDimensions_builder struct {
 }
 
 func (b0 OpaqueProduct_OpaqueProductDimensions_builder) Build() *OpaqueProduct_OpaqueProductDimensions {
-	m0 := &OpaqueProduct_OpaqueProductDimensions{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.Length != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 5)
-		x.xxx_hidden_Length = *b.Length
-	}
-	if b.Width != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 5)
-		x.xxx_hidden_Width = *b.Width
-	}
-	if b.Height != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 5)
-		x.xxx_hidden_Height = *b.Height
-	}
-	if b.Weight != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 5)
-		x.xxx_hidden_Weight = *b.Weight
-	}
-	if b.Unit != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 5)
-		x.xxx_hidden_Unit = *b.Unit
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type OpaqueCustomer_OpaqueLoyaltyInfo struct {
@@ -6682,114 +3491,62 @@ type OpaqueCustomer_OpaqueLoyaltyInfo struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) Reset() {
-	*x = OpaqueCustomer_OpaqueLoyaltyInfo{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[35]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCustomer_OpaqueLoyaltyInfo) ProtoMessage() {}
+func (*OpaqueCustomer_OpaqueLoyaltyInfo) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[35]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetTier() string {
-	if x != nil {
-		if x.xxx_hidden_Tier != nil {
-			return *x.xxx_hidden_Tier
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetTier() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetPoints() int32 {
-	if x != nil {
-		return x.xxx_hidden_Points
-	}
-	return 0
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetPoints() int32 { _ = "STUB: not implemented"; return 0 }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetTierExpiry() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_TierExpiry
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) GetRewards() []string {
-	if x != nil {
-		return x.xxx_hidden_Rewards
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetTier(v string) {
-	x.xxx_hidden_Tier = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 4)
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetTier(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetPoints(v int32) {
-	x.xxx_hidden_Points = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 4)
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetPoints(v int32) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetTierExpiry(v *timestamppb.Timestamp) {
-	x.xxx_hidden_TierExpiry = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) SetRewards(v []string) {
-	x.xxx_hidden_Rewards = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) HasTier() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) HasTier() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) HasPoints() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaqueLoyaltyInfo) HasTierExpiry() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_TierExpiry != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearTier() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_Tier = nil
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearTier() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearPoints() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Points = 0
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearPoints() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearTierExpiry() {
-	x.xxx_hidden_TierExpiry = nil
-}
+func (x *OpaqueCustomer_OpaqueLoyaltyInfo) ClearTierExpiry() { _ = "STUB: not implemented"; return }
 
 type OpaqueCustomer_OpaqueLoyaltyInfo_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -6801,20 +3558,8 @@ type OpaqueCustomer_OpaqueLoyaltyInfo_builder struct {
 }
 
 func (b0 OpaqueCustomer_OpaqueLoyaltyInfo_builder) Build() *OpaqueCustomer_OpaqueLoyaltyInfo {
-	m0 := &OpaqueCustomer_OpaqueLoyaltyInfo{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.Tier != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 4)
-		x.xxx_hidden_Tier = b.Tier
-	}
-	if b.Points != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 4)
-		x.xxx_hidden_Points = *b.Points
-	}
-	x.xxx_hidden_TierExpiry = b.TierExpiry
-	x.xxx_hidden_Rewards = b.Rewards
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type OpaqueCustomer_OpaquePaymentMethod struct {
@@ -6831,184 +3576,112 @@ type OpaqueCustomer_OpaquePaymentMethod struct {
 	sizeCache              protoimpl.SizeCache
 }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) Reset() {
-	*x = OpaqueCustomer_OpaquePaymentMethod{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[37]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueCustomer_OpaquePaymentMethod) ProtoMessage() {}
+func (*OpaqueCustomer_OpaquePaymentMethod) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[37]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) GetPaymentId() string {
-	if x != nil {
-		if x.xxx_hidden_PaymentId != nil {
-			return *x.xxx_hidden_PaymentId
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) GetType() string {
-	if x != nil {
-		if x.xxx_hidden_Type != nil {
-			return *x.xxx_hidden_Type
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) GetType() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) GetLastFour() string {
-	if x != nil {
-		if x.xxx_hidden_LastFour != nil {
-			return *x.xxx_hidden_LastFour
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) GetProvider() string {
-	if x != nil {
-		if x.xxx_hidden_Provider != nil {
-			return *x.xxx_hidden_Provider
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) GetExpiresAt() *timestamppb.Timestamp {
-	if x != nil {
-		return x.xxx_hidden_ExpiresAt
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) GetIsDefault() bool {
-	if x != nil {
-		return x.xxx_hidden_IsDefault
-	}
+	_ = "STUB: not implemented"
 	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) SetPaymentId(v string) {
-	x.xxx_hidden_PaymentId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 6)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) SetType(v string) {
-	x.xxx_hidden_Type = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 6)
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) SetType(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) SetLastFour(v string) {
-	x.xxx_hidden_LastFour = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 6)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) SetProvider(v string) {
-	x.xxx_hidden_Provider = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 6)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) SetExpiresAt(v *timestamppb.Timestamp) {
-	x.xxx_hidden_ExpiresAt = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) SetIsDefault(v bool) {
-	x.xxx_hidden_IsDefault = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 5, 6)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasPaymentId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasType() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasLastFour() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasProvider() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasExpiresAt() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_ExpiresAt != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueCustomer_OpaquePaymentMethod) HasIsDefault() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 5)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearPaymentId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_PaymentId = nil
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearPaymentId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearType() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Type = nil
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearType() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearLastFour() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_LastFour = nil
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearLastFour() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearProvider() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
-	x.xxx_hidden_Provider = nil
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearProvider() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearExpiresAt() {
-	x.xxx_hidden_ExpiresAt = nil
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearExpiresAt() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueCustomer_OpaquePaymentMethod) ClearIsDefault() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 5)
-	x.xxx_hidden_IsDefault = false
-}
+func (x *OpaqueCustomer_OpaquePaymentMethod) ClearIsDefault() { _ = "STUB: not implemented"; return }
 
 type OpaqueCustomer_OpaquePaymentMethod_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
@@ -7022,31 +3695,8 @@ type OpaqueCustomer_OpaquePaymentMethod_builder struct {
 }
 
 func (b0 OpaqueCustomer_OpaquePaymentMethod_builder) Build() *OpaqueCustomer_OpaquePaymentMethod {
-	m0 := &OpaqueCustomer_OpaquePaymentMethod{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.PaymentId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 6)
-		x.xxx_hidden_PaymentId = b.PaymentId
-	}
-	if b.Type != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 6)
-		x.xxx_hidden_Type = b.Type
-	}
-	if b.LastFour != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 6)
-		x.xxx_hidden_LastFour = b.LastFour
-	}
-	if b.Provider != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 6)
-		x.xxx_hidden_Provider = b.Provider
-	}
-	x.xxx_hidden_ExpiresAt = b.ExpiresAt
-	if b.IsDefault != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 5, 6)
-		x.xxx_hidden_IsDefault = *b.IsDefault
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type OpaqueOrder_OpaqueShippingInfo struct {
@@ -7061,116 +3711,61 @@ type OpaqueOrder_OpaqueShippingInfo struct {
 	sizeCache                        protoimpl.SizeCache
 }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) Reset() {
-	*x = OpaqueOrder_OpaqueShippingInfo{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[39]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueOrder_OpaqueShippingInfo) ProtoMessage() {}
+func (*OpaqueOrder_OpaqueShippingInfo) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[39]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) GetCarrier() string {
-	if x != nil {
-		if x.xxx_hidden_Carrier != nil {
-			return *x.xxx_hidden_Carrier
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) GetCarrier() string { _ = "STUB: not implemented"; return "" }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) GetMethod() string {
-	if x != nil {
-		if x.xxx_hidden_Method != nil {
-			return *x.xxx_hidden_Method
-		}
-		return ""
-	}
-	return ""
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) GetMethod() string { _ = "STUB: not implemented"; return "" }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) GetEstimatedDeliveryTime() *durationpb.Duration {
-	if x != nil {
-		return x.xxx_hidden_EstimatedDeliveryTime
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) GetTrackingUrls() []string {
-	if x != nil {
-		return x.xxx_hidden_TrackingUrls
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) SetCarrier(v string) {
-	x.xxx_hidden_Carrier = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 4)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) SetCarrier(v string) { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) SetMethod(v string) {
-	x.xxx_hidden_Method = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 4)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) SetMethod(v string) { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) SetEstimatedDeliveryTime(v *durationpb.Duration) {
-	x.xxx_hidden_EstimatedDeliveryTime = v
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) SetTrackingUrls(v []string) {
-	x.xxx_hidden_TrackingUrls = v
+	_ = "STUB: not implemented"
+	return
 }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) HasCarrier() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) HasCarrier() bool { _ = "STUB: not implemented"; return false }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) HasMethod() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) HasMethod() bool { _ = "STUB: not implemented"; return false }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) HasEstimatedDeliveryTime() bool {
-	if x == nil {
-		return false
-	}
-	return x.xxx_hidden_EstimatedDeliveryTime != nil
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) ClearCarrier() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_Carrier = nil
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) ClearCarrier() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrder_OpaqueShippingInfo) ClearMethod() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_Method = nil
-}
+func (x *OpaqueOrder_OpaqueShippingInfo) ClearMethod() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrder_OpaqueShippingInfo) ClearEstimatedDeliveryTime() {
-	x.xxx_hidden_EstimatedDeliveryTime = nil
+	_ = "STUB: not implemented"
+	return
 }
 
 type OpaqueOrder_OpaqueShippingInfo_builder struct {
@@ -7183,20 +3778,8 @@ type OpaqueOrder_OpaqueShippingInfo_builder struct {
 }
 
 func (b0 OpaqueOrder_OpaqueShippingInfo_builder) Build() *OpaqueOrder_OpaqueShippingInfo {
-	m0 := &OpaqueOrder_OpaqueShippingInfo{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.Carrier != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 4)
-		x.xxx_hidden_Carrier = b.Carrier
-	}
-	if b.Method != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 4)
-		x.xxx_hidden_Method = b.Method
-	}
-	x.xxx_hidden_EstimatedDeliveryTime = b.EstimatedDeliveryTime
-	x.xxx_hidden_TrackingUrls = b.TrackingUrls
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type OpaqueOrderSummary_OpaqueOrderError struct {
@@ -7210,110 +3793,69 @@ type OpaqueOrderSummary_OpaqueOrderError struct {
 	sizeCache               protoimpl.SizeCache
 }
 
-func (x *OpaqueOrderSummary_OpaqueOrderError) Reset() {
-	*x = OpaqueOrderSummary_OpaqueOrderError{}
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[42]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
+func (x *OpaqueOrderSummary_OpaqueOrderError) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary_OpaqueOrderError) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *OpaqueOrderSummary_OpaqueOrderError) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*OpaqueOrderSummary_OpaqueOrderError) ProtoMessage() {}
+func (*OpaqueOrderSummary_OpaqueOrderError) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) ProtoReflect() protoreflect.Message {
-	mi := &file_examples_internal_proto_examplepb_opaque_proto_msgTypes[42]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) GetOrderId() string {
-	if x != nil {
-		if x.xxx_hidden_OrderId != nil {
-			return *x.xxx_hidden_OrderId
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) GetErrorCode() string {
-	if x != nil {
-		if x.xxx_hidden_ErrorCode != nil {
-			return *x.xxx_hidden_ErrorCode
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) GetErrorMessage() string {
-	if x != nil {
-		if x.xxx_hidden_ErrorMessage != nil {
-			return *x.xxx_hidden_ErrorMessage
-		}
-		return ""
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) SetOrderId(v string) {
-	x.xxx_hidden_OrderId = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 0, 3)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) SetErrorCode(v string) {
-	x.xxx_hidden_ErrorCode = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 1, 3)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) SetErrorMessage(v string) {
-	x.xxx_hidden_ErrorMessage = &v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 3)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) HasOrderId() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 0)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) HasErrorCode() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 1)
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) HasErrorMessage() bool {
-	if x == nil {
-		return false
-	}
-	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *OpaqueOrderSummary_OpaqueOrderError) ClearOrderId() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 0)
-	x.xxx_hidden_OrderId = nil
-}
+func (x *OpaqueOrderSummary_OpaqueOrderError) ClearOrderId() { _ = "STUB: not implemented"; return }
 
-func (x *OpaqueOrderSummary_OpaqueOrderError) ClearErrorCode() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 1)
-	x.xxx_hidden_ErrorCode = nil
-}
+func (x *OpaqueOrderSummary_OpaqueOrderError) ClearErrorCode() { _ = "STUB: not implemented"; return }
 
 func (x *OpaqueOrderSummary_OpaqueOrderError) ClearErrorMessage() {
-	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
-	x.xxx_hidden_ErrorMessage = nil
+	_ = "STUB: not implemented"
+	return
 }
 
 type OpaqueOrderSummary_OpaqueOrderError_builder struct {
@@ -7325,22 +3867,8 @@ type OpaqueOrderSummary_OpaqueOrderError_builder struct {
 }
 
 func (b0 OpaqueOrderSummary_OpaqueOrderError_builder) Build() *OpaqueOrderSummary_OpaqueOrderError {
-	m0 := &OpaqueOrderSummary_OpaqueOrderError{}
-	b, x := &b0, m0
-	_, _ = b, x
-	if b.OrderId != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 0, 3)
-		x.xxx_hidden_OrderId = b.OrderId
-	}
-	if b.ErrorCode != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 1, 3)
-		x.xxx_hidden_ErrorCode = b.ErrorCode
-	}
-	if b.ErrorMessage != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 3)
-		x.xxx_hidden_ErrorMessage = b.ErrorMessage
-	}
-	return m0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 var File_examples_internal_proto_examplepb_opaque_proto protoreflect.FileDescriptor
@@ -7915,43 +4443,5 @@ var file_examples_internal_proto_examplepb_opaque_proto_depIdxs = []int32{
 	0,  // [0:86] is the sub-list for field type_name
 }
 
-func init() { file_examples_internal_proto_examplepb_opaque_proto_init() }
-func file_examples_internal_proto_examplepb_opaque_proto_init() {
-	if File_examples_internal_proto_examplepb_opaque_proto != nil {
-		return
-	}
-	file_examples_internal_proto_examplepb_opaque_proto_msgTypes[21].OneofWrappers = []any{
-		(*opaqueProductVariant_PercentageOff)(nil),
-		(*opaqueProductVariant_FixedAmountOff)(nil),
-	}
-	file_examples_internal_proto_examplepb_opaque_proto_msgTypes[22].OneofWrappers = []any{
-		(*opaqueProduct_TaxPercentage)(nil),
-		(*opaqueProduct_TaxExempt)(nil),
-	}
-	file_examples_internal_proto_examplepb_opaque_proto_msgTypes[25].OneofWrappers = []any{
-		(*opaqueOrder_CouponCode)(nil),
-		(*opaqueOrder_PromotionId)(nil),
-	}
-	file_examples_internal_proto_examplepb_opaque_proto_msgTypes[28].OneofWrappers = []any{
-		(*opaqueActivityUpdate_RedirectUrl)(nil),
-		(*opaqueActivityUpdate_NotificationId)(nil),
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_examples_internal_proto_examplepb_opaque_proto_rawDesc), len(file_examples_internal_proto_examplepb_opaque_proto_rawDesc)),
-			NumEnums:      8,
-			NumMessages:   45,
-			NumExtensions: 0,
-			NumServices:   1,
-		},
-		GoTypes:           file_examples_internal_proto_examplepb_opaque_proto_goTypes,
-		DependencyIndexes: file_examples_internal_proto_examplepb_opaque_proto_depIdxs,
-		EnumInfos:         file_examples_internal_proto_examplepb_opaque_proto_enumTypes,
-		MessageInfos:      file_examples_internal_proto_examplepb_opaque_proto_msgTypes,
-	}.Build()
-	File_examples_internal_proto_examplepb_opaque_proto = out.File
-	file_examples_internal_proto_examplepb_opaque_proto_goTypes = nil
-	file_examples_internal_proto_examplepb_opaque_proto_depIdxs = nil
-}
+func init()                                                     { file_examples_internal_proto_examplepb_opaque_proto_init() }
+func file_examples_internal_proto_examplepb_opaque_proto_init() { _ = "STUB: not implemented"; return }

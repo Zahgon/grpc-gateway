@@ -4,11 +4,8 @@ package models
 
 import (
 	"context"
-	stderrors "errors"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
 )
 
 // ExamplepbDynamicMessageUpdate examplepb dynamic message update
@@ -25,94 +22,37 @@ type ExamplepbDynamicMessageUpdate struct {
 
 // Validate validates this examplepb dynamic message update
 func (m *ExamplepbDynamicMessageUpdate) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.validateBody(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbDynamicMessageUpdate) validateBody(formats strfmt.Registry) error {
-	if swag.IsZero(m.Body) { // not required
-		return nil
-	}
-
-	if m.Body != nil {
-		if err := m.Body.Validate(formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("body")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("body")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
+	// not required
 }
 
 // ContextValidate validate this examplepb dynamic message update based on the context it is used
 func (m *ExamplepbDynamicMessageUpdate) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := m.contextValidateBody(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m *ExamplepbDynamicMessageUpdate) contextValidateBody(ctx context.Context, formats strfmt.Registry) error {
-
-	if m.Body != nil {
-
-		if swag.IsZero(m.Body) { // not required
-			return nil
-		}
-
-		if err := m.Body.ContextValidate(ctx, formats); err != nil {
-			ve := new(errors.Validation)
-			if stderrors.As(err, &ve) {
-				return ve.ValidateName("body")
-			}
-			ce := new(errors.CompositeError)
-			if stderrors.As(err, &ce) {
-				return ce.ValidateName("body")
-			}
-
-			return err
-		}
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 // MarshalBinary interface implementation
 func (m *ExamplepbDynamicMessageUpdate) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (m *ExamplepbDynamicMessageUpdate) UnmarshalBinary(b []byte) error {
-	var res ExamplepbDynamicMessageUpdate
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
+	_ = "STUB: not implemented"
 	return nil
 }

@@ -4,16 +4,9 @@ package a_bit_of_everything
 
 import (
 	"context"
-	"encoding/json"
-	stderrors "errors"
-	"fmt"
-	"io"
 
-	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/go-openapi/validate"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/clients/abe/models"
 )
@@ -25,52 +18,14 @@ type ABitOfEverythingServiceUpdateBookReader struct {
 
 // ReadResponse reads a server response into the received o.
 func (o *ABitOfEverythingServiceUpdateBookReader) ReadResponse(response runtime.ClientResponse, consumer runtime.Consumer) (any, error) {
-	switch response.Code() {
-	case 200:
-		result := NewABitOfEverythingServiceUpdateBookOK()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return result, nil
-	case 403:
-		result := NewABitOfEverythingServiceUpdateBookForbidden()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 404:
-		result := NewABitOfEverythingServiceUpdateBookNotFound()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 418:
-		result := NewABitOfEverythingServiceUpdateBookIMATeapot()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	case 500:
-		result := NewABitOfEverythingServiceUpdateBookInternalServerError()
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		return nil, result
-	default:
-		result := NewABitOfEverythingServiceUpdateBookDefault(response.Code())
-		if err := result.readResponse(response, consumer, o.formats); err != nil {
-			return nil, err
-		}
-		if response.Code()/100 == 2 {
-			return result, nil
-		}
-		return nil, result
-	}
+	_ = "STUB: not implemented"
+	return *new(any), nil
 }
 
 // NewABitOfEverythingServiceUpdateBookOK creates a ABitOfEverythingServiceUpdateBookOK with default headers values
 func NewABitOfEverythingServiceUpdateBookOK() *ABitOfEverythingServiceUpdateBookOK {
-	return &ABitOfEverythingServiceUpdateBookOK{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -84,63 +39,62 @@ type ABitOfEverythingServiceUpdateBookOK struct {
 
 // IsSuccess returns true when this a bit of everything service update book o k response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookOK) IsSuccess() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update book o k response has a 3xx status code
+	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update book o k response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookOK) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update book o k response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update book o k response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookOK) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update book o k response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update book o k response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateBookOK) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update book o k response a status code equal to that given
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update book o k response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateBookOK) IsCode(code int) bool {
-	return code == 200
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book o k response
 }
 
-// Code gets the status code for the a bit of everything service update book o k response
-func (o *ABitOfEverythingServiceUpdateBookOK) Code() int {
-	return 200
-}
+func (o *ABitOfEverythingServiceUpdateBookOK) Code() int { _ = "STUB: not implemented"; return 0 }
 
-func (o *ABitOfEverythingServiceUpdateBookOK) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateBookOK) Error() string { _ = "STUB: not implemented"; return "" }
 
-func (o *ABitOfEverythingServiceUpdateBookOK) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookOK %s", 200, payload)
-}
+func (o *ABitOfEverythingServiceUpdateBookOK) String() string { _ = "STUB: not implemented"; return "" }
 
 func (o *ABitOfEverythingServiceUpdateBookOK) GetPayload() *models.ExamplepbBook {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceUpdateBookOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbBook)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceUpdateBookOK) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceUpdateBookForbidden creates a ABitOfEverythingServiceUpdateBookForbidden with default headers values
 func NewABitOfEverythingServiceUpdateBookForbidden() *ABitOfEverythingServiceUpdateBookForbidden {
-	return &ABitOfEverythingServiceUpdateBookForbidden{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -154,61 +108,71 @@ type ABitOfEverythingServiceUpdateBookForbidden struct {
 
 // IsSuccess returns true when this a bit of everything service update book forbidden response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookForbidden) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update book forbidden response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update book forbidden response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookForbidden) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update book forbidden response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update book forbidden response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookForbidden) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update book forbidden response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateBookForbidden) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update book forbidden response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update book forbidden response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateBookForbidden) IsCode(code int) bool {
-	return code == 403
+func (o *ABitOfEverythingServiceUpdateBookForbidden) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update book forbidden response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update book forbidden response
+func (o *ABitOfEverythingServiceUpdateBookForbidden) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book forbidden response
+}
+
 func (o *ABitOfEverythingServiceUpdateBookForbidden) Code() int {
-	return 403
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceUpdateBookForbidden) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookForbidden) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookForbidden %s", 403, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookForbidden) GetPayload() any {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(any)
 }
 
 func (o *ABitOfEverythingServiceUpdateBookForbidden) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookNotFound creates a ABitOfEverythingServiceUpdateBookNotFound with default headers values
 func NewABitOfEverythingServiceUpdateBookNotFound() *ABitOfEverythingServiceUpdateBookNotFound {
-	return &ABitOfEverythingServiceUpdateBookNotFound{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -222,61 +186,68 @@ type ABitOfEverythingServiceUpdateBookNotFound struct {
 
 // IsSuccess returns true when this a bit of everything service update book not found response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookNotFound) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update book not found response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update book not found response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookNotFound) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update book not found response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update book not found response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookNotFound) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update book not found response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateBookNotFound) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update book not found response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update book not found response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateBookNotFound) IsCode(code int) bool {
-	return code == 404
+func (o *ABitOfEverythingServiceUpdateBookNotFound) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update book not found response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update book not found response
-func (o *ABitOfEverythingServiceUpdateBookNotFound) Code() int {
-	return 404
+func (o *ABitOfEverythingServiceUpdateBookNotFound) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book not found response
 }
+
+func (o *ABitOfEverythingServiceUpdateBookNotFound) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateBookNotFound) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookNotFound) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookNotFound %s", 404, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookNotFound) GetPayload() string {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookNotFound) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookIMATeapot creates a ABitOfEverythingServiceUpdateBookIMATeapot with default headers values
 func NewABitOfEverythingServiceUpdateBookIMATeapot() *ABitOfEverythingServiceUpdateBookIMATeapot {
-	return &ABitOfEverythingServiceUpdateBookIMATeapot{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -290,61 +261,71 @@ type ABitOfEverythingServiceUpdateBookIMATeapot struct {
 
 // IsSuccess returns true when this a bit of everything service update book i m a teapot response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update book i m a teapot response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update book i m a teapot response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update book i m a teapot response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update book i m a teapot response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsClientError() bool {
-	return true
-}
+	_ = "STUB: not implemented"
 
-// IsServerError returns true when this a bit of everything service update book i m a teapot response has a 5xx status code
-func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsServerError() bool {
+	// IsServerError returns true when this a bit of everything service update book i m a teapot response has a 5xx status code
 	return false
 }
 
-// IsCode returns true when this a bit of everything service update book i m a teapot response a status code equal to that given
-func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsCode(code int) bool {
-	return code == 418
+func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsServerError() bool {
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update book i m a teapot response a status code equal to that given
+	return false
 }
 
-// Code gets the status code for the a bit of everything service update book i m a teapot response
+func (o *ABitOfEverythingServiceUpdateBookIMATeapot) IsCode(code int) bool {
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book i m a teapot response
+}
+
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) Code() int {
-	return 418
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookIMATeapot %s", 418, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) GetPayload() models.ExamplepbNumericEnum {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return *new(models.ExamplepbNumericEnum)
 }
 
 func (o *ABitOfEverythingServiceUpdateBookIMATeapot) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
 
 	// response payload
-	if err := consumer.Consume(response.Body(), &o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
 	return nil
 }
 
 // NewABitOfEverythingServiceUpdateBookInternalServerError creates a ABitOfEverythingServiceUpdateBookInternalServerError with default headers values
 func NewABitOfEverythingServiceUpdateBookInternalServerError() *ABitOfEverythingServiceUpdateBookInternalServerError {
-	return &ABitOfEverythingServiceUpdateBookInternalServerError{}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -358,65 +339,71 @@ type ABitOfEverythingServiceUpdateBookInternalServerError struct {
 
 // IsSuccess returns true when this a bit of everything service update book internal server error response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) IsSuccess() bool {
+	_ = "STUB: not implemented"
+
+	// IsRedirect returns true when this a bit of everything service update book internal server error response has a 3xx status code
 	return false
 }
 
-// IsRedirect returns true when this a bit of everything service update book internal server error response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) IsRedirect() bool {
+	_ = "STUB: not implemented"
+
+	// IsClientError returns true when this a bit of everything service update book internal server error response has a 4xx status code
 	return false
 }
 
-// IsClientError returns true when this a bit of everything service update book internal server error response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) IsClientError() bool {
+	_ = "STUB: not implemented"
+
+	// IsServerError returns true when this a bit of everything service update book internal server error response has a 5xx status code
 	return false
 }
 
-// IsServerError returns true when this a bit of everything service update book internal server error response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) IsServerError() bool {
-	return true
+	_ = "STUB: not implemented"
+
+	// IsCode returns true when this a bit of everything service update book internal server error response a status code equal to that given
+	return false
 }
 
-// IsCode returns true when this a bit of everything service update book internal server error response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) IsCode(code int) bool {
-	return code == 500
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book internal server error response
 }
 
-// Code gets the status code for the a bit of everything service update book internal server error response
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) Code() int {
-	return 500
+	_ = "STUB: not implemented"
+	return 0
 }
 
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] aBitOfEverythingServiceUpdateBookInternalServerError %s", 500, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookInternalServerError) GetPayload() *models.ExamplepbErrorResponse {
-	return o.Payload
-}
-
-func (o *ABitOfEverythingServiceUpdateBookInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.ExamplepbErrorResponse)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+func (o *ABitOfEverythingServiceUpdateBookInternalServerError) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
+	_ = "STUB: not implemented"
+	return nil
+}
+
+// response payload
+
 // NewABitOfEverythingServiceUpdateBookDefault creates a ABitOfEverythingServiceUpdateBookDefault with default headers values
 func NewABitOfEverythingServiceUpdateBookDefault(code int) *ABitOfEverythingServiceUpdateBookDefault {
-	return &ABitOfEverythingServiceUpdateBookDefault{
-		_statusCode: code,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 /*
@@ -432,59 +419,59 @@ type ABitOfEverythingServiceUpdateBookDefault struct {
 
 // IsSuccess returns true when this a bit of everything service update book default response has a 2xx status code
 func (o *ABitOfEverythingServiceUpdateBookDefault) IsSuccess() bool {
-	return o._statusCode/100 == 2
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsRedirect returns true when this a bit of everything service update book default response has a 3xx status code
 func (o *ABitOfEverythingServiceUpdateBookDefault) IsRedirect() bool {
-	return o._statusCode/100 == 3
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsClientError returns true when this a bit of everything service update book default response has a 4xx status code
 func (o *ABitOfEverythingServiceUpdateBookDefault) IsClientError() bool {
-	return o._statusCode/100 == 4
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsServerError returns true when this a bit of everything service update book default response has a 5xx status code
 func (o *ABitOfEverythingServiceUpdateBookDefault) IsServerError() bool {
-	return o._statusCode/100 == 5
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsCode returns true when this a bit of everything service update book default response a status code equal to that given
 func (o *ABitOfEverythingServiceUpdateBookDefault) IsCode(code int) bool {
-	return o._statusCode == code
+	_ = "STUB: not implemented"
+	return false
+
+	// Code gets the status code for the a bit of everything service update book default response
 }
 
-// Code gets the status code for the a bit of everything service update book default response
-func (o *ABitOfEverythingServiceUpdateBookDefault) Code() int {
-	return o._statusCode
-}
+func (o *ABitOfEverythingServiceUpdateBookDefault) Code() int { _ = "STUB: not implemented"; return 0 }
 
 func (o *ABitOfEverythingServiceUpdateBookDefault) Error() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] ABitOfEverythingService_UpdateBook default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookDefault) String() string {
-	payload, _ := json.Marshal(o.Payload)
-	return fmt.Sprintf("[PATCH /v1/{book.name}][%d] ABitOfEverythingService_UpdateBook default %s", o._statusCode, payload)
+	_ = "STUB: not implemented"
+	return ""
 }
 
 func (o *ABitOfEverythingServiceUpdateBookDefault) GetPayload() *models.GoogleRPCStatus {
-	return o.Payload
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateBookDefault) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
-
-	o.Payload = new(models.GoogleRPCStatus)
-
-	// response payload
-	if err := consumer.Consume(response.Body(), o.Payload); err != nil && !stderrors.Is(err, io.EOF) {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// response payload
 
 /*
 ABitOfEverythingServiceUpdateBookBody The book to update.
@@ -507,80 +494,41 @@ type ABitOfEverythingServiceUpdateBookBody struct {
 
 // Validate validates this a bit of everything service update book body
 func (o *ABitOfEverythingServiceUpdateBookBody) Validate(formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.validateCreateTime(formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateBookBody) validateCreateTime(formats strfmt.Registry) error {
-	if swag.IsZero(o.CreateTime) { // not required
-		return nil
-	}
-
-	if err := validate.FormatOf("book"+"."+"createTime", "body", "date-time", o.CreateTime.String(), formats); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
+// not required
+
 // ContextValidate validate this a bit of everything service update book body based on the context it is used
 func (o *ABitOfEverythingServiceUpdateBookBody) ContextValidate(ctx context.Context, formats strfmt.Registry) error {
-	var res []error
-
-	if err := o.contextValidateCreateTime(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if err := o.contextValidateID(ctx, formats); err != nil {
-		res = append(res, err)
-	}
-
-	if len(res) > 0 {
-		return errors.CompositeValidationError(res...)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateBookBody) contextValidateCreateTime(ctx context.Context, formats strfmt.Registry) error {
-
-	if err := validate.ReadOnly(ctx, "book"+"."+"createTime", "body", o.CreateTime); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (o *ABitOfEverythingServiceUpdateBookBody) contextValidateID(ctx context.Context, formats strfmt.Registry) error {
-
-	if err := validate.ReadOnly(ctx, "book"+"."+"id", "body", o.ID); err != nil {
-		return err
-	}
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // MarshalBinary interface implementation
 func (o *ABitOfEverythingServiceUpdateBookBody) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UnmarshalBinary interface implementation
 func (o *ABitOfEverythingServiceUpdateBookBody) UnmarshalBinary(b []byte) error {
-	var res ABitOfEverythingServiceUpdateBookBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
+	_ = "STUB: not implemented"
 	return nil
 }
